@@ -544,6 +544,83 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 9 — Tag pages
+
+### Build tag pages for both EN and UK
+
+```bash
+python3 scripts/build_tag_pages.py
+```
+
+### Build for a single language
+
+```bash
+python3 scripts/build_tag_pages.py --lang uk
+python3 scripts/build_tag_pages.py --lang en
+```
+
+### Dry-run (render without writing files)
+
+```bash
+python3 scripts/build_tag_pages.py --dry-run
+```
+
+### Custom content and output dirs
+
+```bash
+python3 scripts/build_tag_pages.py --content-dir content/issues --dist-dir dist
+```
+
+### Output files
+
+```text
+dist/en/tags/index.html           — EN tag index (all tags grouped by type)
+dist/uk/tags/index.html           — UK tag index
+dist/en/tags/<slug>.html          — EN individual tag page
+dist/uk/tags/<slug>.html          — UK individual tag page
+```
+
+`dist/` is not committed to git.
+
+### Tag page report
+
+```text
+reports/tag_pages_report.csv
+```
+
+Fields:
+
+```text
+tag_id       tag identifier from tags.yaml
+slug         URL slug
+label        display label (always English/international)
+type         genre | subgenre | aesthetic | content_type | editorial | negative
+lang         en | uk
+item_count   number of items with this tag
+page_path    output file path
+status       ok | dry_run | unknown_tag | error
+error        error message if status is error
+```
+
+### Output JSON summary fields
+
+```text
+languages        languages built
+tags_total       total tags in tags.yaml
+tags_with_items  tags that have at least one item
+pages_written    HTML files written
+unknown_tags     tag IDs found in items but absent from tags.yaml
+output_files     list of written file paths
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

@@ -412,6 +412,82 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 7 — Item scoring pipeline
+
+### Dry-run (score without writing to DB)
+
+```bash
+python3 scripts/score_items.py --dry-run --limit 20
+```
+
+### Score items (live, updates DB)
+
+```bash
+python3 scripts/score_items.py --limit 20
+python3 scripts/score_items.py
+```
+
+### Re-score items already used in an issue
+
+```bash
+python3 scripts/score_items.py --include-used --limit 20
+```
+
+### Only report items above a threshold
+
+```bash
+python3 scripts/score_items.py --min-score 30
+```
+
+### Output JSON summary fields
+
+```text
+items_total      total items in the database
+items_checked    items processed this run
+updated          items with score written to DB
+skipped          items not processed (used or past limit)
+errors           items that failed to score
+dry_run          true if --dry-run was passed
+top_candidates   top-10 items by score (id, title, score, url)
+```
+
+### Score report
+
+Each run writes `reports/scored_items_report.csv`:
+
+```text
+item_id, title, url, source_name, matched_artists, matched_tags, matched_genres, score, why_score
+```
+
+`why_score` explains what contributed: `artist:Nick Cave+50; genre:surf+25; source:high+20`
+
+### Scoring formula
+
+```text
++50  matched artist — monitor_priority high
++30  matched artist — monitor_priority medium
++15  matched artist — monitor_priority low
++25  core genre tag (surf, country, jazz, psychobilly, blues, americana)
++15  subgenre tag
++10  aesthetic tag
++15  content_type: reissue / archive_release / interview / review /
+                   new_release / label_profile / scene_report
++20  source priority high
++10  source priority medium
+-50  negative tag
+-30  seo_listicle / press_release_only / weak_source
+```
+
+Final score is clamped to 0–100.
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

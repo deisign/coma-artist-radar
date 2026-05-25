@@ -264,6 +264,94 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 5 — SQLite schema and source sync
+
+### Initialize the database
+
+Create `data/coma_radar.sqlite` with the full schema (idempotent — safe to run multiple times):
+
+```bash
+python3 scripts/init_db.py
+```
+
+### Reset the database
+
+Drop the existing database and create a fresh one:
+
+```bash
+python3 scripts/init_db.py --reset
+```
+
+### Inspect tables and row counts
+
+```bash
+python3 scripts/init_db.py --summary
+```
+
+Output JSON:
+
+```json
+{
+  "tables": {
+    "artists": 0,
+    "human_submissions": 0,
+    "issues": 0,
+    "items": 0,
+    "labels": 0,
+    "seen_urls": 0,
+    "sources": 0
+  }
+}
+```
+
+### Synchronize sources from YAML
+
+Upsert all entries from `data/sources_music.yaml` into the `sources` table:
+
+```bash
+python3 scripts/sync_sources_to_db.py
+```
+
+Output JSON:
+
+```json
+{
+  "total_in_yaml": 28,
+  "inserted": 28,
+  "updated": 0,
+  "active": 27,
+  "inactive": 1
+}
+```
+
+Repeated runs update existing rows rather than inserting duplicates.
+
+### Custom paths
+
+```bash
+python3 scripts/sync_sources_to_db.py --sources data/sources_music.yaml --db data/coma_radar.sqlite
+```
+
+### Schema tables
+
+```text
+artists          — imported from Radio.co CSV (stage 1)
+sources          — source registry (stage 4/5)
+labels           — standalone label index
+items            — fetched and scored feed items
+seen_urls        — deduplication index by url_hash
+issues           — published digest issues
+human_submissions — editorial inbox (stage 3)
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

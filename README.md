@@ -352,6 +352,66 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 6 — Feed fetching and item storage
+
+### Dry-run (parse feeds, no DB writes)
+
+```bash
+python3 scripts/fetch_sources.py --dry-run --limit 5
+```
+
+### Fetch real feeds (live mode)
+
+```bash
+python3 scripts/fetch_sources.py --limit 5
+python3 scripts/fetch_sources.py
+```
+
+### Fetch using a local XML fixture (no network)
+
+```bash
+python3 scripts/fetch_sources.py --offline-fixture path/to/feed.xml --limit 1
+```
+
+### Output JSON summary fields
+
+```text
+sources_total       total sources in the YAML
+sources_with_feed   active sources with a feed_url
+sources_checked     sources actually fetched (respects --limit)
+items_found         items parsed from all feeds
+inserted            new items written to the items table
+skipped_duplicate   items already present (deduplicated by url_hash)
+errors              sources that failed to fetch or parse
+dry_run             true if --dry-run was passed
+```
+
+### Fetch report
+
+Each run writes `reports/fetch_sources_report.csv`:
+
+```text
+source_id, source_name, feed_url, status, items_found, inserted, skipped_duplicate, error
+```
+
+### Custom paths
+
+```bash
+python3 scripts/fetch_sources.py \
+  --sources data/sources_music.yaml \
+  --db data/coma_radar.sqlite \
+  --report reports/fetch_sources_report.csv \
+  --limit 10
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

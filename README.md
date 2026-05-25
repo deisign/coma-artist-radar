@@ -182,6 +182,88 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 4 — Source Registry
+
+### Edit the registry
+
+Add or update sources in `data/sources_music.yaml`. Each source entry:
+
+```yaml
+- id: norton_records
+  name: Norton Records
+  site_url: https://nortonrecords.com
+  feed_url: null
+  source_type: label
+  language: en
+  region: us
+  genre_tags:
+    - surf
+    - rockabilly
+  priority: high
+  active: true
+  paywall: false
+  notes: Optional free-text notes.
+```
+
+Valid `source_type` values:
+
+```text
+magazine | blog | label | bandcamp_editorial | festival |
+archive | youtube_channel | podcast | newsletter | radio | official_artist_site
+```
+
+Valid `priority` values: `high` | `medium` | `low`
+
+Valid `paywall` values: `false` | `partial` | `true` | `unknown`
+
+### Structural validation (offline, no network)
+
+```bash
+python3 scripts/validate_sources.py --offline
+```
+
+### Full validation with HTTP probing and RSS autodiscovery
+
+```bash
+python3 scripts/validate_sources.py
+```
+
+Outputs:
+
+```text
+reports/sources_report.csv
+```
+
+Report fields:
+
+```text
+id, name, site_url, feed_url, source_type, priority, active,
+structural_ok, site_status, feed_status, feed_found, discovered_feed_url, error
+```
+
+`feed_found` values:
+
+```text
+true        — explicit feed_url responded with HTTP 2xx
+discovered  — RSS/Atom link found via HTML autodiscovery
+false       — no feed found
+(empty)     — offline mode or structural error
+```
+
+### Custom paths
+
+```bash
+python3 scripts/validate_sources.py --sources data/sources_music.yaml --report reports/sources_report.csv
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

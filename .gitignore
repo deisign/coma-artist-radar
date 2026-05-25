@@ -7,3 +7,6 @@ venv/
 # Local runtime database
 /data/coma_radar.sqlite
 /data/coma_radar.sqlite-*
+
+# Generated reports
+reports/*.csv

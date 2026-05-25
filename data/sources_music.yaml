@@ -1,0 +1,507 @@
+# coma.fm Radar — source registry
+# Sources sensitive to the coma.fm aesthetic field.
+# Not a generic music media list — only sources with real signal for surf, rockabilly,
+# psychobilly, blues, country, jazz noir, dark jazz, exotica, and related niches.
+#
+# source_type: magazine | blog | label | bandcamp_editorial | festival |
+#              archive | youtube_channel | podcast | newsletter | radio | official_artist_site
+# priority:    high | medium | low
+# active:      true | false
+# paywall:     false | partial | true | unknown
+
+sources:
+
+  # ===== LABELS / REISSUE LABELS =====
+
+  - id: norton_records
+    name: Norton Records
+    site_url: https://nortonrecords.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - surf
+      - rockabilly
+      - rhythm_and_blues
+      - garage_rock
+    priority: high
+    active: true
+    paywall: false
+    notes: >
+      Definitive surf and rockabilly reissue label. Essential for coma.fm field.
+      Reissues and originals from the 1950s–1970s underground.
+
+  - id: bloodshot_records
+    name: Bloodshot Records
+    site_url: https://bloodshotrecords.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - alt_country
+      - americana
+      - outlaw_country
+      - country_noir
+    priority: high
+    active: true
+    paywall: false
+    notes: Chicago alt-country and outlaw americana label. Strong country noir signals.
+
+  - id: ace_records
+    name: Ace Records
+    site_url: https://acerecords.co.uk
+    feed_url: null
+    source_type: label
+    language: en
+    region: uk
+    genre_tags:
+      - blues
+      - soul
+      - rockabilly
+      - reissue
+    priority: high
+    active: true
+    paywall: false
+    notes: Major UK reissue label. Excellent blues, soul, and rockabilly back-catalog.
+
+  - id: bear_family_records
+    name: Bear Family Records
+    site_url: https://bear-family.com
+    feed_url: null
+    source_type: label
+    language: de
+    region: de
+    genre_tags:
+      - country
+      - rockabilly
+      - blues
+      - reissue
+    priority: high
+    active: true
+    paywall: false
+    notes: German reissue specialist. Definitive boxsets for country and rockabilly.
+
+  - id: light_in_the_attic
+    name: Light in the Attic Records
+    site_url: https://lightintheattic.net
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - americana
+      - folk
+      - reissue
+      - blues
+    priority: high
+    active: true
+    paywall: false
+    notes: High-quality reissue label with strong americana and obscure folk focus.
+
+  - id: numero_group
+    name: Numero Group
+    site_url: https://numerogroup.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - reissue
+      - soul
+      - gospel
+      - country
+      - exotica
+    priority: high
+    active: true
+    paywall: false
+    notes: Specialist reissue label. Strong exotica and obscure americana material.
+
+  - id: sundazed_music
+    name: Sundazed Music
+    site_url: https://sundazed.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - surf
+      - garage_rock
+      - psychedelia
+      - reissue
+    priority: medium
+    active: true
+    paywall: false
+    notes: Surf and garage reissue label. Good source for instrumental surf vinyl.
+
+  - id: crypt_records
+    name: Crypt Records
+    site_url: https://cryptrecords.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - garage_rock
+      - rockabilly
+      - proto_punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: Garage and raw rockabilly label. Raw, uncompromising aesthetic.
+
+  - id: mississippi_records
+    name: Mississippi Records
+    site_url: https://mississippirecords.bandcamp.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - folk
+      - blues
+      - world_music
+    priority: medium
+    active: true
+    paywall: false
+    notes: >
+      Portland label. Hand-dubbed cassettes and vinyl. Strong blues and
+      field recording archive angle.
+
+  - id: tompkins_square
+    name: Tompkins Square
+    site_url: https://tompkinssquarerecs.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - folk
+      - blues
+      - american_primitive
+    priority: medium
+    active: true
+    paywall: false
+    notes: American primitive guitar and folk reissue label.
+
+  - id: fat_possum_records
+    name: Fat Possum Records
+    site_url: https://fatpossum.com
+    feed_url: null
+    source_type: label
+    language: en
+    region: us
+    genre_tags:
+      - blues
+      - indie
+    priority: medium
+    active: true
+    paywall: false
+    notes: Mississippi-based indie label with deep blues roots.
+
+  # ===== MAGAZINES / BLOGS =====
+
+  - id: no_depression
+    name: No Depression
+    site_url: https://nodepression.com
+    feed_url: https://nodepression.com/feed/
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - alt_country
+      - americana
+      - outlaw_country
+      - folk
+    priority: high
+    active: true
+    paywall: false
+    notes: Essential americana and alt-country magazine. Good editorial depth.
+
+  - id: living_blues
+    name: Living Blues Magazine
+    site_url: https://livingblues.com
+    feed_url: null
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - blues
+      - delta_blues
+      - chicago_blues
+      - swamp_blues
+    priority: high
+    active: true
+    paywall: partial
+    notes: Academic-leaning blues magazine. Good for deeper roots blues coverage.
+
+  - id: ugly_things
+    name: Ugly Things Magazine
+    site_url: https://uglythings.com
+    feed_url: null
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - garage_rock
+      - surf
+      - rockabilly
+      - psychedelia
+    priority: high
+    active: true
+    paywall: false
+    notes: >
+      Definitive garage, surf, and rockabilly fanzine. Deep archival content
+      and obscure international scene coverage.
+
+  - id: offbeat_magazine
+    name: OffBeat Magazine
+    site_url: https://offbeat.com
+    feed_url: https://offbeat.com/feed/
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - blues
+      - jazz
+      - swamp_blues
+      - new_orleans
+    priority: medium
+    active: true
+    paywall: false
+    notes: New Orleans music magazine. Strong for blues, jazz, and Louisiana roots.
+
+  - id: wax_poetics
+    name: Wax Poetics
+    site_url: https://waxpoetics.com
+    feed_url: null
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - jazz
+      - soul
+      - funk
+      - reissue
+    priority: medium
+    active: true
+    paywall: partial
+    notes: Jazz, soul, and funk editorial. Strong reissue and archive coverage.
+
+  - id: saving_country_music
+    name: Saving Country Music
+    site_url: https://www.savingcountrymusic.com
+    feed_url: https://www.savingcountrymusic.com/feed/
+    source_type: blog
+    language: en
+    region: us
+    genre_tags:
+      - alt_country
+      - outlaw_country
+      - honky_tonk
+      - americana
+    priority: medium
+    active: true
+    paywall: false
+    notes: Outlaw country and alt-country blog. Opinionated, good for underground country.
+
+  - id: the_wire
+    name: The Wire Magazine
+    site_url: https://thewire.co.uk
+    feed_url: https://www.thewire.co.uk/news/rss
+    source_type: magazine
+    language: en
+    region: uk
+    genre_tags:
+      - free_jazz
+      - experimental
+      - dark_jazz
+      - avant_garde
+    priority: medium
+    active: true
+    paywall: partial
+    notes: UK experimental and avant-garde music magazine. Good for dark jazz signal.
+
+  - id: american_songwriter
+    name: American Songwriter
+    site_url: https://americansongwriter.com
+    feed_url: https://americansongwriter.com/feed/
+    source_type: magazine
+    language: en
+    region: us
+    genre_tags:
+      - country
+      - americana
+      - alt_country
+      - singer_songwriter
+    priority: low
+    active: true
+    paywall: false
+    notes: Country and americana magazine. Useful for honky tonk and outlaw signals.
+
+  # ===== BANDCAMP EDITORIAL =====
+
+  - id: bandcamp_daily
+    name: Bandcamp Daily
+    site_url: https://daily.bandcamp.com
+    feed_url: https://daily.bandcamp.com/feed/
+    source_type: bandcamp_editorial
+    language: en
+    region: international
+    genre_tags:
+      - surf
+      - blues
+      - country
+      - rockabilly
+      - psychobilly
+      - jazz
+    priority: high
+    active: true
+    paywall: false
+    notes: Bandcamp editorial layer. Essential discovery across all coma.fm genres.
+
+  # ===== RADIO =====
+
+  - id: wfmu
+    name: WFMU Radio
+    site_url: https://wfmu.org
+    feed_url: https://wfmu.org/podcast/GF.xml
+    source_type: radio
+    language: en
+    region: us
+    genre_tags:
+      - freeform
+      - blues
+      - jazz
+      - experimental
+      - surf
+    priority: high
+    active: true
+    paywall: false
+    notes: Freeform community radio. Deep catalogue, strong affinity with coma.fm aesthetic.
+
+  - id: kcrw
+    name: KCRW
+    site_url: https://www.kcrw.com
+    feed_url: null
+    source_type: radio
+    language: en
+    region: us
+    genre_tags:
+      - eclectic
+      - indie
+      - jazz
+      - world_music
+    priority: low
+    active: true
+    paywall: false
+    notes: LA public radio. Occasionally relevant for dark jazz and americana crossovers.
+
+  # ===== FESTIVALS / SCENE =====
+
+  - id: viva_las_vegas
+    name: Viva Las Vegas Rockabilly Weekend
+    site_url: https://vivalasvegas.net
+    feed_url: null
+    source_type: festival
+    language: en
+    region: us
+    genre_tags:
+      - rockabilly
+      - psychobilly
+      - surf
+      - hot_rod
+    priority: medium
+    active: true
+    paywall: false
+    notes: Annual Las Vegas rockabilly and psychobilly festival. Scene barometer.
+
+  - id: psychomania_rumble
+    name: Psychomania Rumble
+    site_url: https://psychomaniarumble.com
+    feed_url: null
+    source_type: festival
+    language: da
+    region: dk
+    genre_tags:
+      - psychobilly
+      - horrorbilly
+      - punkabilly
+    priority: medium
+    active: true
+    paywall: false
+    notes: Copenhagen psychobilly festival. Central European scene pulse.
+
+  - id: ink_n_iron
+    name: Ink N Iron Festival
+    site_url: https://inknironfestival.com
+    feed_url: null
+    source_type: festival
+    language: en
+    region: us
+    genre_tags:
+      - rockabilly
+      - psychobilly
+      - tattoo_culture
+      - hot_rod
+    priority: low
+    active: false
+    paywall: false
+    notes: Defunct Long Beach festival. Archive value for rockabilly/psychobilly history.
+
+  # ===== ARCHIVES =====
+
+  - id: alan_lomax_archive
+    name: Alan Lomax Archive — Association for Cultural Equity
+    site_url: https://culturalequity.org
+    feed_url: null
+    source_type: archive
+    language: en
+    region: us
+    genre_tags:
+      - folk
+      - blues
+      - delta_blues
+      - field_recordings
+    priority: high
+    active: true
+    paywall: false
+    notes: Primary-source archive for blues and folk field recordings.
+
+  - id: internet_archive_audio
+    name: Internet Archive — Audio
+    site_url: https://archive.org/details/audio
+    feed_url: null
+    source_type: archive
+    language: en
+    region: international
+    genre_tags:
+      - blues
+      - jazz
+      - folk
+      - surf
+      - rockabilly
+    priority: medium
+    active: true
+    paywall: false
+    notes: Open-access audio archive. Useful for rare recordings and 78 rpm material.
+
+  # ===== PODCAST =====
+
+  - id: world_of_echo_podcast
+    name: World of Echo Podcast
+    site_url: https://worldofecho.net
+    feed_url: null
+    source_type: podcast
+    language: en
+    region: international
+    genre_tags:
+      - dark_jazz
+      - jazz_noir
+      - experimental
+      - ambient
+    priority: medium
+    active: true
+    paywall: false
+    notes: Dark jazz and experimental podcast. Good signal for coma.fm noir aesthetic.

@@ -3,3 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+
+# Local runtime database
+/data/coma_radar.sqlite
+/data/coma_radar.sqlite-*

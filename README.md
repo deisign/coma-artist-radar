@@ -2,7 +2,7 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 2 — Genre radar and canonical tag taxonomy**.
+Current implemented stage: **Stage 3 — Editorial Inbox / Human Intake**.
 
 ## Input
 
@@ -106,6 +106,78 @@ Unknown manual tags are appended to `reports/unknown_tags.csv`.
 data/genre_radar.yaml   core genres with core/adjacent/negative/search/aesthetic tag lists
 data/tags.yaml          canonical tag taxonomy — genre, subgenre, aesthetic, content_type, editorial, negative
 data/tag_rules.yaml     keyword matching rules with include, exclude, score, confidence
+```
+
+---
+
+## Stage 3 — Editorial Inbox / Human Intake
+
+### Edit the inbox
+
+Add entries to `inbox/manual.md`. Each entry is a YAML block between `---` separators:
+
+```yaml
+---
+type: link
+title: "New surf compilation"
+url: https://example.bandcamp.com/album/surf
+notes: Great reverb-heavy sound, very coma.fm.
+suggested_genres: surf, instrumental_surf
+suggested_artists: The Shadowers
+priority: high
+status: new
+
+---
+type: editor_note
+title: Surf without the sea
+notes: >
+  Instrumental surf давно відірвався від пляжу.
+suggested_genres: surf, jazz_noir
+priority: must_use
+status: new
+```
+
+Supported types: `link`, `editor_note`
+
+Priority values: `low` | `normal` | `high` | `must_use`
+
+Status values: `new` | `reviewed` | `accepted` | `rejected` | `used` | `archived`
+
+### Dry-run (preview without writing)
+
+```bash
+python3 scripts/import_human_submissions.py --dry-run
+```
+
+### Import into database
+
+```bash
+python3 scripts/import_human_submissions.py
+```
+
+Imports entries from `inbox/manual.md` into `data/coma_radar.sqlite`, table `human_submissions`.
+Duplicate entries (same URL for links, same title for editor_notes) are silently skipped.
+
+Custom options:
+
+```bash
+python3 scripts/import_human_submissions.py --inbox inbox/manual.md --db data/coma_radar.sqlite --submitted-by "Vadim"
+```
+
+Output JSON summary fields:
+
+```text
+total_in_file      total entries parsed from the inbox
+new                entries added to the database
+skipped_duplicate  entries skipped because they already exist
+errors             validation errors
+dry_run            true if --dry-run was passed
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
 ```
 
 ---

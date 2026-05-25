@@ -488,6 +488,62 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 8 — Static bilingual issue draft
+
+### Build a draft issue (both EN and UK)
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-25 --draft --limit 10
+```
+
+### Build for a single language
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-25 --lang uk --draft --limit 10
+python3 scripts/build_issue.py --date 2026-05-25 --lang en --draft --limit 10
+```
+
+### Build a published issue (no draft banner)
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-25 --limit 50 --min-score 30
+```
+
+### Custom min-score and limit
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-25 --draft --min-score 40 --limit 20
+```
+
+### Output files
+
+```text
+dist/en/issues/YYYY-MM-DD.html   — English issue page
+dist/uk/issues/YYYY-MM-DD.html   — Ukrainian issue page
+content/issues/YYYY-MM-DD.en.json — EN issue data draft
+content/issues/YYYY-MM-DD.uk.json — UK issue data draft
+```
+
+`dist/` and `content/issues/*.json` are not committed to git.
+
+### Output JSON summary fields
+
+```text
+issue_date       date of the issue
+languages        languages built (["en", "uk"] or single)
+selected_items   number of items included
+output_files     list of written file paths
+draft            true if --draft was passed
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

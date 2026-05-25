@@ -10,3 +10,9 @@ venv/
 
 # Generated reports
 reports/*.csv
+
+# Generated build output
+dist/
+
+# Generated issue drafts
+content/issues/*.json

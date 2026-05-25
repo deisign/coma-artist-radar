@@ -1,0 +1,866 @@
+# coma.fm Radar — canonical tag taxonomy
+# Music labels remain in English / international terms.
+# Descriptions have both EN and UK variants.
+
+tags:
+
+  # ===== GENRE =====
+
+  - id: jazz
+    slug: jazz
+    type: genre
+    label: Jazz
+    parent: null
+    aliases:
+      - jazz music
+    related_tags:
+      - dark_jazz
+      - jazz_noir
+      - lounge_jazz
+      - free_jazz
+    description_en: "Jazz and its underground, noir, and cinematic offshoots — from cool to free."
+    description_uk: "Jazz і його підпільні, нуарні та кінематографічні відгалуження — від cool до free."
+
+  - id: blues
+    slug: blues
+    type: genre
+    label: Blues
+    parent: null
+    aliases:
+      - blues music
+    related_tags:
+      - swamp_blues
+      - jump_blues
+      - delta_blues
+      - chicago_blues
+    description_en: "Blues from the Delta to the swamp — raw, electric, and field-recorded."
+    description_uk: "Blues від Delta до болотяного — сирий, електричний, польового запису."
+
+  - id: country
+    slug: country
+    type: genre
+    label: Country
+    parent: null
+    aliases:
+      - country music
+    related_tags:
+      - honky_tonk
+      - gothic_country
+      - outlaw_country
+      - alt_country
+    description_en: "Country, americana, and their dark corners — honky tonk to gothic country."
+    description_uk: "Country, americana та їх темні закутки — від honky tonk до gothic country."
+
+  - id: rockabilly
+    slug: rockabilly
+    type: genre
+    label: Rockabilly
+    parent: null
+    aliases:
+      - rock-a-billy
+    related_tags:
+      - neo_rockabilly
+      - psychobilly
+      - hillbilly_bop
+      - western_swing
+    description_en: "Rockabilly — slap bass, hot rod speed, and the raw edge of early rock and roll."
+    description_uk: "Rockabilly — slap bass, гаряча швидкість і сирий край раннього рок-н-ролу."
+
+  - id: psychobilly
+    slug: psychobilly
+    type: genre
+    label: Psychobilly
+    parent: rockabilly
+    aliases:
+      - psycho-billy
+      - horrorbilly
+      - punkabilly
+    related_tags:
+      - horrorbilly
+      - punkabilly
+      - rockabilly
+      - horror_punk
+      - deathrock
+    description_en: "A fast, punk-infected rockabilly strain with horror imagery, upright bass, lacquered quiffs and graveyard humor."
+    description_uk: "Швидка, панкова гілка rockabilly з horror-образністю, контрабасом, лакованими зачісками й цвинтарним гумором."
+
+  - id: surf
+    slug: surf
+    type: genre
+    label: Surf
+    parent: null
+    aliases:
+      - surf music
+      - surf rock
+    related_tags:
+      - instrumental_surf
+      - garage_surf
+      - surf_revival
+    description_en: "Surf music — reverb-drenched guitar, twang, and the ghost of the American road."
+    description_uk: "Surf музика — гітара в ревербі, twang і привид американської дороги."
+
+  # ===== SUBGENRE =====
+
+  - id: dark_jazz
+    slug: dark-jazz
+    type: subgenre
+    label: Dark jazz
+    parent: jazz
+    aliases:
+      - noir jazz
+    related_tags:
+      - jazz_noir
+      - lounge_noir
+      - midnight_drive
+    description_en: "Jazz pulled into shadow — dissonant, cinematic, minimal. Music for late-night cities."
+    description_uk: "Jazz, що пішов у тінь — дисонантний, кінематографічний, мінімальний. Музика нічних міст."
+
+  - id: jazz_noir
+    slug: jazz-noir
+    type: subgenre
+    label: Jazz noir
+    parent: jazz
+    aliases:
+      - crime jazz
+      - lounge noir jazz
+    related_tags:
+      - dark_jazz
+      - lounge_noir
+      - lynchy
+    description_en: "Jazz noir — the sound of rain-slicked streets, cigarette smoke, and unsolved cases."
+    description_uk: "Jazz noir — звук дощових вулиць, сигаретного диму й нерозкритих справ."
+
+  - id: lounge_jazz
+    slug: lounge-jazz
+    type: subgenre
+    label: Lounge jazz
+    parent: jazz
+    aliases:
+      - cocktail jazz
+    related_tags:
+      - jazz_noir
+      - lounge_noir
+      - retro_future
+    description_en: "Lounge jazz — velvet booths, cocktail hour, and the architecture of leisure."
+    description_uk: "Lounge jazz — оксамитові кабінки, коктейльна година й архітектура дозвілля."
+
+  - id: free_jazz
+    slug: free-jazz
+    type: subgenre
+    label: Free jazz
+    parent: jazz
+    aliases:
+      - avant jazz
+      - experimental jazz
+    related_tags:
+      - dark_jazz
+    description_en: "Free jazz — structure abandoned, energy unleashed."
+    description_uk: "Free jazz — структура покинута, енергія вивільнена."
+
+  - id: swamp_blues
+    slug: swamp-blues
+    type: subgenre
+    label: Swamp blues
+    parent: blues
+    aliases:
+      - bayou blues
+    related_tags:
+      - delta_blues
+      - ghost_americana
+    description_en: "Swamp blues — humid, unhurried, dripping with reverb and Southern dread."
+    description_uk: "Swamp blues — вологий, неквапливий, просякнутий ревербом і південним жахом."
+
+  - id: jump_blues
+    slug: jump-blues
+    type: subgenre
+    label: Jump blues
+    parent: blues
+    aliases:
+      - boogie blues
+    related_tags:
+      - blues
+      - rockabilly
+    description_en: "Jump blues — big band energy compressed into small combo stomp."
+    description_uk: "Jump blues — енергія біг-бенду, стиснута в малий ансамбль."
+
+  - id: delta_blues
+    slug: delta-blues
+    type: subgenre
+    label: Delta blues
+    parent: blues
+    aliases:
+      - mississippi delta blues
+    related_tags:
+      - swamp_blues
+      - dusty_vinyl
+    description_en: "Delta blues — primal slide guitar, field hollers, and the crossroads myth."
+    description_uk: "Delta blues — первісна slide-гітара, польові крики й міф про роздоріжжя."
+
+  - id: chicago_blues
+    slug: chicago-blues
+    type: subgenre
+    label: Chicago blues
+    parent: blues
+    aliases:
+      - electric chicago blues
+    related_tags:
+      - delta_blues
+    description_en: "Chicago blues — electric, amplified, and urbanized from the Delta north."
+    description_uk: "Chicago blues — електричний, підсилений, урбанізований переїзд з Delta на північ."
+
+  - id: honky_tonk
+    slug: honky-tonk
+    type: subgenre
+    label: Honky tonk
+    parent: country
+    aliases:
+      - honky-tonk
+      - honkytonk
+    related_tags:
+      - country
+      - outlaw_country
+      - dusty_vinyl
+    description_en: "Honky tonk — wooden floors, pedal steel, and the beautiful desolation of a jukebox at last call."
+    description_uk: "Honky tonk — дерев'яна підлога, pedal steel і гарна спустошеність jukebox на останньому замовленні."
+
+  - id: gothic_country
+    slug: gothic-country
+    type: subgenre
+    label: Gothic country
+    parent: country
+    aliases:
+      - goth country
+      - dark country
+      - country gothic
+    related_tags:
+      - country_noir
+      - ghost_americana
+      - outlaw_country
+    description_en: "Gothic country — dark Americana where the ghosts never left the porch."
+    description_uk: "Gothic country — темна americana, де привиди ніколи не покидали ганок."
+
+  - id: country_noir
+    slug: country-noir
+    type: subgenre
+    label: Country noir
+    parent: country
+    aliases:
+      - noir country
+    related_tags:
+      - gothic_country
+      - outlaw_country
+      - midnight_drive
+    description_en: "Country noir — crime shadows over dusty highways and neon diners."
+    description_uk: "Country noir — тінь злочину над пиловими шосе й неоновими закусочними."
+
+  - id: outlaw_country
+    slug: outlaw-country
+    type: subgenre
+    label: Outlaw country
+    parent: country
+    aliases:
+      - outlaw
+    related_tags:
+      - honky_tonk
+      - country_noir
+    description_en: "Outlaw country — the Nashville system rejected, the road embraced."
+    description_uk: "Outlaw country — система Нешвілла відкинута, дорога прийнята."
+
+  - id: alt_country
+    slug: alt-country
+    type: subgenre
+    label: Alt-country
+    parent: country
+    aliases:
+      - alternative country
+      - no depression
+    related_tags:
+      - gothic_country
+      - americana
+    description_en: "Alt-country — country music for people who grew up on punk records."
+    description_uk: "Alt-country — country для тих, хто виріс на панк-записах."
+
+  - id: americana
+    slug: americana
+    type: subgenre
+    label: Americana
+    parent: country
+    aliases:
+      - american roots music
+    related_tags:
+      - gothic_country
+      - alt_country
+      - ghost_americana
+    description_en: "Americana — roots music without genre walls, from folk to country to blues."
+    description_uk: "Americana — коренева музика без жанрових стін: від фолку до country й blues."
+
+  - id: neo_rockabilly
+    slug: neo-rockabilly
+    type: subgenre
+    label: Neo-rockabilly
+    parent: rockabilly
+    aliases:
+      - neo rockabilly
+      - modern rockabilly
+    related_tags:
+      - rockabilly
+      - psychobilly
+    description_en: "Neo-rockabilly — the 1950s fire rekindled in the post-punk era."
+    description_uk: "Neo-rockabilly — вогонь 50-х, розпалений в епоху пост-панку."
+
+  - id: hillbilly_bop
+    slug: hillbilly-bop
+    type: subgenre
+    label: Hillbilly bop
+    parent: rockabilly
+    aliases:
+      - hillbilly boogie
+    related_tags:
+      - rockabilly
+      - western_swing
+    description_en: "Hillbilly bop — country boogie before it became rockabilly."
+    description_uk: "Hillbilly bop — country-буги до того, як він став rockabilly."
+
+  - id: western_swing
+    slug: western-swing
+    type: subgenre
+    label: Western swing
+    parent: rockabilly
+    aliases:
+      - cowboy swing
+    related_tags:
+      - rockabilly
+      - honky_tonk
+    description_en: "Western swing — jazz horns meet cowboy hats, fiddles, and dancehall floors."
+    description_uk: "Western swing — джазові труби зустрічаються з ковбойськими капелюхами й танцювальними залами."
+
+  - id: horrorbilly
+    slug: horrorbilly
+    type: subgenre
+    label: Horrorbilly
+    parent: psychobilly
+    aliases:
+      - horror rockabilly
+    related_tags:
+      - psychobilly
+      - punkabilly
+      - lacquer_and_graves
+      - graveyard_party
+    description_en: "Horrorbilly — psychobilly's horror-pulp wing: B-movie monsters, graveyards, and slap-bass thunder."
+    description_uk: "Horrorbilly — horror-pulp крило psychobilly: монстри B-movie, цвинтарі й гуркіт slap-bass."
+
+  - id: punkabilly
+    slug: punkabilly
+    type: subgenre
+    label: Punkabilly
+    parent: psychobilly
+    aliases:
+      - punk rockabilly
+    related_tags:
+      - psychobilly
+      - horrorbilly
+      - horror_punk
+    description_en: "Punkabilly — rockabilly accelerated to punk velocity, no clean breaks allowed."
+    description_uk: "Punkabilly — rockabilly, прискорений до панкової швидкості, без чистих переходів."
+
+  - id: gothabilly
+    slug: gothabilly
+    type: subgenre
+    label: Gothabilly
+    parent: psychobilly
+    aliases:
+      - goth rockabilly
+    related_tags:
+      - psychobilly
+      - deathrock
+    description_en: "Gothabilly — dark romanticism and upright bass in a black leather jacket."
+    description_uk: "Gothabilly — темний романтизм і контрабас у чорній шкіряній куртці."
+
+  - id: instrumental_surf
+    slug: instrumental-surf
+    type: subgenre
+    label: Instrumental surf
+    parent: surf
+    aliases:
+      - surf instrumental
+    related_tags:
+      - surf
+      - garage_surf
+      - grease_and_reverb
+    description_en: "Instrumental surf, surf guitar, twang and reverb-heavy guitar music."
+    description_uk: "Instrumental surf, surf guitar, twang і гітарна музика з густим ревербом."
+
+  - id: garage_surf
+    slug: garage-surf
+    type: subgenre
+    label: Garage surf
+    parent: surf
+    aliases:
+      - surf punk
+    related_tags:
+      - surf
+      - instrumental_surf
+      - grease_and_reverb
+    description_en: "Garage surf — fuzz pedals and reverb tanks in a damp rehearsal space."
+    description_uk: "Garage surf — фуз-педалі й ревербні баки у вогкій репетиційній кімнаті."
+
+  - id: surf_revival
+    slug: surf-revival
+    type: subgenre
+    label: Surf revival
+    parent: surf
+    aliases:
+      - neo surf
+      - modern surf
+    related_tags:
+      - surf
+      - instrumental_surf
+    description_en: "Surf revival — the reverb-soaked guitar tradition reclaimed by new generations."
+    description_uk: "Surf revival — гітарна традиція в ревербі, відновлена новими поколіннями."
+
+  # ===== AESTHETIC =====
+
+  - id: lacquer_and_graves
+    slug: lacquer-and-graves
+    type: aesthetic
+    label: Lacquer & Graves
+    parent: null
+    aliases:
+      - psychobilly aesthetic
+    related_tags:
+      - psychobilly
+      - horrorbilly
+      - punkabilly
+    description_en: "Psychobilly aesthetics: hairspray, upright bass, graveyard jokes, horror pulp and punk speed."
+    description_uk: "Естетика psychobilly: лак, контрабас, цвинтарний гумор, horror-pulp і панкова швидкість."
+
+  - id: graveyard_party
+    slug: graveyard-party
+    type: aesthetic
+    label: Graveyard Party
+    parent: null
+    aliases: []
+    related_tags:
+      - psychobilly
+      - horrorbilly
+      - lacquer_and_graves
+    description_en: "The graveyard as dance floor — horror camp, midnight stomp, and coffin humor."
+    description_uk: "Цвинтар як танцпол — horror-кемп, нічний стомп і жарти з труною."
+
+  - id: grease_and_reverb
+    slug: grease-and-reverb
+    type: aesthetic
+    label: Grease & Reverb
+    parent: null
+    aliases: []
+    related_tags:
+      - rockabilly
+      - instrumental_surf
+      - surf
+    description_en: "The collision of hot rod culture, twang guitar, and reverb-soaked echo chambers."
+    description_uk: "Зіткнення культури hot rod, twang-гітари й ехо-камер у ревербі."
+
+  - id: ghost_americana
+    slug: ghost-americana
+    type: aesthetic
+    label: Ghost Americana
+    parent: null
+    aliases:
+      - haunted americana
+    related_tags:
+      - gothic_country
+      - americana
+      - country_noir
+    description_en: "Ghost Americana — haunted roadsides, abandoned churches, and the music that stayed behind."
+    description_uk: "Ghost Americana — переслідувані узбіччя, покинуті церкви й музика, що залишилась."
+
+  - id: lounge_noir
+    slug: lounge-noir
+    type: aesthetic
+    label: Lounge Noir
+    parent: null
+    aliases:
+      - cocktail noir
+    related_tags:
+      - jazz_noir
+      - dark_jazz
+      - midnight_drive
+    description_en: "Lounge noir — cocktails with a crime undercurrent, velvet curtains and cheap cigarettes."
+    description_uk: "Lounge noir — коктейлі з кримінальним підтекстом, оксамитові штори й дешеві цигарки."
+
+  - id: midnight_drive
+    slug: midnight-drive
+    type: aesthetic
+    label: Midnight Drive
+    parent: null
+    aliases:
+      - night drive music
+    related_tags:
+      - dark_jazz
+      - jazz_noir
+      - country_noir
+    description_en: "Midnight drive — music for empty highways, rain-blurred headlights, and nobody left at the motel."
+    description_uk: "Midnight drive — музика для порожніх шосе, розмитих дощем фар і порожнього мотелю."
+
+  - id: dusty_vinyl
+    slug: dusty-vinyl
+    type: aesthetic
+    label: Dusty Vinyl
+    parent: null
+    aliases:
+      - archival aesthetic
+    related_tags:
+      - delta_blues
+      - honky_tonk
+    description_en: "Dusty vinyl — the warmth of archive recordings, crackling needle, and found sound."
+    description_uk: "Dusty vinyl — тепло архівних записів, тріск голки й знайдений звук."
+
+  - id: retro_future
+    slug: retro-future
+    type: aesthetic
+    label: Retro Future
+    parent: null
+    aliases:
+      - space age aesthetic
+    related_tags:
+      - surf_revival
+      - lounge_jazz
+      - instrumental_surf
+    description_en: "Retro future — the optimism and kitsch of the atomic age, still spinning on the hi-fi."
+    description_uk: "Retro future — оптимізм і кіч атомної епохи, що досі крутиться на hi-fi."
+
+  - id: bad_radio_signal
+    slug: bad-radio-signal
+    type: aesthetic
+    label: Bad Radio Signal
+    parent: null
+    aliases:
+      - radio static aesthetic
+    related_tags:
+      - dark_jazz
+      - surf
+      - blues
+    description_en: "Bad radio signal — distant AM transmissions, late-night shortwave, static and ghost voices."
+    description_uk: "Bad radio signal — далекі AM-передачі, нічний shortwave, статика й голоси-примари."
+
+  - id: lynchy
+    slug: lynchy
+    type: aesthetic
+    label: Lynchy
+    parent: null
+    aliases:
+      - twin peaks aesthetic
+    related_tags:
+      - dark_jazz
+      - jazz_noir
+      - lounge_noir
+    description_en: "Lynchy — that particular dread: small-town America, backward tape, and curtains that move."
+    description_uk: "Lynchy — та особлива тривога: маленьке містечко США, перемотана плівка й штори, що рухаються."
+
+  # ===== CONTENT TYPE =====
+
+  - id: new_release
+    slug: new-release
+    type: content_type
+    label: New release
+    parent: null
+    aliases:
+      - new album
+      - new single
+    related_tags: []
+    description_en: "A new record, single, or EP just released."
+    description_uk: "Новий альбом, сингл або EP, щойно виданий."
+
+  - id: reissue
+    slug: reissue
+    type: content_type
+    label: Reissue
+    parent: null
+    aliases:
+      - remaster
+      - re-release
+      - vinyl reissue
+    related_tags:
+      - dusty_vinyl
+    description_en: "A reissue or remastered release of an older recording."
+    description_uk: "Перевидання або ремастер старого запису."
+
+  - id: archive_release
+    slug: archive-release
+    type: content_type
+    label: Archive release
+    parent: null
+    aliases:
+      - archival recording
+      - vault release
+    related_tags:
+      - dusty_vinyl
+    description_en: "A previously unreleased or rare archival recording."
+    description_uk: "Раніше невиданий або рідкісний архівний запис."
+
+  - id: interview
+    slug: interview
+    type: content_type
+    label: Interview
+    parent: null
+    aliases:
+      - in conversation
+    related_tags: []
+    description_en: "An artist or scene interview."
+    description_uk: "Інтерв'ю з артистом або про сцену."
+
+  - id: review
+    slug: review
+    type: content_type
+    label: Review
+    parent: null
+    aliases:
+      - album review
+      - track review
+    related_tags: []
+    description_en: "A critical review of a record or release."
+    description_uk: "Критична рецензія на запис або реліз."
+
+  - id: essay
+    slug: essay
+    type: content_type
+    label: Essay
+    parent: null
+    aliases:
+      - long read
+    related_tags: []
+    description_en: "A longer-form essay about an artist, scene, or genre."
+    description_uk: "Довготекстове есе про артиста, сцену або жанр."
+
+  - id: label_profile
+    slug: label-profile
+    type: content_type
+    label: Label profile
+    parent: null
+    aliases:
+      - label history
+    related_tags: []
+    description_en: "A profile of a record label."
+    description_uk: "Профіль музичного лейблу."
+
+  - id: scene_report
+    slug: scene-report
+    type: content_type
+    label: Scene report
+    parent: null
+    aliases:
+      - scene overview
+    related_tags: []
+    description_en: "A report from or about a local or regional scene."
+    description_uk: "Репортаж з або про локальну чи регіональну сцену."
+
+  - id: editor_note
+    slug: editor-note
+    type: content_type
+    label: Editor note
+    parent: null
+    aliases:
+      - editorial note
+    related_tags: []
+    description_en: "A personal editorial note or find from the coma.fm editors."
+    description_uk: "Особиста редакторська нотатка або знахідка редакторів coma.fm."
+
+  - id: live_recording
+    slug: live-recording
+    type: content_type
+    label: Live recording
+    parent: null
+    aliases:
+      - concert recording
+    related_tags: []
+    description_en: "A live or concert recording."
+    description_uk: "Живий або концертний запис."
+
+  - id: podcast
+    slug: podcast
+    type: content_type
+    label: Podcast
+    parent: null
+    aliases: []
+    related_tags: []
+    description_en: "A podcast episode relevant to the coma.fm field."
+    description_uk: "Епізод подкасту, релевантний для поля coma.fm."
+
+  # ===== EDITORIAL =====
+
+  - id: must_use
+    slug: must-use
+    type: editorial
+    label: Must use
+    parent: null
+    aliases: []
+    related_tags:
+      - high_priority
+    description_en: "Must be included in the next issue — high editorial confidence."
+    description_uk: "Обов'язково включити до наступного випуску — висока редакторська впевненість."
+
+  - id: high_priority
+    slug: high-priority
+    type: editorial
+    label: High priority
+    parent: null
+    aliases: []
+    related_tags:
+      - must_use
+    description_en: "High-priority item for the next issue."
+    description_uk: "Матеріал високого пріоритету для наступного випуску."
+
+  - id: needs_check
+    slug: needs-check
+    type: editorial
+    label: Needs check
+    parent: null
+    aliases:
+      - verify
+    related_tags: []
+    description_en: "Needs editorial verification before inclusion."
+    description_uk: "Потребує редакторської перевірки перед включенням."
+
+  - id: good_for_telegram
+    slug: good-for-telegram
+    type: editorial
+    label: Good for Telegram
+    parent: null
+    aliases: []
+    related_tags: []
+    description_en: "Well-suited for the coma.fm Telegram announcement format."
+    description_uk: "Добре підходить для формату анонсу coma.fm у Telegram."
+
+  - id: evergreen
+    slug: evergreen
+    type: editorial
+    label: Evergreen
+    parent: null
+    aliases: []
+    related_tags: []
+    description_en: "Timeless content, suitable for any issue."
+    description_uk: "Вічнозелений контент, підходить для будь-якого випуску."
+
+  - id: time_sensitive
+    slug: time-sensitive
+    type: editorial
+    label: Time sensitive
+    parent: null
+    aliases:
+      - urgent
+    related_tags: []
+    description_en: "Must be used soon — time-sensitive news or release window."
+    description_uk: "Потрібно використати найближчим часом — часово-чутлива новина або вікно релізу."
+
+  - id: duplicate_risk
+    slug: duplicate-risk
+    type: editorial
+    label: Duplicate risk
+    parent: null
+    aliases: []
+    related_tags: []
+    description_en: "Possible duplicate — check against seen items before including."
+    description_uk: "Можливий дублікат — перевірити перед включенням."
+
+  - id: weak_source
+    slug: weak-source
+    type: editorial
+    label: Weak source
+    parent: null
+    aliases: []
+    related_tags: []
+    description_en: "Low-priority or unverified source — use with caution."
+    description_uk: "Джерело низького пріоритету або неперевірене — використовувати обережно."
+
+  # ===== NEGATIVE =====
+
+  - id: seo_listicle
+    slug: seo-listicle
+    type: negative
+    label: SEO listicle
+    parent: null
+    aliases:
+      - listicle
+      - top 10 list
+    related_tags: []
+    description_en: "Algorithmic listicle content with no real editorial value."
+    description_uk: "Алгоритмічний список-контент без реальної редакторської цінності."
+
+  - id: celebrity_gossip
+    slug: celebrity-gossip
+    type: negative
+    label: Celebrity gossip
+    parent: null
+    aliases:
+      - gossip
+    related_tags: []
+    description_en: "Celebrity gossip unrelated to the music itself."
+    description_uk: "Плітки про знаменитостей, не пов'язані з музикою."
+
+  - id: sports_surfing
+    slug: sports-surfing
+    type: negative
+    label: Sports surfing
+    parent: null
+    aliases:
+      - surfing sport
+      - ocean surfing
+    related_tags: []
+    description_en: "Sports or recreational ocean surfing — not music."
+    description_uk: "Спортивний або рекреаційний серфінг у океані — не музика."
+
+  - id: mainstream_pop_country
+    slug: mainstream-pop-country
+    type: negative
+    label: Mainstream pop country
+    parent: null
+    aliases:
+      - bro country
+      - pop country
+    related_tags: []
+    description_en: "Mainstream radio pop-country outside the coma.fm field."
+    description_uk: "Мейнстримний радіо поп-кантрі, що не входить в поле coma.fm."
+
+  - id: generic_blues_rock
+    slug: generic-blues-rock
+    type: negative
+    label: Generic blues rock
+    parent: null
+    aliases:
+      - arena blues
+    related_tags: []
+    description_en: "Generic stadium blues rock with no connection to roots blues traditions."
+    description_uk: "Загальний стадіонний блюз-рок без зв'язку з коренями традиції blues."
+
+  - id: press_release_only
+    slug: press-release-only
+    type: negative
+    label: Press release only
+    parent: null
+    aliases:
+      - pr copy
+    related_tags: []
+    description_en: "Content that is purely a press release with no editorial perspective."
+    description_uk: "Контент, що є лише прес-релізом без редакторської точки зору."
+
+  - id: country_as_nation
+    slug: country-as-nation
+    type: negative
+    label: Country as nation
+    parent: null
+    aliases:
+      - country code
+    related_tags: []
+    description_en: "Uses 'country' in the geographic/political sense, not the music genre."
+    description_uk: "Використовує 'country' у географічному/політичному сенсі, не музичному жанрі."
+
+  - id: ai_generated_spam
+    slug: ai-generated-spam
+    type: negative
+    label: AI generated spam
+    parent: null
+    aliases:
+      - ai content
+    related_tags: []
+    description_en: "Likely AI-generated filler content with no real signal value."
+    description_uk: "Ймовірно згенерований ШІ контент-наповнювач без реального сигналу."

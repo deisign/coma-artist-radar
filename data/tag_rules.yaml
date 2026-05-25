@@ -1,0 +1,529 @@
+# coma.fm Radar — tag matching rules
+# include patterns trigger the tag; exclude patterns veto the entire rule.
+# score: contribution to item score (positive or negative integer).
+# confidence: 0.0–1.0 certainty of keyword match.
+
+rules:
+
+  # ===== SURF SUBGENRES =====
+
+  - tag: instrumental_surf
+    include:
+      - "instrumental surf"
+      - "surf guitar"
+      - "twang guitar"
+      - "reverb guitar"
+      - "surf instrumental"
+      - "dick dale"
+    exclude:
+      - "surf forecast"
+      - "surfboard"
+      - "sports surfing"
+      - "ocean surfing"
+      - "surf school"
+      - "surfing competition"
+      - "surf report"
+    score: 25
+    confidence: 0.92
+
+  - tag: garage_surf
+    include:
+      - "garage surf"
+      - "surf punk"
+      - "fuzz surf"
+    exclude:
+      - "surf forecast"
+      - "surfboard"
+      - "sports surfing"
+    score: 22
+    confidence: 0.87
+
+  - tag: surf_revival
+    include:
+      - "surf revival"
+      - "neo surf"
+      - "modern surf music"
+    exclude:
+      - "surf forecast"
+      - "surfboard"
+    score: 20
+    confidence: 0.85
+
+  - tag: surf
+    include:
+      - "surf music"
+      - "surf rock"
+      - "surf band"
+      - "surf sound"
+      - "surf scene"
+      - "surf compilation"
+    exclude:
+      - "surf forecast"
+      - "surfboard"
+      - "sports surfing"
+      - "ocean surfing"
+      - "surfing competition"
+      - "surf report"
+      - "surf school"
+    score: 25
+    confidence: 0.88
+
+  # ===== PSYCHOBILLY / ROCKABILLY =====
+
+  - tag: psychobilly
+    include:
+      - "psychobilly"
+      - "horrorbilly"
+      - "punkabilly"
+      - "gothabilly"
+    exclude:
+      - "psychology"
+      - "psychological"
+    score: 30
+    confidence: 0.95
+
+  - tag: horrorbilly
+    include:
+      - "horrorbilly"
+      - "horror rockabilly"
+      - "zombie rock"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: punkabilly
+    include:
+      - "punkabilly"
+      - "punk rockabilly"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: gothabilly
+    include:
+      - "gothabilly"
+      - "goth rockabilly"
+    exclude: []
+    score: 22
+    confidence: 0.90
+
+  - tag: rockabilly
+    include:
+      - "rockabilly"
+      - "neo-rockabilly"
+      - "teddy boy"
+      - "cat music"
+      - "hillbilly bop"
+    exclude:
+      - "mainstream pop rock"
+    score: 25
+    confidence: 0.90
+
+  - tag: neo_rockabilly
+    include:
+      - "neo-rockabilly"
+      - "neo rockabilly"
+      - "modern rockabilly"
+    exclude: []
+    score: 22
+    confidence: 0.88
+
+  # ===== COUNTRY SUBGENRES =====
+
+  - tag: honky_tonk
+    include:
+      - "honky tonk"
+      - "honky-tonk"
+      - "honkytonk"
+    exclude:
+      - "honky tonk bar chain"
+    score: 25
+    confidence: 0.93
+
+  - tag: gothic_country
+    include:
+      - "gothic country"
+      - "goth country"
+      - "country gothic"
+      - "dark country"
+      - "dark americana"
+    exclude: []
+    score: 25
+    confidence: 0.92
+
+  - tag: outlaw_country
+    include:
+      - "outlaw country"
+    exclude: []
+    score: 22
+    confidence: 0.90
+
+  - tag: alt_country
+    include:
+      - "alt-country"
+      - "alternative country"
+      - "no depression"
+    exclude: []
+    score: 20
+    confidence: 0.88
+
+  - tag: country_noir
+    include:
+      - "country noir"
+      - "noir country"
+      - "western noir"
+    exclude: []
+    score: 22
+    confidence: 0.90
+
+  - tag: americana
+    include:
+      - "americana music"
+      - "roots americana"
+      - "ghost americana"
+      - "dark americana"
+    exclude:
+      - "mainstream country pop"
+    score: 20
+    confidence: 0.82
+
+  - tag: country
+    include:
+      - "country music"
+      - "alt-country"
+      - "outlaw country"
+      - "gothic country"
+      - "country noir"
+      - "honky tonk"
+    exclude:
+      - "mainstream country pop"
+      - "bro country"
+      - "country as nation"
+      - "country code"
+    score: 20
+    confidence: 0.82
+
+  # ===== JAZZ SUBGENRES =====
+
+  - tag: dark_jazz
+    include:
+      - "dark jazz"
+      - "noir jazz"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: jazz_noir
+    include:
+      - "jazz noir"
+      - "lounge noir"
+      - "crime jazz"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: lounge_jazz
+    include:
+      - "lounge jazz"
+      - "cocktail jazz"
+      - "easy listening jazz"
+    exclude:
+      - "smooth jazz pop"
+    score: 20
+    confidence: 0.85
+
+  - tag: jazz
+    include:
+      - "jazz album"
+      - "jazz record"
+      - "jazz band"
+      - "jazz ensemble"
+      - "jazz quartet"
+      - "jazz trio"
+      - "free jazz"
+      - "cool jazz"
+      - "bebop"
+      - "bossa nova"
+    exclude:
+      - "jazz hands"
+      - "smooth jazz pop"
+      - "adult contemporary jazz"
+    score: 20
+    confidence: 0.82
+
+  # ===== BLUES SUBGENRES =====
+
+  - tag: swamp_blues
+    include:
+      - "swamp blues"
+      - "bayou blues"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: jump_blues
+    include:
+      - "jump blues"
+      - "boogie woogie"
+      - "jump band"
+    exclude: []
+    score: 22
+    confidence: 0.88
+
+  - tag: delta_blues
+    include:
+      - "delta blues"
+      - "mississippi delta blues"
+    exclude: []
+    score: 25
+    confidence: 0.93
+
+  - tag: chicago_blues
+    include:
+      - "chicago blues"
+      - "electric chicago blues"
+    exclude: []
+    score: 22
+    confidence: 0.90
+
+  - tag: blues
+    include:
+      - "blues music"
+      - "blues album"
+      - "blues band"
+      - "electric blues"
+      - "primitive blues"
+    exclude:
+      - "blues rock radio"
+      - "corporate blues"
+    score: 20
+    confidence: 0.80
+
+  # ===== AESTHETIC =====
+
+  - tag: lacquer_and_graves
+    include:
+      - "psychobilly"
+      - "horrorbilly"
+      - "punkabilly"
+      - "lacquered quiff"
+      - "psychobilly wedge"
+      - "graveyard stomp"
+    exclude:
+      - "hair salon"
+      - "beauty salon"
+    score: 15
+    confidence: 0.75
+
+  - tag: graveyard_party
+    include:
+      - "graveyard"
+      - "zombie stomp"
+      - "graveyard stomp"
+      - "coffin rock"
+    exclude:
+      - "halloween decoration"
+    score: 15
+    confidence: 0.72
+
+  - tag: grease_and_reverb
+    include:
+      - "reverb guitar"
+      - "twang"
+      - "hot rod"
+      - "slap bass"
+      - "surf guitar"
+      - "rockabilly"
+    exclude: []
+    score: 12
+    confidence: 0.70
+
+  - tag: ghost_americana
+    include:
+      - "ghost americana"
+      - "dark americana"
+      - "haunted americana"
+    exclude: []
+    score: 18
+    confidence: 0.85
+
+  - tag: lounge_noir
+    include:
+      - "lounge noir"
+      - "film noir music"
+      - "cocktail noir"
+    exclude: []
+    score: 18
+    confidence: 0.83
+
+  - tag: dusty_vinyl
+    include:
+      - "vinyl reissue"
+      - "archive release"
+      - "rare recording"
+      - "vault recording"
+    exclude: []
+    score: 12
+    confidence: 0.65
+
+  - tag: retro_future
+    include:
+      - "space age pop"
+      - "exotica"
+      - "surf revival"
+      - "lounge revival"
+      - "atomic age"
+    exclude: []
+    score: 12
+    confidence: 0.68
+
+  # ===== CONTENT TYPE =====
+
+  - tag: reissue
+    include:
+      - "reissue"
+      - "remastered"
+      - "vinyl reissue"
+      - "re-release"
+      - "archive release"
+      - "back in print"
+    exclude: []
+    score: 15
+    confidence: 0.85
+
+  - tag: new_release
+    include:
+      - "new album"
+      - "new single"
+      - "new ep"
+      - "out now"
+      - "just released"
+      - "new release"
+    exclude: []
+    score: 15
+    confidence: 0.82
+
+  - tag: interview
+    include:
+      - "interview"
+      - "in conversation with"
+      - "talks to"
+      - "speaks about"
+    exclude:
+      - "job interview"
+    score: 15
+    confidence: 0.85
+
+  - tag: review
+    include:
+      - "album review"
+      - "record review"
+      - "track review"
+    exclude:
+      - "product review"
+      - "equipment review"
+    score: 12
+    confidence: 0.80
+
+  # ===== NEGATIVE =====
+
+  - tag: sports_surfing
+    include:
+      - "surf forecast"
+      - "surfboard"
+      - "surfing competition"
+      - "sports surfing"
+      - "ocean surfing"
+      - "surf report"
+      - "wave surfing"
+      - "surf school"
+    exclude:
+      - "surf guitar"
+      - "surf music"
+      - "surf band"
+      - "surf rock"
+      - "instrumental surf"
+      - "garage surf"
+    score: -30
+    confidence: 0.90
+
+  - tag: seo_listicle
+    include:
+      - "top 10"
+      - "top 5"
+      - "top ten"
+      - "10 best"
+      - "5 best"
+      - "listicle"
+      - "ranked list"
+    exclude: []
+    score: -25
+    confidence: 0.88
+
+  - tag: celebrity_gossip
+    include:
+      - "celebrity gossip"
+      - "leaked photos"
+      - "dating rumor"
+    exclude: []
+    score: -30
+    confidence: 0.90
+
+  - tag: mainstream_pop_country
+    include:
+      - "mainstream country pop"
+      - "bro country"
+      - "pop country radio"
+    exclude:
+      - "gothic country"
+      - "outlaw country"
+      - "alt-country"
+    score: -25
+    confidence: 0.85
+
+  - tag: generic_blues_rock
+    include:
+      - "blues rock radio"
+      - "arena blues"
+      - "stadium blues"
+    exclude:
+      - "swamp blues"
+      - "delta blues"
+      - "primitive blues"
+    score: -20
+    confidence: 0.80
+
+  - tag: press_release_only
+    include:
+      - "press release"
+      - "for immediate release"
+    exclude:
+      - "interview"
+      - "review"
+    score: -15
+    confidence: 0.75
+
+  - tag: country_as_nation
+    include:
+      - "country code"
+      - "a foreign country"
+      - "developing country"
+      - "country's economy"
+      - "country's government"
+    exclude:
+      - "country music"
+      - "country noir"
+      - "gothic country"
+      - "honky tonk"
+    score: -20
+    confidence: 0.75
+
+  - tag: ai_generated_spam
+    include:
+      - "ai generated content"
+      - "written by ai"
+      - "machine generated"
+      - "ai content farm"
+    exclude: []
+    score: -35
+    confidence: 0.88

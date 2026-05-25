@@ -1,0 +1,203 @@
+# coma.fm Radar — core genre map
+# Music tags are not translated. International terms only.
+
+jazz:
+  core_tags:
+    - jazz
+    - dark jazz
+    - jazz noir
+    - lounge jazz
+    - free jazz
+    - cool jazz
+    - bebop
+    - bossa nova
+    - noir jazz
+    - crime jazz
+  adjacent_tags:
+    - noir
+    - lounge
+    - post-bop
+    - chamber jazz
+    - cinematic jazz
+    - modal jazz
+  negative_tags:
+    - jazz hands
+    - smooth jazz pop
+    - adult contemporary jazz
+    - jazzy pop
+  search_phrases:
+    - '"dark jazz" new album'
+    - '"jazz noir" review'
+    - '"free jazz" bandcamp'
+    - '"lounge jazz" reissue'
+  aesthetic_tags:
+    - lounge_noir
+    - midnight_drive
+    - bad_radio_signal
+
+blues:
+  core_tags:
+    - blues
+    - swamp blues
+    - jump blues
+    - electric blues
+    - delta blues
+    - country blues
+    - chicago blues
+    - hill country blues
+    - primitive blues
+    - juke joint blues
+  adjacent_tags:
+    - r&b
+    - soul blues
+    - garage blues
+    - boogie woogie
+    - piedmont blues
+    - juke joint
+  negative_tags:
+    - blues rock radio
+    - corporate blues
+    - mainstream blues festival
+  search_phrases:
+    - '"swamp blues" bandcamp'
+    - '"delta blues" reissue'
+    - '"electric blues" review'
+    - '"primitive blues" release'
+  aesthetic_tags:
+    - dusty_vinyl
+    - bad_radio_signal
+    - ghost_americana
+
+country:
+  core_tags:
+    - country
+    - honky tonk
+    - gothic country
+    - country noir
+    - alt-country
+    - outlaw country
+    - americana
+    - ghost americana
+    - western noir
+    - murder ballad
+  adjacent_tags:
+    - folk noir
+    - cowpunk
+    - country rock
+    - neo-traditional country
+    - dark folk
+    - appalachian noir
+  negative_tags:
+    - mainstream country pop
+    - bro country
+    - country as nation
+    - country music awards mainstream
+  search_phrases:
+    - '"honky tonk" new release'
+    - '"gothic country" bandcamp'
+    - '"outlaw country" review'
+    - '"americana" "dark" release'
+  aesthetic_tags:
+    - ghost_americana
+    - dusty_vinyl
+    - midnight_drive
+
+rockabilly:
+  core_tags:
+    - rockabilly
+    - neo-rockabilly
+    - teddy boy
+    - cat music
+    - hillbilly bop
+    - western swing
+    - slap bass rockabilly
+  adjacent_tags:
+    - garage rock
+    - early rock and roll
+    - jump blues
+    - hot rod music
+    - roots rock
+    - creeper stomp
+  negative_tags:
+    - mainstream pop rock
+    - classic rock radio
+  search_phrases:
+    - '"rockabilly" new release'
+    - '"neo-rockabilly" bandcamp'
+    - '"teddy boy" music review'
+    - '"western swing" reissue'
+  aesthetic_tags:
+    - grease_and_reverb
+    - dusty_vinyl
+    - retro_future
+
+psychobilly:
+  core_tags:
+    - psychobilly
+    - horrorbilly
+    - punkabilly
+    - gothabilly
+    - devilbilly
+    - zombie stomp
+    - trash rock psychobilly
+  adjacent_tags:
+    - horror punk
+    - deathrock
+    - garage punk
+    - surf punk
+    - trash rock
+    - creep rock
+  negative_tags:
+    - psychology
+    - billy idol gossip
+    - psychological thriller pop
+    - psycho pop music
+  search_phrases:
+    - '"psychobilly" "new album"'
+    - '"psychobilly" review'
+    - '"horrorbilly" bandcamp'
+    - '"punkabilly" release'
+  aesthetic_tags:
+    - lacquer_and_graves
+    - graveyard_party
+
+surf:
+  core_tags:
+    - surf
+    - instrumental surf
+    - surf guitar
+    - surf music
+    - garage surf
+    - surf rock
+    - surf revival
+    - reverb guitar
+    - twang guitar
+    - dick dale style
+    - frat surf
+  adjacent_tags:
+    - spy music
+    - spaghetti western
+    - exotica
+    - hot rod music
+    - frat rock
+    - space age pop
+    - lounge exotica
+  negative_tags:
+    - surf forecast
+    - surfboard
+    - surfing competition
+    - sports surfing
+    - beach volleyball
+    - wave surfing
+    - surf report
+    - ocean surfing
+    - surf school
+  search_phrases:
+    - '"surf guitar" bandcamp'
+    - '"instrumental surf" review'
+    - '"garage surf" new release'
+    - '"surf music" reissue'
+  aesthetic_tags:
+    - grease_and_reverb
+    - retro_future
+    - bad_radio_signal

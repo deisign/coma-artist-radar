@@ -5,6 +5,7 @@ Usage:
     python3 scripts/build_tag_pages.py
     python3 scripts/build_tag_pages.py --lang uk
     python3 scripts/build_tag_pages.py --dry-run
+    python3 scripts/build_tag_pages.py --base-path /coma-artist-radar
     python3 scripts/build_tag_pages.py --content-dir content/issues --dist-dir dist
 """
 from __future__ import annotations
@@ -25,6 +26,16 @@ DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
 DEFAULT_REPORT = _REPO_ROOT / "reports" / "tag_pages_report.csv"
 DEFAULT_TAG_TEMPLATE = _REPO_ROOT / "templates" / "tag_page.html.j2"
 DEFAULT_INDEX_TEMPLATE = _REPO_ROOT / "templates" / "tags_index.html.j2"
+
+
+def normalize_base_path(path: str) -> str:
+    """Normalize base_path: '' or '/' -> '', 'foo' -> '/foo', '/foo/' -> '/foo'."""
+    path = path.strip()
+    if not path or path == "/":
+        return ""
+    if not path.startswith("/"):
+        path = "/" + path
+    return path.rstrip("/")
 
 _LOCALE: dict[str, dict] = {
     "en": {
@@ -144,6 +155,7 @@ def _build_tag_page(
     template_src: str,
     dist_dir: Path,
     dry_run: bool,
+    base_path: str = "",
 ) -> tuple[int, dict]:
     """Build one tag page. Returns (pages_written, report_row)."""
     tid = tag["id"]
@@ -161,7 +173,7 @@ def _build_tag_page(
                 "id": rtid,
                 "slug": rslug,
                 "label": rt["label"],
-                "href": f"/{lng}/tags/{rslug}.html",
+                "href": f"{base_path}/{lng}/tags/{rslug}.html",
             })
 
     items_ctx = [
@@ -173,7 +185,7 @@ def _build_tag_page(
             "matched_artists": e["item"].get("matched_artists", ""),
             "published_at": e["item"].get("published_at", ""),
             "issue_date": e["issue_date"],
-            "issue_href": f"/{lng}/issues/{e['issue_date']}.html",
+            "issue_href": f"{base_path}/{lng}/issues/{e['issue_date']}.html",
         }
         for e in sorted(entries, key=lambda x: x["issue_date"], reverse=True)
     ]
@@ -189,6 +201,9 @@ def _build_tag_page(
         "items": items_ctx,
         "no_items_message": locale["no_items"],
         "back_to_index": locale["back_to_index"],
+        "back_href": f"{base_path}/{lng}/tags/index.html",
+        "nav_en_href": f"{base_path}/en/tags/index.html",
+        "nav_uk_href": f"{base_path}/uk/tags/index.html",
         "items_heading": locale["items_heading"],
         "related_heading": locale["related_heading"],
     }
@@ -232,6 +247,7 @@ def _build_index_page(
     template_src: str,
     dist_dir: Path,
     dry_run: bool,
+    base_path: str = "",
 ) -> tuple[int, dict]:
     """Build the tag index page. Returns (pages_written, report_row)."""
     groups = []
@@ -249,7 +265,7 @@ def _build_index_page(
                 "label": t["label"],
                 "description": t.get(f"description_{lng}") or t.get("description_en", ""),
                 "count": len(tag_index.get(ttid, [])),
-                "href": f"/{lng}/tags/{tslug}.html",
+                "href": f"{base_path}/{lng}/tags/{tslug}.html",
             })
         groups.append({
             "type_id": ttype,
@@ -261,6 +277,8 @@ def _build_index_page(
         "lang": lng,
         "site_heading": locale["site_heading"],
         "heading": locale["tag_index_heading"],
+        "nav_en_href": f"{base_path}/en/tags/index.html",
+        "nav_uk_href": f"{base_path}/uk/tags/index.html",
         "groups": groups,
     }
 
@@ -307,8 +325,10 @@ def build_tag_pages(
     report_path: Path = DEFAULT_REPORT,
     tag_template_path: Path = DEFAULT_TAG_TEMPLATE,
     index_template_path: Path = DEFAULT_INDEX_TEMPLATE,
+    base_path: str = "",
 ) -> dict:
     """Build tag pages for all requested languages. Returns summary dict."""
+    base_path = normalize_base_path(base_path)
     tags = load_tags(tags_path)
     tag_map = {t["id"]: t for t in tags}
     languages = [lang] if lang else ["en", "uk"]
@@ -337,6 +357,7 @@ def build_tag_pages(
             written, row = _build_tag_page(
                 tag, tag_map, tag_index, lng, locale,
                 tag_template_src, dist_dir, dry_run,
+                base_path=base_path,
             )
             pages_written += written
             report_rows.append(row)
@@ -361,6 +382,7 @@ def build_tag_pages(
         written, idx_row = _build_index_page(
             tags, tag_index, lng, locale,
             index_template_src, dist_dir, dry_run,
+            base_path=base_path,
         )
         pages_written += written
         report_rows.append(idx_row)
@@ -405,6 +427,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--report", type=Path, default=DEFAULT_REPORT)
     parser.add_argument("--dry-run", action="store_true",
                         help="Parse and render without writing files")
+    parser.add_argument("--base-path", default="", dest="base_path",
+                        help="Base path prefix for internal links, e.g. /coma-artist-radar")
     return parser.parse_args(argv)
 
 
@@ -417,6 +441,7 @@ def main(argv: list[str] | None = None) -> int:
         lang=args.lang,
         dry_run=args.dry_run,
         report_path=args.report,
+        base_path=args.base_path,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0

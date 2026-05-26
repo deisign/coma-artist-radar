@@ -70,10 +70,10 @@
 <div class="container">
   <header>
     <nav>
-      <a href="/en/tags/index.html" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="/uk/tags/index.html" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
     </nav>
-    <a class="back" href="/{{ lang }}/tags/index.html">{{ back_to_index }}</a>
+    <a class="back" href="{{ back_href }}">{{ back_to_index }}</a>
     <h1>{{ tag_label }}</h1>
     {% if tag_type %}
     <p class="tag-type">{{ tag_type }}</p>

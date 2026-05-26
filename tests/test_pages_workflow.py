@@ -70,3 +70,11 @@ def test_workflow_deploy_needs_build():
 
 def test_workflow_uses_ubuntu():
     assert "ubuntu-latest" in _content()
+
+
+def test_workflow_has_github_pages_base_url():
+    assert "https://deisign.github.io/coma-artist-radar" in _content()
+
+
+def test_workflow_has_base_path():
+    assert "--base-path /coma-artist-radar" in _content()

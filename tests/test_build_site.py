@@ -48,6 +48,7 @@ def _run(tmp_path: Path, **kwargs) -> dict:
         dist_dir=tmp_path / "dist",
         templates_dir=_TEMPLATES_DIR,
         base_url=kwargs.pop("base_url", "https://radar.coma.fm"),
+        base_path=kwargs.pop("base_path", ""),
         dry_run=kwargs.pop("dry_run", False),
     )
 
@@ -357,3 +358,81 @@ def test_multiple_issues_in_sitemap(tmp_path):
     content = (tmp_path / "dist" / "sitemap.xml").read_text(encoding="utf-8")
     assert "/en/issues/2026-01-15.html" in content
     assert "/en/issues/2026-01-22.html" in content
+
+
+# ---------------------------------------------------------------------------
+# Stage 12: base_path support
+# ---------------------------------------------------------------------------
+
+_GITHUB_BASE_URL = "https://deisign.github.io/coma-artist-radar"
+_GITHUB_BASE_PATH = "/coma-artist-radar"
+
+
+def test_project_base_path_in_en_index(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/uk/index.html" in content
+
+
+def test_project_base_path_in_uk_index(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "uk" / "index.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/en/index.html" in content
+
+
+def test_project_base_path_in_root_index(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "index.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/en/index.html" in content
+    assert "/coma-artist-radar/uk/index.html" in content
+
+
+def test_custom_domain_no_base_path_in_index(tmp_path):
+    _run(tmp_path, base_path="")
+    content = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar" not in content
+
+
+def test_project_sitemap_contains_github_pages_url(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "sitemap.xml").read_text(encoding="utf-8")
+    assert "https://deisign.github.io/coma-artist-radar/en/index.html" in content
+
+
+def test_root_index_no_bare_path_in_project_mode(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "index.html").read_text(encoding="utf-8")
+    assert 'href="/uk/index.html"' not in content
+    assert 'href="/en/index.html"' not in content
+
+
+def test_project_archive_has_base_path(tmp_path):
+    _run(tmp_path, base_url=_GITHUB_BASE_URL, base_path=_GITHUB_BASE_PATH)
+    content = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/uk/archive.html" in content
+
+
+def test_base_path_normalization_no_slash(tmp_path):
+    summary = _run(tmp_path, base_path="coma-artist-radar")
+    assert summary["base_path"] == "/coma-artist-radar"
+
+
+def test_base_path_normalization_trailing_slash(tmp_path):
+    summary = _run(tmp_path, base_path="/coma-artist-radar/")
+    assert summary["base_path"] == "/coma-artist-radar"
+
+
+def test_base_path_empty_string(tmp_path):
+    summary = _run(tmp_path, base_path="")
+    assert summary["base_path"] == ""
+
+
+def test_base_path_root_slash(tmp_path):
+    summary = _run(tmp_path, base_path="/")
+    assert summary["base_path"] == ""
+
+
+def test_summary_has_base_path_key(tmp_path):
+    summary = _run(tmp_path, base_path=_GITHUB_BASE_PATH)
+    assert "base_path" in summary
+    assert summary["base_path"] == _GITHUB_BASE_PATH

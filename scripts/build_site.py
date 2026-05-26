@@ -5,6 +5,7 @@ Usage:
     python3 scripts/build_site.py --dry-run
     python3 scripts/build_site.py
     python3 scripts/build_site.py --base-url https://radar.coma.fm
+    python3 scripts/build_site.py --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar
     python3 scripts/build_site.py --content-dir content/issues --dist-dir dist
 """
 from __future__ import annotations
@@ -66,6 +67,16 @@ _LOCALE: dict[str, dict[str, str]] = {
 # Helpers
 # ---------------------------------------------------------------------------
 
+def normalize_base_path(path: str) -> str:
+    """Normalize base_path: '' or '/' -> '', 'foo' -> '/foo', '/foo/' -> '/foo'."""
+    path = path.strip()
+    if not path or path == "/":
+        return ""
+    if not path.startswith("/"):
+        path = "/" + path
+    return path.rstrip("/")
+
+
 def _render(template_path: Path, ctx: dict) -> str:
     from scripts.build_issue import _J2Renderer
     src = template_path.read_text(encoding="utf-8")
@@ -121,14 +132,14 @@ def load_content_issues(content_dir: Path) -> dict[str, list[dict]]:
     return result
 
 
-def _issue_rows(issues: list[dict], lang: str) -> list[dict]:
+def _issue_rows(issues: list[dict], lang: str, base_path: str = "") -> list[dict]:
     return [
         {
             "date": iss.get("issue_date", ""),
             "title": f"coma.fm Radar — {iss.get('issue_date', '')}",
             "item_count": iss.get("total_items", 0),
             "status": "draft" if iss.get("draft") else "published",
-            "href": f"/{lang}/issues/{iss.get('issue_date', '')}.html",
+            "href": f"{base_path}/{lang}/issues/{iss.get('issue_date', '')}.html",
             "draft": bool(iss.get("draft", False)),
         }
         for iss in issues
@@ -139,7 +150,13 @@ def _issue_rows(issues: list[dict], lang: str) -> list[dict]:
 # Page builders
 # ---------------------------------------------------------------------------
 
-def _build_root_index(dist_dir: Path, dry_run: bool) -> tuple[int, list[str]]:
+def _build_root_index(
+    dist_dir: Path,
+    base_path: str,
+    dry_run: bool,
+) -> tuple[int, list[str]]:
+    en_href = f"{base_path}/en/index.html"
+    uk_href = f"{base_path}/uk/index.html"
     content = (
         "<!DOCTYPE html>\n"
         "<html>\n"
@@ -166,8 +183,8 @@ def _build_root_index(dist_dir: Path, dry_run: bool) -> tuple[int, list[str]]:
         "  <h1>coma.fm Radar</h1>\n"
         "  <p>A weekly digest of music from the coma.fm field.</p>\n"
         "  <div class=\"langs\">\n"
-        "    <a href=\"/en/index.html\">EN</a>\n"
-        "    <a href=\"/uk/index.html\">UK</a>\n"
+        f"    <a href=\"{en_href}\">EN</a>\n"
+        f"    <a href=\"{uk_href}\">UK</a>\n"
         "  </div>\n"
         "</div>\n"
         "</body>\n"
@@ -183,6 +200,7 @@ def _build_lang_index(
     lang: str,
     dist_dir: Path,
     templates_dir: Path,
+    base_path: str,
     dry_run: bool,
 ) -> tuple[int, list[str]]:
     locale = _LOCALE[lang]
@@ -192,14 +210,16 @@ def _build_lang_index(
         "title": locale["title"],
         "description": locale["description"],
         "latest_issues_heading": locale["latest_issues_heading"],
-        "archive_href": f"/{lang}/archive.html",
+        "nav_en_href": f"{base_path}/en/index.html",
+        "nav_uk_href": f"{base_path}/uk/index.html",
+        "archive_href": f"{base_path}/{lang}/archive.html",
         "archive_label": locale["archive_label"],
-        "tags_href": f"/{lang}/tags/index.html",
+        "tags_href": f"{base_path}/{lang}/tags/index.html",
         "tags_label": locale["tags_label"],
         "no_issues_msg": locale["no_issues"],
         "other_lang": other.upper(),
-        "other_lang_href": f"/{other}/index.html",
-        "issues": _issue_rows(issues[:_INDEX_ISSUES_MAX], lang),
+        "other_lang_href": f"{base_path}/{other}/index.html",
+        "issues": _issue_rows(issues[:_INDEX_ISSUES_MAX], lang, base_path),
     }
     content = _render(templates_dir / "index.html.j2", ctx)
     out_path = dist_dir / lang / "index.html"
@@ -212,6 +232,7 @@ def _build_archive(
     lang: str,
     dist_dir: Path,
     templates_dir: Path,
+    base_path: str,
     dry_run: bool,
 ) -> tuple[int, list[str]]:
     locale = _LOCALE[lang]
@@ -220,15 +241,17 @@ def _build_archive(
         "lang": lang,
         "title": locale["archive_title"],
         "heading": locale["archive_heading"],
-        "back_href": f"/{lang}/index.html",
+        "nav_en_href": f"{base_path}/en/archive.html",
+        "nav_uk_href": f"{base_path}/uk/archive.html",
+        "back_href": f"{base_path}/{lang}/index.html",
         "back_label": locale["back_label"],
         "no_issues_msg": locale["no_archive_issues"],
         "other_lang": other.upper(),
-        "other_lang_href": f"/{other}/archive.html",
+        "other_lang_href": f"{base_path}/{other}/archive.html",
         "items_label": locale["items_label"],
         "status_draft": locale["status_draft"],
         "status_published": locale["status_published"],
-        "issues": _issue_rows(issues, lang),
+        "issues": _issue_rows(issues, lang, base_path),
     }
     content = _render(templates_dir / "archive.html.j2", ctx)
     out_path = dist_dir / lang / "archive.html"
@@ -343,9 +366,11 @@ def build_site(
     dist_dir: Path = DEFAULT_DIST_DIR,
     templates_dir: Path = DEFAULT_TEMPLATES_DIR,
     base_url: str = DEFAULT_BASE_URL,
+    base_path: str = "",
     dry_run: bool = False,
 ) -> dict:
     """Build full static site. Returns summary dict."""
+    base_path = normalize_base_path(base_path)
     issues_by_lang = load_content_issues(content_dir)
 
     all_dates: set[str] = set()
@@ -358,18 +383,18 @@ def build_site(
     pages_written = 0
     output_files: list[str] = []
 
-    w, fs = _build_root_index(dist_dir, dry_run)
+    w, fs = _build_root_index(dist_dir, base_path, dry_run)
     pages_written += w
     output_files.extend(fs)
 
     for lang in ("en", "uk"):
         issues = issues_by_lang.get(lang, [])
 
-        w, fs = _build_lang_index(issues, lang, dist_dir, templates_dir, dry_run)
+        w, fs = _build_lang_index(issues, lang, dist_dir, templates_dir, base_path, dry_run)
         pages_written += w
         output_files.extend(fs)
 
-        w, fs = _build_archive(issues, lang, dist_dir, templates_dir, dry_run)
+        w, fs = _build_archive(issues, lang, dist_dir, templates_dir, base_path, dry_run)
         pages_written += w
         output_files.extend(fs)
 
@@ -390,6 +415,7 @@ def build_site(
         "pages_written": pages_written,
         "output_files": output_files,
         "base_url": base_url,
+        "base_path": base_path,
         "dry_run": dry_run,
     }
 
@@ -416,6 +442,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Base URL for the site (default: https://radar.coma.fm)",
     )
     parser.add_argument(
+        "--base-path", default="", dest="base_path",
+        help="Base path prefix for internal links, e.g. /coma-artist-radar",
+    )
+    parser.add_argument(
         "--dry-run", action="store_true", dest="dry_run",
         help="Parse and render without writing files",
     )
@@ -429,6 +459,7 @@ def main(argv: list[str] | None = None) -> int:
         dist_dir=args.dist_dir,
         templates_dir=args.templates_dir,
         base_url=args.base_url,
+        base_path=args.base_path,
         dry_run=args.dry_run,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))

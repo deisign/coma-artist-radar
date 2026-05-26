@@ -29,6 +29,16 @@ DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
 DEFAULT_MIN_SCORE = 30
 DEFAULT_LIMIT = 50
 
+def normalize_base_path(path: str) -> str:
+    """Normalize base_path: '' or '/' -> '', 'foo' -> '/foo', '/foo/' -> '/foo'."""
+    path = path.strip()
+    if not path or path == "/":
+        return ""
+    if not path.startswith("/"):
+        path = "/" + path
+    return path.rstrip("/")
+
+
 _LOCALE: dict[str, dict[str, str]] = {
     "en": {
         "heading": "coma.fm Radar",
@@ -264,7 +274,9 @@ def render_html(
     lang: str,
     draft: bool,
     template_path: Path = DEFAULT_TEMPLATE,
+    base_path: str = "",
 ) -> str:
+    base_path = normalize_base_path(base_path)
     locale = _LOCALE.get(lang, _LOCALE["en"])
     ctx = {
         "lang": lang,
@@ -277,6 +289,9 @@ def render_html(
         "draft": draft,
         "draft_notice": locale["draft_notice"],
         "items": items,
+        "nav_en_href": f"{base_path}/en/issues/{issue_date}.html",
+        "nav_uk_href": f"{base_path}/uk/issues/{issue_date}.html",
+        "tag_href_prefix": f"{base_path}/{lang}/tags",
     }
     template_src = template_path.read_text(encoding="utf-8")
     return _J2Renderer().render(template_src, ctx)
@@ -297,6 +312,7 @@ def build_issue(
     tags_path: Path = DEFAULT_TAGS,
     content_dir: Path = DEFAULT_CONTENT_DIR,
     dist_dir: Path = DEFAULT_DIST_DIR,
+    base_path: str = "",
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -315,7 +331,7 @@ def build_issue(
         html_dir = dist_dir / lng / "issues"
         html_dir.mkdir(parents=True, exist_ok=True)
         html_path = html_dir / f"{issue_date}.html"
-        html_content = render_html(items, issue_date, lng, draft, template_path)
+        html_content = render_html(items, issue_date, lng, draft, template_path, base_path)
         html_path.write_text(html_content, encoding="utf-8")
         try:
             output_files.append(str(html_path.relative_to(_REPO_ROOT)))
@@ -386,6 +402,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--draft", action="store_true",
                         help="Mark output as draft")
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
+    parser.add_argument("--base-path", default="", dest="base_path",
+                        help="Base path prefix for internal links, e.g. /coma-artist-radar")
     return parser.parse_args(argv)
 
 
@@ -404,6 +422,7 @@ def main(argv: list[str] | None = None) -> int:
         min_score=args.min_score,
         draft=args.draft,
         template_path=args.template,
+        base_path=args.base_path,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0

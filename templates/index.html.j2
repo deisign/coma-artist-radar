@@ -60,8 +60,8 @@
 <div class="container">
   <header>
     <nav>
-      <a href="/en/index.html" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="/uk/index.html" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
     </nav>
     <h1>{{ title }}</h1>
     <p class="tagline">{{ description }}</p>

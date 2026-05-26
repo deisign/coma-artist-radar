@@ -401,3 +401,52 @@ def test_summary_issue_date_matches(tmp_path):
     summary = _run_build(tmp_path, db_path=db_path, issue_date="2026-05-25")
 
     assert summary["issue_date"] == "2026-05-25"
+
+
+# ---------------------------------------------------------------------------
+# Stage 12: base_path support
+# ---------------------------------------------------------------------------
+
+_GITHUB_BASE_PATH = "/coma-artist-radar"
+
+
+def test_project_base_path_in_issue_nav(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+
+    _run_build(tmp_path, db_path=db_path, lang="en", base_path=_GITHUB_BASE_PATH)
+
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/en/issues/2026-01-01.html" in content
+    assert "/coma-artist-radar/uk/issues/2026-01-01.html" in content
+
+
+def test_custom_domain_no_base_path_in_issue(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+
+    _run_build(tmp_path, db_path=db_path, lang="en", base_path="")
+
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar" not in content
+
+
+def test_project_base_path_no_bare_nav_links(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+
+    _run_build(tmp_path, db_path=db_path, lang="en", base_path=_GITHUB_BASE_PATH)
+
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert 'href="/en/issues/' not in content
+    assert 'href="/uk/issues/' not in content
+
+
+def test_project_base_path_in_tag_links(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, matched_tags="country", score=50)
+
+    _run_build(tmp_path, db_path=db_path, lang="en", base_path=_GITHUB_BASE_PATH)
+
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert 'href="/coma-artist-radar/en/tags/country.html"' in content

@@ -37,8 +37,8 @@ jobs:
 
       - name: Build static site
         run: |
-          python scripts/build_site.py --base-url https://radar.coma.fm
-          python scripts/build_tag_pages.py
+          python scripts/build_site.py --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar
+          python scripts/build_tag_pages.py --base-path /coma-artist-radar
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

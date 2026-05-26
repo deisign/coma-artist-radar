@@ -515,6 +515,12 @@ python3 scripts/build_issue.py --date 2026-05-25 --limit 50 --min-score 30
 python3 scripts/build_issue.py --date 2026-05-25 --draft --min-score 40 --limit 20
 ```
 
+### Build for GitHub Pages project site
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-25 --draft --limit 10 --base-path /coma-artist-radar
+```
+
 ### Output files
 
 ```text
@@ -719,6 +725,66 @@ In **Settings → Pages**, set the source to **GitHub Actions** (not a branch). 
 
 - Deployed site: `https://radar.coma.fm` (or `https://<owner>.github.io/<repo>` if custom domain is not configured)
 - Workflow runs: **Actions** tab → **Deploy coma.fm Radar to GitHub Pages**
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
+## Stage 12 — Base path support for GitHub Pages project site
+
+### Temporary GitHub Pages URL
+
+While the custom domain is not connected, the site deploys at:
+
+```
+https://deisign.github.io/coma-artist-radar/
+```
+
+### Why --base-path is needed
+
+GitHub project pages are served under a sub-path (`/coma-artist-radar/`), not the root. Without `--base-path`, all internal links like `/en/index.html` resolve to `https://deisign.github.io/en/index.html`, which is wrong.
+
+With `--base-path /coma-artist-radar`, all internal links are prefixed correctly:
+
+```
+/coma-artist-radar/en/index.html
+/coma-artist-radar/uk/index.html
+/coma-artist-radar/en/issues/YYYY-MM-DD.html
+```
+
+### Build for the project site
+
+```bash
+python3 scripts/build_site.py \
+  --base-url https://deisign.github.io/coma-artist-radar \
+  --base-path /coma-artist-radar
+
+python3 scripts/build_tag_pages.py --base-path /coma-artist-radar
+
+python3 scripts/build_issue.py --date 2026-05-25 --draft --limit 10 --base-path /coma-artist-radar
+```
+
+### Build for a custom domain (no base-path needed)
+
+```bash
+python3 scripts/build_site.py --base-url https://radar.coma.fm
+python3 scripts/build_tag_pages.py
+```
+
+When the custom domain `radar.coma.fm` is connected, remove `--base-path` from the workflow and set `--base-url https://radar.coma.fm`.
+
+### base-path normalization rules
+
+```
+""                    →  ""                    (no prefix)
+"/"                   →  ""                    (no prefix)
+"coma-artist-radar"   →  "/coma-artist-radar"
+"/coma-artist-radar/" →  "/coma-artist-radar"
+```
 
 ### Run tests
 

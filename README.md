@@ -621,6 +621,78 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 10 — Static site for GitHub Pages
+
+### Build the site (dry-run, no files written)
+
+```bash
+python3 scripts/build_site.py --dry-run
+```
+
+### Build the site (writes to dist/)
+
+```bash
+python3 scripts/build_site.py
+```
+
+### Specify a custom base URL
+
+```bash
+python3 scripts/build_site.py --base-url https://radar.coma.fm
+```
+
+### Output files
+
+```text
+dist/index.html           — language chooser landing page
+dist/en/index.html        — EN homepage (latest issues)
+dist/uk/index.html        — UK homepage (latest issues)
+dist/en/archive.html      — EN issue archive
+dist/uk/archive.html      — UK issue archive
+dist/robots.txt           — robots.txt
+dist/sitemap.xml          — sitemap (issues + tag pages)
+dist/feed.xml             — RSS feed (latest EN issues)
+```
+
+`dist/` is not committed to git.
+
+### Verify outputs
+
+```bash
+# Check robots.txt has Sitemap directive
+grep Sitemap dist/robots.txt
+
+# Check sitemap contains issue URLs
+grep issues dist/sitemap.xml
+
+# Check feed is valid XML
+python3 -c "import xml.etree.ElementTree as ET; ET.parse('dist/feed.xml'); print('OK')"
+```
+
+### Output JSON summary fields
+
+```text
+issues_total    unique issue dates found in content/issues/
+pages_written   number of files written
+output_files    list of written file paths
+base_url        base URL used for links
+dry_run         true if --dry-run was passed
+```
+
+### Custom content and output dirs
+
+```bash
+python3 scripts/build_site.py --content-dir content/issues --dist-dir dist
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

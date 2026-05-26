@@ -26,6 +26,7 @@ from scripts.score_items import score_items
 from scripts.build_issue import build_issue, normalize_base_path
 from scripts.build_tag_pages import build_tag_pages
 from scripts.build_site import build_site
+from scripts.validate_issue_content import validate_content
 
 DEFAULT_DB = _REPO_ROOT / "data" / "coma_radar.sqlite"
 DEFAULT_SOURCES = _REPO_ROOT / "data" / "sources_music.yaml"
@@ -46,6 +47,7 @@ def run_pipeline(
     base_url: str = DEFAULT_BASE_URL,
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
+    validate: bool = False,
     db_path: Path = DEFAULT_DB,
     sources_path: Path = DEFAULT_SOURCES,
     inbox_path: Path = DEFAULT_INBOX,
@@ -125,6 +127,15 @@ def run_pipeline(
         f"{base}/uk/index.html",
     ]
 
+    # Step 8: Optional quality validation
+    validation_summary: dict | None = None
+    if validate:
+        validation_summary = validate_content(
+            content_dir=content_dir,
+            date=date,
+            min_score=min_score,
+        )
+
     return {
         "date": date,
         "fetch_summary": fetch_summary,
@@ -132,6 +143,7 @@ def run_pipeline(
         "issue_summary": issue_summary,
         "site_summary": site_summary,
         "output_urls": output_urls,
+        "validation_summary": validation_summary,
         "dry_run": dry_run,
     }
 
@@ -172,6 +184,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--dry-run", action="store_true", dest="dry_run",
         help="Fetch and score but do not write HTML files or modify DB",
     )
+    parser.add_argument(
+        "--validate", action="store_true", dest="validate",
+        help="Run quality gate on built issue content; exit 1 if validation fails",
+    )
     return parser.parse_args(argv)
 
 
@@ -186,8 +202,12 @@ def main(argv: list[str] | None = None) -> int:
         base_url=args.base_url,
         base_path=args.base_path,
         dry_run=args.dry_run,
+        validate=args.validate,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
+    vsummary = summary.get("validation_summary")
+    if vsummary and not vsummary.get("ok", True):
+        return 1
     return 0
 
 

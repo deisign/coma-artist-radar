@@ -201,8 +201,14 @@ def test_summary_has_required_keys(monkeypatch, tmp_path):
     _patch_all(monkeypatch)
     summary = run_pipeline(**_base_kwargs(tmp_path))
     for key in ("date", "fetch_summary", "score_summary", "issue_summary",
-                "site_summary", "output_urls", "dry_run"):
+                "site_summary", "output_urls", "validation_summary", "dry_run"):
         assert key in summary, f"Missing key: {key}"
+
+
+def test_validation_summary_none_without_flag(monkeypatch, tmp_path):
+    _patch_all(monkeypatch)
+    summary = run_pipeline(**_base_kwargs(tmp_path))
+    assert summary["validation_summary"] is None
 
 
 def test_summary_date_matches(monkeypatch, tmp_path):
@@ -336,3 +342,58 @@ def test_no_inbox_import_submissions_not_called(monkeypatch, tmp_path):
     monkeypatch.setattr("scripts.build_daily_draft.import_submissions", import_mock)
     run_pipeline(**_base_kwargs(tmp_path))
     import_mock.assert_not_called()
+
+
+# ---------------------------------------------------------------------------
+# --validate integration
+# ---------------------------------------------------------------------------
+
+_VALIDATION_SUMMARY_OK = {
+    "issues_checked": 2, "errors": 0, "warnings": 0,
+    "ok": True, "report_path": "reports/issue_quality_report.csv",
+}
+_VALIDATION_SUMMARY_FAIL = {
+    "issues_checked": 2, "errors": 3, "warnings": 1,
+    "ok": False, "report_path": "reports/issue_quality_report.csv",
+}
+
+
+def _patch_all_with_validate(monkeypatch, validation_rv: dict) -> dict:
+    mocks = _patch_all(monkeypatch)
+    vm = MagicMock(return_value=validation_rv)
+    monkeypatch.setattr("scripts.build_daily_draft.validate_content", vm)
+    mocks["validate_content"] = vm
+    return mocks
+
+
+def test_validate_flag_calls_validate_content(monkeypatch, tmp_path):
+    mocks = _patch_all_with_validate(monkeypatch, _VALIDATION_SUMMARY_OK)
+    run_pipeline(**_base_kwargs(tmp_path), validate=True)
+    mocks["validate_content"].assert_called_once()
+
+
+def test_no_validate_flag_skips_validate_content(monkeypatch, tmp_path):
+    mocks = _patch_all_with_validate(monkeypatch, _VALIDATION_SUMMARY_OK)
+    run_pipeline(**_base_kwargs(tmp_path), validate=False)
+    mocks["validate_content"].assert_not_called()
+
+
+def test_validation_summary_in_return_dict(monkeypatch, tmp_path):
+    _patch_all_with_validate(monkeypatch, _VALIDATION_SUMMARY_OK)
+    summary = run_pipeline(**_base_kwargs(tmp_path), validate=True)
+    assert summary["validation_summary"] is not None
+    assert summary["validation_summary"]["ok"] is True
+
+
+def test_validate_passes_date_to_validate_content(monkeypatch, tmp_path):
+    mocks = _patch_all_with_validate(monkeypatch, _VALIDATION_SUMMARY_OK)
+    run_pipeline(**_base_kwargs(tmp_path, date="2026-05-26"), validate=True)
+    _, kwargs = mocks["validate_content"].call_args
+    assert kwargs.get("date") == "2026-05-26"
+
+
+def test_validate_passes_min_score_to_validate_content(monkeypatch, tmp_path):
+    mocks = _patch_all_with_validate(monkeypatch, _VALIDATION_SUMMARY_OK)
+    run_pipeline(**_base_kwargs(tmp_path), validate=True, min_score=40)
+    _, kwargs = mocks["validate_content"].call_args
+    assert kwargs.get("min_score") == 40

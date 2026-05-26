@@ -861,6 +861,83 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 14 — Issue quality gate
+
+`scripts/validate_issue_content.py` checks issue JSON files against a set of
+content rules before publication. It writes `reports/issue_quality_report.csv`
+and exits with an appropriate code so it can be used in CI or pre-publish hooks.
+
+### Why a quality gate is needed
+
+Draft issues are built automatically from scored items. Before they are published,
+the quality gate catches common problems:
+
+- Items with score below the minimum threshold
+- Negative tags (SEO listicles, celebrity gossip, etc.) that slipped through scoring
+- Unknown tags not present in `data/tags.yaml`
+- Duplicate URLs within a single issue
+- EN and UK versions with mismatched item sets
+- Excerpts or summaries that look like full article text
+- Missing required fields (`title`, `url`, `source_name`)
+
+Findings are categorised as **errors** (block publication) or **warnings** (advisory).
+
+### Check all issues
+
+```bash
+python3 scripts/validate_issue_content.py
+```
+
+### Check a specific date
+
+```bash
+python3 scripts/validate_issue_content.py --date 2026-05-26
+python3 scripts/validate_issue_content.py --date 2026-05-26 --lang en
+```
+
+### JSON summary output
+
+```bash
+python3 scripts/validate_issue_content.py --date 2026-05-26 --json
+```
+
+### Enable fail-on-warnings (strict mode)
+
+```bash
+python3 scripts/validate_issue_content.py --date 2026-05-26 --fail-on-warnings
+```
+
+Exits 1 if there are any warnings (default: only errors cause exit 1).
+
+### Run daily draft with automatic validation
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10 --validate
+```
+
+The pipeline exits 1 if validation finds errors, allowing CI to block deployment.
+
+### Exit codes
+
+| Situation | Exit code |
+|-----------|-----------|
+| No errors, no warnings | 0 |
+| Only warnings, no `--fail-on-warnings` | 0 |
+| Warnings + `--fail-on-warnings` | 1 |
+| Errors present | 1 |
+
+### Report file
+
+`reports/issue_quality_report.csv` — one row per finding per item. Not committed to git.
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

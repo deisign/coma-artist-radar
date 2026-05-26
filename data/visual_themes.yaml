@@ -1,0 +1,143 @@
+themes:
+  - id: default
+    label: Default
+    background: "#17130f"
+    surface: "#211a15"
+    text: "#f2e6d0"
+    muted: "#b8a98e"
+    accent: "#e07a3f"
+    accent_2: "#3a8c8c"
+    motif: radio_tower
+    description: Warm nocturnal default editorial look
+
+  - id: surf
+    label: Surf
+    background: "#0f1a1a"
+    surface: "#152222"
+    text: "#e8f4f4"
+    muted: "#7ab8b8"
+    accent: "#3acaca"
+    accent_2: "#e07a3f"
+    motif: reverb_wave
+    description: Coastal reverb, wet chrome, salt air
+
+  - id: instrumental_surf
+    label: Instrumental Surf
+    background: "#0e1818"
+    surface: "#142020"
+    text: "#e4f0f0"
+    muted: "#6baead"
+    accent: "#2bb8b4"
+    accent_2: "#d4762e"
+    motif: reverb_wave
+    description: Tremolo and ocean spray, no vocals needed
+
+  - id: psychobilly
+    label: Psychobilly
+    background: "#160d0d"
+    surface: "#1e1010"
+    text: "#f2e0d0"
+    muted: "#b89080"
+    accent: "#b6463a"
+    accent_2: "#e07a3f"
+    motif: lacquer_graves
+    description: Slapbass and lacquered quiffs, graveyard humor
+
+  - id: rockabilly
+    label: Rockabilly
+    background: "#170e08"
+    surface: "#201208"
+    text: "#f2e6c8"
+    muted: "#c4a060"
+    accent: "#e07a3f"
+    accent_2: "#b6463a"
+    motif: lacquer_graves
+    description: Hot rod grease and pompadours, Americana edge
+
+  - id: jazz
+    label: Jazz
+    background: "#0f0f14"
+    surface: "#161620"
+    text: "#e8e4f2"
+    muted: "#9090b8"
+    accent: "#a080e0"
+    accent_2: "#e07a3f"
+    motif: smoke_signal
+    description: Cigarette smoke, dim stage light, late sets
+
+  - id: jazz_noir
+    label: Jazz Noir
+    background: "#0a0a10"
+    surface: "#10101a"
+    text: "#e4e0ee"
+    muted: "#8080a4"
+    accent: "#8060d0"
+    accent_2: "#3a8c8c"
+    motif: midnight_window
+    description: Rain-slicked streets, blinds cutting lamplight
+
+  - id: dark_jazz
+    label: Dark Jazz
+    background: "#0c0c10"
+    surface: "#13131a"
+    text: "#dcd8ec"
+    muted: "#7878a0"
+    accent: "#7050c0"
+    accent_2: "#3a8c8c"
+    motif: midnight_window
+    description: After-hours dread, dissonant chords, felt-muffled drums
+
+  - id: blues
+    label: Blues
+    background: "#0e0f16"
+    surface: "#14151e"
+    text: "#e0e0f0"
+    muted: "#8090b4"
+    accent: "#5080e0"
+    accent_2: "#e07a3f"
+    motif: dusty_vinyl
+    description: Worn vinyl, porch swing, Delta heat
+
+  - id: country
+    label: Country
+    background: "#16120a"
+    surface: "#1e180c"
+    text: "#f0e8cc"
+    muted: "#b8a060"
+    accent: "#c8882a"
+    accent_2: "#3a8c8c"
+    motif: dusty_vinyl
+    description: Pickup trucks and honky-tonk, sawdust floors
+
+  - id: ghost_americana
+    label: Ghost Americana
+    background: "#14110c"
+    surface: "#1c170f"
+    text: "#ece4d0"
+    muted: "#a09070"
+    accent: "#d4a060"
+    accent_2: "#3a8c8c"
+    motif: desert_twang
+    description: Faded postcards, highway loneliness, haunted folklore
+
+  - id: retro_future
+    label: Retro Future
+    background: "#0e1214"
+    surface: "#141c20"
+    text: "#d8ece8"
+    muted: "#70a8a0"
+    accent: "#3acaca"
+    accent_2: "#e07a3f"
+    motif: atomic_orbit
+    description: Jetsons dream, vacuum tubes, chrome futures
+
+  - id: lounge_noir
+    label: Lounge Noir
+    background: "#100c10"
+    surface: "#181018"
+    text: "#f0e4f0"
+    muted: "#a080a0"
+    accent: "#c060c0"
+    accent_2: "#3a8c8c"
+    motif: midnight_window
+    description: Velvet curtains, bossa nova, hotel bar at 2am

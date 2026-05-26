@@ -2,7 +2,7 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 15 — Design system**.
+Current implemented stage: **Stage 17 — Generated issue covers / visual themes**.
 
 ## Input
 
@@ -977,6 +977,74 @@ python3 scripts/build_tag_pages.py --base-path /coma-artist-radar
 
 `build_site` automatically calls `build_css` internally — the CSS file is written
 alongside the HTML pages but is not counted in `pages_written` or `output_files`.
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
+## Stage 17 — Generated issue covers / visual themes
+
+Each issue gets an auto-generated SVG cover image (1200×630) based on its dominant
+music tag or aesthetic. No external images, no external CDN, no raster dependencies —
+pure inline SVG rendered at build time.
+
+### Visual themes
+
+Defined in `data/visual_themes.yaml`. Each theme maps a music style to a colour
+palette and a decorative motif:
+
+| Theme ID | Label | Motif |
+|----------|-------|-------|
+| `default` | Default | radio_tower |
+| `surf` | Surf | reverb_wave |
+| `instrumental_surf` | Instrumental Surf | reverb_wave |
+| `psychobilly` | Psychobilly | lacquer_graves |
+| `rockabilly` | Rockabilly | lacquer_graves |
+| `jazz` | Jazz | smoke_signal |
+| `jazz_noir` | Jazz Noir | midnight_window |
+| `dark_jazz` | Dark Jazz | midnight_window |
+| `blues` | Blues | dusty_vinyl |
+| `country` | Country | dusty_vinyl |
+| `ghost_americana` | Ghost Americana | desert_twang |
+| `retro_future` | Retro Future | atomic_orbit |
+| `lounge_noir` | Lounge Noir | midnight_window |
+
+Main tag is detected automatically from item `matched_tags`, with priority:
+aesthetic > genre > subgenre > content_type > editorial > most frequent.
+
+### Generate a cover manually
+
+```bash
+python3 scripts/generate_issue_cover.py --date 2026-05-26 --lang all
+python3 scripts/generate_issue_cover.py --date 2026-05-26 --lang en --main-tag surf
+python3 scripts/generate_issue_cover.py --date 2026-05-26 --dry-run --json
+```
+
+Covers are written to `dist/assets/covers/issues/YYYY-MM-DD/cover-{lang}.svg`.
+
+### Build issue with cover (default)
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-26 --draft --limit 10 --base-path /coma-artist-radar
+```
+
+Cover generation is on by default. To skip:
+
+```bash
+python3 scripts/build_issue.py --date 2026-05-26 --no-cover
+```
+
+### Daily draft with cover
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26 --base-path /coma-artist-radar
+# Skip cover generation:
+python3 scripts/build_daily_draft.py --date 2026-05-26 --no-cover
+```
 
 ### Run tests
 

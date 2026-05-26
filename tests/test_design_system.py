@@ -148,6 +148,10 @@ def test_css_has_source(tmp_path):
     assert ".source" in _css_content(tmp_path)
 
 
+def test_css_has_issue_cover(tmp_path):
+    assert ".issue-cover" in _css_content(tmp_path)
+
+
 # ---------------------------------------------------------------------------
 # CSS content — palette and no forbidden values
 # ---------------------------------------------------------------------------

@@ -48,6 +48,7 @@ def run_pipeline(
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
     validate: bool = False,
+    with_cover: bool = True,
     db_path: Path = DEFAULT_DB,
     sources_path: Path = DEFAULT_SOURCES,
     inbox_path: Path = DEFAULT_INBOX,
@@ -92,6 +93,7 @@ def run_pipeline(
             content_dir=content_dir,
             dist_dir=dist_dir,
             base_path=base_path,
+            with_cover=with_cover,
         )
     else:
         issue_summary = {
@@ -188,6 +190,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--validate", action="store_true", dest="validate",
         help="Run quality gate on built issue content; exit 1 if validation fails",
     )
+    parser.add_argument(
+        "--no-cover", action="store_false", dest="with_cover",
+        help="Skip cover image generation",
+    )
+    parser.set_defaults(with_cover=True)
     return parser.parse_args(argv)
 
 
@@ -203,6 +210,7 @@ def main(argv: list[str] | None = None) -> int:
         base_path=args.base_path,
         dry_run=args.dry_run,
         validate=args.validate,
+        with_cover=args.with_cover,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     vsummary = summary.get("validation_summary")

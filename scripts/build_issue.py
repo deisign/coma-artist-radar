@@ -23,6 +23,7 @@ if str(_REPO_ROOT) not in sys.path:
 
 DEFAULT_DB = _REPO_ROOT / "data" / "coma_radar.sqlite"
 DEFAULT_TAGS = _REPO_ROOT / "data" / "tags.yaml"
+DEFAULT_THEMES = _REPO_ROOT / "data" / "visual_themes.yaml"
 DEFAULT_TEMPLATE = _REPO_ROOT / "templates" / "issue.html.j2"
 DEFAULT_CONTENT_DIR = _REPO_ROOT / "content" / "issues"
 DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
@@ -275,6 +276,8 @@ def render_html(
     draft: bool,
     template_path: Path = DEFAULT_TEMPLATE,
     base_path: str = "",
+    cover_image_url: str | None = None,
+    cover_alt: str = "",
 ) -> str:
     base_path = normalize_base_path(base_path)
     locale = _LOCALE.get(lang, _LOCALE["en"])
@@ -293,6 +296,8 @@ def render_html(
         "nav_uk_href": f"{base_path}/uk/issues/{issue_date}.html",
         "tag_href_prefix": f"{base_path}/{lang}/tags",
         "asset_path": f"{base_path}/assets",
+        "cover_image_url": cover_image_url or "",
+        "cover_alt": cover_alt,
     }
     template_src = template_path.read_text(encoding="utf-8")
     return _J2Renderer().render(template_src, ctx)
@@ -314,6 +319,8 @@ def build_issue(
     content_dir: Path = DEFAULT_CONTENT_DIR,
     dist_dir: Path = DEFAULT_DIST_DIR,
     base_path: str = "",
+    with_cover: bool = True,
+    themes_path: Path = DEFAULT_THEMES,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -324,15 +331,44 @@ def build_issue(
     raw_items = load_items(db_path, min_score=min_score, limit=limit)
     items = enrich_items(raw_items, tag_map)
 
+    # Detect main tag once so both language covers share the same theme
+    cover_main_tag: str | None = None
+    if with_cover:
+        from scripts.generate_issue_cover import (
+            detect_main_tag_from_items as _detect_tag,
+            load_tags_typed as _load_tags_typed,
+        )
+        cover_main_tag = _detect_tag(items, _load_tags_typed(tags_path))
+
     output_files: list[str] = []
     now_iso = datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     for lng in languages:
+        cover_image_url: str | None = None
+        cover_alt = ""
+        if with_cover:
+            from scripts.generate_issue_cover import generate_issue_cover as _gen_cover
+            _gen_cover(
+                issue_date=issue_date,
+                lang=lng,
+                main_tag=cover_main_tag,
+                item_count=len(items),
+                dist_dir=dist_dir,
+                themes_path=themes_path,
+                content_dir=content_dir,
+            )
+            bp = normalize_base_path(base_path)
+            cover_image_url = f"{bp}/assets/covers/issues/{issue_date}/cover-{lng}.svg"
+            cover_alt = f"coma.fm Radar {issue_date}"
+
         # --- HTML ---
         html_dir = dist_dir / lng / "issues"
         html_dir.mkdir(parents=True, exist_ok=True)
         html_path = html_dir / f"{issue_date}.html"
-        html_content = render_html(items, issue_date, lng, draft, template_path, base_path)
+        html_content = render_html(
+            items, issue_date, lng, draft, template_path, base_path,
+            cover_image_url, cover_alt,
+        )
         html_path.write_text(html_content, encoding="utf-8")
         try:
             output_files.append(str(html_path.relative_to(_REPO_ROOT)))
@@ -405,6 +441,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
     parser.add_argument("--base-path", default="", dest="base_path",
                         help="Base path prefix for internal links, e.g. /coma-artist-radar")
+    parser.add_argument(
+        "--no-cover", action="store_false", dest="with_cover",
+        help="Skip cover image generation",
+    )
+    parser.set_defaults(with_cover=True)
     return parser.parse_args(argv)
 
 
@@ -424,6 +465,7 @@ def main(argv: list[str] | None = None) -> int:
         draft=args.draft,
         template_path=args.template,
         base_path=args.base_path,
+        with_cover=args.with_cover,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     return 0

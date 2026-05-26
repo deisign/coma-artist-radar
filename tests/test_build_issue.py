@@ -450,3 +450,47 @@ def test_project_base_path_in_tag_links(tmp_path):
 
     content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
     assert 'href="/coma-artist-radar/en/tags/country.html"' in content
+
+
+# ---------------------------------------------------------------------------
+# Stage 17: cover image tests
+# ---------------------------------------------------------------------------
+
+def test_build_issue_creates_cover_svg(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", with_cover=True)
+    cover = tmp_path / "dist" / "assets" / "covers" / "issues" / "2026-01-01" / "cover-en.svg"
+    assert cover.exists()
+
+
+def test_build_issue_html_contains_cover_img(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", with_cover=True)
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert 'class="issue-cover"' in content
+
+
+def test_build_issue_cover_url_includes_base_path(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", base_path=_GITHUB_BASE_PATH, with_cover=True)
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert "/coma-artist-radar/assets/covers/issues/2026-01-01/cover-en.svg" in content
+
+
+def test_build_issue_no_cover_skips_svg(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", with_cover=False)
+    cover = tmp_path / "dist" / "assets" / "covers" / "issues" / "2026-01-01" / "cover-en.svg"
+    assert not cover.exists()
+
+
+def test_build_issue_no_cover_html_has_no_cover_img(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", with_cover=False)
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert 'class="issue-cover"' not in content

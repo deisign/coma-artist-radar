@@ -23,6 +23,11 @@
   </header>
 
   <main>
+    {% if cover_image_url %}
+    <div class="cover-frame">
+      <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
+    </div>
+    {% endif %}
     {% if items %}
     {% for item in items %}
     <article class="item item-card">

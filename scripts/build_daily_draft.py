@@ -27,6 +27,7 @@ from scripts.build_issue import build_issue, normalize_base_path
 from scripts.build_tag_pages import build_tag_pages
 from scripts.build_site import build_site
 from scripts.validate_issue_content import validate_content
+from scripts.build_telegram_draft import build_telegram_draft
 
 DEFAULT_DB = _REPO_ROOT / "data" / "coma_radar.sqlite"
 DEFAULT_SOURCES = _REPO_ROOT / "data" / "sources_music.yaml"
@@ -49,6 +50,7 @@ def run_pipeline(
     dry_run: bool = False,
     validate: bool = False,
     with_cover: bool = True,
+    telegram_dry_run: bool = False,
     db_path: Path = DEFAULT_DB,
     sources_path: Path = DEFAULT_SOURCES,
     inbox_path: Path = DEFAULT_INBOX,
@@ -138,6 +140,21 @@ def run_pipeline(
             min_score=min_score,
         )
 
+    # Step 9: Optional Telegram dry-run announcement draft
+    telegram_summary: dict | None = None
+    if telegram_dry_run:
+        try:
+            telegram_summary = build_telegram_draft(
+                date=date,
+                lang="uk",
+                base_url=base_url,
+                base_path=base_path,
+                content_dir=content_dir,
+                dist_dir=dist_dir,
+            )
+        except FileNotFoundError as exc:
+            telegram_summary = {"skipped": True, "reason": str(exc)}
+
     return {
         "date": date,
         "fetch_summary": fetch_summary,
@@ -146,6 +163,7 @@ def run_pipeline(
         "site_summary": site_summary,
         "output_urls": output_urls,
         "validation_summary": validation_summary,
+        "telegram_summary": telegram_summary,
         "dry_run": dry_run,
     }
 
@@ -194,6 +212,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         "--no-cover", action="store_false", dest="with_cover",
         help="Skip cover image generation",
     )
+    parser.add_argument(
+        "--telegram-dry-run", action="store_true", dest="telegram_dry_run",
+        help="After building the issue, produce a Telegram announcement draft (dry-run, no sending)",
+    )
     parser.set_defaults(with_cover=True)
     return parser.parse_args(argv)
 
@@ -211,6 +233,7 @@ def main(argv: list[str] | None = None) -> int:
         dry_run=args.dry_run,
         validate=args.validate,
         with_cover=args.with_cover,
+        telegram_dry_run=args.telegram_dry_run,
     )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     vsummary = summary.get("validation_summary")

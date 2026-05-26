@@ -1054,6 +1054,63 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 18 — Telegram dry-run packaging
+
+Produces a short Telegram announcement for each issue without sending anything.
+Real sending via Bot API will be added in a later stage.
+
+### What is generated
+
+A plain-text post saved to `reports/telegram/YYYY-MM-DD.{lang}.txt`:
+
+- Ukrainian (`uk`): opens with "Сьогодні в полі:", closes with "Повний випуск: URL"
+- English (`en`): opens with "In the field today:", closes with "Full issue: URL"
+- Up to 3 items listed with music genre tags (editorial tags excluded)
+- Capped at 1024 characters by default; item list is trimmed to fit
+- Cover SVG URL included in the JSON summary when the cover exists
+
+`reports/telegram/*.txt` are excluded from git (local artifacts only).
+
+### Build Telegram draft
+
+```bash
+python scripts/build_telegram_draft.py --date 2026-05-26 --lang uk
+python scripts/build_telegram_draft.py --date 2026-05-26 --lang en
+```
+
+Both commands write to `reports/telegram/` and print a JSON summary.
+
+### Send wrapper (dry-run only)
+
+```bash
+python scripts/send_telegram.py --date 2026-05-26 --lang uk --dry-run
+```
+
+Passing `--send` exits immediately with an error — real sending is not yet implemented.
+
+### Build with Telegram draft via daily pipeline
+
+```bash
+python scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10 --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar --telegram-dry-run
+```
+
+The `--telegram-dry-run` flag runs the UK draft after the issue/site build.
+The pipeline summary will include a `telegram_summary` key.
+Without the flag the Telegram step is skipped entirely — existing workflows are unaffected.
+
+### Real sending (future)
+
+Real delivery will use the Telegram Bot API via `TELEGRAM_BOT_TOKEN` secret.
+No token is read or required at this stage.
+
+### Run tests
+
+```bash
+python -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

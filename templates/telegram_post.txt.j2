@@ -1,0 +1,13 @@
+📡 coma.fm Radar — {{ issue_date }}
+
+{% if lang == "uk" %}Сьогодні в полі:
+{% for item in items %}— {{ item.title_short }}{{ " [" ~ item.tags_str ~ "]" if item.tags_str else "" }}
+{% endfor %}
+Повний випуск:
+{{ issue_url }}
+{% else %}In the field today:
+{% for item in items %}— {{ item.title_short }}{{ " [" ~ item.tags_str ~ "]" if item.tags_str else "" }}
+{% endfor %}
+Full issue:
+{{ issue_url }}
+{% endif %}

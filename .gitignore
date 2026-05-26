@@ -10,6 +10,7 @@ venv/
 
 # Generated reports
 reports/*.csv
+reports/telegram/*.txt
 
 # Generated build output
 dist/

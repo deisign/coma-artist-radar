@@ -693,6 +693,41 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 11 — GitHub Pages deploy workflow
+
+### How the deploy works
+
+On every push to `main`, the workflow in `.github/workflows/pages.yml`:
+
+1. Checks out the repository
+2. Installs Python dependencies (`pytest`, `PyYAML`)
+3. Runs the full test suite (`python -m pytest -q tests`)
+4. Builds the static site (`python scripts/build_site.py --base-url https://radar.coma.fm`)
+5. Builds tag pages (`python scripts/build_tag_pages.py`)
+6. Uploads `dist/` as a GitHub Pages artifact
+7. Deploys the artifact to GitHub Pages
+
+### Trigger manually
+
+Go to **Actions → Deploy coma.fm Radar to GitHub Pages → Run workflow** and click **Run workflow** to deploy without a push.
+
+### Repository settings
+
+In **Settings → Pages**, set the source to **GitHub Actions** (not a branch). The workflow handles everything else.
+
+### Where to see the result
+
+- Deployed site: `https://radar.coma.fm` (or `https://<owner>.github.io/<repo>` if custom domain is not configured)
+- Workflow runs: **Actions** tab → **Deploy coma.fm Radar to GitHub Pages**
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

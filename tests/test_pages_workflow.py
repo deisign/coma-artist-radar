@@ -38,12 +38,13 @@ def test_workflow_has_deploy_pages():
     assert "actions/deploy-pages" in _content()
 
 
-def test_workflow_has_build_site_command():
-    assert "python scripts/build_site.py" in _content()
-
-
-def test_workflow_has_build_tag_pages_command():
-    assert "python scripts/build_tag_pages.py" in _content()
+def test_workflow_has_daily_draft_command():
+    content = _content()
+    assert "python scripts/build_daily_draft.py" in content
+    assert "--base-url https://deisign.github.io/coma-artist-radar" in content
+    assert "--base-path /coma-artist-radar" in content
+    assert "--fetch-limit 5" in content
+    assert "--issue-limit 10" in content
 
 
 def test_workflow_has_pytest():

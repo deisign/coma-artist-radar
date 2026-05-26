@@ -206,6 +206,7 @@ def _build_tag_page(
         "nav_uk_href": f"{base_path}/uk/tags/index.html",
         "items_heading": locale["items_heading"],
         "related_heading": locale["related_heading"],
+        "asset_path": f"{base_path}/assets",
     }
 
     page_path = f"dist/{lng}/tags/{slug}.html"
@@ -280,6 +281,7 @@ def _build_index_page(
         "nav_en_href": f"{base_path}/en/tags/index.html",
         "nav_uk_href": f"{base_path}/uk/tags/index.html",
         "groups": groups,
+        "asset_path": f"{base_path}/assets",
     }
 
     status = "dry_run" if dry_run else "ok"

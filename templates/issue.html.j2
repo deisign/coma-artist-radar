@@ -5,96 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  <style>
-    :root {
-      --bg: #161616;
-      --fg: #e0ddd8;
-      --accent: #c8a46e;
-      --accent2: #8ab4a0;
-      --subtle: #888;
-      --border: #2a2a2a;
-      --card: #1e1e1e;
-      --tag-bg: #252525;
-      --draft: #7a3a3a;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Georgia, serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.65;
-      padding: 0 1rem 4rem;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 760px; margin: 0 auto; }
-
-    /* Header */
-    header { padding: 2rem 0 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
-    nav { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; }
-    nav a { color: var(--subtle); }
-    nav a.active { color: var(--accent); }
-    h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.01em; color: var(--fg); }
-    .issue-date { color: var(--subtle); font-size: 0.85rem; margin-top: 0.3rem; }
-    .intro { color: var(--subtle); font-size: 0.9rem; margin-top: 0.5rem; font-style: italic; }
-
-    /* Draft banner */
-    .draft-notice {
-      display: inline-block;
-      background: var(--draft);
-      color: #ffcece;
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 0.2rem 0.6rem;
-      border-radius: 3px;
-      margin-bottom: 0.8rem;
-    }
-
-    /* Items */
-    .item {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 5px;
-      padding: 1.25rem 1.4rem;
-      margin-bottom: 1.2rem;
-    }
-    .item h2 { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-bottom: 0.4rem; }
-    .item h2 a { color: var(--fg); }
-    .item h2 a:hover { color: var(--accent); text-decoration: none; }
-    .meta { font-size: 0.8rem; color: var(--subtle); margin-bottom: 0.5rem; }
-    .meta .score { color: var(--accent2); }
-    .artists { font-size: 0.85rem; color: var(--accent); margin-bottom: 0.4rem; }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
-    .tag {
-      background: var(--tag-bg);
-      color: var(--subtle);
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      font-size: 0.75rem;
-      padding: 0.15rem 0.5rem;
-      letter-spacing: 0.03em;
-    }
-    .tag:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
-
-    /* Empty state */
-    .no-items { color: var(--subtle); font-style: italic; padding: 2rem 0; }
-
-    /* Footer */
-    footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem; font-size: 0.8rem; color: var(--subtle); }
-  </style>
+  <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container">
-  <header>
-    <nav>
+<div class="container site-shell">
+  <header class="site-header">
+    <nav class="language-switch">
       <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
       <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
     </nav>
     {% if draft %}
     <div class="draft-notice">{{ draft_notice }}</div>
     {% endif %}
-    <h1>{{ heading }}</h1>
+    <h1 class="site-title">{{ heading }}</h1>
     <p class="issue-date">{{ issue_date }}</p>
     <p class="intro">{{ intro }}</p>
   </header>
@@ -102,7 +25,7 @@
   <main>
     {% if items %}
     {% for item in items %}
-    <article class="item">
+    <article class="item item-card">
       <h2><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
       <p class="meta">
         <span class="source">{{ item.source_name }}</span>
@@ -115,9 +38,9 @@
       <p class="artists">{{ item.matched_artists }}</p>
       {% endif %}
       {% if item.tags %}
-      <p class="tags">
+      <p class="tags tag-list">
         {% for tag in item.tags %}
-        <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag">{{ tag.label }}</a>
+        <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag tag-pill">{{ tag.label }}</a>
         {% endfor %}
       </p>
       {% endif %}
@@ -128,7 +51,7 @@
     {% endif %}
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>coma.fm Radar &middot; {{ issue_date }}</p>
   </footer>
 </div>

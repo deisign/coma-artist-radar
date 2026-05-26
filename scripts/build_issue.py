@@ -292,6 +292,7 @@ def render_html(
         "nav_en_href": f"{base_path}/en/issues/{issue_date}.html",
         "nav_uk_href": f"{base_path}/uk/issues/{issue_date}.html",
         "tag_href_prefix": f"{base_path}/{lang}/tags",
+        "asset_path": f"{base_path}/assets",
     }
     template_src = template_path.read_text(encoding="utf-8")
     return _J2Renderer().render(template_src, ctx)

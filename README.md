@@ -2,7 +2,7 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 3 — Editorial Inbox / Human Intake**.
+Current implemented stage: **Stage 15 — Design system**.
 
 ## Input
 
@@ -929,6 +929,54 @@ The pipeline exits 1 if validation finds errors, allowing CI to block deployment
 ### Report file
 
 `reports/issue_quality_report.csv` — one row per finding per item. Not committed to git.
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
+## Stage 15 — Design system
+
+Adds a warm nocturnal editorial design system. All visual styles live in a single
+CSS template rendered at build time — no external CDN, no Google Fonts.
+
+### Palette
+
+| Variable | Value | Role |
+|----------|-------|------|
+| `--bg` | `#17130f` | Page background (deep tobacco brown) |
+| `--surface` | `#211a15` | Card / item background |
+| `--surface-2` | `#2a211a` | Tag pill background |
+| `--text` | `#f2e6d0` | Primary text (warm paper) |
+| `--muted` | `#b8a98e` | Secondary text, labels |
+| `--border` | `rgba(242,230,208,0.16)` | Subtle borders |
+| `--accent` | `#e07a3f` | Links, dates, highlights |
+| `--accent-2` | `#3a8c8c` | Scores, published badges |
+| `--danger` | `#b6463a` | Draft notice background |
+
+### Build CSS
+
+```bash
+python3 scripts/build_css.py
+```
+
+Reads `templates/style.css.j2`, renders with the Jinja2-subset renderer, writes
+`dist/assets/style.css`. Supports `--dry-run` and `--dist-dir`.
+
+### Full build with design system
+
+```bash
+python3 scripts/build_css.py
+python3 scripts/build_site.py --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar
+python3 scripts/build_issue.py --date 2026-05-26 --draft --limit 10 --base-path /coma-artist-radar
+python3 scripts/build_tag_pages.py --base-path /coma-artist-radar
+```
+
+`build_site` automatically calls `build_css` internally — the CSS file is written
+alongside the HTML pages but is not counted in `pages_written` or `output_files`.
 
 ### Run tests
 

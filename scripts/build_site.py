@@ -157,6 +157,7 @@ def _build_root_index(
 ) -> tuple[int, list[str]]:
     en_href = f"{base_path}/en/index.html"
     uk_href = f"{base_path}/uk/index.html"
+    css_href = f"{base_path}/assets/style.css"
     content = (
         "<!DOCTYPE html>\n"
         "<html>\n"
@@ -164,25 +165,23 @@ def _build_root_index(
         "  <meta charset=\"UTF-8\">\n"
         "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
         "  <title>coma.fm Radar</title>\n"
+        f"  <link rel=\"stylesheet\" href=\"{css_href}\">\n"
         "  <style>\n"
-        "    body{font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Georgia,serif;"
-        "background:#161616;color:#e0ddd8;display:flex;align-items:center;"
-        "justify-content:center;min-height:100vh;margin:0;}\n"
+        "    body{display:flex;align-items:center;justify-content:center;min-height:100vh;}\n"
         "    .chooser{text-align:center;}\n"
-        "    h1{font-size:2rem;letter-spacing:-0.02em;margin-bottom:1rem;}\n"
-        "    p{color:#888;font-size:0.9rem;font-style:italic;margin-bottom:2rem;}\n"
+        "    .desc{margin-bottom:2rem;}\n"
         "    .langs{display:flex;gap:1.5rem;justify-content:center;}\n"
-        "    .langs a{color:#c8a46e;text-decoration:none;font-size:1.1rem;"
-        "letter-spacing:0.1em;text-transform:uppercase;border:1px solid #2a2a2a;"
+        "    .langs a{font-size:1.1rem;letter-spacing:0.1em;text-transform:uppercase;"
+        "border:1px solid var(--border,rgba(242,230,208,0.16));"
         "padding:0.5rem 1.5rem;border-radius:4px;}\n"
-        "    .langs a:hover{border-color:#c8a46e;}\n"
+        "    .langs a:hover{border-color:var(--accent,#e07a3f);}\n"
         "  </style>\n"
         "</head>\n"
         "<body>\n"
-        "<div class=\"chooser\">\n"
-        "  <h1>coma.fm Radar</h1>\n"
-        "  <p>A weekly digest of music from the coma.fm field.</p>\n"
-        "  <div class=\"langs\">\n"
+        "<div class=\"chooser site-shell\">\n"
+        "  <h1 class=\"site-title\">coma.fm Radar</h1>\n"
+        "  <p class=\"site-description desc\">A weekly digest of music from the coma.fm field.</p>\n"
+        "  <div class=\"langs language-switch\">\n"
         f"    <a href=\"{en_href}\">EN</a>\n"
         f"    <a href=\"{uk_href}\">UK</a>\n"
         "  </div>\n"
@@ -220,6 +219,7 @@ def _build_lang_index(
         "other_lang": other.upper(),
         "other_lang_href": f"{base_path}/{other}/index.html",
         "issues": _issue_rows(issues[:_INDEX_ISSUES_MAX], lang, base_path),
+        "asset_path": f"{base_path}/assets",
     }
     content = _render(templates_dir / "index.html.j2", ctx)
     out_path = dist_dir / lang / "index.html"
@@ -252,6 +252,7 @@ def _build_archive(
         "status_draft": locale["status_draft"],
         "status_published": locale["status_published"],
         "issues": _issue_rows(issues, lang, base_path),
+        "asset_path": f"{base_path}/assets",
     }
     content = _render(templates_dir / "archive.html.j2", ctx)
     out_path = dist_dir / lang / "archive.html"
@@ -379,6 +380,10 @@ def build_site(
             d = iss.get("issue_date", "")
             if d:
                 all_dates.add(d)
+
+    # Write CSS asset — not counted in pages_written or output_files
+    from scripts.build_css import build_css as _build_css
+    _build_css(dist_dir=dist_dir, templates_dir=templates_dir, dry_run=dry_run)
 
     pages_written = 0
     output_files: list[str] = []

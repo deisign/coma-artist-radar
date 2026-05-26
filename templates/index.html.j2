@@ -5,81 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  <style>
-    :root {
-      --bg: #161616;
-      --fg: #e0ddd8;
-      --accent: #c8a46e;
-      --accent2: #8ab4a0;
-      --subtle: #888;
-      --border: #2a2a2a;
-      --card: #1e1e1e;
-      --draft: #7a3a3a;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Georgia, serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.65;
-      padding: 0 1rem 4rem;
-    }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 760px; margin: 0 auto; }
-    header { padding: 2rem 0 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
-    nav { display: flex; gap: 1rem; margin-bottom: 1rem; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; }
-    nav a { color: var(--subtle); }
-    nav a.active { color: var(--accent); }
-    h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; color: var(--fg); }
-    .tagline { color: var(--subtle); font-size: 0.95rem; margin-top: 0.5rem; font-style: italic; }
-    .section-heading {
-      font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em;
-      color: var(--subtle); border-bottom: 1px solid var(--border);
-      padding-bottom: 0.4rem; margin: 2rem 0 1rem;
-    }
-    .issue-row {
-      display: flex; align-items: baseline; gap: 1rem;
-      padding: 0.65rem 0; border-bottom: 1px solid var(--border);
-    }
-    .issue-date { color: var(--accent); font-size: 0.9rem; font-variant-numeric: tabular-nums; min-width: 7rem; flex-shrink: 0; }
-    .issue-link { color: var(--fg); font-size: 0.9rem; flex: 1; }
-    .issue-link:hover { color: var(--accent); }
-    .issue-meta { font-size: 0.8rem; color: var(--subtle); white-space: nowrap; }
-    .badge-draft {
-      font-size: 0.7rem; background: var(--draft); color: #ffcece;
-      padding: 0.1rem 0.4rem; border-radius: 3px; letter-spacing: 0.05em;
-      text-transform: uppercase; margin-left: 0.4rem;
-    }
-    .nav-links { margin-top: 2rem; display: flex; gap: 1.5rem; font-size: 0.9rem; }
-    .no-issues { color: var(--subtle); font-style: italic; padding: 1.5rem 0; }
-    footer { border-top: 1px solid var(--border); margin-top: 3rem; padding-top: 1.2rem; font-size: 0.8rem; color: var(--subtle); }
-  </style>
+  <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container">
-  <header>
-    <nav>
+<div class="container site-shell">
+  <header class="site-header">
+    <nav class="language-switch">
       <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
       <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
     </nav>
-    <h1>{{ title }}</h1>
-    <p class="tagline">{{ description }}</p>
+    <h1 class="site-title">{{ title }}</h1>
+    <p class="site-description tagline">{{ description }}</p>
   </header>
 
   <main>
     <h2 class="section-heading">{{ latest_issues_heading }}</h2>
-    {% if issues %}
-    {% for issue in issues %}
-    <div class="issue-row">
-      <span class="issue-date">{{ issue.date }}</span>
-      <a class="issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
-      <span class="issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>
+    <div class="issue-list">
+      {% if issues %}
+      {% for issue in issues %}
+      <div class="issue-card issue-row">
+        <span class="issue-date">{{ issue.date }}</span>
+        <a class="issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
+        <span class="issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>
+      </div>
+      {% endfor %}
+      {% else %}
+      <p class="no-issues">{{ no_issues_msg }}</p>
+      {% endif %}
     </div>
-    {% endfor %}
-    {% else %}
-    <p class="no-issues">{{ no_issues_msg }}</p>
-    {% endif %}
 
     <div class="nav-links">
       <a href="{{ archive_href }}">{{ archive_label }}</a>
@@ -87,7 +40,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>coma.fm Radar</p>
   </footer>
 </div>

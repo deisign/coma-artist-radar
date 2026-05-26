@@ -1111,6 +1111,47 @@ python -m pytest -q tests
 
 ---
 
+## Stage 19 — Layout / design polish v2 — modernist radio bulletin
+
+Design direction: **Swiss International Style / Bauhaus / mid-century editorial**.
+The site should feel like a bilingual music radar programme guide or record-sleeve index, not a SaaS dashboard.
+
+### Design principles applied
+
+- Strong grid with disciplined spacing rhythm (CSS custom property tokens)
+- Asymmetric composition with a left-panel brand mark and gradient rule
+- Large typographic hierarchy — `clamp()`-based hero title, label caps for section markers
+- Horizontal rules as editorial dividers (`.section-rule`, `.brand-line`)
+- Geometric item numbering via CSS counters (`.item-number::before`)
+- Palette: deep tobacco `#1a1510`, aged paper `#ede0c4`, burnt orange `#c47820`, muted turquoise `#3a8080` — no pure black, no pure white
+- No external CDN, no JS, no Google Fonts
+
+### Pages to inspect
+
+| Page | URL pattern |
+|---|---|
+| Language chooser | `dist/index.html` |
+| Latest issues | `dist/en/index.html`, `dist/uk/index.html` |
+| Archive | `dist/en/archive.html` |
+| Issue | `dist/en/issues/YYYY-MM-DD.html` |
+| Tag index | `dist/en/tags/index.html` |
+| Tag page | `dist/en/tags/country.html` |
+
+### Build the site
+
+```bash
+python scripts/build_css.py
+python scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10 --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar --telegram-dry-run
+```
+
+### Run tests
+
+```bash
+python -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

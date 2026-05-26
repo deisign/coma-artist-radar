@@ -7,24 +7,33 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container site-shell">
+<div class="site-shell">
   <header class="site-header">
-    <nav class="language-switch">
-      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-    </nav>
-    <a class="back" href="{{ back_href }}">{{ back_label }}</a>
-    <h1 class="site-title">{{ heading }}</h1>
+    <div class="header-row">
+      <div class="brand-mark">
+        <span class="brand-signal">&#9673;</span>
+        <span class="brand-name">coma.fm</span>
+        <span class="brand-sub">Radar</span>
+      </div>
+      <nav class="language-switch">
+        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      </nav>
+    </div>
+    <div class="brand-line"></div>
   </header>
 
   <main>
+    <a class="back" href="{{ back_href }}">{{ back_label }}</a>
+    <h1 class="section-title">{{ heading }}</h1>
+    <hr class="section-rule">
     <div class="archive-list">
       {% if issues %}
       {% for issue in issues %}
-      <div class="issue-card issue-row">
-        <span class="issue-date">{{ issue.date }}</span>
-        <a class="issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
-        <span class="issue-meta">{{ issue.item_count }} {{ items_label }}{% if issue.draft %}<span class="badge-draft">{{ status_draft }}</span>{% else %}<span class="badge-published">{{ status_published }}</span>{% endif %}</span>
+      <div class="archive-item">
+        <span class="archive-date">{{ issue.date }}</span>
+        <a class="archive-link issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
+        <span class="archive-meta issue-meta">{{ issue.item_count }} {{ items_label }}{% if issue.draft %}<span class="badge-draft">{{ status_draft }}</span>{% else %}<span class="badge-published">{{ status_published }}</span>{% endif %}</span>
       </div>
       {% endfor %}
       {% else %}

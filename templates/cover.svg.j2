@@ -10,175 +10,178 @@
   <!-- Background -->
   <rect width="1200" height="630" fill="url(#bgGrad)"/>
 
-  <!-- Left decorative panel -->
-  <rect x="0" y="0" width="380" height="630" fill="{{ surface }}" opacity="0.55"/>
+  <!-- Left structural panel — Swiss grid column -->
+  <rect x="0" y="0" width="360" height="630" fill="{{ surface }}" opacity="0.60"/>
 
   <!-- Motif: reverb_wave -->
   {% if motif == "reverb_wave" %}
-  <path d="M-50,190 Q140,120 330,190 Q520,260 710,190 Q900,120 1090,190 Q1280,260 1470,190"
-        fill="none" stroke="{{ accent }}" stroke-width="2.5" opacity="0.25"/>
-  <path d="M-50,260 Q140,190 330,260 Q520,330 710,260 Q900,190 1090,260 Q1280,330 1470,260"
-        fill="none" stroke="{{ accent }}" stroke-width="1.5" opacity="0.18"/>
-  <path d="M-50,330 Q140,260 330,330 Q520,400 710,330 Q900,260 1090,330 Q1280,400 1470,330"
-        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.12"/>
-  <path d="M-50,400 Q140,330 330,400 Q520,470 710,400 Q900,330 1090,400 Q1280,470 1470,400"
-        fill="none" stroke="{{ accent }}" stroke-width="2" opacity="0.2"/>
-  <path d="M-50,460 Q140,390 330,460 Q520,530 710,460 Q900,390 1090,460 Q1280,530 1470,460"
-        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.08"/>
+  <path d="M-50,195 Q140,128 330,195 Q520,262 710,195 Q900,128 1090,195 Q1280,262 1470,195"
+        fill="none" stroke="{{ accent }}" stroke-width="2.5" opacity="0.22"/>
+  <path d="M-50,268 Q140,198 330,268 Q520,338 710,268 Q900,198 1090,268 Q1280,338 1470,268"
+        fill="none" stroke="{{ accent }}" stroke-width="1.5" opacity="0.16"/>
+  <path d="M-50,338 Q140,268 330,338 Q520,408 710,338 Q900,268 1090,338 Q1280,408 1470,338"
+        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.10"/>
+  <path d="M-50,408 Q140,338 330,408 Q520,478 710,408 Q900,338 1090,408 Q1280,478 1470,408"
+        fill="none" stroke="{{ accent }}" stroke-width="2" opacity="0.17"/>
   {% endif %}
 
   <!-- Motif: dusty_vinyl -->
   {% if motif == "dusty_vinyl" %}
-  <circle cx="190" cy="315" r="270" fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.18"/>
-  <circle cx="190" cy="315" r="220" fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.14"/>
-  <circle cx="190" cy="315" r="175" fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.18"/>
-  <circle cx="190" cy="315" r="130" fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.14"/>
-  <circle cx="190" cy="315" r="90" fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.18"/>
-  <circle cx="190" cy="315" r="55" fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.14"/>
-  <circle cx="190" cy="315" r="28" fill="{{ accent }}" opacity="0.22"/>
-  <circle cx="190" cy="315" r="11" fill="{{ bg }}" opacity="0.85"/>
-  <line x1="190" y1="0" x2="190" y2="630" stroke="{{ muted }}" stroke-width="0.5" opacity="0.07"/>
-  <line x1="0" y1="315" x2="380" y2="315" stroke="{{ muted }}" stroke-width="0.5" opacity="0.07"/>
+  <circle cx="180" cy="315" r="268" fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.16"/>
+  <circle cx="180" cy="315" r="218" fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.12"/>
+  <circle cx="180" cy="315" r="172" fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.16"/>
+  <circle cx="180" cy="315" r="128" fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.12"/>
+  <circle cx="180" cy="315" r="88"  fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.16"/>
+  <circle cx="180" cy="315" r="52"  fill="none" stroke="{{ muted }}" stroke-width="0.5" opacity="0.12"/>
+  <circle cx="180" cy="315" r="26"  fill="{{ accent }}" opacity="0.20"/>
+  <circle cx="180" cy="315" r="10"  fill="{{ bg }}" opacity="0.88"/>
   {% endif %}
 
   <!-- Motif: lacquer_graves -->
   {% if motif == "lacquer_graves" %}
-  <rect x="38" y="295" width="72" height="105" rx="36" fill="{{ accent }}" opacity="0.14"/>
-  <rect x="128" y="255" width="82" height="145" rx="41" fill="{{ accent_2 }}" opacity="0.11"/>
-  <rect x="228" y="285" width="62" height="115" rx="31" fill="{{ accent }}" opacity="0.10"/>
-  <rect x="298" y="315" width="56" height="95" rx="28" fill="{{ muted }}" opacity="0.08"/>
-  <path d="M0,545 L185,340 L265,340 L80,545 Z" fill="{{ accent }}" opacity="0.07"/>
-  <path d="M55,630 L285,350 L365,350 L140,630 Z" fill="{{ accent }}" opacity="0.05"/>
+  <rect x="35" y="298" width="68" height="102" rx="34" fill="{{ accent }}" opacity="0.12"/>
+  <rect x="120" y="258" width="78" height="142" rx="39" fill="{{ accent_2 }}" opacity="0.09"/>
+  <rect x="218" y="288" width="58" height="112" rx="29" fill="{{ accent }}" opacity="0.09"/>
+  <path d="M0,548 L185,345 L262,345 L78,548 Z" fill="{{ accent }}" opacity="0.06"/>
+  <path d="M55,630 L282,352 L360,352 L138,630 Z" fill="{{ accent }}" opacity="0.04"/>
   {% endif %}
 
-  <!-- Motif: midnight_window -->
+  <!-- Motif: midnight_window — horizontal rule grid -->
   {% if motif == "midnight_window" %}
-  <rect x="0" y="68" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="118" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="168" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="218" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="268" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="318" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="368" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="418" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="468" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="518" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <rect x="0" y="568" width="1200" height="18" fill="{{ text_color }}" opacity="0.04"/>
-  <path d="M0,0 L420,630 L0,630 Z" fill="{{ accent }}" opacity="0.03"/>
+  <rect x="0" y="72"  width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="122" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="172" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="222" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="272" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="322" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="372" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="422" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="472" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="522" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
+  <rect x="0" y="572" width="1200" height="16" fill="{{ text_color }}" opacity="0.035"/>
   {% endif %}
 
   <!-- Motif: desert_twang -->
   {% if motif == "desert_twang" %}
-  <path d="M0,475 Q300,398 600,458 Q900,518 1200,438 L1200,630 L0,630 Z"
-        fill="{{ surface }}" opacity="0.65"/>
-  <path d="M0,518 Q200,462 500,502 Q800,542 1200,492 L1200,630 L0,630 Z"
-        fill="{{ surface }}" opacity="0.45"/>
-  <line x1="0" y1="440" x2="1200" y2="440" stroke="{{ muted }}" stroke-width="1" opacity="0.1"/>
-  <circle cx="190" cy="375" r="128" fill="{{ accent }}" opacity="0.07"/>
-  <circle cx="190" cy="375" r="82" fill="{{ accent }}" opacity="0.07"/>
+  <path d="M0,478 Q300,402 600,462 Q900,522 1200,442 L1200,630 L0,630 Z"
+        fill="{{ surface }}" opacity="0.62"/>
+  <path d="M0,522 Q200,466 500,506 Q800,546 1200,496 L1200,630 L0,630 Z"
+        fill="{{ surface }}" opacity="0.42"/>
+  <line x1="0" y1="442" x2="1200" y2="442" stroke="{{ muted }}" stroke-width="1" opacity="0.09"/>
+  <circle cx="180" cy="378" r="122" fill="{{ accent }}" opacity="0.06"/>
+  <circle cx="180" cy="378" r="78"  fill="{{ accent }}" opacity="0.06"/>
   {% endif %}
 
   <!-- Motif: atomic_orbit -->
   {% if motif == "atomic_orbit" %}
-  <ellipse cx="190" cy="315" rx="310" ry="98" fill="none" stroke="{{ accent }}"
-           stroke-width="1.5" opacity="0.22" transform="rotate(-45 190 315)"/>
-  <ellipse cx="190" cy="315" rx="310" ry="98" fill="none" stroke="{{ accent }}"
-           stroke-width="1.5" opacity="0.22" transform="rotate(45 190 315)"/>
-  <ellipse cx="190" cy="315" rx="310" ry="98" fill="none" stroke="{{ accent_2 }}"
-           stroke-width="1" opacity="0.16"/>
-  <circle cx="190" cy="315" r="22" fill="{{ accent }}" opacity="0.28"/>
-  <circle cx="190" cy="315" r="10" fill="{{ accent }}" opacity="0.48"/>
-  <circle cx="190" cy="215" r="5" fill="{{ accent_2 }}" opacity="0.38"/>
-  <circle cx="290" cy="362" r="4" fill="{{ accent }}" opacity="0.32"/>
+  <ellipse cx="180" cy="315" rx="298" ry="94" fill="none" stroke="{{ accent }}"
+           stroke-width="1.5" opacity="0.20" transform="rotate(-45 180 315)"/>
+  <ellipse cx="180" cy="315" rx="298" ry="94" fill="none" stroke="{{ accent }}"
+           stroke-width="1.5" opacity="0.20" transform="rotate(45 180 315)"/>
+  <ellipse cx="180" cy="315" rx="298" ry="94" fill="none" stroke="{{ accent_2 }}"
+           stroke-width="1" opacity="0.14"/>
+  <circle cx="180" cy="315" r="20" fill="{{ accent }}" opacity="0.26"/>
+  <circle cx="180" cy="315" r="9"  fill="{{ accent }}" opacity="0.46"/>
+  <circle cx="180" cy="218" r="5"  fill="{{ accent_2 }}" opacity="0.35"/>
+  <circle cx="278" cy="362" r="4"  fill="{{ accent }}" opacity="0.30"/>
   {% endif %}
 
   <!-- Motif: smoke_signal -->
   {% if motif == "smoke_signal" %}
-  <path d="M190,585 C180,485 220,425 190,365 C160,305 210,245 190,185 C170,125 200,72 190,22"
-        fill="none" stroke="{{ muted }}" stroke-width="3" stroke-linecap="round" opacity="0.11"/>
-  <path d="M130,585 C150,485 110,425 140,365 C170,305 120,245 150,185 C180,125 140,72 160,22"
-        fill="none" stroke="{{ muted }}" stroke-width="2" stroke-linecap="round" opacity="0.07"/>
-  <path d="M250,585 C230,485 270,425 240,365 C210,305 260,245 230,185 C200,125 240,72 220,22"
-        fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" opacity="0.09"/>
-  <path d="M80,505 Q150,405 100,305 Q50,205 118,108"
-        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.05"/>
+  <path d="M180,588 C170,488 210,428 180,368 C150,308 200,248 180,188 C160,128 192,74 180,24"
+        fill="none" stroke="{{ muted }}" stroke-width="3" stroke-linecap="round" opacity="0.10"/>
+  <path d="M122,588 C142,488 102,428 132,368 C162,308 112,248 142,188 C172,128 132,74 152,24"
+        fill="none" stroke="{{ muted }}" stroke-width="2" stroke-linecap="round" opacity="0.06"/>
+  <path d="M238,588 C218,488 258,428 228,368 C198,308 248,248 218,188 C188,128 228,74 208,24"
+        fill="none" stroke="{{ accent }}" stroke-width="1.5" stroke-linecap="round" opacity="0.08"/>
   {% endif %}
 
   <!-- Motif: radio_tower -->
   {% if motif == "radio_tower" %}
-  <line x1="190" y1="560" x2="190" y2="82" stroke="{{ muted }}" stroke-width="2" opacity="0.18"/>
-  <line x1="78" y1="560" x2="302" y2="560" stroke="{{ muted }}" stroke-width="2" opacity="0.16"/>
-  <line x1="98" y1="480" x2="282" y2="480" stroke="{{ muted }}" stroke-width="1.5" opacity="0.14"/>
-  <line x1="118" y1="400" x2="262" y2="400" stroke="{{ muted }}" stroke-width="1.5" opacity="0.12"/>
-  <line x1="138" y1="320" x2="242" y2="320" stroke="{{ muted }}" stroke-width="1.5" opacity="0.11"/>
-  <line x1="155" y1="245" x2="225" y2="245" stroke="{{ muted }}" stroke-width="1" opacity="0.1"/>
-  <line x1="168" y1="182" x2="212" y2="182" stroke="{{ muted }}" stroke-width="1" opacity="0.1"/>
-  <line x1="78" y1="560" x2="190" y2="82" stroke="{{ muted }}" stroke-width="1" opacity="0.1"/>
-  <line x1="302" y1="560" x2="190" y2="82" stroke="{{ muted }}" stroke-width="1" opacity="0.1"/>
-  <circle cx="190" cy="82" r="30" fill="none" stroke="{{ accent }}" stroke-width="1" opacity="0.18"/>
-  <circle cx="190" cy="82" r="58" fill="none" stroke="{{ accent }}" stroke-width="0.5" opacity="0.11"/>
-  <circle cx="190" cy="82" r="88" fill="none" stroke="{{ accent }}" stroke-width="0.5" opacity="0.07"/>
+  <line x1="180" y1="555" x2="180" y2="85" stroke="{{ muted }}" stroke-width="2" opacity="0.17"/>
+  <line x1="72"  y1="555" x2="288" y2="555" stroke="{{ muted }}" stroke-width="2" opacity="0.15"/>
+  <line x1="92"  y1="478" x2="268" y2="478" stroke="{{ muted }}" stroke-width="1.5" opacity="0.13"/>
+  <line x1="112" y1="400" x2="248" y2="400" stroke="{{ muted }}" stroke-width="1.5" opacity="0.11"/>
+  <line x1="132" y1="322" x2="228" y2="322" stroke="{{ muted }}" stroke-width="1.5" opacity="0.10"/>
+  <line x1="150" y1="248" x2="210" y2="248" stroke="{{ muted }}" stroke-width="1" opacity="0.10"/>
+  <line x1="163" y1="185" x2="197" y2="185" stroke="{{ muted }}" stroke-width="1" opacity="0.09"/>
+  <line x1="72"  y1="555" x2="180" y2="85" stroke="{{ muted }}" stroke-width="1" opacity="0.09"/>
+  <line x1="288" y1="555" x2="180" y2="85" stroke="{{ muted }}" stroke-width="1" opacity="0.09"/>
+  <circle cx="180" cy="85" r="28" fill="none" stroke="{{ accent }}" stroke-width="1" opacity="0.18"/>
+  <circle cx="180" cy="85" r="55" fill="none" stroke="{{ accent }}" stroke-width="0.5" opacity="0.10"/>
+  <circle cx="180" cy="85" r="85" fill="none" stroke="{{ accent }}" stroke-width="0.5" opacity="0.06"/>
   {% endif %}
 
-  <!-- Panel divider line -->
-  <line x1="380" y1="48" x2="380" y2="582" stroke="{{ muted }}" stroke-width="0.8" opacity="0.22"/>
+  <!-- Structural panel divider line -->
+  <line x1="360" y1="42" x2="360" y2="588" stroke="{{ muted }}" stroke-width="0.8" opacity="0.24"/>
 
-  <!-- Site identifier (small caps at top) -->
-  <text x="430" y="86"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="13" font-weight="400" letter-spacing="3.5"
-        fill="{{ muted }}" text-anchor="start" opacity="0.85">COMA.FM RADAR</text>
+  <!-- Top horizontal rule — Swiss grid -->
+  <line x1="395" y1="62" x2="1160" y2="62" stroke="{{ muted }}" stroke-width="0.5" opacity="0.20"/>
 
-  <!-- Top rule -->
-  <line x1="430" y1="100" x2="1145" y2="100" stroke="{{ muted }}" stroke-width="0.5" opacity="0.22"/>
+  <!-- Site identifier — small caps label -->
+  <text x="408" y="52"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="400" letter-spacing="4"
+        fill="{{ muted }}" text-anchor="start" opacity="0.80">COMA.FM RADAR</text>
+
+  <!-- Accent rule — mid composition -->
+  <line x1="408" y1="96" x2="1160" y2="96" stroke="{{ accent }}" stroke-width="1.5" opacity="0.40"/>
 
   <!-- Main title -->
-  <text x="430" y="228"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
+  <text x="408" y="228"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
         font-size="{{ title_font_size }}" font-weight="700" letter-spacing="-1.5"
         fill="{{ text_color }}" text-anchor="start">{{ title }}</text>
 
-  <!-- Subtitle (rendered only when non-empty) -->
+  <!-- Subtitle -->
   {% if subtitle %}
-  <text x="432" y="276"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="22" font-weight="300" letter-spacing="0.5"
+  <text x="410" y="278"
+        font-family="-apple-system, Georgia, serif"
+        font-size="21" font-weight="300" letter-spacing="0.5"
         fill="{{ muted }}" text-anchor="start" font-style="italic">{{ subtitle }}</text>
   {% endif %}
 
-  <!-- Accent rule -->
-  <line x1="430" y1="308" x2="1145" y2="308" stroke="{{ accent }}" stroke-width="1.5" opacity="0.48"/>
-
-  <!-- Issue date -->
-  <text x="430" y="356"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="28" font-weight="400" letter-spacing="2.5"
+  <!-- Issue date — wide tracked, Bauhaus label style -->
+  <text x="408" y="348"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="26" font-weight="400" letter-spacing="3"
         fill="{{ accent }}" text-anchor="start">{{ issue_date }}</text>
 
-  <!-- Main tag pill background -->
-  <rect x="428" y="376" width="{{ tag_pill_width }}" height="36" rx="4"
-        fill="{{ accent }}" opacity="0.16"/>
+  <!-- Thin rule below date -->
+  <line x1="408" y1="360" x2="780" y2="360" stroke="{{ accent }}" stroke-width="0.8" opacity="0.30"/>
 
-  <!-- Main tag label -->
-  <text x="448" y="401"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="18" font-weight="600" letter-spacing="2"
+  <!-- Main tag — geometric label block -->
+  <rect x="406" y="374" width="{{ tag_pill_width }}" height="34" rx="0"
+        fill="{{ accent }}" opacity="0.13"/>
+  <text x="424" y="397"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="17" font-weight="600" letter-spacing="2.2"
         fill="{{ accent }}" text-anchor="start">{{ main_tag_label }}</text>
 
-  <!-- Item count -->
-  <text x="430" y="472"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="18" font-weight="400" letter-spacing="0.5"
+  <!-- Item count — tabular label -->
+  <text x="408" y="466"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="400" letter-spacing="1"
         fill="{{ muted }}" text-anchor="start">{{ item_count }} items</text>
 
-  <!-- Language badge (top right) -->
-  <rect x="1082" y="52" width="62" height="28" rx="3" fill="{{ accent }}" opacity="0.2"/>
-  <text x="1113" y="72"
-        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Georgia, serif"
-        font-size="13" font-weight="700" letter-spacing="2"
+  <!-- Language badge — top right, geometric block -->
+  <rect x="1090" y="36" width="58" height="26" rx="0" fill="{{ accent }}" opacity="0.18"/>
+  <text x="1119" y="55"
+        font-family="-apple-system, 'Helvetica Neue', Arial, sans-serif"
+        font-size="11" font-weight="700" letter-spacing="2.5"
         fill="{{ accent }}" text-anchor="middle">{{ lang_label }}</text>
 
-  <!-- Outer border frame -->
-  <rect x="18" y="18" width="1164" height="594" rx="5"
-        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.16"/>
+  <!-- Outer border frame — poster edge -->
+  <rect x="14" y="14" width="1172" height="602" rx="0"
+        fill="none" stroke="{{ muted }}" stroke-width="1" opacity="0.14"/>
+
+  <!-- Inner corner marks — Swiss registration -->
+  <line x1="14" y1="14"  x2="42" y2="14"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="14" y1="14"  x2="14" y2="42"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="1186" y1="14"  x2="1158" y2="14"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="1186" y1="14"  x2="1186" y2="42"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="14" y1="616"  x2="42"   y2="616"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="14" y1="616"  x2="14"   y2="588"  stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="1186" y1="616" x2="1158" y2="616" stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
+  <line x1="1186" y1="616" x2="1186" y2="588" stroke="{{ accent }}" stroke-width="1" opacity="0.22"/>
 </svg>

@@ -8,58 +8,76 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container site-shell">
+<div class="site-shell">
   <header class="site-header">
-    <nav class="language-switch">
-      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-    </nav>
-    <a class="back" href="{{ back_href }}">{{ back_to_index }}</a>
-    <h1 class="site-title">{{ tag_label }}</h1>
-    {% if tag_type %}
-    <p class="tag-type">{{ tag_type }}</p>
-    {% endif %}
-    {% if tag_description %}
-    <p class="tag-description">{{ tag_description }}</p>
-    {% endif %}
+    <div class="header-row">
+      <div class="brand-mark">
+        <span class="brand-signal">&#9673;</span>
+        <span class="brand-name">coma.fm</span>
+        <span class="brand-sub">Radar</span>
+      </div>
+      <nav class="language-switch">
+        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      </nav>
+    </div>
+    <div class="brand-line"></div>
   </header>
 
-  <div class="tag-page">
-    {% if related_tags %}
-    <section class="related-section">
-      <h2>{{ related_heading }}</h2>
-      <div class="related-tags">
-        {% for related in related_tags %}
-        <a href="{{ related.href }}" class="related-tag">{{ related.label }}</a>
-        {% endfor %}
-      </div>
-    </section>
-    {% endif %}
+  <main>
+    <a class="back" href="{{ back_href }}">{{ back_to_index }}</a>
 
-    <section class="items-section">
-      <h2>{{ items_heading }}</h2>
-      {% if items %}
-      {% for item in items %}
-      <article class="item item-card">
-        <h3><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h3>
-        <p class="meta">
-          <span class="source">{{ item.source_name }}</span>
-          {% if item.published_at %}
-          &middot; <span class="date">{{ item.published_at }}</span>
-          {% endif %}
-          &middot; <span class="score">{{ item.score }}</span>
-          &middot; <a href="{{ item.issue_href }}">{{ item.issue_date }}</a>
-        </p>
-        {% if item.matched_artists %}
-        <p class="artists">{{ item.matched_artists }}</p>
-        {% endif %}
-      </article>
-      {% endfor %}
-      {% else %}
-      <p class="no-items">{{ no_items_message }}</p>
+    <div class="tag-page">
+      <h1 class="section-title">{{ tag_label }}</h1>
+      <hr class="section-rule">
+      {% if tag_type %}
+      <p class="tag-type">{{ tag_type }}</p>
       {% endif %}
-    </section>
-  </div>
+      {% if tag_description %}
+      <p class="tag-description">{{ tag_description }}</p>
+      {% endif %}
+
+      {% if related_tags %}
+      <section class="related-section">
+        <h2>{{ related_heading }}</h2>
+        <div class="related-tags">
+          {% for related in related_tags %}
+          <a href="{{ related.href }}" class="related-tag">{{ related.label }}</a>
+          {% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      <section class="items-section">
+        <h2>{{ items_heading }}</h2>
+        {% if items %}
+        <div class="item-grid">
+          {% for item in items %}
+          <article class="item item-card">
+            <span class="item-number"></span>
+            <div class="item-body">
+              <h3 class="item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h3>
+              <p class="item-meta meta">
+                <span class="source">{{ item.source_name }}</span>
+                {% if item.published_at %}
+                &middot; <span class="date">{{ item.published_at }}</span>
+                {% endif %}
+                &middot; <span class="score">{{ item.score }}</span>
+                &middot; <a href="{{ item.issue_href }}">{{ item.issue_date }}</a>
+              </p>
+              {% if item.matched_artists %}
+              <p class="artists">{{ item.matched_artists }}</p>
+              {% endif %}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-items">{{ no_items_message }}</p>
+        {% endif %}
+      </section>
+    </div>
+  </main>
 
   <footer class="footer">
     <p>{{ site_heading }}</p>

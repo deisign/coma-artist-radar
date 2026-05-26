@@ -89,7 +89,7 @@ def test_build_css_dry_run_flag_in_summary(tmp_path):
 
 
 # ---------------------------------------------------------------------------
-# CSS content — required classes present
+# CSS content — required classes present (Stage 18 baseline)
 # ---------------------------------------------------------------------------
 
 def test_css_has_site_header(tmp_path):
@@ -153,11 +153,92 @@ def test_css_has_issue_cover(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# CSS content — Stage 19 modernist classes
+# ---------------------------------------------------------------------------
+
+def test_css_has_brand_mark(tmp_path):
+    assert ".brand-mark" in _css_content(tmp_path)
+
+
+def test_css_has_hero(tmp_path):
+    assert ".hero" in _css_content(tmp_path)
+
+
+def test_css_has_section_rule(tmp_path):
+    assert ".section-rule" in _css_content(tmp_path)
+
+
+def test_css_has_issue_grid(tmp_path):
+    assert ".issue-grid" in _css_content(tmp_path)
+
+
+def test_css_has_item_grid(tmp_path):
+    assert ".item-grid" in _css_content(tmp_path)
+
+
+def test_css_has_archive_item(tmp_path):
+    assert ".archive-item" in _css_content(tmp_path)
+
+
+def test_css_has_item_number(tmp_path):
+    assert ".item-number" in _css_content(tmp_path)
+
+
+def test_css_has_brand_line(tmp_path):
+    assert ".brand-line" in _css_content(tmp_path)
+
+
+def test_css_has_hero_kicker(tmp_path):
+    assert ".hero-kicker" in _css_content(tmp_path)
+
+
+def test_css_has_hero_title(tmp_path):
+    assert ".hero-title" in _css_content(tmp_path)
+
+
+def test_css_has_hero_deck(tmp_path):
+    assert ".hero-deck" in _css_content(tmp_path)
+
+
+def test_css_has_hero_meta(tmp_path):
+    assert ".hero-meta" in _css_content(tmp_path)
+
+
+def test_css_has_section_title(tmp_path):
+    assert ".section-title" in _css_content(tmp_path)
+
+
+def test_css_has_archive_date(tmp_path):
+    assert ".archive-date" in _css_content(tmp_path)
+
+
+def test_css_has_item_title(tmp_path):
+    assert ".item-title" in _css_content(tmp_path)
+
+
+def test_css_has_item_meta(tmp_path):
+    assert ".item-meta" in _css_content(tmp_path)
+
+
+def test_css_has_issue_card_date(tmp_path):
+    assert ".issue-card-date" in _css_content(tmp_path)
+
+
+def test_css_has_issue_card_title(tmp_path):
+    assert ".issue-card-title" in _css_content(tmp_path)
+
+
+# ---------------------------------------------------------------------------
 # CSS content — palette and no forbidden values
 # ---------------------------------------------------------------------------
 
 def test_css_has_warm_bg_variable(tmp_path):
-    assert "--bg: #17130f" in _css_content(tmp_path)
+    assert "--bg:" in _css_content(tmp_path)
+
+
+def test_css_bg_is_warm_not_pure_black(tmp_path):
+    css = _css_content(tmp_path)
+    assert "--bg:        #1a1510" in css or "--bg: #1a1510" in css
 
 
 def test_css_no_pure_black_background(tmp_path):
@@ -165,6 +246,12 @@ def test_css_no_pure_black_background(tmp_path):
     assert "background: #000" not in css
     assert "background-color: #000" not in css
     assert "--bg: #000" not in css
+
+
+def test_css_no_pure_white_token(tmp_path):
+    css = _css_content(tmp_path)
+    assert "--text: #fff" not in css
+    assert "--bg: #fff" not in css
 
 
 def test_css_no_external_import(tmp_path):
@@ -177,6 +264,170 @@ def test_css_no_google_fonts(tmp_path):
 
 def test_css_no_cdn(tmp_path):
     assert "cdn" not in _css_content(tmp_path).lower()
+
+
+# ---------------------------------------------------------------------------
+# Index HTML — hero structure present
+# ---------------------------------------------------------------------------
+
+def test_index_html_has_hero(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert 'class="hero"' in html
+
+
+def test_index_html_has_brand_mark(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "brand-mark" in html
+
+
+def test_index_html_has_hero_title(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "hero-title" in html
+
+
+def test_index_html_has_section_rule(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "section-rule" in html
+
+
+# ---------------------------------------------------------------------------
+# Issue HTML — cover and item-card present
+# ---------------------------------------------------------------------------
+
+def test_issue_html_has_item_card(tmp_path):
+    html = render_html(
+        items=[{
+            "id": 1, "title": "Test Article", "url": "https://example.com",
+            "source_name": "Test Source", "score": 80, "published_at": "",
+            "matched_artists": "", "tags": [],
+        }],
+        issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "item-card" in html
+
+
+def test_issue_html_has_issue_cover_class(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+        cover_image_url="/coma-artist-radar/assets/covers/issues/2026-01-15/cover-en.svg",
+    )
+    assert "issue-cover" in html
+
+
+def test_issue_html_has_item_grid(tmp_path):
+    html = render_html(
+        items=[{
+            "id": 1, "title": "Test", "url": "https://example.com",
+            "source_name": "Src", "score": 50, "published_at": "",
+            "matched_artists": "", "tags": [],
+        }],
+        issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "item-grid" in html
+
+
+def test_issue_html_has_item_number(tmp_path):
+    html = render_html(
+        items=[{
+            "id": 1, "title": "Test", "url": "https://example.com",
+            "source_name": "Src", "score": 50, "published_at": "",
+            "matched_artists": "", "tags": [],
+        }],
+        issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "item-number" in html
+
+
+# ---------------------------------------------------------------------------
+# Archive HTML — archive-item present
+# ---------------------------------------------------------------------------
+
+def test_archive_html_has_archive_list(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "archive-list" in html
+
+
+def test_archive_html_has_archive_item_class(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "archive-item" in html
+
+
+# ---------------------------------------------------------------------------
+# Tags index — tag-grid present
+# ---------------------------------------------------------------------------
+
+def test_tags_index_has_tag_grid(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "tag-grid" in html
+
+
+def test_tags_index_has_brand_mark(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "brand-mark" in html
 
 
 # ---------------------------------------------------------------------------

@@ -1,51 +1,554 @@
-/* coma.fm Radar — warm nocturnal editorial design system */
+/* coma.fm Radar — modernist radio bulletin design system
+   Swiss International Style / Bauhaus / Mid-century editorial */
+
 :root {
-  --bg: #17130f;
-  --surface: #211a15;
-  --surface-2: #2a211a;
-  --text: #f2e6d0;
-  --muted: #b8a98e;
-  --border: rgba(242, 230, 208, 0.16);
-  --accent: #e07a3f;
-  --accent-2: #3a8c8c;
-  --danger: #b6463a;
-  --paper: #f2e6d0;
-  --draft-bg: #3a1a18;
+  /* Palette — warm dark modernist, not pure black */
+  --bg:        #1a1510;  /* deep tobacco */
+  --surface:   #231d16;  /* warm graphite */
+  --surface-2: #2d2318;  /* card surface */
+  --text:      #ede0c4;  /* aged paper */
+  --muted:     #a89070;  /* warm sand */
+  --border:    rgba(237, 224, 196, 0.13);
+  --rule:      rgba(237, 224, 196, 0.20);
+  --accent:    #c47820;  /* burnt orange */
+  --accent-2:  #3a8080;  /* muted turquoise */
+  --danger:    #b04040;  /* lacquer red */
+  --ochre:     #c8a040;  /* mustard */
+  --paper:     #ede0c4;
+  --draft-bg:  #3a1a18;
+
+  /* Spacing rhythm */
+  --sp-xs:  0.25rem;
+  --sp-sm:  0.5rem;
+  --sp-md:  1rem;
+  --sp-lg:  2rem;
+  --sp-xl:  3rem;
+  --sp-2xl: 4rem;
+
+  /* Typography stacks */
+  --font-ui:    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-text:  Georgia, "Times New Roman", serif;
+  --font-label: "Helvetica Neue", Arial, sans-serif;
+
+  /* Grid */
+  --max-w: 860px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Georgia, serif;
+  font-family: var(--font-ui);
   background: var(--bg);
   color: var(--text);
-  line-height: 1.65;
-  padding: 0 1rem 4rem;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* Layout */
+/* ── Layout ────────────────────────────────────────────────── */
 
 .site-shell,
 .container {
-  max-width: 760px;
+  max-width: var(--max-w);
   margin: 0 auto;
+  padding: 0 var(--sp-lg) var(--sp-2xl);
 }
 
-/* Header */
+/* ── Header & Brand ────────────────────────────────────────── */
 
-.site-header,
-header {
-  padding: 2rem 0 1.5rem;
+.site-header {
+  padding: var(--sp-lg) 0 0;
+  margin-bottom: var(--sp-lg);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--sp-sm);
+  margin-bottom: var(--sp-sm);
+}
+
+.brand-mark {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-sm);
+}
+
+.brand-signal {
+  color: var(--accent);
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.brand-sub {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.brand-line {
+  height: 2px;
+  background: linear-gradient(to right, var(--accent) 0%, var(--accent-2) 35%, transparent 70%);
+  margin-bottom: var(--sp-xs);
+}
+
+/* ── Language switch ───────────────────────────────────────── */
+
+.language-switch,
+nav {
+  display: flex;
+  gap: var(--sp-md);
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.language-switch a,
+nav a { color: var(--muted); text-decoration: none; }
+
+.language-switch a:hover,
+nav a:hover { color: var(--text); }
+
+.language-switch a.active,
+nav a.active {
+  color: var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+/* ── Nav links ─────────────────────────────────────────────── */
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-lg);
+  margin-top: var(--sp-lg);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+
+.nav-links a:hover { color: var(--accent); border-color: var(--accent); }
+
+.back {
+  display: inline-block;
+  font-family: var(--font-label);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: var(--sp-md);
+}
+
+.back:hover { color: var(--accent); text-decoration: none; }
+
+/* ── Hero — modernist landing block ────────────────────────── */
+
+.hero {
+  padding: var(--sp-xl) 0;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: var(--sp-xl);
+}
+
+.hero-kicker {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--sp-md);
+}
+
+.hero-title {
+  font-family: var(--font-label);
+  font-size: clamp(2.6rem, 7vw, 4.8rem);
+  font-weight: 700;
+  line-height: 0.96;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: var(--sp-md);
+}
+
+.hero-deck {
+  font-family: var(--font-text);
+  font-size: 0.97rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 520px;
+  margin-bottom: var(--sp-lg);
+  font-style: italic;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-lg);
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+}
+
+.hero-meta a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 2px;
+}
+
+.hero-meta a:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── Section titles & rules ────────────────────────────────── */
+
+.section-title,
+.section-heading {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-sm);
+}
+
+.section-rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 0 0 var(--sp-lg);
+}
+
+/* ── Issue grid — editorial program blocks ─────────────────── */
+
+.issue-grid,
+.issue-list { margin: 0; }
+
+.issue-card,
+.issue-row {
+  display: grid;
+  grid-template-columns: 7.2rem 1fr auto;
+  align-items: baseline;
+  gap: 0 var(--sp-md);
+  padding: 0.65rem 0;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 2rem;
+}
+
+.issue-card-date,
+.issue-date {
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.issue-card-title,
+.issue-link {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.issue-card-title:hover,
+.issue-link:hover { color: var(--accent); text-decoration: none; }
+
+.issue-card-meta,
+.issue-meta {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* ── Archive list — printed index ──────────────────────────── */
+
+.archive-list { margin: 0; }
+
+.archive-item {
+  display: grid;
+  grid-template-columns: 7.2rem 1fr auto;
+  align-items: baseline;
+  gap: 0 var(--sp-md);
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.archive-date {
+  font-family: var(--font-label);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.archive-link {
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.archive-link:hover { color: var(--accent); text-decoration: none; }
+
+.archive-meta {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── Item grid — magazine index entries ────────────────────── */
+
+.item-grid { counter-reset: item-counter; }
+
+.item-card,
+.item {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0 var(--sp-md);
+  padding: var(--sp-lg) 0;
+  border-bottom: 1px solid var(--border);
+  align-items: start;
+  counter-increment: item-counter;
+}
+
+.item-number {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  padding-top: 0.22rem;
+  text-align: right;
+  user-select: none;
+}
+
+.item-number::before {
+  content: counter(item-counter, decimal-leading-zero);
+}
+
+.item-body { min-width: 0; }
+
+.item-title,
+.item-card h2,
+.item-card h3,
+.item h2,
+.item h3 {
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.3rem;
+}
+
+.item-title a,
+.item-card h2 a,
+.item-card h3 a,
+.item h2 a,
+.item h3 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.item-title a:hover,
+.item-card h2 a:hover,
+.item-card h3 a:hover,
+.item h2 a:hover,
+.item h3 a:hover {
+  color: var(--accent);
+}
+
+.item-meta,
+.meta {
+  font-family: var(--font-label);
+  font-size: 0.74rem;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.score { color: var(--accent-2); }
+.source { color: var(--muted); }
+.artists { font-size: 0.82rem; color: var(--accent); margin-bottom: 0.3rem; }
+
+/* ── Tag list & pills ──────────────────────────────────────── */
+
+.tag-list,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+
+.tag-pill,
+.tag,
+.related-tag {
+  font-family: var(--font-label);
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  font-size: 0.68rem;
+  padding: 0.1rem 0.42rem;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.12s, border-color 0.12s;
+}
+
+.tag-pill:hover,
+.tag:hover,
+.related-tag:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+/* ── Tag page ──────────────────────────────────────────────── */
+
+.tag-page { }
+
+.tag-type {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin-top: 0.3rem;
+}
+
+.tag-description {
+  font-family: var(--font-text);
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: var(--sp-sm);
+  font-style: italic;
+}
+
+.related-section { margin: var(--sp-lg) 0; }
+
+.related-section h2,
+.items-section h2 {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--sp-sm);
+}
+
+.related-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+/* ── Tag grid — taxonomy board ─────────────────────────────── */
+
+.tag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 0.55rem;
+}
+
+.tag-card {
+  border: 1px solid var(--border);
+  padding: 0.65rem var(--sp-md);
+}
+
+.tag-card a {
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.84rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.tag-card a:hover { color: var(--accent); text-decoration: none; }
+
+.tag-count {
+  font-family: var(--font-label);
+  font-size: 0.68rem;
+  color: var(--accent-2);
+  letter-spacing: 0.06em;
+  margin-top: 0.15rem;
+}
+
+.tag-desc {
+  font-size: 0.74rem;
+  color: var(--muted);
+  margin-top: 0.22rem;
+  line-height: 1.4;
+}
+
+/* ── Group sections — tag index ────────────────────────────── */
+
+.group { margin-bottom: var(--sp-xl); }
+
+.group-heading {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--sp-xs);
+  margin-bottom: var(--sp-md);
+}
+
+/* ── Issue page specifics ──────────────────────────────────── */
+
+.issue-header { margin-bottom: var(--sp-lg); }
+
+.issue-date-label {
+  font-family: var(--font-label);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-top: 0.3rem;
+}
+
+.intro {
+  font-family: var(--font-text);
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.4rem;
 }
 
 .site-title,
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -53,269 +556,56 @@ h1 {
 
 .site-description,
 .tagline {
+  font-family: var(--font-text);
   color: var(--muted);
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
   font-style: italic;
 }
 
-/* Language switch */
-
-.language-switch,
-nav {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.language-switch a,
-nav a { color: var(--muted); }
-
-.language-switch a.active,
-nav a.active { color: var(--accent); }
-
-/* Section headings */
-
-.section-heading {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4rem;
-  margin: 2rem 0 1rem;
-}
-
-/* Navigation */
-
-.nav-links {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.9rem;
-}
-
-.back {
-  font-size: 0.85rem;
-  margin-bottom: 0.8rem;
-  display: block;
-}
-
-/* Issue & archive lists */
-
-.issue-list,
-.archive-list { margin-top: 0; }
-
-.issue-card,
-.issue-row {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 0.65rem 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.issue-date {
-  color: var(--accent);
-  font-size: 0.9rem;
-  font-variant-numeric: tabular-nums;
-  min-width: 7rem;
-  flex-shrink: 0;
-}
-
-.issue-link { color: var(--text); font-size: 0.9rem; flex: 1; }
-.issue-link:hover { color: var(--accent); }
-.issue-meta { font-size: 0.8rem; color: var(--muted); white-space: nowrap; }
-
-/* Badges */
+/* ── Badges ────────────────────────────────────────────────── */
 
 .badge-draft {
-  font-size: 0.7rem;
-  background: var(--draft-bg);
-  color: #ffcece;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  letter-spacing: 0.05em;
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-left: 0.4rem;
-}
-
-.badge-published {
-  font-size: 0.7rem;
-  background: #112820;
-  color: var(--accent-2);
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  background: rgba(176, 64, 64, 0.15);
+  color: #e0a0a0;
+  border: 1px solid rgba(176, 64, 64, 0.28);
+  padding: 0.08rem 0.38rem;
   margin-left: 0.35rem;
 }
 
-/* Draft notice (issue page) */
+.badge-published {
+  font-family: var(--font-label);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(58, 128, 128, 0.13);
+  color: var(--accent-2);
+  border: 1px solid rgba(58, 128, 128, 0.24);
+  padding: 0.08rem 0.38rem;
+  margin-left: 0.35rem;
+}
 
 .draft-notice {
   display: inline-block;
-  background: var(--danger);
-  color: #ffe8e8;
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.2rem 0.6rem;
-  border-radius: 3px;
-  margin-bottom: 0.8rem;
-}
-
-/* Item cards */
-
-.item-card,
-.item {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 1.25rem 1.4rem;
-  margin-bottom: 1.2rem;
-}
-
-.item-card h2, .item h2,
-.item-card h3, .item h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.4;
-  margin-bottom: 0.4rem;
-}
-
-.item-card h2 a, .item h2 a,
-.item-card h3 a, .item h3 a { color: var(--text); }
-
-.item-card h2 a:hover, .item h2 a:hover,
-.item-card h3 a:hover, .item h3 a:hover { color: var(--accent); text-decoration: none; }
-
-/* Meta / score / source */
-
-.meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
-.meta .score,
-.score { color: var(--accent-2); }
-.source { color: var(--muted); }
-.artists { font-size: 0.85rem; color: var(--accent); margin-bottom: 0.4rem; }
-
-/* Tag list & pills */
-
-.tag-list,
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-top: 0.5rem;
-}
-
-.tag-pill,
-.tag,
-.related-tag {
-  background: var(--surface-2);
-  color: var(--muted);
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  font-size: 0.75rem;
-  padding: 0.15rem 0.5rem;
-  letter-spacing: 0.03em;
-}
-
-.tag-pill:hover,
-.tag:hover,
-.related-tag:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
-
-/* Tag page */
-
-.tag-page { }
-
-.tag-type {
-  color: var(--muted);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 0.3rem;
-}
-
-.tag-description {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 0.6rem;
-  font-style: italic;
-}
-
-.related-section { margin: 1.5rem 0; }
-
-.related-section h2 {
-  font-size: 0.8rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.6rem;
-}
-
-.related-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
-
-.items-section h2 {
-  font-size: 0.8rem;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
-
-/* Tag grid (tags index) */
-
-.tag-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.8rem;
-}
-
-.tag-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 5px;
-  padding: 0.8rem 1rem;
-}
-
-.tag-card a { color: var(--text); font-weight: 600; font-size: 0.9rem; }
-.tag-card a:hover { color: var(--accent); text-decoration: none; }
-.tag-count { font-size: 0.75rem; color: var(--accent-2); margin-top: 0.2rem; }
-.tag-desc { font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.4; }
-
-/* Group sections (tag index) */
-
-.group { margin-bottom: 2.5rem; }
-
-.group-heading {
-  font-size: 0.75rem;
-  text-transform: uppercase;
+  font-family: var(--font-label);
+  font-size: 0.64rem;
   letter-spacing: 0.12em;
-  color: var(--muted);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
+  text-transform: uppercase;
+  background: rgba(176, 64, 64, 0.15);
+  color: #e0a0a0;
+  border: 1px solid rgba(176, 64, 64, 0.28);
+  padding: 0.18rem 0.55rem;
+  margin-bottom: var(--sp-md);
 }
 
-/* Issue page specifics */
-
-.issue-date-label { color: var(--muted); font-size: 0.85rem; margin-top: 0.3rem; }
-
-.intro {
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  font-style: italic;
-}
-
-/* Issue cover */
+/* ── Issue cover ────────────────────────────────────────────── */
 
 .cover-frame {
-  margin: 0 0 2rem;
-  border-radius: 5px;
+  margin: 0 0 var(--sp-xl);
   overflow: hidden;
 }
 
@@ -324,30 +614,47 @@ nav a.active { color: var(--accent); }
   width: 100%;
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
-/* Empty states */
+/* ── Empty states ───────────────────────────────────────────── */
 
-.no-items { color: var(--muted); font-style: italic; padding: 2rem 0; }
-.no-issues { color: var(--muted); font-style: italic; padding: 1.5rem 0; }
+.no-items,
+.no-issues {
+  font-family: var(--font-text);
+  color: var(--muted);
+  font-style: italic;
+  padding: var(--sp-xl) 0;
+  font-size: 0.9rem;
+}
 
-/* Footer */
+/* ── Footer ─────────────────────────────────────────────────── */
 
 .footer,
 footer {
   border-top: 1px solid var(--border);
-  margin-top: 3rem;
-  padding-top: 1.2rem;
-  font-size: 0.8rem;
+  margin-top: var(--sp-xl);
+  padding-top: var(--sp-md);
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
   color: var(--muted);
 }
 
-/* Responsive */
+.footer a { color: var(--muted); text-decoration: none; }
+.footer a:hover { color: var(--accent); }
+
+/* ── Responsive ─────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
+  .site-shell,
+  .container { padding: 0 var(--sp-md) var(--sp-xl); }
+  .hero-title { font-size: 2.4rem; }
   .issue-card,
-  .issue-row { flex-wrap: wrap; gap: 0.4rem; }
-  .issue-date { min-width: auto; }
+  .issue-row,
+  .archive-item { grid-template-columns: 1fr; gap: 0.18rem; padding: 0.6rem 0; }
+  .issue-card-date,
+  .archive-date { font-size: 0.72rem; }
+  .item-card,
+  .item { grid-template-columns: 1.6rem 1fr; gap: 0 var(--sp-sm); }
   .tag-grid { grid-template-columns: 1fr 1fr; }
 }

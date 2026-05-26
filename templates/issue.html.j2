@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container site-shell">
+<div class="site-shell">
   <header class="site-header">
-    <nav class="language-switch">
-      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-    </nav>
-    {% if draft %}
-    <div class="draft-notice">{{ draft_notice }}</div>
-    {% endif %}
-    <h1 class="site-title">{{ heading }}</h1>
-    <p class="issue-date">{{ issue_date }}</p>
-    <p class="intro">{{ intro }}</p>
+    <div class="header-row">
+      <div class="brand-mark">
+        <span class="brand-signal">&#9673;</span>
+        <span class="brand-name">coma.fm</span>
+        <span class="brand-sub">Radar</span>
+      </div>
+      <nav class="language-switch">
+        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      </nav>
+    </div>
+    <div class="brand-line"></div>
   </header>
 
   <main>
@@ -28,29 +30,44 @@
       <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
     </div>
     {% endif %}
+
+    <div class="issue-header">
+      {% if draft %}
+      <div class="draft-notice">{{ draft_notice }}</div>
+      {% endif %}
+      <h1 class="site-title">{{ heading }}</h1>
+      <p class="issue-date-label issue-date">{{ issue_date }}</p>
+      <p class="intro">{{ intro }}</p>
+    </div>
+
     {% if items %}
-    {% for item in items %}
-    <article class="item item-card">
-      <h2><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
-      <p class="meta">
-        <span class="source">{{ item.source_name }}</span>
-        {% if item.published_at %}
-        &middot; <span class="date">{{ item.published_at }}</span>
-        {% endif %}
-        &middot; <span class="score">{{ item.score }}</span>
-      </p>
-      {% if item.matched_artists %}
-      <p class="artists">{{ item.matched_artists }}</p>
-      {% endif %}
-      {% if item.tags %}
-      <p class="tags tag-list">
-        {% for tag in item.tags %}
-        <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag tag-pill">{{ tag.label }}</a>
-        {% endfor %}
-      </p>
-      {% endif %}
-    </article>
-    {% endfor %}
+    <div class="item-grid">
+      {% for item in items %}
+      <article class="item item-card">
+        <span class="item-number"></span>
+        <div class="item-body">
+          <h2 class="item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
+          <p class="item-meta meta">
+            <span class="source">{{ item.source_name }}</span>
+            {% if item.published_at %}
+            &middot; <span class="date">{{ item.published_at }}</span>
+            {% endif %}
+            &middot; <span class="score">{{ item.score }}</span>
+          </p>
+          {% if item.matched_artists %}
+          <p class="artists">{{ item.matched_artists }}</p>
+          {% endif %}
+          {% if item.tags %}
+          <div class="tag-list tags">
+            {% for tag in item.tags %}
+            <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag tag-pill">{{ tag.label }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
     {% else %}
     <p class="no-items">{{ no_items_message }}</p>
     {% endif %}

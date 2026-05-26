@@ -8,25 +8,42 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container site-shell">
+<div class="site-shell">
   <header class="site-header">
-    <nav class="language-switch">
-      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-    </nav>
-    <h1 class="site-title">{{ title }}</h1>
-    <p class="site-description tagline">{{ description }}</p>
+    <div class="header-row">
+      <div class="brand-mark">
+        <span class="brand-signal">&#9673;</span>
+        <span class="brand-name">coma.fm</span>
+        <span class="brand-sub">Radar</span>
+      </div>
+      <nav class="language-switch">
+        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      </nav>
+    </div>
+    <div class="brand-line"></div>
   </header>
 
+  <section class="hero">
+    <p class="hero-kicker">Broadcast &middot; Signal &middot; Field Radar</p>
+    <h1 class="hero-title">{{ title }}</h1>
+    <p class="hero-deck">{{ description }}</p>
+    <div class="hero-meta">
+      <a href="{{ archive_href }}">{{ archive_label }}</a>
+      <a href="{{ tags_href }}">{{ tags_label }}</a>
+    </div>
+  </section>
+
   <main>
-    <h2 class="section-heading">{{ latest_issues_heading }}</h2>
-    <div class="issue-list">
+    <h2 class="section-title">{{ latest_issues_heading }}</h2>
+    <hr class="section-rule">
+    <div class="issue-grid issue-list">
       {% if issues %}
       {% for issue in issues %}
-      <div class="issue-card issue-row">
-        <span class="issue-date">{{ issue.date }}</span>
-        <a class="issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
-        <span class="issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>
+      <div class="issue-card">
+        <span class="issue-card-date issue-date">{{ issue.date }}</span>
+        <a class="issue-card-title issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
+        <span class="issue-card-meta issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>
       </div>
       {% endfor %}
       {% else %}
@@ -34,10 +51,10 @@
       {% endif %}
     </div>
 
-    <div class="nav-links">
+    <nav class="nav-links">
       <a href="{{ archive_href }}">{{ archive_label }}</a>
       <a href="{{ tags_href }}">{{ tags_label }}</a>
-    </div>
+    </nav>
   </main>
 
   <footer class="footer">

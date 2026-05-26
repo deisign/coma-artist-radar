@@ -7,16 +7,25 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="container site-shell">
+<div class="site-shell">
   <header class="site-header">
-    <nav class="language-switch">
-      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-    </nav>
-    <h1 class="site-title">{{ heading }}</h1>
+    <div class="header-row">
+      <div class="brand-mark">
+        <span class="brand-signal">&#9673;</span>
+        <span class="brand-name">coma.fm</span>
+        <span class="brand-sub">Radar</span>
+      </div>
+      <nav class="language-switch">
+        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+      </nav>
+    </div>
+    <div class="brand-line"></div>
   </header>
 
   <main>
+    <h1 class="section-title">{{ heading }}</h1>
+    <hr class="section-rule">
     {% for group in groups %}
     <section class="group">
       <h2 class="group-heading">{{ group.type_label }}</h2>

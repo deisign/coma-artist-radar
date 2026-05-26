@@ -794,6 +794,73 @@ python3 -m pytest -q tests
 
 ---
 
+## Stage 13 — Daily draft pipeline
+
+`scripts/build_daily_draft.py` runs the full local pipeline in one command:
+sync sources → import inbox → fetch feeds → score items → build issue → build tag pages → build site.
+
+### Build the first draft
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10
+```
+
+### Limit how many sources are fetched
+
+Useful for quick smoke tests:
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5
+```
+
+### Build for the GitHub Pages project site (default)
+
+The defaults already point to the GitHub Pages URL and base path:
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26
+```
+
+Equivalent long form:
+
+```bash
+python3 scripts/build_daily_draft.py \
+  --date 2026-05-26 \
+  --base-url https://deisign.github.io/coma-artist-radar \
+  --base-path /coma-artist-radar
+```
+
+### Build for a custom domain
+
+```bash
+python3 scripts/build_daily_draft.py \
+  --date 2026-05-26 \
+  --base-url https://radar.coma.fm \
+  --base-path ""
+```
+
+### Dry-run (no files written)
+
+```bash
+python3 scripts/build_daily_draft.py --date 2026-05-26 --dry-run
+```
+
+### Check output after build
+
+```bash
+ls dist/
+ls dist/en/issues/
+ls dist/uk/issues/
+```
+
+### Run tests
+
+```bash
+python3 -m pytest -q tests
+```
+
+---
+
 ## Current project skeleton
 
 ```text

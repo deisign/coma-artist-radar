@@ -190,6 +190,8 @@ def _build_tag_page(
         for e in sorted(entries, key=lambda x: x["issue_date"], reverse=True)
     ]
 
+    from scripts.transmission_meta import make_page_meta
+    tm = make_page_meta("TAG-DOSSIER")
     ctx = {
         "lang": lng,
         "site_heading": locale["site_heading"],
@@ -207,6 +209,9 @@ def _build_tag_page(
         "items_heading": locale["items_heading"],
         "related_heading": locale["related_heading"],
         "asset_path": f"{base_path}/assets",
+        "section_code": tm["section_code"],
+        "band": tm["band"],
+        "archive_node": tm["archive_node"],
     }
 
     page_path = f"dist/{lng}/tags/{slug}.html"
@@ -274,6 +279,8 @@ def _build_index_page(
             "tags": group_tags,
         })
 
+    from scripts.transmission_meta import make_page_meta
+    tm = make_page_meta("TAXONOMY-BOARD")
     ctx = {
         "lang": lng,
         "site_heading": locale["site_heading"],
@@ -282,6 +289,9 @@ def _build_index_page(
         "nav_uk_href": f"{base_path}/uk/tags/index.html",
         "groups": groups,
         "asset_path": f"{base_path}/assets",
+        "section_code": tm["section_code"],
+        "band": tm["band"],
+        "archive_node": tm["archive_node"],
     }
 
     status = "dry_run" if dry_run else "ok"

@@ -436,3 +436,25 @@ def test_summary_has_base_path_key(tmp_path):
     summary = _run(tmp_path, base_path=_GITHUB_BASE_PATH)
     assert "base_path" in summary
     assert summary["base_path"] == _GITHUB_BASE_PATH
+
+
+# ---------------------------------------------------------------------------
+# Stage 22 — transmission metadata in site pages
+# ---------------------------------------------------------------------------
+
+def test_index_html_has_home_signal(tmp_path):
+    _run(tmp_path)
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "HOME-SIGNAL" in html
+
+
+def test_archive_html_has_archive_log(tmp_path):
+    _run(tmp_path)
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "ARCHIVE-LOG" in html
+
+
+def test_index_html_issue_card_has_tx_code(tmp_path):
+    _run(tmp_path)
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "TX-20260115-EN" in html

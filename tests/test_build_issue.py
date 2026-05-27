@@ -494,3 +494,33 @@ def test_build_issue_no_cover_html_has_no_cover_img(tmp_path):
     _run_build(tmp_path, db_path=db_path, lang="en", with_cover=False)
     content = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
     assert 'class="issue-cover"' not in content
+
+
+# ---------------------------------------------------------------------------
+# Stage 22 — transmission metadata in issue HTML
+# ---------------------------------------------------------------------------
+
+def test_render_html_contains_tx_code():
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH,
+        base_path="",
+    )
+    assert "TX-20260115-EN" in html
+
+
+def test_render_html_tx_code_uk():
+    html = render_html(
+        items=[], issue_date="2026-05-27", lang="uk", draft=False,
+        template_path=_TEMPLATE_PATH,
+        base_path="",
+    )
+    assert "TX-20260527-UK" in html
+
+
+def test_build_issue_html_contains_tx_code(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, score=50)
+    _run_build(tmp_path, db_path=db_path, lang="en", issue_date="2026-03-10")
+    content = (tmp_path / "dist" / "en" / "issues" / "2026-03-10.html").read_text(encoding="utf-8")
+    assert "TX-20260310-EN" in content

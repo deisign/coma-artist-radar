@@ -438,3 +438,19 @@ def test_summary_pages_written_includes_index(tmp_path):
     summary = _run_build(tmp_path, lang="en")
     # At minimum: 66 tag pages + 1 index = 67
     assert summary["pages_written"] >= 67
+
+
+# ---------------------------------------------------------------------------
+# Stage 22 — transmission metadata in tag pages
+# ---------------------------------------------------------------------------
+
+def test_tags_index_has_taxonomy_board_label(tmp_path):
+    _run_build(tmp_path, lang="en")
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "TAXONOMY-BOARD" in html
+
+
+def test_tag_page_has_tag_dossier_label(tmp_path):
+    _run_build(tmp_path, lang="en")
+    html = (tmp_path / "dist" / "en" / "tags" / "surf.html").read_text(encoding="utf-8")
+    assert "TAG-DOSSIER" in html

@@ -7,47 +7,52 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="site-shell">
+<div class="page site-shell">
+
   <header class="masthead site-header">
-    <div class="brand-grid header-row">
-      <div class="brand-mark">
-        <span class="brand-signal">&#9673;</span>
-        <span class="brand-name">coma.fm</span>
-        <span class="brand-sub">Radar</span>
-      </div>
-      <nav class="language-switch">
-        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-      </nav>
+    <div class="brand-mark brand-grid">
+      <span class="brand-name">coma.fm</span>
+      <span class="brand-sub muted">Radar</span>
     </div>
+    <nav class="lang language-switch">
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+    </nav>
   </header>
 
   <main>
-    <h1 class="section-title">{{ heading }}</h1>
-    <hr class="section-rule">
+
+    <section class="hero compact">
+      <div>
+        <div class="kicker hero-kicker">Signal taxonomy</div>
+        <h1 class="hero-title md">{{ heading }}</h1>
+      </div>
+      <aside class="hero-panel">
+        <h2>Classification board</h2>
+        <p>Canonical genre, aesthetic and editorial tags used across coma.fm Radar.</p>
+      </aside>
+    </section>
+
     <div class="taxonomy-board">
       {% for group in groups %}
-      <section class="taxonomy-module group">
+      <div class="taxonomy-module group">
         <h2 class="group-heading">{{ group.type_label }}</h2>
-        <div class="tag-grid">
+        <div class="taxonomy-list tag-grid">
           {% for tag in group.tags %}
-          <div class="tag-card">
-            <a href="{{ tag.href }}" class="tag-pill">{{ tag.label }}</a>
-            <p class="tag-count">{{ tag.count }}</p>
-            {% if tag.description %}
-            <p class="tag-desc">{{ tag.description }}</p>
-            {% endif %}
-          </div>
+          <a href="{{ tag.href }}" class="tag-pill">{{ tag.label }}</a>
           {% endfor %}
         </div>
-      </section>
+      </div>
       {% endfor %}
     </div>
+
   </main>
 
   <footer class="footer">
-    <p>{{ site_heading }}</p>
+    <span>{{ site_heading }}</span>
+    <span>Signal Taxonomy</span>
   </footer>
+
 </div>
 </body>
 </html>

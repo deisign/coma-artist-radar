@@ -7,43 +7,69 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="site-shell">
+<div class="page site-shell">
+
   <header class="masthead site-header">
-    <div class="brand-grid header-row">
-      <div class="brand-mark">
-        <span class="brand-signal">&#9673;</span>
-        <span class="brand-name">coma.fm</span>
-        <span class="brand-sub">Radar</span>
-      </div>
-      <nav class="language-switch">
-        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-      </nav>
+    <div class="brand-mark brand-grid">
+      <span class="brand-name">coma.fm</span>
+      <span class="brand-sub muted">Radar</span>
     </div>
+    <nav class="lang language-switch">
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+    </nav>
   </header>
 
   <main>
-    <a class="back" href="{{ back_href }}">{{ back_label }}</a>
-    <h1 class="section-title">{{ heading }}</h1>
-    <hr class="section-rule">
-    <div class="archive-index archive-list">
-      {% if issues %}
-      {% for issue in issues %}
-      <div class="archive-row archive-item">
-        <span class="archive-date">{{ issue.date }}</span>
-        <a class="archive-link issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
-        <span class="archive-meta issue-meta">{{ issue.item_count }} {{ items_label }}{% if issue.draft %}<span class="badge-draft">{{ status_draft }}</span>{% else %}<span class="badge-published">{{ status_published }}</span>{% endif %}</span>
+
+    <section class="hero compact">
+      <div>
+        <div class="kicker hero-kicker">Archive / Transmission Log</div>
+        <h1 class="hero-title md">{{ heading }}</h1>
       </div>
-      {% endfor %}
-      {% else %}
-      <p class="no-issues">{{ no_issues_msg }}</p>
-      {% endif %}
-    </div>
+      <aside class="hero-panel">
+        <h2>Transmission log</h2>
+        <p>Published and drafted field reports from the coma.fm signal archive.</p>
+        <div class="quick-links">
+          <a href="{{ back_href }}">{{ back_label }}</a>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-head section-rule">
+        <h2 class="section-title">
+          {% if lang == "uk" %}Індекс випусків{% else %}Issue index{% endif %}
+        </h2>
+      </div>
+      <hr class="section-rule" style="display:none">
+
+      <div class="archive-index archive-list">
+        {% if issues %}
+        {% for issue in issues %}
+        <div class="archive-row archive-item">
+          <div class="archive-date">{{ issue.date }}</div>
+          <div class="archive-title">
+            <a class="archive-link issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
+          </div>
+          <div>{{ issue.item_count }} {{ items_label }}</div>
+          <div>{% if issue.draft %}{{ status_draft }}{% else %}{{ status_published }}{% endif %}</div>
+          <div><a href="{{ issue.href }}">EN / UK →</a></div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <p class="no-issues">{{ no_issues_msg }}</p>
+        {% endif %}
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <p>coma.fm Radar</p>
+    <span>coma.fm Radar</span>
+    <span>Transmission Log</span>
   </footer>
+
 </div>
 </body>
 </html>

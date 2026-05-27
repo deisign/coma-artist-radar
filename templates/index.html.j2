@@ -8,73 +8,96 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="site-shell">
+<div class="page site-shell">
+
   <header class="masthead site-header">
-    <div class="brand-grid header-row">
-      <div class="brand-mark">
-        <span class="brand-signal">&#9673;</span>
-        <span class="brand-name">coma.fm</span>
-        <span class="brand-sub">Radar</span>
-      </div>
-      <nav class="language-switch">
-        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-      </nav>
+    <div class="brand-mark brand-grid">
+      <span class="brand-name">coma.fm</span>
+      <span class="brand-sub muted">Radar</span>
     </div>
+    <nav class="lang language-switch">
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-panel">
-      <div class="hero-left">
-        <p class="hero-kicker">Broadcast &middot; Signal &middot; Field Radar</p>
+  <main>
+
+    <section class="hero">
+      <div>
+        <div class="kicker hero-kicker">Broadcast · Signal · Field Radar</div>
         <h1 class="hero-title">{{ title }}</h1>
         <p class="hero-deck">{{ description }}</p>
       </div>
-      <div class="hero-right hero-meta">
-        <div>
+      <aside class="hero-panel hero-meta">
+        <h2>Bilingual Music Radar</h2>
+        <p>Surf / Psychobilly / Jazz noir<br>Ghost Americana / Rockabilly<br>Blues / Country</p>
+        <div class="quick-links">
           <a href="{{ archive_href }}">{{ archive_label }}</a>
           <a href="{{ tags_href }}">{{ tags_label }}</a>
         </div>
+      </aside>
+      <div class="signal-hero-graphic">
+        <div class="radio-field"></div>
+        <div class="frequency-field frequency-lines">
+          <div class="frequency-numbers">
+            <span>88</span><span>92</span><span>96</span><span>100</span><span>104</span><span>108</span>
+          </div>
+        </div>
       </div>
+    </section>
+
+    <div class="signal-strip">
+      <a class="signal-token" href="{{ tags_href }}">Surf</a>
+      <a class="signal-token" href="{{ tags_href }}">Psychobilly</a>
+      <a class="signal-token" href="{{ tags_href }}">Jazz noir</a>
+      <a class="signal-token" href="{{ tags_href }}">Ghost Americana</a>
+      <a class="signal-token" href="{{ tags_href }}">Rockabilly</a>
+      <a class="signal-token" href="{{ tags_href }}">Blues</a>
+      <a class="signal-token" href="{{ tags_href }}">Country</a>
     </div>
-  </section>
 
-  <div class="signal-strip">
-    <span class="signal-token">Surf</span>
-    <span class="signal-token">Psychobilly</span>
-    <span class="signal-token">Jazz Noir</span>
-    <span class="signal-token">Ghost Americana</span>
-    <span class="signal-token">Rockabilly</span>
-    <span class="signal-token">Blues</span>
-    <span class="signal-token">Country</span>
-  </div>
-
-  <main>
-    <h2 class="section-title">{{ latest_issues_heading }}</h2>
-    <hr class="section-rule">
-    <div class="program-grid issue-grid issue-list">
-      {% if issues %}
-      {% for issue in issues %}
-      <div class="program-card issue-card">
-        <span class="issue-card-date issue-date">{{ issue.date }}</span>
-        <a class="issue-card-title issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
-        <span class="issue-card-meta issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>
+    <section>
+      <div class="section-head section-rule">
+        <h2 class="section-title">{{ latest_issues_heading }}</h2>
+        <a class="section-link" href="{{ archive_href }}">{{ archive_label }}</a>
       </div>
-      {% endfor %}
+      <hr class="section-rule" style="display:none">
+      {% if issues %}
+      <div class="program-grid issue-grid issue-list">
+        {% set date_colors = ['teal', 'orange', 'ochre'] %}
+        {% for issue in issues %}
+        {% set parts = issue.date.split('-') %}
+        <article class="program-card issue-card">
+          <div class="program-date {{ date_colors[loop.index0 % 3] }} issue-card-date issue-date">
+            {{ parts[2] }}<br>{{ parts[1] }}<br><small>{{ parts[0] }}</small>
+          </div>
+          <div class="program-body">
+            <h3><a class="issue-card-title issue-link" href="{{ issue.href }}">{{ issue.title }}</a></h3>
+            <div class="program-meta issue-card-meta issue-meta">
+              {{ issue.item_count }}{% if issue.draft %} <span class="badge-draft">draft</span>{% endif %}
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
       {% else %}
       <p class="no-issues">{{ no_issues_msg }}</p>
       {% endif %}
-    </div>
+    </section>
 
     <nav class="nav-links">
       <a href="{{ archive_href }}">{{ archive_label }}</a>
       <a href="{{ tags_href }}">{{ tags_label }}</a>
     </nav>
+
   </main>
 
   <footer class="footer">
-    <p>coma.fm Radar</p>
+    <span>coma.fm Radar</span>
+    <span>Pearl Broadcast Modernism</span>
   </footer>
+
 </div>
 </body>
 </html>

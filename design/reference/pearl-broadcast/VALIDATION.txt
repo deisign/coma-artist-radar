@@ -1,0 +1,8 @@
+home_has_hero: OK
+issue_has_layout: OK
+archive_has_index: OK
+tags_has_board: OK
+tag_has_dossier: OK
+css_no_pure_black: OK
+css_no_pure_white: OK
+css_no_cdn: OK

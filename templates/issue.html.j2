@@ -8,75 +8,97 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="site-shell">
+<div class="page site-shell">
+
   <header class="masthead site-header">
-    <div class="brand-grid header-row">
-      <div class="brand-mark">
-        <span class="brand-signal">&#9673;</span>
-        <span class="brand-name">coma.fm</span>
-        <span class="brand-sub">Radar</span>
-      </div>
-      <nav class="language-switch">
-        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-      </nav>
+    <div class="brand-mark brand-grid">
+      <span class="brand-name">coma.fm</span>
+      <span class="brand-sub muted">Radar</span>
     </div>
+    <nav class="lang language-switch">
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+    </nav>
   </header>
 
   <main class="issue-layout">
+
     {% if draft %}
     <div class="draft-notice">{{ draft_notice }}</div>
     {% endif %}
 
-    <div class="issue-hero">
+    <section class="issue-hero">
       {% if cover_image_url %}
-      <div class="cover-frame">
-        <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
-      </div>
+      <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
       {% endif %}
-      <div class="issue-meta-panel">
-        <h1 class="site-title">{{ heading }}</h1>
-        <p class="issue-date-label issue-date">{{ issue_date }}</p>
-        <p class="intro">{{ intro }}</p>
-      </div>
-    </div>
-
-    {% if items %}
-    <div class="entry-list item-grid">
-      {% for item in items %}
-      <article class="entry-card item item-card">
-        <span class="entry-number item-number"></span>
-        <div class="item-body">
-          <h2 class="entry-title item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
-          <p class="entry-source item-meta meta">
-            <span class="source">{{ item.source_name }}</span>
-            {% if item.published_at %}
-            &middot; <span class="date">{{ item.published_at }}</span>
-            {% endif %}
-            &middot; <span class="score">{{ item.score }}</span>
-          </p>
-          {% if item.matched_artists %}
-          <p class="artists">{{ item.matched_artists }}</p>
-          {% endif %}
-          {% if item.tags %}
-          <div class="tag-list tags">
-            {% for tag in item.tags %}
-            <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag tag-pill">{{ tag.label }}</a>
-            {% endfor %}
-          </div>
-          {% endif %}
+      <aside class="issue-meta-panel">
+        <div class="kicker">coma.fm Radar / Field Report</div>
+        <h1 class="issue-title">{{ issue_date }}<br><span class="issue-date">{{ heading }}</span></h1>
+        <div class="meta-grid">
+          <span>Items</span><strong>{{ items|length }}</strong>
+          <span>Lang</span><strong>{{ lang|upper }}</strong>
+          <span>Date</span><strong>{{ issue_date }}</strong>
+          <span>Status</span><strong>{% if draft %}Draft{% else %}Published{% endif %}</strong>
         </div>
-      </article>
-      {% endfor %}
-    </div>
-    {% else %}
-    <p class="no-items">{{ no_items_message }}</p>
-    {% endif %}
+        <div class="tag-line">
+          {% for item in items[:4] %}{% if item.tags %}{% for tag in item.tags[:1] %}
+          <span class="tag-pill">{{ tag.label }}</span>
+          {% endfor %}{% endif %}{% endfor %}
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="section-head section-rule">
+        <h2 class="section-title">
+          {% if lang == "uk" %}В цьому випуску{% else %}In this issue{% endif %}
+        </h2>
+      </div>
+      <hr class="section-rule" style="display:none">
+
+      {% if items %}
+      <div class="entry-list item-grid">
+        {% for item in items %}
+        <article class="entry-card item item-card">
+          <div class="entry-number item-number">{{ "%02d"|format(loop.index) }}</div>
+          <div class="item-body">
+            {% if item.matched_artists %}
+            <div class="entry-kicker">{{ item.matched_artists }}</div>
+            {% endif %}
+            <h2 class="entry-title item-title">
+              <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
+            </h2>
+            <div class="entry-source item-meta meta">
+              <span class="source">{{ item.source_name }}</span>
+              {% if item.published_at %}&middot; <span class="date">{{ item.published_at }}</span>{% endif %}
+              &middot; <span class="score">{{ item.score }}</span>
+            </div>
+            {% if item.tags %}
+            <div class="tag-line tag-list tags">
+              {% for tag in item.tags %}
+              <a href="{{ tag_href_prefix }}/{{ tag.slug }}.html" class="tag tag-pill">{{ tag.label }}</a>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+          <div class="entry-score">
+            <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.score }} →</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="no-items">{{ no_items_message }}</p>
+      {% endif %}
+    </section>
+
   </main>
 
   <footer class="footer">
-    <p>coma.fm Radar &middot; {{ issue_date }}</p>
+    <span>coma.fm Radar</span>
+    <span>{{ issue_date }}</span>
   </footer>
+
 </div>
 </body>
 </html>

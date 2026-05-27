@@ -8,79 +8,86 @@
   <link rel="stylesheet" href="{{ asset_path }}/style.css">
 </head>
 <body>
-<div class="site-shell">
+<div class="page site-shell">
+
   <header class="masthead site-header">
-    <div class="brand-grid header-row">
-      <div class="brand-mark">
-        <span class="brand-signal">&#9673;</span>
-        <span class="brand-name">coma.fm</span>
-        <span class="brand-sub">Radar</span>
-      </div>
-      <nav class="language-switch">
-        <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
-        <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
-      </nav>
+    <div class="brand-mark brand-grid">
+      <span class="brand-name">coma.fm</span>
+      <span class="brand-sub muted">Radar</span>
     </div>
+    <nav class="lang language-switch">
+      <a href="{{ nav_en_href }}" {% if lang == "en" %}class="active"{% endif %}>EN</a>
+      <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
+    </nav>
   </header>
 
   <main>
     <a class="back" href="{{ back_href }}">{{ back_to_index }}</a>
 
-    <div class="tag-dossier tag-page">
-      <h1 class="section-title">{{ tag_label }}</h1>
-      <hr class="section-rule">
-      {% if tag_type %}
-      <p class="tag-type">{{ tag_type }}</p>
-      {% endif %}
-      {% if tag_description %}
-      <p class="tag-description">{{ tag_description }}</p>
-      {% endif %}
-
-      {% if related_tags %}
-      <section class="related-section">
-        <h2>{{ related_heading }}</h2>
-        <div class="tag-strip related-tags">
+    <section class="tag-dossier">
+      <div>
+        <div class="kicker hero-kicker">Signal dossier</div>
+        <h1 class="dossier-title">{{ tag_label }}</h1>
+        {% if tag_type %}
+        <div class="tag-type">{{ tag_type }}</div>
+        {% endif %}
+        {% if tag_description %}
+        <p class="dossier-note tag-description">{{ tag_description }}</p>
+        {% endif %}
+        {% if related_tags %}
+        <div class="tag-line tag-strip related-tags">
           {% for related in related_tags %}
           <a href="{{ related.href }}" class="related-tag">{{ related.label }}</a>
           {% endfor %}
         </div>
-      </section>
-      {% endif %}
-
-      <section class="items-section">
-        <h2>{{ items_heading }}</h2>
-        {% if items %}
-        <div class="entry-list item-grid">
-          {% for item in items %}
-          <article class="entry-card item item-card">
-            <span class="entry-number item-number"></span>
-            <div class="item-body">
-              <h3 class="entry-title item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h3>
-              <p class="entry-source item-meta meta">
-                <span class="source">{{ item.source_name }}</span>
-                {% if item.published_at %}
-                &middot; <span class="date">{{ item.published_at }}</span>
-                {% endif %}
-                &middot; <span class="score">{{ item.score }}</span>
-                &middot; <a href="{{ item.issue_href }}">{{ item.issue_date }}</a>
-              </p>
-              {% if item.matched_artists %}
-              <p class="artists">{{ item.matched_artists }}</p>
-              {% endif %}
-            </div>
-          </article>
-          {% endfor %}
-        </div>
-        {% else %}
-        <p class="no-items">{{ no_items_message }}</p>
         {% endif %}
-      </section>
-    </div>
+      </div>
+      <div class="signal-target"></div>
+    </section>
+
+    <section class="items-section">
+      <div class="section-head section-rule">
+        <h2 class="section-title">{{ items_heading }}</h2>
+      </div>
+      <hr class="section-rule" style="display:none">
+
+      {% if items %}
+      <div class="entry-list item-grid">
+        {% for item in items %}
+        <article class="entry-card item item-card">
+          <div class="entry-number item-number">{{ "%02d"|format(loop.index) }}</div>
+          <div class="item-body">
+            {% if item.matched_artists %}
+            <div class="entry-kicker">{{ item.matched_artists }}</div>
+            {% endif %}
+            <h3 class="entry-title item-title">
+              <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
+            </h3>
+            <div class="entry-source item-meta meta">
+              <span class="source">{{ item.source_name }}</span>
+              {% if item.published_at %}&middot; <span class="date">{{ item.published_at }}</span>{% endif %}
+              &middot; <span class="score">{{ item.score }}</span>
+              &middot; <a href="{{ item.issue_href }}" class="issue-link">{{ item.issue_date }}</a>
+            </div>
+          </div>
+          <div class="entry-score">
+            <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.score }} →</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="no-items">{{ no_items_message }}</p>
+      {% endif %}
+    </section>
+
   </main>
 
   <footer class="footer">
-    <p>{{ site_heading }}</p>
+    <span>{{ site_heading }}</span>
+    <span>{{ tag_label }}</span>
   </footer>
+
 </div>
 </body>
 </html>

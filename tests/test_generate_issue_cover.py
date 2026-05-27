@@ -158,3 +158,77 @@ def test_detect_main_tag_most_frequent_fallback():
     tags_typed = {"a": "content_type", "b": "content_type"}
     items = [{"matched_tags": "b"}, {"matched_tags": "b"}, {"matched_tags": "a"}]
     assert detect_main_tag_from_items(items, tags_typed) == "b"
+
+
+# ---------------------------------------------------------------------------
+# Stage 22 — transmission code in SVG cover
+# ---------------------------------------------------------------------------
+
+def test_svg_contains_tx_code(tmp_path):
+    _make_cover(tmp_path, date="2026-01-15", lang="en")
+    svg = _cover_path(tmp_path, "2026-01-15", "en").read_text(encoding="utf-8")
+    assert "TX-20260115-EN" in svg
+
+
+def test_svg_contains_tx_code_uk(tmp_path):
+    _make_cover(tmp_path, date="2026-05-27", lang="uk")
+    svg = _cover_path(tmp_path, "2026-05-27", "uk").read_text(encoding="utf-8")
+    assert "TX-20260527-UK" in svg
+
+
+def test_svg_contains_band_label(tmp_path):
+    _make_cover(tmp_path, date="2026-01-15", lang="en")
+    svg = _cover_path(tmp_path, "2026-01-15", "en").read_text(encoding="utf-8")
+    assert "BAND" in svg
+    assert "88" in svg
+
+
+# ---------------------------------------------------------------------------
+# Stage 24 — Transmission Cover System
+# ---------------------------------------------------------------------------
+
+def test_cover_mode_is_deterministic():
+    from scripts.generate_issue_cover import cover_mode_from_tx_code
+    mode1 = cover_mode_from_tx_code("TX-20260115-EN")
+    mode2 = cover_mode_from_tx_code("TX-20260115-EN")
+    assert mode1 == mode2
+    assert mode1 in ["concentric", "frequency_bars", "modular_skyline", "tuner_scale", "horizon_signal"]
+
+
+def test_cover_mode_differs_between_dates():
+    from scripts.generate_issue_cover import cover_mode_from_tx_code
+    dates = [
+        "2026-01-01", "2026-02-15", "2026-03-22", "2026-04-10",
+        "2026-06-05", "2026-07-20", "2026-09-03", "2026-11-18",
+    ]
+    modes = {cover_mode_from_tx_code(f"TX-{d.replace('-', '')}-EN") for d in dates}
+    assert len(modes) > 1
+
+
+def test_svg_contains_registration_marks(tmp_path):
+    _make_cover(tmp_path)
+    svg = _cover_path(tmp_path, "2026-01-01", "en").read_text(encoding="utf-8")
+    assert "Registration marks" in svg
+
+
+def test_svg_contains_frequency_marks_scale(tmp_path):
+    _make_cover(tmp_path)
+    svg = _cover_path(tmp_path, "2026-01-01", "en").read_text(encoding="utf-8")
+    assert "88" in svg
+    assert "108" in svg
+    assert "96" in svg
+
+
+def test_svg_is_valid_xml(tmp_path):
+    import xml.etree.ElementTree as ET
+    _make_cover(tmp_path)
+    svg_text = _cover_path(tmp_path, "2026-01-01", "en").read_text(encoding="utf-8")
+    ET.fromstring(svg_text)
+
+
+def test_covers_differ_between_issue_dates(tmp_path):
+    _make_cover(tmp_path, date="2026-01-01", lang="en", main_tag="default")
+    _make_cover(tmp_path, date="2026-06-15", lang="en", main_tag="default")
+    svg1 = _cover_path(tmp_path, "2026-01-01", "en").read_text(encoding="utf-8")
+    svg2 = _cover_path(tmp_path, "2026-06-15", "en").read_text(encoding="utf-8")
+    assert svg1 != svg2

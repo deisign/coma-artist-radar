@@ -279,8 +279,10 @@ def render_html(
     cover_image_url: str | None = None,
     cover_alt: str = "",
 ) -> str:
+    from scripts.transmission_meta import make_issue_meta
     base_path = normalize_base_path(base_path)
     locale = _LOCALE.get(lang, _LOCALE["en"])
+    tm = make_issue_meta(issue_date, lang, items)
     ctx = {
         "lang": lang,
         "title": f"coma.fm Radar — {issue_date} — {lang.upper()}",
@@ -298,6 +300,15 @@ def render_html(
         "asset_path": f"{base_path}/assets",
         "cover_image_url": cover_image_url or "",
         "cover_alt": cover_alt,
+        "tx_code": tm["tx_code"],
+        "band": tm["band"],
+        "signal_count": tm["signal_count"],
+        "archive_node": tm["archive_node"],
+        "frequency_marks": tm["frequency_marks"],
+        "field_tags": tm["field_tags"],
+        "field_tags_label": tm["field_tags_label"],
+        "generated_label": tm["generated_label"],
+        "timezone_label": tm["timezone_label"],
     }
     template_src = template_path.read_text(encoding="utf-8")
     return _J2Renderer().render(template_src, ctx)

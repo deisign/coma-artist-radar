@@ -29,9 +29,25 @@
 
     <section class="issue-hero">
       {% if cover_image_url %}
-      <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
+      <div class="cover-frame issue-cover-large">
+        <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
+        <div class="cover-meta">
+          <span class="cover-code">{{ tx_code }}</span>
+          <span class="cover-band">BAND {{ band }}</span>
+          <span class="cover-node">NODE {{ archive_node }}</span>
+        </div>
+      </div>
       {% endif %}
       <aside class="issue-meta-panel">
+        <div class="micro-grid">
+          <span class="tx-code">{{ tx_code }}</span>
+          <span class="micro-label">BAND {{ band }}</span>
+          <span class="micro-label">SIGNALS {{ signal_count }}</span>
+          <span class="micro-label">NODE {{ archive_node }}</span>
+        </div>
+        {% if field_tags_label %}
+        <div class="field-tags">{{ field_tags_label }}</div>
+        {% endif %}
         <div class="kicker">coma.fm Radar / Field Report</div>
         <h1 class="issue-title">{{ issue_date }}<br><span class="issue-date">{{ heading }}</span></h1>
         <div class="meta-grid">

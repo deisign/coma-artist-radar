@@ -141,6 +141,12 @@ def _issue_rows(issues: list[dict], lang: str, base_path: str = "") -> list[dict
             "status": "draft" if iss.get("draft") else "published",
             "href": f"{base_path}/{lang}/issues/{iss.get('issue_date', '')}.html",
             "draft": bool(iss.get("draft", False)),
+            "tx_code": "TX-{}-{}".format(
+                iss.get("issue_date", "").replace("-", ""), lang.upper()
+            ),
+            "cover_url": "{}/assets/covers/issues/{}/cover-{}.svg".format(
+                base_path, iss.get("issue_date", ""), lang
+            ),
         }
         for iss in issues
     ]
@@ -202,8 +208,10 @@ def _build_lang_index(
     base_path: str,
     dry_run: bool,
 ) -> tuple[int, list[str]]:
+    from scripts.transmission_meta import make_page_meta
     locale = _LOCALE[lang]
     other = "uk" if lang == "en" else "en"
+    tm = make_page_meta("HOME-SIGNAL")
     ctx = {
         "lang": lang,
         "title": locale["title"],
@@ -220,6 +228,10 @@ def _build_lang_index(
         "other_lang_href": f"{base_path}/{other}/index.html",
         "issues": _issue_rows(issues[:_INDEX_ISSUES_MAX], lang, base_path),
         "asset_path": f"{base_path}/assets",
+        "section_code": tm["section_code"],
+        "band": tm["band"],
+        "archive_node": tm["archive_node"],
+        "frequency_marks": tm["frequency_marks"],
     }
     content = _render(templates_dir / "index.html.j2", ctx)
     out_path = dist_dir / lang / "index.html"
@@ -235,8 +247,10 @@ def _build_archive(
     base_path: str,
     dry_run: bool,
 ) -> tuple[int, list[str]]:
+    from scripts.transmission_meta import make_page_meta
     locale = _LOCALE[lang]
     other = "uk" if lang == "en" else "en"
+    tm = make_page_meta("ARCHIVE-LOG")
     ctx = {
         "lang": lang,
         "title": locale["archive_title"],
@@ -253,6 +267,9 @@ def _build_archive(
         "status_published": locale["status_published"],
         "issues": _issue_rows(issues, lang, base_path),
         "asset_path": f"{base_path}/assets",
+        "section_code": tm["section_code"],
+        "band": tm["band"],
+        "archive_node": tm["archive_node"],
     }
     content = _render(templates_dir / "archive.html.j2", ctx)
     out_path = dist_dir / lang / "archive.html"

@@ -1,162 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125">
+  <title>coma.fm Radar &#x2014; {{ issue_date }}</title>
 
   <!-- Background: pearl paper -->
   <rect width="900" height="1125" fill="#F3EBDD"/>
 
-  <!-- Paper texture: column grid lines -->
-  <line x1="0" y1="0" x2="0" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="150" y1="0" x2="150" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="300" y1="0" x2="300" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="450" y1="0" x2="450" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="600" y1="0" x2="600" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="750" y1="0" x2="750" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
-  <line x1="900" y1="0" x2="900" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".04"/>
+  <!-- Column grid &#x2014; structural reference, very faint -->
+  <line x1="150" y1="0" x2="150" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".028"/>
+  <line x1="300" y1="0" x2="300" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".028"/>
+  <line x1="450" y1="0" x2="450" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".028"/>
+  <line x1="600" y1="0" x2="600" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".028"/>
+  <line x1="750" y1="0" x2="750" y2="1125" stroke="#1F2523" stroke-width="1" opacity=".028"/>
 
-  <!-- Motif dispatch -->
-  {% if motif == "reverb_wave" %}
-  <path d="M-60,400 Q225,300 450,400 Q675,500 900,400 Q1125,300 1320,400"
-        fill="none" stroke="{{ accent }}" stroke-width="3" opacity=".35"/>
-  <path d="M-60,500 Q225,400 450,500 Q675,600 900,500 Q1125,400 1320,500"
-        fill="none" stroke="{{ accent }}" stroke-width="2" opacity=".25"/>
-  <path d="M-60,600 Q225,500 450,600 Q675,700 900,600 Q1125,500 1320,600"
-        fill="none" stroke="#6A5F52" stroke-width="1" opacity=".18"/>
+  <!-- Outer registration frame -->
+  <rect x="24" y="24" width="852" height="1077" rx="0"
+        fill="none" stroke="#6A5F52" stroke-width="0.75" opacity=".25"/>
+
+  <!-- Registration marks &#x2014; print cross hairlines at corners -->
+  <line x1="24" y1="12" x2="24" y2="36" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <line x1="12" y1="24" x2="36" y2="24" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <circle cx="24" cy="24" r="5" fill="none" stroke="#1F2523" stroke-width="0.75" opacity=".25"/>
+  <line x1="876" y1="12" x2="876" y2="36" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <line x1="864" y1="24" x2="888" y2="24" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <circle cx="876" cy="24" r="5" fill="none" stroke="#1F2523" stroke-width="0.75" opacity=".25"/>
+  <line x1="24" y1="1089" x2="24" y2="1113" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <line x1="12" y1="1101" x2="36" y2="1101" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <circle cx="24" cy="1101" r="5" fill="none" stroke="#1F2523" stroke-width="0.75" opacity=".25"/>
+  <line x1="876" y1="1089" x2="876" y2="1113" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <line x1="864" y1="1101" x2="888" y2="1101" stroke="#1F2523" stroke-width="0.75" opacity=".38"/>
+  <circle cx="876" cy="1101" r="5" fill="none" stroke="#1F2523" stroke-width="0.75" opacity=".25"/>
+
+  <!-- Left accent bar -->
+  <rect x="60" y="110" width="3" height="690" fill="{{ accent }}" opacity=".50"/>
+
+  <!-- Language badge &#x2014; top right -->
+  <rect x="808" y="54" width="58" height="24" rx="0" fill="{{ accent }}" opacity=".12"/>
+  <text x="837" y="71"
+        font-family="Arial,sans-serif"
+        font-size="11" fill="{{ accent }}" font-weight="700" letter-spacing="3"
+        text-anchor="middle">{{ lang_label }}</text>
+
+  <!-- Node indicator -->
+  <text x="837" y="48"
+        font-family="Arial,sans-serif"
+        font-size="9" fill="#6A5F52" letter-spacing="2"
+        text-anchor="middle" opacity=".42">{{ node }}</text>
+
+  <!-- Masthead: COMA.FM -->
+  <text x="80" y="132"
+        font-family="Arial,sans-serif"
+        font-size="13" fill="#6A5F52" letter-spacing="9" font-weight="700">COMA.FM</text>
+
+  <!-- Masthead: RADAR -->
+  <text x="78" y="220"
+        font-family="'Arial Black',Impact,Arial,sans-serif"
+        font-size="80" fill="#1F2523" letter-spacing="-3">RADAR</text>
+
+  <!-- Masthead separator -->
+  <line x1="80" y1="244" x2="820" y2="244" stroke="#1F2523" stroke-width="1.5" opacity=".28"/>
+
+  <!-- ═══ Mode-specific geometric composition ═══ -->
+
+  {% if cover_mode == "concentric" %}
+  {% for arc in cover_arcs %}
+  <circle cx="{{ cover_cx }}" cy="{{ cover_cy }}" r="{{ arc.r }}"
+          fill="none" stroke="{{ accent }}" stroke-width="{{ arc.sw }}"
+          opacity="{{ arc.opacity }}"/>
+  {% endfor %}
+  <circle cx="{{ cover_cx }}" cy="{{ cover_cy }}" r="{{ cover_arc_r }}"
+          fill="{{ accent }}" opacity=".16"/>
+  <circle cx="{{ cover_cx }}" cy="{{ cover_cy }}" r="7"
+          fill="{{ accent }}" opacity=".40"/>
+  <line x1="{{ cover_cx }}" y1="254" x2="{{ cover_cx }}" y2="720"
+        stroke="#6A5F52" stroke-width="0.5" opacity=".18"/>
+  <line x1="80" y1="{{ cover_cy }}" x2="820" y2="{{ cover_cy }}"
+        stroke="#6A5F52" stroke-width="0.5" opacity=".12"/>
   {% endif %}
 
-  {% if motif == "dusty_vinyl" %}
-  <circle cx="450" cy="560" r="320" fill="none" stroke="#6A5F52" stroke-width="1.5" opacity=".22"/>
-  <circle cx="450" cy="560" r="260" fill="none" stroke="#6A5F52" stroke-width="1"   opacity=".18"/>
-  <circle cx="450" cy="560" r="200" fill="none" stroke="#6A5F52" stroke-width="1.5" opacity=".22"/>
-  <circle cx="450" cy="560" r="140" fill="none" stroke="#6A5F52" stroke-width="1"   opacity=".18"/>
-  <circle cx="450" cy="560" r="90"  fill="none" stroke="#6A5F52" stroke-width="1.5" opacity=".22"/>
-  <circle cx="450" cy="560" r="44"  fill="{{ accent }}" opacity=".22"/>
-  <circle cx="450" cy="560" r="18"  fill="#F3EBDD" opacity=".90"/>
+  {% if cover_mode == "frequency_bars" %}
+  {% for bar in cover_bars %}
+  <rect x="{{ bar.x }}" y="{{ bar.y }}" width="{{ bar.w }}" height="{{ bar.h }}"
+        fill="{{ accent }}" opacity=".18"/>
+  {% endfor %}
+  <line x1="80" y1="675" x2="820" y2="675"
+        stroke="#6A5F52" stroke-width="1" opacity=".28"/>
   {% endif %}
 
-  {% if motif == "lacquer_graves" %}
-  <rect x="80"  y="380" width="80"  height="180" rx="0" fill="{{ accent }}"   opacity=".18"/>
-  <rect x="200" y="320" width="100" height="240" rx="0" fill="{{ accent_2 }}" opacity=".14"/>
-  <rect x="340" y="360" width="70"  height="200" rx="0" fill="{{ accent }}"   opacity=".14"/>
-  <path d="M0,820 L250,520 L340,520 L100,820 Z"  fill="{{ accent }}" opacity=".08"/>
-  <path d="M100,900 L380,520 L470,520 L190,900 Z" fill="{{ accent }}" opacity=".06"/>
+  {% if cover_mode == "modular_skyline" %}
+  {% for mod in cover_modules %}
+  <rect x="{{ mod.x }}" y="{{ mod.y }}" width="{{ mod.w }}" height="{{ mod.h }}"
+        fill="{{ accent }}" opacity=".15"/>
+  {% endfor %}
+  <line x1="60" y1="675" x2="840" y2="675"
+        stroke="#6A5F52" stroke-width="1" opacity=".28"/>
   {% endif %}
 
-  {% if motif == "midnight_window" %}
-  {% for y in range(120, 960, 90) %}
-  <rect x="0" y="{{ y }}" width="900" height="18" fill="#1F2523" opacity=".045"/>
+  {% if cover_mode == "tuner_scale" %}
+  <line x1="80" y1="542" x2="820" y2="542"
+        stroke="{{ accent }}" stroke-width="2" opacity=".42"/>
+  {% for tick in cover_ticks %}
+  <line x1="{{ tick.x }}" y1="{{ tick.y1 }}" x2="{{ tick.x }}" y2="{{ tick.y2 }}"
+        stroke="{{ accent }}" stroke-width="{{ tick.sw }}" opacity=".42"/>
+  {% endfor %}
+  {% for tick in cover_ticks %}
+  <text x="{{ tick.x }}" y="{{ tick.text_y }}"
+        font-family="Arial,sans-serif"
+        font-size="10" fill="#6A5F52" letter-spacing="0"
+        text-anchor="middle" opacity=".55">{{ tick.freq }}</text>
+  {% endfor %}
+  <line x1="{{ cover_needle_x }}" y1="488" x2="{{ cover_needle_x }}" y2="592"
+        stroke="{{ accent_2 }}" stroke-width="2" opacity=".70"/>
+  <circle cx="{{ cover_needle_x }}" cy="488" r="5"
+          fill="{{ accent_2 }}" opacity=".70"/>
+  <circle cx="{{ cover_needle_x }}" cy="488" r="55"
+          fill="none" stroke="{{ accent_2 }}" stroke-width="1" opacity=".16"/>
+  <circle cx="{{ cover_needle_x }}" cy="488" r="112"
+          fill="none" stroke="{{ accent_2 }}" stroke-width="0.75" opacity=".10"/>
+  <circle cx="{{ cover_needle_x }}" cy="488" r="172"
+          fill="none" stroke="{{ accent_2 }}" stroke-width="0.5" opacity=".07"/>
+  {% endif %}
+
+  {% if cover_mode == "horizon_signal" %}
+  {% for row in cover_horizon_rows %}
+  <line x1="{{ row.x0 }}" y1="{{ row.y }}" x2="{{ row.x1 }}" y2="{{ row.y }}"
+        stroke="{{ accent }}" stroke-width="{{ row.sw }}" opacity="{{ row.opacity }}"/>
   {% endfor %}
   {% endif %}
 
-  {% if motif == "desert_twang" %}
-  <path d="M0,780 Q225,680 450,750 Q675,820 900,720 L900,1125 L0,1125 Z"
-        fill="#E6D9C6" opacity=".65"/>
-  <path d="M0,840 Q250,760 520,810 Q780,860 900,800 L900,1125 L0,1125 Z"
-        fill="#E6D9C6" opacity=".45"/>
-  <circle cx="200" cy="620" r="140" fill="{{ accent }}" opacity=".07"/>
-  <circle cx="200" cy="620" r="90"  fill="{{ accent }}" opacity=".07"/>
-  {% endif %}
+  <!-- TX code &#x2014; prominent broadcast identifier -->
+  <text x="80" y="760"
+        font-family="Arial,sans-serif"
+        font-size="42" fill="{{ accent_2 }}" letter-spacing="4"
+        font-weight="700" opacity=".72">{{ tx_code }}</text>
 
-  {% if motif == "atomic_orbit" %}
-  <ellipse cx="450" cy="560" rx="360" ry="120" fill="none" stroke="{{ accent }}"
-           stroke-width="2" opacity=".28" transform="rotate(-40 450 560)"/>
-  <ellipse cx="450" cy="560" rx="360" ry="120" fill="none" stroke="{{ accent }}"
-           stroke-width="2" opacity=".28" transform="rotate(40 450 560)"/>
-  <ellipse cx="450" cy="560" rx="360" ry="120" fill="none" stroke="{{ accent_2 }}"
-           stroke-width="1" opacity=".20"/>
-  <circle cx="450" cy="560" r="24" fill="{{ accent }}" opacity=".30"/>
-  <circle cx="450" cy="560" r="10" fill="{{ accent }}" opacity=".50"/>
-  {% endif %}
-
-  {% if motif == "smoke_signal" %}
-  <path d="M270,1060 C260,880 310,780 270,660 C230,540 290,420 270,300 C250,180 284,80 270,0"
-        fill="none" stroke="#6A5F52" stroke-width="4" stroke-linecap="round" opacity=".14"/>
-  <path d="M180,1060 C200,880 152,780 188,660 C224,540 168,420 212,300 C256,180 208,80 236,0"
-        fill="none" stroke="#6A5F52" stroke-width="2.5" stroke-linecap="round" opacity=".09"/>
-  {% endif %}
-
-  {% if motif == "radio_tower" %}
-  <line x1="270" y1="980" x2="270" y2="140" stroke="#6A5F52" stroke-width="2.5" opacity=".22"/>
-  <line x1="90"  y1="980" x2="450" y2="980" stroke="#6A5F52" stroke-width="2.5" opacity=".20"/>
-  <line x1="120" y1="840" x2="420" y2="840" stroke="#6A5F52" stroke-width="2"   opacity=".18"/>
-  <line x1="150" y1="700" x2="390" y2="700" stroke="#6A5F52" stroke-width="2"   opacity=".16"/>
-  <line x1="180" y1="560" x2="360" y2="560" stroke="#6A5F52" stroke-width="1.5" opacity=".14"/>
-  <line x1="210" y1="420" x2="330" y2="420" stroke="#6A5F52" stroke-width="1.5" opacity=".12"/>
-  <line x1="90"  y1="980" x2="270" y2="140" stroke="#6A5F52" stroke-width="1"   opacity=".12"/>
-  <line x1="450" y1="980" x2="270" y2="140" stroke="#6A5F52" stroke-width="1"   opacity=".12"/>
-  <circle cx="270" cy="140" r="36"  fill="none" stroke="{{ accent }}" stroke-width="2"   opacity=".38"/>
-  <circle cx="270" cy="140" r="72"  fill="none" stroke="{{ accent }}" stroke-width="1"   opacity=".22"/>
-  <circle cx="270" cy="140" r="110" fill="none" stroke="{{ accent }}" stroke-width=".5"  opacity=".14"/>
-  {% endif %}
-
-  <!-- Horizontal composition rule -->
-  <line x1="60" y1="820" x2="840" y2="820" stroke="#1F2523" stroke-width="10"/>
-
-  <!-- Vertical divider -->
-  <line x1="450" y1="100" x2="450" y2="760" stroke="#1F2523" stroke-width="3" opacity=".30"/>
-
-  <!-- Accent bar -->
-  <rect x="60" y="100" width="5" height="680" fill="{{ accent }}" opacity=".60"/>
-
-  <!-- Masthead: site name -->
-  <text x="80" y="170"
-        font-family="'Arial Black',Impact,Arial,sans-serif"
-        font-size="82" fill="#1F2523" letter-spacing="-3">COMA.FM</text>
-  <text x="80" y="256"
-        font-family="'Arial Black',Impact,Arial,sans-serif"
-        font-size="82" fill="#1F2523" letter-spacing="-3">RADAR</text>
+  <!-- Heavy composition rule -->
+  <line x1="60" y1="800" x2="840" y2="800" stroke="#1F2523" stroke-width="8"/>
 
   <!-- Issue date -->
-  <text x="80" y="860"
+  <text x="80" y="844"
         font-family="Arial,sans-serif"
-        font-size="22" fill="{{ accent }}" letter-spacing="5">{{ issue_date }}</text>
+        font-size="20" fill="{{ accent }}" letter-spacing="6">{{ issue_date }}</text>
 
   <!-- Main tag label -->
-  <rect x="78" y="882" width="{{ tag_pill_width }}" height="40" rx="0"
-        fill="{{ accent }}" opacity=".15"/>
-  <text x="84" y="910"
+  <rect x="78" y="860" width="{{ tag_pill_width }}" height="31" rx="0"
+        fill="{{ accent }}" opacity=".11"/>
+  <text x="84" y="881"
         font-family="Arial,sans-serif"
-        font-size="18" fill="{{ accent }}" letter-spacing="3" font-weight="700">{{ main_tag_label }}</text>
+        font-size="14" fill="{{ accent }}" letter-spacing="4" font-weight="700">{{ main_tag_label }}</text>
 
-  <!-- Issue title -->
-  <text x="80" y="980"
-        font-family="'Arial Black',Impact,Arial,sans-serif"
-        font-size="{{ title_font_size }}" fill="#1F2523" letter-spacing="-1">{{ title }}</text>
+  <!-- Frequency instrumentation scale &#x2014; 88&#x2013;108 FM -->
+  <line x1="80" y1="906" x2="820" y2="906"
+        stroke="#6A5F52" stroke-width="0.75" opacity=".32"/>
+  <line x1="80"  y1="902" x2="80"  y2="910" stroke="#6A5F52" stroke-width="0.75" opacity=".42"/>
+  <line x1="228" y1="902" x2="228" y2="908" stroke="#6A5F52" stroke-width="0.5"  opacity=".32"/>
+  <line x1="376" y1="902" x2="376" y2="910" stroke="#6A5F52" stroke-width="0.75" opacity=".42"/>
+  <line x1="524" y1="902" x2="524" y2="908" stroke="#6A5F52" stroke-width="0.5"  opacity=".32"/>
+  <line x1="672" y1="902" x2="672" y2="910" stroke="#6A5F52" stroke-width="0.75" opacity=".42"/>
+  <line x1="820" y1="902" x2="820" y2="910" stroke="#6A5F52" stroke-width="0.75" opacity=".42"/>
+  <text x="80"  y="924" font-family="Arial,sans-serif" font-size="9" fill="#6A5F52" text-anchor="middle" opacity=".52">88</text>
+  <text x="376" y="924" font-family="Arial,sans-serif" font-size="9" fill="#6A5F52" text-anchor="middle" opacity=".52">96</text>
+  <text x="672" y="924" font-family="Arial,sans-serif" font-size="9" fill="#6A5F52" text-anchor="middle" opacity=".52">104</text>
+  <text x="820" y="924" font-family="Arial,sans-serif" font-size="9" fill="#6A5F52" text-anchor="middle" opacity=".52">108</text>
+
+  <!-- Node and band -->
+  <text x="80" y="952"
+        font-family="Arial,sans-serif"
+        font-size="10" fill="#6A5F52" letter-spacing="3" opacity=".52">NODE {{ node }} &#xB7; BAND {{ band }}</text>
+
+  <!-- Item count and lang -->
+  <text x="80" y="974"
+        font-family="Arial,sans-serif"
+        font-size="10" fill="#6A5F52" letter-spacing="2" opacity=".48">{{ item_count }} items &#xB7; {{ lang_label }} &#xB7; FIELD REPORT</text>
+
+  <!-- TX code micro instrumentation -->
+  <text x="80" y="996"
+        font-family="Arial,sans-serif"
+        font-size="10" fill="{{ accent_2 }}" letter-spacing="2.5" opacity=".50">{{ tx_code }}</text>
 
   {% if subtitle %}
-  <text x="80" y="1020"
+  <text x="80" y="1028"
         font-family="Georgia,serif"
-        font-size="22" fill="#6A5F52" font-style="italic">{{ subtitle }}</text>
+        font-size="16" fill="#6A5F52" font-style="italic" opacity=".60">{{ subtitle }}</text>
   {% endif %}
-
-  <!-- Bottom label -->
-  <text x="80" y="1085"
-        font-family="Arial,sans-serif"
-        font-size="22" fill="#6A5F52" letter-spacing="5">FIELD REPORT / SIGNAL ARCHIVE</text>
-
-  <!-- Item count -->
-  <text x="80" y="1110"
-        font-family="Arial,sans-serif"
-        font-size="18" fill="#6A5F52" letter-spacing="2">{{ item_count }} items · {{ lang_label }}</text>
-
-  <!-- Language badge -->
-  <rect x="800" y="60" width="64" height="30" rx="0" fill="{{ accent }}" opacity=".18"/>
-  <text x="832" y="82"
-        font-family="Arial,sans-serif"
-        font-size="13" fill="{{ accent }}" font-weight="700" letter-spacing="3"
-        text-anchor="middle">{{ lang_label }}</text>
-
-  <!-- Outer registration frame -->
-  <rect x="20" y="20" width="860" height="1085" rx="0"
-        fill="none" stroke="#6A5F52" stroke-width="1" opacity=".22"/>
-
-  <!-- Corner marks -->
-  <line x1="20" y1="20"   x2="56"  y2="20"   stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="20" y1="20"   x2="20"  y2="56"   stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="880" y1="20"  x2="844" y2="20"   stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="880" y1="20"  x2="880" y2="56"   stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="20" y1="1105" x2="56"  y2="1105" stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="20" y1="1105" x2="20"  y2="1069" stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="880" y1="1105" x2="844" y2="1105" stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
-  <line x1="880" y1="1105" x2="880" y2="1069" stroke="{{ accent }}" stroke-width="2" opacity=".45"/>
 
 </svg>

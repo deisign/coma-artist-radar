@@ -13,6 +13,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import Counter
@@ -32,6 +33,114 @@ _COVER_TEMPLATE = "cover.svg.j2"
 
 # Priority order for main-tag type selection
 _TYPE_PRIORITY = ("aesthetic", "genre", "subgenre", "content_type", "editorial")
+
+# Deterministic visual cover modes — selected from tx_code hash
+_COVER_MODES = ["concentric", "frequency_bars", "modular_skyline", "tuner_scale", "horizon_signal"]
+_NODE = "COMA-RADAR"
+
+
+# ---------------------------------------------------------------------------
+# Cover mode — deterministic visual system
+# ---------------------------------------------------------------------------
+
+def cover_mode_from_tx_code(tx_code: str) -> str:
+    """Deterministically select a cover mode from the tx_code hash."""
+    raw = hashlib.sha256(tx_code.encode("utf-8")).digest()
+    return _COVER_MODES[raw[0] % len(_COVER_MODES)]
+
+
+def _build_cover_mode_ctx(tx_code: str) -> dict:
+    """Build mode-specific SVG context values from tx_code hash."""
+    mode = cover_mode_from_tx_code(tx_code)
+    b = hashlib.sha256(tx_code.encode("utf-8")).digest()
+    ctx: dict = {"cover_mode": mode}
+
+    if mode == "concentric":
+        cx = 300 + (b[1] % 300)
+        cy = 440 + (b[2] % 100)
+        specs = [
+            (290, "0.26", "1.5"),
+            (240, "0.22", "1"),
+            (185, "0.19", "1.5"),
+            (136, "0.17", "1"),
+            (90,  "0.15", "1.5"),
+            (48,  "0.13", "1"),
+        ]
+        ctx["cover_cx"] = cx
+        ctx["cover_cy"] = cy
+        ctx["cover_arc_r"] = 18
+        ctx["cover_arcs"] = [
+            {"r": r, "opacity": op, "sw": sw} for r, op, sw in specs
+        ]
+
+    elif mode == "frequency_bars":
+        n, bar_w, gap = 14, 22, 10
+        start_x = 90 + (b[1] % 50)
+        bars = []
+        for i in range(n):
+            h = 55 + (b[(i + 3) % 32] % 295)
+            bars.append({
+                "x": start_x + i * (bar_w + gap),
+                "y": 675 - h,
+                "h": h,
+                "w": bar_w,
+            })
+        ctx["cover_bars"] = bars
+
+    elif mode == "modular_skyline":
+        n, start_x, col_w = 9, 75, 83
+        modules = []
+        for i in range(n):
+            h = 80 + (b[(i + 5) % 32] % 340)
+            gap_v = 5 + (b[(i + 11) % 32] % 5)
+            w = col_w - gap_v * 2
+            modules.append({
+                "x": start_x + i * col_w + gap_v,
+                "y": 675 - h,
+                "h": h,
+                "w": w,
+            })
+        ctx["cover_modules"] = modules
+
+    elif mode == "tuner_scale":
+        needle_x = 120 + (b[1] % 620)
+        scale_x0, freq_range = 80, 20
+        tick_space = 740 / freq_range
+        ticks = []
+        for i in range(freq_range + 1):
+            x = scale_x0 + int(i * tick_space)
+            freq = 88 + i
+            major = (freq % 4 == 0)
+            ticks.append({
+                "x": x,
+                "freq": str(freq) if major else "",
+                "y1": 542,
+                "y2": 542 + (22 if major else 12),
+                "text_y": 530,
+                "sw": "1.5" if major else "0.75",
+            })
+        ctx["cover_needle_x"] = needle_x
+        ctx["cover_ticks"] = ticks
+
+    elif mode == "horizon_signal":
+        rows = []
+        y = 280
+        for i in range(32):
+            stride = 9 + (b[(i + 7) % 32] % 18)
+            y += stride
+            if y > 700:
+                break
+            x0 = 60 + (b[(i + 2) % 32] % 50)
+            x1 = 840 - (b[(i + 4) % 32] % 70)
+            opc = min(0.12 + (i % 7) * 0.04, 0.42)
+            sw = "1.5" if i % 5 == 0 else ("0.75" if i % 3 == 0 else "1")
+            rows.append({
+                "y": y, "x0": x0, "x1": x1,
+                "opacity": f"{opc:.2f}", "sw": sw,
+            })
+        ctx["cover_horizon_rows"] = rows
+
+    return ctx
 
 
 # ---------------------------------------------------------------------------
@@ -128,7 +237,9 @@ def _build_svg_ctx(
 ) -> dict:
     """Build the template context for cover.svg.j2."""
     tag_pill_width = max(140, len(main_tag_label) * 12 + 48)
-    title_font_size = min(82, max(36, int(680 / max(len(title) * 0.62, 1))))
+    date_compact = issue_date.replace("-", "")
+    tx_code = f"TX-{date_compact}-{lang.upper()}"
+    cover_ctx = _build_cover_mode_ctx(tx_code)
     return {
         "bg": theme["background"],
         "surface": theme["surface"],
@@ -144,7 +255,10 @@ def _build_svg_ctx(
         "item_count": item_count,
         "lang_label": lang.upper(),
         "tag_pill_width": tag_pill_width,
-        "title_font_size": title_font_size,
+        "tx_code": tx_code,
+        "band": "88–108 FM",
+        "node": _NODE,
+        **cover_ctx,
     }
 
 

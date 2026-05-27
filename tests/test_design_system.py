@@ -7,6 +7,7 @@ from scripts.build_css import build_css
 from scripts.build_issue import render_html
 from scripts.build_site import build_site
 from scripts.build_tag_pages import build_tag_pages
+from scripts.transmission_meta import make_issue_meta, make_page_meta
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 _TEMPLATES_DIR = _REPO_ROOT / "templates"
@@ -713,3 +714,326 @@ def test_build_site_css_not_in_output_files(tmp_path):
     )
     assert len(summary["output_files"]) == 8
     assert not any("style.css" in f for f in summary["output_files"])
+
+
+# ---------------------------------------------------------------------------
+# Stage 22 — Nocturnal Signal Refinement
+# ---------------------------------------------------------------------------
+
+def test_transmission_meta_tx_code_deterministic():
+    meta = make_issue_meta("2026-01-15", "en", [])
+    assert meta["tx_code"] == "TX-20260115-EN"
+    assert meta["tx_code"] == make_issue_meta("2026-01-15", "en", [])["tx_code"]
+
+
+def test_transmission_meta_tx_code_lang_uk():
+    meta = make_issue_meta("2026-05-27", "uk", [])
+    assert meta["tx_code"] == "TX-20260527-UK"
+
+
+def test_transmission_meta_field_tags_from_items():
+    items = [{"matched_tags": "country, americana"}, {"matched_tags": "surf"}]
+    meta = make_issue_meta("2026-01-15", "en", items)
+    assert "country" in meta["field_tags"]
+    assert "americana" in meta["field_tags"]
+    assert "surf" in meta["field_tags"]
+
+
+def test_transmission_meta_signal_count():
+    items = [{"matched_tags": ""}, {"matched_tags": "country"}]
+    meta = make_issue_meta("2026-01-15", "en", items)
+    assert meta["signal_count"] == 2
+
+
+def test_transmission_meta_field_tags_label_uppercase():
+    items = [{"matched_tags": "country"}]
+    meta = make_issue_meta("2026-01-15", "en", items)
+    assert "COUNTRY" in meta["field_tags_label"]
+
+
+def test_transmission_meta_page_meta_section_code():
+    meta = make_page_meta("HOME-SIGNAL")
+    assert meta["section_code"] == "HOME-SIGNAL"
+    assert meta["tx_code"] == "HOME-SIGNAL"
+
+
+def test_transmission_meta_band_value():
+    meta = make_issue_meta("2026-01-15", "en", [])
+    assert "88" in meta["band"]
+    assert "108" in meta["band"]
+
+
+# CSS — Stage 22 new classes
+
+def test_css_has_micro_label(tmp_path):
+    assert ".micro-label" in _css_content(tmp_path)
+
+
+def test_css_has_frequency_scale(tmp_path):
+    assert ".frequency-scale" in _css_content(tmp_path)
+
+
+def test_css_has_tx_code_class(tmp_path):
+    assert ".tx-code" in _css_content(tmp_path)
+
+
+def test_css_has_micro_grid(tmp_path):
+    assert ".micro-grid" in _css_content(tmp_path)
+
+
+def test_css_has_frequency_mark(tmp_path):
+    assert ".frequency-mark" in _css_content(tmp_path)
+
+
+def test_css_has_signal_dot(tmp_path):
+    assert ".signal-dot" in _css_content(tmp_path)
+
+
+def test_css_has_instrument_line(tmp_path):
+    assert ".instrument-line" in _css_content(tmp_path)
+
+
+def test_css_has_field_tags_class(tmp_path):
+    assert ".field-tags" in _css_content(tmp_path)
+
+
+# Issue HTML — Stage 22
+
+def test_issue_html_contains_tx_code(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "TX-20260115-EN" in html
+
+
+def test_issue_html_contains_band(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "BAND" in html
+    assert "88" in html
+
+
+def test_issue_html_contains_signals_label(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "SIGNALS" in html
+
+
+# Index HTML — Stage 22
+
+def test_index_html_has_home_signal(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "HOME-SIGNAL" in html
+
+
+def test_index_html_has_band_label(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "BAND" in html
+    assert "88" in html
+
+
+def test_index_html_has_frequency_marks(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "frequency-mark" in html
+
+
+# Archive HTML — Stage 22
+
+def test_archive_html_has_archive_log(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "ARCHIVE-LOG" in html
+
+
+# Tags index — Stage 22
+
+def test_tags_index_html_has_taxonomy_board_label(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "TAXONOMY-BOARD" in html
+
+
+# Tag page — Stage 22
+
+def test_tag_page_has_tag_dossier_label(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "country.html").read_text(encoding="utf-8")
+    assert "TAG-DOSSIER" in html
+
+
+# Cover SVG — Stage 22
+
+def test_cover_svg_contains_tx_code(tmp_path):
+    from scripts.generate_issue_cover import generate_issue_cover
+    generate_issue_cover(
+        issue_date="2026-01-15",
+        lang="en",
+        main_tag="default",
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        themes_path=_REPO_ROOT / "data" / "visual_themes.yaml",
+        tags_path=_TAGS_PATH,
+    )
+    svg = (
+        tmp_path / "dist" / "assets" / "covers" / "issues"
+        / "2026-01-15" / "cover-en.svg"
+    ).read_text(encoding="utf-8")
+    assert "TX-20260115-EN" in svg
+
+
+def test_cover_svg_contains_band(tmp_path):
+    from scripts.generate_issue_cover import generate_issue_cover
+    generate_issue_cover(
+        issue_date="2026-01-15",
+        lang="en",
+        main_tag="default",
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        themes_path=_REPO_ROOT / "data" / "visual_themes.yaml",
+        tags_path=_TAGS_PATH,
+    )
+    svg = (
+        tmp_path / "dist" / "assets" / "covers" / "issues"
+        / "2026-01-15" / "cover-en.svg"
+    ).read_text(encoding="utf-8")
+    assert "BAND" in svg
+    assert "88" in svg
+
+
+# ---------------------------------------------------------------------------
+# Stage 24 — Transmission Cover System
+# ---------------------------------------------------------------------------
+
+# CSS — new cover system classes
+
+def test_css_has_cover_frame(tmp_path):
+    assert ".cover-frame" in _css_content(tmp_path)
+
+
+def test_css_has_cover_grid(tmp_path):
+    assert ".cover-grid" in _css_content(tmp_path)
+
+
+def test_css_has_cover_meta(tmp_path):
+    assert ".cover-meta" in _css_content(tmp_path)
+
+
+def test_css_has_cover_code(tmp_path):
+    assert ".cover-code" in _css_content(tmp_path)
+
+
+def test_css_has_cover_band(tmp_path):
+    assert ".cover-band" in _css_content(tmp_path)
+
+
+def test_css_has_cover_node(tmp_path):
+    assert ".cover-node" in _css_content(tmp_path)
+
+
+def test_css_has_cover_mini(tmp_path):
+    assert ".cover-mini" in _css_content(tmp_path)
+
+
+def test_css_has_issue_cover_large(tmp_path):
+    assert ".issue-cover-large" in _css_content(tmp_path)
+
+
+def test_css_has_signal_cluster(tmp_path):
+    assert ".signal-cluster" in _css_content(tmp_path)
+
+
+def test_css_has_registration_mark(tmp_path):
+    assert ".registration-mark" in _css_content(tmp_path)
+
+
+# Index HTML — miniature covers on homepage
+
+def test_index_html_has_cover_mini(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "cover-mini" in html
+
+
+# Issue HTML — large cover block
+
+def test_issue_html_has_issue_cover_large(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+        cover_image_url="/coma-artist-radar/assets/covers/issues/2026-01-15/cover-en.svg",
+    )
+    assert "issue-cover-large" in html
+
+
+def test_issue_html_has_cover_frame(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+        cover_image_url="/coma-artist-radar/assets/covers/issues/2026-01-15/cover-en.svg",
+    )
+    assert "cover-frame" in html
+
+
+def test_issue_html_has_cover_meta(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+        cover_image_url="/coma-artist-radar/assets/covers/issues/2026-01-15/cover-en.svg",
+    )
+    assert "cover-meta" in html

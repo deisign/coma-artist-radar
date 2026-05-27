@@ -30,6 +30,16 @@
         <p class="hero-deck">{{ description }}</p>
       </div>
       <aside class="hero-panel hero-meta">
+        <div class="micro-grid">
+          <span class="tx-code">{{ section_code }}</span>
+          <span class="micro-label">NODE {{ archive_node }}</span>
+          <span class="micro-label">BAND {{ band }}</span>
+        </div>
+        <div class="frequency-scale">
+          {% for mark in frequency_marks %}
+          <span class="frequency-mark">{{ mark }}</span>
+          {% endfor %}
+        </div>
         <h2>Bilingual Music Radar</h2>
         <p>Surf / Psychobilly / Jazz noir<br>Ghost Americana / Rockabilly<br>Blues / Country</p>
         <div class="quick-links">
@@ -73,8 +83,12 @@
             {{ parts[2] }}<br>{{ parts[1] }}<br><small>{{ parts[0] }}</small>
           </div>
           <div class="program-body">
+            {% if issue.cover_url %}
+            <img class="cover-mini" src="{{ issue.cover_url }}" alt="{{ issue.title }}" loading="lazy">
+            {% endif %}
             <h3><a class="issue-card-title issue-link" href="{{ issue.href }}">{{ issue.title }}</a></h3>
             <div class="program-meta issue-card-meta issue-meta">
+              <span class="tx-code">{{ issue.tx_code }}</span>
               {{ issue.item_count }}{% if issue.draft %} <span class="badge-draft">draft</span>{% endif %}
             </div>
           </div>

@@ -46,12 +46,14 @@ _LOCALE: dict[str, dict[str, str]] = {
         "intro": "A weekly digest of music from the coma.fm field.",
         "draft_notice": "Draft — not published",
         "no_items": "No items for this issue.",
+        "tx_summary_tpl": "Field monitoring log — {band}. {count} signals on record.",
     },
     "uk": {
         "heading": "coma.fm Радар",
         "intro": "Щотижневий дайджест музики з поля coma.fm.",
         "draft_notice": "Чернетка — не опубліковано",
         "no_items": "Для цього випуску немає матеріалів.",
+        "tx_summary_tpl": "Польовий журнал моніторингу — {band}. {count} сигналів зафіксовано.",
     },
 }
 
@@ -283,8 +285,22 @@ def render_html(
     base_path = normalize_base_path(base_path)
     locale = _LOCALE.get(lang, _LOCALE["en"])
     tm = make_issue_meta(issue_date, lang, items)
+
+    # Pre-compute item indices so the template can use {{ item.index }}
+    # without needing the |format filter which _J2Renderer does not support.
+    indexed_items = [
+        {**item, "index": f"{i + 1:02d}"}
+        for i, item in enumerate(items)
+    ]
+
+    tx_summary = locale["tx_summary_tpl"].format(
+        band=tm["band"],
+        count=len(items),
+    )
+
     ctx = {
         "lang": lang,
+        "lang_label": lang.upper(),
         "title": f"coma.fm Radar — {issue_date} — {lang.upper()}",
         "description": locale["intro"],
         "issue_date": issue_date,
@@ -293,7 +309,8 @@ def render_html(
         "no_items_message": locale["no_items"],
         "draft": draft,
         "draft_notice": locale["draft_notice"],
-        "items": items,
+        "items": indexed_items,
+        "signal_count": tm["signal_count"],
         "nav_en_href": f"{base_path}/en/issues/{issue_date}.html",
         "nav_uk_href": f"{base_path}/uk/issues/{issue_date}.html",
         "tag_href_prefix": f"{base_path}/{lang}/tags",
@@ -302,13 +319,13 @@ def render_html(
         "cover_alt": cover_alt,
         "tx_code": tm["tx_code"],
         "band": tm["band"],
-        "signal_count": tm["signal_count"],
         "archive_node": tm["archive_node"],
         "frequency_marks": tm["frequency_marks"],
         "field_tags": tm["field_tags"],
         "field_tags_label": tm["field_tags_label"],
         "generated_label": tm["generated_label"],
         "timezone_label": tm["timezone_label"],
+        "tx_summary": tx_summary,
     }
     template_src = template_path.read_text(encoding="utf-8")
     return _J2Renderer().render(template_src, ctx)

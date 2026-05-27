@@ -524,3 +524,145 @@ def test_build_issue_html_contains_tx_code(tmp_path):
     _run_build(tmp_path, db_path=db_path, lang="en", issue_date="2026-03-10")
     content = (tmp_path / "dist" / "en" / "issues" / "2026-03-10.html").read_text(encoding="utf-8")
     assert "TX-20260310-EN" in content
+
+
+# ---------------------------------------------------------------------------
+# Stage 26A — Issue Hero Cleanup
+# ---------------------------------------------------------------------------
+
+def test_render_html_no_raw_payload_in_hero():
+    """Hero must not expose raw Python list/dict structures."""
+    items = [
+        {
+            "id": 1, "title": "Test Article", "url": "https://example.com",
+            "source_name": "Test Source", "score": 80, "published_at": "",
+            "matched_artists": "The Cramps", "tags": [],
+            "matched_tags": "surf", "matched_genres": "surf",
+        }
+    ]
+    html = render_html(
+        items=items, issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    # Raw Python list/dict repr must not appear anywhere
+    assert "'id':" not in html
+    assert "&#x27;id&#x27;:" not in html
+    assert "'source_name':" not in html
+    assert "'matched_tags':" not in html
+
+
+def test_render_html_no_raw_payload_empty_items():
+    """Hero with no items must not render a raw empty list."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "[]" not in html
+    assert "'id':" not in html
+
+
+def test_render_html_has_tx_summary():
+    """Hero must contain the editorial transmission summary."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "transmission-block" in html
+    assert "tx-summary" in html
+    assert "FIELD MONITORING LOG" in html.upper()
+
+
+def test_render_html_tx_summary_uk():
+    """UK hero must contain Ukrainian editorial summary."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="uk", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "transmission-block" in html
+    # Ukrainian summary contains key word
+    assert "журнал" in html.lower() or "ЖУРНАЛ" in html
+
+
+def test_render_html_tx_summary_contains_signal_count():
+    """Editorial summary must include the actual signal count."""
+    items = [
+        {
+            "id": i, "title": f"Song {i}", "url": f"https://ex.com/{i}",
+            "source_name": "Src", "score": 50, "published_at": "",
+            "matched_artists": "", "tags": [], "matched_tags": "", "matched_genres": "",
+        }
+        for i in range(7)
+    ]
+    html = render_html(
+        items=items, issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "7" in html
+
+
+def test_render_html_hero_preserves_tx_code():
+    """TX code must remain in the hero after cleanup."""
+    html = render_html(
+        items=[], issue_date="2026-05-10", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "TX-20260510-EN" in html
+
+
+def test_render_html_hero_preserves_band():
+    """BAND label must remain in the hero after cleanup."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "BAND" in html
+    assert "88" in html
+
+
+def test_render_html_hero_preserves_signals():
+    """SIGNALS label must remain in the hero after cleanup."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert "SIGNALS" in html
+
+
+def test_render_html_item_numbers_not_empty():
+    """Entry numbers must render as '01', '02' — not empty string."""
+    items = [
+        {
+            "id": 1, "title": "A Song", "url": "https://ex.com",
+            "source_name": "Src", "score": 50, "published_at": "",
+            "matched_artists": "", "tags": [], "matched_tags": "", "matched_genres": "",
+        },
+        {
+            "id": 2, "title": "B Song", "url": "https://ex.com/2",
+            "source_name": "Src", "score": 40, "published_at": "",
+            "matched_artists": "", "tags": [], "matched_tags": "", "matched_genres": "",
+        },
+    ]
+    html = render_html(
+        items=items, issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert ">01<" in html
+    assert ">02<" in html
+
+
+def test_render_html_lang_label_uppercase():
+    """Language in meta-grid must be uppercase (EN not en)."""
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    # The meta-grid Lang row must show uppercase "EN"
+    assert ">EN<" in html
+
+
+def test_render_html_lang_label_uk_uppercase():
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="uk", draft=False,
+        template_path=_TEMPLATE_PATH, base_path="",
+    )
+    assert ">UK<" in html

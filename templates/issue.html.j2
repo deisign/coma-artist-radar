@@ -40,29 +40,30 @@
       {% endif %}
       <aside class="issue-meta-panel">
         <div class="micro-grid">
-          <span class="tx-code">{{ tx_code }}</span>
-          <span class="micro-label">BAND {{ band }}</span>
+          <span class="coordinate-mark"></span>
+          <span class="tx-code dominant-signal">{{ tx_code }}</span>
+          <span class="micro-label quiet-meta">BAND {{ band }}</span>
           <span class="micro-label">SIGNALS {{ signal_count }}</span>
-          <span class="micro-label">NODE {{ archive_node }}</span>
+          <span class="micro-label quiet-meta">NODE {{ archive_node }}</span>
         </div>
         {% if field_tags_label %}
         <div class="field-tags">{{ field_tags_label }}</div>
         {% endif %}
         <div class="kicker">coma.fm Radar / Field Report</div>
         <h1 class="issue-title">{{ issue_date }}<br><span class="issue-date">{{ heading }}</span></h1>
-        <div class="meta-grid">
-          <span>Items</span><strong>{{ items|length }}</strong>
-          <span>Lang</span><strong>{{ lang|upper }}</strong>
-          <span>Date</span><strong>{{ issue_date }}</strong>
-          <span>Status</span><strong>{% if draft %}Draft{% else %}Published{% endif %}</strong>
+        <div class="transmission-block">
+          <p class="tx-summary">{{ tx_summary }}</p>
         </div>
-        <div class="tag-line">
-          {% for item in items[:4] %}{% if item.tags %}{% for tag in item.tags[:1] %}
-          <span class="tag-pill">{{ tag.label }}</span>
-          {% endfor %}{% endif %}{% endfor %}
+        <div class="meta-grid">
+          <span>Date</span><strong>{{ issue_date }}</strong>
+          <span>Lang</span><strong>{{ lang_label }}</strong>
+          <span>Signals</span><strong>{{ signal_count }}</strong>
+          <span>Status</span><strong>{% if draft %}Draft{% else %}Active{% endif %}</strong>
         </div>
       </aside>
     </section>
+
+    <div class="relay-line"></div>
 
     <section>
       <div class="section-head section-rule">
@@ -76,7 +77,7 @@
       <div class="entry-list item-grid">
         {% for item in items %}
         <article class="entry-card item item-card">
-          <div class="entry-number item-number">{{ "%02d"|format(loop.index) }}</div>
+          <div class="entry-number item-number">{{ item.index }}</div>
           <div class="item-body">
             {% if item.matched_artists %}
             <div class="entry-kicker">{{ item.matched_artists }}</div>

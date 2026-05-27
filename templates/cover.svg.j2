@@ -59,6 +59,19 @@
   <!-- Masthead separator -->
   <line x1="80" y1="244" x2="820" y2="244" stroke="#1F2523" stroke-width="1.5" opacity=".28"/>
 
+  <!-- Ghost atmosphere — faint scan register lines across composition zone -->
+  <line x1="80" y1="302" x2="820" y2="302" stroke="#6A5F52" stroke-width="0.5" opacity=".04"/>
+  <line x1="80" y1="402" x2="820" y2="402" stroke="#6A5F52" stroke-width="0.5" opacity=".04"/>
+  <line x1="80" y1="502" x2="820" y2="502" stroke="#6A5F52" stroke-width="0.5" opacity=".03"/>
+  <line x1="80" y1="602" x2="820" y2="602" stroke="#6A5F52" stroke-width="0.5" opacity=".03"/>
+  <line x1="80" y1="702" x2="820" y2="702" stroke="#6A5F52" stroke-width="0.5" opacity=".04"/>
+
+  <!-- Ghost transmission residue — echo of TX identity at low opacity -->
+  <text x="450" y="685"
+        font-family="Arial,sans-serif"
+        font-size="10" fill="#6A5F52" letter-spacing="4"
+        text-anchor="middle" opacity=".05">{{ tx_code }}</text>
+
   <!-- ═══ Mode-specific geometric composition ═══ -->
 
   {% if cover_mode == "concentric" %}
@@ -127,11 +140,11 @@
   {% endfor %}
   {% endif %}
 
-  <!-- TX code &#x2014; prominent broadcast identifier -->
-  <text x="80" y="760"
+  <!-- TX code &#x2014; dominant broadcast identifier -->
+  <text x="80" y="762"
         font-family="Arial,sans-serif"
-        font-size="42" fill="{{ accent_2 }}" letter-spacing="4"
-        font-weight="700" opacity=".72">{{ tx_code }}</text>
+        font-size="46" fill="{{ accent_2 }}" letter-spacing="4"
+        font-weight="700" opacity=".82">{{ tx_code }}</text>
 
   <!-- Heavy composition rule -->
   <line x1="60" y1="800" x2="840" y2="800" stroke="#1F2523" stroke-width="8"/>
@@ -171,11 +184,6 @@
   <text x="80" y="974"
         font-family="Arial,sans-serif"
         font-size="10" fill="#6A5F52" letter-spacing="2" opacity=".48">{{ item_count }} items &#xB7; {{ lang_label }} &#xB7; FIELD REPORT</text>
-
-  <!-- TX code micro instrumentation -->
-  <text x="80" y="996"
-        font-family="Arial,sans-serif"
-        font-size="10" fill="{{ accent_2 }}" letter-spacing="2.5" opacity=".50">{{ tx_code }}</text>
 
   {% if subtitle %}
   <text x="80" y="1028"

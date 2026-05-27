@@ -2,7 +2,61 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 24 — Transmission Cover System**.
+Current implemented stage: **Stage 25 — Signal Atmosphere / Ghost Transmission Layer**.
+
+---
+
+## Stage 25 — Signal Atmosphere / Ghost Transmission Layer
+
+Pushes the Pearl Broadcast Modernism design from "Swiss-modernist web magazine" toward "late-night transmission archive from an alternate radio infrastructure". Not a redesign — an atmospheric refinement layer.
+
+### What was added
+
+**Signal noise layer** — The page background gains a diagonal paper grain (45° repeating gradient at ~1.2% opacity) and a secondary teal radial glow at the bottom-right corner. No bitmap assets, no external files.
+
+**Controlled breathing room** — Hero padding increased from 54px to 72px; compact hero gains min-height 290px; issue-hero padding increased to 60px; taxonomy modules gain more vertical padding. Archive and tags hero sections gain `padding-bottom`.
+
+**Metadata hierarchy** — All micro-grids now distinguish a `.dominant-signal` primary identifier from `.quiet-meta` secondary labels. The tx-code is dominant; NODE and BAND labels are quiet (38% opacity, slightly smaller). SIGNALS count remains at normal weight on issue pages.
+
+**Frequency scale engineering feel** — The `.frequency-scale` ruler gains top and bottom borders, making it a sealed channel rather than a left-anchored strip.
+
+**Geometric signal language** — New reusable CSS classes placed in templates:
+- `.coordinate-mark` — engineering crosshair before each micro-grid
+- `.ghost-trace` — dashed transmission remnant line in hero panels
+- `.relay-line` — thin structural separator with endpoint dots
+
+**Cover atmosphere** — Ghost scan register lines added to composition zone (5 lines, opacity 0.03–0.04). TX code enlarged from 42px to 46px, opacity raised to 0.82. Ghost TX echo added at very low opacity (0.05) in the composition zone. Redundant TX micro code at y=996 removed for silence.
+
+### Restraint rules
+
+- No neon, no fake CRT, no cyberpunk, no grunge effects
+- No bitmap assets, no external files, no CDN dependencies
+- No JavaScript, no npm, no node, no package.json
+- All gradients at ≤ 12% opacity for the new grain layer
+- Geometric elements (crosshairs, relay lines) at ≤ 25% opacity
+- Keep editorial structure — breathing room only, not emptiness
+
+### New CSS classes
+
+| Class | Role |
+|---|---|
+| `.signal-noise` | Paper grain texture via repeating gradients |
+| `.ghost-trace` | Dashed transmission remnant line |
+| `.relay-line` | Structural separator with endpoint dots |
+| `.coordinate-mark` | Engineering crosshair indicator |
+| `.atmospheric-field` | Warm radial atmospheric background |
+| `.quiet-meta` | Secondary metadata — whisper register (38% opacity) |
+| `.dominant-signal` | Primary signal — authority register (full opacity) |
+| `.print-drift` | Typographic tension via 1px offset |
+| `.transmission-residue` | Ghost atmospheric fade at element base |
+
+### Build commands
+
+```bash
+python scripts/build_css.py
+python scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10 --base-url https://deisign.github.io/coma-artist-radar --base-path /coma-artist-radar --telegram-dry-run
+python -m pytest -q tests
+```
 
 ---
 

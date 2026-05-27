@@ -27,19 +27,21 @@
       <div>
         <div class="kicker hero-kicker">Broadcast · Signal · Field Radar</div>
         <h1 class="hero-title">{{ title }}</h1>
-        <p class="hero-deck">{{ description }}</p>
+        <p class="hero-deck transmission-residue print-drift">{{ description }}</p>
       </div>
-      <aside class="hero-panel hero-meta">
+      <aside class="hero-panel hero-meta atmospheric-field">
         <div class="micro-grid">
-          <span class="tx-code">{{ section_code }}</span>
-          <span class="micro-label">NODE {{ archive_node }}</span>
-          <span class="micro-label">BAND {{ band }}</span>
+          <span class="coordinate-mark"></span>
+          <span class="tx-code dominant-signal">{{ section_code }}</span>
+          <span class="micro-label quiet-meta">NODE {{ archive_node }}</span>
+          <span class="micro-label quiet-meta">BAND {{ band }}</span>
         </div>
         <div class="frequency-scale">
           {% for mark in frequency_marks %}
           <span class="frequency-mark">{{ mark }}</span>
           {% endfor %}
         </div>
+        <div class="ghost-trace"></div>
         <h2>Bilingual Music Radar</h2>
         <p>Surf / Psychobilly / Jazz noir<br>Ghost Americana / Rockabilly<br>Blues / Country</p>
         <div class="quick-links">
@@ -57,6 +59,7 @@
       </div>
     </section>
 
+    <div class="relay-line"></div>
     <div class="signal-strip">
       <a class="signal-token" href="{{ tags_href }}">Surf</a>
       <a class="signal-token" href="{{ tags_href }}">Psychobilly</a>

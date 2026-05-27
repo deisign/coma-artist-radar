@@ -1,5 +1,6 @@
-/* coma.fm Radar — Pearl Broadcast Modernism
-   Swiss International Style / Bauhaus / Mid-century editorial */
+/* coma.fm Radar — Pearl Broadcast Modernism / Signal Atmosphere
+   Swiss International Style / Bauhaus / Mid-century editorial
+   Stage 25: Ghost Transmission Layer — late-night archive atmosphere */
 
 :root {
   /* ── Primary palette ────────────────────────────────────── */
@@ -47,9 +48,11 @@ html { background: var(--paper); color: var(--ink); }
 body {
   font-family: var(--sans);
   background:
+    repeating-linear-gradient(45deg, rgba(31,37,35,.012) 0 0.5px, transparent 0.5px 18px),
     linear-gradient(90deg, rgba(31,37,35,.035) 1px, transparent 1px) 0 0 / 72px 72px,
     repeating-linear-gradient(0deg, rgba(31,37,35,.022) 0 1px, transparent 1px 7px),
     radial-gradient(circle at 8% 12%, rgba(216,111,50,.10), transparent 32%),
+    radial-gradient(ellipse at 92% 88%, rgba(46,140,138,.05), transparent 38%),
     var(--paper);
   min-height: 100vh;
 }
@@ -167,11 +170,12 @@ a:hover { color: var(--orange); text-decoration: none; }
   gap: clamp(28px,6vw,80px);
   min-height: 420px;
   border-bottom: 1px solid var(--line);
-  padding-bottom: 54px;
+  padding-bottom: 72px;
 }
 
 .hero.compact {
-  min-height: 260px;
+  min-height: 290px;
+  padding-bottom: 48px;
 }
 
 .kicker,
@@ -485,7 +489,7 @@ hr.section-rule {
   grid-template-columns: minmax(260px,.85fr) minmax(0,1.15fr);
   gap: 38px;
   border-bottom: 2px solid var(--ink);
-  padding-bottom: 42px;
+  padding-bottom: 60px;
 }
 
 .issue-cover {
@@ -523,6 +527,23 @@ hr.section-rule {
 }
 
 .meta-grid span:nth-child(odd) { color: var(--muted); }
+
+/* ── Transmission summary block — editorial field report ─────── */
+.transmission-block {
+  margin: 14px 0 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.tx-summary {
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
 
 /* ── Legacy issue page compat ────────────────────────────────── */
 .issue-header { margin-bottom: 1.5rem; }
@@ -672,7 +693,7 @@ hr.section-rule {
 .taxonomy-module,
 .group {
   min-height: 280px;
-  padding: 24px;
+  padding: 28px 24px 36px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -810,6 +831,8 @@ hr.section-rule {
   align-items: stretch;
   height: 14px;
   border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   margin: .25rem 0 .5rem;
   overflow: hidden;
 }
@@ -1018,6 +1041,107 @@ footer {
   border-top: 1px solid var(--line);
   opacity: .32;
   flex-shrink: 0;
+}
+
+/* ── Stage 25 — Signal Atmosphere / Ghost Transmission Layer ──────── */
+/* Direction: late-night transmission archive from alternate radio infrastructure */
+
+/* signal-noise: faint 17°/−73° paper grain overlay */
+.signal-noise {
+  background-image:
+    repeating-linear-gradient(17deg, rgba(31,37,35,.020) 0 0.5px, transparent 0.5px 5px),
+    repeating-linear-gradient(-73deg, rgba(31,37,35,.014) 0 0.5px, transparent 0.5px 7px);
+}
+
+/* ghost-trace: dashed transmission remnant line */
+.ghost-trace {
+  height: 1px;
+  margin: 1.8rem 0;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(31,37,35,.24) 0 2px,
+    transparent 2px 10px
+  );
+  opacity: .35;
+}
+
+/* relay-line: structural relay connection with endpoint signal dots */
+.relay-line {
+  height: 1px;
+  margin: 3rem 0;
+  background: var(--line);
+  position: relative;
+}
+.relay-line::before,
+.relay-line::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--bg);
+}
+.relay-line::before { left: 0; }
+.relay-line::after  { right: 0; }
+
+/* coordinate-mark: engineering crosshair at section origins */
+.coordinate-mark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  flex-shrink: 0;
+  align-self: center;
+  opacity: .25;
+}
+.coordinate-mark::before,
+.coordinate-mark::after {
+  content: "";
+  position: absolute;
+  background: var(--ink);
+}
+.coordinate-mark::before {
+  left: 50%; top: 2px;
+  width: 1px; height: calc(100% - 4px);
+  transform: translateX(-50%);
+}
+.coordinate-mark::after {
+  top: 50%; left: 2px;
+  height: 1px; width: calc(100% - 4px);
+  transform: translateY(-50%);
+}
+
+/* atmospheric-field: warm atmospheric background zone */
+.atmospheric-field {
+  background:
+    radial-gradient(ellipse at 18% 38%, rgba(216,111,50,.08), transparent 52%),
+    radial-gradient(ellipse at 82% 72%, rgba(46,140,138,.05), transparent 45%);
+}
+
+/* quiet-meta: secondary instrumentation data — whisper register */
+.quiet-meta {
+  opacity: .38;
+  font-size: .46rem;
+}
+
+/* dominant-signal: primary broadcast identifier — authority register */
+.dominant-signal {
+  opacity: 1;
+  letter-spacing: .24em;
+}
+
+/* print-drift: editorial tension through typographic offset */
+.print-drift {
+  position: relative;
+  left: 1px;
+}
+
+/* transmission-residue: ghost atmospheric fade at element base */
+.transmission-residue {
+  background-image:
+    linear-gradient(to bottom, transparent 62%, rgba(31,37,35,.04) 100%);
 }
 
 /* ── Responsive ──────────────────────────────────────────────── */

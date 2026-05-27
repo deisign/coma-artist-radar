@@ -27,17 +27,19 @@
         <div class="kicker hero-kicker">Signal taxonomy</div>
         <h1 class="hero-title md">{{ heading }}</h1>
       </div>
-      <aside class="hero-panel">
+      <aside class="hero-panel atmospheric-field">
         <div class="micro-grid">
-          <span class="tx-code">{{ section_code }}</span>
-          <span class="micro-label">NODE {{ archive_node }}</span>
+          <span class="coordinate-mark"></span>
+          <span class="tx-code dominant-signal">{{ section_code }}</span>
+          <span class="micro-label quiet-meta">NODE {{ archive_node }}</span>
         </div>
+        <div class="ghost-trace"></div>
         <h2>Classification board</h2>
         <p>Canonical genre, aesthetic and editorial tags used across coma.fm Radar.</p>
       </aside>
     </section>
 
-    <div class="taxonomy-board">
+    <div class="taxonomy-board signal-noise">
       {% for group in groups %}
       <div class="taxonomy-module group">
         <h2 class="group-heading">{{ group.type_label }}</h2>

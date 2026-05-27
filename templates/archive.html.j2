@@ -27,11 +27,13 @@
         <div class="kicker hero-kicker">Archive / Transmission Log</div>
         <h1 class="hero-title md">{{ heading }}</h1>
       </div>
-      <aside class="hero-panel">
+      <aside class="hero-panel atmospheric-field">
         <div class="micro-grid">
-          <span class="tx-code">{{ section_code }}</span>
-          <span class="micro-label">NODE {{ archive_node }}</span>
+          <span class="coordinate-mark"></span>
+          <span class="tx-code dominant-signal">{{ section_code }}</span>
+          <span class="micro-label quiet-meta">NODE {{ archive_node }}</span>
         </div>
+        <div class="ghost-trace"></div>
         <h2>Transmission log</h2>
         <p>Published and drafted field reports from the coma.fm signal archive.</p>
         <div class="quick-links">
@@ -48,7 +50,7 @@
       </div>
       <hr class="section-rule" style="display:none">
 
-      <div class="archive-index archive-list">
+      <div class="archive-index archive-list signal-noise">
         {% if issues %}
         {% for issue in issues %}
         <div class="archive-row archive-item">

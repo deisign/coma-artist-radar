@@ -1037,3 +1037,239 @@ def test_issue_html_has_cover_meta(tmp_path):
         cover_image_url="/coma-artist-radar/assets/covers/issues/2026-01-15/cover-en.svg",
     )
     assert "cover-meta" in html
+
+
+# ---------------------------------------------------------------------------
+# Stage 25 — Signal Atmosphere / Ghost Transmission Layer
+# ---------------------------------------------------------------------------
+
+# CSS — new atmospheric classes
+
+def test_css_has_signal_noise(tmp_path):
+    assert ".signal-noise" in _css_content(tmp_path)
+
+
+def test_css_has_ghost_trace(tmp_path):
+    assert ".ghost-trace" in _css_content(tmp_path)
+
+
+def test_css_has_relay_line(tmp_path):
+    assert ".relay-line" in _css_content(tmp_path)
+
+
+def test_css_has_coordinate_mark(tmp_path):
+    assert ".coordinate-mark" in _css_content(tmp_path)
+
+
+def test_css_has_atmospheric_field(tmp_path):
+    assert ".atmospheric-field" in _css_content(tmp_path)
+
+
+def test_css_has_quiet_meta(tmp_path):
+    assert ".quiet-meta" in _css_content(tmp_path)
+
+
+def test_css_has_dominant_signal(tmp_path):
+    assert ".dominant-signal" in _css_content(tmp_path)
+
+
+def test_css_has_print_drift(tmp_path):
+    assert ".print-drift" in _css_content(tmp_path)
+
+
+def test_css_has_transmission_residue(tmp_path):
+    assert ".transmission-residue" in _css_content(tmp_path)
+
+
+# CSS — no external resources or forbidden artefacts
+
+def test_css_no_external_url(tmp_path):
+    css = _css_content(tmp_path)
+    assert "http://" not in css
+    assert "https://" not in css
+
+
+def test_css_no_at_import(tmp_path):
+    assert "@import" not in _css_content(tmp_path)
+
+
+# No JS or node artefacts introduced
+
+def test_no_js_files_in_templates(tmp_path):
+    repo_root = Path(__file__).resolve().parents[1]
+    js_files = list((repo_root / "templates").glob("**/*.js"))
+    assert js_files == [], f"Unexpected JS files: {js_files}"
+
+
+def test_no_package_json(tmp_path):
+    repo_root = Path(__file__).resolve().parents[1]
+    assert not (repo_root / "package.json").exists()
+    assert not (repo_root / "node_modules").exists()
+
+
+# Cover SVG — valid XML and key metadata preserved
+
+def test_cover_svg_is_valid_xml(tmp_path):
+    import xml.etree.ElementTree as ET
+    from scripts.generate_issue_cover import generate_issue_cover
+    generate_issue_cover(
+        issue_date="2026-01-15",
+        lang="en",
+        main_tag="default",
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        themes_path=_REPO_ROOT / "data" / "visual_themes.yaml",
+        tags_path=_TAGS_PATH,
+    )
+    svg_path = (
+        tmp_path / "dist" / "assets" / "covers" / "issues"
+        / "2026-01-15" / "cover-en.svg"
+    )
+    ET.parse(str(svg_path))
+
+
+def test_cover_svg_still_has_tx_code(tmp_path):
+    from scripts.generate_issue_cover import generate_issue_cover
+    generate_issue_cover(
+        issue_date="2026-03-10",
+        lang="en",
+        main_tag="default",
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        themes_path=_REPO_ROOT / "data" / "visual_themes.yaml",
+        tags_path=_TAGS_PATH,
+    )
+    svg = (
+        tmp_path / "dist" / "assets" / "covers" / "issues"
+        / "2026-03-10" / "cover-en.svg"
+    ).read_text(encoding="utf-8")
+    assert "TX-20260310-EN" in svg
+
+
+def test_cover_svg_still_has_band(tmp_path):
+    from scripts.generate_issue_cover import generate_issue_cover
+    generate_issue_cover(
+        issue_date="2026-03-10",
+        lang="uk",
+        main_tag="default",
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        themes_path=_REPO_ROOT / "data" / "visual_themes.yaml",
+        tags_path=_TAGS_PATH,
+    )
+    svg = (
+        tmp_path / "dist" / "assets" / "covers" / "issues"
+        / "2026-03-10" / "cover-uk.svg"
+    ).read_text(encoding="utf-8")
+    assert "BAND" in svg
+    assert "88" in svg
+
+
+# Homepage — atmospheric classes present
+
+def test_index_html_has_dominant_signal(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "dominant-signal" in html
+
+
+def test_index_html_has_ghost_trace(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "ghost-trace" in html
+
+
+def test_index_html_has_relay_line(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "relay-line" in html
+
+
+def test_index_html_has_coordinate_mark(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "coordinate-mark" in html
+
+
+# Issue HTML — atmospheric classes present
+
+def test_issue_html_has_relay_line(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "relay-line" in html
+
+
+def test_issue_html_has_dominant_signal(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "dominant-signal" in html
+
+
+# Archive HTML — atmospheric classes present
+
+def test_archive_html_has_signal_noise(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "signal-noise" in html
+
+
+# Tags index — atmospheric classes present
+
+def test_tags_index_has_signal_noise(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "signal-noise" in html
+
+
+def test_tags_index_has_dominant_signal(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "dominant-signal" in html

@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="site-shell">
-  <header class="site-header">
-    <div class="header-row">
+  <header class="masthead site-header">
+    <div class="brand-grid header-row">
       <div class="brand-mark">
         <span class="brand-signal">&#9673;</span>
         <span class="brand-name">coma.fm</span>
@@ -21,13 +21,12 @@
         <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
       </nav>
     </div>
-    <div class="brand-line"></div>
   </header>
 
   <main>
     <a class="back" href="{{ back_href }}">{{ back_to_index }}</a>
 
-    <div class="tag-page">
+    <div class="tag-dossier tag-page">
       <h1 class="section-title">{{ tag_label }}</h1>
       <hr class="section-rule">
       {% if tag_type %}
@@ -40,7 +39,7 @@
       {% if related_tags %}
       <section class="related-section">
         <h2>{{ related_heading }}</h2>
-        <div class="related-tags">
+        <div class="tag-strip related-tags">
           {% for related in related_tags %}
           <a href="{{ related.href }}" class="related-tag">{{ related.label }}</a>
           {% endfor %}
@@ -51,13 +50,13 @@
       <section class="items-section">
         <h2>{{ items_heading }}</h2>
         {% if items %}
-        <div class="item-grid">
+        <div class="entry-list item-grid">
           {% for item in items %}
-          <article class="item item-card">
-            <span class="item-number"></span>
+          <article class="entry-card item item-card">
+            <span class="entry-number item-number"></span>
             <div class="item-body">
-              <h3 class="item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h3>
-              <p class="item-meta meta">
+              <h3 class="entry-title item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h3>
+              <p class="entry-source item-meta meta">
                 <span class="source">{{ item.source_name }}</span>
                 {% if item.published_at %}
                 &middot; <span class="date">{{ item.published_at }}</span>

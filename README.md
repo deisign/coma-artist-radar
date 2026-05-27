@@ -2,7 +2,63 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 17 — Generated issue covers / visual themes**.
+Current implemented stage: **Stage 20 — Pearl Broadcast Modernism**.
+
+---
+
+## Stage 20 — Pearl Broadcast Modernism
+
+Visual redesign of the entire design system. Direction: Swiss International Style + Bauhaus functionalism + mid-century editorial graphics + streamline radio engineering + late-night Americana atmosphere.
+
+**Core image:** "International radio bulletin typeset by a Swiss designer in 1961 for a late-night rock-and-roll station."
+
+### Palette
+
+| Token | Hex | Role |
+|---|---|---|
+| `--bg` | `#F3EBDD` | Pearl paper (primary background) |
+| `--surface` | `#EFE6D6` | Warm ivory panels |
+| `--surface-2` | `#E6D9C6` | Dusty cream blocks |
+| `--text` | `#1F2523` | Graphite |
+| `--muted` | `#6A5F52` | Muted brown |
+| `--accent` | `#D86F32` | Burnt orange |
+| `--accent-2` | `#2E8C8A` | Petrol teal |
+| `--danger` | `#A93A32` | Oxide red |
+| `--ochre` | `#C6A13A` | Ochre mustard |
+
+### New design classes
+
+- `.masthead` / `.brand-grid` — printed masthead header
+- `.signal-strip` / `.signal-token` — broadcast genre bar
+- `.frequency-lines` — CSS-only editorial texture
+- `.program-grid` / `.program-card` — program listing
+- `.issue-layout` / `.issue-hero` / `.issue-meta-panel` — magazine spread layout
+- `.entry-list` / `.entry-card` / `.entry-number` — numbered editorial rows
+- `.archive-index` / `.archive-row` — transmission log
+- `.taxonomy-board` / `.taxonomy-module` — tag taxonomy board
+- `.tag-dossier` / `.tag-strip` — signal dossier page
+
+### Pages
+
+| URL | Description |
+|---|---|
+| `/en/index.html` | Modernist radio bulletin landing |
+| `/en/issues/YYYY-MM-DD.html` | Magazine spread / transmission sheet |
+| `/en/archive.html` | Printed transmission log |
+| `/en/tags/index.html` | Taxonomy board |
+| `/en/tags/<tag>.html` | Signal dossier |
+
+### Build commands
+
+```bash
+python scripts/build_css.py
+python scripts/build_daily_draft.py --date 2026-05-26 --fetch-limit 5 --issue-limit 10 \
+  --base-url https://deisign.github.io/coma-artist-radar \
+  --base-path /coma-artist-radar --telegram-dry-run
+python -m pytest -q tests
+```
+
+---
 
 ## Input
 

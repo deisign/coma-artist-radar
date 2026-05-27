@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="site-shell">
-  <header class="site-header">
-    <div class="header-row">
+  <header class="masthead site-header">
+    <div class="brand-grid header-row">
       <div class="brand-mark">
         <span class="brand-signal">&#9673;</span>
         <span class="brand-name">coma.fm</span>
@@ -21,26 +21,41 @@
         <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
       </nav>
     </div>
-    <div class="brand-line"></div>
   </header>
 
   <section class="hero">
-    <p class="hero-kicker">Broadcast &middot; Signal &middot; Field Radar</p>
-    <h1 class="hero-title">{{ title }}</h1>
-    <p class="hero-deck">{{ description }}</p>
-    <div class="hero-meta">
-      <a href="{{ archive_href }}">{{ archive_label }}</a>
-      <a href="{{ tags_href }}">{{ tags_label }}</a>
+    <div class="hero-panel">
+      <div class="hero-left">
+        <p class="hero-kicker">Broadcast &middot; Signal &middot; Field Radar</p>
+        <h1 class="hero-title">{{ title }}</h1>
+        <p class="hero-deck">{{ description }}</p>
+      </div>
+      <div class="hero-right hero-meta">
+        <div>
+          <a href="{{ archive_href }}">{{ archive_label }}</a>
+          <a href="{{ tags_href }}">{{ tags_label }}</a>
+        </div>
+      </div>
     </div>
   </section>
+
+  <div class="signal-strip">
+    <span class="signal-token">Surf</span>
+    <span class="signal-token">Psychobilly</span>
+    <span class="signal-token">Jazz Noir</span>
+    <span class="signal-token">Ghost Americana</span>
+    <span class="signal-token">Rockabilly</span>
+    <span class="signal-token">Blues</span>
+    <span class="signal-token">Country</span>
+  </div>
 
   <main>
     <h2 class="section-title">{{ latest_issues_heading }}</h2>
     <hr class="section-rule">
-    <div class="issue-grid issue-list">
+    <div class="program-grid issue-grid issue-list">
       {% if issues %}
       {% for issue in issues %}
-      <div class="issue-card">
+      <div class="program-card issue-card">
         <span class="issue-card-date issue-date">{{ issue.date }}</span>
         <a class="issue-card-title issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
         <span class="issue-card-meta issue-meta">{{ issue.item_count }}{% if issue.draft %}<span class="badge-draft">draft</span>{% endif %}</span>

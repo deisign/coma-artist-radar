@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="site-shell">
-  <header class="site-header">
-    <div class="header-row">
+  <header class="masthead site-header">
+    <div class="brand-grid header-row">
       <div class="brand-mark">
         <span class="brand-signal">&#9673;</span>
         <span class="brand-name">coma.fm</span>
@@ -20,28 +20,29 @@
         <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
       </nav>
     </div>
-    <div class="brand-line"></div>
   </header>
 
   <main>
     <h1 class="section-title">{{ heading }}</h1>
     <hr class="section-rule">
-    {% for group in groups %}
-    <section class="group">
-      <h2 class="group-heading">{{ group.type_label }}</h2>
-      <div class="tag-grid">
-        {% for tag in group.tags %}
-        <div class="tag-card">
-          <a href="{{ tag.href }}" class="tag-pill">{{ tag.label }}</a>
-          <p class="tag-count">{{ tag.count }}</p>
-          {% if tag.description %}
-          <p class="tag-desc">{{ tag.description }}</p>
-          {% endif %}
+    <div class="taxonomy-board">
+      {% for group in groups %}
+      <section class="taxonomy-module group">
+        <h2 class="group-heading">{{ group.type_label }}</h2>
+        <div class="tag-grid">
+          {% for tag in group.tags %}
+          <div class="tag-card">
+            <a href="{{ tag.href }}" class="tag-pill">{{ tag.label }}</a>
+            <p class="tag-count">{{ tag.count }}</p>
+            {% if tag.description %}
+            <p class="tag-desc">{{ tag.description }}</p>
+            {% endif %}
+          </div>
+          {% endfor %}
         </div>
-        {% endfor %}
-      </div>
-    </section>
-    {% endfor %}
+      </section>
+      {% endfor %}
+    </div>
   </main>
 
   <footer class="footer">

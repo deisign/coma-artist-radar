@@ -229,6 +229,50 @@ def test_css_has_issue_card_title(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# CSS content — Stage 20 Pearl Broadcast Modernism classes
+# ---------------------------------------------------------------------------
+
+def test_css_has_masthead(tmp_path):
+    assert ".masthead" in _css_content(tmp_path)
+
+
+def test_css_has_brand_grid(tmp_path):
+    assert ".brand-grid" in _css_content(tmp_path)
+
+
+def test_css_has_signal_strip(tmp_path):
+    assert ".signal-strip" in _css_content(tmp_path)
+
+
+def test_css_has_frequency_lines(tmp_path):
+    assert ".frequency-lines" in _css_content(tmp_path)
+
+
+def test_css_has_program_grid(tmp_path):
+    assert ".program-grid" in _css_content(tmp_path)
+
+
+def test_css_has_issue_layout(tmp_path):
+    assert ".issue-layout" in _css_content(tmp_path)
+
+
+def test_css_has_entry_number(tmp_path):
+    assert ".entry-number" in _css_content(tmp_path)
+
+
+def test_css_has_archive_index(tmp_path):
+    assert ".archive-index" in _css_content(tmp_path)
+
+
+def test_css_has_taxonomy_board(tmp_path):
+    assert ".taxonomy-board" in _css_content(tmp_path)
+
+
+def test_css_has_tag_dossier(tmp_path):
+    assert ".tag-dossier" in _css_content(tmp_path)
+
+
+# ---------------------------------------------------------------------------
 # CSS content — palette and no forbidden values
 # ---------------------------------------------------------------------------
 
@@ -238,7 +282,9 @@ def test_css_has_warm_bg_variable(tmp_path):
 
 def test_css_bg_is_warm_not_pure_black(tmp_path):
     css = _css_content(tmp_path)
-    assert "--bg:        #1a1510" in css or "--bg: #1a1510" in css
+    # Pearl Broadcast Modernism: light pearl paper background
+    assert "--bg:" in css
+    assert "#F3EBDD" in css
 
 
 def test_css_no_pure_black_background(tmp_path):
@@ -319,6 +365,34 @@ def test_index_html_has_section_rule(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# Index HTML — Stage 20 classes
+# ---------------------------------------------------------------------------
+
+def test_index_html_has_signal_strip(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "signal-strip" in html
+
+
+def test_index_html_has_program_grid(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "index.html").read_text(encoding="utf-8")
+    assert "program-grid" in html
+
+
+# ---------------------------------------------------------------------------
 # Issue HTML — cover and item-card present
 # ---------------------------------------------------------------------------
 
@@ -375,6 +449,33 @@ def test_issue_html_has_item_number(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# Issue HTML — Stage 20 classes
+# ---------------------------------------------------------------------------
+
+def test_issue_html_has_issue_layout(tmp_path):
+    html = render_html(
+        items=[], issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "issue-layout" in html
+
+
+def test_issue_html_has_entry_number(tmp_path):
+    html = render_html(
+        items=[{
+            "id": 1, "title": "Test", "url": "https://example.com",
+            "source_name": "Src", "score": 50, "published_at": "",
+            "matched_artists": "", "tags": [],
+        }],
+        issue_date="2026-01-15", lang="en", draft=False,
+        template_path=_TEMPLATES_DIR / "issue.html.j2",
+        base_path="/coma-artist-radar",
+    )
+    assert "entry-number" in html
+
+
+# ---------------------------------------------------------------------------
 # Archive HTML — archive-item present
 # ---------------------------------------------------------------------------
 
@@ -403,6 +504,34 @@ def test_archive_html_has_archive_item_class(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# Archive HTML — Stage 20 classes
+# ---------------------------------------------------------------------------
+
+def test_archive_html_has_archive_index(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "archive-index" in html
+
+
+def test_archive_html_has_archive_row(tmp_path):
+    content_dir = _make_issue_fixtures(tmp_path)
+    build_site(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        templates_dir=_TEMPLATES_DIR,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "archive.html").read_text(encoding="utf-8")
+    assert "archive-row" in html
+
+
+# ---------------------------------------------------------------------------
 # Tags index — tag-grid present
 # ---------------------------------------------------------------------------
 
@@ -428,6 +557,34 @@ def test_tags_index_has_brand_mark(tmp_path):
     )
     html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
     assert "brand-mark" in html
+
+
+# ---------------------------------------------------------------------------
+# Tags index / tag page — Stage 20 classes
+# ---------------------------------------------------------------------------
+
+def test_tags_index_has_taxonomy_board(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "index.html").read_text(encoding="utf-8")
+    assert "taxonomy-board" in html
+
+
+def test_tag_page_has_tag_dossier(tmp_path):
+    content_dir = _make_tagged_fixture(tmp_path)
+    build_tag_pages(
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        tags_path=_TAGS_PATH,
+        base_path="/coma-artist-radar",
+    )
+    html = (tmp_path / "dist" / "en" / "tags" / "country.html").read_text(encoding="utf-8")
+    assert "tag-dossier" in html
 
 
 # ---------------------------------------------------------------------------

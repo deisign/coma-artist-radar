@@ -1,21 +1,22 @@
-/* coma.fm Radar — modernist radio bulletin design system
+/* coma.fm Radar — Pearl Broadcast Modernism
    Swiss International Style / Bauhaus / Mid-century editorial */
 
 :root {
-  /* Palette — warm dark modernist, not pure black */
-  --bg:        #1a1510;  /* deep tobacco */
-  --surface:   #231d16;  /* warm graphite */
-  --surface-2: #2d2318;  /* card surface */
-  --text:      #ede0c4;  /* aged paper */
-  --muted:     #a89070;  /* warm sand */
-  --border:    rgba(237, 224, 196, 0.13);
-  --rule:      rgba(237, 224, 196, 0.20);
-  --accent:    #c47820;  /* burnt orange */
-  --accent-2:  #3a8080;  /* muted turquoise */
-  --danger:    #b04040;  /* lacquer red */
-  --ochre:     #c8a040;  /* mustard */
-  --paper:     #ede0c4;
-  --draft-bg:  #3a1a18;
+  /* Pearl Broadcast Modernism palette */
+  --bg:         #F3EBDD;  /* pearl paper */
+  --surface:    #EFE6D6;  /* warm ivory */
+  --surface-2:  #E6D9C6;  /* dusty cream */
+  --text:       #1F2523;  /* graphite */
+  --muted:      #6A5F52;  /* muted brown */
+  --umber:      #3A3128;  /* deep umber */
+  --border:     rgba(31, 37, 35, 0.14);
+  --rule:       rgba(31, 37, 35, 0.22);
+  --accent:     #D86F32;  /* burnt orange */
+  --accent-2:   #2E8C8A;  /* petrol teal */
+  --danger:     #A93A32;  /* oxide red */
+  --ochre:      #C6A13A;  /* ochre mustard */
+  --paper:      #F3EBDD;
+  --draft-bg:   rgba(169, 58, 50, 0.07);
 
   /* Spacing rhythm */
   --sp-xs:  0.25rem;
@@ -31,7 +32,7 @@
   --font-label: "Helvetica Neue", Arial, sans-serif;
 
   /* Grid */
-  --max-w: 860px;
+  --max-w: 880px;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,7 +48,7 @@ body {
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* ── Layout ────────────────────────────────────────────────── */
+/* ── Layout ─────────────────────────────────────────────────── */
 
 .site-shell,
 .container {
@@ -56,20 +57,23 @@ a:hover { text-decoration: underline; }
   padding: 0 var(--sp-lg) var(--sp-2xl);
 }
 
-/* ── Header & Brand ────────────────────────────────────────── */
+/* ── Masthead / Header ───────────────────────────────────────── */
 
+.masthead,
 .site-header {
-  padding: var(--sp-lg) 0 0;
-  margin-bottom: var(--sp-lg);
+  padding: var(--sp-lg) 0 var(--sp-sm);
+  margin-bottom: var(--sp-md);
+  border-bottom: 2px solid var(--text);
 }
 
+.brand-grid,
 .header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--sp-sm);
-  margin-bottom: var(--sp-sm);
+  margin-bottom: var(--sp-xs);
 }
 
 .brand-mark {
@@ -103,12 +107,13 @@ a:hover { text-decoration: underline; }
 }
 
 .brand-line {
-  height: 2px;
-  background: linear-gradient(to right, var(--accent) 0%, var(--accent-2) 35%, transparent 70%);
+  height: 1px;
+  background: var(--text);
+  opacity: 0.18;
   margin-bottom: var(--sp-xs);
 }
 
-/* ── Language switch ───────────────────────────────────────── */
+/* ── Language switch ─────────────────────────────────────────── */
 
 .language-switch,
 nav {
@@ -133,7 +138,7 @@ nav a.active {
   padding-bottom: 1px;
 }
 
-/* ── Nav links ─────────────────────────────────────────────── */
+/* ── Nav links ───────────────────────────────────────────────── */
 
 .nav-links {
   display: flex;
@@ -165,12 +170,19 @@ nav a.active {
 
 .back:hover { color: var(--accent); text-decoration: none; }
 
-/* ── Hero — modernist landing block ────────────────────────── */
+/* ── Hero — asymmetric modernist landing ─────────────────────── */
 
 .hero {
   padding: var(--sp-xl) 0;
   border-bottom: 1px solid var(--rule);
-  margin-bottom: var(--sp-xl);
+  margin-bottom: 0;
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--sp-xl);
+  align-items: start;
 }
 
 .hero-kicker {
@@ -221,7 +233,54 @@ nav a.active {
 
 .hero-meta a:hover { color: var(--accent); border-color: var(--accent); }
 
-/* ── Section titles & rules ────────────────────────────────── */
+/* ── Signal strip — broadcast genre bar ─────────────────────── */
+
+.signal-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: 0 0 var(--sp-xl);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.signal-token {
+  font-family: var(--font-label);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.55rem 1.1rem;
+  border-right: 1px solid var(--rule);
+  white-space: nowrap;
+  display: block;
+  text-decoration: none;
+}
+
+.signal-token:hover {
+  color: var(--accent);
+  background: var(--surface-2);
+  text-decoration: none;
+}
+
+/* ── Frequency lines — CSS-only editorial texture ────────────── */
+
+.frequency-lines {
+  height: 12px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 4px,
+    rgba(31, 37, 35, 0.06) 4px,
+    rgba(31, 37, 35, 0.06) 5px
+  );
+  margin: var(--sp-md) 0;
+}
+
+/* ── Section titles & rules ──────────────────────────────────── */
 
 .section-title,
 .section-heading {
@@ -240,11 +299,13 @@ nav a.active {
   margin: 0 0 var(--sp-lg);
 }
 
-/* ── Issue grid — editorial program blocks ─────────────────── */
+/* ── Program grid / Issue grid — editorial listing ───────────── */
 
+.program-grid,
 .issue-grid,
 .issue-list { margin: 0; }
 
+.program-card,
 .issue-card,
 .issue-row {
   display: grid;
@@ -285,10 +346,12 @@ nav a.active {
   white-space: nowrap;
 }
 
-/* ── Archive list — printed index ──────────────────────────── */
+/* ── Archive index — printed transmission log ────────────────── */
 
+.archive-index,
 .archive-list { margin: 0; }
 
+.archive-row,
 .archive-item {
   display: grid;
   grid-template-columns: 7.2rem 1fr auto;
@@ -327,14 +390,41 @@ nav a.active {
   gap: 0.3rem;
 }
 
-/* ── Item grid — magazine index entries ────────────────────── */
+/* ── Issue layout — magazine spread / transmission sheet ─────── */
 
+.issue-layout { }
+
+.issue-hero {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--sp-xl);
+  margin-bottom: var(--sp-xl);
+  align-items: start;
+  padding: var(--sp-lg) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.issue-meta-panel {
+  padding: var(--sp-md);
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+}
+
+.issue-meta-panel .issue-date-label {
+  display: block;
+  margin-bottom: var(--sp-sm);
+}
+
+/* ── Entry list — numbered editorial rows ─────────────────────── */
+
+.entry-list,
 .item-grid { counter-reset: item-counter; }
 
+.entry-card,
 .item-card,
 .item {
   display: grid;
-  grid-template-columns: 2rem 1fr;
+  grid-template-columns: 2.5rem 1fr;
   gap: 0 var(--sp-md);
   padding: var(--sp-lg) 0;
   border-bottom: 1px solid var(--border);
@@ -342,6 +432,7 @@ nav a.active {
   counter-increment: item-counter;
 }
 
+.entry-number,
 .item-number {
   font-family: var(--font-label);
   font-size: 0.65rem;
@@ -353,12 +444,14 @@ nav a.active {
   user-select: none;
 }
 
+.entry-number::before,
 .item-number::before {
   content: counter(item-counter, decimal-leading-zero);
 }
 
 .item-body { min-width: 0; }
 
+.entry-title,
 .item-title,
 .item-card h2,
 .item-card h3,
@@ -370,6 +463,7 @@ nav a.active {
   margin-bottom: 0.3rem;
 }
 
+.entry-title a,
 .item-title a,
 .item-card h2 a,
 .item-card h3 a,
@@ -379,6 +473,7 @@ nav a.active {
   text-decoration: none;
 }
 
+.entry-title a:hover,
 .item-title a:hover,
 .item-card h2 a:hover,
 .item-card h3 a:hover,
@@ -387,6 +482,7 @@ nav a.active {
   color: var(--accent);
 }
 
+.entry-source,
 .item-meta,
 .meta {
   font-family: var(--font-label);
@@ -400,7 +496,7 @@ nav a.active {
 .source { color: var(--muted); }
 .artists { font-size: 0.82rem; color: var(--accent); margin-bottom: 0.3rem; }
 
-/* ── Tag list & pills ──────────────────────────────────────── */
+/* ── Tag list & pills ────────────────────────────────────────── */
 
 .tag-list,
 .tags {
@@ -410,16 +506,26 @@ nav a.active {
   margin-top: 0.4rem;
 }
 
+.tag-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: var(--sp-sm) 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  margin: var(--sp-md) 0;
+}
+
 .tag-pill,
 .tag,
 .related-tag {
   font-family: var(--font-label);
-  background: transparent;
+  background: var(--surface);
   color: var(--muted);
   border: 1px solid var(--border);
   font-size: 0.68rem;
   padding: 0.1rem 0.42rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-decoration: none;
   display: inline-block;
   transition: color 0.12s, border-color 0.12s;
@@ -430,10 +536,13 @@ nav a.active {
 .related-tag:hover {
   color: var(--accent);
   border-color: var(--accent);
+  background: var(--surface-2);
   text-decoration: none;
 }
 
-/* ── Tag page ──────────────────────────────────────────────── */
+/* ── Tag dossier — signal dossier page ───────────────────────── */
+
+.tag-dossier { }
 
 .tag-page { }
 
@@ -470,7 +579,26 @@ nav a.active {
 
 .related-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
-/* ── Tag grid — taxonomy board ─────────────────────────────── */
+/* ── Taxonomy board — tag index ──────────────────────────────── */
+
+.taxonomy-board { }
+
+.taxonomy-module,
+.group { margin-bottom: var(--sp-xl); }
+
+.group-heading {
+  font-family: var(--font-label);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--sp-xs);
+  margin-bottom: var(--sp-md);
+}
+
+/* ── Tag grid ────────────────────────────────────────────────── */
 
 .tag-grid {
   display: grid;
@@ -481,6 +609,7 @@ nav a.active {
 .tag-card {
   border: 1px solid var(--border);
   padding: 0.65rem var(--sp-md);
+  background: var(--surface);
 }
 
 .tag-card a {
@@ -509,23 +638,7 @@ nav a.active {
   line-height: 1.4;
 }
 
-/* ── Group sections — tag index ────────────────────────────── */
-
-.group { margin-bottom: var(--sp-xl); }
-
-.group-heading {
-  font-family: var(--font-label);
-  font-size: 0.66rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--muted);
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: var(--sp-xs);
-  margin-bottom: var(--sp-md);
-}
-
-/* ── Issue page specifics ──────────────────────────────────── */
+/* ── Issue page specifics ────────────────────────────────────── */
 
 .issue-header { margin-bottom: var(--sp-lg); }
 
@@ -563,16 +676,16 @@ h1 {
   font-style: italic;
 }
 
-/* ── Badges ────────────────────────────────────────────────── */
+/* ── Badges ──────────────────────────────────────────────────── */
 
 .badge-draft {
   font-family: var(--font-label);
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: rgba(176, 64, 64, 0.15);
-  color: #e0a0a0;
-  border: 1px solid rgba(176, 64, 64, 0.28);
+  background: rgba(169, 58, 50, 0.10);
+  color: var(--danger);
+  border: 1px solid rgba(169, 58, 50, 0.22);
   padding: 0.08rem 0.38rem;
   margin-left: 0.35rem;
 }
@@ -582,9 +695,9 @@ h1 {
   font-size: 0.62rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  background: rgba(58, 128, 128, 0.13);
+  background: rgba(46, 140, 138, 0.10);
   color: var(--accent-2);
-  border: 1px solid rgba(58, 128, 128, 0.24);
+  border: 1px solid rgba(46, 140, 138, 0.22);
   padding: 0.08rem 0.38rem;
   margin-left: 0.35rem;
 }
@@ -595,17 +708,16 @@ h1 {
   font-size: 0.64rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: rgba(176, 64, 64, 0.15);
-  color: #e0a0a0;
-  border: 1px solid rgba(176, 64, 64, 0.28);
+  background: rgba(169, 58, 50, 0.08);
+  color: var(--danger);
+  border: 1px solid rgba(169, 58, 50, 0.20);
   padding: 0.18rem 0.55rem;
   margin-bottom: var(--sp-md);
 }
 
-/* ── Issue cover ────────────────────────────────────────────── */
+/* ── Issue cover ─────────────────────────────────────────────── */
 
 .cover-frame {
-  margin: 0 0 var(--sp-xl);
   overflow: hidden;
 }
 
@@ -616,7 +728,7 @@ h1 {
   height: auto;
 }
 
-/* ── Empty states ───────────────────────────────────────────── */
+/* ── Empty states ────────────────────────────────────────────── */
 
 .no-items,
 .no-issues {
@@ -627,11 +739,11 @@ h1 {
   font-size: 0.9rem;
 }
 
-/* ── Footer ─────────────────────────────────────────────────── */
+/* ── Footer ──────────────────────────────────────────────────── */
 
 .footer,
 footer {
-  border-top: 1px solid var(--border);
+  border-top: 2px solid var(--text);
   margin-top: var(--sp-xl);
   padding-top: var(--sp-md);
   font-family: var(--font-label);
@@ -643,18 +755,24 @@ footer {
 .footer a { color: var(--muted); text-decoration: none; }
 .footer a:hover { color: var(--accent); }
 
-/* ── Responsive ─────────────────────────────────────────────── */
+/* ── Responsive ──────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
   .site-shell,
   .container { padding: 0 var(--sp-md) var(--sp-xl); }
   .hero-title { font-size: 2.4rem; }
+  .hero-panel { grid-template-columns: 1fr; }
+  .issue-hero { grid-template-columns: 1fr; }
+  .program-card,
   .issue-card,
   .issue-row,
+  .archive-row,
   .archive-item { grid-template-columns: 1fr; gap: 0.18rem; padding: 0.6rem 0; }
   .issue-card-date,
   .archive-date { font-size: 0.72rem; }
+  .entry-card,
   .item-card,
   .item { grid-template-columns: 1.6rem 1fr; gap: 0 var(--sp-sm); }
   .tag-grid { grid-template-columns: 1fr 1fr; }
+  .signal-strip { gap: 0; }
 }

@@ -8,8 +8,8 @@
 </head>
 <body>
 <div class="site-shell">
-  <header class="site-header">
-    <div class="header-row">
+  <header class="masthead site-header">
+    <div class="brand-grid header-row">
       <div class="brand-mark">
         <span class="brand-signal">&#9673;</span>
         <span class="brand-name">coma.fm</span>
@@ -20,17 +20,16 @@
         <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
       </nav>
     </div>
-    <div class="brand-line"></div>
   </header>
 
   <main>
     <a class="back" href="{{ back_href }}">{{ back_label }}</a>
     <h1 class="section-title">{{ heading }}</h1>
     <hr class="section-rule">
-    <div class="archive-list">
+    <div class="archive-index archive-list">
       {% if issues %}
       {% for issue in issues %}
-      <div class="archive-item">
+      <div class="archive-row archive-item">
         <span class="archive-date">{{ issue.date }}</span>
         <a class="archive-link issue-link" href="{{ issue.href }}">{{ issue.title }}</a>
         <span class="archive-meta issue-meta">{{ issue.item_count }} {{ items_label }}{% if issue.draft %}<span class="badge-draft">{{ status_draft }}</span>{% else %}<span class="badge-published">{{ status_published }}</span>{% endif %}</span>

@@ -9,8 +9,8 @@
 </head>
 <body>
 <div class="site-shell">
-  <header class="site-header">
-    <div class="header-row">
+  <header class="masthead site-header">
+    <div class="brand-grid header-row">
       <div class="brand-mark">
         <span class="brand-signal">&#9673;</span>
         <span class="brand-name">coma.fm</span>
@@ -21,33 +21,34 @@
         <a href="{{ nav_uk_href }}" {% if lang == "uk" %}class="active"{% endif %}>UK</a>
       </nav>
     </div>
-    <div class="brand-line"></div>
   </header>
 
-  <main>
-    {% if cover_image_url %}
-    <div class="cover-frame">
-      <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
-    </div>
+  <main class="issue-layout">
+    {% if draft %}
+    <div class="draft-notice">{{ draft_notice }}</div>
     {% endif %}
 
-    <div class="issue-header">
-      {% if draft %}
-      <div class="draft-notice">{{ draft_notice }}</div>
+    <div class="issue-hero">
+      {% if cover_image_url %}
+      <div class="cover-frame">
+        <img class="issue-cover" src="{{ cover_image_url }}" alt="{{ cover_alt }}">
+      </div>
       {% endif %}
-      <h1 class="site-title">{{ heading }}</h1>
-      <p class="issue-date-label issue-date">{{ issue_date }}</p>
-      <p class="intro">{{ intro }}</p>
+      <div class="issue-meta-panel">
+        <h1 class="site-title">{{ heading }}</h1>
+        <p class="issue-date-label issue-date">{{ issue_date }}</p>
+        <p class="intro">{{ intro }}</p>
+      </div>
     </div>
 
     {% if items %}
-    <div class="item-grid">
+    <div class="entry-list item-grid">
       {% for item in items %}
-      <article class="item item-card">
-        <span class="item-number"></span>
+      <article class="entry-card item item-card">
+        <span class="entry-number item-number"></span>
         <div class="item-body">
-          <h2 class="item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
-          <p class="item-meta meta">
+          <h2 class="entry-title item-title"><a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a></h2>
+          <p class="entry-source item-meta meta">
             <span class="source">{{ item.source_name }}</span>
             {% if item.published_at %}
             &middot; <span class="date">{{ item.published_at }}</span>

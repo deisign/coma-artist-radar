@@ -91,6 +91,12 @@
               {% if item.published_at %}&middot; <span class="date">{{ item.published_at }}</span>{% endif %}
               &middot; <span class="score">{{ item.score }}</span>
             </div>
+            {% if item.field_evidence_label %}
+            <div class="field-evidence">{{ item.field_evidence_label }}</div>
+            {% endif %}
+            {% if item.editorial_angle %}
+            <div class="editorial-angle">{{ item.editorial_angle }}</div>
+            {% endif %}
             {% if item.tags %}
             <div class="tag-line tag-list tags">
               {% for tag in item.tags %}

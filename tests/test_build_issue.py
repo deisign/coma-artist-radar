@@ -970,3 +970,271 @@ def test_build_issue_applies_source_diversity_to_json(tmp_path):
     assert sources.count("No Depression") == 3
     assert any(source.startswith("Other Source") for source in sources)
 
+
+# ---------------------------------------------------------------------------
+# Stage 26D-A — Industry / Culture Signal Types
+# ---------------------------------------------------------------------------
+
+def test_classify_signal_type_detects_industry_angle():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item(
+        "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+        matched_tags="country",
+    )
+
+    assert classify_signal_type(item) == "industry"
+
+
+def test_classify_signal_type_detects_culture_angle():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item(
+        "Paul McCartney Says This Pop Star Has a Similar Level of Fame",
+        matched_tags="rock",
+    )
+
+    assert classify_signal_type(item) == "culture"
+
+
+# ---------------------------------------------------------------------------
+# Stage 26D-B — Field Evidence Helpers
+# ---------------------------------------------------------------------------
+
+def test_build_field_evidence_detects_artist_tag_genre_signal_and_source():
+    from scripts.build_issue import build_field_evidence
+
+    item = {
+        "title": "ALBUM REVIEW: A signal from the field",
+        "source_name": "No Depression",
+        "source_type": "magazine",
+        "matched_artists": "Paul McCartney",
+        "matched_tags": "country",
+        "matched_genres": "country",
+        "signal_type": "review",
+    }
+
+    evidence = build_field_evidence(item)
+
+    assert "artist_match" in evidence
+    assert "tag_match" in evidence
+    assert "genre_match" in evidence
+    assert "review_signal" in evidence
+    assert "source_signal" in evidence
+
+
+def test_build_field_evidence_detects_industry_signal():
+    from scripts.build_issue import build_field_evidence
+
+    item = {
+        "title": "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+        "source_name": "Saving Country Music",
+        "source_type": "magazine",
+        "matched_artists": "Kacey Musgraves",
+        "matched_tags": "country",
+        "matched_genres": "country",
+    }
+
+    evidence = build_field_evidence(item)
+
+    assert "artist_match" in evidence
+    assert "industry_signal" in evidence
+    assert "source_signal" in evidence
+
+
+def test_build_field_evidence_falls_back_to_weak_signal():
+    from scripts.build_issue import build_field_evidence
+
+    item = {
+        "title": "Unmarked dispatch",
+        "source_name": "",
+        "source_type": "",
+        "matched_artists": "",
+        "matched_tags": "",
+        "matched_genres": "",
+    }
+
+    assert build_field_evidence(item) == ["weak_signal"]
+
+
+def test_localize_field_evidence_en():
+    from scripts.build_issue import localize_field_evidence
+
+    label = localize_field_evidence(["artist_match", "industry_signal", "source_signal"], "en")
+
+    assert label == "Artist match · Industry signal · Source signal"
+
+
+def test_localize_field_evidence_uk():
+    from scripts.build_issue import localize_field_evidence
+
+    label = localize_field_evidence(["artist_match", "culture_signal", "source_signal"], "uk")
+
+    assert "Збіг артиста" in label
+    assert "Культурний сигнал" in label
+    assert "Сигнал джерела" in label
+
+
+# ---------------------------------------------------------------------------
+# Stage 26D-C — Editorial Angle Helper
+# ---------------------------------------------------------------------------
+
+def test_build_editorial_angle_industry_artist_en():
+    from scripts.build_issue import build_editorial_angle
+
+    item = {
+        "title": "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+        "matched_artists": "Kacey Musgraves",
+        "matched_tags": "country",
+        "matched_genres": "country",
+        "source_name": "Saving Country Music",
+        "signal_type": "industry",
+        "field_evidence": ["artist_match", "tag_match", "industry_signal", "source_signal"],
+    }
+
+    assert build_editorial_angle(item, "en") == "Industry / brand context around a coma.fm-field artist."
+
+
+def test_build_editorial_angle_culture_artist_en():
+    from scripts.build_issue import build_editorial_angle
+
+    item = {
+        "title": "Paul McCartney Says This Pop Star Has a Similar Level of Fame",
+        "matched_artists": "Paul McCartney",
+        "matched_tags": "rock",
+        "matched_genres": "rock",
+        "source_name": "American Songwriter",
+        "signal_type": "culture",
+        "field_evidence": ["artist_match", "tag_match", "culture_signal", "source_signal"],
+    }
+
+    assert build_editorial_angle(item, "en") == "Culture context around a coma.fm-field artist."
+
+
+def test_build_editorial_angle_review_artist_uk():
+    from scripts.build_issue import build_editorial_angle
+
+    item = {
+        "title": "ALBUM REVIEW: A Night Road Record",
+        "matched_artists": "The Cramps",
+        "matched_tags": "psychobilly",
+        "matched_genres": "rockabilly",
+        "source_name": "No Depression",
+        "signal_type": "review",
+        "field_evidence": ["artist_match", "tag_match", "review_signal", "source_signal"],
+    }
+
+    assert build_editorial_angle(item, "uk") == "Сигнал рецензії з артистичного поля coma.fm."
+
+
+def test_build_editorial_angle_genre_field_en():
+    from scripts.build_issue import build_editorial_angle
+
+    item = {
+        "title": "New instrumental surf compilation",
+        "matched_artists": "",
+        "matched_tags": "instrumental_surf",
+        "matched_genres": "surf",
+        "source_name": "Example Source",
+        "signal_type": "release",
+        "field_evidence": ["tag_match", "genre_match", "release_signal", "source_signal"],
+    }
+
+    assert build_editorial_angle(item, "en") == "Release signal from the coma.fm genre field."
+
+
+# ---------------------------------------------------------------------------
+# Stage 26D-D — Evidence / Angle Integration
+# ---------------------------------------------------------------------------
+
+def test_render_html_prepares_field_evidence_label_and_editorial_angle():
+    html = render_html(
+        items=[{
+            "id": 1,
+            "title": "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+            "url": "https://example.com/kacey",
+            "source_name": "Saving Country Music",
+            "source_type": "magazine",
+            "score": 80,
+            "published_at": "",
+            "matched_artists": "Kacey Musgraves",
+            "matched_tags": "country",
+            "matched_genres": "country",
+            "tags": [],
+            "signal_type": "industry",
+            "field_evidence": ["artist_match", "tag_match", "industry_signal", "source_signal"],
+        }],
+        issue_date="2026-01-15",
+        lang="en",
+        draft=False,
+        template_path=_TEMPLATE_PATH,
+        base_path="",
+    )
+
+    assert "Industry signal" in html
+    assert "Industry / brand context around a coma.fm-field artist." in html
+
+
+def test_build_issue_json_contains_field_evidence_and_editorial_angle(tmp_path):
+    import sqlite3
+    from scripts.build_issue import build_issue
+
+    db_path = tmp_path / "radar.sqlite"
+    conn = sqlite3.connect(db_path)
+    conn.execute(
+        "CREATE TABLE items ("
+        "id INTEGER, title TEXT, url TEXT, source_name TEXT, source_type TEXT, "
+        "published_at TEXT, score INTEGER, matched_artists TEXT, matched_tags TEXT, matched_genres TEXT"
+        ")"
+    )
+    conn.execute(
+        "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            1,
+            "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+            "https://example.com/kacey",
+            "Saving Country Music",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            80,
+            "Kacey Musgraves",
+            "country",
+            "country",
+        ),
+    )
+    conn.commit()
+    conn.close()
+
+    tags_path = tmp_path / "tags.yaml"
+    tags_path.write_text("tags: []\n", encoding="utf-8")
+
+    template_path = tmp_path / "issue.html.j2"
+    template_path.write_text(_TEMPLATE_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+
+    content_dir = tmp_path / "content"
+    dist_dir = tmp_path / "dist"
+
+    build_issue(
+        db_path=db_path,
+        issue_date="2026-01-15",
+        lang="en",
+        limit=10,
+        min_score=30,
+        draft=True,
+        template_path=template_path,
+        tags_path=tags_path,
+        content_dir=content_dir,
+        dist_dir=dist_dir,
+        base_path="",
+        with_cover=False,
+    )
+
+    data = json.loads((content_dir / "2026-01-15.en.json").read_text(encoding="utf-8"))
+    item = data["items"][0]
+
+    assert item["signal_type"] == "industry"
+    assert "artist_match" in item["field_evidence"]
+    assert "industry_signal" in item["field_evidence"]
+    assert "Artist match" in item["field_evidence_label"]
+    assert item["editorial_angle"] == "Industry / brand context around a coma.fm-field artist."
+

@@ -86,7 +86,8 @@
               <a href="{{ item.url }}" rel="noopener noreferrer">{{ item.title }}</a>
             </h2>
             <div class="entry-source item-meta meta">
-              <span class="source">{{ item.source_name }}</span>
+              <span class="signal-type">{{ item.signal_type_label }}</span>
+              &middot; <span class="source">{{ item.source_name }}</span>
               {% if item.published_at %}&middot; <span class="date">{{ item.published_at }}</span>{% endif %}
               &middot; <span class="score">{{ item.score }}</span>
             </div>

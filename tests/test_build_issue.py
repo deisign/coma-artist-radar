@@ -1238,3 +1238,156 @@ def test_build_issue_json_contains_field_evidence_and_editorial_angle(tmp_path):
     assert "Artist match" in item["field_evidence_label"]
     assert item["editorial_angle"] == "Industry / brand context around a coma.fm-field artist."
 
+
+# ---------------------------------------------------------------------------
+# Stage 26E-A — Editorial Sequencing Helpers
+# ---------------------------------------------------------------------------
+
+def test_editorial_sequence_rank_uses_signal_type():
+    from scripts.build_issue import editorial_sequence_rank
+
+    assert editorial_sequence_rank({"signal_type": "review"}) < editorial_sequence_rank({"signal_type": "culture"})
+    assert editorial_sequence_rank({"signal_type": "culture"}) < editorial_sequence_rank({"signal_type": "industry"})
+
+
+def test_editorial_sequence_rank_classifies_when_signal_type_missing():
+    from scripts.build_issue import editorial_sequence_rank
+
+    review_item = {"title": "ALBUM REVIEW: A record from the field", "score": 40}
+    culture_item = {"title": "Paul McCartney says this pop star has a similar level of fame", "score": 100}
+
+    assert editorial_sequence_rank(review_item) < editorial_sequence_rank(culture_item)
+
+
+def test_sequence_editorial_items_puts_review_before_higher_scored_culture():
+    from scripts.build_issue import sequence_editorial_items
+
+    items = [
+        {"title": "Culture item", "signal_type": "culture", "score": 100},
+        {"title": "Review item", "signal_type": "review", "score": 65},
+    ]
+
+    ordered = sequence_editorial_items(items)
+
+    assert [item["title"] for item in ordered] == ["Review item", "Culture item"]
+
+
+def test_sequence_editorial_items_keeps_industry_context_late():
+    from scripts.build_issue import sequence_editorial_items
+
+    items = [
+        {"title": "Industry item", "signal_type": "industry", "score": 100},
+        {"title": "Radar signal", "signal_type": "signal", "score": 60},
+        {"title": "Release item", "signal_type": "release", "score": 50},
+    ]
+
+    ordered = sequence_editorial_items(items)
+
+    assert [item["title"] for item in ordered] == ["Release item", "Radar signal", "Industry item"]
+
+
+def test_sequence_editorial_items_is_stable_for_same_rank_and_score():
+    from scripts.build_issue import sequence_editorial_items
+
+    items = [
+        {"title": "First review", "signal_type": "review", "score": 80},
+        {"title": "Second review", "signal_type": "review", "score": 80},
+    ]
+
+    ordered = sequence_editorial_items(items)
+
+    assert [item["title"] for item in ordered] == ["First review", "Second review"]
+
+
+# ---------------------------------------------------------------------------
+# Stage 26E-B — Editorial Sequencing Integration
+# ---------------------------------------------------------------------------
+
+def test_build_issue_json_uses_editorial_sequence_order(tmp_path):
+    import sqlite3
+    from scripts.build_issue import build_issue
+
+    db_path = tmp_path / "radar.sqlite"
+    conn = sqlite3.connect(db_path)
+    conn.execute(
+        "CREATE TABLE items ("
+        "id INTEGER, title TEXT, url TEXT, source_name TEXT, source_type TEXT, "
+        "published_at TEXT, score INTEGER, matched_artists TEXT, matched_tags TEXT, matched_genres TEXT"
+        ")"
+    )
+
+    rows = [
+        (
+            1,
+            "Paul McCartney Says This Pop Star Has a Similar Level of Fame",
+            "https://example.com/culture",
+            "American Songwriter",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            100,
+            "Paul McCartney",
+            "",
+            "",
+        ),
+        (
+            2,
+            "Album Review – 49 Winchester’s Change Of Plans",
+            "https://example.com/review",
+            "Saving Country Music",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            65,
+            "49 Winchester",
+            "country",
+            "country",
+        ),
+        (
+            3,
+            "Why The New Kacey Musgraves Wal-Mart Partnership Feels Off Brand",
+            "https://example.com/industry",
+            "Saving Country Music",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            90,
+            "Kacey Musgraves",
+            "country",
+            "country",
+        ),
+    ]
+
+    conn.executemany("INSERT INTO items VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rows)
+    conn.commit()
+    conn.close()
+
+    tags_path = tmp_path / "tags.yaml"
+    tags_path.write_text("tags: []\n", encoding="utf-8")
+
+    template_path = tmp_path / "issue.html.j2"
+    template_path.write_text(_TEMPLATE_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+
+    content_dir = tmp_path / "content"
+    dist_dir = tmp_path / "dist"
+
+    build_issue(
+        db_path=db_path,
+        issue_date="2026-01-15",
+        lang="en",
+        limit=3,
+        min_score=30,
+        draft=True,
+        template_path=template_path,
+        tags_path=tags_path,
+        content_dir=content_dir,
+        dist_dir=dist_dir,
+        base_path="",
+        with_cover=False,
+        max_per_source=3,
+    )
+
+    data = json.loads((content_dir / "2026-01-15.en.json").read_text(encoding="utf-8"))
+    titles = [item["title"] for item in data["items"]]
+    signal_types = [item["signal_type"] for item in data["items"]]
+
+    assert signal_types == ["review", "culture", "industry"]
+    assert titles[0].startswith("Album Review")
+

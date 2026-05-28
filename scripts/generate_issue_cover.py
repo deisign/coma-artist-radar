@@ -49,9 +49,69 @@ def cover_mode_from_tx_code(tx_code: str) -> str:
     return _COVER_MODES[raw[0] % len(_COVER_MODES)]
 
 
-def _build_cover_mode_ctx(tx_code: str) -> dict:
-    """Build mode-specific SVG context values from tx_code hash."""
-    mode = cover_mode_from_tx_code(tx_code)
+_COVER_MODE_BY_SIGNAL_TYPE: dict[str, str] = {
+    "review": "modular_skyline",
+    "reissue": "horizon_signal",
+    "archive": "horizon_signal",
+    "interview": "tuner_scale",
+    "release": "frequency_bars",
+    "video": "frequency_bars",
+    "scene": "concentric",
+    "culture": "tuner_scale",
+    "industry": "frequency_bars",
+    "editor_note": "concentric",
+    "signal": "concentric",
+}
+
+_COVER_MODE_SIGNAL_PRIORITY = (
+    "archive",
+    "reissue",
+    "review",
+    "interview",
+    "release",
+    "scene",
+    "video",
+    "culture",
+    "industry",
+    "editor_note",
+    "signal",
+)
+
+
+def detect_cover_mode_from_items(items: list[dict]) -> str | None:
+    """Return deterministic cover mode from selected issue signal types.
+
+    This does not replace tx-code fallback. If no known signal type is present,
+    return None so the older tx-code hash mode can still be used.
+    """
+    counts: Counter = Counter()
+    for item in items:
+        signal_type = str(item.get("signal_type") or "").strip()
+        if signal_type in _COVER_MODE_BY_SIGNAL_TYPE:
+            counts[signal_type] += 1
+
+    if not counts:
+        return None
+
+    best_type = min(
+        counts,
+        key=lambda signal_type: (
+            -counts[signal_type],
+            _COVER_MODE_SIGNAL_PRIORITY.index(signal_type)
+            if signal_type in _COVER_MODE_SIGNAL_PRIORITY
+            else len(_COVER_MODE_SIGNAL_PRIORITY),
+        ),
+    )
+    return _COVER_MODE_BY_SIGNAL_TYPE[best_type]
+
+
+def _build_cover_mode_ctx(tx_code: str, cover_mode: str | None = None) -> dict:
+    """Build mode-specific SVG context values.
+
+    If cover_mode is provided, use it. Otherwise fall back to the historical
+    tx_code hash mode for deterministic legacy behavior.
+    """
+    mode = cover_mode if cover_mode in _COVER_MODES else cover_mode_from_tx_code(tx_code)
     b = hashlib.sha256(tx_code.encode("utf-8")).digest()
     ctx: dict = {"cover_mode": mode}
 
@@ -234,12 +294,13 @@ def _build_svg_ctx(
     main_tag_label: str,
     item_count: int,
     lang: str,
+    cover_mode: str | None = None,
 ) -> dict:
     """Build the template context for cover.svg.j2."""
     tag_pill_width = max(140, len(main_tag_label) * 12 + 48)
     date_compact = issue_date.replace("-", "")
     tx_code = f"TX-{date_compact}-{lang.upper()}"
-    cover_ctx = _build_cover_mode_ctx(tx_code)
+    cover_ctx = _build_cover_mode_ctx(tx_code, cover_mode=cover_mode)
     return {
         "bg": theme["background"],
         "surface": theme["surface"],
@@ -284,11 +345,14 @@ def generate_issue_cover(
     themes = load_themes(themes_path)
     tags_typed = load_tags_typed(tags_path)
 
+    items = _load_items_from_json(content_dir, issue_date, lang)
+
     # Determine main_tag if not provided
     resolved_tag = main_tag
     if resolved_tag is None:
-        items = _load_items_from_json(content_dir, issue_date, lang)
         resolved_tag = detect_main_tag_from_items(items, tags_typed)
+
+    resolved_cover_mode = detect_cover_mode_from_items(items)
 
     theme = get_theme(resolved_tag, themes)
     main_tag_label = theme["label"]
@@ -304,6 +368,7 @@ def generate_issue_cover(
         main_tag_label=main_tag_label,
         item_count=item_count,
         lang=lang,
+        cover_mode=resolved_cover_mode,
     )
     svg = _render_svg(template_src, ctx)
 
@@ -318,6 +383,7 @@ def generate_issue_cover(
         "lang": lang,
         "main_tag": resolved_tag,
         "theme_id": theme["id"],
+        "cover_mode": ctx.get("cover_mode"),
         "output_file": str(out_path),
         "dry_run": dry_run,
     }
@@ -340,6 +406,7 @@ def generate_issue_covers(
     """Generate covers for all requested languages. Returns summary dict."""
     output_files: list[str] = []
     theme_id = None
+    cover_mode = None
     resolved_tag = main_tag
 
     for lang in languages:
@@ -363,12 +430,14 @@ def generate_issue_covers(
         if resolved_tag is None:
             resolved_tag = result["main_tag"]
         theme_id = result["theme_id"]
+        cover_mode = result.get("cover_mode")
 
     return {
         "issue_date": issue_date,
         "languages": languages,
         "main_tag": resolved_tag,
         "theme_id": theme_id,
+        "cover_mode": cover_mode,
         "output_files": output_files,
         "dry_run": dry_run,
     }

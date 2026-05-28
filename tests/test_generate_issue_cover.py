@@ -232,3 +232,140 @@ def test_covers_differ_between_issue_dates(tmp_path):
     svg1 = _cover_path(tmp_path, "2026-01-01", "en").read_text(encoding="utf-8")
     svg2 = _cover_path(tmp_path, "2026-06-15", "en").read_text(encoding="utf-8")
     assert svg1 != svg2
+
+
+# ---------------------------------------------------------------------------
+# Stage 26F-A — Deterministic Cover Mode Detection
+# ---------------------------------------------------------------------------
+
+def test_detect_cover_mode_from_items_prefers_dominant_review_mode():
+    from scripts.generate_issue_cover import detect_cover_mode_from_items
+
+    items = [
+        {"signal_type": "review"},
+        {"signal_type": "review"},
+        {"signal_type": "culture"},
+    ]
+
+    assert detect_cover_mode_from_items(items) == "modular_skyline"
+
+
+def test_detect_cover_mode_from_items_maps_archive_and_reissue_to_horizon():
+    from scripts.generate_issue_cover import detect_cover_mode_from_items
+
+    assert detect_cover_mode_from_items([{"signal_type": "archive"}]) == "horizon_signal"
+    assert detect_cover_mode_from_items([{"signal_type": "reissue"}]) == "horizon_signal"
+
+
+def test_detect_cover_mode_from_items_maps_industry_to_frequency_bars():
+    from scripts.generate_issue_cover import detect_cover_mode_from_items
+
+    items = [
+        {"signal_type": "industry"},
+        {"signal_type": "industry"},
+        {"signal_type": "review"},
+    ]
+
+    assert detect_cover_mode_from_items(items) == "frequency_bars"
+
+
+def test_detect_cover_mode_from_items_uses_priority_on_count_tie():
+    from scripts.generate_issue_cover import detect_cover_mode_from_items
+
+    items = [
+        {"signal_type": "culture"},
+        {"signal_type": "review"},
+    ]
+
+    assert detect_cover_mode_from_items(items) == "modular_skyline"
+
+
+def test_detect_cover_mode_from_items_returns_none_without_known_signal_types():
+    from scripts.generate_issue_cover import detect_cover_mode_from_items
+
+    assert detect_cover_mode_from_items([]) is None
+    assert detect_cover_mode_from_items([{"signal_type": "unknown"}]) is None
+
+
+# ---------------------------------------------------------------------------
+# Stage 26F-B — Cover Mode Integration
+# ---------------------------------------------------------------------------
+
+def test_generate_issue_cover_uses_signal_type_cover_mode_from_content_json(tmp_path):
+    import json
+    from scripts.generate_issue_cover import generate_issue_cover
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir(parents=True)
+    (content_dir / "2026-01-15.en.json").write_text(
+        json.dumps({
+            "items": [
+                {"signal_type": "review", "matched_tags": ""},
+                {"signal_type": "review", "matched_tags": ""},
+                {"signal_type": "culture", "matched_tags": ""},
+            ]
+        }),
+        encoding="utf-8",
+    )
+
+    result = generate_issue_cover(
+        issue_date="2026-01-15",
+        lang="en",
+        main_tag="default",
+        item_count=3,
+        dist_dir=tmp_path / "dist",
+        content_dir=content_dir,
+    )
+
+    assert result["cover_mode"] == "modular_skyline"
+
+
+def test_generate_issue_cover_falls_back_to_tx_hash_without_signal_types(tmp_path):
+    import json
+    from scripts.generate_issue_cover import cover_mode_from_tx_code, generate_issue_cover
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir(parents=True)
+    (content_dir / "2026-01-15.en.json").write_text(
+        json.dumps({"items": [{"signal_type": "unknown", "matched_tags": ""}]}),
+        encoding="utf-8",
+    )
+
+    result = generate_issue_cover(
+        issue_date="2026-01-15",
+        lang="en",
+        main_tag="default",
+        item_count=1,
+        dist_dir=tmp_path / "dist",
+        content_dir=content_dir,
+    )
+
+    assert result["cover_mode"] == cover_mode_from_tx_code("TX-20260115-EN")
+
+
+def test_generate_issue_covers_summary_includes_cover_mode(tmp_path):
+    import json
+    from scripts.generate_issue_cover import generate_issue_covers
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir(parents=True)
+
+    payload = json.dumps({
+        "items": [
+            {"signal_type": "review", "matched_tags": ""}
+        ]
+    })
+
+    (content_dir / "2026-01-15.en.json").write_text(payload, encoding="utf-8")
+    (content_dir / "2026-01-15.uk.json").write_text(payload, encoding="utf-8")
+
+    result = generate_issue_covers(
+        issue_date="2026-01-15",
+        languages=["en", "uk"],
+        main_tag="default",
+        item_count=1,
+        dist_dir=tmp_path / "dist",
+        content_dir=content_dir,
+    )
+
+    assert result["cover_mode"] == "modular_skyline"

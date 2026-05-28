@@ -68,6 +68,8 @@ _SIGNAL_TYPE_LABELS: dict[str, dict[str, str]] = {
         "scene": "Scene signal",
         "release": "Release signal",
         "video": "Video signal",
+        "industry": "Industry signal",
+        "culture": "Culture signal",
         "editor_note": "Editor note",
         "signal": "Radar signal",
     },
@@ -79,6 +81,8 @@ _SIGNAL_TYPE_LABELS: dict[str, dict[str, str]] = {
         "scene": "Сигнал сцени",
         "release": "Сигнал релізу",
         "video": "Відеосигнал",
+        "industry": "Індустріальний сигнал",
+        "culture": "Культурний сигнал",
         "editor_note": "Нотатка редактора",
         "signal": "Сигнал радара",
     },
@@ -102,6 +106,16 @@ _SIGNAL_TYPE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     )),
     ("video", (
         " video ", " videoclip ", " music video ", " session video ", " відео ", " видео ",
+    )),
+    ("industry", (
+        " wal mart ", " walmart ", " partnership ", " brand ", " off brand ",
+        " licensing ", " publishing rights ", " catalog sale ", " business ",
+        " deal ", " sponsor ", " endorsement ", " lawsuit ", " legal battle ",
+    )),
+    ("culture", (
+        " pop star ", " fame ", " parallel ", " legacy ", " chart ",
+        " on this day ", " topped the charts ", " born in ", " anniversary ",
+        " similar level of fame ", " biography ",
     )),
     ("scene", (
         " scene ", " label profile ", " festival ", " profile ", " spotlight ", " reading room ",
@@ -140,6 +154,104 @@ def localize_signal_type(signal_type: str, lang: str) -> str:
     """Return localized public label for a signal type."""
     labels = _SIGNAL_TYPE_LABELS.get(lang, _SIGNAL_TYPE_LABELS["en"])
     return labels.get(signal_type, labels["signal"])
+
+
+_FIELD_EVIDENCE_LABELS: dict[str, dict[str, str]] = {
+    "en": {
+        "artist_match": "Artist match",
+        "tag_match": "Tag match",
+        "genre_match": "Genre match",
+        "source_signal": "Source signal",
+        "weak_signal": "Weak signal",
+        "review_signal": "Review signal",
+        "reissue_signal": "Reissue signal",
+        "archive_signal": "Archive signal",
+        "interview_signal": "Interview signal",
+        "scene_signal": "Scene signal",
+        "release_signal": "Release signal",
+        "video_signal": "Video signal",
+        "industry_signal": "Industry signal",
+        "culture_signal": "Culture signal",
+        "editor_note_signal": "Editor note",
+    },
+    "uk": {
+        "artist_match": "Збіг артиста",
+        "tag_match": "Збіг тегу",
+        "genre_match": "Збіг жанру",
+        "source_signal": "Сигнал джерела",
+        "weak_signal": "Слабкий сигнал",
+        "review_signal": "Сигнал рецензії",
+        "reissue_signal": "Сигнал перевидання",
+        "archive_signal": "Архівний сигнал",
+        "interview_signal": "Сигнал інтерв’ю",
+        "scene_signal": "Сигнал сцени",
+        "release_signal": "Сигнал релізу",
+        "video_signal": "Відеосигнал",
+        "industry_signal": "Індустріальний сигнал",
+        "culture_signal": "Культурний сигнал",
+        "editor_note_signal": "Нотатка редактора",
+    },
+}
+
+
+def build_field_evidence(item: dict) -> list[str]:
+    """Return deterministic evidence codes explaining why an item belongs in the issue."""
+    evidence: list[str] = []
+
+    if str(item.get("matched_artists") or "").strip():
+        evidence.append("artist_match")
+    if str(item.get("matched_tags") or "").strip():
+        evidence.append("tag_match")
+    if str(item.get("matched_genres") or "").strip():
+        evidence.append("genre_match")
+
+    signal_type = str(item.get("signal_type") or classify_signal_type(item))
+    if signal_type and signal_type != "signal":
+        evidence.append(f"{signal_type}_signal")
+
+    if str(item.get("source_name") or "").strip() or str(item.get("source_type") or "").strip():
+        evidence.append("source_signal")
+
+    if not evidence:
+        evidence.append("weak_signal")
+
+    return evidence
+
+
+def localize_field_evidence(evidence: list[str], lang: str) -> str:
+    """Return localized compact evidence label."""
+    labels = _FIELD_EVIDENCE_LABELS.get(lang, _FIELD_EVIDENCE_LABELS["en"])
+    return " · ".join(labels.get(code, code.replace("_", " ").title()) for code in evidence)
+
+
+def build_editorial_angle(item: dict, lang: str) -> str:
+    """Return a short editorial angle for the selected signal."""
+    signal_type = str(item.get("signal_type") or classify_signal_type(item))
+    evidence = list(item.get("field_evidence") or build_field_evidence({**item, "signal_type": signal_type}))
+
+    has_artist = "artist_match" in evidence
+    has_tag_or_genre = "tag_match" in evidence or "genre_match" in evidence
+
+    if lang == "uk":
+        if signal_type == "industry":
+            return "Індустріальний контекст навколо артиста з поля coma.fm." if has_artist else "Індустріальний сигнал із музичного моніторингу."
+        if signal_type == "culture":
+            return "Культурний контекст навколо артиста з поля coma.fm." if has_artist else "Культурний сигнал із музичного моніторингу."
+        if has_artist:
+            return f"{localize_signal_type(signal_type, lang)} з артистичного поля coma.fm."
+        if has_tag_or_genre:
+            return f"{localize_signal_type(signal_type, lang)} з жанрового поля coma.fm."
+        return "Сигнал із моніторингу джерел coma.fm."
+
+    if signal_type == "industry":
+        return "Industry / brand context around a coma.fm-field artist." if has_artist else "Industry signal from monitored music sources."
+    if signal_type == "culture":
+        return "Culture context around a coma.fm-field artist." if has_artist else "Culture signal from monitored music sources."
+    if has_artist:
+        return f"{localize_signal_type(signal_type, lang)} from the coma.fm artist field."
+    if has_tag_or_genre:
+        return f"{localize_signal_type(signal_type, lang)} from the coma.fm genre field."
+    return "Radar signal from monitored coma.fm sources."
 
 
 # ---------------------------------------------------------------------------
@@ -412,6 +524,7 @@ def enrich_items(items: list[dict], tag_map: dict) -> list[dict]:
             "matched_artists": str(item.get("matched_artists") or ""),
             "tags": tags,
             "signal_type": classify_signal_type(item),
+            "field_evidence": build_field_evidence(item),
         })
     return enriched
 
@@ -440,11 +553,18 @@ def render_html(
     indexed_items = []
     for i, item in enumerate(items):
         signal_type = str(item.get("signal_type") or classify_signal_type(item))
-        indexed_items.append({
+        evidence = list(item.get("field_evidence") or build_field_evidence({**item, "signal_type": signal_type}))
+        enriched_item = {
             **item,
-            "index": f"{i + 1:02d}",
             "signal_type": signal_type,
+            "field_evidence": evidence,
+        }
+        indexed_items.append({
+            **enriched_item,
+            "index": f"{i + 1:02d}",
             "signal_type_label": localize_signal_type(signal_type, lang),
+            "field_evidence_label": localize_field_evidence(evidence, lang),
+            "editorial_angle": build_editorial_angle(enriched_item, lang),
         })
 
     tx_summary = locale["tx_summary_tpl"].format(
@@ -582,6 +702,9 @@ def build_issue(
                     "source_name": it["source_name"],
                     "signal_type": it.get("signal_type", "signal"),
                     "signal_type_label": localize_signal_type(str(it.get("signal_type") or "signal"), lng),
+                    "field_evidence": it.get("field_evidence", []),
+                    "field_evidence_label": localize_field_evidence(list(it.get("field_evidence") or []), lng),
+                    "editorial_angle": build_editorial_angle(it, lng),
                     "published_at": it["published_at"],
                     "score": it["score"],
                     "matched_artists": it["matched_artists"],

@@ -800,3 +800,173 @@ def test_build_issue_json_contains_signal_type(tmp_path):
     assert data["items"][0]["signal_type"] == "review"
     assert data["items"][0]["signal_type_label"] == "Review signal"
 
+
+# ---------------------------------------------------------------------------
+# Stage 26C — Source Diversity / Editorial Selection
+# ---------------------------------------------------------------------------
+
+def _stage26c_candidate(source, score, title=None, matched_tags=""):
+    return {
+        "id": int(score),
+        "title": title or f"Candidate {score}",
+        "url": f"https://example.com/{source}/{score}",
+        "source_name": source,
+        "source_type": "magazine",
+        "published_at": "",
+        "score": score,
+        "matched_artists": "",
+        "matched_tags": matched_tags,
+        "matched_genres": "",
+    }
+
+
+def test_select_editorial_items_limits_dominant_source_when_alternatives_exist():
+    from scripts.build_issue import select_editorial_items
+
+    candidates = [
+        _stage26c_candidate("No Depression", 100 - i)
+        for i in range(10)
+    ] + [
+        _stage26c_candidate(f"Other Source {i}", 80 - i)
+        for i in range(10)
+    ]
+
+    selected = select_editorial_items(candidates, limit=10, max_per_source=3)
+    no_depression_count = sum(1 for item in selected if item["source_name"] == "No Depression")
+
+    assert len(selected) == 10
+    assert no_depression_count == 3
+    assert any(item["source_name"].startswith("Other Source") for item in selected)
+
+
+def test_select_editorial_items_fills_from_dominant_source_when_needed():
+    from scripts.build_issue import select_editorial_items
+
+    candidates = [
+        _stage26c_candidate("No Depression", 100 - i)
+        for i in range(10)
+    ]
+
+    selected = select_editorial_items(candidates, limit=10, max_per_source=3)
+
+    assert len(selected) == 10
+    assert all(item["source_name"] == "No Depression" for item in selected)
+
+
+def test_select_editorial_items_uses_strong_overflow_after_alternatives():
+    from scripts.build_issue import select_editorial_items
+
+    candidates = [
+        _stage26c_candidate("No Depression", 100 - i)
+        for i in range(10)
+    ] + [
+        _stage26c_candidate(f"Other Source {i}", 70 - i)
+        for i in range(4)
+    ]
+
+    selected = select_editorial_items(candidates, limit=10, max_per_source=3)
+    no_depression_count = sum(1 for item in selected if item["source_name"] == "No Depression")
+
+    assert len(selected) == 10
+    assert no_depression_count == 6
+
+
+def test_select_editorial_items_priority_override_bypasses_source_cap():
+    from scripts.build_issue import select_editorial_items
+
+    candidates = [
+        _stage26c_candidate("No Depression", 100, matched_tags="must_use"),
+        _stage26c_candidate("No Depression", 99, matched_tags="must_use"),
+        _stage26c_candidate("No Depression", 98, matched_tags="must_use"),
+        _stage26c_candidate("No Depression", 97, matched_tags="must_use"),
+        _stage26c_candidate("Other Source", 80),
+    ]
+
+    selected = select_editorial_items(candidates, limit=5, max_per_source=3)
+    no_depression_count = sum(1 for item in selected if item["source_name"] == "No Depression")
+
+    assert len(selected) == 5
+    assert no_depression_count == 4
+
+
+def test_build_issue_applies_source_diversity_to_json(tmp_path):
+    import sqlite3
+    from scripts.build_issue import build_issue
+
+    db_path = tmp_path / "radar.sqlite"
+    conn = sqlite3.connect(db_path)
+    conn.execute(
+        "CREATE TABLE items ("
+        "id INTEGER, title TEXT, url TEXT, source_name TEXT, source_type TEXT, "
+        "published_at TEXT, score INTEGER, matched_artists TEXT, matched_tags TEXT, matched_genres TEXT"
+        ")"
+    )
+
+    rows = []
+    item_id = 1
+    for i in range(10):
+        rows.append((
+            item_id,
+            f"No Depression item {i}",
+            f"https://nodepression.example/{i}",
+            "No Depression",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            100 - i,
+            "",
+            "",
+            "",
+        ))
+        item_id += 1
+
+    for i in range(10):
+        rows.append((
+            item_id,
+            f"Other item {i}",
+            f"https://other.example/{i}",
+            f"Other Source {i}",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            80 - i,
+            "",
+            "",
+            "",
+        ))
+        item_id += 1
+
+    conn.executemany("INSERT INTO items VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", rows)
+    conn.commit()
+    conn.close()
+
+    tags_path = tmp_path / "tags.yaml"
+    tags_path.write_text("tags: []\n", encoding="utf-8")
+
+    template_path = tmp_path / "issue.html.j2"
+    template_path.write_text(_TEMPLATE_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+
+    content_dir = tmp_path / "content"
+    dist_dir = tmp_path / "dist"
+
+    build_issue(
+        db_path=db_path,
+        issue_date="2026-01-15",
+        lang="en",
+        limit=10,
+        min_score=30,
+        draft=True,
+        template_path=template_path,
+        tags_path=tags_path,
+        content_dir=content_dir,
+        dist_dir=dist_dir,
+        base_path="",
+        with_cover=False,
+        max_per_source=3,
+    )
+
+    data = json.loads((content_dir / "2026-01-15.en.json").read_text(encoding="utf-8"))
+    sources = [item["source_name"] for item in data["items"]]
+
+    assert len(sources) == 10
+    assert sources.count("No Depression") == 3
+    assert any(source.startswith("Other Source") for source in sources)
+

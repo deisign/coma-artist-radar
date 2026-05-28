@@ -493,6 +493,56 @@ def select_editorial_items(
 
 
 # ---------------------------------------------------------------------------
+# Editorial sequencing
+# ---------------------------------------------------------------------------
+
+_SIGNAL_SEQUENCE_RANK: dict[str, int] = {
+    "editor_note": 5,
+    "review": 10,
+    "reissue": 20,
+    "archive": 25,
+    "interview": 30,
+    "release": 40,
+    "video": 45,
+    "scene": 50,
+    "signal": 60,
+    "culture": 70,
+    "industry": 80,
+}
+
+
+def _score_number(item: dict) -> float:
+    try:
+        return float(item.get("score") or 0)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def editorial_sequence_rank(item: dict) -> int:
+    """Return deterministic editorial rank for issue ordering."""
+    signal_type = str(item.get("signal_type") or classify_signal_type(item))
+    return _SIGNAL_SEQUENCE_RANK.get(signal_type, _SIGNAL_SEQUENCE_RANK["signal"])
+
+
+def sequence_editorial_items(items: list[dict]) -> list[dict]:
+    """Order already-selected issue items by editorial rhythm.
+
+    This does not select or filter items. It only sequences the final set:
+    stronger editorial signals first, culture/industry context lower.
+    """
+    indexed = list(enumerate(items))
+    ordered = sorted(
+        indexed,
+        key=lambda pair: (
+            editorial_sequence_rank(pair[1]),
+            -_score_number(pair[1]),
+            pair[0],
+        ),
+    )
+    return [item for _, item in ordered]
+
+
+# ---------------------------------------------------------------------------
 # Item enrichment
 # ---------------------------------------------------------------------------
 
@@ -638,7 +688,7 @@ def build_issue(
         limit=limit,
         max_per_source=max_per_source,
     )
-    items = enrich_items(raw_items, tag_map)
+    items = sequence_editorial_items(enrich_items(raw_items, tag_map))
 
     # Detect main tag once so both language covers share the same theme
     cover_main_tag: str | None = None

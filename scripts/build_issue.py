@@ -29,6 +29,7 @@ DEFAULT_CONTENT_DIR = _REPO_ROOT / "content" / "issues"
 DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
 DEFAULT_MIN_SCORE = 30
 DEFAULT_LIMIT = 50
+DEFAULT_MAX_PER_SOURCE = 3
 
 def normalize_base_path(path: str) -> str:
     """Normalize base_path: '' or '/' -> '', 'foo' -> '/foo', '/foo/' -> '/foo'."""
@@ -316,6 +317,70 @@ def load_items(
 
 
 # ---------------------------------------------------------------------------
+# Editorial selection
+# ---------------------------------------------------------------------------
+
+_PRIORITY_OVERRIDE_TAGS = {"must_use", "high_priority"}
+
+
+def _source_key(item: dict) -> str:
+    """Return stable source key for editorial source balancing."""
+    source = str(item.get("source_name") or "").strip().lower()
+    return source or "__unknown_source__"
+
+
+def _item_tag_ids(item: dict) -> set[str]:
+    tags = str(item.get("matched_tags") or "")
+    return {tag.strip() for tag in tags.split(",") if tag.strip()}
+
+
+def _has_priority_override(item: dict) -> bool:
+    """Return True when an item may bypass editorial source caps."""
+    return bool(_item_tag_ids(item) & _PRIORITY_OVERRIDE_TAGS)
+
+
+def select_editorial_items(
+    candidates: list[dict],
+    limit: int = DEFAULT_LIMIT,
+    max_per_source: int = DEFAULT_MAX_PER_SOURCE,
+) -> list[dict]:
+    """Select issue items with a soft source-diversity cap.
+
+    Candidates are expected to be pre-sorted by score descending.
+    The cap is soft: if there are not enough alternative sources, the
+    selection is filled with the strongest overflow items.
+    """
+    if limit <= 0:
+        return []
+
+    selected: list[dict] = []
+    overflow: list[dict] = []
+    source_counts: dict[str, int] = {}
+
+    for item in candidates:
+        if len(selected) >= limit:
+            break
+
+        key = _source_key(item)
+        current = source_counts.get(key, 0)
+        can_bypass = _has_priority_override(item)
+
+        if max_per_source <= 0 or current < max_per_source or can_bypass:
+            selected.append(item)
+            source_counts[key] = current + 1
+        else:
+            overflow.append(item)
+
+    if len(selected) < limit:
+        for item in overflow:
+            if len(selected) >= limit:
+                break
+            selected.append(item)
+
+    return selected
+
+
+# ---------------------------------------------------------------------------
 # Item enrichment
 # ---------------------------------------------------------------------------
 
@@ -438,6 +503,7 @@ def build_issue(
     base_path: str = "",
     with_cover: bool = True,
     themes_path: Path = DEFAULT_THEMES,
+    max_per_source: int = DEFAULT_MAX_PER_SOURCE,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -445,7 +511,13 @@ def build_issue(
 
     languages = [lang] if lang else ["en", "uk"]
     tag_map = load_tag_map(tags_path)
-    raw_items = load_items(db_path, min_score=min_score, limit=limit)
+    candidate_limit = max(limit * 5, limit)
+    raw_candidates = load_items(db_path, min_score=min_score, limit=candidate_limit)
+    raw_items = select_editorial_items(
+        raw_candidates,
+        limit=limit,
+        max_per_source=max_per_source,
+    )
     items = enrich_items(raw_items, tag_map)
 
     # Detect main tag once so both language covers share the same theme
@@ -555,6 +627,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT)
     parser.add_argument("--min-score", type=int, default=DEFAULT_MIN_SCORE)
+    parser.add_argument(
+        "--max-per-source",
+        type=int,
+        default=DEFAULT_MAX_PER_SOURCE,
+        dest="max_per_source",
+        help=f"Soft maximum items per source in one issue (default: {DEFAULT_MAX_PER_SOURCE})",
+    )
     parser.add_argument("--draft", action="store_true",
                         help="Mark output as draft")
     parser.add_argument("--template", type=Path, default=DEFAULT_TEMPLATE)
@@ -581,6 +660,7 @@ def main(argv: list[str] | None = None) -> int:
         lang=args.lang,
         limit=args.limit,
         min_score=args.min_score,
+        max_per_source=args.max_per_source,
         draft=args.draft,
         template_path=args.template,
         base_path=args.base_path,

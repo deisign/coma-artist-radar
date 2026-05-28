@@ -58,6 +58,89 @@ _LOCALE: dict[str, dict[str, str]] = {
 }
 
 
+_SIGNAL_TYPE_LABELS: dict[str, dict[str, str]] = {
+    "en": {
+        "review": "Review signal",
+        "reissue": "Reissue signal",
+        "archive": "Archive signal",
+        "interview": "Interview signal",
+        "scene": "Scene signal",
+        "release": "Release signal",
+        "video": "Video signal",
+        "editor_note": "Editor note",
+        "signal": "Radar signal",
+    },
+    "uk": {
+        "review": "Сигнал рецензії",
+        "reissue": "Сигнал перевидання",
+        "archive": "Архівний сигнал",
+        "interview": "Сигнал інтерв’ю",
+        "scene": "Сигнал сцени",
+        "release": "Сигнал релізу",
+        "video": "Відеосигнал",
+        "editor_note": "Нотатка редактора",
+        "signal": "Сигнал радара",
+    },
+}
+
+
+_SIGNAL_TYPE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
+    ("review", (
+        " album review ", " review ", " reviews ", " реценз",
+    )),
+    ("interview", (
+        " interview ", " q a ", " q and a ", " conversation ", " інтерв", " интервью ",
+    )),
+    ("reissue", (
+        " reissue ", " reissued ", " remaster ", " remastered ", " box set ",
+        " expanded edition ", " anniversary edition ", " перевид",
+    )),
+    ("archive", (
+        " archive ", " archival ", " vault ", " unearthed ", " previously unreleased ",
+        " live recording ", " lost tapes ", " demo recordings ", " архів",
+    )),
+    ("video", (
+        " video ", " videoclip ", " music video ", " session video ", " відео ", " видео ",
+    )),
+    ("scene", (
+        " scene ", " label profile ", " festival ", " profile ", " spotlight ", " reading room ",
+    )),
+    ("release", (
+        " new album ", " new single ", " single ", " ep ", " lp ", " album ", " release ", " debut ",
+    )),
+)
+
+
+def _signal_text(item: dict) -> str:
+    raw = " ".join(
+        str(item.get(key) or "")
+        for key in (
+            "title",
+            "source_name",
+            "source_type",
+            "matched_artists",
+            "matched_tags",
+            "matched_genres",
+        )
+    )
+    return " " + re.sub(r"[^a-zа-яіїєґ0-9]+", " ", raw.lower()).strip() + " "
+
+
+def classify_signal_type(item: dict) -> str:
+    """Return deterministic editorial signal type for an issue item."""
+    text = _signal_text(item)
+    for signal_type, needles in _SIGNAL_TYPE_RULES:
+        if any(needle in text for needle in needles):
+            return signal_type
+    return "signal"
+
+
+def localize_signal_type(signal_type: str, lang: str) -> str:
+    """Return localized public label for a signal type."""
+    labels = _SIGNAL_TYPE_LABELS.get(lang, _SIGNAL_TYPE_LABELS["en"])
+    return labels.get(signal_type, labels["signal"])
+
+
 # ---------------------------------------------------------------------------
 # Minimal Jinja2-subset renderer
 # ---------------------------------------------------------------------------
@@ -263,6 +346,7 @@ def enrich_items(items: list[dict], tag_map: dict) -> list[dict]:
             "published_at": _format_date(str(item.get("published_at") or "")),
             "matched_artists": str(item.get("matched_artists") or ""),
             "tags": tags,
+            "signal_type": classify_signal_type(item),
         })
     return enriched
 
@@ -288,10 +372,15 @@ def render_html(
 
     # Pre-compute item indices so the template can use {{ item.index }}
     # without needing the |format filter which _J2Renderer does not support.
-    indexed_items = [
-        {**item, "index": f"{i + 1:02d}"}
-        for i, item in enumerate(items)
-    ]
+    indexed_items = []
+    for i, item in enumerate(items):
+        signal_type = str(item.get("signal_type") or classify_signal_type(item))
+        indexed_items.append({
+            **item,
+            "index": f"{i + 1:02d}",
+            "signal_type": signal_type,
+            "signal_type_label": localize_signal_type(signal_type, lang),
+        })
 
     tx_summary = locale["tx_summary_tpl"].format(
         band=tm["band"],
@@ -419,6 +508,8 @@ def build_issue(
                     "title": it["title"],
                     "url": it["url"],
                     "source_name": it["source_name"],
+                    "signal_type": it.get("signal_type", "signal"),
+                    "signal_type_label": localize_signal_type(str(it.get("signal_type") or "signal"), lng),
                     "published_at": it["published_at"],
                     "score": it["score"],
                     "matched_artists": it["matched_artists"],

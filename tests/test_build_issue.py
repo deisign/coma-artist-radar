@@ -666,3 +666,137 @@ def test_render_html_lang_label_uk_uppercase():
         template_path=_TEMPLATE_PATH, base_path="",
     )
     assert ">UK<" in html
+
+
+# ---------------------------------------------------------------------------
+# Stage 26B — Signal Type System
+# ---------------------------------------------------------------------------
+
+def _stage26b_item(title, matched_tags="", matched_genres="", source_type=""):
+    return {
+        "id": 1,
+        "title": title,
+        "url": "https://example.com/item",
+        "source_name": "Example Source",
+        "source_type": source_type,
+        "score": 80,
+        "published_at": "",
+        "matched_artists": "",
+        "matched_tags": matched_tags,
+        "matched_genres": matched_genres,
+        "tags": [],
+    }
+
+
+def test_classify_signal_type_prefers_review_over_release():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item("ALBUM REVIEW: A New Album From the Night Road")
+    assert classify_signal_type(item) == "review"
+
+
+def test_classify_signal_type_detects_reissue():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item("Classic swamp blues box set gets expanded reissue")
+    assert classify_signal_type(item) == "reissue"
+
+
+def test_classify_signal_type_detects_archive_signal():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item("Previously unreleased live recording from the vault")
+    assert classify_signal_type(item) == "archive"
+
+
+def test_classify_signal_type_falls_back_to_signal():
+    from scripts.build_issue import classify_signal_type
+
+    item = _stage26b_item("Nocturnal dispatch from a distant radio field")
+    assert classify_signal_type(item) == "signal"
+
+
+def test_render_html_shows_signal_type_label():
+    html = render_html(
+        items=[_stage26b_item("ALBUM REVIEW: A New Album From the Night Road")],
+        issue_date="2026-01-15",
+        lang="en",
+        draft=False,
+        template_path=_TEMPLATE_PATH,
+        base_path="",
+    )
+    assert "signal-type" in html
+    assert "Review signal" in html
+
+
+def test_render_html_shows_uk_signal_type_label():
+    html = render_html(
+        items=[_stage26b_item("Interview with a late-night surf guitarist")],
+        issue_date="2026-01-15",
+        lang="uk",
+        draft=False,
+        template_path=_TEMPLATE_PATH,
+        base_path="",
+    )
+    assert "signal-type" in html
+    assert "Сигнал інтерв" in html
+
+
+def test_build_issue_json_contains_signal_type(tmp_path):
+    import sqlite3
+    from scripts.build_issue import build_issue
+
+    db_path = tmp_path / "radar.sqlite"
+    conn = sqlite3.connect(db_path)
+    conn.execute(
+        "CREATE TABLE items ("
+        "id INTEGER, title TEXT, url TEXT, source_name TEXT, source_type TEXT, "
+        "published_at TEXT, score INTEGER, matched_artists TEXT, matched_tags TEXT, matched_genres TEXT"
+        ")"
+    )
+    conn.execute(
+        "INSERT INTO items VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+        (
+            1,
+            "ALBUM REVIEW: A New Album From the Night Road",
+            "https://example.com/review",
+            "Example Source",
+            "magazine",
+            "2026-01-15T00:00:00Z",
+            90,
+            "",
+            "",
+            "",
+        ),
+    )
+    conn.commit()
+    conn.close()
+
+    tags_path = tmp_path / "tags.yaml"
+    tags_path.write_text("tags: []\n", encoding="utf-8")
+
+    template_path = tmp_path / "issue.html.j2"
+    template_path.write_text(_TEMPLATE_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+
+    content_dir = tmp_path / "content"
+    dist_dir = tmp_path / "dist"
+
+    build_issue(
+        db_path=db_path,
+        issue_date="2026-01-15",
+        lang="en",
+        limit=10,
+        min_score=30,
+        draft=True,
+        template_path=template_path,
+        tags_path=tags_path,
+        content_dir=content_dir,
+        dist_dir=dist_dir,
+        base_path="",
+        with_cover=False,
+    )
+
+    data = json.loads((content_dir / "2026-01-15.en.json").read_text(encoding="utf-8"))
+    assert data["items"][0]["signal_type"] == "review"
+    assert data["items"][0]["signal_type_label"] == "Review signal"
+

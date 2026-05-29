@@ -494,3 +494,39 @@ def test_min_score_filters_report(tmp_path):
     # Only high-signal item should pass min_score=30
     for row in rows:
         assert int(row["score"]) >= 30
+
+
+# ---------------------------------------------------------------------------
+# Stage 26G-A — Scoring Audit Summary
+# ---------------------------------------------------------------------------
+
+def test_summary_top_candidates_include_score_diagnostics(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, "Nick Cave new album release", url="https://ex.com/audit1")
+
+    artists_path = tmp_path / "artists.csv"
+    _write_artists_csv(
+        artists_path,
+        [{"artist_canonical": "Nick Cave", "monitor_priority": "high", "ignore": "false"}],
+    )
+
+    summary = score_items(
+        db_path=db_path,
+        artists_path=artists_path,
+        report_path=tmp_path / "r.csv",
+        tags_path=_TAGS_PATH,
+        rules_path=_RULES_PATH,
+        genre_radar_path=_GENRE_RADAR_PATH,
+        unknown_report_path=tmp_path / "unk.csv",
+    )
+
+    assert summary["top_candidates"]
+    top = summary["top_candidates"][0]
+
+    assert top["matched_artists"] == "Nick Cave"
+    assert "why_score" in top
+    assert "artist:Nick Cave" in top["why_score"]
+    assert "source_name" in top
+    assert "matched_tags" in top
+    assert "matched_genres" in top
+

@@ -316,6 +316,11 @@ def score_items(
                 "title": r["title"],
                 "score": r["score"],
                 "url": r["url"],
+                "source_name": r.get("source_name", ""),
+                "matched_artists": r.get("matched_artists", ""),
+                "matched_tags": r.get("matched_tags", ""),
+                "matched_genres": r.get("matched_genres", ""),
+                "why_score": r.get("why_score", ""),
             }
             for r in report_rows
             if r["score"] > 0

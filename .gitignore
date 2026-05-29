@@ -12,6 +12,9 @@ venv/
 reports/*.csv
 reports/telegram/*.txt
 
+# Source discovery cache
+cache/artist_sources/
+
 # Generated build output
 dist/
 

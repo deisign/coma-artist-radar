@@ -73,17 +73,59 @@ def load_artists(path: Path) -> list[dict]:
     return artists
 
 
+_AMBIGUOUS_ARTIST_NAMES = frozenset({
+    "them",
+})
+
+
+def _norm_artist_name(name: str) -> str:
+    """Normalize artist name for duplicate containment checks."""
+    return re.sub(r"[^a-z0-9]+", " ", name.lower()).strip()
+
+
+def _is_contained_artist(shorter: str, longer: str) -> bool:
+    """True if shorter artist name is contained inside a longer matched artist."""
+    s = _norm_artist_name(shorter)
+    l = _norm_artist_name(longer)
+    return bool(s and l and s != l and re.search(r"\b" + re.escape(s) + r"\b", l))
+
+
 def _match_artists(text: str, artists: list[dict]) -> list[dict]:
-    """Return artists found in text using word-boundary regex + substring for long names."""
+    """Return artists found in text with safer boundaries and duplicate suppression."""
     text_lower = text.lower()
-    matched: list[dict] = []
+    candidates: list[dict] = []
+
     for artist in artists:
-        name_lower = artist["artist_canonical"].lower()
+        canonical = str(artist.get("artist_canonical", "") or "").strip()
+        if not canonical:
+            continue
+
+        name_lower = canonical.lower()
+        if name_lower in _AMBIGUOUS_ARTIST_NAMES:
+            continue
+
         found = bool(re.search(r"\b" + re.escape(name_lower) + r"\b", text_lower))
-        if not found and len(name_lower) >= 5:
+
+        # Substring fallback is only safe for multi-word names. It handles punctuation
+        # and possessive edge cases without matching America inside American Songwriter.
+        if not found and len(name_lower) >= 5 and " " in name_lower:
             found = name_lower in text_lower
+
         if found:
-            matched.append(artist)
+            candidates.append(artist)
+
+    candidates.sort(
+        key=lambda a: len(_norm_artist_name(str(a.get("artist_canonical", "")))),
+        reverse=True,
+    )
+
+    matched: list[dict] = []
+    for artist in candidates:
+        name = str(artist.get("artist_canonical", "") or "")
+        if any(_is_contained_artist(name, str(existing.get("artist_canonical", "") or "")) for existing in matched):
+            continue
+        matched.append(artist)
+
     return matched
 
 

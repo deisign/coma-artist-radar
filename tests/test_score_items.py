@@ -530,3 +530,59 @@ def test_summary_top_candidates_include_score_diagnostics(tmp_path):
     assert "matched_tags" in top
     assert "matched_genres" in top
 
+
+# ---------------------------------------------------------------------------
+# Stage 26G-B — Safer Artist Matching
+# ---------------------------------------------------------------------------
+
+def test_ambiguous_them_does_not_match_pronoun():
+    artists = [{"artist_canonical": "Them", "monitor_priority": "low"}]
+
+    matched = _match_artists(
+        "George Strait, Randy Travis Get New Spaces Dedicated to Them",
+        artists,
+    )
+
+    assert matched == []
+
+
+def test_america_does_not_match_inside_american_songwriter():
+    artists = [{"artist_canonical": "America", "monitor_priority": "low"}]
+
+    matched = _match_artists(
+        "This George Thorogood Hit Was a Direct Response to The Rolling Stones American Songwriter",
+        artists,
+    )
+
+    assert matched == []
+
+
+def test_america_still_matches_exact_artist_name():
+    artists = [{"artist_canonical": "America", "monitor_priority": "low"}]
+
+    matched = _match_artists("America announce a reissue", artists)
+
+    assert [m["artist_canonical"] for m in matched] == ["America"]
+
+
+def test_contained_artist_duplicate_suppressed():
+    artists = [
+        {"artist_canonical": "The Rolling Stones", "monitor_priority": "high"},
+        {"artist_canonical": "Rolling Stones", "monitor_priority": "low"},
+    ]
+
+    matched = _match_artists(
+        "This George Thorogood Hit Was a Direct Response to The Rolling Stones’ Start Me Up",
+        artists,
+    )
+
+    assert [m["artist_canonical"] for m in matched] == ["The Rolling Stones"]
+
+
+def test_short_artist_word_boundary_still_matches():
+    artists = [{"artist_canonical": "U2", "monitor_priority": "medium"}]
+
+    matched = _match_artists("U2 announce a new archival release", artists)
+
+    assert [m["artist_canonical"] for m in matched] == ["U2"]
+

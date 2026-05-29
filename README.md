@@ -2,7 +2,17 @@
 
 Working repository for **coma.fm Radar**: a bilingual EN/UK music radar and editorial digest around the coma.fm music field.
 
-Current implemented stage: **Stage 25 — Signal Atmosphere / Ghost Transmission Layer**.
+Current implemented stage: **Stage 26 — Signal Editorial System**.
+
+---
+
+## Stage 26 — Signal Editorial System
+
+Stage 26 turns coma.fm Radar from a styled RSS digest into a deterministic editorial transmission system: source diversity, signal types, selection evidence, editorial angles, editorial sequencing, deterministic cover modes, scoring audit diagnostics, and safer artist matching.
+
+Editorial flow: fetch → score → audit → select → classify → evidence → angle → sequence → render → cover.
+
+Validation after Stage26G: `630 passed`.
 
 ---
 

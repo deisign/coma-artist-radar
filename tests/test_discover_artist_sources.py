@@ -179,17 +179,21 @@ def test_suggested_action_skip_overrides_score():
 
 
 def test_suggested_action_score_thresholds():
-    # With 2+ unique artists, score alone drives the action
-    assert compute_suggested_action("unknown", 25, unique_artists=2) == "IMPORT_CANDIDATE"
-    assert compute_suggested_action("unknown", 20, unique_artists=2) == "IMPORT_CANDIDATE"
-    assert compute_suggested_action("unknown", 10, unique_artists=2) == "REVIEW"
-    assert compute_suggested_action("unknown", 5, unique_artists=2) == "REVIEW"
-    assert compute_suggested_action("unknown", 4, unique_artists=2) == "SKIP_GENERIC"
-    assert compute_suggested_action("unknown", 0, unique_artists=2) == "SKIP_GENERIC"
-    # With only 1 unique artist, IMPORT_CANDIDATE is blocked regardless of score
-    assert compute_suggested_action("unknown", 25, unique_artists=1) == "REVIEW"
-    assert compute_suggested_action("unknown", 100, unique_artists=1) == "REVIEW"
-    assert compute_suggested_action("unknown", 25, unique_artists=0) == "REVIEW"
+    # Editorial types (magazine, blog, label, radio, archive) reach IMPORT_CANDIDATE
+    # when score >= 20 AND unique_artists >= 2.
+    assert compute_suggested_action("magazine", 25, unique_artists=2) == "IMPORT_CANDIDATE"
+    assert compute_suggested_action("magazine", 20, unique_artists=2) == "IMPORT_CANDIDATE"
+    assert compute_suggested_action("magazine", 10, unique_artists=2) == "REVIEW"
+    assert compute_suggested_action("magazine", 5, unique_artists=2) == "REVIEW"
+    assert compute_suggested_action("magazine", 4, unique_artists=2) == "SKIP_GENERIC"
+    assert compute_suggested_action("magazine", 0, unique_artists=2) == "SKIP_GENERIC"
+    # unknown type is capped at REVIEW regardless of score and artist count
+    assert compute_suggested_action("unknown", 25, unique_artists=2) == "REVIEW"
+    assert compute_suggested_action("unknown", 100, unique_artists=100) == "REVIEW"
+    # Editorial types with unique_artists < 2 are also capped at REVIEW
+    assert compute_suggested_action("magazine", 25, unique_artists=1) == "REVIEW"
+    assert compute_suggested_action("magazine", 100, unique_artists=1) == "REVIEW"
+    assert compute_suggested_action("magazine", 25, unique_artists=0) == "REVIEW"
 
 
 def test_single_artist_cannot_produce_import_candidate():
@@ -269,6 +273,91 @@ def test_fandom_is_wiki():
     src_type, action = classify_domain("fandom.com")
     assert src_type == "wiki"
     assert action == "SKIP_WIKI"
+
+
+# ── bad-IMPORT_CANDIDATE regression tests (batch review 2026-06-01) ───────────
+
+def test_unknown_type_never_import_candidate():
+    """unknown source type must never reach IMPORT_CANDIDATE regardless of score."""
+    for score in (20, 50, 100, 999):
+        for artists in (1, 2, 10, 100):
+            action = compute_suggested_action("unknown", score, unique_artists=artists)
+            assert action != "IMPORT_CANDIDATE", (
+                f"unknown score={score} artists={artists} → {action!r} — must not be IMPORT_CANDIDATE"
+            )
+
+
+def test_music_amazon_subdomains_are_shop():
+    """music.amazon.com and music.amazon.co.uk are Amazon Music — must be SKIP_SHOP."""
+    for domain in ("music.amazon.com", "music.amazon.co.uk"):
+        src_type, action = classify_domain(domain)
+        assert src_type == "shop", f"{domain}: expected shop, got {src_type!r}"
+        assert action == "SKIP_SHOP", f"{domain}: expected SKIP_SHOP, got {action!r}"
+
+
+def test_cis_social_platforms_not_import_candidate():
+    """ok.ru and my.mail.ru are CIS social/platform domains — not editorial."""
+    for domain in ("ok.ru", "my.mail.ru", "mail.ru"):
+        src_type, action = classify_domain(domain)
+        assert action != "IMPORT_CANDIDATE", f"{domain}: must not be IMPORT_CANDIDATE, got {action!r}"
+        assert src_type == "social", f"{domain}: expected social, got {src_type!r}"
+
+
+def test_pinterest_not_import_candidate():
+    src_type, action = classify_domain("pinterest.com")
+    assert src_type == "social"
+    assert action == "SKIP_SOCIAL"
+
+
+def test_quora_not_import_candidate():
+    src_type, action = classify_domain("quora.com")
+    assert src_type == "social"
+    assert action == "SKIP_SOCIAL"
+
+
+def test_imdb_not_import_candidate():
+    """imdb.com is an entertainment database — not an editorial music source."""
+    src_type, action = classify_domain("imdb.com")
+    assert src_type == "database"
+    assert action != "IMPORT_CANDIDATE"
+
+
+def test_tvtropes_not_import_candidate():
+    """tvtropes.org is a fan wiki — must be SKIP_WIKI."""
+    src_type, action = classify_domain("tvtropes.org")
+    assert src_type == "wiki"
+    assert action == "SKIP_WIKI"
+
+
+def test_user_rated_databases_not_import_candidate():
+    """albumoftheyear.org, besteveralbums.com, viberate.com are user-rated databases."""
+    for domain in ("albumoftheyear.org", "besteveralbums.com", "viberate.com", "grokipedia.com"):
+        src_type, action = classify_domain(domain)
+        assert src_type == "database", f"{domain}: expected database, got {src_type!r}"
+        assert action != "IMPORT_CANDIDATE", f"{domain}: must not be IMPORT_CANDIDATE"
+
+
+def test_piracy_aggregators_not_import_candidate():
+    """Russian/CIS music aggregators and unlicensed streaming sites must be SKIP_GENERIC."""
+    for domain in ("musify.club", "hitmos.me", "lightaudio.ru", "sonichits.com"):
+        src_type, action = classify_domain(domain)
+        assert src_type == "streaming", f"{domain}: expected streaming, got {src_type!r}"
+        assert action == "SKIP_GENERIC", f"{domain}: expected SKIP_GENERIC, got {action!r}"
+
+
+def test_pitchfork_still_import_candidate_with_enough_artists():
+    """Classifier hardening must not break legitimate editorial domains."""
+    src_type, _ = classify_domain("pitchfork.com")
+    assert src_type == "magazine"
+    action = compute_suggested_action("magazine", 261, unique_artists=23)
+    assert action == "IMPORT_CANDIDATE"
+
+
+def test_juno_is_shop():
+    """juno.co.uk is a record retail shop — must be SKIP_SHOP."""
+    src_type, action = classify_domain("juno.co.uk")
+    assert src_type == "shop"
+    assert action == "SKIP_SHOP"
 
 
 # ── query template regression tests ───────────────────────────────────────────

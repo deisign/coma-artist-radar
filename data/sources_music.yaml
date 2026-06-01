@@ -505,3 +505,485 @@ sources:
     active: true
     paywall: false
     notes: Dark jazz and experimental podcast. Good signal for coma.fm noir aesthetic.
+
+
+  # ===== STAGE 27G — LONGTAIL CORE SOURCES =====
+
+  - id: mystificationzine
+    name: Mystification Zine
+    site_url: https://mystificationzine.com
+    feed_url: https://mystificationzine.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: manual override: zine/source is niche scene-specific. Sample artists: The Mystification.'
+
+  - id: the_punk_site
+    name: The Punk Site
+    site_url: https://thepunksite.com
+    feed_url: https://www.thepunksite.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Raygun Cowboys; Gutter Demons.'
+
+  - id: resurrectedvinyl_blogspot
+    name: Resurrected Vinyl
+    site_url: https://resurrectedvinyl.blogspot.com
+    feed_url: https://resurrectedvinyl.blogspot.com/feeds/posts/default
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - vinyl
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Karl-Heinz Kastel.'
+
+  - id: colinspunkrockworld_blogspot
+    name: Colin’s Punk Rock World
+    site_url: https://colinspunkrockworld.blogspot.com
+    feed_url: https://colinspunkrockworld.blogspot.com/feeds/posts/default
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Amphibian Man.'
+
+  - id: occultblackmetalzine_blogspot
+    name: Occult Black Metal Zine
+    site_url: https://occultblackmetalzine.blogspot.com
+    feed_url: https://occultblackmetalzine.blogspot.com/feeds/posts/default
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: The Mystification.'
+
+  - id: outletjazz_blogspot
+    name: Outlet Jazz
+    site_url: https://outletjazz.blogspot.com
+    feed_url: https://outletjazz.blogspot.com/feeds/posts/default
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - jazz
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Jack Costanzo.'
+
+  - id: rockingthegarage_blogspot
+    name: Rocking The Garage
+    site_url: https://rockingthegarage.blogspot.com
+    feed_url: http://feeds.feedburner.com/RockingTheGarage
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - garage_rock
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: The Vrooming Crew avec Dolores.'
+
+  - id: santasangremagazine_wordpress
+    name: Santa Sangre Magazine
+    site_url: https://santasangremagazine.wordpress.com
+    feed_url: https://santasangremagazine.wordpress.com/feed/
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Bohren & Der Club Of Gore.'
+
+  - id: ukpsychobillygigguide_wordpress
+    name: UK Psychobilly Gig Guide
+    site_url: https://ukpsychobillygigguide.wordpress.com
+    feed_url: https://ukpsychobillygigguide.wordpress.com/feed/
+    source_type: blog
+    language: en
+    region: uk
+    genre_tags:
+    - psychobilly
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Thee Scarecrows AKA.'
+
+  - id: worldjazznews_blogspot
+    name: World Jazz News
+    site_url: https://worldjazznews.blogspot.com
+    feed_url: https://worldjazznews.blogspot.com/feeds/posts/default
+    source_type: blog
+    language: en
+    region: international
+    genre_tags:
+    - jazz
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: Konstantin Kolesnichenko Quartet.'
+
+  - id: londoncelticpunks_wordpress
+    name: London Celtic Punks
+    site_url: https://londoncelticpunks.wordpress.com
+    feed_url: https://londoncelticpunks.wordpress.com/feed/
+    source_type: blog
+    language: en
+    region: uk
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: niche blog/fanzine bucket. Sample artists: The Pogues; Philip Doyle.'
+
+  - id: punkoutlawblog
+    name: Punk Outlaw
+    site_url: https://punkoutlawblog.com
+    feed_url: https://punkoutlawblog.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Wise Guyz.'
+
+  - id: surfmusicandart
+    name: Surf Music and Art
+    site_url: https://surfmusicandart.com
+    feed_url: https://www.surfmusicandart.com/feeds/posts/default
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - surf
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Desolate Coast; Langhorns.'
+
+  - id: the_rockabilly_chronicle
+    name: The Rockabilly Chronicle
+    site_url: https://the-rockabilly-chronicle.com
+    feed_url: http://www.the-rockabilly-chronicle.com/feed/
+    source_type: magazine
+    language: en
+    region: uk
+    genre_tags:
+    - rockabilly
+    priority: high
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Angela Tini; The Long Tall Texans.'
+
+  - id: americanadaily
+    name: Americana Daily
+    site_url: https://americanadaily.com
+    feed_url: https://www.americanadaily.com/feeds/posts/default
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - americana
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Beth Lee.'
+
+  - id: americanbluesscene
+    name: American Blues Scene
+    site_url: https://americanbluesscene.com
+    feed_url: https://www.americanbluesscene.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - blues
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: David Bowie.'
+
+  - id: blues_gr
+    name: Blues.Gr
+    site_url: https://blues.gr
+    feed_url: https://blues.gr/profiles/blog/feed?xn_auth=no
+    source_type: magazine
+    language: en
+    region: gr
+    genre_tags:
+    - blues
+    priority: high
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Konstantin Kolesnichenko Quartet.'
+
+  - id: bluesblastmagazine
+    name: Blues Blast Magazine
+    site_url: https://bluesblastmagazine.com
+    feed_url: https://www.bluesblastmagazine.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - blues
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Blues Nephews.'
+
+  - id: bluesroadhouse
+    name: Blues Roadhouse
+    site_url: https://bluesroadhouse.com
+    feed_url: https://bluesroadhouse.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - blues
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: John Lee Hooker.'
+
+  - id: bluestownmusic
+    name: Bluestown Music
+    site_url: https://bluestownmusic.nl
+    feed_url: https://bluestownmusic.nl/feed/
+    source_type: magazine
+    language: en
+    region: nl
+    genre_tags:
+    - blues
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Hillbilly Moon Explosion; The White Buffalo; Queen Esther; Suzanne Jarvie.'
+
+  - id: countrymusicmagazine
+    name: Country Music Magazine
+    site_url: https://countrymusicmagazine.com
+    feed_url: https://countrymusicmagazine.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - country
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Morgan Myles.'
+
+  - id: folkrootsradio
+    name: Folk Roots Radio
+    site_url: https://folkrootsradio.com
+    feed_url: https://folkrootsradio.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - roots_music
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Suzanne Jarvie.'
+
+  - id: garagehangover
+    name: Garage Hangover
+    site_url: https://garagehangover.com
+    feed_url: https://garagehangover.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - garage_rock
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Twilighters.'
+
+  - id: jazzpianocafe
+    name: Jazz Piano Cafe
+    site_url: https://jazzpianocafe.com
+    feed_url: https://www.jazzpianocafe.com/piano/feed
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - jazz
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Jack Costanzo.'
+
+  - id: punk77
+    name: Punk 77
+    site_url: https://punk77.co.uk
+    feed_url: https://punk77.co.uk/feed/
+    source_type: magazine
+    language: en
+    region: uk
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Pogues.'
+
+  - id: punknews
+    name: Punknews.org
+    site_url: https://punknews.org
+    feed_url: https://static.punknews.org/feeds/punknews.rdf
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Raygun Cowboys.'
+
+  - id: punktastic
+    name: Punktastic
+    site_url: https://punktastic.com
+    feed_url: https://www.punktastic.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Twin Temple.'
+
+  - id: punktuationmag
+    name: Punktuation!
+    site_url: https://punktuationmag.com
+    feed_url: https://www.punktuationmag.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Stranglers.'
+
+  - id: rockandbluesmuse
+    name: Rock and Blues Muse
+    site_url: https://rockandbluesmuse.com
+    feed_url: https://rockandbluesmuse.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - blues
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Ray Charles; Steep Canyon Rangers; Chrissie Hynde; Ryan Bingham & The Texas Gentlemen.'
+
+  - id: surf_guitar_101
+    name: Surf Guitar 101
+    site_url: https://surfguitar101.com
+    feed_url: https://surfguitar101.com/feeds/news/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - surf
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Martin Cilia; The Desolate Coast; Waikiki Makaki; The Tikiyaki Orchestra.'
+
+  - id: thebluesmagazine
+    name: The Blues Magazine
+    site_url: https://thebluesmagazine.com
+    feed_url: https://www.thebluesmagazine.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - blues
+    - fanzine
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Blues Nephews.'
+
+  - id: jazztimes
+    name: JazzTimes
+    site_url: https://jazztimes.com
+    feed_url: https://www.jazztimes.com/feed/?v=a672068055fa
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - jazz
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Annie Lennox; The Puppini Sisters.'
+
+  - id: postpunkmonk
+    name: Post-Punk Monk
+    site_url: https://postpunkmonk.com
+    feed_url: https://postpunkmonk.com/feed/
+    source_type: magazine
+    language: en
+    region: international
+    genre_tags:
+    - punk
+    priority: medium
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: Marianne Faithfull; The Cramps.'
+
+  - id: ox_fanzine
+    name: Ox Fanzine
+    site_url: https://ox-fanzine.de
+    feed_url: https://www.ox-fanzine.de/rssNewsFeed.xml
+    source_type: magazine
+    language: en
+    region: de
+    genre_tags:
+    - fanzine
+    priority: high
+    active: true
+    paywall: false
+    notes: 'Stage27G longtail import preview. Decision reason: domain has explicit genre/scene signal. Sample artists: The Meteors; The Hillbilly Moon Explosion; Emanuela Hutter.'

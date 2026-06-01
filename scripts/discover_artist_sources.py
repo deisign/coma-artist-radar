@@ -71,6 +71,10 @@ _SOCIAL_DOMAINS = frozenset({
     "facebook.com", "instagram.com", "tiktok.com", "twitter.com", "x.com",
     "reddit.com", "threads.net", "snapchat.com", "tumblr.com", "myspace.com",
     "vk.com", "linkedin.com",
+    # CIS social networks / platforms
+    "ok.ru", "mail.ru", "my.mail.ru",
+    # Social aggregators / Q&A — not editorial sources
+    "pinterest.com", "quora.com",
 })
 
 _LYRICS_DOMAINS = frozenset({
@@ -86,14 +90,14 @@ _VIDEO_DOMAINS = frozenset({
 _SHOP_DOMAINS = frozenset({
     "etsy.com", "walmart.com", "target.com", "bestbuy.com",
     "merchbar.com", "redbubble.com",
+    "juno.co.uk",  # record retail
 })
-# Amazon and eBay have many regional ccTLDs (amazon.ca, ebay.de, etc.).
-# Matched by pattern in classify_domain instead of an exhaustive set.
-_SHOP_PATTERNS = (r"^amazon\.[a-z.]{2,6}$", r"^ebay\.[a-z.]{2,6}$")
+# Amazon and eBay are matched by substring in classify_domain to catch regional
+# ccTLDs (amazon.ca, ebay.de) and subdomains (music.amazon.com, music.amazon.co.uk).
 
 _WIKI_DOMAINS = frozenset({
-    "wikipedia.org", "en.wikipedia.org", "wikidata.org", "wikimedia.org",
-    "wikia.com", "fandom.com",
+    "wikipedia.org", "wikidata.org", "wikimedia.org",
+    "wikia.com", "fandom.com", "tvtropes.org",
 })
 
 _TORRENT_PATTERNS = (
@@ -104,15 +108,24 @@ _TORRENT_PATTERNS = (
 _DATABASE_DOMAINS = frozenset({
     "discogs.com", "musicbrainz.org", "rateyourmusic.com", "allmusic.com",
     "last.fm", "setlist.fm", "secondhandsongs.com",
+    # Entertainment/media databases — reference only, not editorial music sources
+    "imdb.com",
+    # User-rated/aggregator music databases
+    "albumoftheyear.org", "besteveralbums.com", "viberate.com",
+    "grokipedia.com",
 })
 
-# Streaming/discovery platforms: useful for finding artist names but not
-# editorial sources. Always SKIP_GENERIC.
+# Streaming/discovery platforms and music aggregator/piracy sites:
+# present in search results but not editorial sources. Always SKIP_GENERIC.
 _STREAMING_DOMAINS = frozenset({
     "music.apple.com", "itunes.apple.com", "shazam.com",
     "reverbnation.com", "soundcloud.com", "tidal.com",
     "deezer.com", "pandora.com", "napster.com", "music.youtube.com",
     "bandcamp.com",
+    # Russian/CIS music aggregators and unlicensed streaming sites
+    "musify.club", "hitmos.me", "lightaudio.ru", "sonichits.com",
+    # Search engine with music pages — not editorial
+    "yandex.ru", "yandex.com",
 })
 # Spotify has subdomain variants (open.spotify.com, etc.) — matched by substring.
 _STREAMING_PATTERNS = ("spotify.com",)
@@ -164,9 +177,10 @@ _SKIP_ACTIONS: dict[str, str] = {
     "streaming": "SKIP_GENERIC",
 }
 
-# Source types whose suggested action is capped at REVIEW (never IMPORT_CANDIDATE).
-# These are reference/discovery domains — useful but not editorial sources.
-_CAP_REVIEW_TYPES = frozenset({"database"})
+# Only these editorial source types are eligible for IMPORT_CANDIDATE.
+# Every other type (database, unknown, streaming, social, …) is capped at REVIEW or lower.
+# This prevents unknown high-scoring domains from becoming import candidates.
+_IMPORT_ELIGIBLE_TYPES = frozenset({"magazine", "blog", "label", "radio", "archive"})
 
 
 # ── utilities ──────────────────────────────────────────────────────────────────
@@ -219,11 +233,12 @@ def classify_domain(domain: str) -> tuple[str, str]:
     if d in _STREAMING_DOMAINS or any(p in d for p in _STREAMING_PATTERNS):
         return "streaming", "SKIP_GENERIC"
 
-    # Shop: explicit set + pattern for regional Amazon/eBay ccTLDs (amazon.ca, ebay.de …)
-    if d in _SHOP_DOMAINS or any(re.match(pat, d) for pat in _SHOP_PATTERNS):
+    # Shop: explicit set + substring checks for Amazon/eBay in all regional and
+    # subdomain forms (amazon.ca, music.amazon.com, ebay.de, etc.)
+    if d in _SHOP_DOMAINS or re.search(r'(?:^|\.)(amazon|ebay)\.', d):
         return "shop", "SKIP_SHOP"
 
-    if any(w in d for w in ("wikipedia.org", "wikidata.org", "wikimedia.org", "wikia.com", "fandom.com")):
+    if any(w in d for w in _WIKI_DOMAINS):
         return "wiki", "SKIP_WIKI"
 
     if any(p in d for p in _TORRENT_PATTERNS):
@@ -277,13 +292,15 @@ def compute_suggested_action(
 
     Rules (in priority order):
     1. Skip-category types always return their SKIP_* action regardless of score.
-    2. Database/reference types are capped at REVIEW — never IMPORT_CANDIDATE.
-    3. IMPORT_CANDIDATE requires unique_artists >= 2 to prevent name-collision
-       false positives (e.g. "The Rolling Stones" boosting rollingstone.com).
+    2. Only editorial types in _IMPORT_ELIGIBLE_TYPES (magazine, blog, label,
+       radio, archive) can reach IMPORT_CANDIDATE. Everything else — database,
+       unknown, streaming, etc. — is capped at REVIEW or lower.
+    3. IMPORT_CANDIDATE also requires unique_artists >= 2 to prevent name-collision
+       false positives (e.g. "The Rolling Stones" alone boosting rollingstone.com).
     """
     if source_type in _SKIP_ACTIONS:
         return _SKIP_ACTIONS[source_type]
-    if source_type in _CAP_REVIEW_TYPES:
+    if source_type not in _IMPORT_ELIGIBLE_TYPES:
         return "REVIEW" if score >= 5 else "SKIP_GENERIC"
     if score >= 20 and unique_artists >= 2:
         return "IMPORT_CANDIDATE"

@@ -20,3 +20,6 @@ dist/
 
 # Generated issue drafts
 content/issues/*.json
+
+# Local source-discovery snapshots
+reports/snapshots/

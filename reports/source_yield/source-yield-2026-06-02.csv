@@ -1,0 +1,63 @@
+source_id,source_name,active,has_feed,priority,source_type,genre_tags,items_total,scored_ge_min,top_candidates,selected,skipped_by_source_cap,skipped_by_artist_cap,max_score,avg_score,newest_first_seen_at,oldest_first_seen_at,newest_published_at,archive_noise_flag,saturation_flag,low_yield_flag,notes
+no_depression,No Depression,true,true,high,magazine,"alt_country, americana, outlaw_country, folk",27,27,5,2,12,0,100,72.22,2026-06-02T04:46:27Z,2026-05-26T09:47:22Z,"Mon, 01 Jun 2026 18:37:54 GMT",false,true,false,source cap saturation; top candidate saturation; selected 2; 12 skipped by source cap
+ukpsychobillygigguide_wordpress,UK Psychobilly Gig Guide,true,true,medium,blog,psychobilly,10,10,5,2,8,0,100,94.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Fri, 10 Feb 2023 07:02:00 +0000",false,true,false,source cap saturation; top candidate saturation; selected 2; 8 skipped by source cap
+blues_gr,Blues.Gr,true,true,high,magazine,blues,31,9,0,2,0,0,75,28.23,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,2026-06-01T19:30:00.000Z,true,false,false,selected 2; archive/noise candidate; avg score below threshold
+surfmusicandart,Surf Music and Art,true,true,medium,magazine,surf,25,25,0,1,0,0,80,48.8,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2026-05-31T09:44:55.161-04:00,false,false,false,selected 1
+the_rockabilly_chronicle,The Rockabilly Chronicle,true,true,high,magazine,rockabilly,6,6,0,1,0,0,70,57.5,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Sun, 10 May 2026 09:37:08 +0000",false,false,false,selected 1
+surf_guitar_101,Surf Guitar 101,true,true,medium,magazine,surf,5,5,0,1,0,0,75,63.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Fri, 22 May 2026 23:40:07 -0500",false,false,false,selected 1
+the_punk_site,The Punk Site,true,true,medium,magazine,punk,14,1,0,1,0,0,100,22.86,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 23:00:00 +0000",false,false,false,selected 1
+saving_country_music,Saving Country Music,true,true,medium,blog,"alt_country, outlaw_country, honky_tonk, americana",52,52,0,0,0,0,65,42.79,2026-06-02T04:46:27Z,2026-05-26T09:47:22Z,"Tue, 02 Jun 2026 01:23:17 +0000",false,false,false,
+american_songwriter,American Songwriter,true,true,low,magazine,"country, americana, alt_country, singer_songwriter",219,33,0,0,0,0,60,8.65,2026-06-02T10:38:45Z,2026-05-26T09:47:22Z,"Tue, 02 Jun 2026 10:30:00 +0000",true,false,false,archive/noise candidate; avg score below threshold
+countrymusicmagazine,Country Music Magazine,true,true,medium,magazine,"country, fanzine",10,10,0,0,0,0,35,35.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Thu, 26 Feb 2026 21:54:13 +0000",false,false,false,
+outletjazz_blogspot,Outlet Jazz,true,true,medium,blog,jazz,25,6,0,0,0,0,40,19.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2026-05-29T04:18:20.367-07:00,true,false,false,archive/noise candidate; avg score below threshold
+thebluesmagazine,The Blues Magazine,true,true,medium,magazine,"blues, fanzine",12,5,0,0,0,0,60,25.0,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 21:37:06 +0000",false,false,false,
+americanbluesscene,American Blues Scene,true,true,medium,magazine,blues,10,3,0,0,0,0,55,23.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Sat, 30 May 2026 19:46:19 +0000",false,false,false,
+bandcamp_daily,Bandcamp Daily,true,true,high,bandcamp_editorial,"surf, blues, country, rockabilly, psychobilly, jazz",41,2,0,0,0,0,45,20.98,2026-06-02T04:46:27Z,2026-05-29T12:33:00Z,"Mon, 01 Jun 2026 17:42:05 -0000",true,false,false,archive/noise candidate; avg score below threshold
+postpunkmonk,Post-Punk Monk,true,true,medium,magazine,punk,15,2,0,0,0,0,55,18.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Fri, 29 May 2026 17:53:16 +0000",false,false,false,
+jazztimes,JazzTimes,true,true,medium,magazine,jazz,12,2,0,0,0,0,60,19.17,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 21:36:54 +0000",false,false,false,
+americanadaily,Americana Daily,true,true,medium,magazine,americana,26,1,0,0,0,0,40,11.73,2026-06-02T10:38:45Z,2026-06-01T14:28:23Z,2026-06-02T00:00:00.000-05:00,true,false,false,archive/noise candidate; avg score below threshold
+worldjazznews_blogspot,World Jazz News,true,true,medium,blog,jazz,25,1,0,0,0,0,35,14.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2026-05-02T04:00:00.000-04:00,true,false,false,archive/noise candidate; avg score below threshold
+rockandbluesmuse,Rock and Blues Muse,true,true,medium,magazine,blues,11,1,0,0,0,0,40,15.45,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 20:46:58 +0000",false,false,false,
+punk77,Punk 77,true,true,medium,magazine,punk,10,1,0,0,0,0,55,20.5,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Tue, 19 May 2026 11:14:29 +0000",false,false,false,
+occultblackmetalzine_blogspot,Occult Black Metal Zine,true,true,medium,blog,fanzine,28,0,0,0,0,0,25,14.29,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,2026-06-01T19:32:13.688-07:00,true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+colinspunkrockworld_blogspot,Colin’s Punk Rock World,true,true,medium,blog,punk,25,0,0,0,0,0,25,13.6,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2025-12-09T07:57:07.156+00:00,true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+ox_fanzine,Ox Fanzine,true,true,high,magazine,fanzine,25,0,0,0,0,0,20,20.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 10:17:00 GMT",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+rockingthegarage_blogspot,Rocking The Garage,true,true,medium,blog,garage_rock,25,0,0,0,0,0,25,11.2,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2025-11-20T02:08:00.000-08:00,true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+mystificationzine,Mystification Zine,true,true,medium,magazine,fanzine,22,0,0,0,0,0,10,9.55,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Tue, 02 Jun 2026 01:34:02 +0000",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+punknews,Punknews.org,true,true,medium,magazine,punk,22,0,0,0,0,0,25,12.05,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 17:00:01 -0400",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+folkrootsradio,Folk Roots Radio,true,true,medium,magazine,roots_music,20,0,0,0,0,0,25,12.25,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Thu, 13 Jul 2023 15:03:38 +0000",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+londoncelticpunks_wordpress,London Celtic Punks,true,true,medium,blog,punk,20,0,0,0,0,0,25,20.5,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Sun, 31 May 2026 16:18:51 +0000",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+punkoutlawblog,Punk Outlaw,true,true,medium,magazine,punk,20,0,0,0,0,0,25,11.5,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Mon, 19 Jan 2026 20:19:00 +0000",true,false,true,archive/noise candidate; avg score below threshold; low yield active feed
+resurrectedvinyl_blogspot,Resurrected Vinyl,true,true,medium,blog,vinyl,18,0,0,0,0,0,10,10.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,2015-11-23T21:29:00.000+11:00,true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+punktastic,Punktastic,true,true,medium,magazine,punk,12,0,0,0,0,0,10,10.0,2026-06-02T10:38:45Z,2026-06-01T14:28:23Z,"Tue, 02 Jun 2026 10:00:51 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+bluesblastmagazine,Blues Blast Magazine,true,true,medium,magazine,"blues, fanzine",11,0,0,0,0,0,25,23.64,2026-06-02T10:38:45Z,2026-06-01T14:28:23Z,"Tue, 02 Jun 2026 05:22:05 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+punktuationmag,Punktuation!,true,true,medium,magazine,punk,11,0,0,0,0,0,25,16.82,2026-06-02T04:46:27Z,2026-06-01T14:28:23Z,"Mon, 01 Jun 2026 23:02:35 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+garagehangover,Garage Hangover,true,true,medium,magazine,garage_rock,10,0,0,0,0,0,10,10.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Wed, 20 May 2026 01:28:16 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+jazzpianocafe,Jazz Piano Cafe,true,true,medium,magazine,jazz,10,0,0,0,0,0,10,10.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Mon, 17 Aug 2015 07:37:43 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+offbeat_magazine,OffBeat Magazine,true,true,medium,magazine,"blues, jazz, swamp_blues, new_orleans",10,0,0,0,0,0,25,11.5,2026-05-26T09:47:22Z,2026-05-26T09:47:22Z,"Tue, 19 May 2026 20:11:02 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+santasangremagazine_wordpress,Santa Sangre Magazine,true,true,medium,blog,fanzine,10,0,0,0,0,0,25,11.5,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Sat, 09 May 2026 11:02:00 +0000",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+the_wire,The Wire Magazine,true,true,medium,magazine,"free_jazz, experimental, dark_jazz, avant_garde",10,0,0,0,0,0,10,10.0,2026-05-26T09:47:22Z,2026-05-26T09:47:22Z,"Thu, 09 Nov 2023 12:06:00 GMT",true,false,true,archive/noise candidate; no scored candidates; low yield active feed
+bluesroadhouse,Blues Roadhouse,true,true,medium,magazine,blues,5,0,0,0,0,0,25,22.0,2026-06-01T14:28:23Z,2026-06-01T14:28:23Z,"Sun, 31 May 2026 18:35:29 +0000",false,false,true,low yield active feed
+ace_records,Ace Records,true,false,high,label,"blues, soul, rockabilly, reissue",0,0,0,0,0,0,0,0,,,,false,false,false,
+alan_lomax_archive,Alan Lomax Archive — Association for Cultural Equity,true,false,high,archive,"folk, blues, delta_blues, field_recordings",0,0,0,0,0,0,0,0,,,,false,false,false,
+bear_family_records,Bear Family Records,true,false,high,label,"country, rockabilly, blues, reissue",0,0,0,0,0,0,0,0,,,,false,false,false,
+bloodshot_records,Bloodshot Records,true,false,high,label,"alt_country, americana, outlaw_country, country_noir",0,0,0,0,0,0,0,0,,,,false,false,false,
+bluestownmusic,Bluestown Music,true,true,medium,magazine,blues,0,0,0,0,0,0,0,0,,,,false,false,false,
+crypt_records,Crypt Records,true,false,medium,label,"garage_rock, rockabilly, proto_punk",0,0,0,0,0,0,0,0,,,,false,false,false,
+fat_possum_records,Fat Possum Records,true,false,medium,label,"blues, indie",0,0,0,0,0,0,0,0,,,,false,false,false,
+ink_n_iron,Ink N Iron Festival,false,false,low,festival,"rockabilly, psychobilly, tattoo_culture, hot_rod",0,0,0,0,0,0,0,0,,,,false,false,false,
+internet_archive_audio,Internet Archive — Audio,true,false,medium,archive,"blues, jazz, folk, surf, rockabilly",0,0,0,0,0,0,0,0,,,,false,false,false,
+kcrw,KCRW,true,false,low,radio,"eclectic, indie, jazz, world_music",0,0,0,0,0,0,0,0,,,,false,false,false,
+light_in_the_attic,Light in the Attic Records,true,false,high,label,"americana, folk, reissue, blues",0,0,0,0,0,0,0,0,,,,false,false,false,
+living_blues,Living Blues Magazine,true,false,high,magazine,"blues, delta_blues, chicago_blues, swamp_blues",0,0,0,0,0,0,0,0,,,,false,false,false,
+mississippi_records,Mississippi Records,true,false,medium,label,"folk, blues, world_music",0,0,0,0,0,0,0,0,,,,false,false,false,
+norton_records,Norton Records,true,false,high,label,"surf, rockabilly, rhythm_and_blues, garage_rock",0,0,0,0,0,0,0,0,,,,false,false,false,
+numero_group,Numero Group,true,false,high,label,"reissue, soul, gospel, country, exotica",0,0,0,0,0,0,0,0,,,,false,false,false,
+psychomania_rumble,Psychomania Rumble,true,false,medium,festival,"psychobilly, horrorbilly, punkabilly",0,0,0,0,0,0,0,0,,,,false,false,false,
+sundazed_music,Sundazed Music,true,false,medium,label,"surf, garage_rock, psychedelia, reissue",0,0,0,0,0,0,0,0,,,,false,false,false,
+tompkins_square,Tompkins Square,true,false,medium,label,"folk, blues, american_primitive",0,0,0,0,0,0,0,0,,,,false,false,false,
+ugly_things,Ugly Things Magazine,true,false,high,magazine,"garage_rock, surf, rockabilly, psychedelia",0,0,0,0,0,0,0,0,,,,false,false,false,
+viva_las_vegas,Viva Las Vegas Rockabilly Weekend,true,false,medium,festival,"rockabilly, psychobilly, surf, hot_rod",0,0,0,0,0,0,0,0,,,,false,false,false,
+wax_poetics,Wax Poetics,true,false,medium,magazine,"jazz, soul, funk, reissue",0,0,0,0,0,0,0,0,,,,false,false,false,
+wfmu,WFMU Radio,true,true,high,radio,"freeform, blues, jazz, experimental, surf",0,0,0,0,0,0,0,0,,,,false,false,false,
+world_of_echo_podcast,World of Echo Podcast,true,false,medium,podcast,"dark_jazz, jazz_noir, experimental, ambient",0,0,0,0,0,0,0,0,,,,false,false,false,

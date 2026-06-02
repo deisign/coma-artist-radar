@@ -30,6 +30,8 @@ DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
 DEFAULT_MIN_SCORE = 30
 DEFAULT_LIMIT = 50
 DEFAULT_MAX_PER_SOURCE = 3
+DEFAULT_MAX_SOURCE_ITEMS = 2
+DEFAULT_MAX_ARTIST_ITEMS = 2
 
 def normalize_base_path(path: str) -> str:
     """Normalize base_path: '' or '/' -> '', 'foo' -> '/foo', '/foo/' -> '/foo'."""
@@ -492,6 +494,88 @@ def select_editorial_items(
     return selected
 
 
+def _parse_artists(matched_artists: str) -> list[str]:
+    """Return normalised artist names from a comma-separated matched_artists string."""
+    return [a.strip().lower() for a in matched_artists.split(",") if a.strip()]
+
+
+def select_items_with_diversity(
+    candidates: list[dict],
+    issue_limit: int,
+    max_source_items: int = DEFAULT_MAX_SOURCE_ITEMS,
+    max_artist_items: int = DEFAULT_MAX_ARTIST_ITEMS,
+) -> tuple[list[dict], list[dict]]:
+    """Select up to issue_limit items enforcing source and artist diversity caps.
+
+    Candidates must be pre-sorted by score descending.  Items that exceed a cap
+    are skipped (not removed from candidates) and recorded in the returned
+    evidence list.  Items tagged must_use / high_priority bypass both caps.
+
+    Returns:
+        (selected, evidence)
+        evidence: list of dicts with keys reason, source_name, artist_name,
+                  title, score — one entry per skipped item.
+    """
+    if issue_limit <= 0:
+        return [], []
+
+    selected: list[dict] = []
+    evidence: list[dict] = []
+    source_counts: dict[str, int] = {}
+    artist_counts: dict[str, int] = {}
+
+    for item in candidates:
+        if len(selected) >= issue_limit:
+            break
+
+        source = _source_key(item)
+        artists = _parse_artists(str(item.get("matched_artists") or ""))
+        score = item.get("score", 0)
+        title = str(item.get("title") or "")
+        can_bypass = _has_priority_override(item)
+
+        # Source cap
+        if (
+            not can_bypass
+            and max_source_items > 0
+            and source_counts.get(source, 0) >= max_source_items
+        ):
+            evidence.append({
+                "reason": "skipped_by_source_cap",
+                "source_name": source,
+                "artist_name": "",
+                "title": title,
+                "score": score,
+            })
+            continue
+
+        # Artist cap — first matched artist that exceeds the cap blocks the item
+        capping_artist = ""
+        if not can_bypass and max_artist_items > 0:
+            for artist in artists:
+                if artist_counts.get(artist, 0) >= max_artist_items:
+                    capping_artist = artist
+                    break
+
+        if capping_artist:
+            evidence.append({
+                "reason": "skipped_by_artist_cap",
+                "source_name": source,
+                "artist_name": capping_artist,
+                "title": title,
+                "score": score,
+            })
+            continue
+
+        # Passes both caps
+        selected.append(item)
+        source_counts[source] = source_counts.get(source, 0) + 1
+        for artist in artists:
+            artist_counts[artist] = artist_counts.get(artist, 0) + 1
+
+    return selected, evidence
+
+
 # ---------------------------------------------------------------------------
 # Editorial sequencing
 # ---------------------------------------------------------------------------
@@ -673,7 +757,8 @@ def build_issue(
     base_path: str = "",
     with_cover: bool = True,
     themes_path: Path = DEFAULT_THEMES,
-    max_per_source: int = DEFAULT_MAX_PER_SOURCE,
+    max_per_source: int = DEFAULT_MAX_SOURCE_ITEMS,
+    max_artist_items: int = DEFAULT_MAX_ARTIST_ITEMS,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -683,10 +768,11 @@ def build_issue(
     tag_map = load_tag_map(tags_path)
     candidate_limit = max(limit * 5, limit)
     raw_candidates = load_items(db_path, min_score=min_score, limit=candidate_limit)
-    raw_items = select_editorial_items(
+    raw_items, diversity_evidence = select_items_with_diversity(
         raw_candidates,
-        limit=limit,
-        max_per_source=max_per_source,
+        issue_limit=limit,
+        max_source_items=max_per_source,
+        max_artist_items=max_artist_items,
     )
     items = sequence_editorial_items(enrich_items(raw_items, tag_map))
 
@@ -772,12 +858,19 @@ def build_issue(
         except ValueError:
             output_files.append(str(json_path))
 
+    skipped_source = [e for e in diversity_evidence if e["reason"] == "skipped_by_source_cap"]
+    skipped_artist = [e for e in diversity_evidence if e["reason"] == "skipped_by_artist_cap"]
+
     return {
         "issue_date": issue_date,
         "languages": languages,
         "selected_items": len(items),
         "output_files": output_files,
         "draft": draft,
+        "diversity_evidence": {
+            "skipped_by_source_cap": skipped_source,
+            "skipped_by_artist_cap": skipped_artist,
+        },
     }
 
 
@@ -803,9 +896,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--max-per-source",
         type=int,
-        default=DEFAULT_MAX_PER_SOURCE,
+        default=DEFAULT_MAX_SOURCE_ITEMS,
         dest="max_per_source",
-        help=f"Soft maximum items per source in one issue (default: {DEFAULT_MAX_PER_SOURCE})",
+        help=f"Max items per source in one issue (default: {DEFAULT_MAX_SOURCE_ITEMS})",
+    )
+    parser.add_argument(
+        "--max-artist-items",
+        type=int,
+        default=DEFAULT_MAX_ARTIST_ITEMS,
+        dest="max_artist_items",
+        help=f"Max items per matched artist in one issue (default: {DEFAULT_MAX_ARTIST_ITEMS})",
     )
     parser.add_argument("--draft", action="store_true",
                         help="Mark output as draft")
@@ -834,6 +934,7 @@ def main(argv: list[str] | None = None) -> int:
         limit=args.limit,
         min_score=args.min_score,
         max_per_source=args.max_per_source,
+        max_artist_items=args.max_artist_items,
         draft=args.draft,
         template_path=args.template,
         base_path=args.base_path,

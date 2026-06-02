@@ -266,7 +266,8 @@ def test_limit_restricts_items(tmp_path):
     for i in range(5):
         _insert_item(db_path, title=f"Item {i}", url=f"https://ex.com/{i}", score=50 + i)
 
-    summary = _run_build(tmp_path, db_path=db_path, lang="en", limit=3)
+    # All items share the same source; disable source cap so the limit is the only constraint.
+    summary = _run_build(tmp_path, db_path=db_path, lang="en", limit=3, max_per_source=0)
 
     assert summary["selected_items"] == 3
 

@@ -45,6 +45,8 @@ def run_pipeline(
     fetch_limit: int | None = None,
     min_score: int = DEFAULT_MIN_SCORE,
     issue_limit: int = DEFAULT_ISSUE_LIMIT,
+    max_source_items: int = 2,
+    max_artist_items: int = 2,
     base_url: str = DEFAULT_BASE_URL,
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
@@ -91,6 +93,8 @@ def run_pipeline(
             issue_date=date,
             limit=issue_limit,
             min_score=min_score,
+            max_per_source=max_source_items,
+            max_artist_items=max_artist_items,
             draft=True,
             content_dir=content_dir,
             dist_dir=dist_dir,
@@ -193,6 +197,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help=f"Max items in the issue (default: {DEFAULT_ISSUE_LIMIT})",
     )
     parser.add_argument(
+        "--max-source-items", type=int, default=2, dest="max_source_items",
+        help="Max items per source in one issue (default: 2)",
+    )
+    parser.add_argument(
+        "--max-artist-items", type=int, default=2, dest="max_artist_items",
+        help="Max items per matched artist in one issue (default: 2)",
+    )
+    parser.add_argument(
         "--base-url", default=DEFAULT_BASE_URL, dest="base_url",
         help="Canonical base URL for sitemap and feed",
     )
@@ -228,6 +240,8 @@ def main(argv: list[str] | None = None) -> int:
         fetch_limit=args.fetch_limit,
         min_score=args.min_score,
         issue_limit=args.issue_limit,
+        max_source_items=args.max_source_items,
+        max_artist_items=args.max_artist_items,
         base_url=args.base_url,
         base_path=args.base_path,
         dry_run=args.dry_run,

@@ -734,14 +734,13 @@ def sequence_editorial_items(items: list[dict]) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def _format_date(date_str: str) -> str:
-    if not date_str:
-        return ""
-    for fmt in ("%Y-%m-%dT%H:%M:%SZ", "%a, %d %b %Y %H:%M:%S %z", "%Y-%m-%dT%H:%M:%S%z"):
-        try:
-            return datetime.strptime(date_str, fmt).strftime("%Y-%m-%d")
-        except ValueError:
-            continue
-    return date_str[:10] if len(date_str) >= 10 else date_str
+    """Format ISO/RFC feed dates as YYYY-MM-DD for issue JSON and HTML."""
+    parsed = _parse_item_datetime(date_str)
+    if parsed is not None:
+        return parsed.date().isoformat()
+
+    text = str(date_str or "").strip()
+    return text[:10] if len(text) >= 10 else text
 
 
 def enrich_items(items: list[dict], tag_map: dict) -> list[dict]:

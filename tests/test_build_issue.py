@@ -1552,3 +1552,17 @@ def test_load_items_recency_tolerates_schema_without_first_seen_at(tmp_path):
 
     assert [item["title"] for item in items] == ["Legacy schema item"]
     assert items[0]["first_seen_at"] == ""
+
+
+def test_format_date_handles_rfc_feed_dates():
+    from scripts.build_issue import _format_date
+
+    assert _format_date("Thu, 21 May 2026 15:00:29 GMT") == "2026-05-21"
+    assert _format_date("Wed, 27 May 2026 17:42:04 GMT") == "2026-05-27"
+
+
+def test_format_date_handles_offset_feed_dates():
+    from scripts.build_issue import _format_date
+
+    assert _format_date("Mon, 25 May 2026 15:04:45 +0000") == "2026-05-25"
+    assert _format_date("2026-03-27T10:05:00.008-04:00") == "2026-03-27"

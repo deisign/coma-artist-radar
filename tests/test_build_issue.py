@@ -1392,3 +1392,163 @@ def test_build_issue_json_uses_editorial_sequence_order(tmp_path):
     assert signal_types == ["review", "culture", "industry"]
     assert titles[0].startswith("Album Review")
 
+
+
+# ---------------------------------------------------------------------------
+# Stage28C: recency-window selection policy
+# ---------------------------------------------------------------------------
+
+def _make_stage28c_recency_db(path):
+    import sqlite3
+
+    conn = sqlite3.connect(str(path))
+    conn.execute(
+        """
+        CREATE TABLE items (
+            id INTEGER PRIMARY KEY,
+            title TEXT,
+            url TEXT,
+            source_name TEXT,
+            source_type TEXT,
+            published_at TEXT,
+            first_seen_at TEXT,
+            score INTEGER,
+            matched_artists TEXT,
+            matched_tags TEXT,
+            matched_genres TEXT
+        )
+        """
+    )
+    return conn
+
+
+def test_load_items_recency_window_filters_old_published_items(tmp_path):
+    from scripts.build_issue import load_items
+
+    db = tmp_path / "recency.sqlite"
+    conn = _make_stage28c_recency_db(db)
+    conn.executemany(
+        """
+        INSERT INTO items
+        (id, title, url, source_name, source_type, published_at, first_seen_at, score, matched_artists, matched_tags, matched_genres)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        [
+            (1, "Old 2023 psychobilly archive", "https://ex/old", "UK Psychobilly Gig Guide", "blog", "Mon, 06 Feb 2023 07:00:00 +0000", "2026-06-01T00:00:00Z", 100, "King Kurt", "psychobilly", "psychobilly"),
+            (2, "Recent high signal", "https://ex/new", "The Punk Site", "blog", "Mon, 01 Jun 2026 19:00:00 +0000", "2026-06-01T00:00:00Z", 90, "The Meteors", "psychobilly", "psychobilly"),
+            (3, "Inside 14-day window", "https://ex/mid", "No Depression", "magazine", "Thu, 21 May 2026 15:00:29 GMT", "2026-05-26T00:00:00Z", 80, "", "country", "country"),
+            (4, "Outside 14-day window", "https://ex/outside", "No Depression", "magazine", "Fri, 15 May 2026 15:00:29 GMT", "2026-05-26T00:00:00Z", 70, "", "country", "country"),
+        ],
+    )
+    conn.commit()
+    conn.close()
+
+    items = load_items(db, min_score=30, limit=10, issue_date="2026-06-02", recency_days=14)
+    titles = [item["title"] for item in items]
+
+    assert "Recent high signal" in titles
+    assert "Inside 14-day window" in titles
+    assert "Old 2023 psychobilly archive" not in titles
+    assert "Outside 14-day window" not in titles
+
+
+def test_load_items_recency_uses_first_seen_fallback_when_published_missing(tmp_path):
+    from scripts.build_issue import load_items
+
+    db = tmp_path / "fallback.sqlite"
+    conn = _make_stage28c_recency_db(db)
+    conn.executemany(
+        """
+        INSERT INTO items
+        (id, title, url, source_name, source_type, published_at, first_seen_at, score, matched_artists, matched_tags, matched_genres)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        [
+            (1, "Fallback recent", "https://ex/recent", "Mystery Feed", "blog", "", "2026-06-01T00:00:00Z", 80, "", "surf", "surf"),
+            (2, "Fallback old", "https://ex/old", "Mystery Feed", "blog", "", "2026-05-01T00:00:00Z", 90, "", "surf", "surf"),
+        ],
+    )
+    conn.commit()
+    conn.close()
+
+    items = load_items(db, min_score=30, limit=10, issue_date="2026-06-02", recency_days=14)
+    titles = [item["title"] for item in items]
+
+    assert titles == ["Fallback recent"]
+
+
+def test_load_items_priority_override_bypasses_recency_window(tmp_path):
+    from scripts.build_issue import load_items
+
+    db = tmp_path / "priority.sqlite"
+    conn = _make_stage28c_recency_db(db)
+    conn.execute(
+        """
+        INSERT INTO items
+        (id, title, url, source_name, source_type, published_at, first_seen_at, score, matched_artists, matched_tags, matched_genres)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (1, "Manual old must-use item", "https://ex/manual", "Manual", "editor_note", "2023-02-06T07:00:00Z", "2026-06-01T00:00:00Z", 100, "", "must_use, psychobilly", "psychobilly"),
+    )
+    conn.commit()
+    conn.close()
+
+    items = load_items(db, min_score=30, limit=10, issue_date="2026-06-02", recency_days=14)
+
+    assert [item["title"] for item in items] == ["Manual old must-use item"]
+
+
+def test_load_items_recency_tolerates_schema_without_first_seen_at(tmp_path):
+    from scripts.build_issue import load_items
+    import sqlite3
+
+    db = tmp_path / "legacy.sqlite"
+    conn = sqlite3.connect(str(db))
+    conn.execute(
+        """
+        CREATE TABLE items (
+            id INTEGER PRIMARY KEY,
+            title TEXT,
+            url TEXT,
+            source_name TEXT,
+            source_type TEXT,
+            published_at TEXT,
+            score INTEGER,
+            matched_artists TEXT,
+            matched_tags TEXT,
+            matched_genres TEXT
+        )
+        """
+    )
+    conn.execute(
+        """
+        INSERT INTO items
+        (id, title, url, source_name, source_type, published_at, score, matched_artists, matched_tags, matched_genres)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            1,
+            "Legacy schema item",
+            "https://example.com/legacy",
+            "Legacy Source",
+            "magazine",
+            "2026-06-01T00:00:00Z",
+            80,
+            "",
+            "country",
+            "country",
+        ),
+    )
+    conn.commit()
+    conn.close()
+
+    items = load_items(
+        db,
+        min_score=30,
+        limit=10,
+        issue_date="2026-06-02",
+        recency_days=14,
+    )
+
+    assert [item["title"] for item in items] == ["Legacy schema item"]
+    assert items[0]["first_seen_at"] == ""

@@ -47,6 +47,8 @@ def run_pipeline(
     issue_limit: int = DEFAULT_ISSUE_LIMIT,
     max_source_items: int = 2,
     max_artist_items: int = 2,
+    recency_days: int | None = 14,
+    include_old_archive: bool = False,
     base_url: str = DEFAULT_BASE_URL,
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
@@ -95,6 +97,8 @@ def run_pipeline(
             min_score=min_score,
             max_per_source=max_source_items,
             max_artist_items=max_artist_items,
+            recency_days=recency_days,
+            include_old_archive=include_old_archive,
             draft=True,
             content_dir=content_dir,
             dist_dir=dist_dir,
@@ -205,6 +209,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Max items per matched artist in one issue (default: 2)",
     )
     parser.add_argument(
+        "--recency-days", type=int, default=14, dest="recency_days",
+        help="Only select items published within N days of the issue date (default: 14)",
+    )
+    parser.add_argument(
+        "--include-old-archive", action="store_true", dest="include_old_archive",
+        help="Allow archive/reissue-tagged items to bypass the recency window.",
+    )
+    parser.add_argument(
         "--base-url", default=DEFAULT_BASE_URL, dest="base_url",
         help="Canonical base URL for sitemap and feed",
     )
@@ -242,6 +254,8 @@ def main(argv: list[str] | None = None) -> int:
         issue_limit=args.issue_limit,
         max_source_items=args.max_source_items,
         max_artist_items=args.max_artist_items,
+        recency_days=args.recency_days,
+        include_old_archive=args.include_old_archive,
         base_url=args.base_url,
         base_path=args.base_path,
         dry_run=args.dry_run,

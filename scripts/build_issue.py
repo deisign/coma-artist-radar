@@ -14,7 +14,8 @@ import json
 import re
 import sqlite3
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -406,28 +407,130 @@ def load_tag_map(tags_path: Path = DEFAULT_TAGS) -> dict[str, dict]:
 # Database
 # ---------------------------------------------------------------------------
 
+
+
+# ---------------------------------------------------------------------------
+# Recency filtering
+# ---------------------------------------------------------------------------
+
+def _parse_item_datetime(value: str | None) -> datetime | None:
+    """Parse ISO/RFC feed dates into UTC datetimes."""
+    text = str(value or "").strip()
+    if not text:
+        return None
+
+    candidates = [text]
+    if text.endswith("Z"):
+        candidates.append(text[:-1] + "+00:00")
+
+    for candidate in candidates:
+        try:
+            parsed = datetime.fromisoformat(candidate)
+        except ValueError:
+            continue
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(timezone.utc)
+
+    try:
+        parsed = parsedate_to_datetime(text)
+    except (TypeError, ValueError):
+        return None
+
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
+
+
+def _issue_cutoff(issue_date: str, recency_days: int) -> datetime:
+    issue_dt = _parse_item_datetime(issue_date)
+    if issue_dt is None:
+        issue_dt = datetime.now(tz=timezone.utc)
+    return issue_dt - timedelta(days=recency_days)
+
+
+def _is_recent_issue_item(
+    item: dict,
+    issue_date: str | None,
+    recency_days: int | None,
+    include_old_archive: bool = False,
+) -> bool:
+    """Return True when an item is eligible for a dated daily issue.
+
+    Policy:
+    - no recency_days means no filter;
+    - must_use / high_priority bypass the filter;
+    - published_at is authoritative;
+    - first_seen_at is only a fallback when published_at cannot be parsed;
+    - old archive/reissue items only bypass when explicitly requested.
+    """
+    if recency_days is None or recency_days <= 0 or not issue_date:
+        return True
+
+    if _has_priority_override(item):
+        return True
+
+    tags = _item_tag_ids(item)
+    if include_old_archive and tags & {"archive", "archive_release", "reissue"}:
+        return True
+
+    cutoff = _issue_cutoff(issue_date, recency_days)
+
+    published_at = _parse_item_datetime(str(item.get("published_at") or ""))
+    if published_at is not None:
+        return published_at >= cutoff
+
+    first_seen_at = _parse_item_datetime(str(item.get("first_seen_at") or ""))
+    if first_seen_at is not None:
+        return first_seen_at >= cutoff
+
+    return False
+
+
 def load_items(
     db_path: Path,
     min_score: int = DEFAULT_MIN_SCORE,
     limit: int = DEFAULT_LIMIT,
+    issue_date: str | None = None,
+    recency_days: int | None = None,
+    include_old_archive: bool = False,
 ) -> list[dict]:
-    """Load top-scored items from the database."""
+    """Load top-scored items from the database, optionally filtered by recency."""
+    query_limit = max(limit * 20, 200) if recency_days and recency_days > 0 else limit
+
     conn = sqlite3.connect(str(db_path))
+    item_columns = {
+        row[1]
+        for row in conn.execute("PRAGMA table_info(items)").fetchall()
+    }
+    first_seen_expr = "first_seen_at" if "first_seen_at" in item_columns else "'' AS first_seen_at"
     rows = conn.execute(
         "SELECT id, title, url, source_name, source_type, published_at, "
-        "score, matched_artists, matched_tags, matched_genres "
+        f"{first_seen_expr}, score, matched_artists, matched_tags, matched_genres "
         "FROM items "
         "WHERE score >= ? "
         "ORDER BY score DESC "
         "LIMIT ?",
-        (min_score, limit),
+        (min_score, query_limit),
     ).fetchall()
     conn.close()
     cols = [
         "id", "title", "url", "source_name", "source_type",
-        "published_at", "score", "matched_artists", "matched_tags", "matched_genres",
+        "published_at", "first_seen_at", "score", "matched_artists",
+        "matched_tags", "matched_genres",
     ]
-    return [dict(zip(cols, row)) for row in rows]
+    items = [dict(zip(cols, row)) for row in rows]
+    if recency_days and recency_days > 0:
+        items = [
+            item for item in items
+            if _is_recent_issue_item(
+                item,
+                issue_date=issue_date,
+                recency_days=recency_days,
+                include_old_archive=include_old_archive,
+            )
+        ]
+    return items[:limit]
 
 
 # ---------------------------------------------------------------------------
@@ -759,6 +862,8 @@ def build_issue(
     themes_path: Path = DEFAULT_THEMES,
     max_per_source: int = DEFAULT_MAX_SOURCE_ITEMS,
     max_artist_items: int = DEFAULT_MAX_ARTIST_ITEMS,
+    recency_days: int | None = None,
+    include_old_archive: bool = False,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -767,7 +872,14 @@ def build_issue(
     languages = [lang] if lang else ["en", "uk"]
     tag_map = load_tag_map(tags_path)
     candidate_limit = max(limit * 5, limit)
-    raw_candidates = load_items(db_path, min_score=min_score, limit=candidate_limit)
+    raw_candidates = load_items(
+        db_path,
+        min_score=min_score,
+        limit=candidate_limit,
+        issue_date=issue_date,
+        recency_days=recency_days,
+        include_old_archive=include_old_archive,
+    )
     raw_items, diversity_evidence = select_items_with_diversity(
         raw_candidates,
         issue_limit=limit,
@@ -867,6 +979,8 @@ def build_issue(
         "selected_items": len(items),
         "output_files": output_files,
         "draft": draft,
+        "recency_days": recency_days,
+        "include_old_archive": include_old_archive,
         "diversity_evidence": {
             "skipped_by_source_cap": skipped_source,
             "skipped_by_artist_cap": skipped_artist,
@@ -893,6 +1007,14 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     )
     parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT)
     parser.add_argument("--min-score", type=int, default=DEFAULT_MIN_SCORE)
+    parser.add_argument(
+        "--recency-days", type=int, default=None, dest="recency_days",
+        help="Only select items published within N days of the issue date; disabled by default.",
+    )
+    parser.add_argument(
+        "--include-old-archive", action="store_true", dest="include_old_archive",
+        help="Allow archive/reissue-tagged items to bypass the recency window.",
+    )
     parser.add_argument(
         "--max-per-source",
         type=int,

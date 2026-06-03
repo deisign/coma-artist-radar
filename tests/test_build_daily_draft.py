@@ -397,3 +397,38 @@ def test_validate_passes_min_score_to_validate_content(monkeypatch, tmp_path):
     run_pipeline(**_base_kwargs(tmp_path), validate=True, min_score=40)
     _, kwargs = mocks["validate_content"].call_args
     assert kwargs.get("min_score") == 40
+
+
+def test_publish_flag_forwarded_to_build_issue(monkeypatch, tmp_path):
+    mocks = _patch_all(monkeypatch)
+    from scripts.build_daily_draft import run_pipeline
+
+    run_pipeline(
+        date="2026-05-25",
+        dry_run=False,
+        draft=False,
+        db_path=tmp_path / "radar.sqlite",
+        sources_path=tmp_path / "sources.yaml",
+        content_dir=tmp_path / "content",
+        dist_dir=tmp_path / "dist",
+    )
+
+    _, kwargs = mocks["build_issue"].call_args
+    assert kwargs["draft"] is False
+
+
+def test_draft_defaults_to_true_when_building_issue(monkeypatch, tmp_path):
+    mocks = _patch_all(monkeypatch)
+    from scripts.build_daily_draft import run_pipeline
+
+    run_pipeline(
+        date="2026-05-25",
+        dry_run=False,
+        db_path=tmp_path / "radar.sqlite",
+        sources_path=tmp_path / "sources.yaml",
+        content_dir=tmp_path / "content",
+        dist_dir=tmp_path / "dist",
+    )
+
+    _, kwargs = mocks["build_issue"].call_args
+    assert kwargs["draft"] is True

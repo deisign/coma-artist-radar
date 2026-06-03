@@ -50,6 +50,7 @@ def run_pipeline(
     recency_days: int | None = 14,
     include_old_archive: bool = False,
     quality_gate: bool = True,
+    draft: bool = True,
     base_url: str = DEFAULT_BASE_URL,
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
@@ -101,7 +102,7 @@ def run_pipeline(
             recency_days=recency_days,
             include_old_archive=include_old_archive,
             quality_gate=quality_gate,
-            draft=True,
+            draft=draft,
             content_dir=content_dir,
             dist_dir=dist_dir,
             base_path=base_path,
@@ -113,7 +114,7 @@ def run_pipeline(
             "languages": ["en", "uk"],
             "selected_items": 0,
             "output_files": [],
-            "draft": True,
+            "draft": draft,
         }
 
     # Step 6: Build per-tag pages
@@ -224,6 +225,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Disable final issue quality gate for weak culture/industry/filler candidates.",
     )
     parser.add_argument(
+        "--publish", action="store_false", dest="draft",
+        default=True,
+        help="Build issue as published instead of draft.",
+    )
+    parser.add_argument(
         "--base-url", default=DEFAULT_BASE_URL, dest="base_url",
         help="Canonical base URL for sitemap and feed",
     )
@@ -264,6 +270,7 @@ def main(argv: list[str] | None = None) -> int:
         recency_days=args.recency_days,
         include_old_archive=args.include_old_archive,
         quality_gate=args.quality_gate,
+        draft=args.draft,
         base_url=args.base_url,
         base_path=args.base_path,
         dry_run=args.dry_run,

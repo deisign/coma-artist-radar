@@ -42,10 +42,30 @@ jobs:
         run: |
           python scripts/build_daily_draft.py \
             --date "$ISSUE_DATE" \
-            --fetch-limit 5 \
+            --fetch-limit 50 \
             --issue-limit 10 \
+            --publish \
+            --validate \
             --base-url https://deisign.github.io/coma-artist-radar \
             --base-path /coma-artist-radar
+
+      - name: Assert public issue quality
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          issue_date = os.environ['ISSUE_DATE']
+          for lang in ('en', 'uk'):
+              path = Path(f'content/issues/{issue_date}.{lang}.json')
+              data = json.loads(path.read_text(encoding='utf-8'))
+              items = data.get('items', [])
+              if data.get('draft') is not False:
+                  raise SystemExit(f'{path}: expected draft=false')
+              if len(items) != 10:
+                  raise SystemExit(f'{path}: expected 10 items, got {len(items)}')
+          PY
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

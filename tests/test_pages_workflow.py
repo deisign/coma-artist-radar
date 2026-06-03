@@ -79,3 +79,15 @@ def test_workflow_has_github_pages_base_url():
 
 def test_workflow_has_base_path():
     assert "--base-path /coma-artist-radar" in _content()
+
+
+def test_workflow_builds_public_issue_with_deeper_fetch_and_publish():
+    content = Path(".github/workflows/pages.yml").read_text(encoding="utf-8")
+
+    assert "--fetch-limit 50" in content
+    assert "--issue-limit 10" in content
+    assert "--publish" in content
+    assert "--validate" in content
+    assert "Assert public issue quality" in content
+    assert "expected 10 items" in content
+    assert "expected draft=false" in content

@@ -586,3 +586,14 @@ def test_short_artist_word_boundary_still_matches():
 
     assert [m["artist_canonical"] for m in matched] == ["U2"]
 
+
+
+def test_love_is_ambiguous_artist_and_does_not_match_generic_phrase():
+    artists = [{"artist_canonical": "Love", "monitor_priority": "low"}]
+
+    matched = _match_artists(
+        "country music's most timeless love songs",
+        artists,
+    )
+
+    assert matched == []

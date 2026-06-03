@@ -49,6 +49,7 @@ def run_pipeline(
     max_artist_items: int = 2,
     recency_days: int | None = 14,
     include_old_archive: bool = False,
+    quality_gate: bool = True,
     base_url: str = DEFAULT_BASE_URL,
     base_path: str = DEFAULT_BASE_PATH,
     dry_run: bool = False,
@@ -99,6 +100,7 @@ def run_pipeline(
             max_artist_items=max_artist_items,
             recency_days=recency_days,
             include_old_archive=include_old_archive,
+            quality_gate=quality_gate,
             draft=True,
             content_dir=content_dir,
             dist_dir=dist_dir,
@@ -217,6 +219,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         help="Allow archive/reissue-tagged items to bypass the recency window.",
     )
     parser.add_argument(
+        "--disable-quality-gate", action="store_false", dest="quality_gate",
+        default=True,
+        help="Disable final issue quality gate for weak culture/industry/filler candidates.",
+    )
+    parser.add_argument(
         "--base-url", default=DEFAULT_BASE_URL, dest="base_url",
         help="Canonical base URL for sitemap and feed",
     )
@@ -256,6 +263,7 @@ def main(argv: list[str] | None = None) -> int:
         max_artist_items=args.max_artist_items,
         recency_days=args.recency_days,
         include_old_archive=args.include_old_archive,
+        quality_gate=args.quality_gate,
         base_url=args.base_url,
         base_path=args.base_path,
         dry_run=args.dry_run,

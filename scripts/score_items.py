@@ -75,6 +75,7 @@ def load_artists(path: Path) -> list[dict]:
 
 _AMBIGUOUS_ARTIST_NAMES = frozenset({
     "them",
+    "love",
 })
 
 

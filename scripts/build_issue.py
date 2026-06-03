@@ -556,6 +556,66 @@ def _has_priority_override(item: dict) -> bool:
     return bool(_item_tag_ids(item) & _PRIORITY_OVERRIDE_TAGS)
 
 
+_CORE_SIGNAL_TYPES = {
+    "editor_note",
+    "review",
+    "reissue",
+    "archive",
+    "interview",
+    "release",
+    "video",
+    "scene",
+}
+
+
+def is_core_issue_candidate(item: dict) -> bool:
+    """Return True when an item is strong enough for an automated daily issue.
+
+    The score says "this resembles the coma.fm field"; this gate says "this is
+    strong enough to occupy one of ten daily issue slots".
+    """
+    if _has_priority_override(item):
+        return True
+
+    signal_type = str(item.get("signal_type") or classify_signal_type(item) or "signal")
+    if signal_type in _CORE_SIGNAL_TYPES:
+        return True
+
+    if signal_type != "signal":
+        return False
+
+    return bool(
+        str(item.get("matched_artists") or "").strip()
+        or str(item.get("matched_genres") or "").strip()
+        or _item_tag_ids(item)
+    )
+
+
+def _quality_evidence_item(item: dict) -> dict:
+    return {
+        "reason": "skipped_by_quality_gate",
+        "source_name": str(item.get("source_name") or ""),
+        "title": str(item.get("title") or ""),
+        "score": item.get("score", 0),
+        "signal_type": str(item.get("signal_type") or classify_signal_type(item) or "signal"),
+        "matched_artists": str(item.get("matched_artists") or ""),
+        "matched_tags": str(item.get("matched_tags") or ""),
+        "matched_genres": str(item.get("matched_genres") or ""),
+    }
+
+
+def apply_quality_gate(candidates: list[dict]) -> tuple[list[dict], list[dict]]:
+    """Split candidates into issue-quality items and quality-gate evidence."""
+    kept: list[dict] = []
+    skipped: list[dict] = []
+    for item in candidates:
+        if is_core_issue_candidate(item):
+            kept.append(item)
+        else:
+            skipped.append(_quality_evidence_item(item))
+    return kept, skipped
+
+
 def select_editorial_items(
     candidates: list[dict],
     limit: int = DEFAULT_LIMIT,
@@ -863,6 +923,7 @@ def build_issue(
     max_artist_items: int = DEFAULT_MAX_ARTIST_ITEMS,
     recency_days: int | None = None,
     include_old_archive: bool = False,
+    quality_gate: bool = False,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -879,6 +940,10 @@ def build_issue(
         recency_days=recency_days,
         include_old_archive=include_old_archive,
     )
+    quality_evidence: list[dict] = []
+    if quality_gate:
+        raw_candidates, quality_evidence = apply_quality_gate(raw_candidates)
+
     raw_items, diversity_evidence = select_items_with_diversity(
         raw_candidates,
         issue_limit=limit,
@@ -980,6 +1045,10 @@ def build_issue(
         "draft": draft,
         "recency_days": recency_days,
         "include_old_archive": include_old_archive,
+        "quality_gate": quality_gate,
+        "quality_evidence": {
+            "skipped_by_quality_gate": quality_evidence,
+        },
         "diversity_evidence": {
             "skipped_by_source_cap": skipped_source,
             "skipped_by_artist_cap": skipped_artist,
@@ -1013,6 +1082,10 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--include-old-archive", action="store_true", dest="include_old_archive",
         help="Allow archive/reissue-tagged items to bypass the recency window.",
+    )
+    parser.add_argument(
+        "--quality-gate", action="store_true", dest="quality_gate",
+        help="Filter out weak culture/industry/filler candidates before selection.",
     )
     parser.add_argument(
         "--max-per-source",

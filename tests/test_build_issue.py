@@ -1566,3 +1566,84 @@ def test_format_date_handles_offset_feed_dates():
 
     assert _format_date("Mon, 25 May 2026 15:04:45 +0000") == "2026-05-25"
     assert _format_date("2026-03-27T10:05:00.008-04:00") == "2026-03-27"
+
+
+# ---------------------------------------------------------------------------
+# Stage29A: issue quality gate
+# ---------------------------------------------------------------------------
+
+def test_quality_gate_rejects_general_culture_item():
+    from scripts.build_issue import is_core_issue_candidate
+
+    item = {
+        "title": "Paul McCartney says this pop star has similar fame",
+        "source_name": "American Songwriter",
+        "score": 100,
+        "matched_artists": "Paul McCartney, The Beatles",
+        "matched_tags": "",
+        "matched_genres": "",
+        "signal_type": "culture",
+    }
+
+    assert is_core_issue_candidate(item) is False
+
+
+def test_quality_gate_keeps_core_review_release_and_genre_signal():
+    from scripts.build_issue import is_core_issue_candidate
+
+    review = {
+        "title": "ALBUM REVIEW: Tom Waits tribute album",
+        "matched_artists": "Tom Waits",
+        "matched_tags": "country, alt_country, review",
+        "matched_genres": "",
+        "signal_type": "review",
+    }
+    release = {
+        "title": "The Meteors announce new album",
+        "matched_artists": "The Meteors",
+        "matched_tags": "new_release",
+        "matched_genres": "",
+        "signal_type": "release",
+    }
+    signal = {
+        "title": "Surf guitar compilation",
+        "matched_artists": "",
+        "matched_tags": "surf",
+        "matched_genres": "surf",
+        "signal_type": "signal",
+    }
+
+    assert is_core_issue_candidate(review) is True
+    assert is_core_issue_candidate(release) is True
+    assert is_core_issue_candidate(signal) is True
+
+
+def test_apply_quality_gate_returns_evidence_for_skipped_items():
+    from scripts.build_issue import apply_quality_gate
+
+    candidates = [
+        {
+            "title": "General culture item",
+            "source_name": "American Songwriter",
+            "score": 60,
+            "matched_artists": "Paul McCartney",
+            "matched_tags": "",
+            "matched_genres": "",
+            "signal_type": "culture",
+        },
+        {
+            "title": "Core release",
+            "source_name": "The Punk Site",
+            "score": 100,
+            "matched_artists": "The Meteors",
+            "matched_tags": "new_release",
+            "matched_genres": "",
+            "signal_type": "release",
+        },
+    ]
+
+    kept, skipped = apply_quality_gate(candidates)
+
+    assert [item["title"] for item in kept] == ["Core release"]
+    assert skipped[0]["reason"] == "skipped_by_quality_gate"
+    assert skipped[0]["title"] == "General culture item"

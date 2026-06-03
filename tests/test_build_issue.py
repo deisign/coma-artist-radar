@@ -1647,3 +1647,35 @@ def test_apply_quality_gate_returns_evidence_for_skipped_items():
     assert [item["title"] for item in kept] == ["Core release"]
     assert skipped[0]["reason"] == "skipped_by_quality_gate"
     assert skipped[0]["title"] == "General culture item"
+
+
+def test_quality_gate_rejects_artist_only_generic_signal():
+    from scripts.build_issue import is_core_issue_candidate
+
+    item = {
+        "title": "This George Thorogood Hit Was a Direct Response to The Rolling Stones",
+        "source_name": "American Songwriter",
+        "score": 50,
+        "matched_artists": "The Rolling Stones",
+        "matched_tags": "",
+        "matched_genres": "",
+        "signal_type": "signal",
+    }
+
+    assert is_core_issue_candidate(item) is False
+
+
+def test_quality_gate_keeps_signal_with_artist_and_genre():
+    from scripts.build_issue import is_core_issue_candidate
+
+    item = {
+        "title": "Tom Waits and jazz at the corners of Heartattack and Vine",
+        "source_name": "JazzTimes",
+        "score": 60,
+        "matched_artists": "Tom Waits",
+        "matched_tags": "",
+        "matched_genres": "jazz",
+        "signal_type": "signal",
+    }
+
+    assert is_core_issue_candidate(item) is True

@@ -584,9 +584,10 @@ def is_core_issue_candidate(item: dict) -> bool:
     if signal_type != "signal":
         return False
 
+    # Plain artist-only mentions are often generic music-press filler.
+    # Keep radar "signal" items only when they also carry a tag or genre signal.
     return bool(
-        str(item.get("matched_artists") or "").strip()
-        or str(item.get("matched_genres") or "").strip()
+        str(item.get("matched_genres") or "").strip()
         or _item_tag_ids(item)
     )
 

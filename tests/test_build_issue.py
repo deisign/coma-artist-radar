@@ -1148,7 +1148,7 @@ def test_build_editorial_angle_genre_field_en():
 # Stage 26D-D — Evidence / Angle Integration
 # ---------------------------------------------------------------------------
 
-def test_render_html_prepares_field_evidence_label_and_editorial_angle():
+def test_render_html_keeps_public_signal_label_but_hides_debug_evidence():
     html = render_html(
         items=[{
             "id": 1,
@@ -1173,7 +1173,9 @@ def test_render_html_prepares_field_evidence_label_and_editorial_angle():
     )
 
     assert "Industry signal" in html
-    assert "Industry / brand context around a coma.fm-field artist." in html
+    assert "Industry / brand context around a coma.fm-field artist." not in html
+    assert "Artist match" not in html
+    assert "Source signal" not in html
 
 
 def test_build_issue_json_contains_field_evidence_and_editorial_angle(tmp_path):

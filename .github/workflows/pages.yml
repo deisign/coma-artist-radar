@@ -46,8 +46,9 @@ jobs:
             --issue-limit 10 \
             --publish \
             --validate \
-            --base-url https://deisign.github.io/coma-artist-radar \
-            --base-path /coma-artist-radar
+            --base-url https://radar.coma.fm \
+            --base-path ""
+          printf 'radar.coma.fm\n' > dist/CNAME
 
       - name: Assert public issue quality
         run: |

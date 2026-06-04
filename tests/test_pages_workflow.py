@@ -41,9 +41,9 @@ def test_workflow_has_deploy_pages():
 def test_workflow_has_daily_draft_command():
     content = _content()
     assert "python scripts/build_daily_draft.py" in content
-    assert "--base-url https://deisign.github.io/coma-artist-radar" in content
-    assert "--base-path /coma-artist-radar" in content
-    assert "--fetch-limit 5" in content
+    assert "--base-url https://radar.coma.fm" in content
+    assert '--base-path ""' in content
+    assert "--fetch-limit 50" in content
     assert "--issue-limit 10" in content
 
 
@@ -73,12 +73,12 @@ def test_workflow_uses_ubuntu():
     assert "ubuntu-latest" in _content()
 
 
-def test_workflow_has_github_pages_base_url():
-    assert "https://deisign.github.io/coma-artist-radar" in _content()
+def test_workflow_has_custom_domain_base_url():
+    assert "https://radar.coma.fm" in _content()
 
 
-def test_workflow_has_base_path():
-    assert "--base-path /coma-artist-radar" in _content()
+def test_workflow_has_empty_base_path_for_custom_domain():
+    assert '--base-path ""' in _content()
 
 
 def test_workflow_builds_public_issue_with_deeper_fetch_and_publish():
@@ -91,3 +91,9 @@ def test_workflow_builds_public_issue_with_deeper_fetch_and_publish():
     assert "Assert public issue quality" in content
     assert "expected 10 items" in content
     assert "expected draft=false" in content
+
+
+def test_workflow_writes_pages_cname():
+    content = _content()
+    assert "radar.coma.fm" in content
+    assert "dist/CNAME" in content

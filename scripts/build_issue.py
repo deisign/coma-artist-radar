@@ -17,6 +17,7 @@ import sys
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(_REPO_ROOT) not in sys.path:
@@ -25,6 +26,7 @@ if str(_REPO_ROOT) not in sys.path:
 DEFAULT_DB = _REPO_ROOT / "data" / "coma_radar.sqlite"
 DEFAULT_TAGS = _REPO_ROOT / "data" / "tags.yaml"
 DEFAULT_THEMES = _REPO_ROOT / "data" / "visual_themes.yaml"
+DEFAULT_PUBLISHED_ITEMS_PATH = _REPO_ROOT / "data" / "published_items.json"
 DEFAULT_TEMPLATE = _REPO_ROOT / "templates" / "issue.html.j2"
 DEFAULT_CONTENT_DIR = _REPO_ROOT / "content" / "issues"
 DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
@@ -487,6 +489,78 @@ def _is_recent_issue_item(
     return False
 
 
+
+_TRACKING_QUERY_KEYS = {"fbclid", "gclid", "igshid", "mc_cid", "mc_eid"}
+_TRACKING_QUERY_PREFIXES = ("utm_",)
+
+
+def normalise_item_url(url: str) -> str:
+    """Return a stable URL key for published-item de-duplication."""
+    raw = str(url or "").strip()
+    if not raw:
+        return ""
+
+    parts = urlsplit(raw)
+    query_pairs = [
+        (key, value)
+        for key, value in parse_qsl(parts.query, keep_blank_values=True)
+        if not key.lower().startswith(_TRACKING_QUERY_PREFIXES)
+        and key.lower() not in _TRACKING_QUERY_KEYS
+    ]
+    path = parts.path.rstrip("/") if parts.path and parts.path != "/" else parts.path
+    return urlunsplit((
+        parts.scheme.lower(),
+        parts.netloc.lower(),
+        path,
+        urlencode(query_pairs, doseq=True),
+        "",
+    ))
+
+
+def _published_url_entries(data: object) -> list[object]:
+    """Return possible published ledger entries from supported JSON shapes."""
+    if isinstance(data, list):
+        return data
+    if isinstance(data, dict):
+        entries: list[object] = []
+        for key in ("items", "urls", "published_urls"):
+            value = data.get(key)
+            if isinstance(value, list):
+                entries.extend(value)
+        return entries
+    return []
+
+
+def load_published_item_urls(path: Path | None = None) -> set[str]:
+    """Load normalised URLs that were already published."""
+    ledger_path = path or DEFAULT_PUBLISHED_ITEMS_PATH
+    if not ledger_path.exists():
+        return set()
+
+    data = json.loads(ledger_path.read_text(encoding="utf-8"))
+    urls: set[str] = set()
+    for entry in _published_url_entries(data):
+        if isinstance(entry, str):
+            key = normalise_item_url(entry)
+        elif isinstance(entry, dict):
+            key = normalise_item_url(str(entry.get("url") or ""))
+        else:
+            key = ""
+        if key:
+            urls.add(key)
+    return urls
+
+
+def filter_unpublished_items(items: list[dict], published_urls: set[str]) -> list[dict]:
+    """Drop items whose normalised URL is already present in the published ledger."""
+    if not published_urls:
+        return items
+    return [
+        item for item in items
+        if normalise_item_url(str(item.get("url") or "")) not in published_urls
+    ]
+
+
 def load_items(
     db_path: Path,
     min_score: int = DEFAULT_MIN_SCORE,
@@ -925,6 +999,7 @@ def build_issue(
     recency_days: int | None = None,
     include_old_archive: bool = False,
     quality_gate: bool = False,
+    published_items_path: Path | None = None,
 ) -> dict:
     """Build HTML issue(s) and JSON drafts. Returns summary dict."""
     if issue_date is None:
@@ -941,6 +1016,10 @@ def build_issue(
         recency_days=recency_days,
         include_old_archive=include_old_archive,
     )
+    published_urls = load_published_item_urls(published_items_path or DEFAULT_PUBLISHED_ITEMS_PATH)
+    if published_urls:
+        raw_candidates = filter_unpublished_items(raw_candidates, published_urls)
+
     quality_evidence: list[dict] = []
     if quality_gate:
         raw_candidates, quality_evidence = apply_quality_gate(raw_candidates)

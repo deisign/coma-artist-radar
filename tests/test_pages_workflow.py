@@ -51,8 +51,8 @@ def test_workflow_has_pytest():
     assert "python -m pytest -q tests" in _content()
 
 
-def test_workflow_has_contents_read():
-    assert "contents: read" in _content()
+def test_workflow_has_contents_write_for_published_state_commit():
+    assert "contents: write" in _content()
 
 
 def test_workflow_has_concurrency():
@@ -97,3 +97,13 @@ def test_workflow_writes_pages_cname():
     content = _content()
     assert "radar.coma.fm" in content
     assert "dist/CNAME" in content
+
+
+def test_workflow_commits_published_issue_state():
+    content = _content()
+    assert "Commit published issue state" in content
+    assert "data/published_items.json" in content
+    assert "content/issues/${ISSUE_DATE}.en.json" in content
+    assert "content/issues/${ISSUE_DATE}.uk.json" in content
+    assert "[skip ci]" in content
+    assert "git push" in content

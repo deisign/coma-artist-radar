@@ -12,6 +12,7 @@ from scripts.build_issue import (
     load_items,
     load_published_item_urls,
     normalise_item_url,
+    update_published_items_ledger,
     load_tag_map,
     render_html,
 )
@@ -96,6 +97,62 @@ def test_filter_unpublished_items_uses_normalised_urls():
     published = {"https://example.com/old"}
     remaining = filter_unpublished_items(items, published)
     assert [item["url"] for item in remaining] == ["https://example.com/new"]
+
+
+
+
+def test_update_published_items_ledger_deduplicates_normalised_urls(tmp_path):
+    ledger_path = tmp_path / "published_items.json"
+    update_published_items_ledger(
+        ledger_path,
+        [
+            {
+                "id": 1,
+                "title": "Old Item",
+                "url": "https://example.com/old?utm_source=rss",
+                "source_name": "Example",
+            },
+            {
+                "id": 2,
+                "title": "Old Item Again",
+                "url": "https://example.com/old",
+                "source_name": "Example",
+            },
+        ],
+        issue_date="2026-01-01",
+        generated_at="2026-01-01T00:00:00Z",
+    )
+
+    data = json.loads(ledger_path.read_text(encoding="utf-8"))
+    assert len(data["items"]) == 1
+    assert data["items"][0]["normalised_url"] == "https://example.com/old"
+
+
+def test_build_issue_writes_published_ledger_only_when_not_draft(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, title="Published Item", url="https://example.com/item", score=90)
+
+    ledger_path = tmp_path / "published_items.json"
+    _run_build(
+        tmp_path,
+        db_path=db_path,
+        limit=1,
+        draft=False,
+        published_items_path=ledger_path,
+    )
+
+    data = json.loads(ledger_path.read_text(encoding="utf-8"))
+    assert data["items"][0]["url"] == "https://example.com/item"
+
+    draft_ledger_path = tmp_path / "draft_published_items.json"
+    _run_build(
+        tmp_path,
+        db_path=db_path,
+        limit=1,
+        draft=True,
+        published_items_path=draft_ledger_path,
+    )
+    assert not draft_ledger_path.exists()
 
 
 def test_build_issue_skips_urls_from_published_ledger(tmp_path):

@@ -551,6 +551,66 @@ def load_published_item_urls(path: Path | None = None) -> set[str]:
     return urls
 
 
+
+
+def update_published_items_ledger(
+    path: Path,
+    items: list[dict],
+    issue_date: str,
+    generated_at: str,
+) -> None:
+    """Persist selected published items so future issues can skip them."""
+    existing_items: list[dict] = []
+    existing_by_url: dict[str, dict] = {}
+
+    if path.exists():
+        data = json.loads(path.read_text(encoding="utf-8"))
+        for entry in _published_url_entries(data):
+            if isinstance(entry, dict):
+                url_key = normalise_item_url(str(entry.get("url") or ""))
+                if url_key:
+                    existing_by_url[url_key] = dict(entry)
+            elif isinstance(entry, str):
+                url_key = normalise_item_url(entry)
+                if url_key:
+                    existing_by_url[url_key] = {"url": entry, "normalised_url": url_key}
+
+    for item in items:
+        url = str(item.get("url") or "")
+        url_key = normalise_item_url(url)
+        if not url_key:
+            continue
+
+        previous = existing_by_url.get(url_key, {})
+        first_issue_date = previous.get("first_issue_date") or issue_date
+        existing_by_url[url_key] = {
+            "url": url,
+            "normalised_url": url_key,
+            "title": item.get("title", ""),
+            "source_name": item.get("source_name", ""),
+            "item_id": item.get("id"),
+            "first_issue_date": first_issue_date,
+            "last_issue_date": issue_date,
+        }
+
+    existing_items = sorted(
+        existing_by_url.values(),
+        key=lambda row: (str(row.get("first_issue_date") or ""), str(row.get("url") or "")),
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(
+            {
+                "generated_at": generated_at,
+                "items": existing_items,
+            },
+            ensure_ascii=False,
+            indent=2,
+        ) + "\n",
+        encoding="utf-8",
+    )
+
+
 def filter_unpublished_items(items: list[dict], published_urls: set[str]) -> list[dict]:
     """Drop items whose normalised URL is already present in the published ledger."""
     if not published_urls:
@@ -1113,6 +1173,14 @@ def build_issue(
             output_files.append(str(json_path.relative_to(_REPO_ROOT)))
         except ValueError:
             output_files.append(str(json_path))
+
+    ledger_path = published_items_path or DEFAULT_PUBLISHED_ITEMS_PATH
+    if not draft:
+        update_published_items_ledger(ledger_path, items, issue_date, now_iso)
+        try:
+            output_files.append(str(ledger_path.relative_to(_REPO_ROOT)))
+        except ValueError:
+            output_files.append(str(ledger_path))
 
     skipped_source = [e for e in diversity_evidence if e["reason"] == "skipped_by_source_cap"]
     skipped_artist = [e for e in diversity_evidence if e["reason"] == "skipped_by_artist_cap"]

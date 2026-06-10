@@ -106,4 +106,5 @@ def test_workflow_commits_published_issue_state():
     assert "content/issues/${ISSUE_DATE}.en.json" in content
     assert "content/issues/${ISSUE_DATE}.uk.json" in content
     assert "[skip ci]" in content
+    assert "git add -f content/issues/${ISSUE_DATE}.en.json content/issues/${ISSUE_DATE}.uk.json" in content
     assert "git push" in content

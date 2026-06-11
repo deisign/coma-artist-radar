@@ -1040,6 +1040,99 @@ def render_html(
 # Main pipeline
 # ---------------------------------------------------------------------------
 
+
+def _load_existing_published_issue_items(
+    content_dir: Path,
+    issue_date: str,
+    languages: list[str],
+) -> dict[str, list[dict]] | None:
+    """Load existing published issue items for requested languages, if complete."""
+    existing: dict[str, list[dict]] = {}
+    for lng in languages:
+        path = content_dir / f"{issue_date}.{lng}.json"
+        if not path.exists():
+            return None
+        data = json.loads(path.read_text(encoding="utf-8"))
+        if data.get("draft") is not False:
+            return None
+        existing[lng] = list(data.get("items") or [])
+    return existing
+
+
+def _write_issue_html_outputs(
+    *,
+    issue_date: str,
+    languages: list[str],
+    items_by_lang: dict[str, list[dict]],
+    tag_map: dict,
+    draft: bool,
+    template_path: Path,
+    content_dir: Path,
+    dist_dir: Path,
+    base_path: str,
+    with_cover: bool,
+    themes_path: Path,
+    tags_path: Path,
+    output_files: list[str],
+) -> None:
+    """Render issue HTML files from already selected items."""
+    cover_main_tag: str | None = None
+    first_items = next(iter(items_by_lang.values()), [])
+    if with_cover:
+        from scripts.generate_issue_cover import (
+            detect_main_tag_from_items as _detect_tag,
+            load_tags_typed as _load_tags_typed,
+        )
+        cover_main_tag = _detect_tag(enrich_items(first_items, tag_map), _load_tags_typed(tags_path))
+
+    for lng in languages:
+        items = enrich_items(items_by_lang.get(lng, []), tag_map)
+        cover_image_url: str | None = None
+        cover_alt = ""
+        if with_cover:
+            from scripts.generate_issue_cover import generate_issue_cover as _gen_cover
+            _gen_cover(
+                issue_date=issue_date,
+                lang=lng,
+                main_tag=cover_main_tag,
+                item_count=len(items),
+                dist_dir=dist_dir,
+                themes_path=themes_path,
+                content_dir=content_dir,
+            )
+            bp = normalize_base_path(base_path)
+            cover_image_url = f"{bp}/assets/covers/issues/{issue_date}/cover-{lng}.svg"
+            cover_alt = f"coma.fm Radar {issue_date}"
+
+        html_dir = dist_dir / lng / "issues"
+        html_dir.mkdir(parents=True, exist_ok=True)
+        html_path = html_dir / f"{issue_date}.html"
+        html_path.write_text(
+            render_html(
+                items,
+                issue_date,
+                lng,
+                draft,
+                template_path,
+                base_path,
+                cover_image_url,
+                cover_alt,
+            ),
+            encoding="utf-8",
+        )
+        try:
+            output_files.append(str(html_path.relative_to(_REPO_ROOT)))
+        except ValueError:
+            output_files.append(str(html_path))
+
+        json_path = content_dir / f"{issue_date}.{lng}.json"
+        if json_path.exists():
+            try:
+                output_files.append(str(json_path.relative_to(_REPO_ROOT)))
+            except ValueError:
+                output_files.append(str(json_path))
+
+
 def build_issue(
     db_path: Path = DEFAULT_DB,
     issue_date: str | None = None,
@@ -1067,6 +1160,49 @@ def build_issue(
 
     languages = [lang] if lang else ["en", "uk"]
     tag_map = load_tag_map(tags_path)
+
+    existing_published = None
+    if not draft:
+        existing_published = _load_existing_published_issue_items(
+            content_dir,
+            issue_date,
+            languages,
+        )
+    if existing_published is not None:
+        output_files: list[str] = []
+        _write_issue_html_outputs(
+            issue_date=issue_date,
+            languages=languages,
+            items_by_lang=existing_published,
+            tag_map=tag_map,
+            draft=draft,
+            template_path=template_path,
+            content_dir=content_dir,
+            dist_dir=dist_dir,
+            base_path=base_path,
+            with_cover=with_cover,
+            themes_path=themes_path,
+            tags_path=tags_path,
+            output_files=output_files,
+        )
+        first_items = next(iter(existing_published.values()), [])
+        return {
+            "issue_date": issue_date,
+            "languages": languages,
+            "selected_items": len(first_items),
+            "output_files": output_files,
+            "draft": draft,
+            "reused_existing_published_issue": True,
+            "recency_days": recency_days,
+            "include_old_archive": include_old_archive,
+            "quality_gate": quality_gate,
+            "quality_evidence": {"skipped_by_quality_gate": []},
+            "diversity_evidence": {
+                "skipped_by_source_cap": [],
+                "skipped_by_artist_cap": [],
+            },
+        }
+
     candidate_limit = max(limit * 5, limit)
     raw_candidates = load_items(
         db_path,

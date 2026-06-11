@@ -128,6 +128,60 @@ def test_update_published_items_ledger_deduplicates_normalised_urls(tmp_path):
     assert data["items"][0]["normalised_url"] == "https://example.com/old"
 
 
+
+
+def test_build_issue_reuses_existing_published_issue_without_reselecting(tmp_path):
+    db_path = _make_db(tmp_path)
+    _insert_item(db_path, title="New Candidate", url="https://example.com/new", score=100)
+
+    content_dir = tmp_path / "content" / "issues"
+    content_dir.mkdir(parents=True)
+    for lng in ("en", "uk"):
+        (content_dir / f"2026-01-01.{lng}.json").write_text(
+            json.dumps(
+                {
+                    "issue_date": "2026-01-01",
+                    "lang": lng,
+                    "draft": False,
+                    "items": [
+                        {
+                            "id": 7,
+                            "title": "Existing Published",
+                            "url": "https://example.com/existing",
+                            "source_name": "Existing Source",
+                            "signal_type": "review",
+                            "field_evidence": [],
+                            "published_at": "2026-01-01",
+                            "score": 90,
+                            "matched_artists": "",
+                            "matched_tags": "country",
+                            "matched_genres": "country",
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+    summary = _run_build(
+        tmp_path,
+        db_path=db_path,
+        issue_date="2026-01-01",
+        draft=False,
+        limit=1,
+    )
+
+    assert summary["reused_existing_published_issue"] is True
+
+    data = json.loads((content_dir / "2026-01-01.en.json").read_text(encoding="utf-8"))
+    assert [item["title"] for item in data["items"]] == ["Existing Published"]
+
+    html = (tmp_path / "dist" / "en" / "issues" / "2026-01-01.html").read_text(encoding="utf-8")
+    assert "Existing Published" in html
+    assert "New Candidate" not in html
+
+
+
 def test_build_issue_writes_published_ledger_only_when_not_draft(tmp_path):
     db_path = _make_db(tmp_path)
     _insert_item(db_path, title="Published Item", url="https://example.com/item", score=90)

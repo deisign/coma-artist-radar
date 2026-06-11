@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T10:48:03Z",
+  "generated_at": "2026-06-11T10:57:40Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -90,6 +90,96 @@
       "item_id": 599,
       "first_issue_date": "2026-06-10",
       "last_issue_date": "2026-06-10"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/goofin-records/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/goofin-records",
+      "title": "Goofin’ Records",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 369,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/whistle-bait/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/whistle-bait",
+      "title": "Whistle Bait",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 370,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://americansongwriter.com/21-years-ago-today-carrie-underwood-stepped-into-country-musics-most-sacred-circle-for-the-first-time-with-a-roy-orbison-tearjerker/",
+      "normalised_url": "https://americansongwriter.com/21-years-ago-today-carrie-underwood-stepped-into-country-musics-most-sacred-circle-for-the-first-time-with-a-roy-orbison-tearjerker",
+      "title": "21 Years Ago Today, Carrie Underwood Stepped Into Country Music’s Most Sacred Circle for the First Time With a Roy Orbison Tearjerker",
+      "source_name": "American Songwriter",
+      "item_id": 82,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://nodepression.org/album-review-alex-amen-is-rooted-in-reverence-alive-in-the-present-on-debut-sun-of-amen/",
+      "normalised_url": "https://nodepression.org/album-review-alex-amen-is-rooted-in-reverence-alive-in-the-present-on-debut-sun-of-amen",
+      "title": "ALBUM REVIEW: Alex Amen is Rooted in Reverence, Alive in the Present on Debut, ‘Sun of Amen’",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://nodepression.org/album-review-duane-betts-cinematic-isle-of-hope/",
+      "normalised_url": "https://nodepression.org/album-review-duane-betts-cinematic-isle-of-hope",
+      "title": "ALBUM REVIEW: Duane Betts' Cinematic ‘Isle of Hope’",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-charlie-maries-signs/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-charlie-maries-signs",
+      "normalised_url": "https://savingcountrymusic.com/album-review-charlie-maries-signs",
+      "title": "Album Review – Charlie Marie’s “Signs”",
+      "source_name": "Saving Country Music",
+      "item_id": 32,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-the-red-clay-strays-grateful/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-the-red-clay-strays-grateful",
+      "normalised_url": "https://savingcountrymusic.com/album-review-the-red-clay-strays-grateful",
+      "title": "Album Review – The Red Clay Strays – “Grateful”",
+      "source_name": "Saving Country Music",
+      "item_id": 33,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://www.americanadaily.com/2026/06/charley-crockett-honky-tonk-philosophy.html",
+      "normalised_url": "https://www.americanadaily.com/2026/06/charley-crockett-honky-tonk-philosophy.html",
+      "title": "Charley Crockett - Honky Tonk Philosophy",
+      "source_name": "Americana Daily",
+      "item_id": 380,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/05/in-search-of-rare-surf-instrumental.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/05/in-search-of-rare-surf-instrumental.html",
+      "title": "In Search of Rare Surf Instrumental Vinyl",
+      "source_name": "Surf Music and Art",
+      "item_id": 347,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/05/thebabalooneysgoinforit.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/05/thebabalooneysgoinforit.html",
+      "title": "Surf Instrumental Review: The Babalooneys-Goin' For It!",
+      "source_name": "Surf Music and Art",
+      "item_id": 346,
+      "first_issue_date": "2026-06-11",
+      "last_issue_date": "2026-06-11"
     }
   ]
 }

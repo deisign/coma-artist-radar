@@ -1,0 +1,216 @@
+{
+  "issue_date": "2026-06-12",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-12T10:40:05Z",
+  "min_score": 30,
+  "total_items": 10,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Samantha Fish Burns the House Down",
+      "url": "https://nodepression.org/album-review-samantha-fish-burns-the-house-down/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-06-11",
+      "score": 100,
+      "matched_artists": "Samantha Fish",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 9,
+      "title": "ALBUM REVIEW: Charlie Marie Finds Herself in the Great Unknown on ‘Signs’",
+      "url": "https://nodepression.org/album-review-charlie-marie-finds-herself-in-the-great-unknown-on-signs/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-05",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 374,
+      "title": "Surf Instrumental Review & Interview: Thee Leviathans-Enter The Dusky Realm",
+      "url": "https://www.surfmusicandart.com/2026/06/theeleviathansentertheduskyrealm.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-11",
+      "score": 65,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, interview",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 39,
+      "title": "Album Review – Colby Acuff’s “Handmade Horsepower”",
+      "url": "https://savingcountrymusic.com/album-review-colby-acuffs-handmade-horsepower/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-colby-acuffs-handmade-horsepower",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-05",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 583,
+      "title": "Review: Samantha Fish ‘Paper Doll Live’",
+      "url": "https://rockandbluesmuse.com/2026/06/10/review-samantha-fish-paper-doll-live/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-06-10",
+      "score": 40,
+      "matched_artists": "Samantha Fish",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 36,
+      "title": "Surging Bluegrass Band Mountain Grass Unit Announce New Album",
+      "url": "https://savingcountrymusic.com/surging-bluegrass-band-mountain-grass-unit-announce-new-album/?utm_source=rss&utm_medium=rss&utm_campaign=surging-bluegrass-band-mountain-grass-unit-announce-new-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-06-06",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 437,
+      "title": "Delta Blues Museum Marks Howlin’ Wolf Birthday Month, Receives Arts Commission Grant",
+      "url": "https://www.americanbluesscene.com/2026/06/delta-blues-museum-marks-howlin-wolf-birthday-month-receives-arts-commission-grant/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-06-02",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "blues, delta_blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 403,
+      "title": "Hal Peters trio / and his trio / and his Stringdusters",
+      "url": "http://www.the-rockabilly-chronicle.com/hal-peters/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-07",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 404,
+      "title": "The Barnshakers",
+      "url": "http://www.the-rockabilly-chronicle.com/the-barnshakers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-07",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 117,
+      "title": "The Best Country Music on Bandcamp, May 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-may-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-04",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

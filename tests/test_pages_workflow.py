@@ -108,3 +108,25 @@ def test_workflow_commits_published_issue_state():
     assert "[skip ci]" in content
     assert "git add -f content/issues/${ISSUE_DATE}.en.json content/issues/${ISSUE_DATE}.uk.json" in content
     assert "git push" in content
+
+
+def test_workflow_has_telegram_job_after_deploy():
+    content = _content()
+    assert "telegram:" in content
+    assert "needs: deploy" in content
+    assert "github.event_name != 'push'" in content
+
+
+def test_workflow_sends_telegram_from_secrets():
+    content = _content()
+    assert "TELEGRAM_BOT_TOKEN" in content
+    assert "TELEGRAM_CHAT_ID" in content
+    assert "python scripts/send_telegram.py" in content
+    assert "--send" in content
+    assert "--lang uk" in content
+
+
+def test_workflow_commits_telegram_post_state():
+    content = _content()
+    assert "data/telegram_posts.json" in content
+    assert "Record Telegram Radar post ${ISSUE_DATE} [skip ci]" in content

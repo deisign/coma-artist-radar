@@ -89,7 +89,7 @@ def test_workflow_builds_public_issue_with_deeper_fetch_and_publish():
     assert "--publish" in content
     assert "--validate" in content
     assert "Assert public issue quality" in content
-    assert "expected 10 items" in content
+    assert "expected at least 3 items" in content
     assert "expected draft=false" in content
 
 

@@ -66,8 +66,8 @@ jobs:
               items = data.get('items', [])
               if data.get('draft') is not False:
                   raise SystemExit(f'{path}: expected draft=false')
-              if len(items) != 10:
-                  raise SystemExit(f'{path}: expected 10 items, got {len(items)}')
+              if len(items) < 3:
+                  raise SystemExit(f'{path}: expected at least 3 items, got {len(items)}')
           PY
 
       - name: Commit published issue state

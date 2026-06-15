@@ -16,8 +16,8 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
-DEFAULT_BASE_URL = "https://deisign.github.io/coma-artist-radar"
-DEFAULT_BASE_PATH = "/coma-artist-radar"
+DEFAULT_BASE_URL = "https://radar.coma.fm"
+DEFAULT_BASE_PATH = ""
 DEFAULT_MAX_CHARS = 1024
 DEFAULT_LIMIT_ITEMS = 3
 

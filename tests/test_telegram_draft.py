@@ -117,6 +117,13 @@ def test_text_contains_radar_header(tmp_path):
 # URL construction with base_path
 # ---------------------------------------------------------------------------
 
+def test_default_issue_url_uses_radar_domain(tmp_path):
+    summary = build_telegram_draft(**_kwargs(tmp_path, "2026-05-25", "uk"))
+    assert DEFAULT_BASE_URL == "https://radar.coma.fm"
+    assert DEFAULT_BASE_PATH == ""
+    assert summary["issue_url"] == "https://radar.coma.fm/uk/issues/2026-05-25.html"
+
+
 def test_issue_url_contains_base_path(tmp_path):
     # base_url already includes the base path; issue_url is base_url + /lang/issues/date.html
     summary = build_telegram_draft(

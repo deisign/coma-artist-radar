@@ -34,8 +34,8 @@ DEFAULT_SOURCES = _REPO_ROOT / "data" / "sources_music.yaml"
 DEFAULT_INBOX = _REPO_ROOT / "inbox" / "manual.md"
 DEFAULT_CONTENT_DIR = _REPO_ROOT / "content" / "issues"
 DEFAULT_DIST_DIR = _REPO_ROOT / "dist"
-DEFAULT_BASE_URL = "https://deisign.github.io/coma-artist-radar"
-DEFAULT_BASE_PATH = "/coma-artist-radar"
+DEFAULT_BASE_URL = "https://radar.coma.fm"
+DEFAULT_BASE_PATH = ""
 DEFAULT_MIN_SCORE = 30
 DEFAULT_ISSUE_LIMIT = 10
 

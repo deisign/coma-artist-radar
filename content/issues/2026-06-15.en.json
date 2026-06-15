@@ -1,0 +1,159 @@
+{
+  "issue_date": "2026-06-15",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-15T09:11:00Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 480,
+      "title": "Roadhouse Album Review: John Primer and Friends create memorable Chicago blues with “Tribute to Theresa’s Lounge”",
+      "url": "https://bluesroadhouse.com/2026/06/12/roadhouse-album-review-john-primer-and-friends-create-memorable-chicago-blues-with-tribute-to-theresas-lounge/",
+      "source_name": "Blues Roadhouse",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-06-13",
+      "score": 80,
+      "matched_artists": "Chicago",
+      "matched_tags": "blues, chicago_blues, review",
+      "matched_genres": "blues, jazz"
+    },
+    {
+      "id": 15,
+      "title": "ALBUM REVIEW: Futurebirds Take Flight on ‘Far Out Country’",
+      "url": "https://nodepression.org/album-review-futurebirds-take-flight-on-far-out-country/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-03",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 596,
+      "title": "Album Review: Samantha Fish Delivers a Stunning Performance on Paper Doll Live",
+      "url": "https://www.thebluesmagazine.com/samantha-fish-paper-doll-live-album-review/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-06-14",
+      "score": 55,
+      "matched_artists": "Samantha Fish",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Midland’s “Stages”",
+      "url": "https://savingcountrymusic.com/album-review-midlands-stages/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-midlands-stages",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-13",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 28,
+      "title": "American Aquarium Finds “New Ways To Lose” on Upcoming Album",
+      "url": "https://savingcountrymusic.com/american-aquarium-finds-new-ways-to-lose-on-upcoming-album/?utm_source=rss&utm_medium=rss&utm_campaign=american-aquarium-finds-new-ways-to-lose-on-upcoming-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-12",
+      "score": 65,
+      "matched_artists": "American Aquarium",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 168,
+      "title": "Dead Strong Address Political Greenwashing On New Single “It’s All Her Fault”",
+      "url": "https://www.thepunksite.com/news/dead-strong-address-political-greenwashing-on-new-single-its-all-her-fault/",
+      "source_name": "The Punk Site",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-12",
+      "score": 40,
+      "matched_artists": "Al Green",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: World Cup Fever, New Music From Wynona, Peggy Seeger, American Aquarium, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-world-cup-fever-new-music-from-wynona-peggy-seeger-american-aquarium-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-06-12",
+      "score": 90,
+      "matched_artists": "American Aquarium",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    }
+  ]
+}

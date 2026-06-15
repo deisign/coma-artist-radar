@@ -295,24 +295,119 @@ def test_send_telegram_dry_run_no_network(tmp_path, monkeypatch):
     )
 
 
-def test_send_telegram_send_flag_returns_nonzero():
+def test_send_telegram_send_flag_returns_nonzero_without_credentials():
     from scripts.send_telegram import main
     result = main(["--date", "2026-05-25", "--lang", "uk", "--send"])
     assert result != 0
 
 
-def test_send_telegram_send_flag_prints_error(capsys):
+def test_send_telegram_send_flag_prints_credentials_error(capsys):
     from scripts.send_telegram import main
     main(["--date", "2026-05-25", "--lang", "uk", "--send"])
     captured = capsys.readouterr()
     combined = captured.out + captured.err
-    assert "not implemented" in combined.lower()
+    assert "TELEGRAM_BOT_TOKEN" in combined
+    assert "TELEGRAM_CHAT_ID" in combined
 
 
-def test_send_telegram_send_raises_runtime_error():
+def test_send_telegram_send_raises_without_credentials(tmp_path, monkeypatch):
     from scripts.send_telegram import run_send
-    with pytest.raises(RuntimeError, match="not implemented"):
-        run_send(date="2026-05-25", lang="uk", send=True)
+
+    monkeypatch.delenv("TELEGRAM_BOT_TOKEN", raising=False)
+    monkeypatch.delenv("TELEGRAM_CHAT_ID", raising=False)
+
+    content_dir = tmp_path / "content" / "issues"
+    _make_issue(content_dir, "2026-05-25", "uk")
+
+    with pytest.raises(RuntimeError, match="TELEGRAM_BOT_TOKEN"):
+        run_send(
+            date="2026-05-25",
+            lang="uk",
+            send=True,
+            content_dir=content_dir,
+            dist_dir=tmp_path / "dist",
+            reports_dir=tmp_path / "reports" / "telegram",
+            posts_path=tmp_path / "data" / "telegram_posts.json",
+        )
+
+
+def test_send_telegram_send_records_post_ledger(tmp_path, monkeypatch):
+    from scripts import send_telegram
+
+    content_dir = tmp_path / "content" / "issues"
+    _make_issue(content_dir, "2026-05-25", "uk")
+
+    def fake_send(*, bot_token, chat_id, text):
+        assert bot_token == "token"
+        assert chat_id == "@channel"
+        assert "coma.fm Radar" in text
+        return {"ok": True, "result": {"message_id": 123}}
+
+    monkeypatch.setattr(send_telegram, "send_telegram_message", fake_send)
+
+    posts_path = tmp_path / "data" / "telegram_posts.json"
+    summary = send_telegram.run_send(
+        date="2026-05-25",
+        lang="uk",
+        send=True,
+        bot_token="token",
+        chat_id="@channel",
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        reports_dir=tmp_path / "reports" / "telegram",
+        posts_path=posts_path,
+    )
+
+    assert summary["posted"] is True
+    assert summary["message_id"] == 123
+
+    data = json.loads(posts_path.read_text(encoding="utf-8"))
+    assert data["posts"][0]["issue_date"] == "2026-05-25"
+    assert data["posts"][0]["lang"] == "uk"
+    assert data["posts"][0]["message_id"] == 123
+
+
+def test_send_telegram_send_skips_already_recorded_post(tmp_path, monkeypatch):
+    from scripts import send_telegram
+
+    content_dir = tmp_path / "content" / "issues"
+    _make_issue(content_dir, "2026-05-25", "uk")
+
+    posts_path = tmp_path / "data" / "telegram_posts.json"
+    posts_path.parent.mkdir(parents=True)
+    posts_path.write_text(
+        json.dumps({
+            "posts": [
+                {
+                    "issue_date": "2026-05-25",
+                    "lang": "uk",
+                    "issue_url": "https://radar.coma.fm/uk/issues/2026-05-25.html",
+                }
+            ]
+        }),
+        encoding="utf-8",
+    )
+
+    def fail_send(*a, **kw):
+        raise AssertionError("unexpected Telegram send")
+
+    monkeypatch.setattr(send_telegram, "send_telegram_message", fail_send)
+
+    summary = send_telegram.run_send(
+        date="2026-05-25",
+        lang="uk",
+        send=True,
+        bot_token="token",
+        chat_id="@channel",
+        content_dir=content_dir,
+        dist_dir=tmp_path / "dist",
+        reports_dir=tmp_path / "reports" / "telegram",
+        posts_path=posts_path,
+    )
+
+    assert summary["posted"] is False
+    assert summary["skipped"] is True
+    assert "already recorded" in summary["reason"]
 
 
 # ---------------------------------------------------------------------------

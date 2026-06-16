@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T09:11:00Z",
+  "generated_at": "2026-06-16T11:33:02Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -333,6 +333,69 @@
       "item_id": 168,
       "first_issue_date": "2026-06-15",
       "last_issue_date": "2026-06-15"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/lew-lewis/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/lew-lewis",
+      "title": "Lew Lewis",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 369,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://nodepression.org/no-depression-sessions-at-chelsea-studios-nyc-joe-pernice/",
+      "normalised_url": "https://nodepression.org/no-depression-sessions-at-chelsea-studios-nyc-joe-pernice",
+      "title": "NO DEPRESSION SESSIONS at Chelsea Studios NYC: Joe Pernice",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://nodepression.org/spotlight-river-shook-finds-security-in-the-unknown-on-self-titled-solo-debut/",
+      "normalised_url": "https://nodepression.org/spotlight-river-shook-finds-security-in-the-unknown-on-self-titled-solo-debut",
+      "title": "SPOTLIGHT: River Shook Finds Security in The Unknown on Self-Titled Solo Debut",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://savingcountrymusic.com/bronwyn-announces-new-name-new-album/?utm_source=rss&utm_medium=rss&utm_campaign=bronwyn-announces-new-name-new-album",
+      "normalised_url": "https://savingcountrymusic.com/bronwyn-announces-new-name-new-album",
+      "title": "“Bronwyn” Announces New Name, New Album",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-viewing-options-open-up-for-alan-jacksons-final-concert/?utm_source=rss&utm_medium=rss&utm_campaign=new-viewing-options-open-up-for-alan-jacksons-final-concert",
+      "normalised_url": "https://savingcountrymusic.com/new-viewing-options-open-up-for-alan-jacksons-final-concert",
+      "title": "New Viewing Options Open Up for Alan Jackson’s Final Concert",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://www.americanadaily.com/2026/06/american-aquarium-history-repeats-itself.html",
+      "normalised_url": "https://www.americanadaily.com/2026/06/american-aquarium-history-repeats-itself.html",
+      "title": "American Aquarium - History Repeats Itself",
+      "source_name": "Americana Daily",
+      "item_id": 376,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
+    },
+    {
+      "url": "https://www.americanadaily.com/2026/06/the-dead-south-rox-in-box_01833978822.html",
+      "normalised_url": "https://www.americanadaily.com/2026/06/the-dead-south-rox-in-box_01833978822.html",
+      "title": "The Dead South - Rox in the Box",
+      "source_name": "Americana Daily",
+      "item_id": 375,
+      "first_issue_date": "2026-06-16",
+      "last_issue_date": "2026-06-16"
     }
   ]
 }

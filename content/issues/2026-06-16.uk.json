@@ -1,0 +1,151 @@
+{
+  "issue_date": "2026-06-16",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-16T11:33:02Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 27,
+      "title": "“Bronwyn” Announces New Name, New Album",
+      "url": "https://savingcountrymusic.com/bronwyn-announces-new-name-new-album/?utm_source=rss&utm_medium=rss&utm_campaign=bronwyn-announces-new-name-new-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-06-15",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "SPOTLIGHT: River Shook Finds Security in The Unknown on Self-Titled Solo Debut",
+      "url": "https://nodepression.org/spotlight-river-shook-finds-security-in-the-unknown-on-self-titled-solo-debut/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-06-15",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 3,
+      "title": "NO DEPRESSION SESSIONS at Chelsea Studios NYC: Joe Pernice",
+      "url": "https://nodepression.org/no-depression-sessions-at-chelsea-studios-nyc-joe-pernice/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-12",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 375,
+      "title": "The Dead South - Rox in the Box",
+      "url": "https://www.americanadaily.com/2026/06/the-dead-south-rox-in-box_01833978822.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-16",
+      "score": 60,
+      "matched_artists": "The Dead South",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 369,
+      "title": "Lew Lewis",
+      "url": "http://www.the-rockabilly-chronicle.com/lew-lewis/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-15",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "New Viewing Options Open Up for Alan Jackson’s Final Concert",
+      "url": "https://savingcountrymusic.com/new-viewing-options-open-up-for-alan-jacksons-final-concert/?utm_source=rss&utm_medium=rss&utm_campaign=new-viewing-options-open-up-for-alan-jacksons-final-concert",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-15",
+      "score": 50,
+      "matched_artists": "Alan Jackson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 376,
+      "title": "American Aquarium - History Repeats Itself",
+      "url": "https://www.americanadaily.com/2026/06/american-aquarium-history-repeats-itself.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-15",
+      "score": 40,
+      "matched_artists": "American Aquarium",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

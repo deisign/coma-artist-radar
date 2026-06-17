@@ -1,0 +1,154 @@
+{
+  "issue_date": "2026-06-17",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-17T07:52:59Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Mack Geiger’s “Walk a Straight Line”",
+      "url": "https://savingcountrymusic.com/album-review-mack-geigers-walk-a-straight-line/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-mack-geigers-walk-a-straight-line",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-16",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 33,
+      "title": "Album Review – Alex Amen’s “Sun of Amen”",
+      "url": "https://savingcountrymusic.com/album-review-alex-amens-sun-of-amen/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-alex-amens-sun-of-amen",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-12",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 441,
+      "title": "Billy Price – Random Madness |Album Review",
+      "url": "https://www.bluesblastmagazine.com/billy-price-random-madness-album-review/",
+      "source_name": "Blues Blast Magazine",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-06-17",
+      "score": 40,
+      "matched_artists": "Madness",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 566,
+      "title": "Sparks In Outer Space: Part Deux As “Live On The Moon” Album Preps For Takeoff",
+      "url": "https://postpunkmonk.com/2026/06/16/sparks-in-outer-space-part-deux-as-live-on-the-moon-album-preps-for-takeoff/",
+      "source_name": "Post-Punk Monk",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-16",
+      "score": 40,
+      "matched_artists": "Outer Space",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 503,
+      "title": "Ceremony announce new album, release \"Death Destruction Mayhem\" video, to tour North America",
+      "url": "https://www.punknews.org/article/88450/ceremony-announce-new-album-release-death-destruction-mayhem-video-to-tour-north-america",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Video signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Video signal · Source signal",
+      "editorial_angle": "Video signal from the coma.fm artist field.",
+      "published_at": "2026-06-16",
+      "score": 40,
+      "matched_artists": "America",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "‘A Trip In The Country’ Proved Roger Miller Was More Than a Novelty",
+      "url": "https://nodepression.org/a-trip-in-the-country-proved-roger-miller-was-more-than-a-novelty/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-16",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: Rooster Walk & Railbird Festivals Offered Contrasting Takes On Appalachian Music Festivals",
+      "url": "https://nodepression.org/through-the-lens-rooster-walk-railbird-festivals-offered-contrasting-takes-on-appalachian-music-festivals/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-16",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    }
+  ]
+}

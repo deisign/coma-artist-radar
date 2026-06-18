@@ -91,26 +91,36 @@ def test_en_text_contains_full_issue(tmp_path):
     assert "Full issue" in text
 
 
-def test_uk_text_contains_sogodni_v_poli(tmp_path):
+def test_uk_text_contains_sogodni_v_daidzhesti(tmp_path):
     kw = _kwargs(tmp_path, "2026-05-25", "uk")
     build_telegram_draft(**kw)
     text = (kw["reports_dir"] / "2026-05-25.uk.txt").read_text(encoding="utf-8")
-    assert "Сьогодні в полі" in text
+    assert "Сьогодні в дайджесті" in text
 
 
-def test_en_text_contains_in_the_field_today(tmp_path):
+def test_en_text_contains_in_todays_digest(tmp_path):
     kw = _kwargs(tmp_path, "2026-05-25", "en")
     build_telegram_draft(**kw)
     text = (kw["reports_dir"] / "2026-05-25.en.txt").read_text(encoding="utf-8")
-    assert "In the field today" in text
+    assert "In today's digest" in text
 
 
 def test_text_contains_radar_header(tmp_path):
     kw = _kwargs(tmp_path, "2026-05-25", "uk")
     build_telegram_draft(**kw)
     text = (kw["reports_dir"] / "2026-05-25.uk.txt").read_text(encoding="utf-8")
-    assert "coma.fm Radar" in text
+    assert "<b>coma.fm Radar</b>" in text
     assert "2026-05-25" in text
+
+
+def test_text_uses_telegram_html_markup(tmp_path):
+    kw = _kwargs(tmp_path, "2026-05-25", "uk")
+    build_telegram_draft(**kw)
+    text = (kw["reports_dir"] / "2026-05-25.uk.txt").read_text(encoding="utf-8")
+    assert "<b>Сьогодні в дайджесті:</b>" in text
+    assert "<b>Test Article 1:" in text
+    assert "<code>rockabilly</code>" in text
+    assert "<code>psychobilly</code>" in text
 
 
 # ---------------------------------------------------------------------------
@@ -177,9 +187,9 @@ def test_max_chars_respected(tmp_path):
     assert summary["chars"] <= 200
 
 
-def test_max_chars_default_1024(tmp_path):
+def test_max_chars_default_3500(tmp_path):
     summary = build_telegram_draft(**_kwargs(tmp_path, "2026-05-25", "uk"))
-    assert summary["max_chars"] == 1024
+    assert summary["max_chars"] == 3500
 
 
 def test_chars_in_summary(tmp_path):
@@ -293,6 +303,46 @@ def test_send_telegram_dry_run_no_network(tmp_path, monkeypatch):
         dist_dir=tmp_path / "dist",
         reports_dir=tmp_path / "reports" / "telegram",
     )
+
+
+def test_send_telegram_message_uses_html_parse_mode(monkeypatch):
+    import json
+    import urllib.parse
+    import urllib.request
+
+    from scripts.send_telegram import send_telegram_message
+
+    captured = {}
+
+    class FakeResponse:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc):
+            return False
+
+        def read(self):
+            return json.dumps({
+                "ok": True,
+                "result": {"message_id": 123},
+            }).encode("utf-8")
+
+    def fake_urlopen(request, timeout):
+        captured["data"] = request.data.decode("utf-8")
+        captured["timeout"] = timeout
+        return FakeResponse()
+
+    monkeypatch.setattr(urllib.request, "urlopen", fake_urlopen)
+
+    send_telegram_message(
+        bot_token="token",
+        chat_id="@radiocoma",
+        text="<b>coma.fm Radar</b>",
+    )
+
+    payload = urllib.parse.parse_qs(captured["data"])
+    assert payload["parse_mode"] == ["HTML"]
+    assert payload["disable_web_page_preview"] == ["false"]
 
 
 def test_send_telegram_send_flag_returns_nonzero_without_credentials():

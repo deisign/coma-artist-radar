@@ -102,6 +102,7 @@ def send_telegram_message(*, bot_token: str, chat_id: str, text: str) -> dict[st
     payload = urllib.parse.urlencode({
         "chat_id": chat_id,
         "text": text,
+        "parse_mode": "HTML",
         "disable_web_page_preview": "false",
     }).encode("utf-8")
     request = urllib.request.Request(url, data=payload, method="POST")

@@ -8,6 +8,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import sys
 from pathlib import Path
@@ -18,8 +19,8 @@ if str(_REPO_ROOT) not in sys.path:
 
 DEFAULT_BASE_URL = "https://radar.coma.fm"
 DEFAULT_BASE_PATH = ""
-DEFAULT_MAX_CHARS = 1024
-DEFAULT_LIMIT_ITEMS = 3
+DEFAULT_MAX_CHARS = 3500
+DEFAULT_LIMIT_ITEMS = 10
 
 CONTENT_DIR = _REPO_ROOT / "content" / "issues"
 DIST_DIR = _REPO_ROOT / "dist"
@@ -41,45 +42,76 @@ def _music_tags(tags_str: str, max_tags: int = 3) -> str:
     if not tags_str:
         return ""
     parts = [t.strip().replace("_", "-") for t in tags_str.split(",")]
-    music = [t for t in parts if t and t not in _EDITORIAL_TAGS]
+    music: list[str] = []
+    seen: set[str] = set()
+    for tag in parts:
+        if not tag or tag in _EDITORIAL_TAGS or tag in seen:
+            continue
+        seen.add(tag)
+        music.append(tag)
     return ", ".join(music[:max_tags])
 
 
-def _short_title(title: str, max_len: int = 80) -> str:
+def _short_title(title: str, max_len: int = 96) -> str:
     t = title.strip()
     if len(t) <= max_len:
         return t
     return t[: max_len - 1].rstrip() + "…"
 
 
-def _render_post(date: str, lang: str, issue_url: str, items: list[dict]) -> str:
-    """Render the Telegram post as plain text.
+_SIGNAL_EMOJI = {
+    "review": "🎧",
+    "release": "💿",
+    "video": "🎬",
+    "interview": "🎙️",
+    "podcast": "🎙️",
+    "signal": "🛰️",
+}
 
-    Produces output matching templates/telegram_post.txt.j2.
-    Plain text only — no HTML escaping, no external dependencies.
-    """
+
+def _html(value: str) -> str:
+    return html.escape(value or "", quote=False)
+
+
+def _tag_markup(tags_str: str) -> str:
+    if not tags_str:
+        return ""
+    tags = [t.strip() for t in tags_str.split(",") if t.strip()]
+    return " ".join(f"<code>{_html(tag)}</code>" for tag in tags)
+
+
+def _render_post(date: str, lang: str, issue_url: str, items: list[dict]) -> str:
+    """Render the Telegram post as Telegram HTML."""
     if lang == "uk":
-        section_label = "Сьогодні в полі:"
+        section_label = "Сьогодні в дайджесті:"
         footer_label = "Повний випуск:"
     else:
-        section_label = "In the field today:"
+        section_label = "In today's digest:"
         footer_label = "Full issue:"
 
-    item_lines = []
+    item_blocks = []
     for item in items:
-        line = f"— {item['title_short']}"
-        if item.get("tags_str"):
-            line += f" [{item['tags_str']}]"
-        item_lines.append(line)
+        emoji = _SIGNAL_EMOJI.get(item.get("signal_type") or "", "🛰️")
+        title = _html(item["title_short"])
+        source = _html(item.get("source_name") or "")
+        tags = _tag_markup(item.get("tags_str") or "")
+
+        block_lines = [f"{emoji} <b>{title}</b>"]
+        meta_parts = [part for part in (source, tags) if part]
+        if meta_parts:
+            block_lines.append(" · ".join(meta_parts))
+        item_blocks.append("\n".join(block_lines))
 
     parts = [
-        f"📡 coma.fm Radar — {date}",
+        "📡 <b>coma.fm Radar</b>",
+        date,
         "",
-        section_label,
-        *item_lines,
+        f"<b>{section_label}</b>",
         "",
-        footer_label,
-        issue_url,
+        "\n\n".join(item_blocks),
+        "",
+        f"<b>{footer_label}</b>",
+        _html(issue_url),
     ]
     return "\n".join(parts)
 
@@ -130,9 +162,18 @@ def build_telegram_draft(
     selected = all_items[:limit_items]
 
     def make_item(raw: dict) -> dict:
+        tag_source = ",".join(
+            part for part in (
+                raw.get("matched_tags", ""),
+                raw.get("matched_genres", ""),
+            )
+            if part
+        )
         return {
-            "title_short": _short_title(raw.get("title", ""), max_len=80),
-            "tags_str": _music_tags(raw.get("matched_tags", "")),
+            "title_short": _short_title(raw.get("title", ""), max_len=96),
+            "tags_str": _music_tags(tag_source),
+            "signal_type": raw.get("signal_type", ""),
+            "source_name": raw.get("source_name", ""),
         }
 
     template_items = [make_item(r) for r in selected]
@@ -142,12 +183,21 @@ def build_telegram_draft(
         template_items = template_items[:-1]
         text = _render_post(date, lang, issue_url, template_items)
 
-    if len(text) > max_chars:
-        last = template_items[-1]
-        overflow = len(text) - max_chars
-        cut = max(10, len(last["title_short"]) - overflow - 1)
-        template_items[-1] = {**last, "title_short": last["title_short"][:cut].rstrip() + "…"}
-        text = _render_post(date, lang, issue_url, template_items)
+    if len(text) > max_chars and template_items:
+        for field in ("tags_str", "source_name"):
+            if len(text) <= max_chars:
+                break
+            template_items[-1] = {**template_items[-1], field: ""}
+            text = _render_post(date, lang, issue_url, template_items)
+
+        while len(text) > max_chars and len(template_items[-1]["title_short"]) > 1:
+            last = template_items[-1]
+            overflow = len(text) - max_chars
+            cut = max(1, len(last["title_short"]) - overflow - 1)
+            if cut >= len(last["title_short"]):
+                cut = len(last["title_short"]) - 1
+            template_items[-1] = {**last, "title_short": last["title_short"][:cut].rstrip() + "…"}
+            text = _render_post(date, lang, issue_url, template_items)
 
     reports_dir.mkdir(parents=True, exist_ok=True)
     output_path = reports_dir / f"{date}.{lang}.txt"

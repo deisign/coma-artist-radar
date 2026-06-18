@@ -130,3 +130,7 @@ def test_workflow_commits_telegram_post_state():
     content = _content()
     assert "data/telegram_posts.json" in content
     assert "Record Telegram Radar post ${ISSUE_DATE} [skip ci]" in content
+
+def test_workflow_runs_daily_at_1005_kyiv_summer_time():
+    content = _content()
+    assert 'cron: "5 7 * * *"' in content

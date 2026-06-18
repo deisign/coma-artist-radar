@@ -1,0 +1,92 @@
+{
+  "issue_date": "2026-06-18",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-18T08:12:57Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Candace Hastings Dazzles on ‘A Soft Place to Land’",
+      "url": "https://nodepression.org/album-review-candace-hastings-dazzles-on-a-soft-place-to-land/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-17",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: The War and Treaty Reach New High on Personal Album, ‘The Story of Michael and Tonya’",
+      "url": "https://nodepression.org/album-review-the-war-and-treaty-reach-new-high-on-personal-album-the-story-of-michael-and-tonya/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-17",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 591,
+      "title": "Announcing the 17th Annual Surf Guitar 101 Festival 2026",
+      "url": "https://surfguitar101.com/news/story/1829/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-06-17",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 93,
+      "title": "56 Years Ago Today, Conway Twitty Was at No. 1 With the Song That Solidified His Place Among Country Music Royalty",
+      "url": "https://americansongwriter.com/56-years-ago-today-conway-twitty-was-at-no-1-with-the-song-that-solidified-his-place-among-country-music-royalty/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-17",
+      "score": 55,
+      "matched_artists": "Conway Twitty, Royalty",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

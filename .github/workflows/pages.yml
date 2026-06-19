@@ -3,6 +3,7 @@ name: Deploy coma.fm Radar to GitHub Pages
 on:
   schedule:
     - cron: "5 7 * * *"
+    - cron: "23 7 * * *"
   push:
     branches:
       - main

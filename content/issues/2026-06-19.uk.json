@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-06-19",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-19T08:16:24Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 86,
+      "title": "Outlaw Country Icon Dale Watson Returns With a New Album, and the Same Unapologetic Spirit",
+      "url": "https://americansongwriter.com/outlaw-country-icon-dale-watson-returns-with-a-new-album-and-the-same-unapologetic-spirit/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-06-18",
+      "score": 85,
+      "matched_artists": "Dale Watson",
+      "matched_tags": "country, outlaw_country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 597,
+      "title": "The Rolling Stones Announce New Single ‘Jealous Lover’ Ahead of Foreign Tongues Release",
+      "url": "https://www.thebluesmagazine.com/rolling-stones-jealous-lover-single-foreign-tongues-2026/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-06-18",
+      "score": 75,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "new_release",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 1,
+      "title": "THE READING ROOM: Colin Asher’s 'The Midnight Special: The Secret Prison History of American Music'",
+      "url": "https://nodepression.org/the-reading-room-colin-ashers-the-midnight-special-the-secret-prison-history-of-american-music/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-06-18",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 12,
+      "title": "THROUGH THE LENS: Topanga Banjo Fiddle & Albino Skunk Festivals - Throwbacks in Time",
+      "url": "https://nodepression.org/through-the-lens-topanga-banjo-fiddle-albino-skunk-festivals-throwbacks-in-time/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-09",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "High Points and Cool Characters Appear on New Episode of ‘The Hook’",
+      "url": "https://savingcountrymusic.com/high-points-and-cool-characters-appear-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=high-points-and-cool-characters-appear-on-new-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-19",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Why You Have Every Right To Know All The Dirty Details of the Jelly Roll Divorce",
+      "url": "https://savingcountrymusic.com/why-you-have-every-right-to-know-all-the-dirty-details-of-the-jelly-roll-divorce/?utm_source=rss&utm_medium=rss&utm_campaign=why-you-have-every-right-to-know-all-the-dirty-details-of-the-jelly-roll-divorce",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-18",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

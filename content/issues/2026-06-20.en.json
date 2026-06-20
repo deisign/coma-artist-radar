@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-06-20",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-20T10:15:12Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 17,
+      "title": "Jason James is BACK with New Single, Upcoming Album",
+      "url": "https://savingcountrymusic.com/jason-james-is-back-with-new-single-upcoming-album/?utm_source=rss&utm_medium=rss&utm_campaign=jason-james-is-back-with-new-single-upcoming-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-19",
+      "score": 65,
+      "matched_artists": "James",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 16,
+      "title": "“Blue Dot Fever” Hits Willie Nelson’s 2026 4th of July Picnic",
+      "url": "https://savingcountrymusic.com/blue-dot-fever-hits-willie-nelsons-2026-4th-of-july-picnic/?utm_source=rss&utm_medium=rss&utm_campaign=blue-dot-fever-hits-willie-nelsons-2026-4th-of-july-picnic",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-06-19",
+      "score": 65,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "A Post Card From Pharis & Jason Romero",
+      "url": "https://nodepression.org/a-post-card-from-pharis-jason-romero/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-19",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "CROWDFUNDING RADAR: Pete Mason and Mark Serlo; The Neighbors; and Ethan Setiawan and Fine Ground",
+      "url": "https://nodepression.org/crowdfunding-radar-pete-mason-and-mark-serlo-the-neighbors-and-ethan-setiawan-and-fine-ground/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-19",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    }
+  ]
+}

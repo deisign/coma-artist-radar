@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-20T10:15:12Z",
+  "generated_at": "2026-06-21T10:43:08Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -585,6 +585,33 @@
       "item_id": 17,
       "first_issue_date": "2026-06-20",
       "last_issue_date": "2026-06-20"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-blaze-foley-tribute-lp-two-new-woody-guthrie-videos-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-blaze-foley-tribute-lp-two-new-woody-guthrie-videos-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Blaze Foley Tribute LP, Two New Woody Guthrie Videos, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-06-21",
+      "last_issue_date": "2026-06-21"
+    },
+    {
+      "url": "https://savingcountrymusic.com/dallas-burrow-announces-new-album-modern-day-vagabond/?utm_source=rss&utm_medium=rss&utm_campaign=dallas-burrow-announces-new-album-modern-day-vagabond",
+      "normalised_url": "https://savingcountrymusic.com/dallas-burrow-announces-new-album-modern-day-vagabond",
+      "title": "Dallas Burrow Announces New Album “Modern Day Vagabond”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-06-21",
+      "last_issue_date": "2026-06-21"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-waylon-jennings-diamonds-song-feat-glen-campbell-released/?utm_source=rss&utm_medium=rss&utm_campaign=new-waylon-jennings-diamonds-song-feat-glen-campbell-released",
+      "normalised_url": "https://savingcountrymusic.com/new-waylon-jennings-diamonds-song-feat-glen-campbell-released",
+      "title": "New Waylon Jennings “Diamonds” Song feat. Glen Campbell Released",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-21",
+      "last_issue_date": "2026-06-21"
     }
   ]
 }

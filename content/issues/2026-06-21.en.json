@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-06-21",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-21T10:43:08Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 3,
+      "title": "BONUS TRACKS: Blaze Foley Tribute LP, Two New Woody Guthrie Videos, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-blaze-foley-tribute-lp-two-new-woody-guthrie-videos-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-06-19",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Dallas Burrow Announces New Album “Modern Day Vagabond”",
+      "url": "https://savingcountrymusic.com/dallas-burrow-announces-new-album-modern-day-vagabond/?utm_source=rss&utm_medium=rss&utm_campaign=dallas-burrow-announces-new-album-modern-day-vagabond",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-06-20",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "New Waylon Jennings “Diamonds” Song feat. Glen Campbell Released",
+      "url": "https://savingcountrymusic.com/new-waylon-jennings-diamonds-song-feat-glen-campbell-released/?utm_source=rss&utm_medium=rss&utm_campaign=new-waylon-jennings-diamonds-song-feat-glen-campbell-released",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-06-21",
+      "score": 65,
+      "matched_artists": "Glen Campbell",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

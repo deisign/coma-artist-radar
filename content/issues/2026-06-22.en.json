@@ -1,0 +1,93 @@
+{
+  "issue_date": "2026-06-22",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-22T13:04:56Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 31,
+      "title": "Album Review – Ben Chapman’s “Feet On Fire”",
+      "url": "https://savingcountrymusic.com/album-review-ben-chapmans-feet-on-fire/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-ben-chapmans-feet-on-fire",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-19",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 521,
+      "title": "Album Review: Gloria Mundi revisit unique landmark debut ‘I-Individual’ in timely re-release",
+      "url": "https://www.punktuationmag.com/album-review-gloria-mundi-revisit-unique-landmark-debut-i-individual-in-timely-re-release/",
+      "source_name": "Punktuation!",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-06-22",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "reissue, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 325,
+      "title": "NEW SINGLE: DROPKICK MURPHYS – Body Of An American (2026)",
+      "url": "https://londoncelticpunks.wordpress.com/2026/06/21/new-single-dropkick-murphys-body-of-an-american-2026/",
+      "source_name": "London Celtic Punks",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-21",
+      "score": 40,
+      "matched_artists": "Dropkick",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "New Live Viewing Options for Alan Jackson’s Final Concert Announced",
+      "url": "https://savingcountrymusic.com/new-live-viewing-options-for-alan-jacksons-final-concert-announced/?utm_source=rss&utm_medium=rss&utm_campaign=new-live-viewing-options-for-alan-jacksons-final-concert-announced",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-06-21",
+      "score": 50,
+      "matched_artists": "Alan Jackson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

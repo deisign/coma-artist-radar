@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T13:04:56Z",
+  "generated_at": "2026-06-23T10:42:20Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -648,6 +648,42 @@
       "item_id": 521,
       "first_issue_date": "2026-06-22",
       "last_issue_date": "2026-06-22"
+    },
+    {
+      "url": "https://americansongwriter.com/more-than-20-years-after-his-death-new-recordings-from-a-defining-figure-of-the-outlaw-country-movement-surface/",
+      "normalised_url": "https://americansongwriter.com/more-than-20-years-after-his-death-new-recordings-from-a-defining-figure-of-the-outlaw-country-movement-surface",
+      "title": "More Than 20 Years After His Death, New Recordings From a Defining Figure of the Outlaw Country Movement Surface",
+      "source_name": "American Songwriter",
+      "item_id": 101,
+      "first_issue_date": "2026-06-23",
+      "last_issue_date": "2026-06-23"
+    },
+    {
+      "url": "https://nodepression.org/in-the-deep-end-with-fruit-bats/",
+      "normalised_url": "https://nodepression.org/in-the-deep-end-with-fruit-bats",
+      "title": "In The Deep End With Fruit Bats",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-06-23",
+      "last_issue_date": "2026-06-23"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-running-on-credits-searching-for-the-sound/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-running-on-credits-searching-for-the-sound",
+      "normalised_url": "https://savingcountrymusic.com/album-review-running-on-credits-searching-for-the-sound",
+      "title": "Album Review – Running On Credit’s “Searching for the Sound”",
+      "source_name": "Saving Country Music",
+      "item_id": 28,
+      "first_issue_date": "2026-06-23",
+      "last_issue_date": "2026-06-23"
+    },
+    {
+      "url": "https://savingcountrymusic.com/turnpike-troubadours-tease-new-music-for-friday-6-26/?utm_source=rss&utm_medium=rss&utm_campaign=turnpike-troubadours-tease-new-music-for-friday-6-26",
+      "normalised_url": "https://savingcountrymusic.com/turnpike-troubadours-tease-new-music-for-friday-6-26",
+      "title": "Turnpike Troubadours Tease New Music for Friday (6-26)",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-23",
+      "last_issue_date": "2026-06-23"
     }
   ]
 }

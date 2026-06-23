@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-06-23",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-23T10:42:20Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 28,
+      "title": "Album Review – Running On Credit’s “Searching for the Sound”",
+      "url": "https://savingcountrymusic.com/album-review-running-on-credits-searching-for-the-sound/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-running-on-credits-searching-for-the-sound",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-22",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "In The Deep End With Fruit Bats",
+      "url": "https://nodepression.org/in-the-deep-end-with-fruit-bats/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-22",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Turnpike Troubadours Tease New Music for Friday (6-26)",
+      "url": "https://savingcountrymusic.com/turnpike-troubadours-tease-new-music-for-friday-6-26/?utm_source=rss&utm_medium=rss&utm_campaign=turnpike-troubadours-tease-new-music-for-friday-6-26",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 50,
+      "matched_artists": "Turnpike Troubadours",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 101,
+      "title": "More Than 20 Years After His Death, New Recordings From a Defining Figure of the Outlaw Country Movement Surface",
+      "url": "https://americansongwriter.com/more-than-20-years-after-his-death-new-recordings-from-a-defining-figure-of-the-outlaw-country-movement-surface/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-22",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "issue_date": "2026-06-24",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-24T10:29:29Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: From Sweden with Love: Jesper Lindell’s Take on Classic Southern Soul On ‘Royal’",
+      "url": "https://nodepression.org/album-review-from-sweden-with-love-jesper-lindells-take-on-classic-southern-soul-on-royal/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Devon Gilfillian Creates His Own Nashville Sound On ‘Time Will Tell’",
+      "url": "https://nodepression.org/album-review-devon-gilfillian-creates-his-own-nashville-sound-on-time-will-tell/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 419,
+      "title": "Review/Gallery: 2026 Chicago Blues Festival Kickoff at Ramova Theater (John Primer, Willie Clayton, Mississippi Blues Trail Panel)",
+      "url": "https://www.americanbluesscene.com/2026/06/review-gallery-2026-chicago-blues-festival-kickoff-at-ramova-theater-john-primer-willie-clayton-mississippi-blues-trail-panel/",
+      "source_name": "American Blues Scene",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-06-24",
+      "score": 65,
+      "matched_artists": "Chicago",
+      "matched_tags": "blues, chicago_blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 67,
+      "title": "Raised on Johnny Cash and Waylon Jennings, The Killers’ Brandon Flowers Finally Makes His Country Move",
+      "url": "https://americansongwriter.com/raised-on-johnny-cash-and-waylon-jennings-the-killers-brandon-flowers-finally-makes-his-country-move/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 50,
+      "matched_artists": "Johnny Cash",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 75,
+      "title": "3 Outlaw Country Songs From 1975 That Still Sound Dangerous Today",
+      "url": "https://americansongwriter.com/3-outlaw-country-songs-from-1975-that-still-sound-dangerous-today/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 569,
+      "title": "REWIND: Remembering Muddy Waters’ Final Act",
+      "url": "https://rockandbluesmuse.com/2026/06/23/rewind-remembering-muddy-waters-final-act/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 40,
+      "matched_artists": "Muddy Waters",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "This Is The Worst Part of These Bailey Zimmerman Felony Charges",
+      "url": "https://savingcountrymusic.com/this-is-the-worst-part-of-these-bailey-zimmerman-felony-charges/?utm_source=rss&utm_medium=rss&utm_campaign=this-is-the-worst-part-of-these-bailey-zimmerman-felony-charges",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-23",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

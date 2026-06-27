@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T10:29:30Z",
+  "generated_at": "2026-06-27T09:35:52Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -846,6 +846,42 @@
       "item_id": 519,
       "first_issue_date": "2026-06-26",
       "last_issue_date": "2026-06-26"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-updates-from-the-freshgrass-foundation-new-release-from-shooter-jennings-tribute-to-buddy-guy-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-updates-from-the-freshgrass-foundation-new-release-from-shooter-jennings-tribute-to-buddy-guy-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Updates from the FreshGrass Foundation, New Release From Shooter Jennings, Tribute to Buddy Guy, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-06-27",
+      "last_issue_date": "2026-06-27"
+    },
+    {
+      "url": "https://nodepression.org/tift-merritt-is-back-to-sing-love-into-the-world/",
+      "normalised_url": "https://nodepression.org/tift-merritt-is-back-to-sing-love-into-the-world",
+      "title": "Tift Merritt Is Back to Sing Love Into the World",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-06-27",
+      "last_issue_date": "2026-06-27"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-american-aquariums-new-ways-to-lose/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-american-aquariums-new-ways-to-lose",
+      "normalised_url": "https://savingcountrymusic.com/album-review-american-aquariums-new-ways-to-lose",
+      "title": "Album Review – American Aquarium’s “New Ways To Lose”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-06-27",
+      "last_issue_date": "2026-06-27"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-killers-go-country-brandon-flowers-preps-new-nashville-album/?utm_source=rss&utm_medium=rss&utm_campaign=the-killers-go-country-brandon-flowers-preps-new-nashville-album",
+      "normalised_url": "https://savingcountrymusic.com/the-killers-go-country-brandon-flowers-preps-new-nashville-album",
+      "title": "The Killers Go Country? Brandon Flowers Preps New Nashville Album",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-27",
+      "last_issue_date": "2026-06-27"
     }
   ]
 }

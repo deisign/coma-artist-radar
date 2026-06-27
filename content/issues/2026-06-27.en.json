@@ -1,0 +1,93 @@
+{
+  "issue_date": "2026-06-27",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-06-27T09:35:52Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – American Aquarium’s “New Ways To Lose”",
+      "url": "https://savingcountrymusic.com/album-review-american-aquariums-new-ways-to-lose/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-american-aquariums-new-ways-to-lose",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-06-26",
+      "score": 80,
+      "matched_artists": "American Aquarium",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "BONUS TRACKS: Updates from the FreshGrass Foundation, New Release From Shooter Jennings, Tribute to Buddy Guy, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-updates-from-the-freshgrass-foundation-new-release-from-shooter-jennings-tribute-to-buddy-guy-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-06-26",
+      "score": 90,
+      "matched_artists": "Buddy Guy",
+      "matched_tags": "country, alt_country, new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "The Killers Go Country? Brandon Flowers Preps New Nashville Album",
+      "url": "https://savingcountrymusic.com/the-killers-go-country-brandon-flowers-preps-new-nashville-album/?utm_source=rss&utm_medium=rss&utm_campaign=the-killers-go-country-brandon-flowers-preps-new-nashville-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-06-26",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "Tift Merritt Is Back to Sing Love Into the World",
+      "url": "https://nodepression.org/tift-merritt-is-back-to-sing-love-into-the-world/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-26",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    }
+  ]
+}

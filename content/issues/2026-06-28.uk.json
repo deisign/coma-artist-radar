@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-06-28",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-28T10:09:30Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 3,
+      "title": "SPOTLIGHT: River Shook - \"Fading\" [VIDEO]",
+      "url": "https://nodepression.org/spotlight-river-shook-fading-video/",
+      "source_name": "No Depression",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з жанрового поля coma.fm.",
+      "published_at": "2026-06-25",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 594,
+      "title": "Jerry Lee Lewis Returns to Sun Records Spotlight with I’ve Been Twistin’ Stereo Collection",
+      "url": "https://www.thebluesmagazine.com/jerry-lee-lewis-ive-been-twistin-sun-records/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-06-27",
+      "score": 40,
+      "matched_artists": "Jerry Lee Lewis",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Ween’s Iconic “12 Golden Country Greats” Gets New Deluxe Edition",
+      "url": "https://savingcountrymusic.com/weens-iconic-12-golden-country-greats-gets-new-deluxe-edition/?utm_source=rss&utm_medium=rss&utm_campaign=weens-iconic-12-golden-country-greats-gets-new-deluxe-edition",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-27",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 35,
+      "title": "The Red Rocks of Texas? New White Rocks Venue Planned",
+      "url": "https://savingcountrymusic.com/the-red-rocks-of-texas-new-white-rocks-venue-planned/?utm_source=rss&utm_medium=rss&utm_campaign=the-red-rocks-of-texas-new-white-rocks-venue-planned",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-22",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T09:35:52Z",
+  "generated_at": "2026-06-28T10:09:30Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -882,6 +882,42 @@
       "item_id": 26,
       "first_issue_date": "2026-06-27",
       "last_issue_date": "2026-06-27"
+    },
+    {
+      "url": "https://nodepression.org/spotlight-river-shook-fading-video/",
+      "normalised_url": "https://nodepression.org/spotlight-river-shook-fading-video",
+      "title": "SPOTLIGHT: River Shook - \"Fading\" [VIDEO]",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-06-28",
+      "last_issue_date": "2026-06-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-red-rocks-of-texas-new-white-rocks-venue-planned/?utm_source=rss&utm_medium=rss&utm_campaign=the-red-rocks-of-texas-new-white-rocks-venue-planned",
+      "normalised_url": "https://savingcountrymusic.com/the-red-rocks-of-texas-new-white-rocks-venue-planned",
+      "title": "The Red Rocks of Texas? New White Rocks Venue Planned",
+      "source_name": "Saving Country Music",
+      "item_id": 35,
+      "first_issue_date": "2026-06-28",
+      "last_issue_date": "2026-06-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/weens-iconic-12-golden-country-greats-gets-new-deluxe-edition/?utm_source=rss&utm_medium=rss&utm_campaign=weens-iconic-12-golden-country-greats-gets-new-deluxe-edition",
+      "normalised_url": "https://savingcountrymusic.com/weens-iconic-12-golden-country-greats-gets-new-deluxe-edition",
+      "title": "Ween’s Iconic “12 Golden Country Greats” Gets New Deluxe Edition",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-28",
+      "last_issue_date": "2026-06-28"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/jerry-lee-lewis-ive-been-twistin-sun-records/",
+      "normalised_url": "https://www.thebluesmagazine.com/jerry-lee-lewis-ive-been-twistin-sun-records",
+      "title": "Jerry Lee Lewis Returns to Sun Records Spotlight with I’ve Been Twistin’ Stereo Collection",
+      "source_name": "The Blues Magazine",
+      "item_id": 594,
+      "first_issue_date": "2026-06-28",
+      "last_issue_date": "2026-06-28"
     }
   ]
 }

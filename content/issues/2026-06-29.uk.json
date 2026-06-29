@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-06-29",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-06-29T12:12:41Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 26,
+      "title": "George Strait & Alan Jackson Sing “Murder on Music Row” One Last Time",
+      "url": "https://savingcountrymusic.com/george-strait-alan-jackson-sing-murder-on-music-row-one-last-time/?utm_source=rss&utm_medium=rss&utm_campaign=george-strait-alan-jackson-sing-murder-on-music-row-one-last-time",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-28",
+      "score": 65,
+      "matched_artists": "George Strait, Alan Jackson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 90,
+      "title": "Born 60 Years Ago Today in Nashville, the Singer-Songwriter Son of a Country Music Legend Who Grew up Next Door to Tammy Wynette and George Jones",
+      "url": "https://americansongwriter.com/born-60-years-ago-today-in-nashville-the-singer-songwriter-son-of-a-country-music-legend-who-grew-up-next-door-to-tammy-wynette-and-george-jones/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-28",
+      "score": 40,
+      "matched_artists": "George Jones",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#181)",
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-181/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-181",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-06-28",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

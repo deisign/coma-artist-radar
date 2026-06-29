@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T10:09:30Z",
+  "generated_at": "2026-06-29T12:12:41Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -918,6 +918,33 @@
       "item_id": 594,
       "first_issue_date": "2026-06-28",
       "last_issue_date": "2026-06-28"
+    },
+    {
+      "url": "https://americansongwriter.com/born-60-years-ago-today-in-nashville-the-singer-songwriter-son-of-a-country-music-legend-who-grew-up-next-door-to-tammy-wynette-and-george-jones/",
+      "normalised_url": "https://americansongwriter.com/born-60-years-ago-today-in-nashville-the-singer-songwriter-son-of-a-country-music-legend-who-grew-up-next-door-to-tammy-wynette-and-george-jones",
+      "title": "Born 60 Years Ago Today in Nashville, the Singer-Songwriter Son of a Country Music Legend Who Grew up Next Door to Tammy Wynette and George Jones",
+      "source_name": "American Songwriter",
+      "item_id": 90,
+      "first_issue_date": "2026-06-29",
+      "last_issue_date": "2026-06-29"
+    },
+    {
+      "url": "https://savingcountrymusic.com/george-strait-alan-jackson-sing-murder-on-music-row-one-last-time/?utm_source=rss&utm_medium=rss&utm_campaign=george-strait-alan-jackson-sing-murder-on-music-row-one-last-time",
+      "normalised_url": "https://savingcountrymusic.com/george-strait-alan-jackson-sing-murder-on-music-row-one-last-time",
+      "title": "George Strait & Alan Jackson Sing “Murder on Music Row” One Last Time",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-06-29",
+      "last_issue_date": "2026-06-29"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-181/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-181",
+      "normalised_url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-181",
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#181)",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-06-29",
+      "last_issue_date": "2026-06-29"
     }
   ]
 }

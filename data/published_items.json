@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T12:12:41Z",
+  "generated_at": "2026-06-30T10:37:16Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -945,6 +945,42 @@
       "item_id": 27,
       "first_issue_date": "2026-06-29",
       "last_issue_date": "2026-06-29"
+    },
+    {
+      "url": "https://americansongwriter.com/neil-diamond-originally-wrote-this-monkees-hit-for-a-country-music-superstar/",
+      "normalised_url": "https://americansongwriter.com/neil-diamond-originally-wrote-this-monkees-hit-for-a-country-music-superstar",
+      "title": "Neil Diamond Originally Wrote This Monkees Hit for a Country Music Superstar",
+      "source_name": "American Songwriter",
+      "item_id": 88,
+      "first_issue_date": "2026-06-30",
+      "last_issue_date": "2026-06-30"
+    },
+    {
+      "url": "https://nodepression.org/best-of-blues-smithsonian-folkways-classics-swamp-dogg-and-joe-krown/",
+      "normalised_url": "https://nodepression.org/best-of-blues-smithsonian-folkways-classics-swamp-dogg-and-joe-krown",
+      "title": "BEST OF BLUES: Smithsonian Folkways Classics, Swamp Dogg, and Joe Krown",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-06-30",
+      "last_issue_date": "2026-06-30"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-cody-johnsons-banks-of-the-trinity/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-cody-johnsons-banks-of-the-trinity",
+      "normalised_url": "https://savingcountrymusic.com/album-review-cody-johnsons-banks-of-the-trinity",
+      "title": "Album Review – Cody Johnson’s “Banks of the Trinity”",
+      "source_name": "Saving Country Music",
+      "item_id": 28,
+      "first_issue_date": "2026-06-30",
+      "last_issue_date": "2026-06-30"
+    },
+    {
+      "url": "https://savingcountrymusic.com/charley-crockett-signs-with-atlantic-outpost-plots-return-of-new-album-clovis/?utm_source=rss&utm_medium=rss&utm_campaign=charley-crockett-signs-with-atlantic-outpost-plots-return-of-new-album-clovis",
+      "normalised_url": "https://savingcountrymusic.com/charley-crockett-signs-with-atlantic-outpost-plots-return-of-new-album-clovis",
+      "title": "Charley Crockett Signs with Atlantic Outpost, Plots Return of New Album “Clovis”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-06-30",
+      "last_issue_date": "2026-06-30"
     }
   ]
 }

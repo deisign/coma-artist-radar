@@ -1,0 +1,135 @@
+{
+  "issue_date": "2026-07-01",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-01T10:50:22Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 372,
+      "title": "Surf Instrumental Review: Frankie and The Pool Boys - Self Titled",
+      "url": "https://www.surfmusicandart.com/2026/06/frankieandthepoolboys.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 80,
+      "matched_artists": "Frankie and the Pool Boys",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 27,
+      "title": "Billy Strings Announces New Album “So Much For Goodbyes”",
+      "url": "https://savingcountrymusic.com/billy-strings-announces-new-album-so-much-for-goodbyes/?utm_source=rss&utm_medium=rss&utm_campaign=billy-strings-announces-new-album-so-much-for-goodbyes",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 549,
+      "title": "Cel Ray to release new album, share \"Toxic\" lyric video",
+      "url": "https://www.punknews.org/article/88559/cel-ray-to-release-new-album-share-toxic-lyric-video",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з артистичного поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 40,
+      "matched_artists": "El Ray",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "SPOTLIGHT: River Shook on 'The Superpower We Share' [ESSAY]",
+      "url": "https://nodepression.org/spotlight-river-shook-on-the-superpower-we-share/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Celebrating America’s 250th Birthday Is Also a Celebration of Roots Music",
+      "url": "https://nodepression.org/through-the-lens-celebrating-americas-250th-birthday-is-also-a-celebration-of-roots-music/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 75,
+      "matched_artists": "America",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "On Taylor Swift Getting Booed at Alan Jackson’s Final Concert",
+      "url": "https://savingcountrymusic.com/on-taylor-swift-getting-booed-at-alan-jacksons-final-concert/?utm_source=rss&utm_medium=rss&utm_campaign=on-taylor-swift-getting-booed-at-alan-jacksons-final-concert",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-06-30",
+      "score": 50,
+      "matched_artists": "Alan Jackson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

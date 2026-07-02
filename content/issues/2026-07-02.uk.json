@@ -1,0 +1,94 @@
+{
+  "issue_date": "2026-07-02",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-02T10:16:21Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Addison Johnson’s “The State I’m In”",
+      "url": "https://savingcountrymusic.com/album-review-addison-johnsons-the-state-im-in/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-addison-johnsons-the-state-im-in",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-01",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 439,
+      "title": "Q&A with Australian blues duo of Amin & Lachlan, blends Delta, Chicago, and Jump Blues with folk and swing.",
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:495797",
+      "source_name": "Blues.Gr",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з артистичного поля coma.fm.",
+      "published_at": "2026-07-01",
+      "score": 75,
+      "matched_artists": "Chicago",
+      "matched_tags": "blues, jump_blues",
+      "matched_genres": "blues, rockabilly"
+    },
+    {
+      "id": 76,
+      "title": "63 Years Ago Today, The Beatles Recorded the Best-Selling Single That Paul McCartney’s Dad Hated",
+      "url": "https://americansongwriter.com/63-years-ago-today-the-beatles-recorded-the-best-selling-single-that-paul-mccartneys-dad-hated/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-07-01",
+      "score": 60,
+      "matched_artists": "Paul McCartney, The Beatles",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Rhett Akins Invited to Become New Member of the Grand Ole Opry",
+      "url": "https://savingcountrymusic.com/rhett-akins-invited-to-become-new-member-of-the-grand-ole-opry/?utm_source=rss&utm_medium=rss&utm_campaign=rhett-akins-invited-to-become-new-member-of-the-grand-ole-opry",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-01",
+      "score": 50,
+      "matched_artists": "Rhett Akins",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

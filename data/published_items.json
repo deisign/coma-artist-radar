@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T10:50:22Z",
+  "generated_at": "2026-07-02T10:16:21Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1035,6 +1035,42 @@
       "item_id": 372,
       "first_issue_date": "2026-07-01",
       "last_issue_date": "2026-07-01"
+    },
+    {
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:495797",
+      "normalised_url": "http://blues.gr/xn/detail/1982923:BlogPost:495797",
+      "title": "Q&A with Australian blues duo of Amin & Lachlan, blends Delta, Chicago, and Jump Blues with folk and swing.",
+      "source_name": "Blues.Gr",
+      "item_id": 439,
+      "first_issue_date": "2026-07-02",
+      "last_issue_date": "2026-07-02"
+    },
+    {
+      "url": "https://americansongwriter.com/63-years-ago-today-the-beatles-recorded-the-best-selling-single-that-paul-mccartneys-dad-hated/",
+      "normalised_url": "https://americansongwriter.com/63-years-ago-today-the-beatles-recorded-the-best-selling-single-that-paul-mccartneys-dad-hated",
+      "title": "63 Years Ago Today, The Beatles Recorded the Best-Selling Single That Paul McCartney’s Dad Hated",
+      "source_name": "American Songwriter",
+      "item_id": 76,
+      "first_issue_date": "2026-07-02",
+      "last_issue_date": "2026-07-02"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-addison-johnsons-the-state-im-in/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-addison-johnsons-the-state-im-in",
+      "normalised_url": "https://savingcountrymusic.com/album-review-addison-johnsons-the-state-im-in",
+      "title": "Album Review – Addison Johnson’s “The State I’m In”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-07-02",
+      "last_issue_date": "2026-07-02"
+    },
+    {
+      "url": "https://savingcountrymusic.com/rhett-akins-invited-to-become-new-member-of-the-grand-ole-opry/?utm_source=rss&utm_medium=rss&utm_campaign=rhett-akins-invited-to-become-new-member-of-the-grand-ole-opry",
+      "normalised_url": "https://savingcountrymusic.com/rhett-akins-invited-to-become-new-member-of-the-grand-ole-opry",
+      "title": "Rhett Akins Invited to Become New Member of the Grand Ole Opry",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-02",
+      "last_issue_date": "2026-07-02"
     }
   ]
 }

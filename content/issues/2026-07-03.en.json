@@ -1,0 +1,110 @@
+{
+  "issue_date": "2026-07-03",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-03T10:11:29Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 84,
+      "title": "70 Years Ago Today, Elvis Presley Recorded the Controversial Single That Shattered Records and Sparked Riots",
+      "url": "https://americansongwriter.com/70-years-ago-today-elvis-presley-recorded-the-controversial-single-that-shattered-records-and-sparked-riots/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-07-02",
+      "score": 50,
+      "matched_artists": "Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 95,
+      "title": "One Month After a Massive Beatles Scandal, The Rolling Stones Changed an Album Title to Avoid Their Own Backlash",
+      "url": "https://americansongwriter.com/one-month-after-a-massive-beatles-scandal-the-rolling-stones-changed-an-album-title-to-avoid-their-own-backlash/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-07-02",
+      "score": 50,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "THE READING ROOM: The Best Books of 2026 (So Far)",
+      "url": "https://nodepression.org/the-reading-room-the-best-books-of-2026-so-far/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-07-02",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Hank Williams III Re-Emerges Shouting out Kelsey Rae Copeland",
+      "url": "https://savingcountrymusic.com/hank-williams-iii-re-emerges-shouting-out-kelsey-rae-copeland/?utm_source=rss&utm_medium=rss&utm_campaign=hank-williams-iii-re-emerges-shouting-out-kelsey-rae-copeland",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-03",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 32,
+      "title": "“First Lady of the Mandolin” Donna Stoneman Has Died",
+      "url": "https://savingcountrymusic.com/first-lady-of-the-mandolin-donna-stoneman-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=first-lady-of-the-mandolin-donna-stoneman-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-06-30",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

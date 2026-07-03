@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T10:16:21Z",
+  "generated_at": "2026-07-03T10:11:29Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1071,6 +1071,51 @@
       "item_id": 26,
       "first_issue_date": "2026-07-02",
       "last_issue_date": "2026-07-02"
+    },
+    {
+      "url": "https://americansongwriter.com/70-years-ago-today-elvis-presley-recorded-the-controversial-single-that-shattered-records-and-sparked-riots/",
+      "normalised_url": "https://americansongwriter.com/70-years-ago-today-elvis-presley-recorded-the-controversial-single-that-shattered-records-and-sparked-riots",
+      "title": "70 Years Ago Today, Elvis Presley Recorded the Controversial Single That Shattered Records and Sparked Riots",
+      "source_name": "American Songwriter",
+      "item_id": 84,
+      "first_issue_date": "2026-07-03",
+      "last_issue_date": "2026-07-03"
+    },
+    {
+      "url": "https://americansongwriter.com/one-month-after-a-massive-beatles-scandal-the-rolling-stones-changed-an-album-title-to-avoid-their-own-backlash/",
+      "normalised_url": "https://americansongwriter.com/one-month-after-a-massive-beatles-scandal-the-rolling-stones-changed-an-album-title-to-avoid-their-own-backlash",
+      "title": "One Month After a Massive Beatles Scandal, The Rolling Stones Changed an Album Title to Avoid Their Own Backlash",
+      "source_name": "American Songwriter",
+      "item_id": 95,
+      "first_issue_date": "2026-07-03",
+      "last_issue_date": "2026-07-03"
+    },
+    {
+      "url": "https://nodepression.org/the-reading-room-the-best-books-of-2026-so-far/",
+      "normalised_url": "https://nodepression.org/the-reading-room-the-best-books-of-2026-so-far",
+      "title": "THE READING ROOM: The Best Books of 2026 (So Far)",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-07-03",
+      "last_issue_date": "2026-07-03"
+    },
+    {
+      "url": "https://savingcountrymusic.com/first-lady-of-the-mandolin-donna-stoneman-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=first-lady-of-the-mandolin-donna-stoneman-has-died",
+      "normalised_url": "https://savingcountrymusic.com/first-lady-of-the-mandolin-donna-stoneman-has-died",
+      "title": "“First Lady of the Mandolin” Donna Stoneman Has Died",
+      "source_name": "Saving Country Music",
+      "item_id": 32,
+      "first_issue_date": "2026-07-03",
+      "last_issue_date": "2026-07-03"
+    },
+    {
+      "url": "https://savingcountrymusic.com/hank-williams-iii-re-emerges-shouting-out-kelsey-rae-copeland/?utm_source=rss&utm_medium=rss&utm_campaign=hank-williams-iii-re-emerges-shouting-out-kelsey-rae-copeland",
+      "normalised_url": "https://savingcountrymusic.com/hank-williams-iii-re-emerges-shouting-out-kelsey-rae-copeland",
+      "title": "Hank Williams III Re-Emerges Shouting out Kelsey Rae Copeland",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-03",
+      "last_issue_date": "2026-07-03"
     }
   ]
 }

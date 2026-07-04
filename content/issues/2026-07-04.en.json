@@ -1,0 +1,74 @@
+{
+  "issue_date": "2026-07-04",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-04T09:31:24Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Bella White’s “A Sign In The Weather”",
+      "url": "https://savingcountrymusic.com/album-review-bella-whites-a-sign-in-the-weather/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-bella-whites-a-sign-in-the-weather",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-07-03",
+      "score": 80,
+      "matched_artists": "Bella White",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 86,
+      "title": "The Best Outlaw Country Album of 2026 Is Finally Back on Streaming After Its Mysterious Disappearance",
+      "url": "https://americansongwriter.com/the-best-outlaw-country-album-of-2026-is-finally-back-on-streaming-after-its-mysterious-disappearance/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-03",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Alan Jackson’s Not Done Releasing New Albums Just Yet",
+      "url": "https://savingcountrymusic.com/alan-jacksons-not-done-releasing-new-albums-just-yet/?utm_source=rss&utm_medium=rss&utm_campaign=alan-jacksons-not-done-releasing-new-albums-just-yet",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-03",
+      "score": 50,
+      "matched_artists": "Alan Jackson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-07-06",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-06T11:44:52Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 534,
+      "title": "Do What You Fear Most: The History of the Velvet Underground – By Richie Unterberger – Review *****",
+      "url": "https://punk77.co.uk/do-what-you-fear-most-the-history-of-the-velvet-underground-by-richie-unterberger-review/",
+      "source_name": "Punk 77",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-07-06",
+      "score": 40,
+      "matched_artists": "The Velvet Underground",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 405,
+      "title": "Margo Price featuring Joan Baez and Memphis Mariachi - Deportee",
+      "url": "https://www.americanadaily.com/2026/07/margo-price-featuring-joan-baez-and.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-05",
+      "score": 70,
+      "matched_artists": "Margo Price, Joan Baez",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "“Country Gentleman” Tommy Hunter Has Died",
+      "url": "https://savingcountrymusic.com/country-gentleman-tommy-hunter-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=country-gentleman-tommy-hunter-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-04",
+      "score": 50,
+      "matched_artists": "Country Gentleman",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "TWO Gold Patch Winners Crown Latest Episode of The Hook",
+      "url": "https://savingcountrymusic.com/two-gold-patch-winners-crown-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=two-gold-patch-winners-crown-latest-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-06",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

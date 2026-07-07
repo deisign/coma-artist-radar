@@ -1,0 +1,154 @@
+{
+  "issue_date": "2026-07-07",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-07T10:32:23Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 372,
+      "title": "Surf Instrumental Review: The Kilaueas-Magma Chamber",
+      "url": "https://www.surfmusicandart.com/2026/07/thekilaueasmagmachamber.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-07-06",
+      "score": 65,
+      "matched_artists": "The Kilaueas",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 1,
+      "title": "Low Cut Connie Grapples With Belonging on New LP 'Livin in the USA'",
+      "url": "https://nodepression.org/low-cut-connie-grapples-with-belonging-on-new-lp-livin-in-the-usa/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-07-06",
+      "score": 75,
+      "matched_artists": "Low",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "Full Recap and Photos of Willie Nelson’s 2026 4th of July Picnic",
+      "url": "https://savingcountrymusic.com/full-recap-and-photos-of-willie-nelsons-2026-4th-of-july-picnic/?utm_source=rss&utm_medium=rss&utm_campaign=full-recap-and-photos-of-willie-nelsons-2026-4th-of-july-picnic",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-06",
+      "score": 65,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "FRESH TRACK: Rachael Sage & The Sequins “Nexus (Acoustic)”",
+      "url": "https://nodepression.org/fresh-track-rachael-sage-the-sequins-nexus-acoustic/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-06",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 98,
+      "title": "Country Music Mourns the Loss of the “Country Gentleman,” Dead at 89",
+      "url": "https://americansongwriter.com/country-music-mourns-the-loss-of-the-country-gentleman-dead-at-89/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-06",
+      "score": 40,
+      "matched_artists": "Country Gentleman",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 568,
+      "title": "Shemekia Copeland Appears On PBS’ Bruce Springsteen: Finding America In A Song",
+      "url": "https://rockandbluesmuse.com/2026/07/06/shemekia-copeland-appears-on-pbs-bruce-springsteen-finding-america-in-a-song/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-06",
+      "score": 40,
+      "matched_artists": "Bruce Springsteen, America",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "The Worst New “Country” Songs of 2026 So Far",
+      "url": "https://savingcountrymusic.com/the-worst-new-country-songs-of-2026-so-far/?utm_source=rss&utm_medium=rss&utm_campaign=the-worst-new-country-songs-of-2026-so-far",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-06",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

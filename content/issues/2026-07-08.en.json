@@ -1,0 +1,172 @@
+{
+  "issue_date": "2026-07-08",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-08T09:33:59Z",
+  "min_score": 30,
+  "total_items": 8,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Sophie Wellington Shimmers on 'Her Bright Smile Haunts Me Still'",
+      "url": "https://nodepression.org/album-review-sophie-wellington-shimmers-on-her-bright-smile-haunts-me-still/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 580,
+      "title": "John Blair Review Of \"Sun, Sand, Surf & Sidewalls\" IV  2026",
+      "url": "https://surfguitar101.com/news/story/1830/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 27,
+      "title": "Album Review- Jason Eady’s “Tulsa Turnaround”",
+      "url": "https://savingcountrymusic.com/album-review-jason-eadys-tulsa-turnaround/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-jason-eadys-tulsa-turnaround",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "This Bryan Andrews “Country” Album Is Terrible",
+      "url": "https://savingcountrymusic.com/this-bryan-andrews-country-album-is-terrible/?utm_source=rss&utm_medium=rss&utm_campaign=this-bryan-andrews-country-album-is-terrible",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "Bonnaroo 2026 Continued Its Jam-Packed, Neo-Hippie Woodstock Experiment",
+      "url": "https://nodepression.org/bonnaroo-2026-continued-its-jam-packed-neo-hippie-woodstock-experiment/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 579,
+      "title": "Longboard Radio",
+      "url": "https://surfguitar101.com/news/story/1831/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-07",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 78,
+      "title": "Born 96 Years Ago in Arkansas, One-Half of the Pioneering Country Sibling Duo That Passed on Elvis Presley’s Signature Hit",
+      "url": "https://americansongwriter.com/born-96-years-ago-in-arkansas-one-half-of-the-pioneering-country-sibling-duo-that-passed-on-elvis-presleys-signature-hit/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-07",
+      "score": 50,
+      "matched_artists": "Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 585,
+      "title": "Buddy Guy’s 90th Birthday Celebration Brings Blues Royalty to Radio City Music Hall",
+      "url": "https://www.thebluesmagazine.com/buddy-guy-90th-birthday-concert-radio-city-2026/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-07",
+      "score": 40,
+      "matched_artists": "Buddy Guy, Royalty",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    }
+  ]
+}

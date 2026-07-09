@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T09:33:59Z",
+  "generated_at": "2026-07-09T10:32:08Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1314,6 +1314,33 @@
       "item_id": 585,
       "first_issue_date": "2026-07-08",
       "last_issue_date": "2026-07-08"
+    },
+    {
+      "url": "https://nodepression.org/album-review-allison-russell-hour-chaos/",
+      "normalised_url": "https://nodepression.org/album-review-allison-russell-hour-chaos",
+      "title": "ALBUM REVIEW: Allison Russell Finds Joy in Community on 'In the Hour of Chaos'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-07-09",
+      "last_issue_date": "2026-07-09"
+    },
+    {
+      "url": "https://savingcountrymusic.com/beloved-texas-musician-and-songwriter-brian-burns-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=beloved-texas-musician-and-songwriter-brian-burns-has-died",
+      "normalised_url": "https://savingcountrymusic.com/beloved-texas-musician-and-songwriter-brian-burns-has-died",
+      "title": "Beloved Texas Musician and Songwriter Brian Burns Has Died",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-09",
+      "last_issue_date": "2026-07-09"
+    },
+    {
+      "url": "https://savingcountrymusic.com/one-of-the-unspoken-reasons-for-blue-dot-fever/?utm_source=rss&utm_medium=rss&utm_campaign=one-of-the-unspoken-reasons-for-blue-dot-fever",
+      "normalised_url": "https://savingcountrymusic.com/one-of-the-unspoken-reasons-for-blue-dot-fever",
+      "title": "One of the Unspoken Reasons for “Blue Dot Fever”",
+      "source_name": "Saving Country Music",
+      "item_id": 30,
+      "first_issue_date": "2026-07-09",
+      "last_issue_date": "2026-07-09"
     }
   ]
 }

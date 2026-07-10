@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-07-10",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-10T10:30:44Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Tray Wellington Finds Two Types of Flow on 'Heart on the Table'",
+      "url": "https://nodepression.org/album-review-tray-wellington-finds-two-types-of-flow-on-heart-on-the-table/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-09",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 102,
+      "title": "Country Music Superstar Overtakes Pink Floyd in the Record Books With Historic Ohio Stadium Show",
+      "url": "https://americansongwriter.com/country-music-superstar-overtakes-pink-floyd-in-the-record-books-with-historic-ohio-stadium-show/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-09",
+      "score": 55,
+      "matched_artists": "Pink Floyd",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Beloved Whitewater Amphitheater Files for Chapter 11, Sale Pending",
+      "url": "https://savingcountrymusic.com/beloved-whitewater-amphitheater-files-for-chapter-11-sale-pending/?utm_source=rss&utm_medium=rss&utm_campaign=beloved-whitewater-amphitheater-files-for-chapter-11-sale-pending",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-09",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Challenging The Stigma That Good Musicians Can’t Have Day Jobs",
+      "url": "https://savingcountrymusic.com/challenging-the-stigma-that-good-musicians-cant-have-day-jobs/?utm_source=rss&utm_medium=rss&utm_campaign=challenging-the-stigma-that-good-musicians-cant-have-day-jobs",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-09",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

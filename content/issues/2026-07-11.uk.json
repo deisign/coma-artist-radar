@@ -1,0 +1,153 @@
+{
+  "issue_date": "2026-07-11",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-11T08:58:43Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – River Shook (Self-Titled)",
+      "url": "https://savingcountrymusic.com/album-review-river-shook-self-titled/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-river-shook-self-titled",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 572,
+      "title": "Review: Grey DeLisle & Les Greene ‘Grey & Greene’",
+      "url": "https://rockandbluesmuse.com/2026/07/10/review-grey-delisle-les-greene-grey-greene/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 40,
+      "matched_artists": "Grey Delisle",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 548,
+      "title": "Sex Pistols to re-release 'Filthy Lucre Live'",
+      "url": "https://www.punknews.org/article/88644/sex-pistols-to-re-release-filthy-lucre-live",
+      "source_name": "Punknews.org",
+      "signal_type": "reissue",
+      "signal_type_label": "Сигнал перевидання",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал перевидання · Сигнал джерела",
+      "editorial_angle": "Сигнал перевидання з артистичного поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 40,
+      "matched_artists": "Sex Pistols",
+      "matched_tags": "reissue",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: New Music From Alabama Shakes, Mary Gauthier, Rhiannon Giddens, A Dolly Parton Musical, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-new-music-from-alabama-shakes-mary-gauthier-rhiannon-giddens-a-dolly-parton-musical-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 90,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 107,
+      "title": "The Best Country Music on Bandcamp, June 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-june-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 95,
+      "title": "3 Outlaw Country Songs That Have Stood the Test of Time",
+      "url": "https://americansongwriter.com/3-outlaw-country-songs-that-have-stood-the-test-of-time/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Nothing ‘Unheard Of’ or ‘Affordable’ about New Garth Brooks Tour",
+      "url": "https://savingcountrymusic.com/nothing-unheard-of-or-affordable-about-new-garth-brooks-tour/?utm_source=rss&utm_medium=rss&utm_campaign=nothing-unheard-of-or-affordable-about-new-garth-brooks-tour",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-10",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

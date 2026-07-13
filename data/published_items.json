@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T08:58:43Z",
+  "generated_at": "2026-07-13T10:36:18Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1440,6 +1440,42 @@
       "item_id": 548,
       "first_issue_date": "2026-07-11",
       "last_issue_date": "2026-07-11"
+    },
+    {
+      "url": "https://americansongwriter.com/3-country-songs-that-brought-the-vietnam-war-era-into-the-honky-tonk/",
+      "normalised_url": "https://americansongwriter.com/3-country-songs-that-brought-the-vietnam-war-era-into-the-honky-tonk",
+      "title": "3 Country Songs That Brought the Vietnam War Era Into the Honky-Tonk",
+      "source_name": "American Songwriter",
+      "item_id": 90,
+      "first_issue_date": "2026-07-13",
+      "last_issue_date": "2026-07-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/randy-travis-previews-new-album-of-unreleased-songs/?utm_source=rss&utm_medium=rss&utm_campaign=randy-travis-previews-new-album-of-unreleased-songs",
+      "normalised_url": "https://savingcountrymusic.com/randy-travis-previews-new-album-of-unreleased-songs",
+      "title": "Randy Travis Previews New Album of Unreleased Songs",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-13",
+      "last_issue_date": "2026-07-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-ballad-of-charley-crockett-and-satanic-band-twin-temple/?utm_source=rss&utm_medium=rss&utm_campaign=the-ballad-of-charley-crockett-and-satanic-band-twin-temple",
+      "normalised_url": "https://savingcountrymusic.com/the-ballad-of-charley-crockett-and-satanic-band-twin-temple",
+      "title": "The Ballad of Charley Crockett and Satanic Band Twin Temple",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-07-13",
+      "last_issue_date": "2026-07-13"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/07/thekrontjongdevilsmusicfromthestars.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/07/thekrontjongdevilsmusicfromthestars.html",
+      "title": "Surf Instrumental Review: The Krontjong Devils-Music From The Stars-A Journey Through Space and Time-Volume 2",
+      "source_name": "Surf Music and Art",
+      "item_id": 375,
+      "first_issue_date": "2026-07-13",
+      "last_issue_date": "2026-07-13"
     }
   ]
 }

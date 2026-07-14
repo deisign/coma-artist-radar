@@ -1,0 +1,131 @@
+{
+  "issue_date": "2026-07-14",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-14T09:16:40Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Aaron Lee Tasjan Celebrates the Outsiders and Also-Rans on 'Get Over It, Underdog'",
+      "url": "https://nodepression.org/album-review-aaron-lee-tasjan-get-over-it-underdog/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-13",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 82,
+      "title": "52 Years Ago Today, Olivia Newton-John Was No. 1 With the Album That Gave Elvis Presley His Final Released Recording",
+      "url": "https://americansongwriter.com/52-years-ago-today-olivia-newton-john-was-no-1-with-the-album-that-gave-elvis-presley-his-final-released-recording/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-07-13",
+      "score": 65,
+      "matched_artists": "Olivia Newton-John, Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Towering Songwriter, Roy Orbison Co-Writer Joe Melson Has Died",
+      "url": "https://savingcountrymusic.com/towering-songwriter-roy-orbison-co-writer-joe-melson-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=towering-songwriter-roy-orbison-co-writer-joe-melson-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-13",
+      "score": 65,
+      "matched_artists": "Roy Orbison",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 78,
+      "title": "The Essential Trinity of 1970s Outlaw Country Albums",
+      "url": "https://americansongwriter.com/the-essential-trinity-of-1970s-outlaw-country-albums/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-13",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 595,
+      "title": "Pianist and Curator Aaron Diehl Does Miles Davis Centennial Right with Jazz in July, at 92NY",
+      "url": "https://www.jazztimes.com/features/profiles/pianist-and-curator-aaron-diehl-does-miles-davis-centennial-right-with-jazz-in-july-at-92ny/",
+      "source_name": "JazzTimes",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-13",
+      "score": 40,
+      "matched_artists": "Miles Davis",
+      "matched_tags": "",
+      "matched_genres": "jazz"
+    },
+    {
+      "id": 27,
+      "title": "This Is BIG: Music Industry Comes Together for AI Labeling",
+      "url": "https://savingcountrymusic.com/this-is-big-music-industry-comes-together-for-ai-labeling/?utm_source=rss&utm_medium=rss&utm_campaign=this-is-big-music-industry-comes-together-for-ai-labeling",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

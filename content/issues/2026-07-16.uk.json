@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-07-16",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-16T09:25:18Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: ‘One Track Mind’ Explores the Early Songs of Honky-Tonk Genius Gary Stewart",
+      "url": "https://nodepression.org/album-review-2/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-15",
+      "score": 90,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Tyler Childers To Produce First New Album Via Willi Carlisle",
+      "url": "https://savingcountrymusic.com/tyler-childers-to-produce-first-new-album-via-willi-carlisle/?utm_source=rss&utm_medium=rss&utm_campaign=tyler-childers-to-produce-first-new-album-via-willi-carlisle",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-07-16",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "In The Deep End With Rodney Crowell",
+      "url": "https://nodepression.org/in-the-deep-end-with-rodney-crowell/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-15",
+      "score": 75,
+      "matched_artists": "Rodney Crowell",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Why Are We Cancelling Charley Crockett for a Satanic Duo?",
+      "url": "https://savingcountrymusic.com/why-are-we-cancelling-charley-crockett-for-a-satanic-duo/?utm_source=rss&utm_medium=rss&utm_campaign=why-are-we-cancelling-charley-crockett-for-a-satanic-duo",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

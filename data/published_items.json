@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T09:25:18Z",
+  "generated_at": "2026-07-17T09:20:40Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1611,6 +1611,60 @@
       "item_id": 27,
       "first_issue_date": "2026-07-16",
       "last_issue_date": "2026-07-16"
+    },
+    {
+      "url": "https://nodepression.org/album-review-3/",
+      "normalised_url": "https://nodepression.org/album-review-3",
+      "title": "ALBUM REVIEW: Cinder Well’s Austere ‘A Blooming Body’ Finds Fascination in the Everyday",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
+    },
+    {
+      "url": "https://nodepression.org/album-review-slow-accordion-self-titled/",
+      "normalised_url": "https://nodepression.org/album-review-slow-accordion-self-titled",
+      "title": "ALBUM REVIEW: Slow Accordion Improvises an Infectious Self-Titled Debut",
+      "source_name": "No Depression",
+      "item_id": 5,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/calling-it-now-ella-langley-has-the-2026-song-of-the-summer/?utm_source=rss&utm_medium=rss&utm_campaign=calling-it-now-ella-langley-has-the-2026-song-of-the-summer",
+      "normalised_url": "https://savingcountrymusic.com/calling-it-now-ella-langley-has-the-2026-song-of-the-summer",
+      "title": "Calling It Now: Ella Langley Has the 2026 “Song of the Summer”",
+      "source_name": "Saving Country Music",
+      "item_id": 30,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/five-essential-dark-gothic-country-and-roots-albums/?utm_source=rss&utm_medium=rss&utm_campaign=five-essential-dark-gothic-country-and-roots-albums",
+      "normalised_url": "https://savingcountrymusic.com/five-essential-dark-gothic-country-and-roots-albums",
+      "title": "Five Essential Dark Gothic Country and Roots Albums",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
+    },
+    {
+      "url": "https://www.punknews.org/article/88678/twin-temple-to-release-new-album-share-doomed-lovers",
+      "normalised_url": "https://www.punknews.org/article/88678/twin-temple-to-release-new-album-share-doomed-lovers",
+      "title": "Twin Temple to release new album, share \"Doomed Lovers\"",
+      "source_name": "Punknews.org",
+      "item_id": 549,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
+    },
+    {
+      "url": "https://www.thepunksite.com/news/cel-ray-drop-new-single-video-teen-cult-song/",
+      "normalised_url": "https://www.thepunksite.com/news/cel-ray-drop-new-single-video-teen-cult-song",
+      "title": "Cel Ray Drop New Single & Video “Teen (Cult) Song”",
+      "source_name": "The Punk Site",
+      "item_id": 165,
+      "first_issue_date": "2026-07-17",
+      "last_issue_date": "2026-07-17"
     }
   ]
 }

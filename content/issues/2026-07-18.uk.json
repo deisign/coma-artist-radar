@@ -1,0 +1,114 @@
+{
+  "issue_date": "2026-07-18",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-18T08:58:27Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – John R. Miller’s “The Great Unknowing”",
+      "url": "https://savingcountrymusic.com/album-review-john-r-millers-the-great-unknowing/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-john-r-millers-the-great-unknowing",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-07-17",
+      "score": 65,
+      "matched_artists": "John R. Miller",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "SPOTLIGHT: John R. Miller’s ‘The Great Unknowing’ Is a Thoughtful Education on The World’s Crumbling",
+      "url": "https://nodepression.org/spotlight-john-r-millers-the-great-unknowing-is-a-thoughtful-education-on-the-worlds-crumbling/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-07-17",
+      "score": 75,
+      "matched_artists": "John R. Miller",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 3,
+      "title": "CROWDFUNDING RADAR: Maya de Vitry, Rio Tripiano, and David Wax Museum",
+      "url": "https://nodepression.org/crowdfunding-radar-maya-de-vitry-rio-tripiano-and-david-wax-museum/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-17",
+      "score": 90,
+      "matched_artists": "Maya de Vitry",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 96,
+      "title": "16 Years Ago Today, Country Music Lost the Beloved “A-Team” Member Who Played With Kenny Rogers, Hank Snow, and Sonny James",
+      "url": "https://americansongwriter.com/16-years-ago-today-country-music-lost-the-beloved-a-team-member-who-played-with-kenny-rogers-hank-snow-and-sonny-james/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-17",
+      "score": 40,
+      "matched_artists": "James",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Weather Disrupts Spirited Cody Jinks Set at Under The Big Sky Fest",
+      "url": "https://savingcountrymusic.com/weather-disrupts-spirited-cody-jinks-set-at-under-the-big-sky-fest/?utm_source=rss&utm_medium=rss&utm_campaign=weather-disrupts-spirited-cody-jinks-set-at-under-the-big-sky-fest",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-18",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

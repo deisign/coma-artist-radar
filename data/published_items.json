@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T08:58:27Z",
+  "generated_at": "2026-07-19T09:14:43Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1710,6 +1710,33 @@
       "item_id": 26,
       "first_issue_date": "2026-07-18",
       "last_issue_date": "2026-07-18"
+    },
+    {
+      "url": "https://americansongwriter.com/kenny-chesney-just-passed-george-strait-and-tim-mcgraw-for-one-of-country-musics-biggest-records/",
+      "normalised_url": "https://americansongwriter.com/kenny-chesney-just-passed-george-strait-and-tim-mcgraw-for-one-of-country-musics-biggest-records",
+      "title": "Kenny Chesney Just Passed George Strait and Tim McGraw for One of Country Music’s Biggest Records",
+      "source_name": "American Songwriter",
+      "item_id": 75,
+      "first_issue_date": "2026-07-19",
+      "last_issue_date": "2026-07-19"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-uncertainty-at-levon-helm-studios-new-willie-carlisle-lp-produced-by-tyler-childers-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-uncertainty-at-levon-helm-studios-new-willie-carlisle-lp-produced-by-tyler-childers-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Uncertainty at Levon Helm Studios, New Willie Carlisle LP Produced by Tyler Childers, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-07-19",
+      "last_issue_date": "2026-07-19"
+    },
+    {
+      "url": "https://nodepression.org/the-reading-room-craig-havighurts-musicality-for-modern-humans/",
+      "normalised_url": "https://nodepression.org/the-reading-room-craig-havighurts-musicality-for-modern-humans",
+      "title": "THE READING ROOM: Craig Havighurt’s ‘Musicality for Modern Humans’",
+      "source_name": "No Depression",
+      "item_id": 4,
+      "first_issue_date": "2026-07-19",
+      "last_issue_date": "2026-07-19"
     }
   ]
 }

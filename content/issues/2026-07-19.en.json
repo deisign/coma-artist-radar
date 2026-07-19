@@ -1,0 +1,71 @@
+{
+  "issue_date": "2026-07-19",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-19T09:14:43Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 2,
+      "title": "BONUS TRACKS: Uncertainty at Levon Helm Studios, New Willie Carlisle LP Produced by Tyler Childers, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-uncertainty-at-levon-helm-studios-new-willie-carlisle-lp-produced-by-tyler-childers-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-17",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 4,
+      "title": "THE READING ROOM: Craig Havighurt’s ‘Musicality for Modern Humans’",
+      "url": "https://nodepression.org/the-reading-room-craig-havighurts-musicality-for-modern-humans/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-07-16",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 75,
+      "title": "Kenny Chesney Just Passed George Strait and Tim McGraw for One of Country Music’s Biggest Records",
+      "url": "https://americansongwriter.com/kenny-chesney-just-passed-george-strait-and-tim-mcgraw-for-one-of-country-musics-biggest-records/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-18",
+      "score": 40,
+      "matched_artists": "George Strait",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

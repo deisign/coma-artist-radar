@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T09:14:43Z",
+  "generated_at": "2026-07-20T10:21:22Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1737,6 +1737,42 @@
       "item_id": 4,
       "first_issue_date": "2026-07-19",
       "last_issue_date": "2026-07-19"
+    },
+    {
+      "url": "https://americansongwriter.com/born-89-years-ago-today-in-the-tar-heel-state-the-teen-rockabilly-idol-turned-international-ambassador-of-country-music/",
+      "normalised_url": "https://americansongwriter.com/born-89-years-ago-today-in-the-tar-heel-state-the-teen-rockabilly-idol-turned-international-ambassador-of-country-music",
+      "title": "Born 89 Years Ago Today in the Tar Heel State, the Teen Rockabilly Idol Turned “International Ambassador of Country Music”",
+      "source_name": "American Songwriter",
+      "item_id": 99,
+      "first_issue_date": "2026-07-20",
+      "last_issue_date": "2026-07-20"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-from-australia-to-pennsylvania-five-festivals-offered-a-variety-of-ways-to-explore-roots-music/",
+      "normalised_url": "https://nodepression.org/through-the-lens-from-australia-to-pennsylvania-five-festivals-offered-a-variety-of-ways-to-explore-roots-music",
+      "title": "THROUGH THE LENS: From Australia to Pennsylvania, Five Festivals Offered a Variety of Ways to Explore Roots Music",
+      "source_name": "No Depression",
+      "item_id": 11,
+      "first_issue_date": "2026-07-20",
+      "last_issue_date": "2026-07-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-182/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-182",
+      "normalised_url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-182",
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#182)",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-07-20",
+      "last_issue_date": "2026-07-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/zach-top-proves-hes-worth-new-headliner-status-in-montana/?utm_source=rss&utm_medium=rss&utm_campaign=zach-top-proves-hes-worth-new-headliner-status-in-montana",
+      "normalised_url": "https://savingcountrymusic.com/zach-top-proves-hes-worth-new-headliner-status-in-montana",
+      "title": "Zach Top Proves He’s Worth New Headliner Status in Montana",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-20",
+      "last_issue_date": "2026-07-20"
     }
   ]
 }

@@ -1,0 +1,214 @@
+{
+  "issue_date": "2026-07-22",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-22T09:36:54Z",
+  "min_score": 30,
+  "total_items": 10,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Punch Brothers Go All Instrumental on 'The Unsung Adventures,' Still Carrying the Torch",
+      "url": "https://nodepression.org/album-review-punch-brothers-go-all-instrumental-on-the-unsung-adventures-still-carrying-the-torch/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-21",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Nathan Evans Fox’s “Heirloom”",
+      "url": "https://savingcountrymusic.com/album-review-nathan-evans-foxs-heirloom/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-nathan-evans-foxs-heirloom",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-20",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 373,
+      "title": "Instrumental Rock-Surf Review: Kincaid and the Memetics - Oh, Misere!",
+      "url": "https://www.surfmusicandart.com/2026/07/kincaidandthememetics.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-20",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 441,
+      "title": "Interview with Debbie Simmonds about Kim Simmonds and Savoy Brown’s collection Too Much Of A Good Thing",
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:495707",
+      "source_name": "Blues.Gr",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з жанрового поля coma.fm.",
+      "published_at": "2026-07-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "interview",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 75,
+      "title": "This Dean Martin Hit Single From 1964 Was Actually Written for Frank Sinatra Instead",
+      "url": "https://americansongwriter.com/this-dean-martin-hit-single-from-1964-was-actually-written-for-frank-sinatra-instead/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 30,
+      "matched_artists": "Frank Sinatra, Dean Martin",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 544,
+      "title": "Chelsea Wolfe announces new album, shares \"Cold\" video",
+      "url": "https://www.punknews.org/article/88709/chelsea-wolfe-announces-new-album-shares-cold-video",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з артистичного поля coma.fm.",
+      "published_at": "2026-07-21",
+      "score": 55,
+      "matched_artists": "Chelsea Wolfe",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Wilco, Molly Tuttle, Chaka Khan, Charley Crockett & Other Photos of the Week",
+      "url": "https://nodepression.org/through-the-lens-wilco-molly-tuttle-chaka-khan-charley-crockett-other-photos-of-the-week/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-21",
+      "score": 90,
+      "matched_artists": "Molly Tuttle, Wilco",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Joe Nichols Reveals How Nashville Is Using New AI Tools",
+      "url": "https://savingcountrymusic.com/joe-nichols-reveals-how-nashville-is-using-new-ai-tools/?utm_source=rss&utm_medium=rss&utm_campaign=joe-nichols-reveals-how-nashville-is-using-new-ai-tools",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-21",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 374,
+      "title": "The June 2026 Lineup: Reverb, Relics & Rarities",
+      "url": "https://www.surfmusicandart.com/2026/07/June2026.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 584,
+      "title": "Alex Tomaselli Blues Band Wins Romanian National Blues Contest at Brezoi 2026",
+      "url": "https://www.thebluesmagazine.com/alex-tomaselli-wins-romanian-blues-contest-brezoi-2026/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-21",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "blues",
+      "matched_genres": "blues"
+    }
+  ]
+}

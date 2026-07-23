@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-07-23",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-23T09:33:24Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Creekbed Carter Hogan Is a Court Jester of the Apocalypse on 'Peasants Revolt'",
+      "url": "https://nodepression.org/album-review-creekbed-carter-hogan/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Gary Stewart’s “One Track Mind”",
+      "url": "https://savingcountrymusic.com/album-review-gary-stewarts-one-track-mind/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-gary-stewarts-one-track-mind",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 92,
+      "title": "Kacey Musgraves Brings the Heat in Steamy “Mexico Honey” Music Video",
+      "url": "https://americansongwriter.com/kacey-musgraves-brings-the-heat-in-steamy-mexico-honey-music-video/",
+      "source_name": "American Songwriter",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "artist_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з артистичного поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 30,
+      "matched_artists": "Kacey Musgraves",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "FOUNDERS KEEPERS: Margo Price Sings Truth to Power, Plus New Music from Luluc, Mason Jennings and More",
+      "url": "https://nodepression.org/founders-keepers-margo-price-sings-truth-to-power-plus-new-music-from-luluc-mason-jennings-and-more/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 90,
+      "matched_artists": "Margo Price",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "The Big Memories and Biggest Takeaways from Under The Big Sky 2026",
+      "url": "https://savingcountrymusic.com/the-big-memories-and-biggest-takeaways-from-under-the-big-sky-2026/?utm_source=rss&utm_medium=rss&utm_campaign=the-big-memories-and-biggest-takeaways-from-under-the-big-sky-2026",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-22",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

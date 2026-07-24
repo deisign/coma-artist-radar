@@ -1,0 +1,113 @@
+{
+  "issue_date": "2026-07-24",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-24T09:30:30Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 9,
+      "title": "ALBUM REVIEW: Lily Meola Finds Her Footing With 'Lucky to Be'",
+      "url": "https://nodepression.org/album-lily-meola-lucky-to-be/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-20",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Brad Paisley’s “Tacklebox (Disc 1)”",
+      "url": "https://savingcountrymusic.com/album-review-brad-paisleys-tacklebox-disc-1/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-brad-paisleys-tacklebox-disc-1",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-23",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Mo Pitney and Curb Finally Slate New Album … For 2027",
+      "url": "https://savingcountrymusic.com/mo-pitney-and-curb-finally-slate-new-album-for-2027/?utm_source=rss&utm_medium=rss&utm_campaign=mo-pitney-and-curb-finally-slate-new-album-for-2027",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-23",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 4,
+      "title": "SPOTLIGHT: John R. Miller - \"Daughter of Night\" [VIDEO]",
+      "url": "https://nodepression.org/spotlight-john-r-miller-daughter-of-night-video/",
+      "source_name": "No Depression",
+      "signal_type": "video",
+      "signal_type_label": "Video signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Video signal · Source signal",
+      "editorial_angle": "Video signal from the coma.fm artist field.",
+      "published_at": "2026-07-22",
+      "score": 75,
+      "matched_artists": "John R. Miller",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 549,
+      "title": "Videos: Emma Ruth Rundle releases video for \"Enough\", announces US tour dates",
+      "url": "https://www.punknews.org/article/88724/videos-emma-ruth-rundle-releases-video-for-enough-announces-us-tour-dates",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Video signal",
+      "field_evidence": [
+        "artist_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Video signal · Source signal",
+      "editorial_angle": "Video signal from the coma.fm artist field.",
+      "published_at": "2026-07-23",
+      "score": 40,
+      "matched_artists": "Emma Ruth Rundle",
+      "matched_tags": "",
+      "matched_genres": ""
+    }
+  ]
+}

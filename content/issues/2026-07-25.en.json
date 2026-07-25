@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-07-25",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-25T09:10:08Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: The Revivalists Explore Difficult Issues Via Catchy Sounds With 'Get It Honest'",
+      "url": "https://nodepression.org/album-review-the-revivalists-get-it-honest/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-24",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Charles Wesley Godwin’s “Christian Name”",
+      "url": "https://savingcountrymusic.com/album-review-charles-wesley-godwins-christian-name/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-charles-wesley-godwins-christian-name",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-24",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 373,
+      "title": "Surf Metal Instrumental Review: Phantom Lightkeeper-Four Days at the Precipice",
+      "url": "https://www.surfmusicandart.com/2026/07/fourdaysattheprecipice.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-24",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Raul Malo's Final Performance, New Music from Buddy Miller, Folk Alley's Cover Contest, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-raul-malos-final-performance-new-music-from-buddy-miller-folk-alleys-cover-contest-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Traditional Country Artists, Now Is the Time To Submit to the Grammys",
+      "url": "https://savingcountrymusic.com/traditional-country-artists-now-is-the-time-to-submit-to-the-grammys-2/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-country-artists-now-is-the-time-to-submit-to-the-grammys-2",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-24",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

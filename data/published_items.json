@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T09:30:30Z",
+  "generated_at": "2026-07-25T09:10:08Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -1953,6 +1953,51 @@
       "item_id": 549,
       "first_issue_date": "2026-07-24",
       "last_issue_date": "2026-07-24"
+    },
+    {
+      "url": "https://nodepression.org/album-review-the-revivalists-get-it-honest/",
+      "normalised_url": "https://nodepression.org/album-review-the-revivalists-get-it-honest",
+      "title": "ALBUM REVIEW: The Revivalists Explore Difficult Issues Via Catchy Sounds With 'Get It Honest'",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-07-25",
+      "last_issue_date": "2026-07-25"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-raul-malos-final-performance-new-music-from-buddy-miller-folk-alleys-cover-contest-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-raul-malos-final-performance-new-music-from-buddy-miller-folk-alleys-cover-contest-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Raul Malo's Final Performance, New Music from Buddy Miller, Folk Alley's Cover Contest, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-07-25",
+      "last_issue_date": "2026-07-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-charles-wesley-godwins-christian-name/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-charles-wesley-godwins-christian-name",
+      "normalised_url": "https://savingcountrymusic.com/album-review-charles-wesley-godwins-christian-name",
+      "title": "Album Review – Charles Wesley Godwin’s “Christian Name”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-07-25",
+      "last_issue_date": "2026-07-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/traditional-country-artists-now-is-the-time-to-submit-to-the-grammys-2/?utm_source=rss&utm_medium=rss&utm_campaign=traditional-country-artists-now-is-the-time-to-submit-to-the-grammys-2",
+      "normalised_url": "https://savingcountrymusic.com/traditional-country-artists-now-is-the-time-to-submit-to-the-grammys-2",
+      "title": "Traditional Country Artists, Now Is the Time To Submit to the Grammys",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-07-25",
+      "last_issue_date": "2026-07-25"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/07/fourdaysattheprecipice.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/07/fourdaysattheprecipice.html",
+      "title": "Surf Metal Instrumental Review: Phantom Lightkeeper-Four Days at the Precipice",
+      "source_name": "Surf Music and Art",
+      "item_id": 373,
+      "first_issue_date": "2026-07-25",
+      "last_issue_date": "2026-07-25"
     }
   ]
 }

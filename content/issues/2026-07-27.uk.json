@@ -1,0 +1,71 @@
+{
+  "issue_date": "2026-07-27",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-27T10:51:22Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 80,
+      "title": "Born 104 Years Ago Today in West Virginia, the Country Music Pioneer Who Advanced the Careers of George Strait, Garth Brooks, and the Oak Ridge Boys",
+      "url": "https://americansongwriter.com/born-104-years-ago-today-in-west-virginia-the-country-music-pioneer-who-advanced-the-careers-of-george-strait-garth-brooks-and-the-oak-ridge-boys/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-26",
+      "score": 40,
+      "matched_artists": "George Strait",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 11,
+      "title": "Waylon Jennings to be Honored in Hollywood",
+      "url": "https://savingcountrymusic.com/waylon-jennings-to-be-honored-in-hollywood/?utm_source=rss&utm_medium=rss&utm_campaign=waylon-jennings-to-be-honored-in-hollywood",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-26",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 12,
+      "title": "Excellent Songs, Incredible Voices Grace ‘The Hook’ Episode 7",
+      "url": "https://savingcountrymusic.com/excellent-songs-incredible-voices-grace-the-hook-episode-7/?utm_source=rss&utm_medium=rss&utm_campaign=excellent-songs-incredible-voices-grace-the-hook-episode-7",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

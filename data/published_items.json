@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T10:51:22Z",
+  "generated_at": "2026-07-28T10:00:37Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2025,6 +2025,33 @@
       "item_id": 11,
       "first_issue_date": "2026-07-27",
       "last_issue_date": "2026-07-27"
+    },
+    {
+      "url": "https://americansongwriter.com/born-99-years-ago-in-kentucky-the-first-woman-to-join-nashvilles-a-team-and-help-shape-country-music-alongside-willie-nelson-and-roy-acuff/",
+      "normalised_url": "https://americansongwriter.com/born-99-years-ago-in-kentucky-the-first-woman-to-join-nashvilles-a-team-and-help-shape-country-music-alongside-willie-nelson-and-roy-acuff",
+      "title": "Born 99 Years Ago in Kentucky, the First Woman To Join Nashville’s “A-Team” and Help Shape Country Music Alongside Willie Nelson and Roy Acuff",
+      "source_name": "American Songwriter",
+      "item_id": 61,
+      "first_issue_date": "2026-07-28",
+      "last_issue_date": "2026-07-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/on-kacey-musgraves-canceling-numerous-middle-of-nowhere-tour-dates/?utm_source=rss&utm_medium=rss&utm_campaign=on-kacey-musgraves-canceling-numerous-middle-of-nowhere-tour-dates",
+      "normalised_url": "https://savingcountrymusic.com/on-kacey-musgraves-canceling-numerous-middle-of-nowhere-tour-dates",
+      "title": "On Kacey Musgraves Canceling Numerous “Middle of Nowhere” Tour Dates",
+      "source_name": "Saving Country Music",
+      "item_id": 12,
+      "first_issue_date": "2026-07-28",
+      "last_issue_date": "2026-07-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-wilder-blue-announce-new-album-cinco/?utm_source=rss&utm_medium=rss&utm_campaign=the-wilder-blue-announce-new-album-cinco",
+      "normalised_url": "https://savingcountrymusic.com/the-wilder-blue-announce-new-album-cinco",
+      "title": "The Wilder Blue Announce New Album “Cinco”",
+      "source_name": "Saving Country Music",
+      "item_id": 11,
+      "first_issue_date": "2026-07-28",
+      "last_issue_date": "2026-07-28"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "issue_date": "2026-07-28",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-28T10:00:37Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 11,
+      "title": "The Wilder Blue Announce New Album “Cinco”",
+      "url": "https://savingcountrymusic.com/the-wilder-blue-announce-new-album-cinco/?utm_source=rss&utm_medium=rss&utm_campaign=the-wilder-blue-announce-new-album-cinco",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-28",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 12,
+      "title": "On Kacey Musgraves Canceling Numerous “Middle of Nowhere” Tour Dates",
+      "url": "https://savingcountrymusic.com/on-kacey-musgraves-canceling-numerous-middle-of-nowhere-tour-dates/?utm_source=rss&utm_medium=rss&utm_campaign=on-kacey-musgraves-canceling-numerous-middle-of-nowhere-tour-dates",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-27",
+      "score": 65,
+      "matched_artists": "Kacey Musgraves",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 61,
+      "title": "Born 99 Years Ago in Kentucky, the First Woman To Join Nashville’s “A-Team” and Help Shape Country Music Alongside Willie Nelson and Roy Acuff",
+      "url": "https://americansongwriter.com/born-99-years-ago-in-kentucky-the-first-woman-to-join-nashvilles-a-team-and-help-shape-country-music-alongside-willie-nelson-and-roy-acuff/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-27",
+      "score": 55,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

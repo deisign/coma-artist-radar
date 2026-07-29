@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-07-29",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-07-29T09:52:21Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: The Family Plays Together and Stays Together on 'Delusions of Grandeur'",
+      "url": "https://nodepression.org/album-review-the-family-plays-together-and-stays-together-on-delusions-of-grandeur/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-07-28",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 29,
+      "title": "Chasen Wayne Announces New Album “The Diamond Saloon”",
+      "url": "https://savingcountrymusic.com/chasen-wayne-announces-new-album-the-diamond-saloon/?utm_source=rss&utm_medium=rss&utm_campaign=chasen-wayne-announces-new-album-the-diamond-saloon",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-07-27",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 97,
+      "title": "27 Years Ago Today, We Said Goodbye to the Youngest Daughter of Country Music’s Most Famous Family and the First To Record a Johnny Cash Classic",
+      "url": "https://americansongwriter.com/27-years-ago-today-we-said-goodbye-to-the-youngest-daughter-of-country-musics-most-famous-family-and-the-first-to-record-a-johnny-cash-classic/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-28",
+      "score": 75,
+      "matched_artists": "Johnny Cash",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: The Blues Rule at the 2026 Briggs Farm & Winthrop Rhythm & Blues Festivals",
+      "url": "https://nodepression.org/through-the-lens-the-blues-rule-at-the-2026-briggs-farm-winthrop-rhythm-blues-festivals/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-28",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 79,
+      "title": "The Only 1960s Country Singer That Tom Waits Gave Props To: “Most Sound Like They’re Talking to Their Accountant”",
+      "url": "https://americansongwriter.com/the-only-1960s-country-singer-that-tom-waits-gave-props-to-most-sound-like-theyre-talking-to-their-accountant/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-07-28",
+      "score": 50,
+      "matched_artists": "Tom Waits",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Colton Dawson Is Not Just Another New Neotraditionalist",
+      "url": "https://savingcountrymusic.com/colton-dawson-is-not-just-another-new-neotraditionalist/?utm_source=rss&utm_medium=rss&utm_campaign=colton-dawson-is-not-just-another-new-neotraditionalist",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-07-28",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "issue_date": "2026-07-31",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-07-31T09:52:12Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: GA-20 and Charlie Musselwhite Stage a Chicago Summit on ‘Blues Now’",
+      "url": "https://nodepression.org/ga-20-and-charlie-musselwhite-stage-a-chicago-summit-on-blues-now/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 90,
+      "matched_artists": "Chicago",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Album Review – Shania Twain’s “Little Miss Twain”",
+      "url": "https://savingcountrymusic.com/album-review-shania-twains-little-miss-twain/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-shania-twains-little-miss-twain",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 373,
+      "title": "Surf-Pop Instrumental LP Review: Jerry Cole and His Spacemen - Surf Age",
+      "url": "https://www.surfmusicandart.com/2026/07/jerrycolesurfage.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 3,
+      "title": "SPOTLIGHT: John R. Miller -  Living and Dying on The Road in America [ESSAY]",
+      "url": "https://nodepression.org/spotlight-john-r-miller-living-and-dying-on-the-road-in-america-essay/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 90,
+      "matched_artists": "John R. Miller, America",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 429,
+      "title": "Buddy Guy: Against All Odds",
+      "url": "https://www.americanbluesscene.com/2026/07/rearview-mirror-buddy-guy-against-all-odds/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 40,
+      "matched_artists": "Buddy Guy, Odds",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 29,
+      "title": "What Can Unite Willie Nelson and Gavin Adcock? Data Center Opposition",
+      "url": "https://savingcountrymusic.com/what-can-unite-willie-nelson-and-gavin-adcock-data-center-opposition/?utm_source=rss&utm_medium=rss&utm_campaign=what-can-unite-willie-nelson-and-gavin-adcock-data-center-opposition",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-29",
+      "score": 65,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 449,
+      "title": "Roadhouse Ramblings: Remembering the vital music of LaVern Baker",
+      "url": "https://bluesroadhouse.com/2026/07/29/roadhouse-ramblings-remembering-the-vital-music-of-lavern-baker/",
+      "source_name": "Blues Roadhouse",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 40,
+      "matched_artists": "LaVern Baker",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    }
+  ]
+}

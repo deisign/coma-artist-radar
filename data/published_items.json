@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T09:52:12Z",
+  "generated_at": "2026-08-01T09:17:42Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2169,6 +2169,42 @@
       "item_id": 373,
       "first_issue_date": "2026-07-31",
       "last_issue_date": "2026-07-31"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-rip-glen-hansard-and-other-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-rip-glen-hansard-and-other-roots-music-news",
+      "title": "BONUS TRACKS: RIP Glen Hansard and Other Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-01",
+      "last_issue_date": "2026-08-01"
+    },
+    {
+      "url": "https://nodepression.org/willie-nelson-showcases-consistency-on-79th-solo-studio-lp-dream-chaser/",
+      "normalised_url": "https://nodepression.org/willie-nelson-showcases-consistency-on-79th-solo-studio-lp-dream-chaser",
+      "title": "Willie Nelson Showcases Consistency on 79th Solo Studio LP 'Dream Chaser'",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-08-01",
+      "last_issue_date": "2026-08-01"
+    },
+    {
+      "url": "https://savingcountrymusic.com/tanya-tucker-testifies-and-sings-in-front-of-texas-senate-hearing/?utm_source=rss&utm_medium=rss&utm_campaign=tanya-tucker-testifies-and-sings-in-front-of-texas-senate-hearing",
+      "normalised_url": "https://savingcountrymusic.com/tanya-tucker-testifies-and-sings-in-front-of-texas-senate-hearing",
+      "title": "Tanya Tucker Testifies and SINGS in front of Texas Senate Hearing",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-01",
+      "last_issue_date": "2026-08-01"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-powerful-message-to-take-from-new-tyler-childers-interview/?utm_source=rss&utm_medium=rss&utm_campaign=the-powerful-message-to-take-from-new-tyler-childers-interview",
+      "normalised_url": "https://savingcountrymusic.com/the-powerful-message-to-take-from-new-tyler-childers-interview",
+      "title": "The Powerful Message to Take from New Tyler Childers Interview",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-01",
+      "last_issue_date": "2026-08-01"
     }
   ]
 }

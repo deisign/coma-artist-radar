@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-08-02",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-02T09:19:51Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 26,
+      "title": "Adam Odor Gives Grammy-Winning Advice, Drew Moreland Appears on Ep. #8 of The Hook",
+      "url": "https://savingcountrymusic.com/adam-odor-gives-grammy-winning-advice-drew-moreland-appears-on-ep-8-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=adam-odor-gives-grammy-winning-advice-drew-moreland-appears-on-ep-8-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-08-01",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 30,
+      "title": "Ian Noe Re-Emerges to Announces New Double Concept Album",
+      "url": "https://savingcountrymusic.com/ian-noe-re-emerges-to-announces-new-double-concept-album/?utm_source=rss&utm_medium=rss&utm_campaign=ian-noe-re-emerges-to-announces-new-double-concept-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 101,
+      "title": "Paul McCartney Helped Elvis Costello Write This Hit Single From 1989",
+      "url": "https://americansongwriter.com/paul-mccartney-helped-elvis-costello-write-this-hit-single-from-1989/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-01",
+      "score": 30,
+      "matched_artists": "Paul McCartney",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 6,
+      "title": "THE READING ROOM: Timothy D. Tyson and Mary D. Williams’ ‘Mahalia Jackson, Moving on Up a Little Higher: The Story of an American Civil Rights Pioneer’",
+      "url": "https://nodepression.org/the-reading-room-timothy-d-tyson-and-mary-d-williams-mahalia-jackson-moving-on-up-a-little-higher-the-story-of-an-american-civil-rights-pioneer/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-07-30",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 12,
+      "title": "QUEER COUNTRY: All Aboard the Pride Party Boat: OUTlaw Pride Announces New Record Label",
+      "url": "https://nodepression.org/queer-country-all-aboard-the-pride-party-boat-outlaw-pride-announces-new-record-label/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-07-23",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 93,
+      "title": "One Year Ago Today, We Said Goodbye to the Grand Ole Opry Frequent Flyer and “Queen of Country Soul”",
+      "url": "https://americansongwriter.com/one-year-ago-today-we-said-goodbye-to-the-grand-ole-opry-frequent-flyer-and-queen-of-country-soul/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-01",
+      "score": 30,
+      "matched_artists": "Queen",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "issue_date": "2026-08-05",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-05T09:46:03Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 4,
+      "title": "ALBUM REVIEW: Margaret Glaspy Puts Fraught Relationships Under a Microscope on 'I Am Both'",
+      "url": "https://nodepression.org/album-review-margaret-glaspy-puts-fraught-relationships-under-a-microscope-on-i-am-both/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "Glen Hansard Taught Me to Take, But Always Give Back",
+      "url": "https://nodepression.org/glen-hansard-taught-me-to-take-but-always-give-back/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 76,
+      "title": "11 Years Ago Today, Country Music Lost the Nashville Sound Architect Who Led Tammy Wynette to Stardom and Revived George Jones’ Career",
+      "url": "https://americansongwriter.com/11-years-ago-today-country-music-lost-the-nashville-sound-architect-who-led-tammy-wynette-to-stardom-and-revived-george-jones-career/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 40,
+      "matched_artists": "George Jones",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Making Sense of Stella Lefty and New Song “Boston”",
+      "url": "https://savingcountrymusic.com/making-sense-of-stella-lefty-and-new-song-boston/?utm_source=rss&utm_medium=rss&utm_campaign=making-sense-of-stella-lefty-and-new-song-boston",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Robert’s Western World Announces Satellite Location at New Nashville Stadium",
+      "url": "https://savingcountrymusic.com/roberts-western-world-announces-satellite-location-at-new-nashville-stadium/?utm_source=rss&utm_medium=rss&utm_campaign=roberts-western-world-announces-satellite-location-at-new-nashville-stadium",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 92,
+      "title": "Think Megan Moroney Is Just the Queen of Sad Girl Country? These 4 Brilliant Lyrics Say Otherwise",
+      "url": "https://americansongwriter.com/think-megan-moroney-is-just-the-queen-of-sad-girl-country-these-4-brilliant-lyrics-say-otherwise/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-04",
+      "score": 30,
+      "matched_artists": "Queen",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

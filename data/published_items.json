@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T09:49:17Z",
+  "generated_at": "2026-08-07T08:21:31Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2430,6 +2430,33 @@
       "item_id": 26,
       "first_issue_date": "2026-08-06",
       "last_issue_date": "2026-08-06"
+    },
+    {
+      "url": "https://americansongwriter.com/dolly-parton-to-receive-lifetime-achievement-award-at-2026-americana-honors-awards/",
+      "normalised_url": "https://americansongwriter.com/dolly-parton-to-receive-lifetime-achievement-award-at-2026-americana-honors-awards",
+      "title": "Dolly Parton to Receive Lifetime Achievement Award at 2026 Americana Honors & Awards",
+      "source_name": "American Songwriter",
+      "item_id": 85,
+      "first_issue_date": "2026-08-07",
+      "last_issue_date": "2026-08-07"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-robert-henry-the-repeaters-down-the-road/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-robert-henry-the-repeaters-down-the-road",
+      "normalised_url": "https://savingcountrymusic.com/album-review-robert-henry-the-repeaters-down-the-road",
+      "title": "Album Review – Robert Henry & the Repeaters – “Down The Road”",
+      "source_name": "Saving Country Music",
+      "item_id": 12,
+      "first_issue_date": "2026-08-07",
+      "last_issue_date": "2026-08-07"
+    },
+    {
+      "url": "https://savingcountrymusic.com/pedal-steel-legend-and-producer-tommy-detamore-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=pedal-steel-legend-and-producer-tommy-detamore-has-died",
+      "normalised_url": "https://savingcountrymusic.com/pedal-steel-legend-and-producer-tommy-detamore-has-died",
+      "title": "Pedal Steel Legend and Producer Tommy Detamore Has Died",
+      "source_name": "Saving Country Music",
+      "item_id": 11,
+      "first_issue_date": "2026-08-07",
+      "last_issue_date": "2026-08-07"
     }
   ]
 }

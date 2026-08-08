@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-08",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-08T07:57:16Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Silverada’s “Living Proof”",
+      "url": "https://savingcountrymusic.com/album-review-silveradas-living-proof/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-silveradas-living-proof",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-07",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 375,
+      "title": "Interview With Tom Tourville - Sun, Sand, Surf & Sidewalls",
+      "url": "https://www.surfmusicandart.com/2026/08/tomtourvilleinterview.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з жанрового поля coma.fm.",
+      "published_at": "2026-08-07",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "surf, interview",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 26,
+      "title": "On His Birthday, Rodney Crowell’s Most Iconic Album Returns",
+      "url": "https://savingcountrymusic.com/on-his-birthday-rodney-crowells-most-iconic-album-returns/?utm_source=rss&utm_medium=rss&utm_campaign=on-his-birthday-rodney-crowells-most-iconic-album-returns",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-07",
+      "score": 50,
+      "matched_artists": "Rodney Crowell",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Dolly Parton's AMERICANAFEST Award, New Sierra Ferrell Track, Bandcamp Friday, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-dolly-partons-americanafest-award-new-sierra-ferrell-track-bandcamp-friday-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-07",
+      "score": 100,
+      "matched_artists": "Sierra Ferrell, Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "“That’s What Hope is For” —Steve Earle, Songwriting, and Music that Changes the World",
+      "url": "https://nodepression.org/thats-what-hope-is-for-steve-earle-songwriting-and-music-that-changes-the-world/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-06",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 87,
+      "title": "44 Years Ago Today, Two Country Legends Turned an Overlooked Willie Nelson Song Into a No. 1 Hit",
+      "url": "https://americansongwriter.com/44-years-ago-today-two-country-legends-turned-an-overlooked-willie-nelson-song-into-a-no-1-hit/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-07",
+      "score": 30,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

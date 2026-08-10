@@ -1,0 +1,71 @@
+{
+  "issue_date": "2026-08-10",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-10T08:55:12Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 81,
+      "title": "The Beatles Album That Saw John Lennon Lose His Position as the de Facto Leader",
+      "url": "https://americansongwriter.com/the-beatles-album-that-saw-john-lennon-lose-his-position-as-the-de-facto-leader/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-08-09",
+      "score": 45,
+      "matched_artists": "The Beatles, John Lennon",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Unreleased John Prine, David Allan Coe Songs Grace New Projects",
+      "url": "https://savingcountrymusic.com/unreleased-john-prine-david-allan-coe-songs-grace-new-projects/?utm_source=rss&utm_medium=rss&utm_campaign=unreleased-john-prine-david-allan-coe-songs-grace-new-projects",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-09",
+      "score": 50,
+      "matched_artists": "John Prine",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Charlie Worsham Invited to be New Grand Ole Opry Member",
+      "url": "https://savingcountrymusic.com/charlie-worsham-invited-to-be-new-grand-ole-opry-member/?utm_source=rss&utm_medium=rss&utm_campaign=charlie-worsham-invited-to-be-new-grand-ole-opry-member",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-09",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

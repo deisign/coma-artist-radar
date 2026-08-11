@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-11",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-11T08:15:31Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 450,
+      "title": "Roadhouse Album Review: The Anthony Paule Soul Orchestra and Willie Jordan create memorable soul music with “What Can We Do?”",
+      "url": "https://bluesroadhouse.com/2026/08/10/roadhouse-album-review-the-anthony-paule-soul-orchestra-and-willie-jordan-create-memorable-soul-music-with-what-can-we-do/",
+      "source_name": "Blues Roadhouse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-08-10",
+      "score": 40,
+      "matched_artists": "Orchestra",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 82,
+      "title": "Miranda Lambert Is Taking Over an Iconic Fort Worth Honky-Tonk for ‘Crisco’ Album Release Show",
+      "url": "https://americansongwriter.com/miranda-lambert-is-taking-over-an-iconic-fort-worth-honky-tonk-for-crisco-album-release-show/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-10",
+      "score": 55,
+      "matched_artists": "Miranda Lambert",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": ""
+    },
+    {
+      "id": 399,
+      "title": "Monte Warden and the Wagoneers",
+      "url": "http://www.the-rockabilly-chronicle.com/monte-warden-and-the-wagoneers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-10",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 107,
+      "title": "The Best Country Music on Bandcamp, July 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-july-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-10",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "No, AI Is Not “Just Like AutoTune”",
+      "url": "https://savingcountrymusic.com/no-ai-is-not-just-like-autotune/?utm_source=rss&utm_medium=rss&utm_campaign=no-ai-is-not-just-like-autotune",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-10",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 41,
+      "title": "Merle Haggard Helped Get Brooks and Dunn Back Together",
+      "url": "https://savingcountrymusic.com/merle-haggard-helped-get-brooks-and-dunn-back-together/?utm_source=rss&utm_medium=rss&utm_campaign=merle-haggard-helped-get-brooks-and-dunn-back-together",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-02",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

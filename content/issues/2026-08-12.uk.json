@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-12",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-12T08:38:25Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Shaboozey’s “The Outlaw Cherie Lee”",
+      "url": "https://savingcountrymusic.com/album-review-shaboozeys-the-outlaw-cherie-lee/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-shaboozeys-the-outlaw-cherie-lee",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-11",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 511,
+      "title": "New single \"Lobo\" by Sys Malakian",
+      "url": "https://surfguitar101.com/news/story/1833/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-12",
+      "score": 90,
+      "matched_artists": "Sys Malakian",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb, new_release",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Gerry Milnes & The State of Traditional Music In West Virginia",
+      "url": "https://nodepression.org/through-the-lens-gerry-milnes-the-state-of-traditional-music-in-west-virginia/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-11",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 512,
+      "title": "Colorado Instrumental Fanzine - Issue #7 and '4 by 4' 7\" Compilation",
+      "url": "https://surfguitar101.com/news/story/1832/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-12",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 84,
+      "title": "Dwayne “The Rock” Johnson Is Exploring a Country Music Career With an ‘American Idol’ Winner—and a Little Help From Willie Nelson",
+      "url": "https://americansongwriter.com/dwayne-the-rock-johnson-is-exploring-a-country-music-career-with-an-american-idol-winner-and-a-little-help-from-willie-nelson/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-11",
+      "score": 55,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Slash, Marty Stuart, Marcus King Lead Sho-Bud Steel Guitar Show at Ryman",
+      "url": "https://savingcountrymusic.com/slash-marty-stuart-marcus-king-lead-sho-bud-steel-guitar-show-at-ryman/?utm_source=rss&utm_medium=rss&utm_campaign=slash-marty-stuart-marcus-king-lead-sho-bud-steel-guitar-show-at-ryman",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-12",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

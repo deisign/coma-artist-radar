@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T08:15:31Z",
+  "generated_at": "2026-08-12T08:38:25Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2655,6 +2655,60 @@
       "item_id": 26,
       "first_issue_date": "2026-08-11",
       "last_issue_date": "2026-08-11"
+    },
+    {
+      "url": "https://americansongwriter.com/dwayne-the-rock-johnson-is-exploring-a-country-music-career-with-an-american-idol-winner-and-a-little-help-from-willie-nelson/",
+      "normalised_url": "https://americansongwriter.com/dwayne-the-rock-johnson-is-exploring-a-country-music-career-with-an-american-idol-winner-and-a-little-help-from-willie-nelson",
+      "title": "Dwayne “The Rock” Johnson Is Exploring a Country Music Career With an ‘American Idol’ Winner—and a Little Help From Willie Nelson",
+      "source_name": "American Songwriter",
+      "item_id": 84,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-gerry-milnes-the-state-of-traditional-music-in-west-virginia/",
+      "normalised_url": "https://nodepression.org/through-the-lens-gerry-milnes-the-state-of-traditional-music-in-west-virginia",
+      "title": "THROUGH THE LENS: Gerry Milnes & The State of Traditional Music In West Virginia",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-shaboozeys-the-outlaw-cherie-lee/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-shaboozeys-the-outlaw-cherie-lee",
+      "normalised_url": "https://savingcountrymusic.com/album-review-shaboozeys-the-outlaw-cherie-lee",
+      "title": "Album Review – Shaboozey’s “The Outlaw Cherie Lee”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://savingcountrymusic.com/slash-marty-stuart-marcus-king-lead-sho-bud-steel-guitar-show-at-ryman/?utm_source=rss&utm_medium=rss&utm_campaign=slash-marty-stuart-marcus-king-lead-sho-bud-steel-guitar-show-at-ryman",
+      "normalised_url": "https://savingcountrymusic.com/slash-marty-stuart-marcus-king-lead-sho-bud-steel-guitar-show-at-ryman",
+      "title": "Slash, Marty Stuart, Marcus King Lead Sho-Bud Steel Guitar Show at Ryman",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1832/",
+      "normalised_url": "https://surfguitar101.com/news/story/1832",
+      "title": "Colorado Instrumental Fanzine - Issue #7 and '4 by 4' 7\" Compilation",
+      "source_name": "Surf Guitar 101",
+      "item_id": 512,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1833/",
+      "normalised_url": "https://surfguitar101.com/news/story/1833",
+      "title": "New single \"Lobo\" by Sys Malakian",
+      "source_name": "Surf Guitar 101",
+      "item_id": 511,
+      "first_issue_date": "2026-08-12",
+      "last_issue_date": "2026-08-12"
     }
   ]
 }

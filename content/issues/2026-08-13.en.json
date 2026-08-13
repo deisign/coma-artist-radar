@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-13",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-13T08:41:48Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Phoebe Bridgers Makes Her Razor-Sharp Return With 'Lost Weekend'",
+      "url": "https://nodepression.org/album-review-phoebe-bridgers-makes-her-razor-sharp-return-with-lost-weekend/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-12",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Red Shahan’s “Hard Land”",
+      "url": "https://savingcountrymusic.com/album-review-red-shahans-hard-land/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-red-shahans-hard-land",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-12",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Let’s Do This: Kaitlin Butts to Release New Album “Hello, Honky Tonk”",
+      "url": "https://savingcountrymusic.com/lets-do-this-kaitlin-butts-to-release-new-album-hello-honky-tonk/?utm_source=rss&utm_medium=rss&utm_campaign=lets-do-this-kaitlin-butts-to-release-new-album-hello-honky-tonk",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-08-13",
+      "score": 65,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 168,
+      "title": "Ramones Ayala Issue New Single “Mi Piquito De Oro”",
+      "url": "https://www.thepunksite.com/news/ramones-ayala-issue-new-single-mi-piquito-de-oro/",
+      "source_name": "The Punk Site",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-08-12",
+      "score": 40,
+      "matched_artists": "Ramones",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 566,
+      "title": "Walk the (Jazz) Line: Can Johnny Cash Be Jazz?",
+      "url": "https://www.jazztimes.com/features/profiles/walk-the-jazz-line-can-johnny-cash-be-jazz/",
+      "source_name": "JazzTimes",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-13",
+      "score": 60,
+      "matched_artists": "Johnny Cash",
+      "matched_tags": "",
+      "matched_genres": "jazz"
+    },
+    {
+      "id": 98,
+      "title": "Born 99 Years Ago Today, “The Thin Man From West Plains” Who Became a Nashville Country Legend and Helped Launch Dolly Parton to Stardom",
+      "url": "https://americansongwriter.com/born-99-years-ago-today-the-thin-man-from-west-plains-who-became-a-nashville-country-legend-and-helped-launch-dolly-parton-to-stardom/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-12",
+      "score": 45,
+      "matched_artists": "Dolly Parton, Plains",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T08:38:25Z",
+  "generated_at": "2026-08-13T08:41:48Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2709,6 +2709,60 @@
       "item_id": 511,
       "first_issue_date": "2026-08-12",
       "last_issue_date": "2026-08-12"
+    },
+    {
+      "url": "https://americansongwriter.com/born-99-years-ago-today-the-thin-man-from-west-plains-who-became-a-nashville-country-legend-and-helped-launch-dolly-parton-to-stardom/",
+      "normalised_url": "https://americansongwriter.com/born-99-years-ago-today-the-thin-man-from-west-plains-who-became-a-nashville-country-legend-and-helped-launch-dolly-parton-to-stardom",
+      "title": "Born 99 Years Ago Today, “The Thin Man From West Plains” Who Became a Nashville Country Legend and Helped Launch Dolly Parton to Stardom",
+      "source_name": "American Songwriter",
+      "item_id": 98,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
+    },
+    {
+      "url": "https://nodepression.org/album-review-phoebe-bridgers-makes-her-razor-sharp-return-with-lost-weekend/",
+      "normalised_url": "https://nodepression.org/album-review-phoebe-bridgers-makes-her-razor-sharp-return-with-lost-weekend",
+      "title": "ALBUM REVIEW: Phoebe Bridgers Makes Her Razor-Sharp Return With 'Lost Weekend'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-red-shahans-hard-land/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-red-shahans-hard-land",
+      "normalised_url": "https://savingcountrymusic.com/album-review-red-shahans-hard-land",
+      "title": "Album Review – Red Shahan’s “Hard Land”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/lets-do-this-kaitlin-butts-to-release-new-album-hello-honky-tonk/?utm_source=rss&utm_medium=rss&utm_campaign=lets-do-this-kaitlin-butts-to-release-new-album-hello-honky-tonk",
+      "normalised_url": "https://savingcountrymusic.com/lets-do-this-kaitlin-butts-to-release-new-album-hello-honky-tonk",
+      "title": "Let’s Do This: Kaitlin Butts to Release New Album “Hello, Honky Tonk”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
+    },
+    {
+      "url": "https://www.jazztimes.com/features/profiles/walk-the-jazz-line-can-johnny-cash-be-jazz/",
+      "normalised_url": "https://www.jazztimes.com/features/profiles/walk-the-jazz-line-can-johnny-cash-be-jazz",
+      "title": "Walk the (Jazz) Line: Can Johnny Cash Be Jazz?",
+      "source_name": "JazzTimes",
+      "item_id": 566,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
+    },
+    {
+      "url": "https://www.thepunksite.com/news/ramones-ayala-issue-new-single-mi-piquito-de-oro/",
+      "normalised_url": "https://www.thepunksite.com/news/ramones-ayala-issue-new-single-mi-piquito-de-oro",
+      "title": "Ramones Ayala Issue New Single “Mi Piquito De Oro”",
+      "source_name": "The Punk Site",
+      "item_id": 168,
+      "first_issue_date": "2026-08-13",
+      "last_issue_date": "2026-08-13"
     }
   ]
 }

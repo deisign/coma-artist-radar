@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-14",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-14T08:26:28Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Writin’, Singin’, Fiddlin’, and ‘Rattlin’ Bones’ with Bronwyn",
+      "url": "https://nodepression.org/album-review-writin-singin-fiddlin-and-rattlin-bones-with-bronwyn/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-13",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 374,
+      "title": "Surf Instrumental Vinyl Review: Genki Genki Panic / Jagaloons Split EP",
+      "url": "https://www.surfmusicandart.com/2026/08/genkigenkipanicandjagaloons.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-08-13",
+      "score": 65,
+      "matched_artists": "Genki Genki Panic",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 430,
+      "title": "Artists I’m Following – Maya de Vitry, Glen Hansard, and Ken Pomeroy",
+      "url": "https://www.americanbluesscene.com/2026/08/artists-im-following-maya-de-vitry-glen-hansard-and-ken-pomeroy/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-08-14",
+      "score": 70,
+      "matched_artists": "Maya de Vitry, Ken Pomeroy",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 2,
+      "title": "THE READING ROOM: Ashley Khan’s ‘Days of Miracle and Wonder: Paul Simon and the Trials and Triumphs of ‘Graceland’’",
+      "url": "https://nodepression.org/the-reading-room-ashley-khans-days-of-miracle-and-wonder-paul-simon-and-the-trials-and-triumphs-of-graceland/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-08-13",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "The REAL Message Behind the Hank Jr. / Chris Farley SNL Skit",
+      "url": "https://savingcountrymusic.com/the-real-message-behind-the-hank-jr-chris-farley-snl-skit/?utm_source=rss&utm_medium=rss&utm_campaign=the-real-message-behind-the-hank-jr-chris-farley-snl-skit",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Brother of The Band Perry Exposes Falsehood Behind New Lineup",
+      "url": "https://savingcountrymusic.com/brother-of-the-band-perry-exposes-falsehood-behind-new-lineup/?utm_source=rss&utm_medium=rss&utm_campaign=brother-of-the-band-perry-exposes-falsehood-behind-new-lineup",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "issue_date": "2026-08-15",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-15T07:39:43Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Elizabeth Cook Showcases Her Emotional Depth on 'Great Television'",
+      "url": "https://nodepression.org/album-review-elizabeth-cook-showcases-her-emotional-depth-on-great-television/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-08-14",
+      "score": 90,
+      "matched_artists": "Television",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Reissues from The Chicks and The Bluegrass Album Band, New Music from Kaitlin Butts and St. Paul & The Broken Bones, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-reissues-from-the-chicks-and-the-bluegrass-album-band-new-music-from-kaitlin-butts-and-st-paul-the-broken-bones-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-08-14",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 84,
+      "title": "5 Decades Ago Today, Waylon Jennings Hit No. 1 With the Outlaw Country Album That Took on Neil Young, the Marshall Tucker Band, and Featured a Grammy-Winning Classic",
+      "url": "https://americansongwriter.com/5-decades-ago-today-waylon-jennings-hit-no-1-with-the-outlaw-country-album-that-took-on-neil-young-the-marshall-tucker-band-and-featured-a-grammy-winning-classic/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-08-14",
+      "score": 55,
+      "matched_artists": "Neil Young",
+      "matched_tags": "country, outlaw_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "John PayCheck Crafts a “Better Plan” Ahead of New Album",
+      "url": "https://savingcountrymusic.com/john-paycheck-crafts-a-better-plan-ahead-of-new-album/?utm_source=rss&utm_medium=rss&utm_campaign=john-paycheck-crafts-a-better-plan-ahead-of-new-album",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-08-14",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Remembering Ben Jones: So Much More Than Hazzard County’s Mechanic",
+      "url": "https://savingcountrymusic.com/remembering-ben-jones-so-much-more-than-hazzard-countys-mechanic/?utm_source=rss&utm_medium=rss&utm_campaign=remembering-ben-jones-so-much-more-than-hazzard-countys-mechanic",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-14",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

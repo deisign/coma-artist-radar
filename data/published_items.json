@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T07:39:43Z",
+  "generated_at": "2026-08-16T07:41:27Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2862,6 +2862,33 @@
       "item_id": 26,
       "first_issue_date": "2026-08-15",
       "last_issue_date": "2026-08-15"
+    },
+    {
+      "url": "https://americansongwriter.com/born-101-years-ago-in-alabama-the-queen-of-hillbilly-swing-who-sang-her-way-out-of-poverty-and-paved-the-way-for-women-in-country-music/",
+      "normalised_url": "https://americansongwriter.com/born-101-years-ago-in-alabama-the-queen-of-hillbilly-swing-who-sang-her-way-out-of-poverty-and-paved-the-way-for-women-in-country-music",
+      "title": "Born 101 Years Ago in Alabama, the “Queen of Hillbilly Swing” Who Sang Her Way Out of Poverty and Paved the Way for Women in Country Music",
+      "source_name": "American Songwriter",
+      "item_id": 79,
+      "first_issue_date": "2026-08-16",
+      "last_issue_date": "2026-08-16"
+    },
+    {
+      "url": "https://nodepression.org/no-depression-sessions-at-hinterland-waylon-wyatt/",
+      "normalised_url": "https://nodepression.org/no-depression-sessions-at-hinterland-waylon-wyatt",
+      "title": "NO DEPRESSION SESSIONS at Hinterland: Waylon Wyatt",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-08-16",
+      "last_issue_date": "2026-08-16"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-power-of-song-explored-in-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=the-power-of-song-explored-in-the-latest-episode-of-the-hook",
+      "normalised_url": "https://savingcountrymusic.com/the-power-of-song-explored-in-the-latest-episode-of-the-hook",
+      "title": "The Power of Song Explored in the Latest Episode of ‘The Hook’",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-16",
+      "last_issue_date": "2026-08-16"
     }
   ]
 }

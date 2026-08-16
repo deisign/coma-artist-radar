@@ -1,0 +1,70 @@
+{
+  "issue_date": "2026-08-16",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-16T07:41:27Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 3,
+      "title": "NO DEPRESSION SESSIONS at Hinterland: Waylon Wyatt",
+      "url": "https://nodepression.org/no-depression-sessions-at-hinterland-waylon-wyatt/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-14",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 79,
+      "title": "Born 101 Years Ago in Alabama, the “Queen of Hillbilly Swing” Who Sang Her Way Out of Poverty and Paved the Way for Women in Country Music",
+      "url": "https://americansongwriter.com/born-101-years-ago-in-alabama-the-queen-of-hillbilly-swing-who-sang-her-way-out-of-poverty-and-paved-the-way-for-women-in-country-music/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-15",
+      "score": 55,
+      "matched_artists": "Queen",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "The Power of Song Explored in the Latest Episode of ‘The Hook’",
+      "url": "https://savingcountrymusic.com/the-power-of-song-explored-in-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=the-power-of-song-explored-in-the-latest-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

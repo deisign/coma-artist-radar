@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-08-19",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-19T07:51:47Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Po’ Ramblin’ Boys Bring Contemporary Flair to the Bluegrass Playbook",
+      "url": "https://nodepression.org/album-review-po-ramblin-boys-bring-contemporary-flair-to-the-bluegrass-playbook/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-18",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 30,
+      "title": "Album Review – Bronwyn’s “Rattlin’ Bones”",
+      "url": "https://savingcountrymusic.com/album-review-bronwyns-rattlin-bones/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-bronwyns-rattlin-bones",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-17",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Vinyl Update - Joni Mitchell, Marvin Gaye, Skip James, and More",
+      "url": "https://nodepression.org/through-the-lens-vinyl-update-joni-mitchell-marvin-gaye-skip-james-and-more/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-18",
+      "score": 90,
+      "matched_artists": "Joni Mitchell, James",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 399,
+      "title": "Frankenstein’s Party",
+      "url": "http://www.the-rockabilly-chronicle.com/frankensteins-party/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-18",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 400,
+      "title": "The Men From Nowhere",
+      "url": "http://www.the-rockabilly-chronicle.com/the-men-from-nowhere/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-18",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 27,
+      "title": "On Miranda Lambert Opening Controversial New LiveNation Venue “The Truth”",
+      "url": "https://savingcountrymusic.com/on-miranda-lambert-opening-controversial-new-livenation-venue-the-truth/?utm_source=rss&utm_medium=rss&utm_campaign=on-miranda-lambert-opening-controversial-new-livenation-venue-the-truth",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-18",
+      "score": 50,
+      "matched_artists": "Miranda Lambert",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T07:41:27Z",
+  "generated_at": "2026-08-19T07:51:47Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2889,6 +2889,60 @@
       "item_id": 26,
       "first_issue_date": "2026-08-16",
       "last_issue_date": "2026-08-16"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/frankensteins-party/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/frankensteins-party",
+      "title": "Frankenstein’s Party",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 399,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/the-men-from-nowhere/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/the-men-from-nowhere",
+      "title": "The Men From Nowhere",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 400,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "https://nodepression.org/album-review-po-ramblin-boys-bring-contemporary-flair-to-the-bluegrass-playbook/",
+      "normalised_url": "https://nodepression.org/album-review-po-ramblin-boys-bring-contemporary-flair-to-the-bluegrass-playbook",
+      "title": "ALBUM REVIEW: Po’ Ramblin’ Boys Bring Contemporary Flair to the Bluegrass Playbook",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-vinyl-update-joni-mitchell-marvin-gaye-skip-james-and-more/",
+      "normalised_url": "https://nodepression.org/through-the-lens-vinyl-update-joni-mitchell-marvin-gaye-skip-james-and-more",
+      "title": "THROUGH THE LENS: Vinyl Update - Joni Mitchell, Marvin Gaye, Skip James, and More",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-bronwyns-rattlin-bones/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-bronwyns-rattlin-bones",
+      "normalised_url": "https://savingcountrymusic.com/album-review-bronwyns-rattlin-bones",
+      "title": "Album Review – Bronwyn’s “Rattlin’ Bones”",
+      "source_name": "Saving Country Music",
+      "item_id": 30,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/on-miranda-lambert-opening-controversial-new-livenation-venue-the-truth/?utm_source=rss&utm_medium=rss&utm_campaign=on-miranda-lambert-opening-controversial-new-livenation-venue-the-truth",
+      "normalised_url": "https://savingcountrymusic.com/on-miranda-lambert-opening-controversial-new-livenation-venue-the-truth",
+      "title": "On Miranda Lambert Opening Controversial New LiveNation Venue “The Truth”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-19",
+      "last_issue_date": "2026-08-19"
     }
   ]
 }

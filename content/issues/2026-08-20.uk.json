@@ -1,0 +1,90 @@
+{
+  "issue_date": "2026-08-20",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-20T07:53:42Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Brennan Wedl Makes Room for the Mess",
+      "url": "https://nodepression.org/album-review-brennan-wedl-makes-room-for-the-mess/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-19",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 398,
+      "title": "Ballroomers (the)",
+      "url": "http://www.the-rockabilly-chronicle.com/ballroomers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-19",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "David Allan Coe Estate Enters Dispute as Forgotten Son Emerges",
+      "url": "https://savingcountrymusic.com/david-allan-coe-estate-enters-dispute-as-forgotten-son-emerges/?utm_source=rss&utm_medium=rss&utm_campaign=david-allan-coe-estate-enters-dispute-as-forgotten-son-emerges",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-19",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Frank Beard: The Heartbeat of Texas Music (RIP)",
+      "url": "https://savingcountrymusic.com/frank-beard-the-heartbeat-of-texas-music-rip/?utm_source=rss&utm_medium=rss&utm_campaign=frank-beard-the-heartbeat-of-texas-music-rip",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-19",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

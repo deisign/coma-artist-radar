@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T07:51:47Z",
+  "generated_at": "2026-08-20T07:53:42Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -2943,6 +2943,42 @@
       "item_id": 27,
       "first_issue_date": "2026-08-19",
       "last_issue_date": "2026-08-19"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/ballroomers/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/ballroomers",
+      "title": "Ballroomers (the)",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 398,
+      "first_issue_date": "2026-08-20",
+      "last_issue_date": "2026-08-20"
+    },
+    {
+      "url": "https://nodepression.org/album-review-brennan-wedl-makes-room-for-the-mess/",
+      "normalised_url": "https://nodepression.org/album-review-brennan-wedl-makes-room-for-the-mess",
+      "title": "ALBUM REVIEW: Brennan Wedl Makes Room for the Mess",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-20",
+      "last_issue_date": "2026-08-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/david-allan-coe-estate-enters-dispute-as-forgotten-son-emerges/?utm_source=rss&utm_medium=rss&utm_campaign=david-allan-coe-estate-enters-dispute-as-forgotten-son-emerges",
+      "normalised_url": "https://savingcountrymusic.com/david-allan-coe-estate-enters-dispute-as-forgotten-son-emerges",
+      "title": "David Allan Coe Estate Enters Dispute as Forgotten Son Emerges",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-20",
+      "last_issue_date": "2026-08-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/frank-beard-the-heartbeat-of-texas-music-rip/?utm_source=rss&utm_medium=rss&utm_campaign=frank-beard-the-heartbeat-of-texas-music-rip",
+      "normalised_url": "https://savingcountrymusic.com/frank-beard-the-heartbeat-of-texas-music-rip",
+      "title": "Frank Beard: The Heartbeat of Texas Music (RIP)",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-20",
+      "last_issue_date": "2026-08-20"
     }
   ]
 }

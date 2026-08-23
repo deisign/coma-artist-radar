@@ -1,0 +1,131 @@
+{
+  "issue_date": "2026-08-23",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-23T07:44:46Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 3,
+      "title": "SPOTLIGHT: Sera Cahoone Returns to Center Stage With Patient LP 'I've Missed You All These Years'",
+      "url": "https://nodepression.org/spotlight-sera-cahoone-returns-to-center-stage-with-patient-lp-ive-missed-you-all-these-years/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-08-21",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 91,
+      "title": "23 Years Ago Today, We Said Goodbye to the Honky-Tonk Pioneer Once Dubbed the “Original Outlaw” by Willie Nelson",
+      "url": "https://americansongwriter.com/23-years-ago-today-we-said-goodbye-to-the-honky-tonk-pioneer-once-dubbed-the-original-outlaw-by-willie-nelson/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-22",
+      "score": 70,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": ""
+    },
+    {
+      "id": 404,
+      "title": "The Dead South - Broken Cowboy",
+      "url": "https://www.americanadaily.com/2026/08/the-dead-south-broken-cowboy.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-23",
+      "score": 60,
+      "matched_artists": "The Dead South",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 85,
+      "title": "Country Music Royalty Comes Together for a Powerful “Will the Circle Be Unbroken?” Performance at ACM Honors",
+      "url": "https://americansongwriter.com/country-music-royalty-comes-together-for-a-powerful-will-the-circle-be-unbroken-performance-at-acm-honors/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-22",
+      "score": 40,
+      "matched_artists": "Royalty",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Austin Legend, Emerging Stars Featured on New Episode of The Hook",
+      "url": "https://savingcountrymusic.com/austin-legend-emerging-stars-featured-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=austin-legend-emerging-stars-featured-on-new-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-22",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 34,
+      "title": "Truer Than Fiction: The Death of Hayden Panettiere",
+      "url": "https://savingcountrymusic.com/truer-than-fiction-the-death-of-hayden-panettiere/?utm_source=rss&utm_medium=rss&utm_campaign=truer-than-fiction-the-death-of-hayden-panettiere",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-17",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

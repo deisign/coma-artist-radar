@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-08-24",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-24T08:03:11Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 373,
+      "title": "Surf Rock Instrumental Review: Insect Surfers-Satellite Bay",
+      "url": "https://www.surfmusicandart.com/2026/08/insectsurferssatellitebay.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-08-23",
+      "score": 50,
+      "matched_artists": "Insect Surfers",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 87,
+      "title": "57 Years Ago Today, the Rolling Stones Hit No. 1 With This Country-Blues Classic Inspired by Rural Brazil and Hank Williams",
+      "url": "https://americansongwriter.com/57-years-ago-today-the-rolling-stones-hit-no-1-with-this-country-blues-classic-inspired-by-rural-brazil-and-hank-williams/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-23",
+      "score": 50,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": "blues, country"
+    },
+    {
+      "id": 36,
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#183)",
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-183/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-183",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-16",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

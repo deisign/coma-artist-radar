@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-08-25",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-25T07:55:26Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Brandon Flowers – “Thrasher”",
+      "url": "https://savingcountrymusic.com/album-review-brandon-flowers-thrasher/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-brandon-flowers-thrasher",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-24",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 549,
+      "title": "Pre-order vinyl \"Greatest Hits\" by Sys Malakian (New release by Another Wave Records)",
+      "url": "https://surfguitar101.com/news/story/1834/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-08-25",
+      "score": 90,
+      "matched_artists": "Sys Malakian",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb, new_release",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 2,
+      "title": "Trouble the Water: The Birth of the Spirituals",
+      "url": "https://nodepression.org/trouble-the-water-the-birth-of-the-spirituals/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-24",
+      "score": 75,
+      "matched_artists": "Trouble",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "We’ve Squeezed this Charley Crockett / Twin Temple Turnip Enough",
+      "url": "https://savingcountrymusic.com/weve-squeezed-this-charley-crockett-twin-temple-turnip-enough/?utm_source=rss&utm_medium=rss&utm_campaign=weve-squeezed-this-charley-crockett-twin-temple-turnip-enough",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-24",
+      "score": 65,
+      "matched_artists": "Twin Temple",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "CROWDFUNDING RADAR: Abbie Gardner, The River Cryers, and Chad & Jeremy",
+      "url": "https://nodepression.org/crowdfunding-radar-abbie-gardner-the-river-cryers-and-chad-jeremy/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 548,
+      "title": "The Del-Novas - A Pancit Eastern 7″ on Neon Green Vinyl",
+      "url": "https://surfguitar101.com/news/story/1835/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-25",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    }
+  ]
+}

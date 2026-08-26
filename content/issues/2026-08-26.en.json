@@ -1,0 +1,113 @@
+{
+  "issue_date": "2026-08-26",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-08-26T07:56:50Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Billy Strings Mourns His Mother on 'So Much for Goodbyes'",
+      "url": "https://nodepression.org/album-review-billy-strings-mourns-his-mother-on-so-much-for-goodbyes/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-08-25",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 428,
+      "title": "Dolly Parton, Country Music’s Beloved Songwriter, Dies Aged 80",
+      "url": "https://www.americanbluesscene.com/2026/08/dolly-parton-country-musics-beloved-songwriter-dies-aged-80/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-08-25",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "blues, country"
+    },
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: The Spirit of Discovery Continues at the 2026 Philadelphia Folk Festival",
+      "url": "https://nodepression.org/through-the-lens-the-spirit-of-discovery-continues-at-the-2026-philadelphia-folk-festival/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-08-25",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "On The Passing of Dolly Parton",
+      "url": "https://savingcountrymusic.com/on-the-passing-of-dolly-parton/?utm_source=rss&utm_medium=rss&utm_campaign=on-the-passing-of-dolly-parton",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-08-25",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Blue Dot Fever Hits Nosebleeds of Some Garth Brooks Arena Stops",
+      "url": "https://savingcountrymusic.com/blue-dot-fever-hits-nosebleeds-of-some-garth-brooks-arena-stops/?utm_source=rss&utm_medium=rss&utm_campaign=blue-dot-fever-hits-nosebleeds-of-some-garth-brooks-arena-stops",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-08-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

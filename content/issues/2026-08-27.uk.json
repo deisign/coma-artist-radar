@@ -1,0 +1,153 @@
+{
+  "issue_date": "2026-08-27",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-27T18:16:54Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 4,
+      "title": "ALBUM REVIEW: Riley Downing Makes the Moments Feel Real on 'Landfill Poetry'",
+      "url": "https://nodepression.org/album-review-riley-downing-makes-the-moments-feel-real-on-landfill-poetry/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-08-26",
+      "score": 100,
+      "matched_artists": "Riley Downing, The Moments",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "Album Review – Tony Hannah’s “Love It Or Leave It”",
+      "url": "https://savingcountrymusic.com/album-review-tony-hannahs-love-it-or-leave-it/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-tony-hannahs-love-it-or-leave-it",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-26",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 513,
+      "title": "Shudder to Think to release new EP",
+      "url": "https://www.punknews.org/article/88974/shudder-to-think-to-release-new-ep",
+      "source_name": "Punknews.org",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 40,
+      "matched_artists": "Shudder To Think",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "How Dolly Parton Grew to Embody The Organic Feminism of Working-Class women",
+      "url": "https://nodepression.org/how-dolly-parton-grew-to-embody-the-organic-feminism-of-working-class-women/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 90,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 96,
+      "title": "Honky-Tonk, Heartbreak, and Hell-Raising: 3 Country Singers Who Owned the 1970s",
+      "url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-1970s/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 553,
+      "title": "In Memoriam: Dolly Parton (1946–2026) – We Will Always Love You",
+      "url": "https://www.thebluesmagazine.com/dolly-parton-in-memoriam-we-will-always-love-you/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-26",
+      "score": 40,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Officially Declaring August 28th, 2026 a Country Music Holiday",
+      "url": "https://savingcountrymusic.com/officially-declaring-august-28th-2026-a-country-music-holiday/?utm_source=rss&utm_medium=rss&utm_campaign=officially-declaring-august-28th-2026-a-country-music-holiday",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

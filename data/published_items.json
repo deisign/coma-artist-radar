@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T18:16:54Z",
+  "generated_at": "2026-08-28T19:25:44Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3330,6 +3330,42 @@
       "item_id": 553,
       "first_issue_date": "2026-08-27",
       "last_issue_date": "2026-08-27"
+    },
+    {
+      "url": "https://nodepression.org/dolly-parton-has-died-long-live-dolly-parton/",
+      "normalised_url": "https://nodepression.org/dolly-parton-has-died-long-live-dolly-parton",
+      "title": "Dolly Parton Has Died. Long Live Dolly Parton.",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-08-28",
+      "last_issue_date": "2026-08-28"
+    },
+    {
+      "url": "https://nodepression.org/rip-dolly-parton-and-tim-curry-bonnaroo-2027-canceled-big-thiefs-frothcoming-triple-lp-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/rip-dolly-parton-and-tim-curry-bonnaroo-2027-canceled-big-thiefs-frothcoming-triple-lp-and-more-roots-music-news",
+      "title": "RIP Dolly Parton and Tim Curry, Bonnaroo 2027 Canceled, Big Thief's Frothcoming Triple LP, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-08-28",
+      "last_issue_date": "2026-08-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-riley-downings-landfill-poetry/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-riley-downings-landfill-poetry",
+      "normalised_url": "https://savingcountrymusic.com/album-review-riley-downings-landfill-poetry",
+      "title": "Album Review – Riley Downing’s “Landfill Poetry”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-08-28",
+      "last_issue_date": "2026-08-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/honky-tonk-fest-announces-2026-lineup/?utm_source=rss&utm_medium=rss&utm_campaign=honky-tonk-fest-announces-2026-lineup",
+      "normalised_url": "https://savingcountrymusic.com/honky-tonk-fest-announces-2026-lineup",
+      "title": "Honky Tonk Fest Announces 2026 Lineup",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-28",
+      "last_issue_date": "2026-08-28"
     }
   ]
 }

@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-08-29",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-29T13:09:59Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 3,
+      "title": "ALBUM REVIEW: Two Runner’s ‘Porchlight’ Shines a Beacon of Hope",
+      "url": "https://nodepression.org/album-review-two-runners-porchlight-shines-a-beacon-of-hope/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-28",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "RIP Dolly Parton and Tim Curry, Bonnaroo 2027 Canceled, Big Thief's Forthcoming Triple LP, and More Roots Music News",
+      "url": "https://nodepression.org/rip-dolly-parton-and-tim-curry-bonnaroo-2027-canceled-big-thiefs-forthcoming-triple-lp-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-08-28",
+      "score": 90,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 97,
+      "title": "Born 44 Years Ago Today in Mississippi, the 90s Teen Queen and Youngest Country Star Since Tanya Tucker",
+      "url": "https://americansongwriter.com/born-44-years-ago-today-in-mississippi-the-90s-teen-queen-and-youngest-country-star-since-tanya-tucker/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-08-28",
+      "score": 45,
+      "matched_artists": "Tanya Tucker, Queen",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 28,
+      "title": "The More They Say Stella Lefty Isn’t a “Nepo Baby,” The More I Think She Is",
+      "url": "https://savingcountrymusic.com/the-more-they-say-stella-lefty-isnt-a-nepo-baby-the-more-i-think-she-is/?utm_source=rss&utm_medium=rss&utm_campaign=the-more-they-say-stella-lefty-isnt-a-nepo-baby-the-more-i-think-she-is",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 30,
+      "title": "On The Rise and Fall of Jelly Roll",
+      "url": "https://savingcountrymusic.com/on-the-rise-and-fall-of-jelly-roll/?utm_source=rss&utm_medium=rss&utm_campaign=on-the-rise-and-fall-of-jelly-roll",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-26",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

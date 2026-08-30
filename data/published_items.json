@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T13:09:59Z",
+  "generated_at": "2026-08-30T12:50:34Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3411,6 +3411,33 @@
       "item_id": 28,
       "first_issue_date": "2026-08-29",
       "last_issue_date": "2026-08-29"
+    },
+    {
+      "url": "https://nodepression.org/album-review-laurelyn-dossetts-how-many-moons-is-an-album-of-multifaceted-songcraft/",
+      "normalised_url": "https://nodepression.org/album-review-laurelyn-dossetts-how-many-moons-is-an-album-of-multifaceted-songcraft",
+      "title": "ALBUM REVIEW: Laurelyn Dossett's 'How Many Moons' Is an Album of Multifaceted Songcraft",
+      "source_name": "No Depression",
+      "item_id": 6,
+      "first_issue_date": "2026-08-30",
+      "last_issue_date": "2026-08-30"
+    },
+    {
+      "url": "https://nodepression.org/nanci-griffith-and-the-impossible-double-standards-of-storms/",
+      "normalised_url": "https://nodepression.org/nanci-griffith-and-the-impossible-double-standards-of-storms",
+      "title": "Nanci Griffith and The Impossible Double Standards of 'Storms'",
+      "source_name": "No Depression",
+      "item_id": 4,
+      "first_issue_date": "2026-08-30",
+      "last_issue_date": "2026-08-30"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-hook-searches-for-whos-next/?utm_source=rss&utm_medium=rss&utm_campaign=the-hook-searches-for-whos-next",
+      "normalised_url": "https://savingcountrymusic.com/the-hook-searches-for-whos-next",
+      "title": "The Hook Searches For ‘Who’s Next?’",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-08-30",
+      "last_issue_date": "2026-08-30"
     }
   ]
 }

@@ -1,0 +1,69 @@
+{
+  "issue_date": "2026-08-30",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-08-30T12:50:34Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 6,
+      "title": "ALBUM REVIEW: Laurelyn Dossett's 'How Many Moons' Is an Album of Multifaceted Songcraft",
+      "url": "https://nodepression.org/album-review-laurelyn-dossetts-how-many-moons-is-an-album-of-multifaceted-songcraft/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 4,
+      "title": "Nanci Griffith and The Impossible Double Standards of 'Storms'",
+      "url": "https://nodepression.org/nanci-griffith-and-the-impossible-double-standards-of-storms/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-27",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "The Hook Searches For ‘Who’s Next?’",
+      "url": "https://savingcountrymusic.com/the-hook-searches-for-whos-next/?utm_source=rss&utm_medium=rss&utm_campaign=the-hook-searches-for-whos-next",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-29",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

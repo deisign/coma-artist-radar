@@ -1,0 +1,153 @@
+{
+  "issue_date": "2026-09-01",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-01T12:33:35Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 521,
+      "title": "Offspring re-release \"I Wanna be sedated\" Ramones cover",
+      "url": "https://www.punknews.org/article/88990/offspring-re-release-i-wanna-be-sedated-ramones-cover",
+      "source_name": "Punknews.org",
+      "signal_type": "reissue",
+      "signal_type_label": "Сигнал перевидання",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал перевидання · Сигнал джерела",
+      "editorial_angle": "Сигнал перевидання з артистичного поля coma.fm.",
+      "published_at": "2026-08-31",
+      "score": 40,
+      "matched_artists": "Ramones",
+      "matched_tags": "reissue",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "Alabama Shakes Stay Observational, Yet Optimistic on New LP 'I Must Be Dreaming'",
+      "url": "https://nodepression.org/alabama-shakes-stay-observational-yet-optimistic-on-new-lp-i-must-be-dreaming/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-08-31",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Luke Bryan Reveals Track List for New Album, “Signs”",
+      "url": "https://savingcountrymusic.com/luke-bryan-reveals-track-list-for-new-album-signs/?utm_source=rss&utm_medium=rss&utm_campaign=luke-bryan-reveals-track-list-for-new-album-signs",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-08-31",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 13,
+      "title": "SPOTLIGHT: Forced to Sit Still [ESSAY]",
+      "url": "https://nodepression.org/spotlight-forced-to-sit-still-essay/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-08-25",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 75,
+      "title": "Honky-Tonk, Heartbreak, and Hell-Raising: 3 Country Singers Who Owned the 1980s",
+      "url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-1980s/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 82,
+      "title": "Born 93 Years Ago Today in Mississippi, the “High Priest of Country Music” Who Held a Record Even George Strait Had to Chase",
+      "url": "https://americansongwriter.com/born-93-years-ago-today-in-mississippi-the-high-priest-of-country-music-who-held-a-record-even-george-strait-had-to-chase/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 40,
+      "matched_artists": "George Strait",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 29,
+      "title": "Ruby Dice Delivers Her Love Letter to Austin",
+      "url": "https://savingcountrymusic.com/ruby-dice-delivers-her-love-letter-to-austin/?utm_source=rss&utm_medium=rss&utm_campaign=ruby-dice-delivers-her-love-letter-to-austin",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-08-30",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

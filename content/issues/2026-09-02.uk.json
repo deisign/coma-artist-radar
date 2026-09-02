@@ -1,0 +1,90 @@
+{
+  "issue_date": "2026-09-02",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-02T12:06:08Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: Dolly Parton, Jason Isbell, Buddy Guy, and More Photos of the Week",
+      "url": "https://nodepression.org/through-the-lens-dolly-parton-jason-isbell-buddy-guy-and-more-photos-of-the-week/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 100,
+      "matched_artists": "Dolly Parton, Buddy Guy",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "The Only Right Answer to “Who Is The Next Dolly Parton?”",
+      "url": "https://savingcountrymusic.com/the-only-right-answer-to-who-is-the-next-dolly-parton/?utm_source=rss&utm_medium=rss&utm_campaign=the-only-right-answer-to-who-is-the-next-dolly-parton",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "FOUNDERS KEEPERS: “Do Something…Even If It's Wrong”",
+      "url": "https://nodepression.org/founders-keepers-do-something-even-if-its-wrong/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 554,
+      "title": "Jimi Hendrix’s Complete First Berkeley Show Finally Released as ‘Magic Boy’",
+      "url": "https://www.thebluesmagazine.com/jimi-hendrix-magic-boy-berkeley-first-show-1970/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-01",
+      "score": 40,
+      "matched_artists": "Jimi Hendrix",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    }
+  ]
+}

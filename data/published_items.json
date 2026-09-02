@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T12:33:35Z",
+  "generated_at": "2026-09-02T12:06:08Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3546,6 +3546,42 @@
       "item_id": 521,
       "first_issue_date": "2026-09-01",
       "last_issue_date": "2026-09-01"
+    },
+    {
+      "url": "https://nodepression.org/founders-keepers-do-something-even-if-its-wrong/",
+      "normalised_url": "https://nodepression.org/founders-keepers-do-something-even-if-its-wrong",
+      "title": "FOUNDERS KEEPERS: “Do Something…Even If It's Wrong”",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-02",
+      "last_issue_date": "2026-09-02"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-dolly-parton-jason-isbell-buddy-guy-and-more-photos-of-the-week/",
+      "normalised_url": "https://nodepression.org/through-the-lens-dolly-parton-jason-isbell-buddy-guy-and-more-photos-of-the-week",
+      "title": "THROUGH THE LENS: Dolly Parton, Jason Isbell, Buddy Guy, and More Photos of the Week",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-02",
+      "last_issue_date": "2026-09-02"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-only-right-answer-to-who-is-the-next-dolly-parton/?utm_source=rss&utm_medium=rss&utm_campaign=the-only-right-answer-to-who-is-the-next-dolly-parton",
+      "normalised_url": "https://savingcountrymusic.com/the-only-right-answer-to-who-is-the-next-dolly-parton",
+      "title": "The Only Right Answer to “Who Is The Next Dolly Parton?”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-09-02",
+      "last_issue_date": "2026-09-02"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/jimi-hendrix-magic-boy-berkeley-first-show-1970/",
+      "normalised_url": "https://www.thebluesmagazine.com/jimi-hendrix-magic-boy-berkeley-first-show-1970",
+      "title": "Jimi Hendrix’s Complete First Berkeley Show Finally Released as ‘Magic Boy’",
+      "source_name": "The Blues Magazine",
+      "item_id": 554,
+      "first_issue_date": "2026-09-02",
+      "last_issue_date": "2026-09-02"
     }
   ]
 }

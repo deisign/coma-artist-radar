@@ -1,0 +1,92 @@
+{
+  "issue_date": "2026-09-04",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-04T12:07:22Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 26,
+      "title": "David Allan Coe’s Final Album “A Million Reasons” Set for Release",
+      "url": "https://savingcountrymusic.com/david-allan-coes-final-album-a-million-reasons-set-for-release/?utm_source=rss&utm_medium=rss&utm_campaign=david-allan-coes-final-album-a-million-reasons-set-for-release",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-09-03",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 399,
+      "title": "Discovering the Muddy Waters Exhibit in Westmont: 60+ Rare Artifacts and Memorabilia",
+      "url": "https://www.americanbluesscene.com/2026/09/discovering-the-muddy-waters-exhibit-in-westmont-60-rare-artifacts-and-memorabilia/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-09-03",
+      "score": 40,
+      "matched_artists": "Muddy Waters",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 105,
+      "title": "The Best Country Music on Bandcamp, August 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-august-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-03",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 82,
+      "title": "Born 101 Years Ago Today in Texas, the Princeton-Educated Country Legend Who Blended Honky-Tonk and Western Swing to Create Decades of Hits",
+      "url": "https://americansongwriter.com/born-101-years-ago-today-in-texas-the-princeton-educated-country-legend-who-blended-honky-tonk-and-western-swing-to-create-decades-of-hits/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-03",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country, rockabilly"
+    }
+  ]
+}

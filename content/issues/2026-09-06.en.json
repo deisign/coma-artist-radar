@@ -1,0 +1,128 @@
+{
+  "issue_date": "2026-09-06",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-06T11:39:05Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 103,
+      "title": "Remember When The Rolling Stones Closed Out the Mick Taylor Era With an Aggressive Album in 1974?",
+      "url": "https://americansongwriter.com/remember-when-the-rolling-stones-closed-out-the-mick-taylor-era-with-an-aggressive-album-in-1974/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-09-05",
+      "score": 50,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "BONUS TRACKS: Jason Isbell and SOCAN Sue SUNO and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-jason-isbell-and-socan-sue-suno-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-04",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 398,
+      "title": "The Rechords",
+      "url": "http://www.the-rockabilly-chronicle.com/the-rechords/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-06",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 399,
+      "title": "Chevalier Brothers (the)",
+      "url": "http://www.the-rockabilly-chronicle.com/chevalier-brothers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-05",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 83,
+      "title": "These 3 Honky-Tonk Classics Should Be Among the First Songs You Teach Your Kids About",
+      "url": "https://americansongwriter.com/these-3-honky-tonk-classics-should-be-among-the-first-songs-you-teach-your-kids-about/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-05",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "13 Comes Up Lucky, Drew Kennedy Drops Wisdom on New Episode of The Hook",
+      "url": "https://savingcountrymusic.com/13-comes-up-lucky-drew-kennedy-drops-wisdom-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=13-comes-up-lucky-drew-kennedy-drops-wisdom-on-new-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-05",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

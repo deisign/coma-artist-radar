@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T11:16:09Z",
+  "generated_at": "2026-09-06T11:39:05Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3744,6 +3744,60 @@
       "item_id": 26,
       "first_issue_date": "2026-09-05",
       "last_issue_date": "2026-09-05"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/chevalier-brothers/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/chevalier-brothers",
+      "title": "Chevalier Brothers (the)",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 399,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/the-rechords/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/the-rechords",
+      "title": "The Rechords",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 398,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "https://americansongwriter.com/remember-when-the-rolling-stones-closed-out-the-mick-taylor-era-with-an-aggressive-album-in-1974/",
+      "normalised_url": "https://americansongwriter.com/remember-when-the-rolling-stones-closed-out-the-mick-taylor-era-with-an-aggressive-album-in-1974",
+      "title": "Remember When The Rolling Stones Closed Out the Mick Taylor Era With an Aggressive Album in 1974?",
+      "source_name": "American Songwriter",
+      "item_id": 103,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "https://americansongwriter.com/these-3-honky-tonk-classics-should-be-among-the-first-songs-you-teach-your-kids-about/",
+      "normalised_url": "https://americansongwriter.com/these-3-honky-tonk-classics-should-be-among-the-first-songs-you-teach-your-kids-about",
+      "title": "These 3 Honky-Tonk Classics Should Be Among the First Songs You Teach Your Kids About",
+      "source_name": "American Songwriter",
+      "item_id": 83,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-jason-isbell-and-socan-sue-suno-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-jason-isbell-and-socan-sue-suno-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Jason Isbell and SOCAN Sue SUNO and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "https://savingcountrymusic.com/13-comes-up-lucky-drew-kennedy-drops-wisdom-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=13-comes-up-lucky-drew-kennedy-drops-wisdom-on-new-episode-of-the-hook",
+      "normalised_url": "https://savingcountrymusic.com/13-comes-up-lucky-drew-kennedy-drops-wisdom-on-new-episode-of-the-hook",
+      "title": "13 Comes Up Lucky, Drew Kennedy Drops Wisdom on New Episode of The Hook",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-06",
+      "last_issue_date": "2026-09-06"
     }
   ]
 }

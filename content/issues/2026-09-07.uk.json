@@ -1,0 +1,112 @@
+{
+  "issue_date": "2026-09-07",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-07T13:29:58Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 409,
+      "title": "Katie Knipp – Live at Theater 5150 | Album Review",
+      "url": "https://www.bluesblastmagazine.com/katie-knipp-live-at-theater-5150-album-review/",
+      "source_name": "Blues Blast Magazine",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-09-07",
+      "score": 40,
+      "matched_artists": "Katie Knipp",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 368,
+      "title": "The Rhythm Wheel Combo",
+      "url": "http://www.the-rockabilly-chronicle.com/rhythm-wheel-combo/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-06",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 372,
+      "title": "Rattlers (the)",
+      "url": "http://www.the-rockabilly-chronicle.com/the-rattlers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-05",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 100,
+      "title": "42 Years Ago Today, We Said Goodbye to the “Gold Chain Troubadour of Country Music” Who Started a Honky Tonk Revolution",
+      "url": "https://americansongwriter.com/42-years-ago-today-we-said-goodbye-to-the-gold-chain-troubadour-of-country-music-who-started-a-honky-tonk-revolution/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-06",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#184)",
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-184/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-184",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-06",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

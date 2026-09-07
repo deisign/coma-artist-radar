@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T11:39:05Z",
+  "generated_at": "2026-09-07T13:29:58Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3798,6 +3798,51 @@
       "item_id": 26,
       "first_issue_date": "2026-09-06",
       "last_issue_date": "2026-09-06"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/rhythm-wheel-combo/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/rhythm-wheel-combo",
+      "title": "The Rhythm Wheel Combo",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 368,
+      "first_issue_date": "2026-09-07",
+      "last_issue_date": "2026-09-07"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/the-rattlers/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/the-rattlers",
+      "title": "Rattlers (the)",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 372,
+      "first_issue_date": "2026-09-07",
+      "last_issue_date": "2026-09-07"
+    },
+    {
+      "url": "https://americansongwriter.com/42-years-ago-today-we-said-goodbye-to-the-gold-chain-troubadour-of-country-music-who-started-a-honky-tonk-revolution/",
+      "normalised_url": "https://americansongwriter.com/42-years-ago-today-we-said-goodbye-to-the-gold-chain-troubadour-of-country-music-who-started-a-honky-tonk-revolution",
+      "title": "42 Years Ago Today, We Said Goodbye to the “Gold Chain Troubadour of Country Music” Who Started a Honky Tonk Revolution",
+      "source_name": "American Songwriter",
+      "item_id": 100,
+      "first_issue_date": "2026-09-07",
+      "last_issue_date": "2026-09-07"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-184/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-184",
+      "normalised_url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-184",
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#184)",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-07",
+      "last_issue_date": "2026-09-07"
+    },
+    {
+      "url": "https://www.bluesblastmagazine.com/katie-knipp-live-at-theater-5150-album-review/",
+      "normalised_url": "https://www.bluesblastmagazine.com/katie-knipp-live-at-theater-5150-album-review",
+      "title": "Katie Knipp – Live at Theater 5150 | Album Review",
+      "source_name": "Blues Blast Magazine",
+      "item_id": 409,
+      "first_issue_date": "2026-09-07",
+      "last_issue_date": "2026-09-07"
     }
   ]
 }

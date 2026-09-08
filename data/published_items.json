@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T13:29:58Z",
+  "generated_at": "2026-09-08T12:07:59Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3843,6 +3843,42 @@
       "item_id": 409,
       "first_issue_date": "2026-09-07",
       "last_issue_date": "2026-09-07"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/moondogs-2/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/moondogs-2",
+      "title": "The Moondogs",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 403,
+      "first_issue_date": "2026-09-08",
+      "last_issue_date": "2026-09-08"
+    },
+    {
+      "url": "https://americansongwriter.com/remembering-when-dolly-parton-linda-ronstadt-and-emmylou-harris-dished-out-another-trio-album-despite-their-differences-in-1999/",
+      "normalised_url": "https://americansongwriter.com/remembering-when-dolly-parton-linda-ronstadt-and-emmylou-harris-dished-out-another-trio-album-despite-their-differences-in-1999",
+      "title": "Remembering When Dolly Parton, Linda Ronstadt, and Emmylou Harris Dished Out Another ‘Trio’ Album Despite Their Differences in 1999",
+      "source_name": "American Songwriter",
+      "item_id": 79,
+      "first_issue_date": "2026-09-08",
+      "last_issue_date": "2026-09-08"
+    },
+    {
+      "url": "https://savingcountrymusic.com/bela-fleck-earls-of-leicester-crown-first-day-of-earl-scruggs-fest-2026/?utm_source=rss&utm_medium=rss&utm_campaign=bela-fleck-earls-of-leicester-crown-first-day-of-earl-scruggs-fest-2026",
+      "normalised_url": "https://savingcountrymusic.com/bela-fleck-earls-of-leicester-crown-first-day-of-earl-scruggs-fest-2026",
+      "title": "Béla Fleck, Earls of Leicester Crown First Day of Earl Scruggs Fest 2026",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-08",
+      "last_issue_date": "2026-09-08"
+    },
+    {
+      "url": "https://savingcountrymusic.com/dont-be-surprised-if-taylor-swifts-next-album-is-a-return-to-country/?utm_source=rss&utm_medium=rss&utm_campaign=dont-be-surprised-if-taylor-swifts-next-album-is-a-return-to-country",
+      "normalised_url": "https://savingcountrymusic.com/dont-be-surprised-if-taylor-swifts-next-album-is-a-return-to-country",
+      "title": "Don’t Be Surprised if Taylor Swift’s Next Album is a Return to “Country”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-09-08",
+      "last_issue_date": "2026-09-08"
     }
   ]
 }

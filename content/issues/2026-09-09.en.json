@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-09-09",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-09T12:20:14Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 26,
+      "title": "Album Review – Pony Bradshaw’s “Ode To Humidity”",
+      "url": "https://savingcountrymusic.com/album-review-pony-bradshaws-ode-to-humidity/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-pony-bradshaws-ode-to-humidity",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-08",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 530,
+      "title": "Scene Queen – ‘METALICIOUS’",
+      "url": "https://www.punktastic.com/album-reviews/scene-queen-metalicious/",
+      "source_name": "Punktastic",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-09-09",
+      "score": 40,
+      "matched_artists": "Queen",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 29,
+      "title": "Everybody’s Somebody In Luckenbach for 3rd Annual Festival",
+      "url": "https://savingcountrymusic.com/everybodys-somebody-in-luckenbach-for-3rd-annual-festival/?utm_source=rss&utm_medium=rss&utm_campaign=everybodys-somebody-in-luckenbach-for-3rd-annual-festival",
+      "source_name": "Saving Country Music",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-09-07",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "In The Deep End With The Mary Wallopers",
+      "url": "https://nodepression.org/in-the-deep-end-with-the-mary-wallopers/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-08",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 103,
+      "title": "Born 94 Years Ago Today in Virginia, the Torch Singer Who Set the Standard for Women in Country Music and Helped Turn Willie Nelson Into a Household Name",
+      "url": "https://americansongwriter.com/born-94-years-ago-today-in-virginia-the-torch-singer-who-set-the-standard-for-women-in-country-music-and-helped-turn-willie-nelson-into-a-household-name/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-08",
+      "score": 55,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 104,
+      "title": "Cicada Hum: No-Neck Blues Band Returns",
+      "url": "https://daily.bandcamp.com/features/no-neck-blues-band-feature",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-08",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "blues",
+      "matched_genres": "blues"
+    }
+  ]
+}

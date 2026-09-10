@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T12:20:14Z",
+  "generated_at": "2026-09-10T12:13:48Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -3933,6 +3933,60 @@
       "item_id": 530,
       "first_issue_date": "2026-09-09",
       "last_issue_date": "2026-09-09"
+    },
+    {
+      "url": "https://nodepression.org/album-review-angela-autumn-believer/",
+      "normalised_url": "https://nodepression.org/album-review-angela-autumn-believer",
+      "title": "ALBUM REVIEW: 'Believer' Is Angela Autumn’s Soundtrack for Self-Reinvention",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
+    },
+    {
+      "url": "https://rockandbluesmuse.com/2026/09/09/review-george-benson-inspiration-a-tribute-to-nat-king-cole/",
+      "normalised_url": "https://rockandbluesmuse.com/2026/09/09/review-george-benson-inspiration-a-tribute-to-nat-king-cole",
+      "title": "Review: George Benson ‘Inspiration A Tribute To Nat King Cole’",
+      "source_name": "Rock and Blues Muse",
+      "item_id": 574,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
+    },
+    {
+      "url": "https://savingcountrymusic.com/ameripolitan-awards-officially-announce-return-for-2027/?utm_source=rss&utm_medium=rss&utm_campaign=ameripolitan-awards-officially-announce-return-for-2027",
+      "normalised_url": "https://savingcountrymusic.com/ameripolitan-awards-officially-announce-return-for-2027",
+      "title": "Ameripolitan Awards Officially Announce Return for 2027",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
+    },
+    {
+      "url": "https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026/?utm_source=rss&utm_medium=rss&utm_campaign=release-radar-most-anticipated-new-albums-for-final-portion-of-2026",
+      "normalised_url": "https://savingcountrymusic.com/release-radar-most-anticipated-new-albums-for-final-portion-of-2026",
+      "title": "Release Radar, Most Anticipated New Albums for Final Portion of 2026",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1837/",
+      "normalised_url": "https://surfguitar101.com/news/story/1837",
+      "title": "Insect Surfers- 3 shows in SoCal, Fri Sep11 to Sun Sep 13 !",
+      "source_name": "Surf Guitar 101",
+      "item_id": 580,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
+    },
+    {
+      "url": "https://www.punknews.org/article/89056/emma-ruth-rundle-releases-video-for-gods-picture",
+      "normalised_url": "https://www.punknews.org/article/89056/emma-ruth-rundle-releases-video-for-gods-picture",
+      "title": "Emma Ruth Rundle releases video for \"God's Picture\"",
+      "source_name": "Punknews.org",
+      "item_id": 550,
+      "first_issue_date": "2026-09-10",
+      "last_issue_date": "2026-09-10"
     }
   ]
 }

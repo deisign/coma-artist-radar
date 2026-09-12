@@ -1,0 +1,94 @@
+{
+  "issue_date": "2026-09-12",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-12T11:36:36Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Jason James – “Cut The Chain”",
+      "url": "https://savingcountrymusic.com/album-review-jason-james-cut-the-chain/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-jason-james-cut-the-chain",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-09-11",
+      "score": 65,
+      "matched_artists": "James",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Johnny Cash's Comic Book Reissue, Trey Anastasio and Billy Strings' Benefit Concerts, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-johnny-cashs-comic-book-reissue-trey-anastasio-and-billy-strings-benefit-concerts-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "reissue",
+      "signal_type_label": "Reissue signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Reissue signal · Source signal",
+      "editorial_angle": "Reissue signal from the coma.fm artist field.",
+      "published_at": "2026-09-11",
+      "score": 100,
+      "matched_artists": "Johnny Cash",
+      "matched_tags": "country, alt_country, reissue",
+      "matched_genres": ""
+    },
+    {
+      "id": 430,
+      "title": "In Tune With Maya de Vitry – The Former Stray Birds Member Talks About Gardening and Fifth Solo Album, ‘All My Faith’",
+      "url": "https://www.americanbluesscene.com/2026/09/in-tune-with-maya-de-vitry-the-former-stray-birds-member-talks-about-gardening-and-fifth-solo-album-all-my-faith/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-09-11",
+      "score": 40,
+      "matched_artists": "Maya de Vitry",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Ella Langley Poised to Have a Massive CMA Awards",
+      "url": "https://savingcountrymusic.com/ella-langley-poised-to-have-a-massive-cma-awards/?utm_source=rss&utm_medium=rss&utm_campaign=ella-langley-poised-to-have-a-massive-cma-awards",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-11",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

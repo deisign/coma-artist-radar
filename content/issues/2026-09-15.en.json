@@ -1,0 +1,150 @@
+{
+  "issue_date": "2026-09-15",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-15T12:40:07Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 540,
+      "title": "Gallows to reissue 'Orchestra of Wolves' and 'Grey Britain'",
+      "url": "https://www.punknews.org/article/89087/gallows-to-reissue-orchestra-of-wolves-and-grey-britain",
+      "source_name": "Punknews.org",
+      "signal_type": "reissue",
+      "signal_type_label": "Reissue signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Reissue signal · Source signal",
+      "editorial_angle": "Reissue signal from the coma.fm artist field.",
+      "published_at": "2026-09-14",
+      "score": 40,
+      "matched_artists": "Orchestra",
+      "matched_tags": "reissue",
+      "matched_genres": ""
+    },
+    {
+      "id": 88,
+      "title": "44 Years Ago Today, Willie Nelson Hit No. 1 With an Album Anchored by a Song Previously Recorded by Brenda Lee and Elvis Presley",
+      "url": "https://americansongwriter.com/44-years-ago-today-willie-nelson-hit-no-1-with-an-album-anchored-by-a-song-previously-recorded-by-brenda-lee-and-elvis-presley/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-09-14",
+      "score": 100,
+      "matched_artists": "Elvis Presley, Willie Nelson, Brenda Lee",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "FRESH TRACK: Todd Mack - \"9-11+25\"",
+      "url": "https://nodepression.org/fresh-track-todd-mack-9-11-25/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-15",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: The Insider’s Guide to AMERICANAFEST 2026",
+      "url": "https://nodepression.org/through-the-lens-the-insiders-guide-to-americanafest-2026/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-14",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 570,
+      "title": "Guitar Bomb Offset Guitar Builder Public Beta",
+      "url": "https://surfguitar101.com/news/story/1838/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-14",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 79,
+      "title": "Johnny Paycheck’s Son Honors Dad’s Longtime Friend George Jones With 60-Year-Old Classic at Nashville’s No. 1 Honky-Tonk",
+      "url": "https://americansongwriter.com/johnny-paychecks-son-honors-dads-longtime-friend-george-jones-with-60-year-old-classic-at-nashvilles-no-1-honky-tonk/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-14",
+      "score": 55,
+      "matched_artists": "George Jones",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": ""
+    },
+    {
+      "id": 16,
+      "title": "Stars Come Out to Tribute George Jones on 95th Birthday",
+      "url": "https://savingcountrymusic.com/stars-come-out-to-tribute-george-jones-on-95th-birthday/?utm_source=rss&utm_medium=rss&utm_campaign=stars-come-out-to-tribute-george-jones-on-95th-birthday",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-15",
+      "score": 50,
+      "matched_artists": "George Jones",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

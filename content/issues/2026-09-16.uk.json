@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-09-16",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-16T12:35:43Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Thee Sinseers Explore Old-School Romance on the Entrancing ‘Love Stories'",
+      "url": "https://nodepression.org/album-review-thee-sinseers-love-stories/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Nicole Atkins Addresses Modern Life While Honoring Her Heroes on 'Drama'",
+      "url": "https://nodepression.org/album-review-nicole-atkins-drama/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 373,
+      "title": "Surf Instrumental Review: Sys Malakian-Greatest Hits",
+      "url": "https://www.surfmusicandart.com/2026/09/sysmalakiangreatesthits.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 65,
+      "matched_artists": "Sys Malakian",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Alicia Blue’s “Country Desire”",
+      "url": "https://savingcountrymusic.com/album-review-alicia-blues-country-desire/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-alicia-blues-country-desire",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 99,
+      "title": "Honky-Tonk, Heartbreak, and Hell-Raising: 3 Country Singers Who Owned the 2000s",
+      "url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-2000s/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 569,
+      "title": "Eric Clapton Announces ‘The Road To Escondido Enhanced Edition’ With JJ Cale",
+      "url": "https://rockandbluesmuse.com/2026/09/15/eric-clapton-announces-the-road-to-escondido-enhanced-edition-with-jj-cale/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-15",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    }
+  ]
+}

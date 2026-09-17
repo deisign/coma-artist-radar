@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-09-17",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-17T12:35:41Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: With 'The Old Beloved Path,' Jake Xerses Fussell Returns to a Minimalist Approach",
+      "url": "https://nodepression.org/album-review-with-the-old-beloved-path-jake-xerses-fussell-returns-to-a-minimalist-approach/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-09-17",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "Album Review – Katrina Cain’s “If There’s A Heaven”",
+      "url": "https://savingcountrymusic.com/album-review-katrina-cains-if-theres-a-heaven/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-katrina-cains-if-theres-a-heaven",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-09-16",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Whitey Morgan Announces First New Album in 8 Years, “Hell on the Highway”",
+      "url": "https://savingcountrymusic.com/whitey-morgan-announces-first-new-album-in-8-years-hell-on-the-highway/?utm_source=rss&utm_medium=rss&utm_campaign=whitey-morgan-announces-first-new-album-in-8-years-hell-on-the-highway",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-09-17",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 3,
+      "title": "Twenty-Five Years On, Gillian Welch’s 'Time (The Revelator)' Remains Timeless",
+      "url": "https://nodepression.org/twenty-five-years-on-gillian-welchs-time-the-revelator-remains-timeless/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-16",
+      "score": 90,
+      "matched_artists": "Gillian Welch",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 103,
+      "title": "CMA Announces Major Dolly Parton Tribute Special as Country Music Looks To Repay a “Debt of Gratitude”",
+      "url": "https://americansongwriter.com/cma-announces-major-dolly-parton-tribute-special-as-country-music-looks-to-repay-a-debt-of-gratitude/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-09-16",
+      "score": 55,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 88,
+      "title": "Honky-Tonk, Heartbreak, and Hell-Raising: 3 Country Singers Who Owned the 1990s",
+      "url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-1990s/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-16",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    }
+  ]
+}

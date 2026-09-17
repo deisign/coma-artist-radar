@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T12:35:43Z",
+  "generated_at": "2026-09-17T12:35:41Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4248,6 +4248,60 @@
       "item_id": 373,
       "first_issue_date": "2026-09-16",
       "last_issue_date": "2026-09-16"
+    },
+    {
+      "url": "https://americansongwriter.com/cma-announces-major-dolly-parton-tribute-special-as-country-music-looks-to-repay-a-debt-of-gratitude/",
+      "normalised_url": "https://americansongwriter.com/cma-announces-major-dolly-parton-tribute-special-as-country-music-looks-to-repay-a-debt-of-gratitude",
+      "title": "CMA Announces Major Dolly Parton Tribute Special as Country Music Looks To Repay a “Debt of Gratitude”",
+      "source_name": "American Songwriter",
+      "item_id": 103,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
+    },
+    {
+      "url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-1990s/",
+      "normalised_url": "https://americansongwriter.com/honky-tonk-heartbreak-and-hell-raising-3-country-singers-who-owned-the-1990s",
+      "title": "Honky-Tonk, Heartbreak, and Hell-Raising: 3 Country Singers Who Owned the 1990s",
+      "source_name": "American Songwriter",
+      "item_id": 88,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
+    },
+    {
+      "url": "https://nodepression.org/album-review-with-the-old-beloved-path-jake-xerses-fussell-returns-to-a-minimalist-approach/",
+      "normalised_url": "https://nodepression.org/album-review-with-the-old-beloved-path-jake-xerses-fussell-returns-to-a-minimalist-approach",
+      "title": "ALBUM REVIEW: With 'The Old Beloved Path,' Jake Xerses Fussell Returns to a Minimalist Approach",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
+    },
+    {
+      "url": "https://nodepression.org/twenty-five-years-on-gillian-welchs-time-the-revelator-remains-timeless/",
+      "normalised_url": "https://nodepression.org/twenty-five-years-on-gillian-welchs-time-the-revelator-remains-timeless",
+      "title": "Twenty-Five Years On, Gillian Welch’s 'Time (The Revelator)' Remains Timeless",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-katrina-cains-if-theres-a-heaven/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-katrina-cains-if-theres-a-heaven",
+      "normalised_url": "https://savingcountrymusic.com/album-review-katrina-cains-if-theres-a-heaven",
+      "title": "Album Review – Katrina Cain’s “If There’s A Heaven”",
+      "source_name": "Saving Country Music",
+      "item_id": 28,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/whitey-morgan-announces-first-new-album-in-8-years-hell-on-the-highway/?utm_source=rss&utm_medium=rss&utm_campaign=whitey-morgan-announces-first-new-album-in-8-years-hell-on-the-highway",
+      "normalised_url": "https://savingcountrymusic.com/whitey-morgan-announces-first-new-album-in-8-years-hell-on-the-highway",
+      "title": "Whitey Morgan Announces First New Album in 8 Years, “Hell on the Highway”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-17",
+      "last_issue_date": "2026-09-17"
     }
   ]
 }

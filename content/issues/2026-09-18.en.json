@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-09-18",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-18T12:14:15Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 470,
+      "title": "Samantha Fish – Paper Doll Live | Album Review",
+      "url": "https://www.bluesblastmagazine.com/samantha-fish-paper-doll-live-album-review/",
+      "source_name": "Blues Blast Magazine",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-09-18",
+      "score": 55,
+      "matched_artists": "Samantha Fish",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 576,
+      "title": "Eric Clapton & J.J. Cale Revisit ‘The Road To Escondido’ With Expanded 20th Anniversary Edition",
+      "url": "https://www.thebluesmagazine.com/jj-cale-eric-clapton-road-escondido-20th-anniversary/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "reissue",
+      "signal_type_label": "Reissue signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Reissue signal · Source signal",
+      "editorial_angle": "Reissue signal from the coma.fm artist field.",
+      "published_at": "2026-09-16",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 1,
+      "title": "Molly Tuttle, Tyler Childers, and More Win at 2026 Americana Music Association Awards",
+      "url": "https://nodepression.org/molly-tuttle-tyler-childers-and-more-win-at-2026-americana-music-association-awards/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-17",
+      "score": 90,
+      "matched_artists": "Molly Tuttle",
+      "matched_tags": "country, alt_country, americana",
+      "matched_genres": "country"
+    },
+    {
+      "id": 83,
+      "title": "Born a Century Ago Today in Memphis, the Early Rock and Roll Pioneer With Connections to Elvis Presley and Paul McCartney",
+      "url": "https://americansongwriter.com/born-a-century-ago-today-in-memphis-the-early-rock-and-roll-pioneer-with-connections-to-elvis-presley-and-paul-mccartney/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-17",
+      "score": 80,
+      "matched_artists": "Paul McCartney, Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 3,
+      "title": "CROWDFUNDING RADAR: Amber Westerman, Tuatha Dea, Hitch & The Giddyup",
+      "url": "https://nodepression.org/crowdfunding-radar-amber-westerman-tuatha-dea-hitch-the-giddyup/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-16",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Ella Langley Doesn’t Need Drake’s New “Choosin’ Texas” Remix",
+      "url": "https://savingcountrymusic.com/ella-langley-doesnt-need-drakes-new-choosin-texas-remix/?utm_source=rss&utm_medium=rss&utm_campaign=ella-langley-doesnt-need-drakes-new-choosin-texas-remix",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-17",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

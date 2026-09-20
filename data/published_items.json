@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T11:57:36Z",
+  "generated_at": "2026-09-20T12:17:26Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4410,6 +4410,51 @@
       "item_id": 373,
       "first_issue_date": "2026-09-19",
       "last_issue_date": "2026-09-19"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/billy-gayles/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/billy-gayles",
+      "title": "Billy Gayles",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 398,
+      "first_issue_date": "2026-09-20",
+      "last_issue_date": "2026-09-20"
+    },
+    {
+      "url": "https://nodepression.org/album-review-biita-houdei/",
+      "normalised_url": "https://nodepression.org/album-review-biita-houdei",
+      "title": "ALBUM REVIEW: Biita Houdei Crafts Soothing Lullabies on 'This Bed Was Made for Me'",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-20",
+      "last_issue_date": "2026-09-20"
+    },
+    {
+      "url": "https://nodepression.org/spotlight-jude-brothers-kaleidoscopic-album-dogwood-maiden-voyage-navigates-through-nature-and-reinvention/",
+      "normalised_url": "https://nodepression.org/spotlight-jude-brothers-kaleidoscopic-album-dogwood-maiden-voyage-navigates-through-nature-and-reinvention",
+      "title": "SPOTLIGHT: Jude Brothers’ Kaleidoscopic Album ‘Dogwood Maiden Voyage’ Navigates Through Nature and Reinvention",
+      "source_name": "No Depression",
+      "item_id": 10,
+      "first_issue_date": "2026-09-20",
+      "last_issue_date": "2026-09-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/florida-georgia-line-to-ruin-12-country-fests-after-reunification/?utm_source=rss&utm_medium=rss&utm_campaign=florida-georgia-line-to-ruin-12-country-fests-after-reunification",
+      "normalised_url": "https://savingcountrymusic.com/florida-georgia-line-to-ruin-12-country-fests-after-reunification",
+      "title": "Florida Georgia Line to Ruin 12 Country Fests After Reunification",
+      "source_name": "Saving Country Music",
+      "item_id": 31,
+      "first_issue_date": "2026-09-20",
+      "last_issue_date": "2026-09-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/spoiled-beef-why-online-conflict-is-a-long-term-problem-for-artists/?utm_source=rss&utm_medium=rss&utm_campaign=spoiled-beef-why-online-conflict-is-a-long-term-problem-for-artists",
+      "normalised_url": "https://savingcountrymusic.com/spoiled-beef-why-online-conflict-is-a-long-term-problem-for-artists",
+      "title": "Spoiled Beef: Why Online Conflict is a Long-Term Problem for Artists",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-20",
+      "last_issue_date": "2026-09-20"
     }
   ]
 }

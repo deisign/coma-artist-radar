@@ -1,0 +1,110 @@
+{
+  "issue_date": "2026-09-20",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-20T12:17:26Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Biita Houdei Crafts Soothing Lullabies on 'This Bed Was Made for Me'",
+      "url": "https://nodepression.org/album-review-biita-houdei/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-18",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 10,
+      "title": "SPOTLIGHT: Jude Brothers’ Kaleidoscopic Album ‘Dogwood Maiden Voyage’ Navigates Through Nature and Reinvention",
+      "url": "https://nodepression.org/spotlight-jude-brothers-kaleidoscopic-album-dogwood-maiden-voyage-navigates-through-nature-and-reinvention/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-09-15",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 398,
+      "title": "Billy Gayles",
+      "url": "http://www.the-rockabilly-chronicle.com/billy-gayles/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-19",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "Spoiled Beef: Why Online Conflict is a Long-Term Problem for Artists",
+      "url": "https://savingcountrymusic.com/spoiled-beef-why-online-conflict-is-a-long-term-problem-for-artists/?utm_source=rss&utm_medium=rss&utm_campaign=spoiled-beef-why-online-conflict-is-a-long-term-problem-for-artists",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-19",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 31,
+      "title": "Florida Georgia Line to Ruin 12 Country Fests After Reunification",
+      "url": "https://savingcountrymusic.com/florida-georgia-line-to-ruin-12-country-fests-after-reunification/?utm_source=rss&utm_medium=rss&utm_campaign=florida-georgia-line-to-ruin-12-country-fests-after-reunification",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-16",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T12:17:26Z",
+  "generated_at": "2026-09-21T14:20:34Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4455,6 +4455,33 @@
       "item_id": 26,
       "first_issue_date": "2026-09-20",
       "last_issue_date": "2026-09-20"
+    },
+    {
+      "url": "https://nodepression.org/rainy-day-parade-the-sad-happy-story-of-jill-sobule/",
+      "normalised_url": "https://nodepression.org/rainy-day-parade-the-sad-happy-story-of-jill-sobule",
+      "title": "Rainy Day Parade: The Sad/Happy Story of Jill Sobule",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-21",
+      "last_issue_date": "2026-09-21"
+    },
+    {
+      "url": "https://savingcountrymusic.com/facebooks-new-link-charge-is-catastrophic-for-independent-music/?utm_source=rss&utm_medium=rss&utm_campaign=facebooks-new-link-charge-is-catastrophic-for-independent-music",
+      "normalised_url": "https://savingcountrymusic.com/facebooks-new-link-charge-is-catastrophic-for-independent-music",
+      "title": "Facebook’s New Link Charge is Catastrophic for Independent Music",
+      "source_name": "Saving Country Music",
+      "item_id": 16,
+      "first_issue_date": "2026-09-21",
+      "last_issue_date": "2026-09-21"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-185/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-185",
+      "normalised_url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-185",
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#185)",
+      "source_name": "Saving Country Music",
+      "item_id": 17,
+      "first_issue_date": "2026-09-21",
+      "last_issue_date": "2026-09-21"
     }
   ]
 }

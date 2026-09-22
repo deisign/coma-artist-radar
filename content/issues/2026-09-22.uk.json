@@ -1,0 +1,93 @@
+{
+  "issue_date": "2026-09-22",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-22T12:35:06Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 569,
+      "title": "Sue Foley Announces New Album ‘Alone (Together) A Holiday Companion’",
+      "url": "https://rockandbluesmuse.com/2026/09/21/sue-foley-announces-new-album-alone-together-a-holiday-companion/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-09-21",
+      "score": 40,
+      "matched_artists": "Sue Foley",
+      "matched_tags": "new_release",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 35,
+      "title": "Todd Snider’s Upcoming Posthumous Release Looks to Country’s Future",
+      "url": "https://savingcountrymusic.com/todd-sniders-upcoming-posthumous-release-looks-to-countrys-future/?utm_source=rss&utm_medium=rss&utm_campaign=todd-sniders-upcoming-posthumous-release-looks-to-countrys-future",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-09-16",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "FOUNDERS KEEPERS: Claire Kelly Leads an Impressive Batch of New Music from Americana Women",
+      "url": "https://nodepression.org/founders-keepers-claire-kelly-leads-an-impressive-batch-of-new-music-from-americana-women/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-21",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 38,
+      "title": "Veteran John PayCheck Calls Out Country’s Patriotic Pandering in New Song",
+      "url": "https://savingcountrymusic.com/veteran-john-paycheck-calls-out-countrys-patriotic-pandering-in-new-song/?utm_source=rss&utm_medium=rss&utm_campaign=veteran-john-paycheck-calls-out-countrys-patriotic-pandering-in-new-song",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-14",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

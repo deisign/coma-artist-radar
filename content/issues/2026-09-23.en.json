@@ -1,0 +1,114 @@
+{
+  "issue_date": "2026-09-23",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-23T12:44:59Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Angela Easterling Explores Her Fascinating Family History on 'Songs From the Knoxville Project'",
+      "url": "https://nodepression.org/album-review-angela-easterling-explores-her-fascinating-family-history-on-songs-from-the-knoxville-project/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-09-22",
+      "score": 90,
+      "matched_artists": "Angela Easterling",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Ian Noe’s Dazzling ‘Canyon Falls Trailer Band’ Delivers the Goods",
+      "url": "https://nodepression.org/album-review-ian-noe-canyon-falls-trailer-band/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-22",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 373,
+      "title": "Surf Instrumental Review: The Screaming Seagulls-Flight Of The Seagull / Taboo",
+      "url": "https://www.surfmusicandart.com/2026/09/thescreamingseagulls.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-09-22",
+      "score": 65,
+      "matched_artists": "The Screaming Seagulls",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Joe Stamm’s “More Than Just Bones”",
+      "url": "https://savingcountrymusic.com/album-review-joe-stamms-more-than-just-bones/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-joe-stamms-more-than-just-bones",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-22",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Neal McCoy To Become Latest Member of the Grand Ole Opry",
+      "url": "https://savingcountrymusic.com/neal-mccoy-to-become-latest-member-of-the-grand-ole-opry/?utm_source=rss&utm_medium=rss&utm_campaign=neal-mccoy-to-become-latest-member-of-the-grand-ole-opry",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-23",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

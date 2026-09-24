@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:44:59Z",
+  "generated_at": "2026-09-24T12:43:35Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4563,6 +4563,42 @@
       "item_id": 373,
       "first_issue_date": "2026-09-23",
       "last_issue_date": "2026-09-23"
+    },
+    {
+      "url": "https://nodepression.org/a-reckoning-is-beckoning-and-mary-gauthiers-songs-are-the-answer/",
+      "normalised_url": "https://nodepression.org/a-reckoning-is-beckoning-and-mary-gauthiers-songs-are-the-answer",
+      "title": "A 'Reckoning' Is Beckoning and Mary Gauthier’s Songs Are The Answer",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-24",
+      "last_issue_date": "2026-09-24"
+    },
+    {
+      "url": "https://nodepression.org/album-review-joy-oladokun-uses-the-past-to-shape-the-future-on-hope-is-a-heavy-thing/",
+      "normalised_url": "https://nodepression.org/album-review-joy-oladokun-uses-the-past-to-shape-the-future-on-hope-is-a-heavy-thing",
+      "title": "ALBUM REVIEW: Joy Oladokun Uses the Past to Shape the Future on 'Hope Is a Heavy Thing'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-24",
+      "last_issue_date": "2026-09-24"
+    },
+    {
+      "url": "https://savingcountrymusic.com/a-traditional-country-song-is-now-the-longest-running-1-and-addressing-its-criticisms/?utm_source=rss&utm_medium=rss&utm_campaign=a-traditional-country-song-is-now-the-longest-running-1-and-addressing-its-criticisms",
+      "normalised_url": "https://savingcountrymusic.com/a-traditional-country-song-is-now-the-longest-running-1-and-addressing-its-criticisms",
+      "title": "A Traditional Country Song is Now The Longest-Running #1 (and addressing its criticisms)",
+      "source_name": "Saving Country Music",
+      "item_id": 17,
+      "first_issue_date": "2026-09-24",
+      "last_issue_date": "2026-09-24"
+    },
+    {
+      "url": "https://savingcountrymusic.com/two-step-inn-festival-reveals-packed-2027-lineup/?utm_source=rss&utm_medium=rss&utm_campaign=two-step-inn-festival-reveals-packed-2027-lineup",
+      "normalised_url": "https://savingcountrymusic.com/two-step-inn-festival-reveals-packed-2027-lineup",
+      "title": "Two Step Inn Festival Reveals Packed 2027 Lineup",
+      "source_name": "Saving Country Music",
+      "item_id": 16,
+      "first_issue_date": "2026-09-24",
+      "last_issue_date": "2026-09-24"
     }
   ]
 }

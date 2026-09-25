@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T12:43:35Z",
+  "generated_at": "2026-09-25T12:45:14Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4599,6 +4599,51 @@
       "item_id": 16,
       "first_issue_date": "2026-09-24",
       "last_issue_date": "2026-09-24"
+    },
+    {
+      "url": "https://nodepression.org/album-review-leon-bridges-happiness-anytime/",
+      "normalised_url": "https://nodepression.org/album-review-leon-bridges-happiness-anytime",
+      "title": "ALBUM REVIEW: Leon Bridges Delivers an Ode to Joy on 'Happiness Anytime'",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-25",
+      "last_issue_date": "2026-09-25"
+    },
+    {
+      "url": "https://nodepression.org/the-reading-room-john-krajiceks-patience-for-the-ride-the-art-and-life-of-will-johnson/",
+      "normalised_url": "https://nodepression.org/the-reading-room-john-krajiceks-patience-for-the-ride-the-art-and-life-of-will-johnson",
+      "title": "THE READING ROOM: John Krajicek’s ‘Patience for the Ride: The Art and Life of Will Johnson’",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-25",
+      "last_issue_date": "2026-09-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/after-70-years-the-gatlin-brothers-announce-farewell-celebration-tour/?utm_source=rss&utm_medium=rss&utm_campaign=after-70-years-the-gatlin-brothers-announce-farewell-celebration-tour",
+      "normalised_url": "https://savingcountrymusic.com/after-70-years-the-gatlin-brothers-announce-farewell-celebration-tour",
+      "title": "After 70 Years, The Gatlin Brothers Announce Farewell Celebration Tour",
+      "source_name": "Saving Country Music",
+      "item_id": 44,
+      "first_issue_date": "2026-09-25",
+      "last_issue_date": "2026-09-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/september-25th-2026-is-a-super-busy-release-day-heres-your-guide/?utm_source=rss&utm_medium=rss&utm_campaign=september-25th-2026-is-a-super-busy-release-day-heres-your-guide",
+      "normalised_url": "https://savingcountrymusic.com/september-25th-2026-is-a-super-busy-release-day-heres-your-guide",
+      "title": "September 25th, 2026 is a Super Busy Release Day. Here’s Your Guide",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-25",
+      "last_issue_date": "2026-09-25"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/crossroads-guitar-festival-2026-free-stream-austin/",
+      "normalised_url": "https://www.thebluesmagazine.com/crossroads-guitar-festival-2026-free-stream-austin",
+      "title": "Watch Eric Clapton’s Crossroads Guitar Festival 2026 Free This Weekend",
+      "source_name": "The Blues Magazine",
+      "item_id": 584,
+      "first_issue_date": "2026-09-25",
+      "last_issue_date": "2026-09-25"
     }
   ]
 }

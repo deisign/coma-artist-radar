@@ -1,0 +1,113 @@
+{
+  "issue_date": "2026-09-25",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-25T12:45:14Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: Leon Bridges Delivers an Ode to Joy on 'Happiness Anytime'",
+      "url": "https://nodepression.org/album-review-leon-bridges-happiness-anytime/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-09-24",
+      "score": 90,
+      "matched_artists": "Leon Bridges",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "September 25th, 2026 is a Super Busy Release Day. Here’s Your Guide",
+      "url": "https://savingcountrymusic.com/september-25th-2026-is-a-super-busy-release-day-heres-your-guide/?utm_source=rss&utm_medium=rss&utm_campaign=september-25th-2026-is-a-super-busy-release-day-heres-your-guide",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-09-24",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "THE READING ROOM: John Krajicek’s ‘Patience for the Ride: The Art and Life of Will Johnson’",
+      "url": "https://nodepression.org/the-reading-room-john-krajiceks-patience-for-the-ride-the-art-and-life-of-will-johnson/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-09-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 584,
+      "title": "Watch Eric Clapton’s Crossroads Guitar Festival 2026 Free This Weekend",
+      "url": "https://www.thebluesmagazine.com/crossroads-guitar-festival-2026-free-stream-austin/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-09-24",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 44,
+      "title": "After 70 Years, The Gatlin Brothers Announce Farewell Celebration Tour",
+      "url": "https://savingcountrymusic.com/after-70-years-the-gatlin-brothers-announce-farewell-celebration-tour/?utm_source=rss&utm_medium=rss&utm_campaign=after-70-years-the-gatlin-brothers-announce-farewell-celebration-tour",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-14",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

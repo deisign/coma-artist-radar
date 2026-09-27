@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T12:12:44Z",
+  "generated_at": "2026-09-27T12:59:00Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4707,6 +4707,51 @@
       "item_id": 584,
       "first_issue_date": "2026-09-26",
       "last_issue_date": "2026-09-26"
+    },
+    {
+      "url": "https://nodepression.org/spotlight-jude-brothers-oak-ache-video/",
+      "normalised_url": "https://nodepression.org/spotlight-jude-brothers-oak-ache-video",
+      "title": "SPOTLIGHT: Jude Brothers - \"Oak & Ache\" [VIDEO]",
+      "source_name": "No Depression",
+      "item_id": 10,
+      "first_issue_date": "2026-09-27",
+      "last_issue_date": "2026-09-27"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-americanafest-2026-music-is-my-religion-i-live-there/",
+      "normalised_url": "https://nodepression.org/through-the-lens-americanafest-2026-music-is-my-religion-i-live-there",
+      "title": "THROUGH THE LENS: AMERICANAFEST 2026 – “Music Is My Religion. I Live There”",
+      "source_name": "No Depression",
+      "item_id": 9,
+      "first_issue_date": "2026-09-27",
+      "last_issue_date": "2026-09-27"
+    },
+    {
+      "url": "https://savingcountrymusic.com/nicky-diamonds-leads-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=nicky-diamonds-leads-the-latest-episode-of-the-hook",
+      "normalised_url": "https://savingcountrymusic.com/nicky-diamonds-leads-the-latest-episode-of-the-hook",
+      "title": "Nicky Diamonds Leads the Latest Episode of The Hook",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-27",
+      "last_issue_date": "2026-09-27"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1840/",
+      "normalised_url": "https://surfguitar101.com/news/story/1840",
+      "title": "Paganilsson Surf Band Has Risen from the Dead!",
+      "source_name": "Surf Guitar 101",
+      "item_id": 580,
+      "first_issue_date": "2026-09-27",
+      "last_issue_date": "2026-09-27"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1841/",
+      "normalised_url": "https://surfguitar101.com/news/story/1841",
+      "title": "Paul Johnson releases \"Sketches\" on Bandcamp",
+      "source_name": "Surf Guitar 101",
+      "item_id": 579,
+      "first_issue_date": "2026-09-27",
+      "last_issue_date": "2026-09-27"
     }
   ]
 }

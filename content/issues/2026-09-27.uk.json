@@ -1,0 +1,109 @@
+{
+  "issue_date": "2026-09-27",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-09-27T12:59:00Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 10,
+      "title": "SPOTLIGHT: Jude Brothers - \"Oak & Ache\" [VIDEO]",
+      "url": "https://nodepression.org/spotlight-jude-brothers-oak-ache-video/",
+      "source_name": "No Depression",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з жанрового поля coma.fm.",
+      "published_at": "2026-09-22",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 9,
+      "title": "THROUGH THE LENS: AMERICANAFEST 2026 – “Music Is My Religion. I Live There”",
+      "url": "https://nodepression.org/through-the-lens-americanafest-2026-music-is-my-religion-i-live-there/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-22",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 579,
+      "title": "Paul Johnson releases \"Sketches\" on Bandcamp",
+      "url": "https://surfguitar101.com/news/story/1841/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-27",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 580,
+      "title": "Paganilsson Surf Band Has Risen from the Dead!",
+      "url": "https://surfguitar101.com/news/story/1840/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-27",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 26,
+      "title": "Nicky Diamonds Leads the Latest Episode of The Hook",
+      "url": "https://savingcountrymusic.com/nicky-diamonds-leads-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=nicky-diamonds-leads-the-latest-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-26",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

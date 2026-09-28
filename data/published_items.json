@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T12:59:00Z",
+  "generated_at": "2026-09-28T15:22:09Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4752,6 +4752,42 @@
       "item_id": 579,
       "first_issue_date": "2026-09-27",
       "last_issue_date": "2026-09-27"
+    },
+    {
+      "url": "https://nodepression.org/a-postcard-from-the-heists/",
+      "normalised_url": "https://nodepression.org/a-postcard-from-the-heists",
+      "title": "A Postcard From The Heists",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-28",
+      "last_issue_date": "2026-09-28"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-fake-ai-artist-river-cain-uses-conflict-to-market-itself/?utm_source=rss&utm_medium=rss&utm_campaign=new-fake-ai-artist-river-cain-uses-conflict-to-market-itself",
+      "normalised_url": "https://savingcountrymusic.com/new-fake-ai-artist-river-cain-uses-conflict-to-market-itself",
+      "title": "New Fake AI Artist River Cain Uses Conflict to Market Itself",
+      "source_name": "Saving Country Music",
+      "item_id": 16,
+      "first_issue_date": "2026-09-28",
+      "last_issue_date": "2026-09-28"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1839/",
+      "normalised_url": "https://surfguitar101.com/news/story/1839",
+      "title": "New Stephen McParland book about Terry Melcher",
+      "source_name": "Surf Guitar 101",
+      "item_id": 571,
+      "first_issue_date": "2026-09-28",
+      "last_issue_date": "2026-09-28"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/09/jjhaagabetweenplaces.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/09/jjhaagabetweenplaces.html",
+      "title": "Surf Instrumental Review: JJ Haaga-Between Places",
+      "source_name": "Surf Music and Art",
+      "item_id": 363,
+      "first_issue_date": "2026-09-28",
+      "last_issue_date": "2026-09-28"
     }
   ]
 }

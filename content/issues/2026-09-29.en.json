@@ -1,0 +1,89 @@
+{
+  "issue_date": "2026-09-29",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-29T14:02:24Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 2,
+      "title": "Waylon Payne Mines Nashville’s Contradictions, Yet Honors Outlaw Roots on New Album ‘Wayward’",
+      "url": "https://nodepression.org/waylon-payne-mines-nashvilles-contradictions-yet-honors-outlaw-roots-on-new-album-wayward/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-09-29",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 78,
+      "title": "This 1979 Queen Single Made the Band Members Worry About Freddie Mercury",
+      "url": "https://americansongwriter.com/this-1979-queen-single-made-the-band-members-worry-about-freddie-mercury/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-09-29",
+      "score": 60,
+      "matched_artists": "Freddie Mercury, Queen",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Earl Scruggs and Bristol Rhythm & Roots 2026 Fests: “Eventually, It All Comes Back To The Roots.”",
+      "url": "https://nodepression.org/through-the-lens-earl-scruggs-and-bristol-rhythm-roots-2026-fests-eventually-it-all-comes-back-to-the-roots/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-29",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Treaty Oak Revival’s Too Little, Too Late On Object Throwing",
+      "url": "https://savingcountrymusic.com/treaty-oak-revivals-too-little-too-late-on-object-throwing/?utm_source=rss&utm_medium=rss&utm_campaign=treaty-oak-revivals-too-little-too-late-on-object-throwing",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-28",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

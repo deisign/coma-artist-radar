@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T15:22:09Z",
+  "generated_at": "2026-09-29T14:02:24Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4788,6 +4788,42 @@
       "item_id": 363,
       "first_issue_date": "2026-09-28",
       "last_issue_date": "2026-09-28"
+    },
+    {
+      "url": "https://americansongwriter.com/this-1979-queen-single-made-the-band-members-worry-about-freddie-mercury/",
+      "normalised_url": "https://americansongwriter.com/this-1979-queen-single-made-the-band-members-worry-about-freddie-mercury",
+      "title": "This 1979 Queen Single Made the Band Members Worry About Freddie Mercury",
+      "source_name": "American Songwriter",
+      "item_id": 78,
+      "first_issue_date": "2026-09-29",
+      "last_issue_date": "2026-09-29"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-earl-scruggs-and-bristol-rhythm-roots-2026-fests-eventually-it-all-comes-back-to-the-roots/",
+      "normalised_url": "https://nodepression.org/through-the-lens-earl-scruggs-and-bristol-rhythm-roots-2026-fests-eventually-it-all-comes-back-to-the-roots",
+      "title": "THROUGH THE LENS: Earl Scruggs and Bristol Rhythm & Roots 2026 Fests: “Eventually, It All Comes Back To The Roots.”",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-09-29",
+      "last_issue_date": "2026-09-29"
+    },
+    {
+      "url": "https://nodepression.org/waylon-payne-mines-nashvilles-contradictions-yet-honors-outlaw-roots-on-new-album-wayward/",
+      "normalised_url": "https://nodepression.org/waylon-payne-mines-nashvilles-contradictions-yet-honors-outlaw-roots-on-new-album-wayward",
+      "title": "Waylon Payne Mines Nashville’s Contradictions, Yet Honors Outlaw Roots on New Album ‘Wayward’",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-09-29",
+      "last_issue_date": "2026-09-29"
+    },
+    {
+      "url": "https://savingcountrymusic.com/treaty-oak-revivals-too-little-too-late-on-object-throwing/?utm_source=rss&utm_medium=rss&utm_campaign=treaty-oak-revivals-too-little-too-late-on-object-throwing",
+      "normalised_url": "https://savingcountrymusic.com/treaty-oak-revivals-too-little-too-late-on-object-throwing",
+      "title": "Treaty Oak Revival’s Too Little, Too Late On Object Throwing",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-09-29",
+      "last_issue_date": "2026-09-29"
     }
   ]
 }

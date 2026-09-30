@@ -1,0 +1,131 @@
+{
+  "issue_date": "2026-09-30",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-09-30T13:38:48Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Ian Noe’s “Canyon Falls Trailer Band”",
+      "url": "https://savingcountrymusic.com/album-review-ian-noes-canyon-falls-trailer-band/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-ian-noes-canyon-falls-trailer-band",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-29",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 4,
+      "title": "SPOTLIGHT: Reflections On The Inevitable Folly Of Naming Things, Or Whatever [ESSAY]",
+      "url": "https://nodepression.org/spotlight-reflections-on-the-inevitable-folly-of-naming-things-or-whatever-essay/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-09-28",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "50 Years Ago: Jerry Lee Lewis Shoots His Bass Player",
+      "url": "https://savingcountrymusic.com/50-years-ago-jerry-lee-lewis-shoots-his-bass-player/?utm_source=rss&utm_medium=rss&utm_campaign=50-years-ago-jerry-lee-lewis-shoots-his-bass-player",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-29",
+      "score": 65,
+      "matched_artists": "Jerry Lee Lewis",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 3,
+      "title": "FRESH TRACK: JP Harris - \"Hang Me\"",
+      "url": "https://nodepression.org/fresh-track-jp-harris-hang-me/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-28",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 89,
+      "title": "6 Years Ago Today, We Lost the Country Hitmaker Who Wrote 4 Elvis Presley Classics and Starred in a Beloved NBC Variety Show",
+      "url": "https://americansongwriter.com/6-years-ago-today-we-lost-the-country-hitmaker-who-wrote-4-elvis-presley-classics-and-starred-in-a-beloved-nbc-variety-show/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-29",
+      "score": 50,
+      "matched_artists": "Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 102,
+      "title": "Born 91 Years Ago Today in Louisiana, the Rock Pioneer and Country Star Who Was Accused of Trying to Kill Elvis Presley",
+      "url": "https://americansongwriter.com/born-91-years-ago-today-in-louisiana-the-rock-pioneer-and-country-star-who-was-accused-of-trying-to-kill-elvis-presley/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-09-29",
+      "score": 50,
+      "matched_artists": "Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

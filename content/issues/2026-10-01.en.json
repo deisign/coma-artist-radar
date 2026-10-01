@@ -1,0 +1,112 @@
+{
+  "issue_date": "2026-10-01",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-01T14:26:59Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Libby Dale Makes Her Solo Debut With 'Freehand'",
+      "url": "https://nodepression.org/album-review-libby-dale-makes-her-solo-debut-with-freehand/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-10-01",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "Album Review – Kenny Chesney’s “Silver Sands Marina”",
+      "url": "https://savingcountrymusic.com/album-review-kenny-chesneys-silver-sands-marina/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-kenny-chesneys-silver-sands-marina",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-09-30",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 585,
+      "title": "Acoustic Sounds Opens Its Blues Masters Vault With Tab Benoit and Tony Joe White Live Sets",
+      "url": "https://www.thebluesmagazine.com/acoustic-sounds-blues-masters-live-tab-benoit-tony-joe-white/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "archive",
+      "signal_type_label": "Archive signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "archive_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Archive signal · Source signal",
+      "editorial_angle": "Archive signal from the coma.fm artist field.",
+      "published_at": "2026-09-30",
+      "score": 60,
+      "matched_artists": "Tony Joe White",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 2,
+      "title": "BEST OF BLUES: September 2026",
+      "url": "https://nodepression.org/best-of-blues-september-2026/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-09-30",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Cheyenne Dalton Finds New Home in New Band",
+      "url": "https://savingcountrymusic.com/cheyenne-dalton-finds-new-home-in-new-band/?utm_source=rss&utm_medium=rss&utm_campaign=cheyenne-dalton-finds-new-home-in-new-band",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-01",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

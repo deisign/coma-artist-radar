@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T13:38:48Z",
+  "generated_at": "2026-10-01T14:26:59Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4878,6 +4878,51 @@
       "item_id": 27,
       "first_issue_date": "2026-09-30",
       "last_issue_date": "2026-09-30"
+    },
+    {
+      "url": "https://nodepression.org/album-review-libby-dale-makes-her-solo-debut-with-freehand/",
+      "normalised_url": "https://nodepression.org/album-review-libby-dale-makes-her-solo-debut-with-freehand",
+      "title": "ALBUM REVIEW: Libby Dale Makes Her Solo Debut With 'Freehand'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-01",
+      "last_issue_date": "2026-10-01"
+    },
+    {
+      "url": "https://nodepression.org/best-of-blues-september-2026/",
+      "normalised_url": "https://nodepression.org/best-of-blues-september-2026",
+      "title": "BEST OF BLUES: September 2026",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-01",
+      "last_issue_date": "2026-10-01"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-kenny-chesneys-silver-sands-marina/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-kenny-chesneys-silver-sands-marina",
+      "normalised_url": "https://savingcountrymusic.com/album-review-kenny-chesneys-silver-sands-marina",
+      "title": "Album Review – Kenny Chesney’s “Silver Sands Marina”",
+      "source_name": "Saving Country Music",
+      "item_id": 28,
+      "first_issue_date": "2026-10-01",
+      "last_issue_date": "2026-10-01"
+    },
+    {
+      "url": "https://savingcountrymusic.com/cheyenne-dalton-finds-new-home-in-new-band/?utm_source=rss&utm_medium=rss&utm_campaign=cheyenne-dalton-finds-new-home-in-new-band",
+      "normalised_url": "https://savingcountrymusic.com/cheyenne-dalton-finds-new-home-in-new-band",
+      "title": "Cheyenne Dalton Finds New Home in New Band",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-01",
+      "last_issue_date": "2026-10-01"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/acoustic-sounds-blues-masters-live-tab-benoit-tony-joe-white/",
+      "normalised_url": "https://www.thebluesmagazine.com/acoustic-sounds-blues-masters-live-tab-benoit-tony-joe-white",
+      "title": "Acoustic Sounds Opens Its Blues Masters Vault With Tab Benoit and Tony Joe White Live Sets",
+      "source_name": "The Blues Magazine",
+      "item_id": 585,
+      "first_issue_date": "2026-10-01",
+      "last_issue_date": "2026-10-01"
     }
   ]
 }

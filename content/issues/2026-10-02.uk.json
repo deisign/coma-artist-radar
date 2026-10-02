@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-10-02",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-02T13:50:01Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 337,
+      "title": "Surf Rock-Psych Instrumental Review: The Breakers-Midnight Shoreline",
+      "url": "https://www.surfmusicandart.com/2026/09/thebreakersmidnightshoreline.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-01",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 26,
+      "title": "Billy Strings Addresses Alleged Groping Incidents at His Concerts",
+      "url": "https://savingcountrymusic.com/billy-strings-addresses-alleged-groping-incidents-at-his-concerts/?utm_source=rss&utm_medium=rss&utm_campaign=billy-strings-addresses-alleged-groping-incidents-at-his-concerts",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-02",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 28,
+      "title": "More Puppets and Animation in Music Videos, Please",
+      "url": "https://savingcountrymusic.com/more-puppets-and-animation-in-music-videos-please/?utm_source=rss&utm_medium=rss&utm_campaign=more-puppets-and-animation-in-music-videos-please",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-30",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 205,
+      "title": "Five-Star Collection... The Modern Jazz Quartet",
+      "url": "https://outletjazz.blogspot.com/2026/09/five-star-collection-modern-jazz-quartet.html",
+      "source_name": "Outlet Jazz",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-09-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "jazz",
+      "matched_genres": "jazz"
+    }
+  ]
+}

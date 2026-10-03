@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T13:50:01Z",
+  "generated_at": "2026-10-03T12:29:51Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -4959,6 +4959,51 @@
       "item_id": 337,
       "first_issue_date": "2026-10-02",
       "last_issue_date": "2026-10-02"
+    },
+    {
+      "url": "https://nodepression.org/album-review-john-leventhal-national-drift/",
+      "normalised_url": "https://nodepression.org/album-review-john-leventhal-national-drift",
+      "title": "ALBUM REVIEW: John Leventhal Explores Found Sounds on 'National Drift'",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-10-03",
+      "last_issue_date": "2026-10-03"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-39-bob-dylan-cds-new-anti-ice-compilation-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-39-bob-dylan-cds-new-anti-ice-compilation-and-more-roots-music-news",
+      "title": "BONUS TRACKS: 39 Bob Dylan CDs, New Anti-ICE Compilation, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-03",
+      "last_issue_date": "2026-10-03"
+    },
+    {
+      "url": "https://rockandbluesmuse.com/2026/10/02/the-beatles-landmark-album-rubber-soul-released-as-expanded-edition/",
+      "normalised_url": "https://rockandbluesmuse.com/2026/10/02/the-beatles-landmark-album-rubber-soul-released-as-expanded-edition",
+      "title": "The Beatles’ Landmark Album ‘Rubber Soul’ Released as Expanded Edition",
+      "source_name": "Rock and Blues Muse",
+      "item_id": 542,
+      "first_issue_date": "2026-10-03",
+      "last_issue_date": "2026-10-03"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-mac-cornishs-wayfaring-woman/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-mac-cornishs-wayfaring-woman",
+      "normalised_url": "https://savingcountrymusic.com/album-review-mac-cornishs-wayfaring-woman",
+      "title": "Album Review – Mac Cornish’s “Wayfaring Woman”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-03",
+      "last_issue_date": "2026-10-03"
+    },
+    {
+      "url": "https://www.punknews.org/article/89236/clash-to-reissue-the-world-according-to-the-clash-promo-sampler",
+      "normalised_url": "https://www.punknews.org/article/89236/clash-to-reissue-the-world-according-to-the-clash-promo-sampler",
+      "title": "Clash to reissue 'The World according to the Clash' promo sampler",
+      "source_name": "Punknews.org",
+      "item_id": 512,
+      "first_issue_date": "2026-10-03",
+      "last_issue_date": "2026-10-03"
     }
   ]
 }

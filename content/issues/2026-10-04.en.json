@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-10-04",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-04T13:10:44Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 79,
+      "title": "Remembering When The Rolling Stones Put Songwriting at the Forefront of a Surprising Album in 1966",
+      "url": "https://americansongwriter.com/remembering-when-the-rolling-stones-put-songwriting-at-the-forefront-of-a-surprising-album-in-1966/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-10-04",
+      "score": 50,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 89,
+      "title": "Remember When Brenda Lee Released Her First Country Album in 1973?",
+      "url": "https://americansongwriter.com/remember-when-brenda-lee-released-her-first-country-album-in-1973/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-10-03",
+      "score": 30,
+      "matched_artists": "Brenda Lee",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "QUEER COUNTRY: Let a Thousand Lavenders Bloom",
+      "url": "https://nodepression.org/queer-country-let-a-thousand-lavenders-bloom/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-02",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 362,
+      "title": "Mel Peekaboo",
+      "url": "http://www.the-rockabilly-chronicle.com/mel-peekaboo/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-04",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "Gold Patch Winners, Returning Favorites Featured on New Episode of The Hook",
+      "url": "https://savingcountrymusic.com/gold-patch-winners-returning-favorites-featured-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=gold-patch-winners-returning-favorites-featured-on-new-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-03",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

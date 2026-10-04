@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T12:29:51Z",
+  "generated_at": "2026-10-04T13:10:44Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5004,6 +5004,51 @@
       "item_id": 512,
       "first_issue_date": "2026-10-03",
       "last_issue_date": "2026-10-03"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/mel-peekaboo/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/mel-peekaboo",
+      "title": "Mel Peekaboo",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 362,
+      "first_issue_date": "2026-10-04",
+      "last_issue_date": "2026-10-04"
+    },
+    {
+      "url": "https://americansongwriter.com/remember-when-brenda-lee-released-her-first-country-album-in-1973/",
+      "normalised_url": "https://americansongwriter.com/remember-when-brenda-lee-released-her-first-country-album-in-1973",
+      "title": "Remember When Brenda Lee Released Her First Country Album in 1973?",
+      "source_name": "American Songwriter",
+      "item_id": 89,
+      "first_issue_date": "2026-10-04",
+      "last_issue_date": "2026-10-04"
+    },
+    {
+      "url": "https://americansongwriter.com/remembering-when-the-rolling-stones-put-songwriting-at-the-forefront-of-a-surprising-album-in-1966/",
+      "normalised_url": "https://americansongwriter.com/remembering-when-the-rolling-stones-put-songwriting-at-the-forefront-of-a-surprising-album-in-1966",
+      "title": "Remembering When The Rolling Stones Put Songwriting at the Forefront of a Surprising Album in 1966",
+      "source_name": "American Songwriter",
+      "item_id": 79,
+      "first_issue_date": "2026-10-04",
+      "last_issue_date": "2026-10-04"
+    },
+    {
+      "url": "https://nodepression.org/queer-country-let-a-thousand-lavenders-bloom/",
+      "normalised_url": "https://nodepression.org/queer-country-let-a-thousand-lavenders-bloom",
+      "title": "QUEER COUNTRY: Let a Thousand Lavenders Bloom",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-04",
+      "last_issue_date": "2026-10-04"
+    },
+    {
+      "url": "https://savingcountrymusic.com/gold-patch-winners-returning-favorites-featured-on-new-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=gold-patch-winners-returning-favorites-featured-on-new-episode-of-the-hook",
+      "normalised_url": "https://savingcountrymusic.com/gold-patch-winners-returning-favorites-featured-on-new-episode-of-the-hook",
+      "title": "Gold Patch Winners, Returning Favorites Featured on New Episode of The Hook",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-04",
+      "last_issue_date": "2026-10-04"
     }
   ]
 }

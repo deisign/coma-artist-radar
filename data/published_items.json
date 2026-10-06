@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T15:57:13Z",
+  "generated_at": "2026-10-06T14:09:35Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5094,6 +5094,51 @@
       "item_id": 337,
       "first_issue_date": "2026-10-05",
       "last_issue_date": "2026-10-05"
+    },
+    {
+      "url": "https://londoncelticpunks.wordpress.com/2026/10/05/the-proclaimers-you-may-offend/",
+      "normalised_url": "https://londoncelticpunks.wordpress.com/2026/10/05/the-proclaimers-you-may-offend",
+      "title": "ALBUM REVIEW: THE PROCLAIMERS – You May Offend (2026)",
+      "source_name": "London Celtic Punks",
+      "item_id": 297,
+      "first_issue_date": "2026-10-06",
+      "last_issue_date": "2026-10-06"
+    },
+    {
+      "url": "https://nodepression.org/album-review-the-talking-hearts-memory-lane-puts-a-breezy-spin-on-bad-behavior/",
+      "normalised_url": "https://nodepression.org/album-review-the-talking-hearts-memory-lane-puts-a-breezy-spin-on-bad-behavior",
+      "title": "ALBUM REVIEW: The Talking Hearts’ ‘Memory Lane’ Puts a Breezy Spin on Bad Behavior",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-06",
+      "last_issue_date": "2026-10-06"
+    },
+    {
+      "url": "https://nodepression.org/no-depressions-best-of-september-2026-playlist/",
+      "normalised_url": "https://nodepression.org/no-depressions-best-of-september-2026-playlist",
+      "title": "No Depression's Best of September 2026 Playlist",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-06",
+      "last_issue_date": "2026-10-06"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1842/",
+      "normalised_url": "https://surfguitar101.com/news/story/1842",
+      "title": "The Deathly Quiet slink back with \"Return of the Black Cat\"",
+      "source_name": "Surf Guitar 101",
+      "item_id": 546,
+      "first_issue_date": "2026-10-06",
+      "last_issue_date": "2026-10-06"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1845/",
+      "normalised_url": "https://surfguitar101.com/news/story/1845",
+      "title": "SurfGuitar101.com Server Maintenance on Wednesday October 7",
+      "source_name": "Surf Guitar 101",
+      "item_id": 543,
+      "first_issue_date": "2026-10-06",
+      "last_issue_date": "2026-10-06"
     }
   ]
 }

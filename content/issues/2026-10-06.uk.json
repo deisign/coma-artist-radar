@@ -1,0 +1,110 @@
+{
+  "issue_date": "2026-10-06",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-06T14:09:35Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: The Talking Hearts’ ‘Memory Lane’ Puts a Breezy Spin on Bad Behavior",
+      "url": "https://nodepression.org/album-review-the-talking-hearts-memory-lane-puts-a-breezy-spin-on-bad-behavior/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-06",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 297,
+      "title": "ALBUM REVIEW: THE PROCLAIMERS – You May Offend (2026)",
+      "url": "https://londoncelticpunks.wordpress.com/2026/10/05/the-proclaimers-you-may-offend/",
+      "source_name": "London Celtic Punks",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-05",
+      "score": 40,
+      "matched_artists": "The Proclaimers",
+      "matched_tags": "review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "No Depression's Best of September 2026 Playlist",
+      "url": "https://nodepression.org/no-depressions-best-of-september-2026-playlist/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-05",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 543,
+      "title": "SurfGuitar101.com Server Maintenance on Wednesday October 7",
+      "url": "https://surfguitar101.com/news/story/1845/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-06",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 546,
+      "title": "The Deathly Quiet slink back with \"Return of the Black Cat\"",
+      "url": "https://surfguitar101.com/news/story/1842/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-04",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    }
+  ]
+}

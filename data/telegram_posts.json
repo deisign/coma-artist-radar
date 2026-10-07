@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T14:10:03Z",
+  "generated_at": "2026-10-07T14:28:36Z",
   "posts": [
     {
       "issue_date": "2026-06-17",
@@ -1020,6 +1020,16 @@
       "message_id": 4292,
       "chars": 832,
       "item_count": 5
+    },
+    {
+      "issue_date": "2026-10-07",
+      "lang": "uk",
+      "issue_url": "https://radar.coma.fm/uk/issues/2026-10-07.html",
+      "posted_at": "2026-10-07T14:28:36Z",
+      "chat_id": "@radiocoma",
+      "message_id": 4293,
+      "chars": 927,
+      "item_count": 6
     }
   ]
 }

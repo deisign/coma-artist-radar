@@ -1,0 +1,152 @@
+{
+  "issue_date": "2026-10-08",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-08T14:34:02Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Brody Price Sings of the Bottle and the Damage Done on Sobriety Record 'Leaf Miner’s Daughter'",
+      "url": "https://nodepression.org/album-review-brody-price-leaf-miners-daughter/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-08",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 536,
+      "title": "Elton John ‘Rock of the Westies (50th Anniversary Edition)’",
+      "url": "https://rockandbluesmuse.com/2026/10/07/elton-john-rock-of-the-westies-50th-anniversary-edition/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "reissue",
+      "signal_type_label": "Сигнал перевидання",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "reissue_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал перевидання · Сигнал джерела",
+      "editorial_angle": "Сигнал перевидання з артистичного поля coma.fm.",
+      "published_at": "2026-10-07",
+      "score": 40,
+      "matched_artists": "Elton John",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Kaitlin Butts Releasing Track List for New Album Via Cool Local Venues",
+      "url": "https://savingcountrymusic.com/kaitlin-butts-releasing-track-list-for-new-album-via-cool-local-venues/?utm_source=rss&utm_medium=rss&utm_campaign=kaitlin-butts-releasing-track-list-for-new-album-via-cool-local-venues",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-10-07",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, new_release",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "A Postcard From Laura Cortese",
+      "url": "https://nodepression.org/a-postcard-from-laura-cortese/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-07",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 76,
+      "title": "Reba McEntire Is Parting Ways With 50 Years of Country Music History: “Time for Them To Move On”",
+      "url": "https://americansongwriter.com/reba-mcentire-is-parting-ways-with-50-years-of-country-music-history-time-for-them-to-move-on/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-08",
+      "score": 40,
+      "matched_artists": "Reba McEntire",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 368,
+      "title": "Viv & Riley, Rachel Baiman - The Long Game",
+      "url": "https://www.americanadaily.com/2026/10/viv-riley-rachel-baiman-long-game.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-08",
+      "score": 40,
+      "matched_artists": "Rachel Baiman",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "‘Rolling Stone’ Gaslights Public About The Chicks ‘Loving’ Country",
+      "url": "https://savingcountrymusic.com/rolling-stone-gaslights-public-about-the-chicks-loving-country/?utm_source=rss&utm_medium=rss&utm_campaign=rolling-stone-gaslights-public-about-the-chicks-loving-country",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-07",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

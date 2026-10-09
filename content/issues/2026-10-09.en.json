@@ -1,0 +1,110 @@
+{
+  "issue_date": "2026-10-09",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-09T14:20:59Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Todd Snider's Posthumous 'My Second Rodeo' Is a Poignant Reminder of What We've Lost",
+      "url": "https://nodepression.org/album-review-todd-snider-my-second-rodeo/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-10-09",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "Emotional and Geographic Changes Helped Margo Cilker Make New LP ‘Little White Cross’",
+      "url": "https://nodepression.org/emotional-and-geographic-changes-helped-margo-cilker-make-new-lp-little-white-cross/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm genre field.",
+      "published_at": "2026-10-08",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 100,
+      "title": "Paul McCartney Reveals How a Simple Mistake Created One of The Beatles’ Most Iconic Album Covers",
+      "url": "https://americansongwriter.com/paul-mccartney-reveals-how-a-simple-mistake-created-one-of-the-beatles-most-iconic-album-covers/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-10-08",
+      "score": 60,
+      "matched_artists": "Paul McCartney, The Beatles",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 101,
+      "title": "3 Country Pop Songs From the 2000s That Walked the Line Between Mainstream and Honky-Tonk",
+      "url": "https://americansongwriter.com/3-country-pop-songs-from-the-2000s-that-walked-the-line-between-mainstream-and-honky-tonk/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-08",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 368,
+      "title": "The Montvales - Carolina",
+      "url": "https://www.americanadaily.com/2026/10/the-montvales-carolina.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-09",
+      "score": 40,
+      "matched_artists": "The Montvales",
+      "matched_tags": "",
+      "matched_genres": "country"
+    }
+  ]
+}

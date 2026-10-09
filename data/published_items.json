@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T14:34:02Z",
+  "generated_at": "2026-10-09T14:20:59Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5256,6 +5256,51 @@
       "item_id": 368,
       "first_issue_date": "2026-10-08",
       "last_issue_date": "2026-10-08"
+    },
+    {
+      "url": "https://americansongwriter.com/3-country-pop-songs-from-the-2000s-that-walked-the-line-between-mainstream-and-honky-tonk/",
+      "normalised_url": "https://americansongwriter.com/3-country-pop-songs-from-the-2000s-that-walked-the-line-between-mainstream-and-honky-tonk",
+      "title": "3 Country Pop Songs From the 2000s That Walked the Line Between Mainstream and Honky-Tonk",
+      "source_name": "American Songwriter",
+      "item_id": 101,
+      "first_issue_date": "2026-10-09",
+      "last_issue_date": "2026-10-09"
+    },
+    {
+      "url": "https://americansongwriter.com/paul-mccartney-reveals-how-a-simple-mistake-created-one-of-the-beatles-most-iconic-album-covers/",
+      "normalised_url": "https://americansongwriter.com/paul-mccartney-reveals-how-a-simple-mistake-created-one-of-the-beatles-most-iconic-album-covers",
+      "title": "Paul McCartney Reveals How a Simple Mistake Created One of The Beatles’ Most Iconic Album Covers",
+      "source_name": "American Songwriter",
+      "item_id": 100,
+      "first_issue_date": "2026-10-09",
+      "last_issue_date": "2026-10-09"
+    },
+    {
+      "url": "https://nodepression.org/album-review-todd-snider-my-second-rodeo/",
+      "normalised_url": "https://nodepression.org/album-review-todd-snider-my-second-rodeo",
+      "title": "ALBUM REVIEW: Todd Snider's Posthumous 'My Second Rodeo' Is a Poignant Reminder of What We've Lost",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-09",
+      "last_issue_date": "2026-10-09"
+    },
+    {
+      "url": "https://nodepression.org/emotional-and-geographic-changes-helped-margo-cilker-make-new-lp-little-white-cross/",
+      "normalised_url": "https://nodepression.org/emotional-and-geographic-changes-helped-margo-cilker-make-new-lp-little-white-cross",
+      "title": "Emotional and Geographic Changes Helped Margo Cilker Make New LP ‘Little White Cross’",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-09",
+      "last_issue_date": "2026-10-09"
+    },
+    {
+      "url": "https://www.americanadaily.com/2026/10/the-montvales-carolina.html",
+      "normalised_url": "https://www.americanadaily.com/2026/10/the-montvales-carolina.html",
+      "title": "The Montvales - Carolina",
+      "source_name": "Americana Daily",
+      "item_id": 368,
+      "first_issue_date": "2026-10-09",
+      "last_issue_date": "2026-10-09"
     }
   ]
 }

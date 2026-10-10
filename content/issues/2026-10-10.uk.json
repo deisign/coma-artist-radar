@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-10-10",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-10T13:36:35Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 28,
+      "title": "Album Review – Margo Cilker’s “Little White Cross”",
+      "url": "https://savingcountrymusic.com/album-review-margo-cilkers-little-white-cross/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-margo-cilkers-little-white-cross",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-09",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 403,
+      "title": "Q&A with Art Tipaldi, editor-in-chief of Blues Music Magazine, one of the world's most respected and dedicated blues journalists and authors",
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:503696",
+      "source_name": "Blues.Gr",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з жанрового поля coma.fm.",
+      "published_at": "2026-10-10",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 405,
+      "title": "Q&A with gifted virtuoso guitarist Donna Herula - her styles range from folk, soul, gospel to electric Blues",
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:503598",
+      "source_name": "Blues.Gr",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з жанрового поля coma.fm.",
+      "published_at": "2026-10-09",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: A Coda for a Tour Manager and This Week’s Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-a-coda-for-a-tour-manager-and-this-weeks-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-09",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 94,
+      "title": "3 Years Ago Today, We Said Goodbye to the Country Music Multi-Instrumentalist and ‘Hee Haw’ Star Who Played With Dolly Parton, Bill Monroe, and Porter Wagoner",
+      "url": "https://americansongwriter.com/3-years-ago-today-we-said-goodbye-to-the-country-music-multi-instrumentalist-and-hee-haw-star-who-played-with-dolly-parton-bill-monroe-and-porter-wagoner/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-09",
+      "score": 55,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Questions Remain After Ella Langley Cancels Tulsa Show Amid Threats",
+      "url": "https://savingcountrymusic.com/questions-remain-after-ella-langley-cancels-tulsa-show-amid-threats/?utm_source=rss&utm_medium=rss&utm_campaign=questions-remain-after-ella-langley-cancels-tulsa-show-amid-threats",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-10",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

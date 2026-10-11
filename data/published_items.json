@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T13:36:35Z",
+  "generated_at": "2026-10-11T13:59:14Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5355,6 +5355,33 @@
       "item_id": 26,
       "first_issue_date": "2026-10-10",
       "last_issue_date": "2026-10-10"
+    },
+    {
+      "url": "https://americansongwriter.com/the-1983-album-that-sparked-david-bowies-biggest-career-regret/",
+      "normalised_url": "https://americansongwriter.com/the-1983-album-that-sparked-david-bowies-biggest-career-regret",
+      "title": "The 1983 Album That Sparked David Bowie’s Biggest Career Regret",
+      "source_name": "American Songwriter",
+      "item_id": 75,
+      "first_issue_date": "2026-10-11",
+      "last_issue_date": "2026-10-11"
+    },
+    {
+      "url": "https://savingcountrymusic.com/jack-white-produced-loretta-lynn-album-to-be-re-issued/?utm_source=rss&utm_medium=rss&utm_campaign=jack-white-produced-loretta-lynn-album-to-be-re-issued",
+      "normalised_url": "https://savingcountrymusic.com/jack-white-produced-loretta-lynn-album-to-be-re-issued",
+      "title": "Jack White-Produced Loretta Lynn Album to be Re-Issued",
+      "source_name": "Saving Country Music",
+      "item_id": 28,
+      "first_issue_date": "2026-10-11",
+      "last_issue_date": "2026-10-11"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-spirit-of-todd-snider-graces-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=the-spirit-of-todd-snider-graces-the-latest-episode-of-the-hook",
+      "normalised_url": "https://savingcountrymusic.com/the-spirit-of-todd-snider-graces-the-latest-episode-of-the-hook",
+      "title": "The Spirit of Todd Snider Graces the Latest Episode of The Hook",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-11",
+      "last_issue_date": "2026-10-11"
     }
   ]
 }

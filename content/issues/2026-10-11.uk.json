@@ -1,0 +1,71 @@
+{
+  "issue_date": "2026-10-11",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-11T13:59:14Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 75,
+      "title": "The 1983 Album That Sparked David Bowie’s Biggest Career Regret",
+      "url": "https://americansongwriter.com/the-1983-album-that-sparked-david-bowies-biggest-career-regret/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-11",
+      "score": 50,
+      "matched_artists": "David Bowie",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "Jack White-Produced Loretta Lynn Album to be Re-Issued",
+      "url": "https://savingcountrymusic.com/jack-white-produced-loretta-lynn-album-to-be-re-issued/?utm_source=rss&utm_medium=rss&utm_campaign=jack-white-produced-loretta-lynn-album-to-be-re-issued",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-10-09",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "The Spirit of Todd Snider Graces the Latest Episode of The Hook",
+      "url": "https://savingcountrymusic.com/the-spirit-of-todd-snider-graces-the-latest-episode-of-the-hook/?utm_source=rss&utm_medium=rss&utm_campaign=the-spirit-of-todd-snider-graces-the-latest-episode-of-the-hook",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-10",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

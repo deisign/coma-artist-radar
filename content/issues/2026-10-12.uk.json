@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-10-12",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-12T16:42:43Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 443,
+      "title": "Roadhouse Album Review: Sherman Holmes stays “One Step Ahead of the Blues” with this righteous new album",
+      "url": "https://bluesroadhouse.com/2026/10/12/roadhouse-album-review-sherman-holmes-stays-one-step-ahead-of-the-blues-with-this-righteous-new-album/",
+      "source_name": "Blues Roadhouse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-12",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "new_release, review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "80 Years of John Prine Celebrated in Chicago",
+      "url": "https://savingcountrymusic.com/80-years-of-john-prine-celebrated-in-chicago/?utm_source=rss&utm_medium=rss&utm_campaign=80-years-of-john-prine-celebrated-in-chicago",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-12",
+      "score": 65,
+      "matched_artists": "John Prine, Chicago",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "Ranky Tanky Gives Traditional Gullah Tunes New Life",
+      "url": "https://nodepression.org/ranky-tanky-gives-traditional-gullah-tunes-new-life/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-12",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 94,
+      "title": "7 Years Ago Today, Country Music Said Goodbye to the Legendary George Jones Sideman Who Hated the Instrument He Became Famous For",
+      "url": "https://americansongwriter.com/7-years-ago-today-country-music-said-goodbye-to-the-legendary-george-jones-sideman-who-hated-the-instrument-he-became-famous-for/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-11",
+      "score": 40,
+      "matched_artists": "George Jones",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 101,
+      "title": "Born 60 Years Ago Today in Oregon, the “Songwriter’s Songwriter” Who Helped Pioneer Alt-Country Before His Life Was Tragically Cut Short",
+      "url": "https://americansongwriter.com/born-60-years-ago-today-in-oregon-the-songwriters-songwriter-who-helped-pioneer-alt-country-before-his-life-was-tragically-cut-short/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-11",
+      "score": 40,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#186)",
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-186/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-186",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-11",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

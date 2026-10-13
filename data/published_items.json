@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T16:42:43Z",
+  "generated_at": "2026-10-13T14:59:42Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5436,6 +5436,51 @@
       "item_id": 27,
       "first_issue_date": "2026-10-12",
       "last_issue_date": "2026-10-12"
+    },
+    {
+      "url": "https://americansongwriter.com/remembering-when-joan-baez-explored-her-complex-feelings-about-bob-dylan-with-a-hit-single-in-1975/",
+      "normalised_url": "https://americansongwriter.com/remembering-when-joan-baez-explored-her-complex-feelings-about-bob-dylan-with-a-hit-single-in-1975",
+      "title": "Remembering When Joan Baez Explored Her Complex Feelings About Bob Dylan With a Hit Single in 1975",
+      "source_name": "American Songwriter",
+      "item_id": 83,
+      "first_issue_date": "2026-10-13",
+      "last_issue_date": "2026-10-13"
+    },
+    {
+      "url": "https://nodepression.org/fresh-track-paula-boggs-band-aint-gonna-let-nobody-turn-me-round/",
+      "normalised_url": "https://nodepression.org/fresh-track-paula-boggs-band-aint-gonna-let-nobody-turn-me-round",
+      "title": "FRESH TRACK: Paula Boggs Band - \"Ain't Gonna Let Nobody Turn Me 'Round\"",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-13",
+      "last_issue_date": "2026-10-13"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-hardly-strictly-bluegrass-2026-at-25/",
+      "normalised_url": "https://nodepression.org/through-the-lens-hardly-strictly-bluegrass-2026-at-25",
+      "title": "THROUGH THE LENS: Hardly Strictly Bluegrass 2026 at 25",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-13",
+      "last_issue_date": "2026-10-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/drake-interpolates-choosin-texas-for-new-version-of-hit-song/?utm_source=rss&utm_medium=rss&utm_campaign=drake-interpolates-choosin-texas-for-new-version-of-hit-song",
+      "normalised_url": "https://savingcountrymusic.com/drake-interpolates-choosin-texas-for-new-version-of-hit-song",
+      "title": "Drake Interpolates “Choosin’ Texas” for New Version of Hit Song",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-13",
+      "last_issue_date": "2026-10-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/kacey-musgraves-just-wanted-fans-to-two-step-at-surprise-white-horse-show/?utm_source=rss&utm_medium=rss&utm_campaign=kacey-musgraves-just-wanted-fans-to-two-step-at-surprise-white-horse-show",
+      "normalised_url": "https://savingcountrymusic.com/kacey-musgraves-just-wanted-fans-to-two-step-at-surprise-white-horse-show",
+      "title": "Kacey Musgraves Just Wanted Fans to Two-Step at Surprise White Horse Show",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-10-13",
+      "last_issue_date": "2026-10-13"
     }
   ]
 }

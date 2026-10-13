@@ -1,0 +1,109 @@
+{
+  "issue_date": "2026-10-13",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-13T14:59:42Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 83,
+      "title": "Remembering When Joan Baez Explored Her Complex Feelings About Bob Dylan With a Hit Single in 1975",
+      "url": "https://americansongwriter.com/remembering-when-joan-baez-explored-her-complex-feelings-about-bob-dylan-with-a-hit-single-in-1975/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-10-13",
+      "score": 45,
+      "matched_artists": "Joan Baez, Bob Dylan",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Kacey Musgraves Just Wanted Fans to Two-Step at Surprise White Horse Show",
+      "url": "https://savingcountrymusic.com/kacey-musgraves-just-wanted-fans-to-two-step-at-surprise-white-horse-show/?utm_source=rss&utm_medium=rss&utm_campaign=kacey-musgraves-just-wanted-fans-to-two-step-at-surprise-white-horse-show",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-12",
+      "score": 65,
+      "matched_artists": "Kacey Musgraves",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "THROUGH THE LENS: Hardly Strictly Bluegrass 2026 at 25",
+      "url": "https://nodepression.org/through-the-lens-hardly-strictly-bluegrass-2026-at-25/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-13",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "FRESH TRACK: Paula Boggs Band - \"Ain't Gonna Let Nobody Turn Me 'Round\"",
+      "url": "https://nodepression.org/fresh-track-paula-boggs-band-aint-gonna-let-nobody-turn-me-round/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-12",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "Drake Interpolates “Choosin’ Texas” for New Version of Hit Song",
+      "url": "https://savingcountrymusic.com/drake-interpolates-choosin-texas-for-new-version-of-hit-song/?utm_source=rss&utm_medium=rss&utm_campaign=drake-interpolates-choosin-texas-for-new-version-of-hit-song",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T14:59:42Z",
+  "generated_at": "2026-10-14T12:51:31Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5481,6 +5481,33 @@
       "item_id": 27,
       "first_issue_date": "2026-10-13",
       "last_issue_date": "2026-10-13"
+    },
+    {
+      "url": "https://rockandbluesmuse.com/2026/10/13/review-the-jimi-hendrix-experience-magic-boy-the-jimi-hendrix-experience-live-at-berkeley-first-show/",
+      "normalised_url": "https://rockandbluesmuse.com/2026/10/13/review-the-jimi-hendrix-experience-magic-boy-the-jimi-hendrix-experience-live-at-berkeley-first-show",
+      "title": "Review: The Jimi Hendrix Experience ‘Magic Boy-The Jimi Hendrix Experience Live at Berkeley (First Show)’",
+      "source_name": "Rock and Blues Muse",
+      "item_id": 534,
+      "first_issue_date": "2026-10-14",
+      "last_issue_date": "2026-10-14"
+    },
+    {
+      "url": "https://www.americanbluesscene.com/2026/10/eric-claptons-2026-crossroads-guitar-festival-photos-highlights/",
+      "normalised_url": "https://www.americanbluesscene.com/2026/10/eric-claptons-2026-crossroads-guitar-festival-photos-highlights",
+      "title": "Eric Clapton’s 2026 Crossroads Guitar Festival: Photos & Highlights",
+      "source_name": "American Blues Scene",
+      "item_id": 393,
+      "first_issue_date": "2026-10-14",
+      "last_issue_date": "2026-10-14"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/eric-clapton-uk-concerts-may-2027/",
+      "normalised_url": "https://www.thebluesmagazine.com/eric-clapton-uk-concerts-may-2027",
+      "title": "Eric Clapton Announces Five UK Concerts for May 2027",
+      "source_name": "The Blues Magazine",
+      "item_id": 548,
+      "first_issue_date": "2026-10-14",
+      "last_issue_date": "2026-10-14"
     }
   ]
 }

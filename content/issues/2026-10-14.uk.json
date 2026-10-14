@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-10-14",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-14T12:51:31Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 534,
+      "title": "Review: The Jimi Hendrix Experience ‘Magic Boy-The Jimi Hendrix Experience Live at Berkeley (First Show)’",
+      "url": "https://rockandbluesmuse.com/2026/10/13/review-the-jimi-hendrix-experience-magic-boy-the-jimi-hendrix-experience-live-at-berkeley-first-show/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-13",
+      "score": 40,
+      "matched_artists": "The Jimi Hendrix Experience",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 393,
+      "title": "Eric Clapton’s 2026 Crossroads Guitar Festival: Photos & Highlights",
+      "url": "https://www.americanbluesscene.com/2026/10/eric-claptons-2026-crossroads-guitar-festival-photos-highlights/",
+      "source_name": "American Blues Scene",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-10-13",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 548,
+      "title": "Eric Clapton Announces Five UK Concerts for May 2027",
+      "url": "https://www.thebluesmagazine.com/eric-clapton-uk-concerts-may-2027/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-13",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    }
+  ]
+}

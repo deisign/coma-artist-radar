@@ -1,0 +1,136 @@
+{
+  "issue_date": "2026-10-15",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-15T12:38:26Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Richard Thompson Delivers Restless Mastery on 'Hippies, Thugs and Heroes'",
+      "url": "https://nodepression.org/album-review-richard-thompson-delivers-restless-mastery-on-hippies-thugs-and-heroes/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 90,
+      "matched_artists": "Restless",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 327,
+      "title": "Surf Instrumental Review: The Tourmaliners-El Gato",
+      "url": "https://www.surfmusicandart.com/2026/09/thetourmalinerselgato.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 65,
+      "matched_artists": "The Tourmaliners",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 523,
+      "title": "Review: Dave Alvin ‘Blackjack David’ Deluxe Reissue",
+      "url": "https://rockandbluesmuse.com/2026/10/14/review-dave-alvin-blackjack-david-deluxe-reissue/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 55,
+      "matched_artists": "Dave Alvin",
+      "matched_tags": "reissue",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 18,
+      "title": "Album Review – Paige Plaisance’s “Swampwater”",
+      "url": "https://savingcountrymusic.com/album-review-paige-plaisances-swampwater/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-paige-plaisances-swampwater",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 538,
+      "title": "The Rolling Stones Expand Foreign Tongues With Five More Recordings",
+      "url": "https://www.thebluesmagazine.com/rolling-stones-foreign-tongues-loose-lips-five-bonus-tracks/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 60,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 16,
+      "title": "Legendary Country Music TV, Radio Reporter and Personality Jimmy Carter Dies",
+      "url": "https://savingcountrymusic.com/legendary-country-music-tv-radio-reporter-and-personality-jimmy-carter-dies/?utm_source=rss&utm_medium=rss&utm_campaign=legendary-country-music-tv-radio-reporter-and-personality-jimmy-carter-dies",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

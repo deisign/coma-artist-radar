@@ -1,0 +1,136 @@
+{
+  "issue_date": "2026-10-16",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-16T12:20:51Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 76,
+      "title": "This Country Star Once Defended Dolly Parton in an Interview With a Real “Bless Your Heart” Moment",
+      "url": "https://americansongwriter.com/this-country-star-once-defended-dolly-parton-in-an-interview-with-a-real-bless-your-heart-moment/",
+      "source_name": "American Songwriter",
+      "signal_type": "interview",
+      "signal_type_label": "Сигнал інтерв’ю",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал інтерв’ю · Сигнал джерела",
+      "editorial_angle": "Сигнал інтерв’ю з артистичного поля coma.fm.",
+      "published_at": "2026-10-16",
+      "score": 45,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "interview",
+      "matched_genres": "country"
+    },
+    {
+      "id": 517,
+      "title": "Blondie to release new album, share \"Spectral Eyes\"",
+      "url": "https://www.punknews.org/article/89324/blondie-to-release-new-album-share-spectral-eyes",
+      "source_name": "Punknews.org",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-15",
+      "score": 55,
+      "matched_artists": "Blondie",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 568,
+      "title": "Veda Rays Echo The Classics On New Single “Electricity”",
+      "url": "https://postpunkmonk.com/2026/10/15/veda-rays-echo-the-classics-on-new-single-electricity/",
+      "source_name": "Post-Punk Monk",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-15",
+      "score": 40,
+      "matched_artists": "The Classics",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "October 16, 2026 Is a HUGE Release Day. Here’s Your Guide",
+      "url": "https://savingcountrymusic.com/october-16-2026-is-a-huge-release-day-heres-your-guide/?utm_source=rss&utm_medium=rss&utm_campaign=october-16-2026-is-a-huge-release-day-heres-your-guide",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-10-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "THE READING ROOM: Sean Wilentz’s ‘Bob Dylan: Through the Open Window (1956-1963)’",
+      "url": "https://nodepression.org/the-reading-room-sean-wilentzs-bob-dylan-through-the-open-window-1956-1963/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-10-15",
+      "score": 75,
+      "matched_artists": "Bob Dylan",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 28,
+      "title": "40 Years Ago: Ricky Van Shelton Records a New Hit with a Very Old Song",
+      "url": "https://savingcountrymusic.com/40-years-ago-ricky-van-shelton-records-a-new-hit-with-a-very-old-song/?utm_source=rss&utm_medium=rss&utm_campaign=40-years-ago-ricky-van-shelton-records-a-new-hit-with-a-very-old-song",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-14",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

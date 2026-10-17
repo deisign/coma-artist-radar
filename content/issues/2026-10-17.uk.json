@@ -1,0 +1,113 @@
+{
+  "issue_date": "2026-10-17",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-17T11:34:59Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 3,
+      "title": "ALBUM REVIEW: Charlie Parr’s Stark and Essential 'Rooming House' Is a Portrait of Survival",
+      "url": "https://nodepression.org/album-review-charlie-parrs-stark-and-essential-rooming-house-is-a-portrait-of-survival/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-16",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Wyatt McCubbin’s “650”",
+      "url": "https://savingcountrymusic.com/album-review-wyatt-mccubbins-650/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-wyatt-mccubbins-650",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-16",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Live Recordings from John Prine, Nick Shoulders, and Greensky Bluegrass, New Lydia Loveless EP, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-live-recordings-from-john-prine-nick-shoulders-and-greensky-bluegrass-new-lydia-loveless-ep-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-16",
+      "score": 90,
+      "matched_artists": "Lydia Loveless, John Prine",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 77,
+      "title": "Remembering When Paul McCartney Warmed up Some Leftovers for a New Album in 1983",
+      "url": "https://americansongwriter.com/remembering-when-paul-mccartney-warmed-up-some-leftovers-for-a-new-album-in-1983/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-17",
+      "score": 45,
+      "matched_artists": "Paul McCartney",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "New Texas / Red Dirt “The Galleys” Awards Announce Inaugural Nominees",
+      "url": "https://savingcountrymusic.com/new-texas-red-dirt-the-galleys-awards-announce-inaugural-nominees/?utm_source=rss&utm_medium=rss&utm_campaign=new-texas-red-dirt-the-galleys-awards-announce-inaugural-nominees",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-16",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

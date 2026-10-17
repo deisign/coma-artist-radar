@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T12:20:51Z",
+  "generated_at": "2026-10-17T11:34:59Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5616,6 +5616,51 @@
       "item_id": 517,
       "first_issue_date": "2026-10-16",
       "last_issue_date": "2026-10-16"
+    },
+    {
+      "url": "https://americansongwriter.com/remembering-when-paul-mccartney-warmed-up-some-leftovers-for-a-new-album-in-1983/",
+      "normalised_url": "https://americansongwriter.com/remembering-when-paul-mccartney-warmed-up-some-leftovers-for-a-new-album-in-1983",
+      "title": "Remembering When Paul McCartney Warmed up Some Leftovers for a New Album in 1983",
+      "source_name": "American Songwriter",
+      "item_id": 77,
+      "first_issue_date": "2026-10-17",
+      "last_issue_date": "2026-10-17"
+    },
+    {
+      "url": "https://nodepression.org/album-review-charlie-parrs-stark-and-essential-rooming-house-is-a-portrait-of-survival/",
+      "normalised_url": "https://nodepression.org/album-review-charlie-parrs-stark-and-essential-rooming-house-is-a-portrait-of-survival",
+      "title": "ALBUM REVIEW: Charlie Parr’s Stark and Essential 'Rooming House' Is a Portrait of Survival",
+      "source_name": "No Depression",
+      "item_id": 3,
+      "first_issue_date": "2026-10-17",
+      "last_issue_date": "2026-10-17"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-live-recordings-from-john-prine-nick-shoulders-and-greensky-bluegrass-new-lydia-loveless-ep-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-live-recordings-from-john-prine-nick-shoulders-and-greensky-bluegrass-new-lydia-loveless-ep-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Live Recordings from John Prine, Nick Shoulders, and Greensky Bluegrass, New Lydia Loveless EP, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-17",
+      "last_issue_date": "2026-10-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-wyatt-mccubbins-650/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-wyatt-mccubbins-650",
+      "normalised_url": "https://savingcountrymusic.com/album-review-wyatt-mccubbins-650",
+      "title": "Album Review – Wyatt McCubbin’s “650”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-10-17",
+      "last_issue_date": "2026-10-17"
+    },
+    {
+      "url": "https://savingcountrymusic.com/new-texas-red-dirt-the-galleys-awards-announce-inaugural-nominees/?utm_source=rss&utm_medium=rss&utm_campaign=new-texas-red-dirt-the-galleys-awards-announce-inaugural-nominees",
+      "normalised_url": "https://savingcountrymusic.com/new-texas-red-dirt-the-galleys-awards-announce-inaugural-nominees",
+      "title": "New Texas / Red Dirt “The Galleys” Awards Announce Inaugural Nominees",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-17",
+      "last_issue_date": "2026-10-17"
     }
   ]
 }

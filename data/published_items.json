@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T12:03:24Z",
+  "generated_at": "2026-10-19T14:38:23Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5688,6 +5688,33 @@
       "item_id": 337,
       "first_issue_date": "2026-10-18",
       "last_issue_date": "2026-10-18"
+    },
+    {
+      "url": "https://nodepression.org/crowdfunding-radar-alice-wallace-and-ranger-doug-leonard-podolak-and-archie-fisher/",
+      "normalised_url": "https://nodepression.org/crowdfunding-radar-alice-wallace-and-ranger-doug-leonard-podolak-and-archie-fisher",
+      "title": "CROWDFUNDING RADAR: Alice Wallace and Ranger Doug, Leonard Podolak, and Archie Fisher",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-19",
+      "last_issue_date": "2026-10-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-vince-gill-and-marty-stuart-marty-and-me/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-vince-gill-and-marty-stuart-marty-and-me",
+      "normalised_url": "https://savingcountrymusic.com/album-review-vince-gill-and-marty-stuart-marty-and-me",
+      "title": "Album Review – Vince Gill (and Marty Stuart) – “Marty And Me”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-19",
+      "last_issue_date": "2026-10-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/zach-bryan-cites-evan-felker-jason-isbell-for-inspiring-his-sobriety/?utm_source=rss&utm_medium=rss&utm_campaign=zach-bryan-cites-evan-felker-jason-isbell-for-inspiring-his-sobriety",
+      "normalised_url": "https://savingcountrymusic.com/zach-bryan-cites-evan-felker-jason-isbell-for-inspiring-his-sobriety",
+      "title": "Zach Bryan Cites Evan Felker, Jason Isbell for Inspiring His Sobriety",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-10-19",
+      "last_issue_date": "2026-10-19"
     }
   ]
 }

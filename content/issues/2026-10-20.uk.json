@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-10-20",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-20T12:41:53Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 79,
+      "title": "Remembering When a David Bowie Album Featured a Future Superstar on Backing Vocals in 1975",
+      "url": "https://americansongwriter.com/remembering-when-a-david-bowie-album-featured-a-future-superstar-on-backing-vocals-in-1975/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-20",
+      "score": 50,
+      "matched_artists": "David Bowie",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "CMA Makes Smart Move to Give Dolly Parton Tribute Its Own TV Special",
+      "url": "https://savingcountrymusic.com/cma-makes-smart-move-to-give-dolly-parton-tribute-its-own-tv-special/?utm_source=rss&utm_medium=rss&utm_campaign=cma-makes-smart-move-to-give-dolly-parton-tribute-its-own-tv-special",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-20",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 558,
+      "title": "Unheard Cut-Ups of William S. Burroughs, Brought to Light by James Ilgenfritz, Elliott Sharp and Free Jazz/Avant-Garde Cohort",
+      "url": "https://www.jazztimes.com/features/profiles/unheard-cut-ups-of-william-s-burroughs-brought-to-light-by-james-ilgenfritz-elliott-sharp-and-free-jazz-avant-garde-cohort/",
+      "source_name": "JazzTimes",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-19",
+      "score": 50,
+      "matched_artists": "James",
+      "matched_tags": "jazz",
+      "matched_genres": "jazz"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T14:38:23Z",
+  "generated_at": "2026-10-20T12:41:53Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5715,6 +5715,33 @@
       "item_id": 27,
       "first_issue_date": "2026-10-19",
       "last_issue_date": "2026-10-19"
+    },
+    {
+      "url": "https://americansongwriter.com/remembering-when-a-david-bowie-album-featured-a-future-superstar-on-backing-vocals-in-1975/",
+      "normalised_url": "https://americansongwriter.com/remembering-when-a-david-bowie-album-featured-a-future-superstar-on-backing-vocals-in-1975",
+      "title": "Remembering When a David Bowie Album Featured a Future Superstar on Backing Vocals in 1975",
+      "source_name": "American Songwriter",
+      "item_id": 79,
+      "first_issue_date": "2026-10-20",
+      "last_issue_date": "2026-10-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/cma-makes-smart-move-to-give-dolly-parton-tribute-its-own-tv-special/?utm_source=rss&utm_medium=rss&utm_campaign=cma-makes-smart-move-to-give-dolly-parton-tribute-its-own-tv-special",
+      "normalised_url": "https://savingcountrymusic.com/cma-makes-smart-move-to-give-dolly-parton-tribute-its-own-tv-special",
+      "title": "CMA Makes Smart Move to Give Dolly Parton Tribute Its Own TV Special",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-20",
+      "last_issue_date": "2026-10-20"
+    },
+    {
+      "url": "https://www.jazztimes.com/features/profiles/unheard-cut-ups-of-william-s-burroughs-brought-to-light-by-james-ilgenfritz-elliott-sharp-and-free-jazz-avant-garde-cohort/",
+      "normalised_url": "https://www.jazztimes.com/features/profiles/unheard-cut-ups-of-william-s-burroughs-brought-to-light-by-james-ilgenfritz-elliott-sharp-and-free-jazz-avant-garde-cohort",
+      "title": "Unheard Cut-Ups of William S. Burroughs, Brought to Light by James Ilgenfritz, Elliott Sharp and Free Jazz/Avant-Garde Cohort",
+      "source_name": "JazzTimes",
+      "item_id": 558,
+      "first_issue_date": "2026-10-20",
+      "last_issue_date": "2026-10-20"
     }
   ]
 }

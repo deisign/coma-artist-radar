@@ -1,0 +1,198 @@
+{
+  "issue_date": "2026-10-21",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-21T12:54:08Z",
+  "min_score": 30,
+  "total_items": 9,
+  "items": [
+    {
+      "id": 337,
+      "title": "Surf Rock Review: The Dirty Licks - Power Stance",
+      "url": "https://www.surfmusicandart.com/2026/10/dirtylickspowerstance.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 50,
+      "matched_artists": "The Dirty Licks",
+      "matched_tags": "surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 537,
+      "title": "Review: The Doors ‘Unbound and Dangerous’",
+      "url": "https://rockandbluesmuse.com/2026/10/20/review-the-doors-unbound-and-dangerous/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 40,
+      "matched_artists": "The Doors",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 549,
+      "title": "Joanne Shaw Taylor – The Trouble With Love: Album Review",
+      "url": "https://www.thebluesmagazine.com/joanne-shaw-taylor-trouble-with-love-album-review/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 40,
+      "matched_artists": "Trouble",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 533,
+      "title": "Rolling Stones Release “Who You Callin’ Crazy” New Single",
+      "url": "https://rockandbluesmuse.com/2026/10/20/rolling-stones-release-who-you-callin-crazy-new-single/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 40,
+      "matched_artists": "Rolling Stones",
+      "matched_tags": "new_release",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: North Carolina & Arkansas Roots Music Fests Wrap Up The Festival Season",
+      "url": "https://nodepression.org/through-the-lens-north-carolina-arkansas-roots-music-fests-wrap-up-the-festival-season/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm genre field.",
+      "published_at": "2026-10-20",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "FRESH TRACK: Emily Scott Robinson - \"Appalachia\"",
+      "url": "https://nodepression.org/fresh-track-emily-scott-robinson-appalachia/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 90,
+      "matched_artists": "Emily Scott Robinson",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 88,
+      "title": "43 Years Ago Today, Country Music Lost the Pioneering Guitarist Who Helped Define Its Sound and Wrote Hits for Tennessee Ernie Ford and Ernest Tubb",
+      "url": "https://americansongwriter.com/43-years-ago-today-country-music-lost-the-pioneering-guitarist-who-helped-define-its-sound-and-wrote-hits-for-tennessee-ernie-ford-and-ernest-tubb/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-20",
+      "score": 40,
+      "matched_artists": "Tennessee Ernie",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 202,
+      "title": "Five-Star Collection... Buddy DeFranco and Oscar Peterson",
+      "url": "https://outletjazz.blogspot.com/2026/10/five-star-collection-buddy-defranco-and.html",
+      "source_name": "Outlet Jazz",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-21",
+      "score": 40,
+      "matched_artists": "Oscar Peterson",
+      "matched_tags": "",
+      "matched_genres": "jazz"
+    },
+    {
+      "id": 27,
+      "title": "Are You Checking the Ingredients of Your Music?",
+      "url": "https://savingcountrymusic.com/are-you-checking-the-ingredients-of-your-music/?utm_source=rss&utm_medium=rss&utm_campaign=are-you-checking-the-ingredients-of-your-music",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-20",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

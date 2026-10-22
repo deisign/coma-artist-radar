@@ -1,0 +1,176 @@
+{
+  "issue_date": "2026-10-22",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-22T12:56:43Z",
+  "min_score": 30,
+  "total_items": 8,
+  "items": [
+    {
+      "id": 2,
+      "title": "ALBUM REVIEW: On ‘Shaving A Dead Man,’ JP Harris Plays Intuitive Interpreter of an Old-Time Songbook",
+      "url": "https://nodepression.org/album-review-on-shaving-a-dead-man-jp-harris-plays-intuitive-interpreter-of-an-old-time-songbook/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Zach Bryan’s “Young Manhood and Other Donatable Organs”",
+      "url": "https://savingcountrymusic.com/album-review-zach-bryans-young-manhood-and-other-donatable-organs/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-zach-bryans-young-manhood-and-other-donatable-organs",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 533,
+      "title": "Robert Cray Announces New Album ‘All Over Again’ Shares Single",
+      "url": "https://rockandbluesmuse.com/2026/10/21/robert-cray-announces-new-album-all-over-again-shares-single/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 40,
+      "matched_artists": "Robert Cray",
+      "matched_tags": "new_release",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 549,
+      "title": "Robert Cray Returns to Muscle Shoals for New Album All Over Again",
+      "url": "https://www.thebluesmagazine.com/robert-cray-all-over-again-album-2027/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 40,
+      "matched_artists": "Robert Cray",
+      "matched_tags": "new_release",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 1,
+      "title": "SPOTLIGHT: Miko Marks Finds Her Voice on ‘Hell or High Water’",
+      "url": "https://nodepression.org/spotlight-miko-marks-finds-her-voice-on-hell-or-high-water/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з жанрового поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 92,
+      "title": "Vince Gill Helps Nashville Say Goodbye to the Queen of Country Music During ‘A Celebration of Dolly Parton’",
+      "url": "https://americansongwriter.com/vince-gill-helps-nashville-say-goodbye-to-the-queen-of-country-music-during-a-celebration-of-dolly-parton/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-22",
+      "score": 85,
+      "matched_artists": "Dolly Parton, Queen",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 548,
+      "title": "The Rolling Stones Team Up With Jazz Saxophonist Courtney Pine on ‘Who You Callin’ Crazy’",
+      "url": "https://www.thebluesmagazine.com/rolling-stones-single-who-you-callin-crazy-2026/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-21",
+      "score": 60,
+      "matched_artists": "The Rolling Stones",
+      "matched_tags": "",
+      "matched_genres": "jazz, blues"
+    },
+    {
+      "id": 26,
+      "title": "Country Legend John Anderson Passes Away at the Age of 71",
+      "url": "https://savingcountrymusic.com/country-legend-john-anderson-passes-away-at-the-age-of-71/?utm_source=rss&utm_medium=rss&utm_campaign=country-legend-john-anderson-passes-away-at-the-age-of-71",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-22",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

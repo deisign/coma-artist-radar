@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T12:56:43Z",
+  "generated_at": "2026-10-23T12:35:45Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5895,6 +5895,42 @@
       "item_id": 548,
       "first_issue_date": "2026-10-22",
       "last_issue_date": "2026-10-22"
+    },
+    {
+      "url": "https://nodepression.org/album-review-rayland-baxter-steps-out-of-the-rut-and-into-the-light-on-true-violet/",
+      "normalised_url": "https://nodepression.org/album-review-rayland-baxter-steps-out-of-the-rut-and-into-the-light-on-true-violet",
+      "title": "ALBUM REVIEW: Rayland Baxter Steps Out of the Rut and Into the Light on 'True Violet'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-23",
+      "last_issue_date": "2026-10-23"
+    },
+    {
+      "url": "https://nodepression.org/two-decades-after-their-debut-new-tribute-album-honors-the-felice-brothers/",
+      "normalised_url": "https://nodepression.org/two-decades-after-their-debut-new-tribute-album-honors-the-felice-brothers",
+      "title": "Two Decades After Their Debut, New Tribute Album Honors The Felice Brothers",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-23",
+      "last_issue_date": "2026-10-23"
+    },
+    {
+      "url": "https://savingcountrymusic.com/an-honest-review-of-dolly-partons-i-will-always-love-you-tribute/?utm_source=rss&utm_medium=rss&utm_campaign=an-honest-review-of-dolly-partons-i-will-always-love-you-tribute",
+      "normalised_url": "https://savingcountrymusic.com/an-honest-review-of-dolly-partons-i-will-always-love-you-tribute",
+      "title": "An Honest Review of Dolly Parton’s “I Will Always Love You” Tribute",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-23",
+      "last_issue_date": "2026-10-23"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1846/",
+      "normalised_url": "https://surfguitar101.com/news/story/1846",
+      "title": "Instromatic ‘26",
+      "source_name": "Surf Guitar 101",
+      "item_id": 543,
+      "first_issue_date": "2026-10-23",
+      "last_issue_date": "2026-10-23"
     }
   ]
 }

@@ -1,0 +1,93 @@
+{
+  "issue_date": "2026-10-23",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-23T12:35:45Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Rayland Baxter Steps Out of the Rut and Into the Light on 'True Violet'",
+      "url": "https://nodepression.org/album-review-rayland-baxter-steps-out-of-the-rut-and-into-the-light-on-true-violet/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-22",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "An Honest Review of Dolly Parton’s “I Will Always Love You” Tribute",
+      "url": "https://savingcountrymusic.com/an-honest-review-of-dolly-partons-i-will-always-love-you-tribute/?utm_source=rss&utm_medium=rss&utm_campaign=an-honest-review-of-dolly-partons-i-will-always-love-you-tribute",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-10-22",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "Two Decades After Their Debut, New Tribute Album Honors The Felice Brothers",
+      "url": "https://nodepression.org/two-decades-after-their-debut-new-tribute-album-honors-the-felice-brothers/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-22",
+      "score": 75,
+      "matched_artists": "The Felice Brothers",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 543,
+      "title": "Instromatic ‘26",
+      "url": "https://surfguitar101.com/news/story/1846/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-23",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    }
+  ]
+}

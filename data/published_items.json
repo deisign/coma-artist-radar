@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T12:35:45Z",
+  "generated_at": "2026-10-24T11:59:25Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5931,6 +5931,42 @@
       "item_id": 543,
       "first_issue_date": "2026-10-23",
       "last_issue_date": "2026-10-23"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/splash-bones/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/splash-bones",
+      "title": "Splash Bones",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 362,
+      "first_issue_date": "2026-10-24",
+      "last_issue_date": "2026-10-24"
+    },
+    {
+      "url": "https://nodepression.org/album-review-caroline-rose-shapeshifts-again-on-gentling-the-horse-at-the-walt-whitman-mall/",
+      "normalised_url": "https://nodepression.org/album-review-caroline-rose-shapeshifts-again-on-gentling-the-horse-at-the-walt-whitman-mall",
+      "title": "ALBUM REVIEW: Caroline Rose Shapeshifts Again on 'Gentling the Horse at the Walt Whitman Mall'",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-10-24",
+      "last_issue_date": "2026-10-24"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-kacey-musgraves-in-spanish-ibma-bluegrass-music-award-winners-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-kacey-musgraves-in-spanish-ibma-bluegrass-music-award-winners-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Kacey Musgraves In Spanish, IBMA Bluegrass Music Award Winners, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-24",
+      "last_issue_date": "2026-10-24"
+    },
+    {
+      "url": "https://savingcountrymusic.com/grand-ole-opry-be-better-at-reading-the-room/?utm_source=rss&utm_medium=rss&utm_campaign=grand-ole-opry-be-better-at-reading-the-room",
+      "normalised_url": "https://savingcountrymusic.com/grand-ole-opry-be-better-at-reading-the-room",
+      "title": "Grand Ole Opry: Be Better At Reading The Room",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-24",
+      "last_issue_date": "2026-10-24"
     }
   ]
 }

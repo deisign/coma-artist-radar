@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-10-25",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-25T12:32:47Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 363,
+      "title": "Crazy Cavan and the Rhythm Rockers",
+      "url": "http://www.the-rockabilly-chronicle.com/crazy-cavan-and-the-rhythm-rockers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-24",
+      "score": 70,
+      "matched_artists": "Crazy Cavan And The Rhythm Rockers",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 362,
+      "title": "Hi-Speed Rockets",
+      "url": "http://www.the-rockabilly-chronicle.com/hi-speed-rockets/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-25",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 548,
+      "title": "Blues with a Butter Knife: The Remarkable Story of Delta Blues Legend CeDell Davis",
+      "url": "https://www.thebluesmagazine.com/blues-with-a-butter-knife-cedell-davis-book-review/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-24",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "blues, delta_blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "Billy Strings Makes It Five Entertainer of the Year Wins at 2026 IBMA Awards",
+      "url": "https://savingcountrymusic.com/billy-strings-makes-it-five-entertainer-of-the-year-wins-at-2026-ibma-awards/?utm_source=rss&utm_medium=rss&utm_campaign=billy-strings-makes-it-five-entertainer-of-the-year-wins-at-2026-ibma-awards",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-24",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

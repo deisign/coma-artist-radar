@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T11:59:25Z",
+  "generated_at": "2026-10-25T12:32:47Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -5967,6 +5967,42 @@
       "item_id": 26,
       "first_issue_date": "2026-10-24",
       "last_issue_date": "2026-10-24"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/crazy-cavan-and-the-rhythm-rockers/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/crazy-cavan-and-the-rhythm-rockers",
+      "title": "Crazy Cavan and the Rhythm Rockers",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 363,
+      "first_issue_date": "2026-10-25",
+      "last_issue_date": "2026-10-25"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/hi-speed-rockets/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/hi-speed-rockets",
+      "title": "Hi-Speed Rockets",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 362,
+      "first_issue_date": "2026-10-25",
+      "last_issue_date": "2026-10-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/billy-strings-makes-it-five-entertainer-of-the-year-wins-at-2026-ibma-awards/?utm_source=rss&utm_medium=rss&utm_campaign=billy-strings-makes-it-five-entertainer-of-the-year-wins-at-2026-ibma-awards",
+      "normalised_url": "https://savingcountrymusic.com/billy-strings-makes-it-five-entertainer-of-the-year-wins-at-2026-ibma-awards",
+      "title": "Billy Strings Makes It Five Entertainer of the Year Wins at 2026 IBMA Awards",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-25",
+      "last_issue_date": "2026-10-25"
+    },
+    {
+      "url": "https://www.thebluesmagazine.com/blues-with-a-butter-knife-cedell-davis-book-review/",
+      "normalised_url": "https://www.thebluesmagazine.com/blues-with-a-butter-knife-cedell-davis-book-review",
+      "title": "Blues with a Butter Knife: The Remarkable Story of Delta Blues Legend CeDell Davis",
+      "source_name": "The Blues Magazine",
+      "item_id": 548,
+      "first_issue_date": "2026-10-25",
+      "last_issue_date": "2026-10-25"
     }
   ]
 }

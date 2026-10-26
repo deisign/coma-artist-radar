@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T12:32:47Z",
+  "generated_at": "2026-10-26T14:11:07Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6003,6 +6003,60 @@
       "item_id": 548,
       "first_issue_date": "2026-10-25",
       "last_issue_date": "2026-10-25"
+    },
+    {
+      "url": "http://www.the-rockabilly-chronicle.com/cyclone/",
+      "normalised_url": "http://www.the-rockabilly-chronicle.com/cyclone",
+      "title": "Cyclone",
+      "source_name": "The Rockabilly Chronicle",
+      "item_id": 362,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
+    },
+    {
+      "url": "https://londoncelticpunks.wordpress.com/2026/10/25/lewis-pugh-anna-haslam/",
+      "normalised_url": "https://londoncelticpunks.wordpress.com/2026/10/25/lewis-pugh-anna-haslam",
+      "title": "NEW SINGLE: LEWIS PUGH – Anna Haslam (2026)",
+      "source_name": "London Celtic Punks",
+      "item_id": 297,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
+    },
+    {
+      "url": "https://nodepression.org/fresh-track-margo-cilker-state-line/",
+      "normalised_url": "https://nodepression.org/fresh-track-margo-cilker-state-line",
+      "title": "FRESH TRACK: Margo Cilker - \"State Line\"",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
+    },
+    {
+      "url": "https://savingcountrymusic.com/finally-brooks-dunn-is-working-on-new-music/?utm_source=rss&utm_medium=rss&utm_campaign=finally-brooks-dunn-is-working-on-new-music",
+      "normalised_url": "https://savingcountrymusic.com/finally-brooks-dunn-is-working-on-new-music",
+      "title": "Finally: Brooks & Dunn is Working On New Music",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
+    },
+    {
+      "url": "https://savingcountrymusic.com/iconic-granada-theater-is-latest-independent-music-venue-to-close/?utm_source=rss&utm_medium=rss&utm_campaign=iconic-granada-theater-is-latest-independent-music-venue-to-close",
+      "normalised_url": "https://savingcountrymusic.com/iconic-granada-theater-is-latest-independent-music-venue-to-close",
+      "title": "Iconic Granada Theater Is Latest Independent Music Venue to Close",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
+    },
+    {
+      "url": "https://surfguitar101.com/news/story/1847/",
+      "normalised_url": "https://surfguitar101.com/news/story/1847",
+      "title": "The Possum Bites - Debut single \"Slime Time\" out now!",
+      "source_name": "Surf Guitar 101",
+      "item_id": 543,
+      "first_issue_date": "2026-10-26",
+      "last_issue_date": "2026-10-26"
     }
   ]
 }

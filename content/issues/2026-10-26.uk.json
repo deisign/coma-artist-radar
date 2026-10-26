@@ -1,0 +1,131 @@
+{
+  "issue_date": "2026-10-26",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-26T14:11:07Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 543,
+      "title": "The Possum Bites - Debut single \"Slime Time\" out now!",
+      "url": "https://surfguitar101.com/news/story/1847/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-10-25",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb, new_release",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 297,
+      "title": "NEW SINGLE: LEWIS PUGH – Anna Haslam (2026)",
+      "url": "https://londoncelticpunks.wordpress.com/2026/10/25/lewis-pugh-anna-haslam/",
+      "source_name": "London Celtic Punks",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-10-25",
+      "score": 40,
+      "matched_artists": "Lewis Pugh",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "FRESH TRACK: Margo Cilker - \"State Line\"",
+      "url": "https://nodepression.org/fresh-track-margo-cilker-state-line/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 362,
+      "title": "Cyclone",
+      "url": "http://www.the-rockabilly-chronicle.com/cyclone/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "Finally: Brooks & Dunn is Working On New Music",
+      "url": "https://savingcountrymusic.com/finally-brooks-dunn-is-working-on-new-music/?utm_source=rss&utm_medium=rss&utm_campaign=finally-brooks-dunn-is-working-on-new-music",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Iconic Granada Theater Is Latest Independent Music Venue to Close",
+      "url": "https://savingcountrymusic.com/iconic-granada-theater-is-latest-independent-music-venue-to-close/?utm_source=rss&utm_medium=rss&utm_campaign=iconic-granada-theater-is-latest-independent-music-venue-to-close",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

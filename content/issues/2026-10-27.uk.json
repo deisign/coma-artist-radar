@@ -1,0 +1,132 @@
+{
+  "issue_date": "2026-10-27",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-10-27T13:10:12Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Pug Johnson’s “From a Beaumont Bar”",
+      "url": "https://savingcountrymusic.com/album-review-pug-johnsons-from-a-beaumont-bar/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-pug-johnsons-from-a-beaumont-bar",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "SPOTLIGHT: Miko Marks - \"Hell or High Water\" [VIDEO]",
+      "url": "https://nodepression.org/spotlight-miko-marks-hell-or-high-water-video/",
+      "source_name": "No Depression",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 364,
+      "title": "Crazy Cavan and the Rhythm Rockers",
+      "url": "https://www.the-rockabilly-chronicle.com/crazy-cavan-and-the-rhythm-rockers/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-24",
+      "score": 70,
+      "matched_artists": "Crazy Cavan And The Rhythm Rockers",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 362,
+      "title": "Cyclone",
+      "url": "https://www.the-rockabilly-chronicle.com/cyclone/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 202,
+      "title": "Five-Star Collection & Jazz For The Screen ★ Miles Davis",
+      "url": "https://outletjazz.blogspot.com/2026/10/five-star-collection-jazz-for-screen.html",
+      "source_name": "Outlet Jazz",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-10-27",
+      "score": 40,
+      "matched_artists": "Miles Davis",
+      "matched_tags": "",
+      "matched_genres": "jazz"
+    },
+    {
+      "id": 26,
+      "title": "The Mysteries John Anderson Left Behind in His Songs",
+      "url": "https://savingcountrymusic.com/the-mysteries-john-anderson-left-behind-in-his-songs/?utm_source=rss&utm_medium=rss&utm_campaign=the-mysteries-john-anderson-left-behind-in-his-songs",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-10-26",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

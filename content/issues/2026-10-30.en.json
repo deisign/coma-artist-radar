@@ -1,0 +1,217 @@
+{
+  "issue_date": "2026-10-30",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-10-30T14:03:36Z",
+  "min_score": 30,
+  "total_items": 10,
+  "items": [
+    {
+      "id": 337,
+      "title": "Surf Instrumental Review: Kincaid and The Memetics-\"Oh, Silvio!\"",
+      "url": "https://www.surfmusicandart.com/2026/10/kincaidandthememeticsohsilvio.html",
+      "source_name": "Surf Music and Art",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-10-30",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "surf, instrumental_surf",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 404,
+      "title": "Q&A with Detroit-based blues-rock musician Michigan Mick, blurring the lines between electric blues and raw, riff-forward rock 'n' roll",
+      "url": "http://blues.gr/xn/detail/1982923:BlogPost:503720",
+      "source_name": "Blues.Gr",
+      "signal_type": "interview",
+      "signal_type_label": "Interview signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "interview_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Interview signal · Source signal",
+      "editorial_angle": "Interview signal from the coma.fm genre field.",
+      "published_at": "2026-10-29",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "blues",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 2,
+      "title": "THE READING ROOM: Jim Newberry’s ‘Chicago Music, Seen: 100 Portraits’",
+      "url": "https://nodepression.org/the-reading-room-jim-newberrys-chicago-music-seen-100-portraits/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-10-29",
+      "score": 75,
+      "matched_artists": "Chicago",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 3,
+      "title": "Dolly Parton, Emmylou Harris, and Linda Ronstadt’s Trio Remains Timeless, Continuing to Inspire Supergroups Today",
+      "url": "https://nodepression.org/dolly-parton-emmylou-harris-and-linda-ronstadts-trio-remains-timeless-continuing-to-inspire-supergroups-today/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-29",
+      "score": 100,
+      "matched_artists": "Emmylou Harris, Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 543,
+      "title": "The Me Gustas opening Southern Culture on the Skids show at Harlow's",
+      "url": "https://surfguitar101.com/news/story/1848/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-28",
+      "score": 90,
+      "matched_artists": "Southern Culture On The Skids, The Me Gustas",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 29,
+      "title": "New Country Artists Who Can Help Carry The Songs of Dolly Parton Forward",
+      "url": "https://savingcountrymusic.com/new-country-artists-who-can-help-carry-the-songs-of-dolly-parton-forward/?utm_source=rss&utm_medium=rss&utm_campaign=new-country-artists-who-can-help-carry-the-songs-of-dolly-parton-forward",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-28",
+      "score": 65,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 363,
+      "title": "Quiff Cuts",
+      "url": "https://www.the-rockabilly-chronicle.com/quiff-cuts/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-27",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 366,
+      "title": "Hi-Speed Rockets",
+      "url": "https://www.the-rockabilly-chronicle.com/hi-speed-rockets/",
+      "source_name": "The Rockabilly Chronicle",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-10-25",
+      "score": 55,
+      "matched_artists": "",
+      "matched_tags": "rockabilly, grease_and_reverb",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 27,
+      "title": "25 Years Ago: Garth Brooks and George Jones Spar Over “Beer Run”",
+      "url": "https://savingcountrymusic.com/25-years-ago-garth-brooks-and-george-jones-spar-over-beer-run/?utm_source=rss&utm_medium=rss&utm_campaign=25-years-ago-garth-brooks-and-george-jones-spar-over-beer-run",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-29",
+      "score": 50,
+      "matched_artists": "George Jones",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 85,
+      "title": "Born 114 Years Ago Today in Indiana, the Man Who Produced Some of Country Music’s Biggest Post-WWII Stars, Including Merle Travis and Tennessee Ernie Ford",
+      "url": "https://americansongwriter.com/born-114-years-ago-today-in-indiana-the-man-who-produced-some-of-country-musics-biggest-post-wwii-stars-including-merle-travis-and-tennessee-ernie-ford/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-10-30",
+      "score": 40,
+      "matched_artists": "Tennessee Ernie",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

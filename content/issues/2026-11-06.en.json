@@ -1,0 +1,156 @@
+{
+  "issue_date": "2026-11-06",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-06T14:59:24Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 5,
+      "title": "ALBUM REVIEW: A New Must-Have Compilation Highlights Jelly Roll Morton's Early Years",
+      "url": "https://nodepression.org/album-review-a-new-must-have-compilation-highlights-jelly-roll-mortons-early-years/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-11-04",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 101,
+      "title": "30 Years Ago Today, Johnny Cash “Reset the Spiritual Clock of Country Music” With a Masterful Comeback Album Backed by Tom Petty and the Heartbreakers",
+      "url": "https://americansongwriter.com/30-years-ago-today-johnny-cash-reset-the-spiritual-clock-of-country-music-with-a-masterful-comeback-album-backed-by-tom-petty-and-the-heartbreakers/",
+      "source_name": "American Songwriter",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-11-05",
+      "score": 75,
+      "matched_artists": "Johnny Cash",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 124,
+      "title": "The Interrupters Are “Back From The Dead” With New Single & Video",
+      "url": "https://www.thepunksite.com/news/the-interrupters-are-back-from-the-dead-on-new-single-video/",
+      "source_name": "The Punk Site",
+      "signal_type": "video",
+      "signal_type_label": "Video signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Video signal · Source signal",
+      "editorial_angle": "Video signal from the coma.fm artist field.",
+      "published_at": "2026-11-05",
+      "score": 40,
+      "matched_artists": "The Interrupters",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "THE READING ROOM: Willie Nelson’s ‘The Last Leaf: Reflections on Late-Life Creativity—and My Longest Love Affair’",
+      "url": "https://nodepression.org/the-reading-room-willie-nelsons-the-last-leaf-reflections-on-late-life-creativity-and-my-longest-love-affair/",
+      "source_name": "No Depression",
+      "signal_type": "scene",
+      "signal_type_label": "Scene signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Scene signal · Source signal",
+      "editorial_angle": "Scene signal from the coma.fm artist field.",
+      "published_at": "2026-11-05",
+      "score": 90,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Wait, Gram Parsons Was Once Cast in a Sci-Fi Film?",
+      "url": "https://savingcountrymusic.com/wait-gram-parsons-was-once-cast-in-a-sci-fi-film/?utm_source=rss&utm_medium=rss&utm_campaign=wait-gram-parsons-was-once-cast-in-a-sci-fi-film",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-05",
+      "score": 65,
+      "matched_artists": "Gram Parsons",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 86,
+      "title": "66 Years Ago Today, We Lost the “Singing Fisherman,” a Country Legend Whose Songs Were Covered by Johnny Cash, George Jones, and Dwight Yoakam",
+      "url": "https://americansongwriter.com/66-years-ago-today-we-lost-the-singing-fisherman-a-country-legend-whose-songs-were-covered-by-johnny-cash-george-jones-and-dwight-yoakam/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-05",
+      "score": 65,
+      "matched_artists": "George Jones, Johnny Cash",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Sammy Kershaw Calls Out the CMA For Not Allowing Him on the Red Carpet",
+      "url": "https://savingcountrymusic.com/sammy-kershaw-calls-out-the-cma-for-not-allowing-him-on-the-red-carpet/?utm_source=rss&utm_medium=rss&utm_campaign=sammy-kershaw-calls-out-the-cma-for-not-allowing-him-on-the-red-carpet",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-06",
+      "score": 50,
+      "matched_artists": "Sammy Kershaw",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

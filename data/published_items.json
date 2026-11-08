@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T13:56:35Z",
+  "generated_at": "2026-11-08T14:16:23Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6552,6 +6552,51 @@
       "item_id": 128,
       "first_issue_date": "2026-11-07",
       "last_issue_date": "2026-11-07"
+    },
+    {
+      "url": "https://bluesroadhouse.com/2026/11/06/roadhouse-album-review-sue-foley-wants-to-ease-your-troubled-mind-with-alone-together-a-holiday-companion/",
+      "normalised_url": "https://bluesroadhouse.com/2026/11/06/roadhouse-album-review-sue-foley-wants-to-ease-your-troubled-mind-with-alone-together-a-holiday-companion",
+      "title": "Roadhouse Album Review: Sue Foley wants to ease your troubled mind with “alone (together) A Holiday Companion”",
+      "source_name": "Blues Roadhouse",
+      "item_id": 443,
+      "first_issue_date": "2026-11-08",
+      "last_issue_date": "2026-11-08"
+    },
+    {
+      "url": "https://nodepression.org/a-postcard-from-tennyson-king/",
+      "normalised_url": "https://nodepression.org/a-postcard-from-tennyson-king",
+      "title": "A Postcard From Tennyson King",
+      "source_name": "No Depression",
+      "item_id": 5,
+      "first_issue_date": "2026-11-08",
+      "last_issue_date": "2026-11-08"
+    },
+    {
+      "url": "https://nodepression.org/no-depressions-best-of-october-2026-playlist/",
+      "normalised_url": "https://nodepression.org/no-depressions-best-of-october-2026-playlist",
+      "title": "No Depression's Best of October 2026 Playlist",
+      "source_name": "No Depression",
+      "item_id": 6,
+      "first_issue_date": "2026-11-08",
+      "last_issue_date": "2026-11-08"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-hook-returns-with-josh-grider-and-pug-johnson/?utm_source=rss&utm_medium=rss&utm_campaign=the-hook-returns-with-josh-grider-and-pug-johnson",
+      "normalised_url": "https://savingcountrymusic.com/the-hook-returns-with-josh-grider-and-pug-johnson",
+      "title": "The Hook Returns with Josh Grider and Pug Johnson",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-08",
+      "last_issue_date": "2026-11-08"
+    },
+    {
+      "url": "https://www.punknews.org/article/89439/the-interrupters-to-release-new-album-share-back-from-the-dead-video",
+      "normalised_url": "https://www.punknews.org/article/89439/the-interrupters-to-release-new-album-share-back-from-the-dead-video",
+      "title": "The Interrupters to release new album, share \"Back From The Dead\" video",
+      "source_name": "Punknews.org",
+      "item_id": 522,
+      "first_issue_date": "2026-11-08",
+      "last_issue_date": "2026-11-08"
     }
   ]
 }

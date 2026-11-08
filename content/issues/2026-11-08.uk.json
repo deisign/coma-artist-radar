@@ -1,0 +1,111 @@
+{
+  "issue_date": "2026-11-08",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-08T14:16:23Z",
+  "min_score": 30,
+  "total_items": 5,
+  "items": [
+    {
+      "id": 443,
+      "title": "Roadhouse Album Review: Sue Foley wants to ease your troubled mind with “alone (together) A Holiday Companion”",
+      "url": "https://bluesroadhouse.com/2026/11/06/roadhouse-album-review-sue-foley-wants-to-ease-your-troubled-mind-with-alone-together-a-holiday-companion/",
+      "source_name": "Blues Roadhouse",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-11-07",
+      "score": 40,
+      "matched_artists": "Sue Foley",
+      "matched_tags": "review",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 522,
+      "title": "The Interrupters to release new album, share \"Back From The Dead\" video",
+      "url": "https://www.punknews.org/article/89439/the-interrupters-to-release-new-album-share-back-from-the-dead-video",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Відеосигнал",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Відеосигнал · Сигнал джерела",
+      "editorial_angle": "Відеосигнал з артистичного поля coma.fm.",
+      "published_at": "2026-11-05",
+      "score": 40,
+      "matched_artists": "The Interrupters",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 5,
+      "title": "A Postcard From Tennyson King",
+      "url": "https://nodepression.org/a-postcard-from-tennyson-king/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-05",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 6,
+      "title": "No Depression's Best of October 2026 Playlist",
+      "url": "https://nodepression.org/no-depressions-best-of-october-2026-playlist/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-04",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "The Hook Returns with Josh Grider and Pug Johnson",
+      "url": "https://savingcountrymusic.com/the-hook-returns-with-josh-grider-and-pug-johnson/?utm_source=rss&utm_medium=rss&utm_campaign=the-hook-returns-with-josh-grider-and-pug-johnson",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-07",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

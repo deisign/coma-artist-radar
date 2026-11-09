@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T14:16:23Z",
+  "generated_at": "2026-11-09T17:25:57Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6597,6 +6597,33 @@
       "item_id": 522,
       "first_issue_date": "2026-11-08",
       "last_issue_date": "2026-11-08"
+    },
+    {
+      "url": "https://nodepression.org/willi-carlisle-celebrates-doers-and-builders-on-hefty-rollicking-the-universal-bubba/",
+      "normalised_url": "https://nodepression.org/willi-carlisle-celebrates-doers-and-builders-on-hefty-rollicking-the-universal-bubba",
+      "title": "Willi Carlisle Celebrates Doers and Builders on Hefty, Rollicking 'The Universal Bubba'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-09",
+      "last_issue_date": "2026-11-09"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-mack-geigers-dying-in-this-house/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-mack-geigers-dying-in-this-house",
+      "normalised_url": "https://savingcountrymusic.com/album-review-mack-geigers-dying-in-this-house",
+      "title": "Album Review – Mack Geiger’s “Dying In This House”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-09",
+      "last_issue_date": "2026-11-09"
+    },
+    {
+      "url": "https://savingcountrymusic.com/its-not-about-the-red-carpet-its-about-respect/?utm_source=rss&utm_medium=rss&utm_campaign=its-not-about-the-red-carpet-its-about-respect",
+      "normalised_url": "https://savingcountrymusic.com/its-not-about-the-red-carpet-its-about-respect",
+      "title": "It’s Not About The Red Carpet. It’s About Respect",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-09",
+      "last_issue_date": "2026-11-09"
     }
   ]
 }

@@ -1,0 +1,156 @@
+{
+  "issue_date": "2026-11-10",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-10T15:33:17Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 3,
+      "title": "ALBUM REVIEW: Twisted Teens Continue Their Breakout 2026 With 'The Holy Cross Tigers'",
+      "url": "https://nodepression.org/album-review-twisted-teens-continue-their-breakout-2026-with-the-holy-cross-tigers/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-11-09",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 543,
+      "title": "New Release from The Katatonics",
+      "url": "https://surfguitar101.com/news/story/1851/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-11-09",
+      "score": 90,
+      "matched_artists": "Katatonics",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb, new_release",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 544,
+      "title": "New single \"Sombras Del Tártaro\" feat. Dave Klein (The Ghastly Ones/Bomboras) & Chad Shivers (The Frigidaires) available now",
+      "url": "https://surfguitar101.com/news/story/1850/",
+      "source_name": "Surf Guitar 101",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-11-09",
+      "score": 90,
+      "matched_artists": "The Ghastly Ones",
+      "matched_tags": "surf, instrumental_surf, grease_and_reverb, new_release",
+      "matched_genres": "surf"
+    },
+    {
+      "id": 124,
+      "title": "Mary Strand Looks “Beyond The Madness” Of Xmas On New Single & Announces Festive Album “I Wanna Believe”",
+      "url": "https://www.thepunksite.com/news/mary-strand-looks-beyond-the-madnessof-xmas-on-new-single-announces-festive-album-i-wanna-believe/",
+      "source_name": "The Punk Site",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-11-09",
+      "score": 40,
+      "matched_artists": "Madness",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 31,
+      "title": "Friday 11/6/2026 is a Busy Release Day for New Albums. Here’s Your Guide",
+      "url": "https://savingcountrymusic.com/friday-11-6-2026-is-a-busy-release-day-for-new-albums-heres-your-guide/?utm_source=rss&utm_medium=rss&utm_campaign=friday-11-6-2026-is-a-busy-release-day-for-new-albums-heres-your-guide",
+      "source_name": "Saving Country Music",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з жанрового поля coma.fm.",
+      "published_at": "2026-11-06",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Willie Nelson’s Luck Reunion Expands to Two Days in 2027",
+      "url": "https://savingcountrymusic.com/willie-nelsons-luck-reunion-expands-to-two-days-in-2027/?utm_source=rss&utm_medium=rss&utm_campaign=willie-nelsons-luck-reunion-expands-to-two-days-in-2027",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-10",
+      "score": 65,
+      "matched_artists": "Willie Nelson",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "FRESH TRACK: Levi Foster - “Appalachian Funk Tree”",
+      "url": "https://nodepression.org/fresh-track-levi-foster-appalachian-funk-tree/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-10",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    }
+  ]
+}

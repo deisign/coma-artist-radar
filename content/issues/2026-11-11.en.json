@@ -1,0 +1,153 @@
+{
+  "issue_date": "2026-11-11",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-11T15:07:26Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 297,
+      "title": "NEW SINGLE: FOXES FAUX – Banjo Boy (2026)",
+      "url": "https://londoncelticpunks.wordpress.com/2026/11/10/foxes-faux-banjo-boy/",
+      "source_name": "London Celtic Punks",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-11-10",
+      "score": 40,
+      "matched_artists": "Foxes",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 515,
+      "title": "Twin Temple release video for \"Haunt Me\"",
+      "url": "https://www.punknews.org/article/89466/twin-temple-release-video-for-haunt-me",
+      "source_name": "Punknews.org",
+      "signal_type": "video",
+      "signal_type_label": "Video signal",
+      "field_evidence": [
+        "artist_match",
+        "video_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Video signal · Source signal",
+      "editorial_angle": "Video signal from the coma.fm artist field.",
+      "published_at": "2026-11-10",
+      "score": 40,
+      "matched_artists": "Twin Temple",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "THROUGH THE LENS: Orville Peck, Molly Tuttle, Billy Strings, and More Photos from the Week",
+      "url": "https://nodepression.org/through-the-lens-orville-peck-molly-tuttle-billy-strings-and-more-photos-from-the-week/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-10",
+      "score": 100,
+      "matched_artists": "Orville Peck, Molly Tuttle",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "How 'Big Eden' Found a Home for Queer Love Through Film and Country Music",
+      "url": "https://nodepression.org/how-big-eden-found-a-home-for-queer-love-through-film-and-country-music/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-11",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 101,
+      "title": "Born 118 Years Ago Today in Chicago, the Music Visionary Who Signed Kitty Wells and Patsy Cline and Helped Make Nashville the Country Music Capital",
+      "url": "https://americansongwriter.com/born-118-years-ago-today-in-chicago-the-music-visionary-who-signed-kitty-wells-and-patsy-cline-and-helped-make-nashville-the-country-music-capital/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-10",
+      "score": 55,
+      "matched_artists": "Patsy Cline, Chicago",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "The CMA’s Sammy Kershaw Response was as Bad as Rolling Stone’s Take, But The Matter Resolves",
+      "url": "https://savingcountrymusic.com/the-cmas-sammy-kershaw-response-was-as-bad-as-rolling-stones-take-but-the-matter-resolves/?utm_source=rss&utm_medium=rss&utm_campaign=the-cmas-sammy-kershaw-response-was-as-bad-as-rolling-stones-take-but-the-matter-resolves",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-10",
+      "score": 50,
+      "matched_artists": "Sammy Kershaw",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Moe Bandy is Finally Being Honored",
+      "url": "https://savingcountrymusic.com/moe-bandy-is-finally-being-honored/?utm_source=rss&utm_medium=rss&utm_campaign=moe-bandy-is-finally-being-honored",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-10",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

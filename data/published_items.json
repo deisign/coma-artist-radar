@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T15:07:26Z",
+  "generated_at": "2026-11-12T15:57:33Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6750,6 +6750,60 @@
       "item_id": 515,
       "first_issue_date": "2026-11-11",
       "last_issue_date": "2026-11-11"
+    },
+    {
+      "url": "https://americansongwriter.com/4-sammy-kershaw-songs-that-still-sound-like-pure-country-music-gold-today/",
+      "normalised_url": "https://americansongwriter.com/4-sammy-kershaw-songs-that-still-sound-like-pure-country-music-gold-today",
+      "title": "4 Sammy Kershaw Songs That Still Sound Like Pure Country Music Gold Today",
+      "source_name": "American Songwriter",
+      "item_id": 103,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://nodepression.org/album-review-james-felice-enters-a-world-of-wonder-on-homeworld-blue/",
+      "normalised_url": "https://nodepression.org/album-review-james-felice-enters-a-world-of-wonder-on-homeworld-blue",
+      "title": "ALBUM REVIEW: James Felice Enters a World of Wonder on 'Homeworld Blue'",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://nodepression.org/trouble-the-water-from-spirituals-to-gospel/",
+      "normalised_url": "https://nodepression.org/trouble-the-water-from-spirituals-to-gospel",
+      "title": "Trouble the Water: From Spirituals to Gospel (Part 2)",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://rockandbluesmuse.com/2026/11/11/celebrating-david-bowie-80th-birthday-concerts/",
+      "normalised_url": "https://rockandbluesmuse.com/2026/11/11/celebrating-david-bowie-80th-birthday-concerts",
+      "title": "Celebrating David Bowie 80th Birthday Concerts",
+      "source_name": "Rock and Blues Muse",
+      "item_id": 535,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-willi-carlisles-the-universal-bubba/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-willi-carlisles-the-universal-bubba",
+      "normalised_url": "https://savingcountrymusic.com/album-review-willi-carlisles-the-universal-bubba",
+      "title": "Album Review – Willi Carlisle’s “The Universal Bubba”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://savingcountrymusic.com/garth-brooks-to-take-over-signal-of-beloved-independent-radio-station/?utm_source=rss&utm_medium=rss&utm_campaign=garth-brooks-to-take-over-signal-of-beloved-independent-radio-station",
+      "normalised_url": "https://savingcountrymusic.com/garth-brooks-to-take-over-signal-of-beloved-independent-radio-station",
+      "title": "Garth Brooks to Take Over Signal of Beloved Independent Radio Station",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-12",
+      "last_issue_date": "2026-11-12"
     }
   ]
 }

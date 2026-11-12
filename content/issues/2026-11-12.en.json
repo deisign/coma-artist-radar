@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-11-12",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-12T15:57:33Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: James Felice Enters a World of Wonder on 'Homeworld Blue'",
+      "url": "https://nodepression.org/album-review-james-felice-enters-a-world-of-wonder-on-homeworld-blue/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm artist field.",
+      "published_at": "2026-11-12",
+      "score": 90,
+      "matched_artists": "James",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Album Review – Willi Carlisle’s “The Universal Bubba”",
+      "url": "https://savingcountrymusic.com/album-review-willi-carlisles-the-universal-bubba/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-willi-carlisles-the-universal-bubba",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Review signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Review signal · Source signal",
+      "editorial_angle": "Review signal from the coma.fm genre field.",
+      "published_at": "2026-11-11",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 2,
+      "title": "Trouble the Water: From Spirituals to Gospel (Part 2)",
+      "url": "https://nodepression.org/trouble-the-water-from-spirituals-to-gospel/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-12",
+      "score": 75,
+      "matched_artists": "Trouble",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 535,
+      "title": "Celebrating David Bowie 80th Birthday Concerts",
+      "url": "https://rockandbluesmuse.com/2026/11/11/celebrating-david-bowie-80th-birthday-concerts/",
+      "source_name": "Rock and Blues Muse",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-11",
+      "score": 60,
+      "matched_artists": "David Bowie",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 103,
+      "title": "4 Sammy Kershaw Songs That Still Sound Like Pure Country Music Gold Today",
+      "url": "https://americansongwriter.com/4-sammy-kershaw-songs-that-still-sound-like-pure-country-music-gold-today/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-11",
+      "score": 40,
+      "matched_artists": "Sammy Kershaw",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Garth Brooks to Take Over Signal of Beloved Independent Radio Station",
+      "url": "https://savingcountrymusic.com/garth-brooks-to-take-over-signal-of-beloved-independent-radio-station/?utm_source=rss&utm_medium=rss&utm_campaign=garth-brooks-to-take-over-signal-of-beloved-independent-radio-station",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-11",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

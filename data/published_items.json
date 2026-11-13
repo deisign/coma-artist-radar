@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T15:57:33Z",
+  "generated_at": "2026-11-13T15:19:47Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6804,6 +6804,42 @@
       "item_id": 26,
       "first_issue_date": "2026-11-12",
       "last_issue_date": "2026-11-12"
+    },
+    {
+      "url": "https://nodepression.org/album-review-jake-buggs-alamo-explores-the-dark-night-of-the-soul/",
+      "normalised_url": "https://nodepression.org/album-review-jake-buggs-alamo-explores-the-dark-night-of-the-soul",
+      "title": "ALBUM REVIEW: Jake Bugg’s ‘Alamo’ Explores the Dark Night of the Soul",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-13",
+      "last_issue_date": "2026-11-13"
+    },
+    {
+      "url": "https://nodepression.org/album-review-schaefer-llana-comes-full-circle-for-her-debut/",
+      "normalised_url": "https://nodepression.org/album-review-schaefer-llana-comes-full-circle-for-her-debut",
+      "title": "ALBUM REVIEW: Schaefer Llana Comes 'Full Circle' for Her Debut",
+      "source_name": "No Depression",
+      "item_id": 4,
+      "first_issue_date": "2026-11-13",
+      "last_issue_date": "2026-11-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/brian-ahern-architect-behind-emmylou-harris-and-americana-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=brian-ahern-architect-behind-emmylou-harris-and-americana-has-died",
+      "normalised_url": "https://savingcountrymusic.com/brian-ahern-architect-behind-emmylou-harris-and-americana-has-died",
+      "title": "Brian Ahern, Architect Behind Emmylou Harris and Americana, Has Died",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-13",
+      "last_issue_date": "2026-11-13"
+    },
+    {
+      "url": "https://savingcountrymusic.com/clint-black-announces-new-2027-tour/?utm_source=rss&utm_medium=rss&utm_campaign=clint-black-announces-new-2027-tour",
+      "normalised_url": "https://savingcountrymusic.com/clint-black-announces-new-2027-tour",
+      "title": "Clint Black Announces New 2027 Tour",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-13",
+      "last_issue_date": "2026-11-13"
     }
   ]
 }

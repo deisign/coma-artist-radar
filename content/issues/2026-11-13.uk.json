@@ -1,0 +1,91 @@
+{
+  "issue_date": "2026-11-13",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-13T15:19:47Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: Jake Bugg’s ‘Alamo’ Explores the Dark Night of the Soul",
+      "url": "https://nodepression.org/album-review-jake-buggs-alamo-explores-the-dark-night-of-the-soul/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-11-13",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 4,
+      "title": "ALBUM REVIEW: Schaefer Llana Comes 'Full Circle' for Her Debut",
+      "url": "https://nodepression.org/album-review-schaefer-llana-comes-full-circle-for-her-debut/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-11-11",
+      "score": 75,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Brian Ahern, Architect Behind Emmylou Harris and Americana, Has Died",
+      "url": "https://savingcountrymusic.com/brian-ahern-architect-behind-emmylou-harris-and-americana-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=brian-ahern-architect-behind-emmylou-harris-and-americana-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-12",
+      "score": 65,
+      "matched_artists": "Emmylou Harris",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Clint Black Announces New 2027 Tour",
+      "url": "https://savingcountrymusic.com/clint-black-announces-new-2027-tour/?utm_source=rss&utm_medium=rss&utm_campaign=clint-black-announces-new-2027-tour",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-11-14",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-14T14:06:01Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 27,
+      "title": "Album Review – Joe Ray McDonald’s “Harvester”",
+      "url": "https://savingcountrymusic.com/album-review-joe-ray-mcdonalds-harvester/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-joe-ray-mcdonalds-harvester",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-11-13",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "BONUS TRACKS: Dolly Parton's Last Recording, New Brandy Clark LP, Covers Galore, and More Roots Music News",
+      "url": "https://nodepression.org/bonus-tracks-dolly-partons-last-recording-new-brandy-clark-lp-covers-galore-and-more-roots-music-news/",
+      "source_name": "No Depression",
+      "signal_type": "release",
+      "signal_type_label": "Сигнал релізу",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал релізу · Сигнал джерела",
+      "editorial_angle": "Сигнал релізу з артистичного поля coma.fm.",
+      "published_at": "2026-11-13",
+      "score": 90,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 26,
+      "title": "On Taylor Swift Playing the 2026 CMA Awards",
+      "url": "https://savingcountrymusic.com/on-taylor-swift-playing-the-2026-cma-awards/?utm_source=rss&utm_medium=rss&utm_campaign=on-taylor-swift-playing-the-2026-cma-awards",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-13",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

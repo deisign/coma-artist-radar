@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T15:19:47Z",
+  "generated_at": "2026-11-14T14:06:01Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -6840,6 +6840,33 @@
       "item_id": 26,
       "first_issue_date": "2026-11-13",
       "last_issue_date": "2026-11-13"
+    },
+    {
+      "url": "https://nodepression.org/bonus-tracks-dolly-partons-last-recording-new-brandy-clark-lp-covers-galore-and-more-roots-music-news/",
+      "normalised_url": "https://nodepression.org/bonus-tracks-dolly-partons-last-recording-new-brandy-clark-lp-covers-galore-and-more-roots-music-news",
+      "title": "BONUS TRACKS: Dolly Parton's Last Recording, New Brandy Clark LP, Covers Galore, and More Roots Music News",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-14",
+      "last_issue_date": "2026-11-14"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-joe-ray-mcdonalds-harvester/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-joe-ray-mcdonalds-harvester",
+      "normalised_url": "https://savingcountrymusic.com/album-review-joe-ray-mcdonalds-harvester",
+      "title": "Album Review – Joe Ray McDonald’s “Harvester”",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-14",
+      "last_issue_date": "2026-11-14"
+    },
+    {
+      "url": "https://savingcountrymusic.com/on-taylor-swift-playing-the-2026-cma-awards/?utm_source=rss&utm_medium=rss&utm_campaign=on-taylor-swift-playing-the-2026-cma-awards",
+      "normalised_url": "https://savingcountrymusic.com/on-taylor-swift-playing-the-2026-cma-awards",
+      "title": "On Taylor Swift Playing the 2026 CMA Awards",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-14",
+      "last_issue_date": "2026-11-14"
     }
   ]
 }

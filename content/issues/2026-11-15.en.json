@@ -1,0 +1,90 @@
+{
+  "issue_date": "2026-11-15",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-15T14:42:52Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 86,
+      "title": "Oak Ridge Boys’ Richard Sterban, Voice Behind “Elvira,” Dead at 83: Country Legend Who Left Elvis Presley to Join the Group",
+      "url": "https://americansongwriter.com/oak-ridge-boys-richard-sterban-voice-behind-elvira-dead-at-83-country-legend-who-left-elvis-presley-to-join-the-group/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-14",
+      "score": 50,
+      "matched_artists": "Elvis Presley",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 124,
+      "title": "The Best Country Music on Bandcamp, October 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-october-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-05",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Richard Sterban – Iconic Bass Voice of the Oak Ridge Boys – Has Died",
+      "url": "https://savingcountrymusic.com/richard-sterban-iconic-bass-voice-of-the-oak-ridge-boys-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=richard-sterban-iconic-bass-voice-of-the-oak-ridge-boys-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Archivist and Bear Family Records Founder Richard Weize Has Died",
+      "url": "https://savingcountrymusic.com/archivist-and-bear-family-records-founder-richard-weize-has-died/?utm_source=rss&utm_medium=rss&utm_campaign=archivist-and-bear-family-records-founder-richard-weize-has-died",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-14",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

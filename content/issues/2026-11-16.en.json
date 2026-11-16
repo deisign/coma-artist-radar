@@ -1,0 +1,92 @@
+{
+  "issue_date": "2026-11-16",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-16T16:58:41Z",
+  "min_score": 30,
+  "total_items": 4,
+  "items": [
+    {
+      "id": 68,
+      "title": "From the Black Suit Johnny Cash’s Mother Helped Make to Dolly Parton’s Handwritten “Jolene” Lyrics: New Book Reveals Rare Pieces of Country Music History",
+      "url": "https://americansongwriter.com/from-the-black-suit-johnny-cashs-mother-helped-make-to-dolly-partons-handwritten-jolene-lyrics-new-book-reveals-rare-pieces-of-country-music-history/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-16",
+      "score": 100,
+      "matched_artists": "Dolly Parton, Johnny Cash",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 82,
+      "title": "8 Years Ago Today, Country Music Lost the Guitar Legend Who Helped Turn ‘Hee Haw’ Into a Television Institution",
+      "url": "https://americansongwriter.com/8-years-ago-today-country-music-lost-the-guitar-legend-who-helped-turn-hee-haw-into-a-television-institution/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-16",
+      "score": 40,
+      "matched_artists": "Television",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 395,
+      "title": "Gillian Welch and David Rawlings - Pancho and Lefty",
+      "url": "https://www.americanadaily.com/2026/11/gillian-welch-and-david-rawlings-pancho.html",
+      "source_name": "Americana Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-16",
+      "score": 40,
+      "matched_artists": "Gillian Welch",
+      "matched_tags": "",
+      "matched_genres": "country"
+    },
+    {
+      "id": 16,
+      "title": "New Adds to Saving Country Music’s Top 25 Playlist (#188)",
+      "url": "https://savingcountrymusic.com/new-adds-to-saving-country-musics-top-25-playlist-188/?utm_source=rss&utm_medium=rss&utm_campaign=new-adds-to-saving-country-musics-top-25-playlist-188",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-15",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "issue_date": "2026-11-18",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-18T16:25:12Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 1,
+      "title": "ALBUM REVIEW: A Decade in, Heather Littlefield Is Still Bound to Roam on 'Wildflowers'",
+      "url": "https://nodepression.org/album-review-a-decade-in-heather-littlefield-is-still-bound-to-roam-on-wildflowers/",
+      "source_name": "No Depression",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з артистичного поля coma.fm.",
+      "published_at": "2026-11-18",
+      "score": 100,
+      "matched_artists": "Heather Little",
+      "matched_tags": "country, alt_country, review",
+      "matched_genres": ""
+    },
+    {
+      "id": 96,
+      "title": "The Night Dolly Parton, Reba McEntire, and Carrie Underwood Joined Forces for an All-Star CMA Awards Medley Honoring Women in Country Music",
+      "url": "https://americansongwriter.com/the-night-dolly-parton-reba-mcentire-and-carrie-underwood-joined-forces-for-an-all-star-cma-awards-medley-honoring-women-in-country-music/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-18",
+      "score": 70,
+      "matched_artists": "Reba McEntire, Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 83,
+      "title": "How Will the 2026 CMA Awards Honor Dolly Parton? What We Know Ahead of Country Music’s Biggest Night",
+      "url": "https://americansongwriter.com/how-will-the-2026-cma-awards-honor-dolly-parton-what-we-know-ahead-of-country-musics-biggest-night/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-18",
+      "score": 55,
+      "matched_artists": "Dolly Parton",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 28,
+      "title": "Honky Tonk Fest Embraces Austin’s Resurgent Two-Step Culture",
+      "url": "https://savingcountrymusic.com/honky-tonk-fest-embraces-austins-resurgent-two-step-culture/?utm_source=rss&utm_medium=rss&utm_campaign=honky-tonk-fest-embraces-austins-resurgent-two-step-culture",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-17",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, honky_tonk",
+      "matched_genres": "country"
+    },
+    {
+      "id": 587,
+      "title": "Eric Clapton Adds 2027 European Shows, Including His First-Ever Concert in Bulgaria",
+      "url": "https://www.thebluesmagazine.com/eric-clapton-european-tour-dates-2027/",
+      "source_name": "The Blues Magazine",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-17",
+      "score": 40,
+      "matched_artists": "Eric Clapton",
+      "matched_tags": "",
+      "matched_genres": "blues"
+    },
+    {
+      "id": 26,
+      "title": "The CMA Now Has a Another Controversy On Its Hands",
+      "url": "https://savingcountrymusic.com/the-cma-now-has-a-another-controversy-on-its-hands/?utm_source=rss&utm_medium=rss&utm_campaign=the-cma-now-has-a-another-controversy-on-its-hands",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-18",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:25:12Z",
+  "generated_at": "2026-11-19T16:31:08Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -7038,6 +7038,42 @@
       "item_id": 587,
       "first_issue_date": "2026-11-18",
       "last_issue_date": "2026-11-18"
+    },
+    {
+      "url": "https://nodepression.org/album-review-neal-casals-book-of-stories-showcases-a-master-craftsman-in-the-shadows/",
+      "normalised_url": "https://nodepression.org/album-review-neal-casals-book-of-stories-showcases-a-master-craftsman-in-the-shadows",
+      "title": "ALBUM REVIEW: Neal Casal’s ‘Book of Stories’ Showcases a Master Craftsman in the Shadows",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-19",
+      "last_issue_date": "2026-11-19"
+    },
+    {
+      "url": "https://nodepression.org/the-reading-room-will-kaufmans-american-song-and-struggle-from-world-war-ii-to-maga/",
+      "normalised_url": "https://nodepression.org/the-reading-room-will-kaufmans-american-song-and-struggle-from-world-war-ii-to-maga",
+      "title": "THE READING ROOM: Will Kaufman’s ‘American Song and Struggle from World War II to MAGA’",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-11-19",
+      "last_issue_date": "2026-11-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/album-review-randy-travis-same-old-way/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-randy-travis-same-old-way",
+      "normalised_url": "https://savingcountrymusic.com/album-review-randy-travis-same-old-way",
+      "title": "Album Review – Randy Travis – “Same Old Way”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-19",
+      "last_issue_date": "2026-11-19"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-2026-cma-awards-brooks-dunn-tribute-was-terrible/?utm_source=rss&utm_medium=rss&utm_campaign=the-2026-cma-awards-brooks-dunn-tribute-was-terrible",
+      "normalised_url": "https://savingcountrymusic.com/the-2026-cma-awards-brooks-dunn-tribute-was-terrible",
+      "title": "The 2026 CMA Awards Brooks & Dunn Tribute was Terrible",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-19",
+      "last_issue_date": "2026-11-19"
     }
   ]
 }

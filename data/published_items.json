@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T16:31:08Z",
+  "generated_at": "2026-11-20T16:04:32Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -7074,6 +7074,60 @@
       "item_id": 27,
       "first_issue_date": "2026-11-19",
       "last_issue_date": "2026-11-19"
+    },
+    {
+      "url": "https://nodepression.org/album-review-jim-kweskins-a-songsters-journey-is-a-timeless-trek-through-american-roots-music/",
+      "normalised_url": "https://nodepression.org/album-review-jim-kweskins-a-songsters-journey-is-a-timeless-trek-through-american-roots-music",
+      "title": "ALBUM REVIEW: Jim Kweskin's 'A Songster's Journey' Is a Timeless Trek Through American Roots Music",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
+    },
+    {
+      "url": "https://nodepression.org/crowdfunding-radar-shirley-barr-adam-kirkup-and-christine-kammerer/",
+      "normalised_url": "https://nodepression.org/crowdfunding-radar-shirley-barr-adam-kirkup-and-christine-kammerer",
+      "title": "CROWDFUNDING RADAR: Shirley Barr, Adam Kirkup, and Christine Kammerer",
+      "source_name": "No Depression",
+      "item_id": 2,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
+    },
+    {
+      "url": "https://rockandbluesmuse.com/2026/11/19/samantha-fish-the-zac-schulze-gang-drop-someday-at-christmas/",
+      "normalised_url": "https://rockandbluesmuse.com/2026/11/19/samantha-fish-the-zac-schulze-gang-drop-someday-at-christmas",
+      "title": "Samantha Fish & The Zac Schulze Gang Drop ‘Someday At Christmas’",
+      "source_name": "Rock and Blues Muse",
+      "item_id": 572,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/channing-wilson-readies-new-album-i-aint-no-outlaw/?utm_source=rss&utm_medium=rss&utm_campaign=channing-wilson-readies-new-album-i-aint-no-outlaw",
+      "normalised_url": "https://savingcountrymusic.com/channing-wilson-readies-new-album-i-aint-no-outlaw",
+      "title": "Channing Wilson Readies New Album “I Ain’t No Outlaw”",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
+    },
+    {
+      "url": "https://savingcountrymusic.com/the-2026-cma-awards-never-even-called-david-allan-coe-raul-malo-by-their-names/?utm_source=rss&utm_medium=rss&utm_campaign=the-2026-cma-awards-never-even-called-david-allan-coe-raul-malo-by-their-names",
+      "normalised_url": "https://savingcountrymusic.com/the-2026-cma-awards-never-even-called-david-allan-coe-raul-malo-by-their-names",
+      "title": "The 2026 CMA Awards Never Even Called David Allan Coe, Raul Malo By Their Names",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/11/progressive-surf-instrumental-showcase.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/11/progressive-surf-instrumental-showcase.html",
+      "title": "Progressive Surf Instrumental Showcase",
+      "source_name": "Surf Music and Art",
+      "item_id": 374,
+      "first_issue_date": "2026-11-20",
+      "last_issue_date": "2026-11-20"
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "issue_date": "2026-11-23",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-23T19:12:33Z",
+  "min_score": 30,
+  "total_items": 3,
+  "items": [
+    {
+      "id": 28,
+      "title": "Album Review – Tony Logue’s “Sixty Cycle Hum”",
+      "url": "https://savingcountrymusic.com/album-review-tony-logues-sixty-cycle-hum/?utm_source=rss&utm_medium=rss&utm_campaign=album-review-tony-logues-sixty-cycle-hum",
+      "source_name": "Saving Country Music",
+      "signal_type": "review",
+      "signal_type_label": "Сигнал рецензії",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "review_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал рецензії · Сигнал джерела",
+      "editorial_angle": "Сигнал рецензії з жанрового поля coma.fm.",
+      "published_at": "2026-11-22",
+      "score": 50,
+      "matched_artists": "",
+      "matched_tags": "country, review",
+      "matched_genres": "country"
+    },
+    {
+      "id": 81,
+      "title": "Glen Powell Reveals What It Was Like Working With “Wonderfully Bizarre” Tyler Childers, “Hysterical” Chris Stapleton, and Reba McEntire in New Country Music Comedy",
+      "url": "https://americansongwriter.com/glen-powell-reveals-what-it-was-like-working-with-wonderfully-bizarre-tyler-childers-hysterical-chris-stapleton-and-reba-mcentire-in-new-country-music-comedy/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-23",
+      "score": 40,
+      "matched_artists": "Reba McEntire",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 27,
+      "title": "Recap of The Hook Episode 20",
+      "url": "https://savingcountrymusic.com/recap-of-the-hook-episode-20/?utm_source=rss&utm_medium=rss&utm_campaign=recap-of-the-hook-episode-20",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-23",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

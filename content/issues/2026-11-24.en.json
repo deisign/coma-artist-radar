@@ -1,0 +1,149 @@
+{
+  "issue_date": "2026-11-24",
+  "lang": "en",
+  "draft": false,
+  "generated_at": "2026-11-24T18:51:39Z",
+  "min_score": 30,
+  "total_items": 7,
+  "items": [
+    {
+      "id": 334,
+      "title": "NEW SINGLE: JAMES BOSTOCK – Banjo’s Boobs And Beer (2026)",
+      "url": "https://londoncelticpunks.wordpress.com/2026/11/24/james-bostock-banjos-boobs-and-beer/",
+      "source_name": "London Celtic Punks",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Tag match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-11-24",
+      "score": 40,
+      "matched_artists": "James",
+      "matched_tags": "new_release",
+      "matched_genres": ""
+    },
+    {
+      "id": 553,
+      "title": "Soundwalk Collective and Patti Smith to release 'Correspondences Vol III'",
+      "url": "https://www.punknews.org/article/89571/soundwalk-collective-and-patti-smith-to-release-correspondences-vol-iii",
+      "source_name": "Punknews.org",
+      "signal_type": "release",
+      "signal_type_label": "Release signal",
+      "field_evidence": [
+        "artist_match",
+        "release_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Release signal · Source signal",
+      "editorial_angle": "Release signal from the coma.fm artist field.",
+      "published_at": "2026-11-23",
+      "score": 40,
+      "matched_artists": "Patti Smith",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 1,
+      "title": "FOUNDERS KEEPERS: Old Friends on New Records from Jimmy Webb, Jay Farrar, and More",
+      "url": "https://nodepression.org/founders-keepers-old-friends-on-new-records-from-jimmy-webb-jay-farrar-and-more-1/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 2,
+      "title": "After 50 Years, ‘The Last Waltz’ Remains a Timeless — and Thanksgiving — Classic",
+      "url": "https://nodepression.org/after-50-years-the-last-waltz-remains-a-timeless-and-thanksgiving-classic/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 92,
+      "title": "Born 95 Years Ago Today in Oklahoma, the Willie Nelson Producer and Western Swing Guitarist Who Narrowly Missed the Same Grim Fate as Buddy Holly",
+      "url": "https://americansongwriter.com/born-95-years-ago-today-in-oklahoma-the-willie-nelson-producer-and-western-swing-guitarist-who-narrowly-missed-the-same-grim-fate-as-buddy-holly/",
+      "source_name": "American Songwriter",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "artist_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Artist match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm artist field.",
+      "published_at": "2026-11-24",
+      "score": 60,
+      "matched_artists": "Willie Nelson, Buddy Holly",
+      "matched_tags": "",
+      "matched_genres": "rockabilly"
+    },
+    {
+      "id": 26,
+      "title": "Why Australia’s Golden Guitar Awards Hold Extra Significance in 2027",
+      "url": "https://savingcountrymusic.com/why-australias-golden-guitar-awards-hold-extra-significance-in-2027/?utm_source=rss&utm_medium=rss&utm_campaign=why-australias-golden-guitar-awards-hold-extra-significance-in-2027",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-24",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 37,
+      "title": "Charley Crockett, Kaitlin Butts Announce New Tour Dates",
+      "url": "https://savingcountrymusic.com/charley-crockett-kaitlin-butts-announce-new-tour-dates/?utm_source=rss&utm_medium=rss&utm_campaign=charley-crockett-kaitlin-butts-announce-new-tour-dates",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Radar signal",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Tag match · Genre match · Source signal",
+      "editorial_angle": "Radar signal from the coma.fm genre field.",
+      "published_at": "2026-11-18",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "issue_date": "2026-11-25",
+  "lang": "uk",
+  "draft": false,
+  "generated_at": "2026-11-25T17:56:50Z",
+  "min_score": 30,
+  "total_items": 6,
+  "items": [
+    {
+      "id": 549,
+      "title": "Tours: Stand Atlantic and Scene Queen announce European tour",
+      "url": "https://www.punknews.org/article/89584/tours-stand-atlantic-and-scene-queen-announce-european-tour",
+      "source_name": "Punknews.org",
+      "signal_type": "scene",
+      "signal_type_label": "Сигнал сцени",
+      "field_evidence": [
+        "artist_match",
+        "scene_signal",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Сигнал сцени · Сигнал джерела",
+      "editorial_angle": "Сигнал сцени з артистичного поля coma.fm.",
+      "published_at": "2026-11-25",
+      "score": 40,
+      "matched_artists": "Queen",
+      "matched_tags": "",
+      "matched_genres": ""
+    },
+    {
+      "id": 27,
+      "title": "Barbara Mandrell: The Overlooked Country Music Queen",
+      "url": "https://savingcountrymusic.com/barbara-mandrell-the-overlooked-country-music-queen/?utm_source=rss&utm_medium=rss&utm_campaign=barbara-mandrell-the-overlooked-country-music-queen",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "artist_match",
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг артиста · Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з артистичного поля coma.fm.",
+      "published_at": "2026-11-24",
+      "score": 65,
+      "matched_artists": "Queen",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 1,
+      "title": "Our Favorite Record Store Black Friday 2026 Recommendations",
+      "url": "https://nodepression.org/our-favorite-record-store-black-friday-2026-recommendations/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-25",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 4,
+      "title": "THROUGH THE LENS: Moon River at Sea 2026, Smooth Sailing & Roots Music",
+      "url": "https://nodepression.org/through-the-lens-moon-river-at-sea-2026-smooth-sailing-roots-music/",
+      "source_name": "No Depression",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-24",
+      "score": 60,
+      "matched_artists": "",
+      "matched_tags": "country, alt_country",
+      "matched_genres": ""
+    },
+    {
+      "id": 108,
+      "title": "The Best Country Music on Bandcamp, November 2026",
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-november-2026",
+      "source_name": "Bandcamp Daily",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-24",
+      "score": 45,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    },
+    {
+      "id": 26,
+      "title": "Darius Rucker Says He’s Criticized for Making Country from the Black Community",
+      "url": "https://savingcountrymusic.com/darius-rucker-says-hes-criticized-for-making-country-from-the-black-community/?utm_source=rss&utm_medium=rss&utm_campaign=darius-rucker-says-hes-criticized-for-making-country-from-the-black-community",
+      "source_name": "Saving Country Music",
+      "signal_type": "signal",
+      "signal_type_label": "Сигнал радара",
+      "field_evidence": [
+        "tag_match",
+        "genre_match",
+        "source_signal"
+      ],
+      "field_evidence_label": "Збіг тегу · Збіг жанру · Сигнал джерела",
+      "editorial_angle": "Сигнал радара з жанрового поля coma.fm.",
+      "published_at": "2026-11-25",
+      "score": 35,
+      "matched_artists": "",
+      "matched_tags": "country",
+      "matched_genres": "country"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T18:51:39Z",
+  "generated_at": "2026-11-25T17:56:50Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -7254,6 +7254,60 @@
       "item_id": 553,
       "first_issue_date": "2026-11-24",
       "last_issue_date": "2026-11-24"
+    },
+    {
+      "url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-november-2026",
+      "normalised_url": "https://daily.bandcamp.com/best-country/the-best-country-music-on-bandcamp-november-2026",
+      "title": "The Best Country Music on Bandcamp, November 2026",
+      "source_name": "Bandcamp Daily",
+      "item_id": 108,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://nodepression.org/our-favorite-record-store-black-friday-2026-recommendations/",
+      "normalised_url": "https://nodepression.org/our-favorite-record-store-black-friday-2026-recommendations",
+      "title": "Our Favorite Record Store Black Friday 2026 Recommendations",
+      "source_name": "No Depression",
+      "item_id": 1,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://nodepression.org/through-the-lens-moon-river-at-sea-2026-smooth-sailing-roots-music/",
+      "normalised_url": "https://nodepression.org/through-the-lens-moon-river-at-sea-2026-smooth-sailing-roots-music",
+      "title": "THROUGH THE LENS: Moon River at Sea 2026, Smooth Sailing & Roots Music",
+      "source_name": "No Depression",
+      "item_id": 4,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/barbara-mandrell-the-overlooked-country-music-queen/?utm_source=rss&utm_medium=rss&utm_campaign=barbara-mandrell-the-overlooked-country-music-queen",
+      "normalised_url": "https://savingcountrymusic.com/barbara-mandrell-the-overlooked-country-music-queen",
+      "title": "Barbara Mandrell: The Overlooked Country Music Queen",
+      "source_name": "Saving Country Music",
+      "item_id": 27,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://savingcountrymusic.com/darius-rucker-says-hes-criticized-for-making-country-from-the-black-community/?utm_source=rss&utm_medium=rss&utm_campaign=darius-rucker-says-hes-criticized-for-making-country-from-the-black-community",
+      "normalised_url": "https://savingcountrymusic.com/darius-rucker-says-hes-criticized-for-making-country-from-the-black-community",
+      "title": "Darius Rucker Says He’s Criticized for Making Country from the Black Community",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://www.punknews.org/article/89584/tours-stand-atlantic-and-scene-queen-announce-european-tour",
+      "normalised_url": "https://www.punknews.org/article/89584/tours-stand-atlantic-and-scene-queen-announce-european-tour",
+      "title": "Tours: Stand Atlantic and Scene Queen announce European tour",
+      "source_name": "Punknews.org",
+      "item_id": 549,
+      "first_issue_date": "2026-11-25",
+      "last_issue_date": "2026-11-25"
     }
   ]
 }

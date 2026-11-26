@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:56:50Z",
+  "generated_at": "2026-11-26T17:42:07Z",
   "items": [
     {
       "url": "http://www.the-rockabilly-chronicle.com/hank-edwards/",
@@ -7308,6 +7308,33 @@
       "item_id": 549,
       "first_issue_date": "2026-11-25",
       "last_issue_date": "2026-11-25"
+    },
+    {
+      "url": "https://nodepression.org/kathleen-edwards-2005-album-back-to-me-continues-to-harness-the-power-of-survival/",
+      "normalised_url": "https://nodepression.org/kathleen-edwards-2005-album-back-to-me-continues-to-harness-the-power-of-survival",
+      "title": "Kathleen Edwards’ 2005 Album ‘Back to Me’ Continues to Harness the Power of Survival",
+      "source_name": "No Depression",
+      "item_id": 5,
+      "first_issue_date": "2026-11-26",
+      "last_issue_date": "2026-11-26"
+    },
+    {
+      "url": "https://savingcountrymusic.com/miranda-lamberts-finds-full-circle-moment-during-thanksgiving-halftime/?utm_source=rss&utm_medium=rss&utm_campaign=miranda-lamberts-finds-full-circle-moment-during-thanksgiving-halftime",
+      "normalised_url": "https://savingcountrymusic.com/miranda-lamberts-finds-full-circle-moment-during-thanksgiving-halftime",
+      "title": "Miranda Lambert’s Finds Full Circle Moment During Thanksgiving Halftime",
+      "source_name": "Saving Country Music",
+      "item_id": 26,
+      "first_issue_date": "2026-11-26",
+      "last_issue_date": "2026-11-26"
+    },
+    {
+      "url": "https://www.surfmusicandart.com/2026/11/katatonics-bottom-turn-album.html",
+      "normalised_url": "https://www.surfmusicandart.com/2026/11/katatonics-bottom-turn-album.html",
+      "title": "Katatonics -The Bottom Turn (Album Review)",
+      "source_name": "Surf Music and Art",
+      "item_id": 345,
+      "first_issue_date": "2026-11-26",
+      "last_issue_date": "2026-11-26"
     }
   ]
 }
